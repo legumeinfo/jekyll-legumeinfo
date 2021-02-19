@@ -8,9 +8,10 @@ services:
 ## for Windows hosts
 #   environment:
 #     FORCE_POLLING: 1
-    command: jekyll serve --incremental
+    command: jekyll serve --incremental --livereload
     ports:
       - "4000:4000"
+      - "35729:35729"
 
 volumes:
   bundle-cache:
