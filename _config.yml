@@ -32,9 +32,10 @@ github_username: legumeinfo
 newsletter: http://eepurl.com/cX_JjL
 
 # Build settings
-theme: legumeinfo-jekyll-theme
+remote_theme: legumeinfo/legumeinfo-jekyll-theme@1d0c318
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -44,7 +45,8 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+  - docker-compose.yml
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

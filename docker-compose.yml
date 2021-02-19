@@ -1,0 +1,17 @@
+services:
+  jekyll:
+    image: jekyll/jekyll:4.2.0
+    volumes:
+      - ./:/srv/jekyll
+      - bundle-cache:/usr/local/bundle
+      - gem-cache:/usr/gem
+## for Windows hosts
+#   environment:
+#     FORCE_POLLING: 1
+    command: jekyll serve --incremental
+    ports:
+      - "4000:4000"
+
+volumes:
+  bundle-cache:
+  gem-cache:
