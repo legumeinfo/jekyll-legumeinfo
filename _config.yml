@@ -32,7 +32,7 @@ github_username: legumeinfo
 newsletter: http://eepurl.com/cX_JjL
 
 # Build settings
-remote_theme: legumeinfo/legumeinfo-jekyll-theme@1d0c318
+remote_theme: legumeinfo/legumeinfo-jekyll-theme@main
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
