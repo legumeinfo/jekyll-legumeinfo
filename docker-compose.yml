@@ -1,6 +1,6 @@
 services:
   jekyll:
-    image: jekyll/jekyll:4.2.0
+    image: jekyll/minimal:pages
     volumes:
       - ./:/srv/jekyll
       - bundle-cache:/usr/local/bundle
