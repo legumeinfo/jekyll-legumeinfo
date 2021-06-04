@@ -1,0 +1,57 @@
+---
+layout: default
+title: Tools
+---
+<h1>Tools</h1>
+
+{% if site.data.tools %}
+{% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
+{% for group in groups %}
+<table>
+  <tr>
+    <th>
+        <tr> {{ group.name }} </tr>
+      {% for item in group.items %}
+        <tr>
+          <th><a href="{{ item.url }}">{{ item.name }}</a>: </th>
+          <th>{{ item.description }}</th>
+        </tr>
+      {% endfor %}
+    </th>
+  </tr>
+{% endfor %}
+{% endif %}
+</table>
+
+<!--
+
+{% if site.data.tools %}
+{% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
+{% for group in groups %}
+<ul class="uk-nav uk-nav-default tm-nav">
+  <li class="uk-nav-header">{{ group.name }}</li>
+  {% for item in group.items %}
+    <li><a href="{{ item.url }}">{{ item.name }} {{ item.description }}</a></li>
+  {% endfor %}
+</ul>
+{% endfor %}
+{% endif %}
+-->
+
+<!--
+<div class="tm-sidebar-left uk-visible@m">
+  <h3>Tools</h3>
+  {% if site.data.tools %}
+  {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
+  {% for group in groups %}
+  <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+    <li class="uk-nav-header">{{ group.name }}</li>
+    {% for item in group.items %}
+    <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+  {% endif %}
+</div>
+-->
+
