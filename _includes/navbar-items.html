@@ -15,12 +15,60 @@
   </div>
   {% endif %}
 </li>
-<li><a href="{{ "/tools" | relative_url }}">Tools</a></li>
+<li>
+  <a class="tools" href="{{ "/tools" | relative_url }}">Tools</a>
+  {% if site.data.tools %}
+  {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
+  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .tools; delay-hide: 0;">
+    <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+    {% for group in groups %}
+      {% for item in group.items %}
+        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+      {% endfor %}
+    {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</li>
 <li><a href="{{ "/download" | relative_url }}">Download</a></li>
 <li><a href="{{ "/community" | relative_url }}">Community</a></li>
 <li><a href="{{ "/contact" | relative_url }}">Contact</a></li>
 <li><a href="{{ "/help" | relative_url }}">Help</a></li>
 
 <!--
-<li><a href="{{ "/tools" | relative_url }}">Tools</a></li>
+<li>
+  <a class="tools" href="{{ "/tools" | relative_url }}">Tools</a>
+  {% if site.data.tools %}
+  {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
+  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .tools; delay-hide: 0;">
+    <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+    {% for group in groups %}
+      {% for item in group.items %}
+        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+      {% endfor %}
+    {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</li>
+-->
+
+
+<!--
+<li>
+  <a class="tools" href="{{ "/tools" | relative_url }}">Tools</a>
+  {% if site.data.tools %}
+  {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
+  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .tools; delay-hide: 0;">
+    <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+    {% for group in groups %}
+        <li class="uk-nav-header">{{ group.name }}</li>
+        {% for item in group.items %}
+        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+  {% endif %}
+</li>
 -->
