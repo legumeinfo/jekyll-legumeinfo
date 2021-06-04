@@ -3,20 +3,36 @@ title: Home
 layout: home
 ---
 
-<h1 class="uk-header-large">Welcome to LIS - the Legume Information System</h1>
-<p class="uk-text-lead">LIS contains agronomically useful information in legume species, including genome sequences, genetic maps, genes, gene families, and mapped traits. The "legumeinfo" site makes use of several open-source projects (Tripal, Chado, GBrowse, JBrowse, and many others -- see <a href="https://github.com/legumeinfo" target="_blank">GitHub legumeinfo</a> and <a href="https://github.com/legumefederation" target="_blank">GitHub LegumeFederation</a>), facilitating more efficient collaboration with other research groups using and developing these tools (e.g. <a href="https://peanutbase.org/" target="_blank">PeanutBase</a>, <a href="knowpulse2.usask.ca/portal/" target="_blank">knowpulse</a> and <a href="https://www.coolseasonfoodlegume.org/" target="_blank">coolseasonfoodlegume</a>). <a href="https://legumeinfo.org/contact" target="_blank">Let us know</a> if you have questions, requests, or data to contribute.</p>
+<h3 class="uk-header-large">LIS - the Legume Information System</h3>
+<p class="uk-text-default">LIS integrates genetic and genomic information across many legume species. Access this information by selecting a <a href="{{ "/taxa" | relative_url }}">TAXON</a> (e.g. genus or species), or a <a href="{{ "/tools" | relative_url }}">TOOL</a>  (e.g. sequence search), or for <a href="{{ "https://legumeinfo.org/data/v2/" | absolute_url  }}">DOWNLOAD</a>  via the Data Store. You can also explore most of the data via the rich toolsets at the various legume <a href="{{ "https://mines.legumeinfo.org" | absolute_url }}">InterMine</a> instances (also accessed throughout this website).</p>
 
-<h1>Publications</h1>
-<p>Dash S, Campbell JD, Cannon EK, Cleary AM, Huang W, Kalberer SR, Karingula V, Rice AG, Singh J, Umale PE, Weeks NT, Wilkey AP, Farmer AD, Cannon SB. 2015. Legume information system (LegumeInfo. org): a key component of a set of federated data resources for the legume family. <a href="http://nar.oxfordjournals.org/content/44/D1/D1181" target="_blank">Nucl. Acids Res. (2016) 44:D1181-D1188</a> (doi: 10.1093/nar/gkv1159). <a href="#">(Cited by)</a></p>
-<p>Gonzales MD, Archuleta E, Farmer A, Gajendran K, Grant D, Shoemaker R, Beavis WD, Waugh ME. The Legume Information System (LIS): an integrated information resource for comparative legume biology. <a href="http://nar.oxfordjournals.org/content/33/suppl_1/D660.full" target="_blank">Nucleic Acids Res. (2005) 33:D660-665</a> (doi: 10.1093/nar/gki128). <a href="#">(Cited by)</a></p>
+<div class="uk-button-default">
+  <a href="{{ "/taxa" | relative_url }}">Taxa</a> 
+  <class="uk-text-default"> - Resources for legumes at various taxonomic levels (species, genera, and the family as a whole): data sets, genome browsers, pan-gene sets, synteny visualizations, sequence and keyword search, etc.</class>
+</div>
 
-<h1>Funding and Development</h1>
+<br>
+
+<div class="uk-button-default">
+  <a href="{{ "/tools" | relative_url }}">Tools</a> 
+  <class="uk-text-default"> - Pan-legume tools: sequence and keyword search, gene families and phylogenies, synteny visualization, etc. search, etc.</class>
+</div>
+
+<br>
+
+<div class="uk-button-default">
+  <a href="{{ "https://legumeinfo.org/data/v2/" | absolute_url }}">Download</a> 
+  <class="uk-text-default"> - Browse and download data sets from the LIS Data Store.</class>
+</div>
+
+
+<h3>Funding and Development</h3>
 <p>LIS is funded by the USDA-ARS. LIS is developed and hosted by the National Center for Genome Resources (NCGR) and the USDA-ARS SoyBase and Legume Clade Database group at Ames, IA, with the help of many other researchers.</p>
 <div class="uk-child-width-expand@s uk-flex uk-flex-middle" uk-grid>
-  <a href="http://www.ncgr.org/" target="_blank" title="NCGR website">
-    <img src="{{ "assets/img/ncgr.png" | relative_url }}" />
-  </a>
   <a href="https://www.ars.usda.gov/main/main.htm" target="_blank" title="USDA ARS website">
-    <img src="{{ "assets/img/usda.svg" | relative_url }}" />
+    <img src="{{ "assets/img/usda.svg" | relative_url }}" width="150" height="auto" />
+  </a>
+  <a href="http://www.ncgr.org/" target="_blank" title="NCGR website">
+    <img src="{{ "assets/img/ncgr.png" | relative_url }}" width="200" height="auto" />
   </a>
 </div>
