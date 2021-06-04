@@ -1,0 +1,50 @@
+[
+  {
+    'genus': Arachis,
+    'description': "(peanut: domesticated and wild)"
+  },
+  {
+    'genus': Cajanus,
+    'description': "(pigeonpea)"
+  },
+  {
+    'genus': Cicer,
+    'description': "(chickpea)"
+  },
+  {
+    'genus': Glycine,
+    'description': "(soybean)"
+  },
+  {
+    'genus': Lens,
+    'description': "(lentil)"
+  },
+  {
+    'genus': Lotus,
+    'description': "(birdsfoot trefoil; model species)"
+  },
+  {
+    'genus': Lupinus,
+    'description': "(several species of lupin grain legumes)"
+  },
+  {
+    'genus': Medicago,
+    'description': "(alfalfa/lucerne, barrel medic; model species)"
+  },
+  {
+    'genus': Phaseolus,
+    'description': "(common bean, lima bean, tepary bean, others)"
+  },
+  {
+    'genus': Pisum,
+    'description': "(pea)"
+  },
+  {
+    'genus': Trifolium,
+    'description': "(clovers)"
+  },
+  {
+    'genus': OTHERS,
+    'description': "(Many special-focus species and collections)"
+  },
+]
