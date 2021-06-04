@@ -8,7 +8,7 @@ services:
 ## for Windows hosts
 #   environment:
 #     FORCE_POLLING: 1
-    command: jekyll serve --incremental --livereload --destination /var/tmp/_site
+    command: jekyll serve --incremental --livereload --config _config.dev.yml --destination /var/tmp/_site
     ports:
       - "4000:4000"
       - "35729:35729"
