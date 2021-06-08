@@ -7,33 +7,34 @@ title: Tools
 {% if site.data.tools %}
 {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
 {% for group in groups %}
-<table>
-  <tr>
+  <dl>
     <th>
-        <tr> {{ group.name }} </tr>
+      <dt> {{ group.name }} </dt>
       {% for item in group.items %}
-        <tr>
-          <th><a href="{{ item.url }}">{{ item.name }}</a>: </th>
-          <th>{{ item.description }}</th>
-        </tr>
+        <dd><a href="{{ item.url }}">{{ item.name }}</a>: {{ item.description }}</dd>
       {% endfor %}
     </th>
-  </tr>
+  </dl>
 {% endfor %}
 {% endif %}
-</table>
 
 <!--
 
 {% if site.data.tools %}
 {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
 {% for group in groups %}
-<ul class="uk-nav uk-nav-default tm-nav">
-  <li class="uk-nav-header">{{ group.name }}</li>
-  {% for item in group.items %}
-    <li><a href="{{ item.url }}">{{ item.name }} {{ item.description }}</a></li>
-  {% endfor %}
-</ul>
+<table>
+  <tr>
+    <th>
+      <tr> {{ group.name }} </tr>
+      {% for item in group.items %}
+      <tr>
+        <th><a href="{{ item.url }}">{{ item.name }}</a>: </th>
+        <th>{{ item.description }}</th>
+      </tr>
+      {% endfor %}
+    </th>
+  </tr>
 {% endfor %}
 {% endif %}
 -->

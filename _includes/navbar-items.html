@@ -1,16 +1,17 @@
 <li><a href="{{ "/" | relative_url }}">Home</a></li>
 <li>
-  <a class="taxa" href="{{ "/taxa" | relative_url }}">Taxa</a>
-  {% if site.data.taxa %}
-  {% assign genera = site.data.taxa | group_by: "genus"  %}
-  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .taxa; delay-hide: 0;">
+  <a class="taxa_main" href="{{ "/taxa" | relative_url }}">Taxa</a>
+  {% if site.data.taxa_main %}
+  {% assign genera = site.data.taxa_main | group_by: "genus"  %}
+  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .taxa_main; delay-hide: 0;">
     <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
     {% for genus in genera %}
-      {% assign taxa = genus.items  %}
-      {% for organism in taxa %}
+      {% assign taxa_main = genus.items  %}
+      {% for organism in taxa_main %}
       <li><a href="#">{{ organism.genus }} {{ organism.description }}</a></li>
       {% endfor %}
     {% endfor %}
+    <li><a href="#">OTHERS (Many special-focus species and collections)</a></li>
     </ul>
   </div>
   {% endif %}
