@@ -1,0 +1,81 @@
+---
+- species: Phaseolus vulgaris
+  name_display: common bean
+  accession:
+  - name: G19833
+    description: Andean
+    version:
+    - name: gnm2
+      resources:
+      - resource: GBrowse
+        location: LIS
+        URL: "#"
+      - resource: JBrowse
+        location: LIS
+        URL: "#"
+      - resource: JBrowse
+        location: JGI
+        URL: "#"
+      - resource: Data Store
+        location: LIS
+        URL: "#"
+    - name: gnm1
+      resources:
+      - resource: GBrowse
+        location: LIS
+        URL: "#"
+      - resource: Data Store
+        location: LIS
+        URL: "#"
+  - name: UI111
+    description: Durango; Middle American
+    version:
+    - name: gnm1
+      resources:
+      - resource: GBrowse
+        location: LIS
+        URL: "#"
+      - resource: JBrowse
+        location: JGI
+        URL: "#"
+      - resource: Data Store
+        location: LIS
+        URL: "#"
+- species: Phaseolus acutifolius
+  name_display: tepary bean
+  accession:
+  - name: Frijol Bayo
+    description: Frijol Bayo
+    version:
+    - name: gnm1
+      resources:
+      - resource: GBrowse
+        location: LIS
+        URL: "#"
+      - resource: JBrowse
+        location: LIS
+        URL: "#"
+      - resource: JBrowse
+        location: JGI
+        URL: "#"
+      - resource: Data Store
+        location: LIS
+        URL: "#"
+  - name: W6 15578
+    description: W6 15578
+    version:
+    - name: gnm1
+      resources:
+      - resource: GBrowse
+        location: LIS
+        URL: "#"
+      - resource: JBrowse
+        location: LIS
+        URL: "#"
+      - resource: JBrowse
+        location: JGI
+        URL: "#"
+      - resource: Data Store
+        location: LIS
+        URL: "#"
+
