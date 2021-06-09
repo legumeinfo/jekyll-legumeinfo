@@ -1,0 +1,30 @@
+--- 
+- taxon: "Phaseolus acutifolius"
+- display_name: "tepary bean"
+- resources: 
+  "Genome browsers and genomic data":
+    accessions:
+      "Frijol Bayo":
+        description: "Phaseolus acutifolius accession Frijol Bayo genome, assembly 1"
+        version: 
+          gnm1:
+            instances: 
+              - "GBrowse at LIS":
+                 URL: "#"
+              - "JBrowse at LIS":
+                 URL: "#"
+              - "Download from Data Store":
+                 URL: "#"
+      "W6 15578":
+        description: "Phaseolus acutifolius accession W6 15578 genome, assembly 1"
+        version: 
+          gnm1:
+            instances: 
+              - "GBrowse at LIS":
+                 URL: "#"
+              - "JBrowse at LIS":
+                 URL: "#"
+              - "Download from Data Store":
+                 URL: "#"
+
+

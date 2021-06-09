@@ -1,23 +1,34 @@
----
-- genus: Arachis
+--- 
+- 
   description: "(peanut: domesticated and wild)"
-- genus: Cajanus
-  description: "(pigeonpea)"
-- genus: Cicer
-  description: "(chickpea)"
-- genus: Glycine
-  description: "(soybean)"
-- genus: Lens
-  description: "(lentil)"
-- genus: Lotus
+  genus: Arachis
+- 
+  description: (pigeonpea)
+  genus: Cajanus
+- 
+  description: (chickpea)
+  genus: Cicer
+- 
+  description: (soybean)
+  genus: Glycine
+- 
+  description: (lentil)
+  genus: Lens
+- 
   description: "(birdsfoot trefoil; model species)"
-- genus: Lupinus
+  genus: Lotus
+- 
   description: "(several species of lupin grain legumes)"
-- genus: Medicago
+  genus: Lupinus
+- 
   description: "(alfalfa/lucerne, barrel medic; model species)"
-- genus: Phaseolus
+  genus: Medicago
+- 
   description: "(common bean, lima bean, tepary bean, others)"
-- genus: Pisum
-  description: "(pea)"
-- genus: Trifolium
-  description: "(clovers)"
+  genus: Phaseolus
+- 
+  description: (pea)
+  genus: Pisum
+- 
+  description: (clovers)
+  genus: Trifolium

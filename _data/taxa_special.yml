@@ -1,15 +1,22 @@
----
-- genus: Aeschynomene
+--- 
+- 
   description: "(jointvetch; model for nodule evolution)"
-- genus: Apios
+  genus: Aeschynomene
+- 
   description: "(potato bean: potential tuberous crop)"
-- genus: Bauhinia
+  genus: Apios
+- 
   description: "(orchid tree, in the Cercidoideae subfamily)"
-- genus: Cercis
+  genus: Bauhinia
+- 
   description: "(redbud tree, in the Cercidoideae subfamily)"
-- genus: Chamaecrista
+  genus: Cercis
+- 
   description: "(partridge pea, in the Caesalpinioideae subfamily)"
-- genus: Faidherbia
+  genus: Chamaecrista
+- 
   description: "(apple-ring acacia, in the Caesalpinioideae subfamily)"
-- genus: Zenia
+  genus: Faidherbia
+- 
   description: "(Southeast Asian tree, in the Dialoideae subfamily)"
+  genus: Zenia

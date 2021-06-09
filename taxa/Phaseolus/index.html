@@ -1,0 +1,39 @@
+---
+layout: default
+title: Phaseolus
+---
+<h1>Phaseolus</h1>
+
+<h3>Major genera (containing significant crop and model species)</h3>
+{% if site.data.taxa_main %}
+{% assign genera = site.data.taxa_main | group_by: "genus"  %}
+<dt>
+  {% if site.data.taxa_main %}
+  {% assign genera = site.data.taxa_main | group_by: "genus"  %}
+    {% for genus in genera %}
+      {% assign taxa_main = genus.items  %}
+      {% for organism in taxa_main %}
+      <dd><a href="#">{{ organism.genus }}</a> {{ organism.description }}</dd>
+      {% endfor %}
+    {% endfor %}
+  {% endif %}
+</dt>
+{% endif %}
+
+<h3>Special-focus genera and data sets</h3>
+{% if site.data.taxa_special %}
+{% assign genera = site.data.taxa_special | group_by: "genus"  %}
+<dt>
+  {% if site.data.taxa_special %}
+  {% assign genera = site.data.taxa_special | group_by: "genus"  %}
+    {% for genus in genera %}
+      {% assign taxa_special = genus.items  %}
+      {% for organism in taxa_special %}
+      <dd><a href="#">{{ organism.genus }}</a> {{ organism.description }}</dd>
+      {% endfor %}
+    {% endfor %}
+  {% endif %}
+</dt>
+{% endif %}
+
+

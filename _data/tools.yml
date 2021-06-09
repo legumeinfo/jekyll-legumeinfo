@@ -1,69 +1,81 @@
----
-- category: Browse and Search
-  name: Gene Families
+--- 
+- 
+  category: "Browse and Search"
   description: Description
+  name: "Gene Families"
   url: "#"
-- category: Browse and Search
+- 
+  category: "Browse and Search"
+  description: Description
   name: Maps
+  url: "#"
+- 
+  category: "Browse and Search"
   description: Description
+  name: "QTL Search"
   url: "#"
-- category: Browse and Search
-  name: QTL Search
+- 
+  category: "Browse and Search"
   description: Description
+  name: "Gene Search"
   url: "#"
-- category: Browse and Search
-  name: Gene Search
+- 
+  category: "Browse and Search"
   description: Description
+  name: "Protein Domains"
   url: "#"
-- category: Browse and Search
-  name: Protein Domains
+- 
+  category: "Browse and Search"
+  description: "Browser for dynamically discovering and viewing genomic synteny across selected species."
+  name: "Genome Context Viewer"
+  url: "#"
+- 
+  category: "Browse and Search"
+  description: "Genetic and genomic data for all legume data held at LIS, for browsing and download."
+  name: "Data Store"
+  url: "#"
+- 
+  category: "Browse and Search"
+  description: "InterMine interfaces to legume species and genera at LIS."
+  name: "Legume Mines"
+  url: "#"
+- 
+  category: "Browse and Search"
+  description: "Overviews of data characteristics at LIS: genome assembly sizes, gene counts, BUSCO coverage, etc."
+  name: "DSCensor Data Overviews"
+  url: "#"
+- 
+  category: "Browse and Search"
   description: Description
-  url: "#"
-- category: Browse and Search
-  name: Genome Context Viewer
-  description: Browser for dynamically discovering and viewing genomic synteny across
-    selected species.
-  url: "#"
-- category: Browse and Search
-  name: Data Store
-  description: Genetic and genomic data for all legume data held at LIS, for browsing
-    and download.
-  url: "#"
-- category: Browse and Search
-  name: Legume Mines
-  description: InterMine interfaces to legume species and genera at LIS.
-  url: "#"
-- category: Browse and Search
-  name: DSCensor Data Overviews
-  description: 'Overviews of data characteristics at LIS: genome assembly sizes, gene
-    counts, BUSCO coverage, etc.'
-  url: "#"
-- category: Browse and Search
   name: Expression
+  url: "#"
+- 
+  category: "Browse and Search"
+  description: "Interactive visualization of multiple GWAS and QTL data sets, using synteny to identify potentially conserved association regions between species."
+  name: "ZZBrowse GWAS/QTL"
+  url: "#"
+- 
+  category: "Search sequences and features against sequence databases"
   description: Description
+  name: "BLAST Sequence Search"
   url: "#"
-- category: Browse and Search
-  name: ZZBrowse GWAS/QTL
-  description: Interactive visualization of multiple GWAS and QTL data sets, using
-    synteny to identify potentially conserved association regions between species.
-  url: "#"
-- category: Search sequences and features against sequence databases
-  name: BLAST Sequence Search
+- 
+  category: "Search sequences and features against sequence databases"
   description: Description
+  name: "BLAT Sequence Search"
   url: "#"
-- category: Search sequences and features against sequence databases
-  name: BLAT Sequence Search
+- 
+  category: "Search sequences and features against sequence databases"
   description: Description
+  name: "Keyword Search"
   url: "#"
-- category: Search sequences and features against sequence databases
-  name: Keyword Search
+- 
+  category: "Search sequences and features against sequence databases"
   description: Description
-  url: "#"
-- category: Search sequences and features against sequence databases
   name: SequenceServer
-  description: Description
   url: "#"
-- category: Search sequences and features against sequence databases
-  name: Annotate Your Sequences
+- 
+  category: "Search sequences and features against sequence databases"
   description: Description
+  name: "Annotate Your Sequences"
   url: "#"

@@ -1,0 +1,18 @@
+--- 
+- taxon: "Phaseolus lunatus"
+- display_name: "lima bean"
+- resources: 
+  "Genome browsers and genomic data":
+    accessions:
+      G27455:
+        description: "Phaseolus lunatus accession G27455 genome assembly 1"
+        version: 
+          gnm1:
+            instances:
+              - "GBrowse at LIS":
+                 URL: "#"
+              - "JBrowse at LIS":
+                 URL: "#"
+              - "Download from Data Store":
+                 URL: "#"
+
