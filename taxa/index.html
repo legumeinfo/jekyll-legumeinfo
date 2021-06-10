@@ -8,15 +8,11 @@ title: Taxa
 {% if site.data.taxa_main %}
 {% assign genera = site.data.taxa_main | group_by: "genus"  %}
 <dt>
-  {% if site.data.taxa_main %}
-  {% assign genera = site.data.taxa_main | group_by: "genus"  %}
-    {% for genus in genera %}
-      {% assign taxa_main = genus.items  %}
-      {% for organism in taxa_main %}
-      <dd><a href="#">{{ organism.genus }}</a> {{ organism.description }}</dd>
-      {% endfor %}
+  {% for genus in genera %}
+    {% for organism in genus.items %}
+    <dd><a href={{ "taxa/Phaseolus" | relative_url }}>{{ organism.genus }}</a> {{ organism.description }}</dd>
     {% endfor %}
-  {% endif %}
+  {% endfor %}
 </dt>
 {% endif %}
 
@@ -24,15 +20,11 @@ title: Taxa
 {% if site.data.taxa_special %}
 {% assign genera = site.data.taxa_special | group_by: "genus"  %}
 <dt>
-  {% if site.data.taxa_special %}
-  {% assign genera = site.data.taxa_special | group_by: "genus"  %}
-    {% for genus in genera %}
-      {% assign taxa_special = genus.items  %}
-      {% for organism in taxa_special %}
-      <dd><a href="#">{{ organism.genus }}</a> {{ organism.description }}</dd>
-      {% endfor %}
+  {% for genus in genera %}
+    {% for organism in genus.items %}
+    <dd><a href="#">{{ organism.genus }}</a> {{ organism.description }}</dd>
     {% endfor %}
-  {% endif %}
+  {% endfor %}
 </dt>
 {% endif %}
 

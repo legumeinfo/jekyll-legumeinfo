@@ -2,38 +2,94 @@
 layout: default
 title: Phaseolus
 ---
-<h1>Phaseolus</h1>
 
-<h3>Major genera (containing significant crop and model species)</h3>
-{% if site.data.taxa_main %}
-{% assign genera = site.data.taxa_main | group_by: "genus"  %}
+<h1><i>Phaseolus</i></h1>
+
+<h3>Tools and resources for the genus as a whole</h3>
+{% if site.data.Phaseolus.GENUS.genus_resources %}
 <dt>
-  {% if site.data.taxa_main %}
-  {% assign genera = site.data.taxa_main | group_by: "genus"  %}
-    {% for genus in genera %}
-      {% assign taxa_main = genus.items  %}
-      {% for organism in taxa_main %}
-      <dd><a href="#">{{ organism.genus }}</a> {{ organism.description }}</dd>
-      {% endfor %}
+  {% assign genus_resources = site.data.Phaseolus.GENUS.genus_resources %}
+  {% for item in genus_resources %}
+    {% for feature in item.taxon_features %}
+      <dd><h4><i>{{ feature.name }}</i> ({{ feature.display_name }})</h4></dd>
     {% endfor %}
-  {% endif %}
+    {% for resource in item.resources %}
+      <dd><a href="{{ resource.URL }}">{{ resource.name }}</a> ({{ resource.description }})</dd>
+    {% endfor %}
+  {% endfor %}
 </dt>
 {% endif %}
 
-<h3>Special-focus genera and data sets</h3>
-{% if site.data.taxa_special %}
-{% assign genera = site.data.taxa_special | group_by: "genus"  %}
+<h3>Tools and resources for particular species and accessions</h3>
+
+{% if site.data.Phaseolus.vulgaris.species_resources %}
+{% assign species_resources = site.data.Phaseolus.vulgaris.species_resources %}
 <dt>
-  {% if site.data.taxa_special %}
-  {% assign genera = site.data.taxa_special | group_by: "genus"  %}
-    {% for genus in genera %}
-      {% assign taxa_special = genus.items  %}
-      {% for organism in taxa_special %}
-      <dd><a href="#">{{ organism.genus }}</a> {{ organism.description }}</dd>
+  {% for item in species_resources %}
+    {% for feature in item.taxon_features %}
+      <dd><h4><i>{{ feature.name }}</i> ({{ feature.display_name }})</h4></dd>
+    {% endfor %}
+    {% for resource in item.resources %}
+      <dd>{{ resource.name }}</dd>
+      {% for accession in resource.accessions %}
+        <dd>{{ accession.name }} ({{ accession.description }})</dd>
+        {% for version in accession.versions %}
+          <dd>{{ version.name }}</dd>
+          {% for instance in version.instances %}
+            <dd><a href="{{ instance.URL }}">{{ instance.name }}</a></dd>
+          {% endfor %}
+        {% endfor %}
       {% endfor %}
     {% endfor %}
-  {% endif %}
+  {% endfor %}
 </dt>
 {% endif %}
 
+<br>
+{% if site.data.Phaseolus.lunatus.species_resources %}
+{% assign species_resources = site.data.Phaseolus.lunatus.species_resources %}
+<dt>
+  {% for item in species_resources %}
+    {% for feature in item.taxon_features %}
+      <dd><h4><i>{{ feature.name }}</i> ({{ feature.display_name }})</h4></dd>
+    {% endfor %}
+    {% for resource in item.resources %}
+      <dd>{{ resource.name }}</dd>
+      {% for accession in resource.accessions %}
+        <dd>{{ accession.name }} ({{ accession.description }})</dd>
+        {% for version in accession.versions %}
+          <dd>{{ version.name }}</dd>
+          {% for instance in version.instances %}
+            <dd><a href="{{ instance.URL }}">{{ instance.name }}</a></dd>
+          {% endfor %}
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+</dt>
+{% endif %}
+
+<br>
+{% if site.data.Phaseolus.acutifolius.species_resources %}
+{% assign species_resources = site.data.Phaseolus.acutifolius.species_resources %}
+<dt>
+  {% for item in species_resources %}
+    {% for feature in item.taxon_features %}
+      <dd><h4><i>{{ feature.name }}</i> ({{ feature.display_name }})</h4></dd>
+    {% endfor %}
+    {% for resource in item.resources %}
+      <dd>{{ resource.name }}</dd>
+      {% for accession in resource.accessions %}
+        <dd>{{ accession.name }} ({{ accession.description }})</dd>
+        {% for version in accession.versions %}
+          <dd>{{ version.name }}</dd>
+          {% for instance in version.instances %}
+            <dd><a href="{{ instance.URL }}">{{ instance.name }}</a></dd>
+          {% endfor %}
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+</dt>
+{% endif %}
 

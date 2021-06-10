@@ -1,20 +1,20 @@
 --- 
-- taxon: "Phaseolus"
-- display_name: "Bean species (several domesticated species in this genus)"
+- taxon_features: 
+  - name: "Phaseolus"
+    display_name: "containing several independently domesticated bean species"
 - resources: 
-    instances:
-      - BeanMine:
-        URL: "#"
-        description: "InterMine interface for accessing genetic and genomic data for several species in Phaseolus."
-      - ZZBrowse:
-        URL: "#"
-        description: "Association viewers (QTL, GWAS)"
-      - GCViT:
-        URL: "#"
-        description: "Genetic variation viewer "
-      - "Genome Context Viewer":
-        URL: "#"
-        description: "Browser for dynamically discovering and viewing genomic synteny across selected species."
-      - "Germplasm GIS":
-        URL: "#"
-        description: "Geographic information system viewer, showing collection locations for Phaseolus data held by the U.S. National Plant Germplasm System."
+  - name: BeanMine
+    URL: "#"
+    description: "InterMine interface for accessing genetic and genomic data for several species in Phaseolus."
+  - name: ZZBrowse
+    URL: "#"
+    description: "Association viewers (QTL, GWAS)"
+  - name: GCViT
+    URL: "#"
+    description: "Genetic variation viewer "
+  - name: "Genome Context Viewer"
+    URL: "#"
+    description: "Browser for dynamically discovering and viewing genomic synteny across selected species."
+  - name: "Germplasm GIS"
+    URL: "#"
+    description: "Geographic information system viewer, showing collection locations for Phaseolus data held by the U.S. National Plant Germplasm System."
