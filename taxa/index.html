@@ -10,12 +10,12 @@ title: Taxa
 <dt>
   {% for genus in genera %}
     {% for organism in genus.items %}
-    <dd><a href={{ "taxa/Phaseolus" | relative_url }}>{{ organism.genus }}</a> {{ organism.description }}</dd>
+    <dd><a href="{{ organism.genus }}">{{ organism.genus }}</a> {{ organism.description }}</dd>
     {% endfor %}
   {% endfor %}
 </dt>
 {% endif %}
-
+zzz
 <h3>Special-focus genera and data sets</h3>
 {% if site.data.taxa_special %}
 {% assign genera = site.data.taxa_special | group_by: "genus"  %}

@@ -1,0 +1,20 @@
+--- 
+- taxon_features: 
+  - name: "Glycine"
+    display_name: "containing several independently domesticated bean species"
+- resources: 
+  - name: BeanMine
+    URL: "#"
+    description: "InterMine interface for accessing genetic and genomic data for several species in Glycine."
+  - name: ZZBrowse
+    URL: "#"
+    description: "Association viewers (QTL, GWAS)"
+  - name: GCViT
+    URL: "#"
+    description: "Genetic variation viewer "
+  - name: "Genome Context Viewer"
+    URL: "#"
+    description: "Browser for dynamically discovering and viewing genomic synteny across selected species."
+  - name: "Germplasm GIS"
+    URL: "#"
+    description: "Geographic information system viewer, showing collection locations for Glycine data held by the U.S. National Plant Germplasm System."

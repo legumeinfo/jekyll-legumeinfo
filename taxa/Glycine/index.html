@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Phaseolus
+title: Glycine
 ---
 
-<h2><i>Phaseolus</i></h2>
+<h2><i>Glycine</i></h2>
 
 <h3>Tools and resources for the genus as a whole</h3>
-{% if site.data.Phaseolus.genus_resources %}
-{% assign genus_resources = site.data.Phaseolus.genus_resources %}
+{% if site.data.Glycine.genus_resources %}
+{% assign genus_resources = site.data.Glycine.genus_resources %}
 <dt>
   {% for item in genus_resources %}
     {% for feature in item.taxon_features %}
@@ -22,8 +22,8 @@ title: Phaseolus
 
 <h3>Tools and resources for particular species</h3>
 
-{% if site.data.Phaseolus.species_resources %}
-{% assign species_resources = site.data.Phaseolus.species_resources %}
+{% if site.data.Glycine.species_resources %}
+{% assign species_resources = site.data.Glycine.species_resources %}
 <dt>
   {% for item in species_resources %}
     {% for taxon in item.taxa %}

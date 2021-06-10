@@ -1,0 +1,99 @@
+--- 
+- taxa: 
+  - name: "Phaseolus acutifolius"
+    display_name: "tepary bean"
+    resources: 
+    - name: "Genome browsers and genomic data"
+      accessions:
+        - name: "Frijol Bayo"
+          description: "Phaseolus acutifolius accession Frijol Bayo"
+          versions: 
+            - name: gnm1
+              instances:
+                - name: "GBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at JGI"
+                  URL: "#"
+                - name: "Download from Data Store"
+                  URL: "#"
+        - name: "W6 15578"
+          description: "Phaseolus acutifolius accession W6 15578"
+          versions: 
+            - name: gnm1
+              instances:
+                - name: "GBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at JGI"
+                  URL: "#"
+                - name: "Download from Data Store"
+                  URL: "#"
+  - name: "Phaseolus lunatus"
+    display_name: "lima bean"
+    resources: 
+    - name: "Genome browsers and genomic data"
+      accessions:
+        - name: "G27455"
+          description: "Phaseolus lunatus accession G27455"
+          versions: 
+            - name: gnm1
+              instances:
+                - name: "GBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at JGI"
+                  URL: "#"
+                - name: "Download from Data Store"
+                  URL: "#"
+  - name: "Phaseolus vulgaris"
+    display_name: "common bean"
+    resources: 
+    - name: "Genome browsers and genomic data"
+      accessions:
+        - name: "G19833"
+          description: "Andean"
+          versions: 
+            - name: gnm1
+              instances:
+                - name: "GBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at LIS"
+                  URL: "#"
+                - name: "Download from Data Store"
+                  URL: "#"
+            - name: gnm2 
+              instances:
+                - name: "GBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at JGI"
+                  URL: "#"
+                - name: "Download from Data Store"
+                  URL: "#"
+        - name: "UI111"
+          description: "Durango; Middle American"
+          versions: 
+            - name: gnm1
+              instances:
+                - name: "GBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at JGI"
+                  URL: "#"
+                - name: "Download from Data Store"
+                  URL: "#"
+    - name: "Diversity viewers"
+      accessions:
+        - name: "G19833"
+          description: "Mesoamerican Diversity Panel (MDP) and the Andean Diversity Panel (ADP)"
+          versions: 
+            - name: gnm1
+              instances:
+                - name: "GCViT at LIS"
+                  URL: "#"
