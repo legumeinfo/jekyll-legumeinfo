@@ -6,10 +6,8 @@
   <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .taxa_main; delay-hide: 0;">
     <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
     {% for genus in genera %}
-      {% assign taxa_main = genus.items  %}
-      {% for organism in taxa_main %}
-        <li><a href="taxa/{{ organism.genus }}">{{ organism.genus }} {{ organism.description }}</a></li>
-        {% break %}
+      {% for organism in genus.items %}
+        <li> <a href="/taxa/{{ organism.genus | relative_url }}"> {{ organism.genus }} {{ organism.description }}</a></li>
       {% endfor %}
     {% endfor %}
     <li><a href="#">OTHERS (Many special-focus species and collections)</a></li>
