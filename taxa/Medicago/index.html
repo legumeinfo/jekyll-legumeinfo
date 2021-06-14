@@ -6,8 +6,8 @@ title: Medicago
 <h2><i>Medicago</i></h2>
 
 <h3>Tools and resources for the genus as a whole</h3>
-{% if site.data.Medicago.genus_resources %}
-{% assign genus_resources = site.data.Medicago.genus_resources %}
+{% if site.data.taxa.Medicago.genus_resources %}
+{% assign genus_resources = site.data.taxa.Medicago.genus_resources %}
 <dt>
   {% for item in genus_resources %}
     {% for feature in item.taxon_features %}
@@ -22,8 +22,8 @@ title: Medicago
 
 <h3>Tools and resources for particular species</h3>
 
-{% if site.data.Medicago.species_resources %}
-{% assign species_resources = site.data.Medicago.species_resources %}
+{% if site.data.taxa.Medicago.species_resources %}
+{% assign species_resources = site.data.taxa.Medicago.species_resources %}
 <dt>
   {% for item in species_resources %}
     {% for taxon in item.taxa %}
