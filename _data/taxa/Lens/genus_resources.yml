@@ -1,20 +1,11 @@
 --- 
 - taxon_features: 
   - name: "Lens"
-    display_name: "containing several independently domesticated bean species"
+    display_name: "cultivated lentil. A cool-season crop, originating in Eurasia."
 - resources: 
-  - name: BeanMine
-    URL: "#"
-    description: "InterMine interface for accessing genetic and genomic data for several species in Lens."
-  - name: ZZBrowse
-    URL: "#"
-    description: "Association viewers (QTL, GWAS)"
-  - name: GCViT
-    URL: "#"
-    description: "Genetic variation viewer "
   - name: "Genome Context Viewer"
     URL: "#"
     description: "Browser for dynamically discovering and viewing genomic synteny across selected species."
   - name: "Germplasm GIS"
-    URL: "#"
+    URL: "https://legumeinfo.org/germplasm/map#?zoom=5&maxRecs=1000&taxonQuery=Lens&traitOverlay=&traitScale=global&country=&geocodedOnly&traitExcludeUnchar=false&limitToMapExtent=false&lat=43.36&lng=23.73&mapHeight=430&baseMap=ESRI%20-%20NatGeo%20(default,%20reference%20map)&ne_lat=49.83798245308486&ne_lng=48.0322265625&sw_lat=36.10237644873644&sw_lng=-0.5712890625000001&accessionIdsInclusive=false"
     description: "Geographic information system viewer, showing collection locations for Lens data held by the U.S. National Plant Germplasm System."
