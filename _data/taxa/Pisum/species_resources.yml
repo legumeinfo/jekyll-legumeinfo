@@ -2,11 +2,12 @@
 - taxa: 
   - name: "Pisum sativum"
     display_name: "pea"
+    about: "The common pea, <i>Pisum sativum</i> (also known as the garden or field pea), is an herbaceous annual in the Fabaceae (formerly Leguminosae) family, originally from the Mediterraean basin and Near East. It is a cool season crop now grown in many parts of the world. The garden pea is widely cultivated in Northern temperature regions and is an easily grown vegetable found in many back yard gardens.  Peas are versatile being used as a fresh or canned vegetable, animal fodder and consumed as split dry pulse or dal.  Garden peas are genetically diverse with genetic contributions coming from three subspecies native to the Mediterranean basin and the Near East: Pisum sativum, P. fulvum and P. arvense. P. arvense is commonly used as forage or as a cover crop, where as P. sativum is the primary genetic contributor to the garden pea (including snow peas and sugar-snap peas varieties). Pea is a self-pollinated diploid (2n=14 chromosomes) with a genome of 4,300 Mb/1C, which is about 10-fold larger than the model legume Medicago truncatula, and about 4-fold larger than the soybean genome."
     resources: 
     - name: "Genome browsers and genomic data"
       accessions:
-        - name: "Frijol Bayo"
-          description: "Pisum acutifolius accession Frijol Bayo"
+        - name: "Cameor"
+          description: "Pisum sativum accession Cameor"
           versions: 
             - name: gnm1
               instances:
@@ -17,83 +18,4 @@
                 - name: "JBrowse at JGI"
                   URL: "#"
                 - name: "Download from Data Store"
-                  URL: "#"
-        - name: "W6 15578"
-          description: "Pisum acutifolius accession W6 15578"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-  - name: "Pisum lunatus"
-    display_name: "lima bean"
-    resources: 
-    - name: "Genome browsers and genomic data"
-      accessions:
-        - name: "G27455"
-          description: "Pisum lunatus accession G27455"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-  - name: "Pisum vulgaris"
-    display_name: "common bean"
-    resources: 
-    - name: "Genome browsers and genomic data"
-      accessions:
-        - name: "G19833"
-          description: "Andean"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-            - name: gnm2 
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-        - name: "UI111"
-          description: "Durango; Middle American"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-    - name: "Diversity viewers"
-      accessions:
-        - name: "G19833"
-          description: "Mesoamerican Diversity Panel (MDP) and the Andean Diversity Panel (ADP)"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GCViT at LIS"
-                  URL: "#"
+                  URL: "https://legumeinfo.org/data/v2/Pisum/sativum/"

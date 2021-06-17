@@ -1,12 +1,13 @@
 --- 
 - taxa: 
-  - name: "Lupinus acutifolius"
-    display_name: "tepary bean"
+  - name: "Lupinus albus"
+    display_name: "white lupin"
+    about: "<i>Lupinus albus</i>, commonly known as the white lupin, is a member of the genus Lupinus in the family Fabaceae. It is a traditional pulse cultivated in the Mediterranean region."
     resources: 
     - name: "Genome browsers and genomic data"
       accessions:
-        - name: "Frijol Bayo"
-          description: "Lupinus acutifolius accession Frijol Bayo"
+        - name: "XX"
+          description: "Lupinus albus accession XX"
           versions: 
             - name: gnm1
               instances:
@@ -18,26 +19,14 @@
                   URL: "#"
                 - name: "Download from Data Store"
                   URL: "#"
-        - name: "W6 15578"
-          description: "Lupinus acutifolius accession W6 15578"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-  - name: "Lupinus lunatus"
-    display_name: "lima bean"
+  - name: "Lupinus angustifolius"
+    display_name: "narrow-leafed lupin"
+    about: "<i>Lupinus angustifolius</i> is a species of lupin known by many common names, including narrow-leafed lupin and blue lupin.  It is native to Eurasia and northern Africa and also naturalized in parts of Australia and North America.  It has been cultivated for over 6000 years as a food crop for its edible legume seeds, as a fodder for livestock, and for use as a green manure."
     resources: 
     - name: "Genome browsers and genomic data"
       accessions:
-        - name: "G27455"
-          description: "Lupinus lunatus accession G27455"
+        - name: "XX"
+          description: "Lupinus angustifolius accession XX"
           versions: 
             - name: gnm1
               instances:
@@ -48,52 +37,4 @@
                 - name: "JBrowse at JGI"
                   URL: "#"
                 - name: "Download from Data Store"
-                  URL: "#"
-  - name: "Lupinus vulgaris"
-    display_name: "common bean"
-    resources: 
-    - name: "Genome browsers and genomic data"
-      accessions:
-        - name: "G19833"
-          description: "Andean"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-            - name: gnm2 
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-        - name: "UI111"
-          description: "Durango; Middle American"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-    - name: "Diversity viewers"
-      accessions:
-        - name: "G19833"
-          description: "Mesoamerican Diversity Panel (MDP) and the Andean Diversity Panel (ADP)"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GCViT at LIS"
                   URL: "#"

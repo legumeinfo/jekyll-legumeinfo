@@ -22,7 +22,7 @@ title: Taxa
 <dt>
   {% for genus in genera %}
     {% for organism in genus.items %}
-    <dd><a href="#">{{ organism.genus }}</a> {{ organism.description }}</dd>
+    <dd><a href="{{ organism.genus }}">{{ organism.genus }}</a> {{ organism.description }}</dd>
     {% endfor %}
   {% endfor %}
 </dt>

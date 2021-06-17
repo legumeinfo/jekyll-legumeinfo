@@ -1,12 +1,13 @@
 --- 
 - taxa: 
-  - name: "Medicago acutifolius"
-    display_name: "tepary bean"
+  - name: "Medicago sativa"
+    display_name: "alfalfa; lucerne"
+    about: "<i>Medicago sativa</i>, commonly called alfalfa, is a forage crop legume.  It is a member of the Trifolieae tribe, and a close relative of the reference legume <i>Medicago truncatula</i>."
     resources: 
     - name: "Genome browsers and genomic data"
       accessions:
-        - name: "Frijol Bayo"
-          description: "Medicago acutifolius accession Frijol Bayo"
+        - name: "XX"
+          description: "Medicago sativa accession XX"
           versions: 
             - name: gnm1
               instances:
@@ -19,7 +20,7 @@
                 - name: "Download from Data Store"
                   URL: "#"
         - name: "W6 15578"
-          description: "Medicago acutifolius accession W6 15578"
+          description: "Medicago sativa accession XX"
           versions: 
             - name: gnm1
               instances:
@@ -31,13 +32,14 @@
                   URL: "#"
                 - name: "Download from Data Store"
                   URL: "#"
-  - name: "Medicago lunatus"
-    display_name: "lima bean"
+  - name: "Medicago truncatula"
+    display_name: "barrel medic"
+    about: "<i>Medicago truncatula</i>, a close relative of alfalfa (<i>M. sativa</i>), is widely used as a model in legume biology.  It is physically small in stature, with a small genome, and has a short generation-to-generation time."
     resources: 
     - name: "Genome browsers and genomic data"
       accessions:
-        - name: "G27455"
-          description: "Medicago lunatus accession G27455"
+        - name: "XX"
+          description: "Medicago truncatula accession XX"
           versions: 
             - name: gnm1
               instances:
@@ -48,52 +50,4 @@
                 - name: "JBrowse at JGI"
                   URL: "#"
                 - name: "Download from Data Store"
-                  URL: "#"
-  - name: "Medicago vulgaris"
-    display_name: "common bean"
-    resources: 
-    - name: "Genome browsers and genomic data"
-      accessions:
-        - name: "G19833"
-          description: "Andean"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-            - name: gnm2 
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-        - name: "UI111"
-          description: "Durango; Middle American"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-    - name: "Diversity viewers"
-      accessions:
-        - name: "G19833"
-          description: "Mesoamerican Diversity Panel (MDP) and the Andean Diversity Panel (ADP)"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GCViT at LIS"
                   URL: "#"

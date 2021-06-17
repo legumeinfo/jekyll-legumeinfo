@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Phaseolus
+title: Apios
 ---
 
-<h2><i>Phaseolus</i></h2>
+<h2><i>Apios</i></h2>
 
 <h3>Tools and resources for the genus as a whole</h3>
-{% if site.data.taxa.Phaseolus.genus_resources %}
-{% assign genus_resources = site.data.taxa.Phaseolus.genus_resources %}
+{% if site.data.taxa.Apios.genus_resources %}
+{% assign genus_resources = site.data.taxa.Apios.genus_resources %}
 <dt>
   {% for item in genus_resources %}
     {% for feature in item.taxon_features %}
@@ -21,8 +21,8 @@ title: Phaseolus
 {% endif %}
 
 <h3>Tools and resources for particular species</h3>
-{% if site.data.taxa.Phaseolus.species_resources %}
-{% assign species_resources = site.data.taxa.Phaseolus.species_resources %}
+{% if site.data.taxa.Apios.species_resources %}
+{% assign species_resources = site.data.taxa.Apios.species_resources %}
 <dt>
   {% for item in species_resources %}
     {% for taxon in item.taxa %}

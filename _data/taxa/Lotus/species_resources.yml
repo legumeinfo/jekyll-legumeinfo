@@ -1,12 +1,13 @@
 --- 
 - taxa: 
-  - name: "Lotus acutifolius"
-    display_name: "tepary bean"
+  - name: "Lotus japonicus"
+    display_name: "bird's-foot trefoil"
+    about: "<i>Lotus japonicus</i>, a forage crop (much like clover), is widely used as a model in legume biology.  It is physically small in stature, with a small genome, and a short generation time, and it is relatively easily transformable (for gene functional studies)."
     resources: 
     - name: "Genome browsers and genomic data"
       accessions:
-        - name: "Frijol Bayo"
-          description: "Lotus acutifolius accession Frijol Bayo"
+        - name: "Gifu"
+          description: "Lotus japonicus accession Gifu"
           versions: 
             - name: gnm1
               instances:
@@ -18,10 +19,7 @@
                   URL: "#"
                 - name: "Download from Data Store"
                   URL: "#"
-        - name: "W6 15578"
-          description: "Lotus acutifolius accession W6 15578"
-          versions: 
-            - name: gnm1
+            - name: gnm2
               instances:
                 - name: "GBrowse at LIS"
                   URL: "#"
@@ -30,70 +28,4 @@
                 - name: "JBrowse at JGI"
                   URL: "#"
                 - name: "Download from Data Store"
-                  URL: "#"
-  - name: "Lotus lunatus"
-    display_name: "lima bean"
-    resources: 
-    - name: "Genome browsers and genomic data"
-      accessions:
-        - name: "G27455"
-          description: "Lotus lunatus accession G27455"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-  - name: "Lotus vulgaris"
-    display_name: "common bean"
-    resources: 
-    - name: "Genome browsers and genomic data"
-      accessions:
-        - name: "G19833"
-          description: "Andean"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-            - name: gnm2 
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-        - name: "UI111"
-          description: "Durango; Middle American"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-    - name: "Diversity viewers"
-      accessions:
-        - name: "G19833"
-          description: "Mesoamerican Diversity Panel (MDP) and the Andean Diversity Panel (ADP)"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GCViT at LIS"
                   URL: "#"

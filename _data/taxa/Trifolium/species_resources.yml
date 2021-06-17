@@ -1,12 +1,13 @@
 --- 
 - taxa: 
-  - name: "Trifolium acutifolius"
-    display_name: "tepary bean"
+  - name: "Trifolium pratense"
+    display_name: "red clover"
+    about: "Red clover (<i>Trifolium pratense</i>) is a perennial legume species native to Northwest Africa, Europe and Western Asia.  Today, red clover is found in many regions around the world including the Americas and Australia.  Unlike other legume species, red clover is an outcrossing species due to a strong gametophytic incompatibility system.  Red clover is a widely grown fodder legume crop and is valued for its role in increasing soil fertility by nitrogen fixation."
     resources: 
     - name: "Genome browsers and genomic data"
       accessions:
-        - name: "Frijol Bayo"
-          description: "Trifolium acutifolius accession Frijol Bayo"
+        - name: "MilvusB"
+          description: "Trifolium pratense accession MilvusB"
           versions: 
             - name: gnm1
               instances:
@@ -17,27 +18,15 @@
                 - name: "JBrowse at JGI"
                   URL: "#"
                 - name: "Download from Data Store"
-                  URL: "#"
-        - name: "W6 15578"
-          description: "Trifolium acutifolius accession W6 15578"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-  - name: "Trifolium lunatus"
-    display_name: "lima bean"
+                  URL: "https://legumeinfo.org/data/v2/Trifolium/pratense/"
+  - name: "Trifolium repens"
+    display_name: "white clover"
+    about: "White clover (<i>Trifolium repens</i>), also known as Dutch clover, is a perennial legume species native to North America, West Japan and Europe.  Today, white clover is found worldwide and is a highly nutritious forage legume crop for livestock."
     resources: 
     - name: "Genome browsers and genomic data"
       accessions:
-        - name: "G27455"
-          description: "Trifolium lunatus accession G27455"
+        - name: "XX"
+          description: "Trifolium repens accession XX"
           versions: 
             - name: gnm1
               instances:
@@ -48,52 +37,4 @@
                 - name: "JBrowse at JGI"
                   URL: "#"
                 - name: "Download from Data Store"
-                  URL: "#"
-  - name: "Trifolium vulgaris"
-    display_name: "common bean"
-    resources: 
-    - name: "Genome browsers and genomic data"
-      accessions:
-        - name: "G19833"
-          description: "Andean"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-            - name: gnm2 
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-        - name: "UI111"
-          description: "Durango; Middle American"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-    - name: "Diversity viewers"
-      accessions:
-        - name: "G19833"
-          description: "Mesoamerican Diversity Panel (MDP) and the Andean Diversity Panel (ADP)"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GCViT at LIS"
                   URL: "#"

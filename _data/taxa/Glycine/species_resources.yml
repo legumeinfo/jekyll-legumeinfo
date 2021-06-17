@@ -2,11 +2,12 @@
 - taxa: 
   - name: "Glycine max"
     display_name: "soybean"
+    about: "Soybean is the predominant oil-seed legume; it produces a high-protein meal and has many industrial uses."
     resources: 
     - name: "Genome browsers and genomic data"
       accessions:
-        - name: "Frijol Bayo"
-          description: "Glycine acutifolius accession Frijol Bayo"
+        - name: "Williams 82"
+          description: "Glycine max accession Williams 82"
           versions: 
             - name: gnm1
               instances:
@@ -18,10 +19,23 @@
                   URL: "#"
                 - name: "Download from Data Store"
                   URL: "#"
-        - name: "W6 15578"
-          description: "Glycine acutifolius accession W6 15578"
+        - name: "Williams 82"
+          description: "Glycine max accession Williams 82"
           versions: 
-            - name: gnm1
+            - name: gnm2
+              instances:
+                - name: "GBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at JGI"
+                  URL: "#"
+                - name: "Download from Data Store"
+                  URL: "#"
+        - name: "Williams 82"
+          description: "Glycine max accession Williams 82"
+          versions: 
+            - name: gnm4
               instances:
                 - name: "GBrowse at LIS"
                   URL: "#"
@@ -33,11 +47,12 @@
                   URL: "#"
   - name: "Glycine soja"
     display_name: "wild soybean"
+    about: "XX A ~one-paragraph description"
     resources: 
     - name: "Genome browsers and genomic data"
       accessions:
-        - name: "G27455"
-          description: "Glycine lunatus accession G27455"
+        - name: "PI 483463"
+          description: "Glycine soja accession PI 483463"
           versions: 
             - name: gnm1
               instances:
@@ -49,34 +64,8 @@
                   URL: "#"
                 - name: "Download from Data Store"
                   URL: "#"
-  - name: "Glycine vulgaris"
-    display_name: "common bean"
-    resources: 
-    - name: "Genome browsers and genomic data"
-      accessions:
-        - name: "G19833"
-          description: "Andean"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-            - name: gnm2 
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-        - name: "UI111"
-          description: "Durango; Middle American"
+        - name: "W05"
+          description: "Glycine soja accession W05"
           versions: 
             - name: gnm1
               instances:
@@ -87,13 +76,4 @@
                 - name: "JBrowse at JGI"
                   URL: "#"
                 - name: "Download from Data Store"
-                  URL: "#"
-    - name: "Diversity viewers"
-      accessions:
-        - name: "G19833"
-          description: "Mesoamerican Diversity Panel (MDP) and the Andean Diversity Panel (ADP)"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GCViT at LIS"
                   URL: "#"

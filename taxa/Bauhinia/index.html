@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Lens
+title: Bauhinia
 ---
 
-<h2><i>Lens</i></h2>
+<h2><i>Bauhinia</i></h2>
 
 <h3>Tools and resources for the genus as a whole</h3>
-{% if site.data.taxa.Lens.genus_resources %}
-{% assign genus_resources = site.data.taxa.Lens.genus_resources %}
+{% if site.data.taxa.Bauhinia.genus_resources %}
+{% assign genus_resources = site.data.taxa.Bauhinia.genus_resources %}
 <dt>
   {% for item in genus_resources %}
     {% for feature in item.taxon_features %}
@@ -21,12 +21,13 @@ title: Lens
 {% endif %}
 
 <h3>Tools and resources for particular species</h3>
-{% if site.data.taxa.Lens.species_resources %}
-{% assign species_resources = site.data.taxa.Phaseolus.species_resources %}
+{% if site.data.taxa.Bauhinia.species_resources %}
+{% assign species_resources = site.data.taxa.Bauhinia.species_resources %}
 <dt>
   {% for item in species_resources %}
     {% for taxon in item.taxa %}
       <dd><strong>{{ taxon.name }}</strong> ({{ taxon.display_name }})</dd>
+      <dd>{{ taxon.about }}</dd>
       {% for resource in taxon.resources %}
         <dd><u>{{ resource.name }}</u></dd>
         {% for accession in resource.accessions %}
