@@ -1,8 +1,8 @@
 --- 
-- taxon_features: 
+taxon_features: 
   - name: "Cajanus"
     display_name: "containing several independently domesticated bean species"
-- resources: 
+resources: 
   - name: BeanMine
     URL: "#"
     description: "InterMine interface for accessing genetic and genomic data for several species in Cajanus."

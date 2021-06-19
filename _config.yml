@@ -34,6 +34,7 @@ newsletter: http://eepurl.com/cX_JjL
 # Build settings
 local_theme: legumeinfo-jekyll-theme
 plugins:
+  - jekyll-datapage-generator
   - jekyll-feed
   - jekyll-local-theme
 
@@ -58,3 +59,67 @@ exclude:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+#### jekyll-datapage-generator config
+
+# Manually specifying dir to allow capitalized directory name
+#page_gen-dirs: true
+
+page_gen:
+  - data: taxa.Arachis.genus_resources.taxon_features
+    template: taxon
+    dir: taxa/Arachis
+# Using "dir: taxa/<genus>" + 'index.html' instead of "page_gen-dirs: true" + "name:" to allow mixed case
+#   name: name
+    name_expr: "'index'"
+    title: name
+#   debug: true
+  - data: taxa.Cajanus.genus_resources.taxon_features
+    template: taxon
+    dir: taxa/Cajanus
+    name_expr: "'index'"
+    title: name
+  - data: taxa.Cicer.genus_resources.taxon_features
+    template: taxon
+    dir: taxa/Cicer
+    name_expr: "'index'"
+    title: name
+  - data: taxa.Glycine.genus_resources.taxon_features
+    template: taxon
+    dir: taxa/Glycine
+    name_expr: "'index'"
+    title: name
+  - data: taxa.Lens.genus_resources.taxon_features
+    template: taxon
+    dir: taxa/Lens
+    name_expr: "'index'"
+    title: name
+  - data: taxa.Lotus.genus_resources.taxon_features
+    template: taxon
+    dir: taxa/Lotus
+    name_expr: "'index'"
+    title: name
+  - data: taxa.Lupinus.genus_resources.taxon_features
+    template: taxon
+    dir: taxa/Lupinus
+    name_expr: "'index'"
+    title: name
+  - data: taxa.Medicago.genus_resources.taxon_features
+    template: taxon
+    dir: taxa/Medicago
+    name_expr: "'index'"
+    title: name
+  - data: taxa.Phaseolus.genus_resources.taxon_features
+    template: taxon
+    dir: taxa/Phaseolus
+    name_expr: "'index'"
+    title: name
+  - data: taxa.Pisum.genus_resources.taxon_features
+    template: taxon
+    dir: taxa/Pisum
+    name_expr: "'index'"
+    title: name
+  - data: taxa.Trifolium.genus_resources.taxon_features
+    template: taxon
+    dir: taxa/Trifolium
+    name_expr: "'index'"
+    title: name

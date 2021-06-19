@@ -1,8 +1,8 @@
 --- 
-- taxon_features: 
+taxon_features:
   - name: "Arachis"
     display_name: "XX goes well with Cracker Jax"
-- resources: 
+resources:
   - name: BeanMine
     URL: "#"
     description: "InterMine interface for accessing genetic and genomic data for several species in Arachis."
