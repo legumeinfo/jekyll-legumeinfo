@@ -1,8 +1,22 @@
 --- 
-- taxon_features: 
+taxon_features: 
   - name: "Trifolium"
+<<<<<<< HEAD
     display_name: "containing several species used as forage crops, cover crops, and green manures"
 - resources: 
+=======
+    display_name: "containing several independently domesticated bean species"
+resources: 
+  - name: BeanMine
+    URL: "#"
+    description: "InterMine interface for accessing genetic and genomic data for several species in Trifolium."
+  - name: ZZBrowse
+    URL: "#"
+    description: "Association viewers (QTL, GWAS)"
+  - name: GCViT
+    URL: "#"
+    description: "Genetic variation viewer "
+>>>>>>> 1328fdb83d0c520047d6fd9f44fcbd9d905aa706
   - name: "Genome Context Viewer"
     URL: "https://legumeinfo.org/gcv2/gene;lis=tripr.gene26301"
     description: "Browser for dynamically discovering and viewing genomic synteny across selected species."

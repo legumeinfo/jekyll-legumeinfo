@@ -1,10 +1,16 @@
 --- 
-- taxon_features: 
+taxon_features: 
   - name: "Lupinus"
     display_name: "containing several independently domesticated bean species"
+<<<<<<< HEAD
 - resources: 
   - name: LupinMine
     URL: "https://mines.legumeinfo.org/lupinmine/begin.do"
+=======
+resources: 
+  - name: BeanMine
+    URL: "#"
+>>>>>>> 1328fdb83d0c520047d6fd9f44fcbd9d905aa706
     description: "InterMine interface for accessing genetic and genomic data for several species in Lupinus."
   - name: "Genome Context Viewer"
     URL: "https://legumeinfo.org/gcv2/gene;lis=lupal.Lalb_Chr24g0398121?algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&sources=lis&bregexp=med&border=chromosome&regexp=&order=distance"

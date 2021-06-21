@@ -1,10 +1,17 @@
 --- 
-- taxon_features: 
+taxon_features: 
   - name: "Medicago"
+<<<<<<< HEAD
     display_name: "<i>M. truncatula</i> (barrel medic) is widely used as a biological model. <i>M. sativa</i> (alfalfa) is an important forage crop."
 - resources: 
   - name: MedicMine
     URL: "https://mines.legumeinfo.org/medicmine/begin.do"
+=======
+    display_name: "containing several independently domesticated bean species"
+resources: 
+  - name: BeanMine
+    URL: "#"
+>>>>>>> 1328fdb83d0c520047d6fd9f44fcbd9d905aa706
     description: "InterMine interface for accessing genetic and genomic data for several species in Medicago."
     description: "Genetic variation viewer "
   - name: "Genome Context Viewer"

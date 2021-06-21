@@ -34,6 +34,7 @@ newsletter: http://eepurl.com/cX_JjL
 # Build settings
 local_theme: legumeinfo-jekyll-theme
 plugins:
+  - jekyll-datapage-generator
   - jekyll-feed
   - jekyll-local-theme
 
@@ -58,3 +59,12 @@ exclude:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+#### jekyll-datapage-generator config
+
+page_gen:
+  - data: taxa_main
+    template: taxon
+    dir: taxa
+    name: genus
+    index_files: true
+#   debug: true

@@ -1,8 +1,22 @@
 --- 
-- taxon_features: 
+taxon_features: 
   - name: "Cajanus"
+<<<<<<< HEAD
     display_name: "pigeonpea; an important warm-season legume, particularly in semi-arid tropical regions"
 - resources: 
+=======
+    display_name: "containing several independently domesticated bean species"
+resources: 
+  - name: BeanMine
+    URL: "#"
+    description: "InterMine interface for accessing genetic and genomic data for several species in Cajanus."
+  - name: ZZBrowse
+    URL: "#"
+    description: "Association viewers (QTL, GWAS)"
+  - name: GCViT
+    URL: "#"
+    description: "Genetic variation viewer "
+>>>>>>> 1328fdb83d0c520047d6fd9f44fcbd9d905aa706
   - name: "Genome Context Viewer"
     URL: "https://legumeinfo.org/gcv2/gene;lis=cajca.C.cajan_19389?q=C.cajan_19389&sources=lis&algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&bregexp=&border=chromosome&regexp=&order=distance"
     description: "Browser for dynamically discovering and viewing genomic synteny across selected species."

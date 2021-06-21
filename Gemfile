@@ -15,6 +15,8 @@ gem "github-pages", group: :jekyll_plugins
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-local-theme", "~> 0.1.1"
+  # need > v1.3.0 to work around https://github.com/avillafiorita/jekyll-datapage_gen/pull/84
+  gem "jekyll-datapage-generator", git: "https://github.com/avillafiorita/jekyll-datapage_gen.git", ref: "23e1299"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

@@ -1,8 +1,22 @@
 --- 
-- taxon_features: 
+taxon_features: 
   - name: "Pisum"
+<<<<<<< HEAD
     display_name: "a cool-season crop, originating in central Eurasia, grown both as a green vegetable and as a dry pulse crop"
 - resources: 
+=======
+    display_name: "containing several independently domesticated bean species"
+resources: 
+  - name: BeanMine
+    URL: "#"
+    description: "InterMine interface for accessing genetic and genomic data for several species in Pisum."
+  - name: ZZBrowse
+    URL: "#"
+    description: "Association viewers (QTL, GWAS)"
+  - name: GCViT
+    URL: "#"
+    description: "Genetic variation viewer "
+>>>>>>> 1328fdb83d0c520047d6fd9f44fcbd9d905aa706
   - name: "Genome Context Viewer"
     URL: "https://legumeinfo.org/gcv2/gene;lis=pissa.Cameor.gnm1.ann1.Psat1g029560?algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&sources=lis&bregexp=&border=chromosome&regexp=&order=distance"
     description: "Browser for dynamically discovering and viewing genomic synteny across selected species."

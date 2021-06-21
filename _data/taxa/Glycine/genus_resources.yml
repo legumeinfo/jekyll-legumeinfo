@@ -1,10 +1,17 @@
 --- 
-- taxon_features: 
+taxon_features: 
   - name: "Glycine"
+<<<<<<< HEAD
     display_name: "soybean and wild soybean, originating in Asia."
 - resources: 
   - name: SoyMine
     URL: "https://mines.legumeinfo.org/soymine/begin.do"
+=======
+    display_name: "containing several independently domesticated bean species"
+resources: 
+  - name: BeanMine
+    URL: "#"
+>>>>>>> 1328fdb83d0c520047d6fd9f44fcbd9d905aa706
     description: "InterMine interface for accessing genetic and genomic data for several species in Glycine."
   - name: ZZBrowse
     URL: "https://zzbrowse.legumeinfo.org/?tab=WhGen&datasets=Soybean%20GWAS&chr=Gm01&selected=100000&window=250000&datasets2=Cowpea%20GWAS-QTL&chr2=Vu01&selected2=100000&window2=250000"

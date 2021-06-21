@@ -1,10 +1,17 @@
 --- 
-- taxon_features: 
+taxon_features: 
   - name: "Cicer"
+<<<<<<< HEAD
     display_name: "chickpea and wild relatives; a cool-season legume, domesticated in Eurasia"
 - resources: 
   - name: ChickpeaMine
     URL: "https://mines.legumeinfo.org/chickpeamine/begin.do"
+=======
+    display_name: "containing several independently domesticated bean species"
+resources: 
+  - name: BeanMine
+    URL: "#"
+>>>>>>> 1328fdb83d0c520047d6fd9f44fcbd9d905aa706
     description: "InterMine interface for accessing genetic and genomic data for several species in Cicer."
   - name: GCViT
     URL: "https://gcvit.cicer.legumeinfo.org"
