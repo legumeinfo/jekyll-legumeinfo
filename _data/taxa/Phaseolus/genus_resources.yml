@@ -1,5 +1,5 @@
 --- 
-taxon_features: 
+- taxon_features: 
   - name: "Phaseolus"
     display_name: "center of origin in Central- and South America; containing several independently domesticated bean species"
 - resources: 

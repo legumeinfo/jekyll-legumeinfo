@@ -1,5 +1,5 @@
 --- 
-taxon_features: 
+- taxon_features: 
   - name: "Cajanus"
     display_name: "pigeonpea; an important warm-season legume, particularly in semi-arid tropical regions"
 - resources: 

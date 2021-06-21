@@ -1,5 +1,5 @@
 --- 
-taxon_features:
+- taxon_features:
   - name: "Arachis"
     display_name: "warm-season oilseed crop, indigenous to South America."
 - resources: 

@@ -1,5 +1,5 @@
 --- 
-taxon_features: 
+- taxon_features: 
   - name: "Pisum"
     display_name: "a cool-season crop, originating in central Eurasia, grown both as a green vegetable and as a dry pulse crop"
 - resources: 

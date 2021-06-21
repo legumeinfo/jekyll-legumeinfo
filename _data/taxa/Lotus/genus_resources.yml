@@ -1,5 +1,5 @@
 --- 
-taxon_features: 
+- taxon_features: 
   - name: "Lotus"
     display_name: "containing several independently domesticated bean species"
 - resources: 

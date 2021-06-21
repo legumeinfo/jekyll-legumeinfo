@@ -1,5 +1,5 @@
 --- 
-taxon_features: 
+- taxon_features: 
   - name: "Cicer"
     display_name: "chickpea and wild relatives; a cool-season legume, domesticated in Eurasia"
 - resources: 

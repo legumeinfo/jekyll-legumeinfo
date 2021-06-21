@@ -1,5 +1,5 @@
 --- 
-taxon_features: 
+- taxon_features: 
   - name: "Trifolium"
     display_name: "containing several species used as forage crops, cover crops, and green manures"
 - resources: 

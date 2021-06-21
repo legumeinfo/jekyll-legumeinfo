@@ -1,5 +1,5 @@
 --- 
-taxon_features: 
+- taxon_features: 
   - name: "Medicago"
     display_name: "<i>M. truncatula</i> (barrel medic) is widely used as a biological model. <i>M. sativa</i> (alfalfa) is an important forage crop."
 - resources: 

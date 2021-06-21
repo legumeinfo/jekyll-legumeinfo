@@ -1,5 +1,5 @@
 --- 
-taxon_features: 
+- taxon_features: 
   - name: "Glycine"
     display_name: "soybean and wild soybean, originating in Asia."
 - resources: 
