@@ -1,17 +1,10 @@
 --- 
 taxon_features:
   - name: "Arachis"
-<<<<<<< HEAD
     display_name: "warm-season oilseed crop, indigenous to South America."
 - resources: 
   - name: PeanutMine
     URL: "https://mines.legumeinfo.org/peanutmine/begin.do"
-=======
-    display_name: "XX goes well with Cracker Jax"
-resources:
-  - name: BeanMine
-    URL: "#"
->>>>>>> 1328fdb83d0c520047d6fd9f44fcbd9d905aa706
     description: "InterMine interface for accessing genetic and genomic data for several species in Arachis."
   - name: ZZBrowse
     URL: "https://zzbrowse.legumeinfo.org/?tab=WhGen&datasets=Peanut%20GWAS&chr=Arahy.01&selected=100000&window=250000&datasets2=Soybean%20GWAS&chr2=Gm01&selected2=100000&window2=250000"

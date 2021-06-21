@@ -1,13 +1,8 @@
 --- 
 taxon_features: 
   - name: "Phaseolus"
-<<<<<<< HEAD
     display_name: "center of origin in Central- and South America; containing several independently domesticated bean species"
 - resources: 
-=======
-    display_name: "containing several independently domesticated bean species"
-resources: 
->>>>>>> 1328fdb83d0c520047d6fd9f44fcbd9d905aa706
   - name: BeanMine
     URL: "https://mines.legumeinfo.org/beanmine/begin.do"
     description: "InterMine interface for accessing genetic and genomic data for several species in Phaseolus."
