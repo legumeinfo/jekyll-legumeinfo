@@ -5,8 +5,8 @@ title: Taxa
 <h1>Taxa</h1>
 
 <h3>Major genera (containing significant crop and model species)</h3>
-{% if site.data.taxa_main %}
-{% assign genera = site.data.taxa_main | group_by: "genus"  %}
+{% if site.data.taxon_list %}
+{% assign genera = site.data.taxon_list | group_by: "genus"  %}
 <dt>
   {% for element in genera %}
     {% for item in element.items %}

@@ -62,7 +62,7 @@ exclude:
 #### jekyll-datapage-generator config
 
 page_gen:
-  - data: taxa_main
+  - data: taxon_list
     template: taxon
     dir: taxa
     name: genus

@@ -1,9 +1,9 @@
 <li><a href="{{ "/" | relative_url }}">Home</a></li>
 <li>
-  <a class="taxa_main" href="{{ "/taxa" | relative_url }}">Taxa</a>
-  {% if site.data.taxa_main %}
-  {% assign genera = site.data.taxa_main | group_by: "genus"  %}
-  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .taxa_main; delay-hide: 0;">
+  <a class="taxon_list" href="{{ "/taxa" | relative_url }}">Taxa</a>
+  {% if site.data.taxon_list %}
+  {% assign genera = site.data.taxon_list | group_by: "genus"  %}
+  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .taxon_list; delay-hide: 0;">
     <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
     {% for genus in genera %}
       {% for organism in genus.items %}
