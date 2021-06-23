@@ -48,7 +48,7 @@
                   URL: "#"
   - name: "Glycine soja"
     display_name: "wild soybean"
-    image_name: glyso
+    image_name: 
     about: "XX A ~one-paragraph description"
     resources: 
     - name: "Genome browsers and genomic data"
