@@ -2,6 +2,7 @@
 - taxa: 
   - name: "Aeschynomene evenia"
     display_name: "shrubby jointvetch"
+    image_name: 
     about: "The legume genus <i>Aeschynomene</i> L. includes approximately 150 tropical and subtropical species, part of them having a semi-aquatic lifestyle. Some hydrophytic Aeschynomene species display unusual symbiotic features such as stem nodulation and the presence of a Nod factor-independent infection process with some Bradyrhizobium strains."
     resources: 
     - name: "Genome browsers and genomic data"

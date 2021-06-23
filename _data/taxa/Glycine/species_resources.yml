@@ -2,6 +2,7 @@
 - taxa: 
   - name: "Glycine max"
     display_name: "soybean"
+    image_name: glyma
     about: "Soybean is the predominant oil-seed legume; it produces a high-protein meal and has many industrial uses."
     resources: 
     - name: "Genome browsers and genomic data"
@@ -47,6 +48,7 @@
                   URL: "#"
   - name: "Glycine soja"
     display_name: "wild soybean"
+    image_name: glyso
     about: "XX A ~one-paragraph description"
     resources: 
     - name: "Genome browsers and genomic data"

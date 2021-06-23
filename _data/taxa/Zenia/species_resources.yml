@@ -2,6 +2,7 @@
 - taxa: 
   - name: XXGenus species
     display_name: XXcommon name
+    image_name: 
     about: "XX A ~one-paragraph description"
     resources: 
     - name: "Genome browsers and genomic data"

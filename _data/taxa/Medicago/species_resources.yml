@@ -2,6 +2,7 @@
 - taxa: 
   - name: "Medicago sativa"
     display_name: "alfalfa; lucerne"
+    image_name: medsa
     about: "<i>Medicago sativa</i>, commonly called alfalfa, is a forage crop legume.  It is a member of the Trifolieae tribe, and a close relative of the reference legume <i>Medicago truncatula</i>."
     resources: 
     - name: "Genome browsers and genomic data"
@@ -34,6 +35,7 @@
                   URL: "#"
   - name: "Medicago truncatula"
     display_name: "barrel medic"
+    image_name: medtr
     about: "<i>Medicago truncatula</i>, a close relative of alfalfa (<i>M. sativa</i>), is widely used as a model in legume biology.  It is physically small in stature, with a small genome, and has a short generation-to-generation time."
     resources: 
     - name: "Genome browsers and genomic data"

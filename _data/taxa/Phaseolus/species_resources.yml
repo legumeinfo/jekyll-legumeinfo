@@ -2,6 +2,7 @@
 - taxa: 
   - name: "Phaseolus acutifolius"
     display_name: "tepary bean"
+    image_name: 
     about: "XX A ~one-paragraph description"
     resources: 
     - name: "Genome browsers and genomic data"
@@ -34,6 +35,7 @@
                   URL: "#"
   - name: "Phaseolus lunatus"
     display_name: "lima bean"
+    image_name: phalu
     about: "Lima bean (<i>Phaseolus lunatus</i>), initially from South and Central America, is an herbaceous plant that is a part of the legume family (Fabaceae). Commonly known as the lima bean, butter bean, sieva bean, double bean or Madagascar bean, it is a legume grown for its edible seeds or beans. The two gene pools, meso and south American, of cultivated lima beans is believed to point to independent domestication events. The Mesoamerican lima bean is distributed in neotropical lowlands while the other is found in the western Andes."
     resources: 
     - name: "Genome browsers and genomic data"
@@ -53,6 +55,7 @@
                   URL: "#"
   - name: "Phaseolus vulgaris"
     display_name: "common bean"
+    image_name: phavu
     about: "Common bean's center of origin is Central America, and it was likely domesticated there as well as in the Andes.  Beans were also carried into North America and were grown by Native Americans there for many centuries.  They were carried to Europe by early explorers of the New World, and have undergone about 500 years of additional domestication and selection in Europe.  The species has great agricultural variety, and is of critical importance as a high-protein food across the world."
     resources: 
     - name: "Genome browsers and genomic data"
