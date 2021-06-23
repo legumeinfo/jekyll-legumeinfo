@@ -8,21 +8,22 @@ title: Taxa
 {% if site.data.taxa_main %}
 {% assign genera = site.data.taxa_main | group_by: "genus"  %}
 <dt>
-  {% for genus in genera %}
-    {% for organism in genus.items %}
-    <dd><a href="{{ organism.genus | downcase }}">{{ organism.genus }}</a> {{ organism.description }}</dd>
+  {% for element in genera %}
+    {% for item in element.items %}
+      {% if item.category == "main" %}
+        <dd><a href="{{ item.genus | downcase }}">{{ item.genus }}</a> {{ item.description }}</dd>
+      {% endif %}
     {% endfor %}
   {% endfor %}
 </dt>
-{% endif %}
 
 <h3>Special-focus genera and data sets</h3>
-{% if site.data.taxa_special %}
-{% assign genera = site.data.taxa_special | group_by: "genus"  %}
 <dt>
-  {% for genus in genera %}
-    {% for organism in genus.items %}
-    <dd><a href="{{ organism.genus }}">{{ organism.genus }}</a> {{ organism.description }}</dd>
+  {% for element in genera %}
+    {% for item in element.items %}
+      {% if item.category == "special" %}
+        <dd><a href="{{ item.genus | downcase }}">{{ item.genus }}</a> {{ item.description }}</dd>
+      {% endif %}
     {% endfor %}
   {% endfor %}
 </dt>

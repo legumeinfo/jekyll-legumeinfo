@@ -7,7 +7,9 @@
     <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
     {% for genus in genera %}
       {% for organism in genus.items %}
-        <li> <a href="/taxa/{{ organism.genus | downcase | relative_url }}"> {{ organism.genus }} {{ organism.description }}</a></li>
+        {% if organism.category == "main" %}
+          <li> <a href="/taxa/{{ organism.genus | downcase | relative_url }}"> {{ organism.genus }} {{ organism.description }}</a></li>
+        {% endif %}
       {% endfor %}
     {% endfor %}
     <li><a href="{{ "/taxa" | relative_url }}">OTHERS (Many special-focus species and collections)</a></li>
