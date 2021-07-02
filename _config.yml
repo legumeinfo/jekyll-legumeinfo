@@ -32,10 +32,9 @@ github_username: legumeinfo
 newsletter: http://eepurl.com/cX_JjL
 
 # Build settings
-local_theme: legumeinfo-jekyll-theme
+theme: legumeinfo-jekyll-theme
 plugins:
   - jekyll-feed
-  - jekyll-local-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
