@@ -1,0 +1,69 @@
+--- 
+- 
+  description: "(peanut: domesticated and wild)"
+  genus: Arachis
+  category: main
+- 
+  description: (pigeonpea)
+  genus: Cajanus
+  category: main
+- 
+  description: (chickpea)
+  genus: Cicer
+  category: main
+- 
+  description: (soybean)
+  genus: Glycine
+  category: main
+- 
+  description: "(birdsfoot trefoil; model species)"
+  genus: Lotus
+  category: main
+- 
+  description: "(several species of lupin grain legumes)"
+  genus: Lupinus
+  category: main
+- 
+  description: "(alfalfa/lucerne, barrel medic; model species)"
+  genus: Medicago
+  category: main
+- 
+  description: "(common bean, lima bean, tepary bean, others)"
+  genus: Phaseolus
+  category: main
+- 
+  description: (pea)
+  genus: Pisum
+  category: main
+- 
+  description: (clovers)
+  genus: Trifolium
+  category: main
+- 
+  description: "(jointvetch; model for nodule evolution)"
+  genus: Aeschynomene
+  category: special
+- 
+  description: "(potato bean: potential tuberous crop)"
+  genus: Apios
+  category: special
+- 
+  description: "(orchid tree, in the Cercidoideae subfamily)"
+  genus: Bauhinia
+  category: special
+- 
+  description: "(redbud tree, in the Cercidoideae subfamily)"
+  genus: Cercis
+  category: special
+- 
+  description: "(partridge pea, in the Caesalpinioideae subfamily)"
+  genus: Chamaecrista
+  category: special
+- 
+  description: "(apple-ring acacia, in the Caesalpinioideae subfamily)"
+  genus: Faidherbia
+  category: special
+- 
+  description: "(Southeast Asian tree, in the Dialoideae subfamily)"
+  genus: Zenia
+  category: special

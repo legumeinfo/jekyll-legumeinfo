@@ -1,0 +1,81 @@
+--- 
+- 
+  category: "Browse and Search"
+  description: Description
+  name: "Gene Families"
+  url: "#"
+- 
+  category: "Browse and Search"
+  description: Description
+  name: Maps
+  url: "#"
+- 
+  category: "Browse and Search"
+  description: Description
+  name: "QTL Search"
+  url: "#"
+- 
+  category: "Browse and Search"
+  description: Description
+  name: "Gene Search"
+  url: "#"
+- 
+  category: "Browse and Search"
+  description: Description
+  name: "Protein Domains"
+  url: "#"
+- 
+  category: "Browse and Search"
+  description: "Browser for dynamically discovering and viewing genomic synteny across selected species."
+  name: "Genome Context Viewer"
+  url: "#"
+- 
+  category: "Browse and Search"
+  description: "Genetic and genomic data for all legume data held at LIS, for browsing and download."
+  name: "Data Store"
+  url: "#"
+- 
+  category: "Browse and Search"
+  description: "InterMine interfaces to legume species and genera at LIS."
+  name: "Legume Mines"
+  url: "#"
+- 
+  category: "Browse and Search"
+  description: "Overviews of data characteristics at LIS: genome assembly sizes, gene counts, BUSCO coverage, etc."
+  name: "DSCensor Data Overviews"
+  url: "#"
+- 
+  category: "Browse and Search"
+  description: Description
+  name: Expression
+  url: "#"
+- 
+  category: "Browse and Search"
+  description: "Interactive visualization of multiple GWAS and QTL data sets, using synteny to identify potentially conserved association regions between species."
+  name: "ZZBrowse GWAS/QTL"
+  url: "#"
+- 
+  category: "Search sequences and features against sequence databases"
+  description: Description
+  name: "BLAST Sequence Search"
+  url: "#"
+- 
+  category: "Search sequences and features against sequence databases"
+  description: Description
+  name: "BLAT Sequence Search"
+  url: "#"
+- 
+  category: "Search sequences and features against sequence databases"
+  description: Description
+  name: "Keyword Search"
+  url: "#"
+- 
+  category: "Search sequences and features against sequence databases"
+  description: Description
+  name: SequenceServer
+  url: "#"
+- 
+  category: "Search sequences and features against sequence databases"
+  description: Description
+  name: "Annotate Your Sequences"
+  url: "#"

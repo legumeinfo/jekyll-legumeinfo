@@ -1,0 +1,126 @@
+--- 
+- taxa: 
+  - name: "Arachis hypogaea"
+    display_name: "peanut"
+    image_name: arahy
+    about: "Peanut, <i>Arachis hypogaea</i>, was domesticated at the foot of the South American Andes within modern-day Argentina, Bolivia, or Paraguay.  Cultivated peanuts are allotetraploids, with sub-genomes probably contributed by the hybridization of the diploid species <i>Arachis duranensis</i> and <i>Arachis ipaensis</i>."
+    resources: 
+    - name: "Genome browsers and genomic data"
+      accessions:
+        - name: "Tifrunner"
+          description: "Arachis hypogaea accession Tifrunner"
+          versions: 
+            - name: gnm1
+              instances:
+                - name: "GBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at JGI"
+                  URL: "#"
+                - name: "Download from Data Store"
+                  URL: "https://peanutbase.org/data/v2/Arachis/hypogaea/"
+        - name: "Tifrunner"
+          description: "Arachis hypogaea accession Tifrunner"
+          versions: 
+            - name: gnm2
+              instances:
+                - name: "GBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at JGI"
+                  URL: "#"
+                - name: "Download from Data Store"
+                  URL: "https://peanutbase.org/data/v2/Arachis/hypogaea/"
+        - name: "Fuhuasheng"
+          description: "Arachis hypogaea accession Fuhuasheng"
+          versions: 
+            - name: gnm1
+              instances:
+                - name: "GBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at JGI"
+                  URL: "#"
+                - name: "Download from Data Store"
+                  URL: "https://peanutbase.org/data/v2/Arachis/hypogaea/"
+        - name: "Shitouqi"
+          description: "Arachis hypogaea accession Shitouqi"
+          versions: 
+            - name: gnm1
+              instances:
+                - name: "GBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at JGI"
+                  URL: "#"
+                - name: "Download from Data Store"
+                  URL: "https://peanutbase.org/data/v2/Arachis/hypogaea/"
+  - name: "Arachis duranensis"
+    display_name: "Arachis duranensis / wild peanut"
+    image_name: aradu
+    about: "<i>Arachis duranensis</i>, a wild herb native to Argentina, Bolivia, and Paraguay, is one of the diploid progenitors of cultivated peanut. Its genome was sequenced as part of the Peanut Genomics Initiative, to help in the accurate assembly of the more important cultivated peanut, <i>A. hypogaea</i>. Cultivated peanut derived all of its genetic material from two wild ancestors, <i>A. duranensis</i> and <i>A. ipaensis</i> whose genomes merged several thousand years ago, in a rare genetic event. The wild species, therefore, have half as much genetic material as cultivated peanut. These two “simpler” genomes have first been sequenced toward achieving its ultimate goal: the complete genomic sequence for cultivated peanut. The cultivated peanut is an allotetraploid (2n=4x=40) that carries both the A and B genomes and <i>A. duranensis</i> (2n=2x=20) has likely contributed the A genome, the smaller set of chromosomes in the karyotype. These two ancestral diploids separated from each other about 3 million years ago. The genome merger, allopolyploidy event, ocurred  relatively very recently, five to ten thousand years ago, followed by domestication in South America from where it appeared in most part of the world by 1600."
+    resources: 
+    - name: "Genome browsers and genomic data"
+      accessions:
+        - name: "V14167"
+          description: "Arachis duranensis accession V14167"
+          versions: 
+            - name: gnm1
+              instances:
+                - name: "GBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at JGI"
+                  URL: "#"
+                - name: "Download from Data Store"
+                  URL: "https://peanutbase.org/data/v2/Arachis/duranensis/"
+  - name: "Arachis ipaensis"
+    display_name: "Arachis duranensis / wild peanut"
+    image_name: araip
+    about: "<i>A. ipaensis</i>, native to Bolivia, is one of the diploid ancestors of cultivated peanut. The genome of <i>A. ipaensis</i> was sequenced as part of the Peanut Genomics Initiative, to help in the accurate assembly of the tetraploid domestic peanut, <i>A. hypogaea</i>. Cultivated peanut derived all of its genetic material from two wild ancestors, <i>A. duranensis</i> and <i>A. ipaensis</i> whose genomes merged several thousand years ago, in a rare genetic event.  The wild species, therefore, have half as much genetic material as cultivated peanut.  These two “simpler” genomes have first been sequenced toward achieving its ultimate goal: the complete genomic sequence for cultivated peanut. The cultivated peanut is an allotetraploid (2n=4x=40) that carries both the A and B genomes and <i>A. ipaensis</i> (2n=2x=20) has likely contributed the B genome, the larger set of chromosomes in the karyotype. These two ancestral diploids separated from each other about 3 million years ago.  The genome merger, allopolyploidy event, ocurred  relatively very recently, five to ten thousand years ago, followed by domestication in South America from where it appeared in most part of the world by 1600."
+    resources: 
+    - name: "Genome browsers and genomic data"
+      accessions:
+        - name: "K30076"
+          description: "Arachis ipaensis accession K30076"
+          versions: 
+            - name: gnm1
+              instances:
+                - name: "GBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at LIS"
+                  URL: "#"
+                - name: "Download from Data Store"
+                  URL: "#"
+            - name: gnm2 
+              instances:
+                - name: "GBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at JGI"
+                  URL: "#"
+                - name: "Download from Data Store"
+                  URL: "https://peanutbase.org/data/v2/Arachis/ipaensis/"
+  - name: "Arachis cardenasii"
+    display_name: "Mani silvestre (wild peanut)"
+    about: "<i>Arachis cardenasii</i> Krapov. & W.C. Greg. is a wild peanut relative native to Bolivia. It has been used by peanut breeders and geneticists in interspecific hybrids with cultivated peanut (<i>A. hypogaea</i>) as a source of pest and disease resistance. A. cardenasii is a diploid  species in the A-genome group of <i>Arachis</i>, similar to <i>A. duranensis</i>, which contributed one of the two subgenomes to tetraploid cultivated peanut."
+    resources: 
+    - name: "Genome browsers and genomic data"
+      accessions:
+        - name: "K10017"
+          description: "Arachis cardenasii, accession K10017"
+          versions: 
+            - name: gnm1
+              instances:
+                - name: "GBrowse at LIS"
+                  URL: "#"
+                - name: "JBrowse at LIS"
+                  URL: "#"
+                - name: "Download from Data Store"
+                  URL: "https://peanutbase.org/data/v2/Arachis/cardenasii/"

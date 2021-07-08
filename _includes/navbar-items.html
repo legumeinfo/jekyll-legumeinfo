@@ -1,26 +1,38 @@
 <li><a href="{{ "/" | relative_url }}">Home</a></li>
 <li>
-  <a class="species" href="{{ "/species" | relative_url }}">Species</a>
-  {% if site.data.species %}
-  {% assign genera = site.data.species | group_by: "genus" | sort: "genus" %}
-  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .species; delay-hide: 0;">
+  <a class="taxon_list" href="{{ "/taxa" | relative_url }}">Taxa</a>
+  {% if site.data.taxon_list %}
+  {% assign genera = site.data.taxon_list | group_by: "genus"  %}
+  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .taxon_list; delay-hide: 0;">
     <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
     {% for genus in genera %}
-      {% assign species = genus.items | sort: "species" %}
-      {% for organism in species %}
-      <li><a href="#">{{ organism.genus }} {{ organism.species }}</a></li>
+      {% for organism in genus.items %}
+        {% if organism.category == "main" %}
+          <li> <a href="/taxa/{{ organism.genus | downcase | relative_url }}"> {{ organism.genus }} {{ organism.description }}</a></li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    <li><a href="{{ "/taxa" | relative_url }}">OTHERS (Many special-focus species and collections)</a></li>
+    </ul>
+  </div>
+  {% endif %}
+</li>
+<li>
+  <a class="tools" href="{{ "/tools" | relative_url }}">Tools</a>
+  {% if site.data.tools %}
+  {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
+  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .tools; delay-hide: 0;">
+    <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+    {% for group in groups %}
+      {% for item in group.items %}
+        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
       {% endfor %}
     {% endfor %}
     </ul>
   </div>
   {% endif %}
 </li>
-<li><a href="{{ "/genomes" | relative_url }}">Genomes</a></li>
-<li><a href="{{ "/traits_maps" | relative_url }}">Traits &amp; Maps</a></li>
-<li><a href="{{ "/germplasm" | relative_url }}">Germplasm</a></li>
-<li><a href="{{ "/search" | relative_url }}">Search</a></li>
 <li><a href="{{ "/download" | relative_url }}">Download</a></li>
-<li><a href="{{ "/submit_data" | relative_url }}">Submit Data</a></li>
 <li><a href="{{ "/community" | relative_url }}">Community</a></li>
 <li><a href="{{ "/contact" | relative_url }}">Contact</a></li>
 <li><a href="{{ "/help" | relative_url }}">Help</a></li>
