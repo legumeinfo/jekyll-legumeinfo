@@ -1,4 +1,4 @@
 [submodule "_themes/legumeinfo-jekyll-theme"]
 	path = _themes/legumeinfo-jekyll-theme
 	url = https://github.com/legumeinfo/legumeinfo-jekyll-theme.git
-    branch = dlt-jeklis-datapage
+	branch = dlt-jeklis-datapage
