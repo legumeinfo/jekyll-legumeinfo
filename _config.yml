@@ -18,23 +18,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "LIS: Legume Information System"
-subtitle: Information about legume traits for crop improvement
+title: "HAPMAP2: Medicago Analysis Portal"
+subtitle: Resources and tools for the Medicago HAPMAP project
 logo: /assets/img/logo.png
-email: your-email@example.com
+email: ctc@ncgr.org
 description: >- # this means to ignore newlines until "baseurl:"
-  A collaborative, community resource to facilitate crop improvement by integrating
-  genetic, genomic, and trait data across legume species.
+  Resources and tools based on the Medicago HAPMAP project.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: legumefed
-github_username: legumeinfo
-newsletter: http://eepurl.com/cX_JjL
 
 # Build settings
 theme: jekyll-theme-legumeinfo
 plugins:
   - jekyll-feed
+  - jekyll-gist
 
 # Exclude from processing.
 # The following items will not be processed, by default.
