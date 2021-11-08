@@ -3,7 +3,7 @@
   category: "Browse and Search"
   description: "JBrowse2 instance for HAPMAP2 Linear Genome Views."
   name: "JBrowse2"
-  url: "#"
+  url: "/medicago/"
 - 
   category: "Browse and Search"
   description: "Germplasm collection for the Medicago HAPMAP."

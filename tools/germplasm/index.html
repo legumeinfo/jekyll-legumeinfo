@@ -2,44 +2,74 @@
 layout: default
 title: Germplasm
 ---
-<h1>Germplasm</h1>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/colreorder/1.3.2/js/dataTables.colReorder.min.js"></script>
+<script src="https://cdn.datatables.net/select/1.2.0/js/dataTables.select.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}{% link assets/js/germplasm-main.js %}"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/colreorder/1.3.2/css/colReorder.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/select/1.2.0/css/select.dataTables.min.css">
+<h1 style="text-align:center;"><b>Germplasm Listing for Medicago HAPMAP</b></h1>
+<h3 style="text-align:center;">Click Rows to Select Lines, then click "Request Selected"</h3>
+<h5 style="text-align:center;">Shift + Click to select all items between two entries. Contrl + Click to add to selection</h5>
 
-<h3>Some Stuff</h3>
-<!--
-
-{% if site.data.tools %}
-{% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
-{% for group in groups %}
-<table>
-  <tr>
-    <th>
-      <tr> {{ group.name }} </tr>
-      {% for item in group.items %}
-      <tr>
-        <th><a href="{{ item.url }}">{{ item.name }}</a>: </th>
-        <th>{{ item.description }}</th>
-      </tr>
-      {% endfor %}
-    </th>
-  </tr>
-{% endfor %}
-{% endif %}
--->
-
-<!--
-<div class="tm-sidebar-left uk-visible@m">
-  <h3>Tools</h3>
-  {% if site.data.tools %}
-  {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
-  {% for group in groups %}
-  <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-    <li class="uk-nav-header">{{ group.name }}</li>
-    {% for item in group.items %}
-    <li><a href="{{ item.url }}">{{ item.name }}</a></li>
-    {% endfor %}
-  </ul>
-  {% endfor %}
-  {% endif %}
+<button class="btn btn-success" data-toggle="modal" id="request-germplasm-header" data-target="#request-form" style="margin-bottom: 1.3em">Request Selected</button>
+<table class="display table table-striped table-bordered" id="germplasm-datatable" width="100%">
+	<thead>
+        <tr>
+            <th></th>
+            <th>ID</th>
+            <th>Line</th>
+            <th>Country</th>
+            <th>Seeds Origin</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+        </tr>
+    </thead>
+</table>
+<button class="btn btn-success" data-toggle="modal" id="request-germplasm-footer" data-target="#request-form">Request Selected</button>
+<div id="request-form" class="modal fade" aria-labelledby="form-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="container-fluid">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+                 <span aria-hidden="true">&times;</span>
+                 <span class="sr-only">Close</span>
+            </button>
+            <h4 class="modal-title" id="form-label">Enter Message and Click Submit</h4>
+          </div>
+          <div class="modal-body">
+              <form id="germplasm-mailer" action="https://medicagohapmap2.org/germplasm-request" method="POST" enctype='multipart/form-data' encoding='multipart/form-data' target="_blank" onsubmit="attach_table_data()">
+                  <div class="form-group">
+                      <div class="col-sm-12">
+                          <label for="return-email-input">Your Email</label>
+                          <input type="text" class="form-control" id="return-email-input" name="return-email-input" placeholder="YOUR EMAIL HERE!"></input>
+                      </div>
+                      <div class="col-sm-12">
+                          <label for="return-email-input">Your Name</label>
+                          <input type="text" class="form-control" id="return-email-input" name="return-email-input" placeholder="YOUR NAME HERE!"></input>
+                      </div>
+                      <div class="col-sm-12">
+                          <label for="return-email-input">Your Institution or Organization</label>
+                          <input type="text" class="form-control" id="return-email-input" name="return-email-input" placeholder="YOUR INSTITUTION OR ORGANIZATION HERE!!"></input>
+                      </div>
+                      <div class="col-sm-12">
+                          <label for="email-message-input">Your Message</label>
+                          <textarea class="form-control" id="email-message-input" name="email-message-input" placeholder="YOUR MESSAGE HERE!"></textarea>
+                          <input type="hidden" class="form-control" id="return-email-selection" name="return-email-selection" value=""></input>
+                      </div>
+                  </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button id="submit-germplasm" type="submit" class="btn btn-success" form="germplasm-mailer">submit</button>
+              <button padding-top="10px" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
--->
-

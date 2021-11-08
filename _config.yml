@@ -20,7 +20,7 @@
 
 title: "HAPMAP2: Medicago Analysis Portal"
 subtitle: Resources and tools for the Medicago HAPMAP project
-logo: /assets/img/logo.png
+logo: /assets/img/medtr.logo.png
 email: ctc@ncgr.org
 description: >- # this means to ignore newlines until "baseurl:"
   Resources and tools based on the Medicago HAPMAP project.
