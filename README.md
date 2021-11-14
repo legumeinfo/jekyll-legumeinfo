@@ -15,6 +15,7 @@ Changes made will be immediately reflected in the browser due to [LiveReload](ht
 You can run the site with Ruby as follows:
 
     gem install bundler jekyll
+    bundle install
     bundle exec jekyll serve
 
 ### Docker
