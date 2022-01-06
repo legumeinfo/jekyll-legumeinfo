@@ -1,34 +1,36 @@
 ---
 title: Home
 layout: home
-news_card: true
-announcements_card: true
+tools_menu: true
 ---
 
-<h3 class="uk-header-large">LIS - the Legume Information System</h3>
-<p class="uk-text-default">LIS integrates genetic and genomic information across many legume species. Access this information by selecting a genus under <a href="{{ "/taxa" | relative_url }}">TAXA</a>, or a tool or method under <a href="{{ "/tools" | relative_url }}">TOOLS</a>, or select <a href="{{ "https://legumeinfo.org/data/v2/" | absolute_url  }}">DOWNLOAD</a>  via the Data Store. You can also explore most of the data via the rich toolsets at the various legume <a href="{{ "https://mines.legumeinfo.org" | absolute_url }}">InterMine</a> instances (also accessed throughout this website).</p>
+<h1>LIS - the Legume Information System</h1>
 
-<div class="uk-button-default">
-  <a href="{{ "/taxa" | relative_url }}">Taxa</a> 
-  <class="uk-text-default"> - Resources for legumes at various taxonomic levels (species, genera, and the family as a whole): data sets, genome browsers, pan-gene sets, synteny visualizations, sequence and keyword search, etc.</class>
-</div>
+<p>
+  LIS integrates genetic and genomic information across many legume species. Access this information by selecting a genus under <a href="{{ "/taxa" | relative_url }}">TAXA</a>,
+  or a tool or method under <a href="{{ "/tools" | relative_url }}">TOOLS</a>,
+  or select <a href="{{ "https://legumeinfo.org/data/v2/" | absolute_url  }}">DOWNLOAD</a> to access files on the LIS Data Store.
+  You can also explore most of the data via the rich toolsets at the various legume <a href="{{ "https://mines.legumeinfo.org" | absolute_url }}">InterMine</a> instances
+  (also accessed throughout this website).
+</p>
 
-<br>
+<dl>
+  <dt><a href="{{ "/taxa" | relative_url }}">Taxa</a></dt>
+  <dd>Resources for legumes at various taxonomic levels (species, genera, and the family as a whole):
+    data sets, genome browsers, pan-gene sets, synteny visualizations, sequence and keyword search, etc.</dd>
+  <dt><a href="{{ "/tools" | relative_url }}">Tools</a></dt>
+  <dd>Pan-legume tools: sequence and keyword search, gene families and phylogenies, synteny visualization, etc. search, etc.</dd>
+  <dt><a href="{{ "/download" | relative_url }}">Download</a></dt>
+  <dd>Browse and download data sets from the LIS Data Store.</dd>
+  <dt><a href="{{ "/community" | relative_url }}">Community</a></dt>
+  <dd><b><i>What is on the Community page?</i></b></dd>
+  <dt><a href="{{ "/contact" | relative_url }}">Contact</a></dt>
+  <dd><b><i>What is on the Contact page?</i></b></dd>
+  <dt><a href="{{ "/help" | relative_url }}">Help</a></dt>
+  <dd><b><i>What is on the Help page?</i></b></dd>
+</dl>
 
-<div class="uk-button-default">
-  <a href="{{ "/tools" | relative_url }}">Tools</a> 
-  <class="uk-text-default"> - Pan-legume tools: sequence and keyword search, gene families and phylogenies, synteny visualization, etc. search, etc.</class>
-</div>
-
-<br>
-
-<div class="uk-button-default">
-  <a href="{{ "https://legumeinfo.org/data/v2/" | absolute_url }}">Download</a> 
-  <class="uk-text-default"> - Browse and download data sets from the LIS Data Store.</class>
-</div>
-
-
-<h3>Funding and Development</h3>
+<h2>Funding and Development</h2>
 <p>LIS is funded by the USDA-ARS. LIS is developed and hosted by the National Center for Genome Resources (NCGR) and the USDA-ARS SoyBase and Legume Clade Database group at Ames, IA, with the help of many other researchers.</p>
 <div class="uk-child-width-expand@s uk-flex uk-flex-middle" uk-grid>
   <a href="https://www.ars.usda.gov/main/main.htm" target="_blank" title="USDA ARS website">

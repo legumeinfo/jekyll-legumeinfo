@@ -1,8 +1,0 @@
---- 
-- taxon_features: 
-  - name: "XXGenus species"
-    display_name: "XXCommon name and brief contextual comments if needed"
-- resources: 
-  - name: XXResourceName
-    URL: "#"
-    description: "XXBrief resource description"

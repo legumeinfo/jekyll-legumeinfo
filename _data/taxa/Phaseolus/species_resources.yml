@@ -1,96 +1,58 @@
---- 
-- taxa: 
-  - name: "Phaseolus acutifolius"
-    display_name: "tepary bean"
-    image_name: 
-    about: "XX A ~one-paragraph description"
-    resources: 
-    - name: "Genome browsers and genomic data"
-      accessions:
-        - name: "Frijol Bayo"
-          description: "Phaseolus acutifolius accession Frijol Bayo"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-        - name: "W6 15578"
-          description: "Phaseolus acutifolius accession W6 15578"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-  - name: "Phaseolus lunatus"
-    display_name: "lima bean"
-    image_name: phalu
-    about: "Lima bean (<i>Phaseolus lunatus</i>), initially from South and Central America, is an herbaceous plant that is a part of the legume family (Fabaceae). Commonly known as the lima bean, butter bean, sieva bean, double bean or Madagascar bean, it is a legume grown for its edible seeds or beans. The two gene pools, meso and south American, of cultivated lima beans is believed to point to independent domestication events. The Mesoamerican lima bean is distributed in neotropical lowlands while the other is found in the western Andes."
-    resources: 
-    - name: "Genome browsers and genomic data"
-      accessions:
-        - name: "G27455"
-          description: "Phaseolus lunatus accession G27455"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-  - name: "Phaseolus vulgaris"
-    display_name: "common bean"
-    image_name: phavu
-    about: "Common bean's center of origin is Central America, and it was likely domesticated there as well as in the Andes.  Beans were also carried into North America and were grown by Native Americans there for many centuries.  They were carried to Europe by early explorers of the New World, and have undergone about 500 years of additional domestication and selection in Europe.  The species has great agricultural variety, and is of critical importance as a high-protein food across the world."
-    resources: 
-    - name: "Genome browsers and genomic data"
-      accessions:
-        - name: "G19833"
-          description: "Andean"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-            - name: gnm2 
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-        - name: "UI111"
-          description: "Durango; Middle American"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
+---
+species:
+- abbrev: phalu
+  commonName: lima bean
+  description: The lima bean (Phaseolus lunatus), initially from South and Central
+    America, is an herbaceous plant that is a part of the legume family (Fabaceae).
+    It is commonly known as the lima bean, butter bean, sieva bean, double bean or
+    Madagascar bean, is a legume grown for its edible seeds or beans. The two gene
+    pools, meso and south American, of cultivated lima beans is believed to point
+    to independent domestication events. The Mesoamerican lima bean is distributed
+    in neotropical lowlands while the other is found in the western Andes.
+  genus: Phaseolus
+  species: lunatus
+  strains:
+  - description: G27455 was selected from MI population, which is the most widespread
+      among domesticated gene pools. Domesticated accessions have low heterozygosity,
+      which reduces the complexity of genome assembly. G27455 is cultivated in the
+      north of Colombia, where temperatures are very high all year, suggesting it
+      may be a good source of candidate genes for resistance to heat and drought stress.
+    identifier: G27455
+    name: G27455
+    origin: Colombia
+  taxid: 3884
+- abbrev: phavu
+  commonName: common bean
+  description: Common bean (Phaseolus vulgaris) was likely domesticated independently
+    both in Central America and in the Andes, from distinct wild gene pools that exist
+    in the two regions. Beans were also carried into North America and were grown
+    by Native Americans there for many centuries. They were carried to Europe by early
+    explorers of the New World, and have undergone about 500 years of additional domestication
+    and selection in Europe. The species has great agricultural variety, and is of
+    critical importance as a high-protein food across the world.
+  genus: Phaseolus
+  species: vulgaris
+  strains:
+  - description: Andean landrace G19833 was selected for genome sequencing partly
+      due to its resistance to numerous diseases, including bean rust (Uromyces appendiculatus),
+      as well as anthracnose, angular leaf spot, Aschochyta blight, and the bean golden
+      mosaic and bean common mosaic viruses (Hurtado-Gonzales et al., 2017; https://digitalcommons.unl.edu/usdaarsfacpub/1664/).
+      This accession has also been used to generate populations for mapping traits
+      such as phosphorous acquisition and agronomic performance.
+    identifier: G19833
+    name: G19833
+    origin: Peru
+  - accession: PI 633451
+    description: Accession BAT93 is a Mesomarican line that has been used in numerous
+      breeding projects and trait-mapping studies.
+    identifier: BAT93
+    name: BAT93
+    origin: CIAT
+  - accession: PI 549535, PI 599011, PI 599012, PI 599013
+    description: Bean variety UI111 is a Mesomarican line that has been used in numerous
+      breeding projects and trait-mapping studies.It is a pinto-type bean, with indeterminate
+      climbing habit.
+    identifier: UI111
+    name: UI111
+    origin: US National Plant Germplasm System
+  taxid: 3885

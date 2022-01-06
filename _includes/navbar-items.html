@@ -8,11 +8,11 @@
     {% for genus in genera %}
       {% for organism in genus.items %}
         {% if organism.category == "main" %}
-          <li> <a href="/taxa/{{ organism.genus | downcase | relative_url }}"> {{ organism.genus }} {{ organism.description }}</a></li>
+          <li> <a href="/taxa/{{ organism.genus | downcase | relative_url }}"> {{ organism.genus }} ({{ organism.description }})</a></li>
         {% endif %}
       {% endfor %}
     {% endfor %}
-    <li><a href="{{ "/taxa" | relative_url }}">OTHERS (Many special-focus species and collections)</a></li>
+    <li><a href="{{ "/taxa/others" | relative_url }}">OTHERS (special-focus species and collections)</a></li>
     </ul>
   </div>
   {% endif %}

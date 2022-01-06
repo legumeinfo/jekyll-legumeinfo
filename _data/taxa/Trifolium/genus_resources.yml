@@ -1,11 +1,18 @@
---- 
-- taxon_features: 
-  - name: "Trifolium"
-    display_name: "containing several species used as forage crops, cover crops, and green manures"
-- resources: 
-  - name: "Genome Context Viewer"
-    URL: "https://legumeinfo.org/gcv2/gene;lis=tripr.gene26301"
-    description: "Browser for dynamically discovering and viewing genomic synteny across selected species."
-  - name: "Germplasm GIS"
-    URL: "https://legumeinfo.org/germplasm/map#?zoom=5&maxRecs=2000&taxonQuery=Trifolium&traitOverlay=&traitScale=global&country=&geocodedOnly&traitExcludeUnchar=false&limitToMapExtent=false&lat=35.89&lng=-109.49&mapHeight=350&baseMap=ESRI%20-%20NatGeo%20(default,%20reference%20map)&ne_lat=41.86956082699455&ne_lng=-83.80371093750001&sw_lat=29.420460341013158&sw_lng=-135.17578125000003&accessionIdsInclusive=false"
-    description: "Geographic information system viewer, showing collection locations for Trifolium data held by the U.S. National Plant Germplasm System."
+---
+commonName: Trifolium L., 1753
+description: 'Clover or trefoil are common names for plants of the genus Trifolium
+  (Latin, tres ''three'' + folium ''leaf''), consisting of about 300 species of flowering
+  plants in the legume or pea family Fabaceae originating in Europe. The genus has
+  a cosmopolitan distribution with highest diversity in the temperate Northern Hemisphere,
+  but many species also occur in South America and Africa, including at high altitudes
+  on mountains in the tropics. They are small annual, biennial, or short-lived perennial
+  herbaceous plants, typically growing up to 30 cm tall. The leaves are trifoliate
+  (rarely quatrefoiled; see four-leaf clover), monofoil, bifoil, cinquefoil, hexafoil,
+  septfoil, etcetera, with stipules adnate to the leaf-stalk, and heads or dense spikes
+  of small red, purple, white, or yellow flowers; the small, few-seeded pods are enclosed
+  in the calyx.[3] Other closely related genera often called clovers include Melilotus
+  (sweet clover) and Medicago (alfalfa or Calvary clover). '
+genus: Trifolium
+species:
+- pratense
+taxid: 3898

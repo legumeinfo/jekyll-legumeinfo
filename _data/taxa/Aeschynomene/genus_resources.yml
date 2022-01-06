@@ -1,8 +1,13 @@
---- 
-- taxon_features: 
-  - name: "XXGenus species"
-    display_name: "XXCommon name and brief contextual comments if needed"
-- resources: 
-  - name: XXResourceName
-    URL: "#"
-    description: "XXBrief resource description"
+---
+commonName: jointvetch
+description: Aeschynomene is a genus of flowering plants in the family Fabaceae, and
+  was recently assigned to the informal monophyletic Dalbergia clade of the Dalbergieae.
+  They are known commonly as jointvetches. These legumes are most common in warm regions
+  and many species are aquatic. The genus as currently circumscribed is paraphyletic
+  and it has been suggested that the subgenus Ochopodium be elevated to a new genus
+  within the Dalbergieae, though other changes will also be required to render the
+  genus monophyletic.
+genus: Aeschynomene
+species:
+- evenia
+taxid: 48134
