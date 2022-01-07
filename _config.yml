@@ -56,11 +56,3 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-# set default values to be used in templates
-defaults:
-  -
-    scope:
-      path: ""  # an empty string here means all files in the project
-    values:
-      tools_menu: true
