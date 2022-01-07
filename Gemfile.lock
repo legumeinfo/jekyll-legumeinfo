@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/asperduti/jekyll_file_exists.git
+  remote: https://github.com/asperduti/jekyll_file_exists.git
   revision: 6dac357f02a56cc4ebd611e6d59d632dc866ebfb
   specs:
     jekyll_file_exists (0.1.0)
