@@ -1,32 +1,23 @@
---- 
-- taxa: 
-  - name: "Lotus japonicus"
-    display_name: "bird's-foot trefoil"
-    image_name: lotja
-    about: "<i>Lotus japonicus</i>, a forage crop (much like clover), is widely used as a model in legume biology.  It is physically small in stature, with a small genome, and a short generation time, and it is relatively easily transformable (for gene functional studies)."
-    resources: 
-    - name: "Genome browsers and genomic data"
-      accessions:
-        - name: "Gifu"
-          description: "Lotus japonicus accession Gifu"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
-            - name: gnm2
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "#"
+---
+species:
+- abbrev: lotja
+  commonName: birdsfoot trefoil
+  description: 'Lotus japonicus, a forage crop (much like clover), is widely used
+    as a model in legume biology. It is physically small in stature, with a small
+    genome, and a short generation time, and it is relatively easily transformable
+    (for gene functional studies). Genome version available on LIS is version Lj2.5
+    and Lj3.0, publication associated with this genome version is available here:
+    Sato et al., 2008 (doi:10.1093/dnares/dsn008).'
+  genus: Lotus
+  species: japonicus
+  strains:
+  - accession: MG-20
+    description: 'Lotus japonicus ecotype Miyakojima (MG-20) was identified as an
+      early-flowering accession, with traits that distinguish it from other Japanese
+      accessions: low concentrations of anthocyanin in the stem and petals, few trichomes,
+      a more upright habit, broad leaflets and petals, and large black seeds (Pajuelo
+      and Stougaard, 2005, in: A.J. Marquez (ed.), Lotus japonicus Hadbook, pp. 3-24).'
+    identifier: MG20
+    name: Miyakojima
+    origin: Miyakojima, Japan
+  taxid: 34305

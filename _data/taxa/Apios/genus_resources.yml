@@ -1,8 +1,11 @@
---- 
-- taxon_features: 
-  - name: "XXGenus species"
-    display_name: "XXCommon name and brief contextual comments if needed"
-- resources: 
-  - name: XXResourceName
-    URL: "#"
-    description: "XXBrief resource description"
+---
+commonName: groundnut
+description: "Apios is a genus of flowering plants in the legume family, Fabaceae.\
+  \ It belongs to the subfamily Faboideae. Its member species are found in North America\
+  \ and Asia between latitudes of 50\xB0 and 20\xB0. The term Apios comes from the\
+  \ Greek word for pear and may refer the pear shape of some tubers. Several members\
+  \ of this genus are known to have edible, tuberous roots."
+genus: Apios
+species:
+- americana
+taxid: 132430

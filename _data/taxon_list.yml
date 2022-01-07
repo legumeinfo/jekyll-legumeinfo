@@ -1,69 +1,69 @@
 --- 
 - 
-  description: "(peanut: domesticated and wild)"
+  description: "Warm-season oilseed crop, indigenous to South America."
   genus: Arachis
   category: main
 - 
-  description: (pigeonpea)
+  description: "Pigeonpea"
   genus: Cajanus
   category: main
 - 
-  description: (chickpea)
+  description: "Chickpea"
   genus: Cicer
   category: main
 - 
-  description: (soybean)
+  description: "Soybean"
   genus: Glycine
   category: main
 - 
-  description: "(birdsfoot trefoil; model species)"
+  description: "Bird's-foot trefoil"
   genus: Lotus
   category: main
 - 
-  description: "(several species of lupin grain legumes)"
+  description: "Several species of lupin grain legumes"
   genus: Lupinus
   category: main
 - 
-  description: "(alfalfa/lucerne, barrel medic; model species)"
+  description: "Alfalfa/Lucerne, Barrel Medic"
   genus: Medicago
   category: main
 - 
-  description: "(common bean, lima bean, tepary bean, others)"
+  description: "Common Bean, Lima Bean, Tepary Bean, etc."
   genus: Phaseolus
   category: main
 - 
-  description: (pea)
+  description: "Pea"
   genus: Pisum
   category: main
 - 
-  description: (clovers)
+  description: "Clover"
   genus: Trifolium
   category: main
 - 
-  description: "(jointvetch; model for nodule evolution)"
+  description: "Jointvetch"
   genus: Aeschynomene
   category: special
 - 
-  description: "(potato bean: potential tuberous crop)"
+  description: "Potato bean"
   genus: Apios
   category: special
 - 
-  description: "(orchid tree, in the Cercidoideae subfamily)"
+  description: "Orchid tree"
   genus: Bauhinia
   category: special
 - 
-  description: "(redbud tree, in the Cercidoideae subfamily)"
+  description: "Redbud tree"
   genus: Cercis
   category: special
 - 
-  description: "(partridge pea, in the Caesalpinioideae subfamily)"
+  description: "Partridge pea"
   genus: Chamaecrista
   category: special
 - 
-  description: "(apple-ring acacia, in the Caesalpinioideae subfamily)"
+  description: "Apple-ring acacia"
   genus: Faidherbia
   category: special
 - 
-  description: "(Southeast Asian tree, in the Dialoideae subfamily)"
+  description: "Southeast Asian tree"
   genus: Zenia
   category: special
