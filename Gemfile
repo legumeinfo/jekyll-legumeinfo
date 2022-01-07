@@ -17,7 +17,7 @@ gem "jekyll-theme-legumeinfo", path: "./_themes/jekyll-theme-legumeinfo"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   ## handy way to see if an image exists on the site
-  gem 'jekyll_file_exists', :git => 'git://github.com/asperduti/jekyll_file_exists.git'
+  gem 'jekyll_file_exists', :git => 'https://github.com/asperduti/jekyll_file_exists.git'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
