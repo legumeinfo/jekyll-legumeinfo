@@ -2,18 +2,18 @@
   <div class="uk-card-header">
     <div class="uk-grid-small uk-flex-middle" uk-grid>
       <div class="uk-width-expand">
-        <h3 class="uk-card-title uk-margin-remove-bottom">ANNOUNCEMENTS</h3>
+        <h3 class="uk-card-title uk-margin-remove-bottom">BLOG POSTS</h3>
       </div>
     </div>
   </div>
   <div class="uk-card-body">
     <ul class="uk-list uk-list-disc">
-      {% for post in site.categories.announcements %}
-      <li><b>{{ post.date | date_to_string }}:</b> <a href="{{ post.url }}">{{ post.title }}</a>, San Diego, CA, USA </li>
+      {% for post in site.categories.blog %}
+        <li><b>{{ post.date | date_to_string }}:</b> <a href="{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
   </div>
   <div class="uk-card-footer">
-    <a href="{{ "/announcements" | relative_url }}" class="uk-button uk-button-text">Past Meetings</a>
+    <a href="{{ "/blog" | relative_url }}" class="uk-button uk-button-text">All Blog Posts</a>
   </div>
 </div>
