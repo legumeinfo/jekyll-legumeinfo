@@ -1,9 +1,79 @@
 ---
--
-  gensp: glyma
-  attribution: Bob Smith, Soybean Photographers Intl.
-  year: 2010
--
-  gensp: glyso
-  attribution: Jane Doe, Soja 'R' Us
-  year: 2015
+- gensp: apiam
+  attribution: Steven Cannon, Iowa State University
+- gensp: araca
+  attribution: "Charles Simpson, Texas A & M"
+  source: "https://agrilifetoday.tamu.edu/2015/08/11/agrilifes-simpson-awarded-the-2015-calvin-sperling-memorial-biodiversity-lectureship/a-cardenasii/"
+- gensp: arahy
+  attribution: albinasnacks.com
+  source: "http://www.albinasnacks.com/products/product.php?id=461"
+- gensp: aradu
+  attribution: misco
+  source: "https://commons.wikimedia.org/wiki/File:Arachis_duranensis.jpg"
+- gensp: araip
+  attribution: PBGG GSA at the University of Georgia
+- gensp: cajca
+  attribution: osmania.ac.in
+  source: "http://www.osmania.ac.in/CPMB/images/pigeon%20pea.jpg"
+- gensp: chafa
+  attribution: delawarewildflolwers.org
+  source: "http://www.delawarewildflowers.org/images/chamaecrista_fasciculata.jpg"
+- gensp: cicar
+  attribution: buranchi.org
+  source: "http://www.bauranchi.org/"
+- gensp: glyd3
+  attribution: Eun-Young Hwang, University of Maryland
+- gensp: glydo
+  attribution: Eun-Young Hwang, University of Maryland
+- gensp: glyfa
+  attribution: Eun-Young Hwang, University of Maryland
+- gensp: glyma
+  attribution: britannica.com
+  source: "http://media.web.britannica.com/eb-media/17/9317-004-4A5AE8CB.jpg"
+- gensp: glyso
+  attribution: Eun-Young Hwang, University of Maryland
+- gensp: glyst
+  attribution: Eun-Young Hwang, University of Maryland
+- gensp: glysy
+  attribution: Eun-Young Hwang, University of Maryland
+- gensp: lencu
+  attribution: pfaf.org
+  source: "http://www.pfaf.org/Admin/PlantImages/LensCulinaris2.jpg"
+- gensp: lotja
+  attribution: helmholtz-meunchen.de
+  source: "http://mips.helmholtz-muenchen.de/plant/static/images/lotus1.jpg"
+- gensp: lupan
+  attribution: sciencedaily.com
+  source: "http://images.sciencedaily.com/2008/12/081208092147.jpg"
+- gensp: medsa
+  attribution: mdidea.com
+  source: "http://www.mdidea.com/products/new/alfalfa_photo05.jpg"
+- gensp: medtr
+  attribution: helmholtz-meunchen.de
+  source: "http://mips.helmholtz-muenchen.de/plant/static/images/medi2.jpg"
+- gensp: phaac
+  attribution: Are W
+  source: "https://www.flickr.com/photos/rwd/18393839736/in/photolist-u2peHS"
+- gensp: phalu
+  attribution: Steven Cannon, Iowa State University
+- gensp: phavu
+  attribution: Rasbak
+  source: "https://commons.wikimedia.org/wiki/File:Snijboon_peulen_Phaseolus_vulgaris.jpg"
+- gensp: pissa
+  attribution: pfaf.org
+  source: "http://www.pfaf.org/Admin/PlantImages/PisumSativum.jpg"
+- gensp: tripr
+  attribution: Ivar Leidus
+  source: "https://commons.wikimedia.org/wiki/File:Trifolium_pratense_-_Keila2.jpg"
+- gensp: trire
+  attribution: "Forest & Kim Starr"
+  source: "https://commons.wikimedia.org/wiki/File:Starr_070313-5645_Trifolium_repens.jpg"
+- gensp: vicfa
+  attribution: ediblecommunities.com
+  source: "http://www.ediblecommunities.com/orangecounty/images/stories/magazine/autumn11/farmTable.jpg"
+- gensp: vigan
+  attribution: Sanjay Acharya
+  source: "https://commons.wikimedia.org/wiki/File:Azuki_Beans.jpg"
+- gensp: vigra
+  attribution: 21food.com
+  source: "http://img.21food.com/20110609/product/1306548973901.jpg"
