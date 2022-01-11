@@ -65,8 +65,13 @@ taxa_menu: true
 
 {% capture species_photo %}{% file_exists assets/img/species_images/{{ item["abbrev"] }}.jpg %}{% endcapture %}
 {% if species_photo == "true" %}
-<div style="float:right;margin:10px;border:1px solid darkgreen;">
-  <img src="/assets/img/species_images/{{ item["abbrev"] }}.jpg" alt="Image: {{ item["commonName"] }}"/><br/>
+<div class="species-image">
+  <img src="/assets/img/species_images/{{ item["abbrev"] }}.jpg" alt="Image: {{ item["commonName"] }}"/>
+  {% for attribItem in site.data.species_image_attribution %}
+  {%   if attribItem.gensp contains item["abbrev"] %}
+  <div class="attribution">&copy; {{ attribItem.year }} {{ attribItem.attribution }}</div>
+  {%   endif %}
+  {% endfor %}
 </div>
 {% endif %}
 
