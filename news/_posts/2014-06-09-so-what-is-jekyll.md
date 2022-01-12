@@ -13,6 +13,6 @@ blogs. It is simple, static, and blog-aware. Jekyll uses the
 language and has builtin [Markdown](http://daringfireball.net/projects/markdown/)
 and [Textile](http://en.wikipedia.org/wiki/Textile_(markup_language)) support.
 
-It also ties in nicely to [Github Pages](https://pages.github.com/).
+It also ties in really really nicely to [Github Pages](https://pages.github.com/).
 
 Learn more about Jekyll on their [website](http://jekyllrb.com/).
