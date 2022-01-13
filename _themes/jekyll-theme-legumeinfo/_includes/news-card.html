@@ -1,0 +1,19 @@
+<div class="uk-card uk-card-default">
+  <div class="uk-card-header">
+    <div class="uk-grid-small uk-flex-middle" uk-grid>
+      <div class="uk-width-expand">
+        <h3 class="uk-card-title uk-margin-remove-bottom">NEWS</h3>
+      </div>
+    </div>
+  </div>
+  <div class="uk-card-body">
+    <ul class="uk-list uk-list-disc">
+      {% for post in site.categories.news limit:3 %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="uk-card-footer">
+    <a href="{{ "/news" | relative_url }}" class="uk-button uk-button-text">More News</a>
+  </div>
+</div>

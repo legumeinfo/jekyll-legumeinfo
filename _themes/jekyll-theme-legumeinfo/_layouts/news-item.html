@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<article class="uk-article">
+  <h1 class="uk-article-title">{{ page.title }}</h1>
+
+  <p class="uk-article-meta">Written by {{ page.author }} on {{ page.date | date: site.date_format }}.</p>
+
+  {{ content }}
+
+</article>

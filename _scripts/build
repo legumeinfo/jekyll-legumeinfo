@@ -2,4 +2,5 @@
 ## script to build new _data files
 ## requires the latest (python 3.9) versions of pyyaml and requests
 
-python3.9 genus_species_about.py
+python3.9 genus_species_resources.py
+python3.9 genus_species_collections.py

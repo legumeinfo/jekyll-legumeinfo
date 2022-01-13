@@ -1,0 +1,23 @@
+exclude_paths: ["news/index.html", "announcements/index.html"]
+title: LIS Jekyll Theme
+subtitle: A theme for building biological information systems with Jekyll
+
+plugins:
+  - jekyll-datapage-generator
+
+#### jekyll-datapage-generator config
+
+page_gen:
+  - data: taxon_list
+    template: taxon
+    dir: taxa
+    name: genus
+    index_files: true
+    debug: true
+  - data: taxon_list
+    template: collection
+    dir: collections
+    name: genus
+    index_files: true
+    debug: true
+

@@ -31,6 +31,9 @@ twitter_username: legumeinfo
 github_username: legumeinfo
 newsletter: http://eepurl.com/cX_JjL
 
+# Set the LIS Datastore base URL here
+datastoreurl: https://legumeinfo.org/data/v2
+
 # Build settings
 theme: jekyll-theme-legumeinfo
 plugins:
@@ -56,3 +59,4 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+#

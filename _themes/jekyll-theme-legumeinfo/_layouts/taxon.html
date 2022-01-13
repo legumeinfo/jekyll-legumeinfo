@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+{% assign genus = page.title %}
+
+<h2><i>{{ genus }}</i></h2>
+
+<h3>Tools and resources for the genus as a whole</h3>
+
+{% assign genus_resources = site.data.taxa[genus].genus_resources %}
+<dt>
+{% for item in genus_resources %}
+  {% for taxon in item.taxon_features %}
+    <dd><strong><i>{{ taxon.name }}</i></strong> ({{ taxon.display_name }})</dd>
+  {% endfor %}
+  {% for resource in item.resources %}
+    <dd><a href="{{ resource.URL }}">{{ resource.name }}</a> ({{ resource.description }})</dd>
+  {% endfor %}
+{% endfor %}
+</dt>
+
+<h3>Tools and resources for particular species</h3>
+
+{% assign species_resources = site.data.taxa[genus].species_resources %}
+<dt>
+{% for item in species_resources %}
+  {% for taxon in item.taxa %}
+    <dd><strong>{{ taxon.name }}</strong> ({{ taxon.display_name }})</dd>
+    {% if taxon.image_name %}
+      <img src="/assets/img/species_images/{{ taxon.image_name }}.jpg" alt="Image: {{ taxon.image_name }}">
+    {% endif %}
+    <dd>{{ taxon.about }}</dd>
+    <dd>{{ taxon.some_text }}</dd>
+    {% for resource in taxon.resources %}
+      <dd><u>{{ resource.name }}</u></dd>
+      {% for accession in resource.accessions %}
+        <dd>{{ accession.name }} ({{ accession.description }})</dd>
+        {% for version in accession.versions %}
+          <dd>&nbsp; &nbsp;
+            Assembly {{ version.name }}:
+          </dd>
+          <dd>&nbsp; &nbsp;
+            {% for instance in version.instances %}
+              <a href="{{ instance.URL }}">{{ instance.name }}</a>;
+            {% endfor %}
+          </dd>
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
+    <br>
+  {% endfor %}
+{% endfor %}
+</dt>

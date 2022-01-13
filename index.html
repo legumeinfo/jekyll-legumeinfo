@@ -10,21 +10,27 @@ blog_card: true
 <h1>LIS - the Legume Information System</h1>
 
 <p>
-  LIS integrates genetic and genomic information across many legume species. Access this information by selecting a genus under <a href="{{ "/taxa" | relative_url }}">TAXA</a>,
-  or a tool or method under <a href="{{ "/tools" | relative_url }}">TOOLS</a>,
-  or select <a href="{{ "https://legumeinfo.org/data/v2/" | absolute_url  }}">DOWNLOAD</a> to access files on the LIS Data Store.
-  You can also explore most of the data via the rich toolsets at the various legume <a href="{{ "https://mines.legumeinfo.org" | absolute_url }}">InterMine</a> instances
-  (also accessed throughout this website).
+  LIS integrates genetic and genomic information across many legume species along with tools for research.
+</p>
+
+<ul>
+  <li>View species and accessions housed at LIS by selecting a genus under <a href="{{ "/taxa" | relative_url }}">TAXA</a></li>
+  <li>Select <a href="{{ "/collections" | relative_url  }}">COLLECTIONS</a> to view summaries of the individual data collections at LIS</li>
+  <li>Go directly to a tool under <a href="{{ "/tools" | relative_url }}">TOOLS</a></li>
+</ul>
+
+<p>
+  You can also explore most of the data at the various <a href="{{ "https://mines.legumeinfo.org/" | absolute_url }}">LIS InterMine</a> instances.
 </p>
 
 <dl>
   <dt><a href="{{ "/taxa" | relative_url }}">Taxa</a></dt>
   <dd>Resources for legumes at various taxonomic levels (species, genera, and the family as a whole):
     data sets, genome browsers, pan-gene sets, synteny visualizations, sequence and keyword search, etc.</dd>
+  <dt><a href="{{ "/collections" | relative_url }}">Collections</a></dt>
+  <dd>View synopses of and links to individual LIS Datastore collections.</dd>
   <dt><a href="{{ "/tools" | relative_url }}">Tools</a></dt>
   <dd>Pan-legume tools: sequence and keyword search, gene families and phylogenies, synteny visualization, etc. search, etc.</dd>
-  <dt><a href="{{ "/download" | relative_url }}">Download</a></dt>
-  <dd>Browse and download data sets from the LIS Data Store.</dd>
   <dt><a href="{{ "/blog" | relative_url }}">Blog</a></dt>
   <dd>Learn about new data and tools available from LIS.</dd>
   <dt><a href="{{ "/community" | relative_url }}">Community</a></dt>
