@@ -1,54 +1,110 @@
 ---
 layout: default
+taxa_menu: true
 ---
 
 {% assign genus = page.title %}
 
-<h2><i>{{ genus }}</i></h2>
+{% if genus == 'Taxa' %}
 
-<h3>Tools and resources for the genus as a whole</h3>
+<h1>Taxa</h1>
+
+<p>Some static introductory text for the default Taxa page goes here.</p>
+
+{% assign genera = site.data.taxon_list | group_by: "genus"  %}
+<dl>
+  {% for genus in genera %}
+  {% for item in genus.items %}
+  {% if item.category == "main" %}
+  <dt><a href="/taxa{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a></dt>
+  <dd>{{ item.description }}</dd>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+  <dt><a href="{{ "/taxa/others" | relative_url }}">OTHERS</a></dt>
+  <dd>Special-focus species and collections</a></dd>
+</dl>
+
+{% else %}
 
 {% assign genus_resources = site.data.taxa[genus].genus_resources %}
-<dt>
-{% for item in genus_resources %}
-  {% for taxon in item.taxon_features %}
-    <dd><strong><i>{{ taxon.name }}</i></strong> ({{ taxon.display_name }})</dd>
-  {% endfor %}
-  {% for resource in item.resources %}
-    <dd><a href="{{ resource.URL }}">{{ resource.name }}</a> ({{ resource.description }})</dd>
-  {% endfor %}
-{% endfor %}
-</dt>
-
-<h3>Tools and resources for particular species</h3>
-
 {% assign species_resources = site.data.taxa[genus].species_resources %}
-<dt>
-{% for item in species_resources %}
-  {% for taxon in item.taxa %}
-    <dd><strong>{{ taxon.name }}</strong> ({{ taxon.display_name }})</dd>
-    {% if taxon.image_name %}
-      <img src="/assets/img/species_images/{{ taxon.image_name }}.jpg" alt="Image: {{ taxon.image_name }}">
-    {% endif %}
-    <dd>{{ taxon.about }}</dd>
-    <dd>{{ taxon.some_text }}</dd>
-    {% for resource in taxon.resources %}
-      <dd><u>{{ resource.name }}</u></dd>
-      {% for accession in resource.accessions %}
-        <dd>{{ accession.name }} ({{ accession.description }})</dd>
-        {% for version in accession.versions %}
-          <dd>&nbsp; &nbsp;
-            Assembly {{ version.name }}:
-          </dd>
-          <dd>&nbsp; &nbsp;
-            {% for instance in version.instances %}
-              <a href="{{ instance.URL }}">{{ instance.name }}</a>;
-            {% endfor %}
-          </dd>
-        {% endfor %}
-      {% endfor %}
-    {% endfor %}
-    <br>
+
+<h1><i>{{ genus_resources.name }}</i></h1>
+<p>{{ genus_resources.display_name }}</p>
+
+{% if genus_resources.commonName==nil %}
+<h1><i>{{ genus_resources.genus }}</i></h2>
+{% else %}
+<h1><i>{{ genus_resources.genus }}</i> ({{ genus_resources.commonName }})</h2>
+{% endif %}
+<p>{{ genus_resources.description }}</p>
+<p>NCBI taxonomy ID: <b>{{ genus_resources.taxid }}</b></p>
+
+{% if genus_resources.resources.size > 0 %}
+<h2>Tools and resources for the genus as a whole</h2>
+<dl>
+  {% for resource in genus_resources.resources %}
+  <dt><a href="{{ resource.URL }}">{{ resource.name }}</a></dt>
+  <dd>{{ resource.description }}</dd>
   {% endfor %}
+</dl>
+{% endif %}
+
+<h2>Tools and resources for particular species</h2>
+
+{% for item in species_resources.species %}
+
+<hr/>
+
+{% if item["commonName"]==nil %}
+<h3><i>{{ item["genus"] }} {{ item["species"] }}</i></h3>
+{% else %}
+<h3><i>{{ item["genus"] }} {{ item["species"] }}</i>: {{ item["commonName"] }}</h3>
+{% endif %}
+
+{% capture species_photo %}{% file_exists assets/img/species_images/{{ item["abbrev"] }}.jpg %}{% endcapture %}
+{% if species_photo == "true" %}
+<div class="species-image">
+  <img src="/assets/img/species_images/{{ item["abbrev"] }}.jpg" alt="Image: {{ item["commonName"] }}"/>
+  {% for attribItem in site.data.species_image_attribution %}
+  {%   if attribItem.gensp contains item["abbrev"] %}
+  <div class="attribution">
+    {%   if attribItem.source == nil %}
+    &copy; {{ attribItem.attribution }}
+    {%   else %}
+    &copy; <a href="{{ attribItem.source }}">{{ attribItem.attribution }}</a>
+    {%   endif %}
+  </div>
+  {%   endif %}
+  {% endfor %}
+</div>
+{% endif %}
+
+<p>{{ item["description"] }}</p>
+
+<p>NCBI taxonomy ID: <b>{{ item["taxid"] }}</b></p>
+
+{% if item["resources"].size > 0 %}
+<h4><i>{{ item["genus"] }} {{ item["species"] }}</i> resources</h4>
+<dl>
+  {% for resource in item["resources"] %}
+  <dt><a href="{{ resource.URL }}">{{ resource.name }}</a></dt>
+  <dd>{{ resource.description }}</dd>
+  {% endfor %}
+</dl>
+{% endif %}
+
+<h4><i>{{ item["genus"] }} {{ item["species"] }}</i> accessions</h4>
+{% for strain in item["strains"] %}
+<b>{{ strain.identifier }}</b> ({{ strain.origin }}) <br/>
+{{ strain.description }}
+<ul>
+  {% for resource in strain.resources %}
+  <li><a href="{{ resource.URL }}">{{ resource.name }}</a> : {{ resource.description }}</li>
+  {% endfor %}
+</ul>
 {% endfor %}
-</dt>
+
+{% endfor %}
+{% endif %}
