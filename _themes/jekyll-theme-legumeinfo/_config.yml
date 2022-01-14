@@ -14,8 +14,6 @@ page_gen:
     name: genus
     index_files: true
     debug: true
-
-page_gen:
   - data: taxon_list
     template: collection
     dir: collections
