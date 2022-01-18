@@ -18,7 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-exclude_paths: ["news/index.html", "announcements/index.html"]
+## not sure what this is for
+# exclude_paths: ["news/index.html", "announcements/index.html"]
 
 title: "LIS: Legume Information System"
 subtitle: Information about legume traits for crop improvement
@@ -31,7 +32,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: legumeinfo
 github_username: legumeinfo
-newsletter: http://eepurl.com/cX_JjL
+#newsletter: http://eepurl.com/cX_JjL
 
 # Set the LIS Datastore base URL here
 datastoreurl: https://legumeinfo.org/data/v2
