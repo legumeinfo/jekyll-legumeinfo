@@ -18,6 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+## not sure what this is for
+# exclude_paths: ["news/index.html", "announcements/index.html"]
+
 title: "LIS: Legume Information System"
 subtitle: Information about legume traits for crop improvement
 logo: /assets/img/logo.png
@@ -29,12 +32,32 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: legumeinfo
 github_username: legumeinfo
-newsletter: http://eepurl.com/cX_JjL
+#newsletter: http://eepurl.com/cX_JjL
+
+# Set the LIS Datastore base URL here
+datastoreurl: https://legumeinfo.org/data/v2
 
 # Build settings
-theme: jekyll-theme-legumeinfo
+#theme: jekyll-theme-legumeinfo
 plugins:
   - jekyll-feed
+  - jekyll-datapage-generator
+
+#### jekyll-datapage-generator config
+page_gen:
+  - data: taxon_list
+    template: taxon
+    dir: taxa
+    name: genus
+    index_files: true
+    debug: true
+  - data: taxon_list
+    template: collection
+    dir: collections
+    name: genus
+    index_files: true
+    debug: true
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -56,3 +79,4 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+#

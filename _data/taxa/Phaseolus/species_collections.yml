@@ -1,0 +1,60 @@
+---
+species:
+- name: lunatus
+  annotations:
+    - collection: G27455.gnm1.ann1.JD7C
+      synopsis: "Phaseolus lunatus accession G27455 annotation files from genome assembly V1"
+  diversity:
+  expression:
+  genetic:
+  genomes:
+    - collection: G27455.gnm1.7NXX
+      synopsis: "Phaseolus lunatus accession G27455 genome assembly V1"
+  markers:
+- name: vulgaris
+  annotations:
+    - collection: 5-593.gnm1.ann1.3FBJ
+      synopsis: "Phaseolus vulgaris accession 5-593 (Middle American race), annotation 1, genome assembly v1."
+    - collection: G19833.gnm1.ann1.pScz
+      synopsis: "Phaseolus vulgaris accession G19833 annotation files"
+    - collection: G19833.gnm2.ann1.PB8d
+      synopsis: "Phaseolus vulgaris accession G19833 annotation files from genome assembly 2.0"
+    - collection: LaborOvalle.gnm1.ann1.L1DY
+      synopsis: "Phaseolus vulgaris accession Labor Ovalle (race Guatemala), annotation 1, genome assembly v1."
+    - collection: UI111.gnm1.ann1.8L4N
+      synopsis: "Phaseolus vulgaris accession UI111 annotation files from genome assembly 1.0"
+  diversity:
+    - collection: G19833.gnm1.div.Moghaddam_Mamidi_2016
+      synopsis: "Genotyping (variant) data for two diverse collections of Phaseolus vulgaris accessions: the Mesoamerican Diversity Panel (MDP) and the Andean Diversity Panel (ADP)."
+  expression:
+    - collection: G19833.gnm1.ann1.expr.4ZDQ
+      synopsis: "LIS expression dataset phavu1 (An RNA-Seq based gene expression atlas of the common bean cv. Negro jamapa)."
+  genetic:
+    - collection: ICABunsi_x_SXB.qtl.Parker_BernyMierYTeran_2020
+      synopsis: "Study of Pod Dehiscence QTLs, in PD-susceptible x resistant RIL population of 238 individuals."
+    - collection: mixed.gwas.DiVittori_Bitocchi_2021
+      synopsis: "GWAS of pod dehiscence in Common bean, relative to the G19833 assembly 2."
+    - collection: mixed.gwas.Jain_Poromarto_2019
+      synopsis: "GWAS of Soybean cyst nematode (Heterodera glycines) resistance in common bean, relative to G19833 assembly 1."
+    - collection: mixed.gwas.Myers_Wallace_2019
+      synopsis: "GWAS of total phenolic content of pods, pod color, and flower color in Snap beans, relative to the G19833 assembly 2."
+    - collection: mixed.gwas.Parker_BernyMierYTeran_2020
+      synopsis: "GWAS study of pod dehiscence in Phaseolus vulgaris dry beans, using the Andean and Mesoamerican Diversity Panels."
+    - collection: mixed.gwas.Raggi_Caproni_2019
+      synopsis: "GWAS study of control of flowering time in common bean, using a panel of 192 lines."
+    - collection: mixed.gwas.Shi_Gepts_2021
+      synopsis: "GWAS of Soybean Cyst Nematode resistance in Common bean, relative to the the G19833 assembly 1."
+    - collection: mixed.gwas.Zitnick_Anderson_Oladzad_2020
+      synopsis: "GWAS of Fusarium root rot resistance in Common Bean, relative to the G19833 assembly 2."
+  genomes:
+    - collection: 5-593.gnm1.1P7P
+      synopsis: "Phaseolus vulgaris accession 5-593 (Middle American race), genome assembly v1."
+    - collection: G19833.gnm1.zBnF
+      synopsis: "Phaseolus vulgaris accession G19833 genome assembly v1.0"
+    - collection: G19833.gnm2.fC0g
+      synopsis: "Phaseolus vulgaris accession G19833 genome assembly v2.1"
+    - collection: LaborOvalle.gnm1.VZZS
+      synopsis: "Phaseolus vulgaris accession Labor Ovalle (race Guatemala) genome assembly v1."
+    - collection: UI111.gnm1.3VTM
+      synopsis: "Phaseolus vulgaris accession UI111 genome assembly v1"
+  markers:

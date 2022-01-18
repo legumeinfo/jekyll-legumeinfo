@@ -1,0 +1,13 @@
+---
+species:
+- name: pratense
+  annotations:
+    - collection: MilvusB.gnm2.ann1.DFgp
+      synopsis: "Genome assembly for Trifolium pratense (Milvus B)"
+  diversity:
+  expression:
+  genetic:
+  genomes:
+    - collection: MilvusB.gnm2.gNmT
+      synopsis: "Genome assembly for Trifolium pratense (Milvus B)"
+  markers:

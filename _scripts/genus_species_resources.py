@@ -13,21 +13,39 @@ for taxon in taxonList:
     print("## "+taxon["description"])
     print("## "+taxon["genus"])
     print("## "+taxon["category"])
-    
-    # https://legumeinfo.org/data/v2/Arachis/GENUS/about_this_collection/description_Arachis_sp.yml
-    # organism.taxid: 3817
-    # organism.genus: Arachis
-    # organism.commonName:    Arachis
-    # organism.description:   The genus Arachis contains approximately 69 species, distributed in South America east of the Andes,...
+
+    # https://legumeinfo.org/data/v2/Arachis/GENUS/about_this_collection/description_Arachis.yml
+    # ---
+    # taxid: 3817
+    # genus: Arachis
+    # commonName: Peanut
+    # description: "The genus Arachis contains approximately 69 species, distributed in South America...
+    # species:
+    #   - hypogaea
+    #   - duranensis
+    #   - ipaensis
+    #   - cardenasii
+    # resources:
+    #   -
+    #     name: PeanutMine
+    #     URL: "https://mines.legumeinfo.org/peanutmine/begin.do"
+    #     description: "InterMine interface for accessing genetic and genomic data for several species in Arachis."
 
     # https://legumeinfo.org/data/v2/Arachis/cardenasii/about_this_collection/description_Arachis_cardenasii.yml
     # ---
-    # organism.taxid:	51121
-    # organism.genus:	Arachis
-    # organism.species:	cardenasii
-    # organism.abbrev:	araca
-    # organism.commonName:	Mani silvestre (wild peanut)
-    # organism.description:	Arachis cardenasii Krapov. & W.C. Greg. is a wild peanut relative native to Bolivia...
+    # taxid: 51121
+    # genus: Arachis
+    # species: cardenasii
+    # abbrev: araca
+    # commonName: Mani silvestre (wild peanut)
+    # description: "Arachis cardenasii Krapov. & W.C. Greg. is a wild peanut relative native to Bolivia....
+    # strains:
+    #   -
+    #     identifier: K10017
+    #     accession: PI 262141
+    #     name: GKP10017
+    #     origin: Robore, Bolivia
+    #     description: Perennial plant. Taproot deep,  Mainstem erect, with long procumbent lateral branches....
 
     genusResourcesFilename = "../_data/taxa/"+taxon["genus"]+"/genus_resources.yml"
     speciesResourcesFilename = "../_data/taxa/"+taxon["genus"]+"/species_resources.yml"

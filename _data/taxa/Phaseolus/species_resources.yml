@@ -55,4 +55,18 @@ species:
     identifier: UI111
     name: UI111
     origin: US National Plant Germplasm System
+  - accession: ''
+    description: Guatemalan highlands landrace improved by selection; round-seeded
+      Bolonilio market class bean.
+    identifier: LaborOvalle
+    name: LaborOvalle
+    origin: Institute of Agricultural Science and Technology (ICTA)
+  - accession: PI 608674
+    description: 5-593 has been used by Dr. Mark Bassett at the University of Florida
+      as the recipient parent to introgress many genes for seed coat color and pattern,
+      flower color, and other morphological traits typically to the backcross three
+      generation.
+    identifier: 5-593
+    name: 5-593
+    origin: US National Plant Germplasm System
   taxid: 3885

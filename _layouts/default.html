@@ -15,6 +15,10 @@
   {% include taxa-menu.html %}
 {% endif %}
 
+{% if page.collections_menu %}
+  {% include collections-menu.html %}
+{% endif %}
+
 <div class="tm-main uk-section uk-section-default">
   <div class="uk-container uk-container-small uk-position-relative">
     {{ content }}
