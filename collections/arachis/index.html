@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Arachis &#8211; LIS: Legume Information System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species.">
+  <link rel="manifest" type="application/manifest+json; charset=utf-8" href="/manifest.json" />
+  <meta name="robots" content="all">
+  <meta name="author" content="">
+  
+  
+  <link rel="canonical" href="/collections/arachis/">
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for LIS: Legume Information System" href="/feed.xml" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/uikit.min.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/css/theme.css" type="text/css" />
+
+  <!-- place globally-included stylesheet content here -->
+<style>
+  .species-image {
+      float:right;
+      margin:10px;
+  }
+  .species-image img {
+      border:1px solid darkgreen;
+  }
+  .species-image .attribution {
+      text-align: center; 
+      font-style: italic;
+      font-size: 80%;
+  }
+  .temp {
+      color: darkred;
+      font-weight: bold;
+</style>
+
+
+
+  <!-- Custom JS -->
+  <script src="/assets/js/uikit.min.js"></script>
+  <script src="/assets/js/uikit-icons.min.js"></script>
+
+  <!-- place globally-included scripts here -->
+
+<!-- experimenting with the JS compiled under jekyll-data-js -->
+<script src="/assets/js/lis-data.js"></script>
+
+
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+</head>
+
+
+<body>
+
+
+
+
+<div class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed" uk-sticky="media: 960" style="position: fixed; top: 0px; width: 1199px;">
+  <div class="uk-container uk-container-expand">
+    <nav class="uk-navbar">
+      <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="/">
+          
+          <img class="uk-margin-small-right" src="/assets/img/logo.png" width="47" height="47" alt="site logo" />
+          
+          <div>
+            LIS: Legume Information System
+            
+            <div class="uk-navbar-subtitle">Information about legume traits for crop improvement</div>
+            
+          </div>
+        </a>
+      </div>
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav uk-visible@m">
+
+        <li><a href="/">Home</a></li>
+<li>
+  <a class="taxon_list" href="/taxa">Taxa</a>
+  
+  
+  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .taxon_list; delay-hide: 0;">
+    <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+      
+      
+      
+      <li> <a href="/taxa//arachis"> Arachis (Warm-season oilseed crop, indigenous to South America.)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/taxa//cajanus"> Cajanus (Pigeonpea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/taxa//cicer"> Cicer (Chickpea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/taxa//glycine"> Glycine (Soybean)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/taxa//lotus"> Lotus (Bird's-foot trefoil)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/taxa//lupinus"> Lupinus (Several species of lupin grain legumes)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/taxa//medicago"> Medicago (Alfalfa/Lucerne, Barrel Medic)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/taxa//phaseolus"> Phaseolus (Common Bean, Lima Bean, Tepary Bean, etc.)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/taxa//pisum"> Pisum (Pea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/taxa//trifolium"> Trifolium (Clover)</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  
+</li>
+<li>
+  <a class="collections" href="/collections">Collections</a>
+  
+  
+  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .collections; delay-hide: 0;">
+    <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+      
+      
+      
+      <li> <a href="/collections//arachis"> Arachis (Warm-season oilseed crop, indigenous to South America.)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//cajanus"> Cajanus (Pigeonpea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//cicer"> Cicer (Chickpea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//glycine"> Glycine (Soybean)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//lotus"> Lotus (Bird's-foot trefoil)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//lupinus"> Lupinus (Several species of lupin grain legumes)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//medicago"> Medicago (Alfalfa/Lucerne, Barrel Medic)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//phaseolus"> Phaseolus (Common Bean, Lima Bean, Tepary Bean, etc.)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//pisum"> Pisum (Pea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//trifolium"> Trifolium (Clover)</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  
+</li>
+<li>
+  <a class="tools" href="/tools">Tools</a>
+  
+  
+  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .tools; delay-hide: 0;">
+    <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+      
+      
+      <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+      
+      <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+      
+      <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+      
+      <li><a href="https://legumeinfo.org/gcv2">Genome Context Viewer</a></li>
+      
+      <li><a href="https://zzbrowse.lis.ncgr.org/">ZZBrowse GWAS/QTL</a></li>
+      
+      <li><a href="https://legumeinfo.org/germplasm/map">LIS Germplasm GIS Viewer</a></li>
+      
+      <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+      
+      
+      
+      <li><a href="https://legumeinfo.org/sequenceserver/">LIS SequenceServer BLAST</a></li>
+      
+      
+    </ul>
+  </div>
+  
+</li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/community">Community</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/help">Help</a></li>
+
+
+        
+          <li><a class="tm-no-underline" href="https://twitter.com/legumeinfo" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span></a></li>
+        
+        
+        
+          <li><a class="tm-no-underline" href="https://github.com/legumeinfo" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span></a></li>
+        
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+
+
+
+
+
+  <div class="tm-sidebar-left uk-visible@m">
+  <h3>Data Collections</h3>
+  
+  <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+    
+    
+    
+    <li><a href="/collections/arachis">Arachis</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/collections/cajanus">Cajanus</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/collections/cicer">Cicer</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/collections/glycine">Glycine</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/collections/lotus">Lotus</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/collections/lupinus">Lupinus</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/collections/medicago">Medicago</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/collections/phaseolus">Phaseolus</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/collections/pisum">Pisum</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/collections/trifolium">Trifolium</a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ul>
+</div>
+
+
+
+<div class="tm-main uk-section uk-section-default">
+  <div class="uk-container uk-container-small uk-position-relative">
+    
+
+
+
+
+
+<h1><i>Arachis</i> data collections</h1>
+
+
+
+<h3><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/"><i>Arachis hypogaea</i></a></h3>
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genomes/">Genomes</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genomes/Fuhuasheng.gnm1.XX5Y/">Fuhuasheng.gnm1.XX5Y</a></dt>
+  <dd>Genome assembly for tetraploid peanut cultivar Fuhuasheng, from Chen et al., 2019</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genomes/Shitouqi.gnm1.L4VP/">Shitouqi.gnm1.L4VP</a></dt>
+  <dd>Genome assembly for peanut cultivar Shitouqui, from Zhuang et al., 2019.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genomes/Tifrunner.gnm1.KYV3/">Tifrunner.gnm1.KYV3</a></dt>
+  <dd>Genome assembly 1 for Arachis hypogaea, cultivar Tifrunner</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genomes/Tifrunner.gnm2.J5K5/">Tifrunner.gnm2.J5K5</a></dt>
+  <dd>Genome assembly 2 for Arachis hypogaea, cultivar Tifrunner. This version has structural changes relative to assembly 1.</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/annotations/">Annotations</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/annotations/Tifrunner.gnm1.ann1.CCJH/">Tifrunner.gnm1.ann1.CCJH</a></dt>
+  <dd>Arachis hypogaea accession Tifrunner annotation files from genome assembly 1.0</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/annotations/Tifrunner.gnm2.ann1.4K0L/">Tifrunner.gnm2.ann1.4K0L</a></dt>
+  <dd>Gene models for genome assembly 2 for Arachis hypogaea, cultivar Tifrunner.</dd>
+  
+</dl>
+
+
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/">Genetic Data</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/Huayu28_x_P76.gen.Hu_Zhang_2018/">Huayu28_x_P76.gen.Hu_Zhang_2018</a></dt>
+  <dd>A genetic map from a Huayu28 x P76 RIL population composed of 2,334 markers (2,266 SNPs and 68 microsatellites) for the study of seed oleic and linoleic acid content</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/ICGS44_x_ICGS76.gen.Gautami_Pandey_2012/">ICGS44_x_ICGS76.gen.Gautami_Pandey_2012</a></dt>
+  <dd>SSR genetic map generated from a RIL mapping population derived from the cross of ICGS 44 and ICGS 76</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/ICGS76_x_CSMG84.gen.Gautami_Pandey_2012/">ICGS76_x_CSMG84.gen.Gautami_Pandey_2012</a></dt>
+  <dd>SSR genetic map generated from a RIL population derived from the cross of ICGS 76 with CSMG 84-1</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/mixed.gen.Gautami_Pandey_2012/">mixed.gen.Gautami_Pandey_2012</a></dt>
+  <dd>Consensus genetic map for Arachis hypogaea from three RIL populations: ICGS76 x CSMG84-1, ICGS44 x ICGS76, and TAG24 x ICGV86031</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/mixed.gen.Sujay_Gowda_2012/">mixed.gen.Sujay_Gowda_2012</a></dt>
+  <dd>A consensus genetic map for Arachis hypogaea built from TAG24 x GPBD4 and TG26 x GPBD4 RIL populations</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/NAMFlor7.gwas.Gangurde_Wang_2020/">NAMFlor7.gwas.Gangurde_Wang_2020</a></dt>
+  <dd>Gangurde, Wang, et al. (2020) GWAS study of pod and seed weight on the NAM Florida-7 mapping population</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/NAMTifr.gwas.Gangurde_Wang_2020/">NAMTifr.gwas.Gangurde_Wang_2020</a></dt>
+  <dd>Gangurde, Wang, et al. (2020) NAM Tifrunner GWAS study of pod and seed weight</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/SunOleic97R_x_NC94022.gen.Qin_Feng_2012/">SunOleic97R_x_NC94022.gen.Qin_Feng_2012</a></dt>
+  <dd>SSR-based genetic map constructed using a F5:6 RIL population derived from the cross of SunOleic 97R with NC94022 along with a Tomato spotted wilt virus QTL</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/TAG24_x_GPBD4.gen.Kolekar_Sujay_2016/">TAG24_x_GPBD4.gen.Kolekar_Sujay_2016</a></dt>
+  <dd>An F6 population of 266 RILs was advanced by single seed descent from a cross of TAG 24 and GPBD 4. QTLs were found for Late leaf spot and Puccinia rust.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/TAG24_x_ICGV86031.gen.Ravi_Vadez_2011/">TAG24_x_ICGV86031.gen.Ravi_Vadez_2011</a></dt>
+  <dd>SSR genetic map from a cross of 'TAG 24' and 'ICGV 86031'</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/TG26_x_GPBD4.gen.Sarvamanga_Gowdaa_2011/">TG26_x_GPBD4.gen.Sarvamanga_Gowdaa_2011</a></dt>
+  <dd>TT_TG26_x_GPBD4_b, an SSR map created from a cross of the A. hypogaea cultivars 'TG 26' and 'GPBD 4'.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/TG26_x_GPBD4.gen.Sujay_Gowda_2012/">TG26_x_GPBD4.gen.Sujay_Gowda_2012</a></dt>
+  <dd>Genetic map derived from a cross of A. hypogaea cultivers 'TG 26' and 'GPBD 4'.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/Tifrunner_x_GT-C20.gen.Agarwal_Clevenger_2018/">Tifrunner_x_GT-C20.gen.Agarwal_Clevenger_2018</a></dt>
+  <dd>Genetic map of Tifrunner x GT-C20 for the study of early and late leaf spots (ELS and LLS) and tomato spotted wilt virus (TSWV).</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/Tifrunner_x_GT-C20.gen.Qin_Feng_2012/">Tifrunner_x_GT-C20.gen.Qin_Feng_2012</a></dt>
+  <dd>SSR-based genetic map constructed using a F5:6 RIL population derived from Tifrunner x GT-C20</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/Tifrunner_x_GT-C20.gen.Wang_Penmetsa_2012/">Tifrunner_x_GT-C20.gen.Wang_Penmetsa_2012</a></dt>
+  <dd>TT_Tifrunner_x_GT-C20_b, an SSR-based map derived from a cross of the A. hypogaea cultivars Tifrunner and GT-C20.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/USPeanutCore.gwas.Otyama_Kulkarni_2020/">USPeanutCore.gwas.Otyama_Kulkarni_2020</a></dt>
+  <dd>GWAS determining markers associated with fatty acid composition in the USDA peanut core collection.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/genetic/VG9514_x_TAG24.gen.Mondal_Hadapad_2014/">VG9514_x_TAG24.gen.Mondal_Hadapad_2014</a></dt>
+  <dd>Genetic map derived from a cross of A. hypogaea cultivars VG 9514 and TAG 24.</dd>
+  
+</dl>
+
+
+
+
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/diversity/">Diversity</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/diversity/aradu1_araip1.gnm1.div.Clevenger_Korani_2018/">aradu1_araip1.gnm1.div.Clevenger_Korani_2018</a></dt>
+  <dd>Genotyping of African germplasm collection</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/diversity/aradu1_araip1.gnm1.div.Otyama_Kulkarni_2020/">aradu1_araip1.gnm1.div.Otyama_Kulkarni_2020</a></dt>
+  <dd>Diversity data for the U.S. peanut core collection, genotyped relative to the diploid A. duranensis and A. ipaensis genome assemblies.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/hypogaea/diversity/aradu1_araip1.gnm1.div.Otyama_Wilkey_2019/">aradu1_araip1.gnm1.div.Otyama_Wilkey_2019</a></dt>
+  <dd>Genotype data for US Peanut Mini Core collection.</dd>
+  
+</dl>
+
+
+<hr/>
+
+
+
+<h3><a target="_blank" href="https://data.legumeinfo.org/Arachis/duranensis/"><i>Arachis duranensis</i></a></h3>
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Arachis/duranensis/genomes/">Genomes</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/duranensis/genomes/V14167.gnm1.SWBf/">V14167.gnm1.SWBf</a></dt>
+  <dd>Genome assembly 1 for Arachis duranensis, accession V14167</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/duranensis/genomes/V14167.gnm2.J7QH/">V14167.gnm2.J7QH</a></dt>
+  <dd>Genome assembly 2 for Arachis duranensis, accession V14167</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Arachis/duranensis/annotations/">Annotations</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/duranensis/annotations/V14167.gnm1.ann1.cxSM/">V14167.gnm1.ann1.cxSM</a></dt>
+  <dd>genome annotations</dd>
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<hr/>
+
+
+
+<h3><a target="_blank" href="https://data.legumeinfo.org/Arachis/ipaensis/"><i>Arachis ipaensis</i></a></h3>
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Arachis/ipaensis/genomes/">Genomes</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/ipaensis/genomes/K30076.gnm1.bXJ8/">K30076.gnm1.bXJ8</a></dt>
+  <dd>Genome assembly 1 for Arachis ipaensis, accession K30076.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/ipaensis/genomes/K30076.gnm2.1GWY/">K30076.gnm2.1GWY</a></dt>
+  <dd>Genome Assembly 2 for A. ipaensis K30076. A high-quality chromosome-scale assembly, based on PacBio RSII and Sequel reads, ordered into pseudomolecules by Dovetail using Hi-C Chicago libraries and the HiRise and SNAP.</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Arachis/ipaensis/annotations/">Annotations</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/ipaensis/annotations/K30076.gnm1.ann1.J37m/">K30076.gnm1.ann1.J37m</a></dt>
+  <dd>genome annotations for Arachis ipaensis K30076.gnm1.ann1</dd>
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<hr/>
+
+
+
+<h3><a target="_blank" href="https://data.legumeinfo.org/Arachis/cardenasii/"><i>Arachis cardenasii</i></a></h3>
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Arachis/cardenasii/genomes/">Genomes</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Arachis/cardenasii/genomes/K10017.gnm1.DQ4M/">K10017.gnm1.DQ4M</a></dt>
+  <dd>Genome assembly 1 for Arachis cardenasii, accession K10017</dd>
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr/>
+
+
+
+
+
+  </div>
+</div>
+
+</body>
+</html>
