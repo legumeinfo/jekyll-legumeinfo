@@ -28,14 +28,10 @@
     
       <item>
         <title>Tepary bean genomes added to LIS</title>
-        <description>&lt;p&gt;&lt;a href=&quot;/organism/Phaseolus/acutifolius&quot;&gt;Phaseolus acutifolius (tepary bean)&lt;/a&gt; is a drought- and heat-tolerant crop
+        <description>&lt;p&gt;&lt;a href=&quot;/taxa/phaseolus&quot;&gt;Phaseolus acutifolius (tepary bean)&lt;/a&gt; is a drought- and heat-tolerant crop
 native to the American Southwest and Mexico; it joins the growing set of annotated genomes at LIS,
 with a cultivated and wild accession described in &lt;a href=&quot;https://doi.org/10.1038/s41467-021-22858-x&quot;&gt;Moghaddam et al. 2021&lt;/a&gt;.
-The cultivated accession has been added as the primary representative of the species,
-and can be found via the standard gene search pages, and genome browsers, while the wild species is accessible via a
-Phaseolus data source for the GCV instance located
-&lt;a href=&quot;https://www.legumefederation.org/gcv/legfed_v1_0/search/lis/phavu.Phvul.002G021600;routeParam=1?neighbors=80&amp;amp;matched=15&amp;amp;intermediate=10&amp;amp;algorithm=smith-waterman&amp;amp;match=10&amp;amp;mismatch=-1&amp;amp;gap=-1&amp;amp;score=30&amp;amp;threshold=25&amp;amp;regexp=&amp;amp;order=distance&amp;amp;sources=phaseolus&amp;amp;bintermediate=10&amp;amp;bmask=10&amp;amp;bmatched=15&quot;&gt;here&lt;/a&gt;,
-which also includes several new accessions of Phaseolus vulgaris (UI111 and LaborOvalle), courtesy of Phytozome.&lt;/p&gt;
+The cultivated accession has been added as the primary representative of the species.&lt;/p&gt;
 </description>
         <pubDate>Fri, 01 Oct 2021 17:00:00 +0000</pubDate>
         <link>/news/genomes/2021/10/01/tepary-bean-genomes.html</link>
