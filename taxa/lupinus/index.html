@@ -20,6 +20,24 @@
   <link rel="stylesheet" href="/assets/css/theme.css" type="text/css" />
 
   <!-- place globally-included stylesheet content here -->
+<style>
+  .species-image {
+      float:right;
+      margin:10px;
+  }
+  .species-image img {
+      border:1px solid darkgreen;
+  }
+  .species-image .attribution {
+      text-align: center; 
+      font-style: italic;
+      font-size: 80%;
+  }
+  .temp {
+      color: darkred;
+      font-weight: bold;
+</style>
+
 
 
   <!-- Custom JS -->
@@ -27,6 +45,10 @@
   <script src="/assets/js/uikit-icons.min.js"></script>
 
   <!-- place globally-included scripts here -->
+
+<!-- experimenting with the JS compiled under jekyll-data-js -->
+<script src="/assets/js/lis-data.js"></script>
+
 
 
   <!-- Icons -->
@@ -79,96 +101,196 @@
   
   <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .taxon_list; delay-hide: 0;">
     <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
-    
       
-        
-          <li> <a href="/taxa//arachis"> Arachis (peanut: domesticated and wild)</a></li>
-        
       
-    
       
-        
-          <li> <a href="/taxa//cajanus"> Cajanus (pigeonpea)</a></li>
-        
+      <li> <a href="/taxa//arachis"> Arachis (Warm-season oilseed crop, indigenous to South America.)</a></li>
       
-    
       
-        
-          <li> <a href="/taxa//cicer"> Cicer (chickpea)</a></li>
-        
       
-    
       
-        
-          <li> <a href="/taxa//glycine"> Glycine (soybean)</a></li>
-        
       
-    
+      <li> <a href="/taxa//cajanus"> Cajanus (Pigeonpea)</a></li>
       
-        
-          <li> <a href="/taxa//lotus"> Lotus (birdsfoot trefoil; model species)</a></li>
-        
       
-    
       
-        
-          <li> <a href="/taxa//lupinus"> Lupinus (several species of lupin grain legumes)</a></li>
-        
       
-    
       
-        
-          <li> <a href="/taxa//medicago"> Medicago (alfalfa/lucerne, barrel medic; model species)</a></li>
-        
+      <li> <a href="/taxa//cicer"> Cicer (Chickpea)</a></li>
       
-    
       
-        
-          <li> <a href="/taxa//phaseolus"> Phaseolus (common bean, lima bean, tepary bean, others)</a></li>
-        
       
-    
       
-        
-          <li> <a href="/taxa//pisum"> Pisum (pea)</a></li>
-        
       
-    
+      <li> <a href="/taxa//glycine"> Glycine (Soybean)</a></li>
       
-        
-          <li> <a href="/taxa//trifolium"> Trifolium (clovers)</a></li>
-        
       
-    
       
-        
       
-    
       
-        
+      <li> <a href="/taxa//lotus"> Lotus (Bird's-foot trefoil)</a></li>
       
-    
       
-        
       
-    
       
-        
       
-    
+      <li> <a href="/taxa//lupinus"> Lupinus (Several species of lupin grain legumes)</a></li>
       
-        
       
-    
       
-        
       
-    
       
-        
+      <li> <a href="/taxa//medicago"> Medicago (Alfalfa/Lucerne, Barrel Medic)</a></li>
       
-    
-    <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+      
+      
+      
+      
+      <li> <a href="/taxa//phaseolus"> Phaseolus (Common Bean, Lima Bean, Tepary Bean, etc.)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/taxa//pisum"> Pisum (Pea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/taxa//trifolium"> Trifolium (Clover)</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li><a href="/taxa/others">OTHERS (special-focus species and collections)</a></li>
+    </ul>
+  </div>
+  
+</li>
+<li>
+  <a class="collections" href="/collections">Collections</a>
+  
+  
+  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .collections; delay-hide: 0;">
+    <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+      
+      
+      
+      <li> <a href="/collections//arachis"> Arachis (Warm-season oilseed crop, indigenous to South America.)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//cajanus"> Cajanus (Pigeonpea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//cicer"> Cicer (Chickpea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//glycine"> Glycine (Soybean)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//lotus"> Lotus (Bird's-foot trefoil)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//lupinus"> Lupinus (Several species of lupin grain legumes)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//medicago"> Medicago (Alfalfa/Lucerne, Barrel Medic)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//phaseolus"> Phaseolus (Common Bean, Lima Bean, Tepary Bean, etc.)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//pisum"> Pisum (Pea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//trifolium"> Trifolium (Clover)</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li><a href="/taxa/others">OTHERS (special-focus species and collections)</a></li>
     </ul>
   </div>
   
@@ -179,58 +301,40 @@
   
   <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .tools; delay-hide: 0;">
     <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
-    
       
-        <li><a href="#">Gene Families</a></li>
       
-        <li><a href="#">Maps</a></li>
+      <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
       
-        <li><a href="#">QTL Search</a></li>
+      <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
       
-        <li><a href="#">Gene Search</a></li>
+      <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
       
-        <li><a href="#">Protein Domains</a></li>
+      <li><a href="https://legumeinfo.org/gcv2">Genome Context Viewer</a></li>
       
-        <li><a href="#">Genome Context Viewer</a></li>
+      <li><a href="https://zzbrowse.lis.ncgr.org/">ZZBrowse GWAS/QTL</a></li>
       
-        <li><a href="#">Data Store</a></li>
+      <li><a href="https://legumeinfo.org/germplasm/map">LIS Germplasm GIS Viewer</a></li>
       
-        <li><a href="#">Legume Mines</a></li>
+      <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
       
-        <li><a href="#">DSCensor Data Overviews</a></li>
       
-        <li><a href="#">Expression</a></li>
       
-        <li><a href="#">ZZBrowse GWAS/QTL</a></li>
+      <li><a href="https://legumeinfo.org/sequenceserver/">LIS SequenceServer BLAST</a></li>
       
-    
       
-        <li><a href="#">BLAST Sequence Search</a></li>
-      
-        <li><a href="#">BLAT Sequence Search</a></li>
-      
-        <li><a href="#">Keyword Search</a></li>
-      
-        <li><a href="#">SequenceServer</a></li>
-      
-        <li><a href="#">Annotate Your Sequences</a></li>
-      
-    
     </ul>
   </div>
   
 </li>
-<li><a href="/download">Download</a></li>
+<li><a href="/blog">Blog</a></li>
 <li><a href="/community">Community</a></li>
 <li><a href="/contact">Contact</a></li>
 <li><a href="/help">Help</a></li>
 
 
         
-          <li><a class="tm-no-underline" href="https://twitter.com/legumefed" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span></a></li>
+          <li><a class="tm-no-underline" href="https://twitter.com/legumeinfo" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span></a></li>
         
-        
-          <li><a class="tm-no-underline" href="" target="_blank" title="Subscribe to our newsletter"><span uk-icon="mail"</span></a></li>
         
         
           <li><a class="tm-no-underline" href="https://github.com/legumeinfo" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span></a></li>
@@ -243,55 +347,106 @@
 
 
 
+
+
   <div class="tm-sidebar-left uk-visible@m">
-  <h3>Tools</h3>
-  
-  
+  <h3>Taxa</h3>
   
   <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-    <li class="uk-nav-header">Browse and Search</li>
     
-    <li><a href="#">Gene Families</a></li>
     
-    <li><a href="#">Maps</a></li>
     
-    <li><a href="#">QTL Search</a></li>
+    <li><a href="/taxa/arachis">Arachis</a></li>
     
-    <li><a href="#">Gene Search</a></li>
     
-    <li><a href="#">Protein Domains</a></li>
     
-    <li><a href="#">Genome Context Viewer</a></li>
     
-    <li><a href="#">Data Store</a></li>
     
-    <li><a href="#">Legume Mines</a></li>
+    <li><a href="/taxa/cajanus">Cajanus</a></li>
     
-    <li><a href="#">DSCensor Data Overviews</a></li>
     
-    <li><a href="#">Expression</a></li>
     
-    <li><a href="#">ZZBrowse GWAS/QTL</a></li>
     
+    
+    <li><a href="/taxa/cicer">Cicer</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/taxa/glycine">Glycine</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/taxa/lotus">Lotus</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/taxa/lupinus">Lupinus</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/taxa/medicago">Medicago</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/taxa/phaseolus">Phaseolus</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/taxa/pisum">Pisum</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/taxa/trifolium">Trifolium</a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="/taxa/others">OTHERS</a></li>
   </ul>
-  
-  <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-    <li class="uk-nav-header">Search sequences and features against sequence databases</li>
-    
-    <li><a href="#">BLAST Sequence Search</a></li>
-    
-    <li><a href="#">BLAT Sequence Search</a></li>
-    
-    <li><a href="#">Keyword Search</a></li>
-    
-    <li><a href="#">SequenceServer</a></li>
-    
-    <li><a href="#">Annotate Your Sequences</a></li>
-    
-  </ul>
-  
-  
 </div>
+
+
 
 
 
@@ -299,97 +454,228 @@
   <div class="uk-container uk-container-small uk-position-relative">
     
 
-<h2><i>Lupinus</i></h2>
-
-<h3>Tools and resources for the genus as a whole</h3>
 
 
-<dt>
 
+
+
+<h1><i></i></h1>
+<p></p>
+
+
+<h1><i>Lupinus</i> (lupin, lupine)</h2>
+
+<p>Lupinus, commonly known as lupin, lupine, or regionally bluebonnet etc., is a genus of flowering plants in the legume family Fabaceae. The genus includes over 199 species, with centers of diversity in North and South America. Smaller centers occur in North Africa and the Mediterranean. They are widely cultivated, both as a food source and as ornamental plants, although in the Nordic countries and New Zealand's South Island, introduced lupins are viewed as a severe environmental threat.</p>
+<p>NCBI taxonomy ID: <b>3869</b></p>
+
+
+
+<h2>Tools and resources for particular species</h2>
+
+
+
+<hr/>
+
+
+<h3><i>Lupinus albus</i>: White lupin</h3>
+
+
+
+
+<div class="species-image">
+  <img src="/assets/img/species_images/lupal.jpg" alt="Image: White lupin"/>
   
-    <dd><strong><i>Lupinus</i></strong> (containing several independently domesticated bean species)</dd>
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
 
-  
-  
-    <dd><a href="https://mines.legumeinfo.org/lupinmine/begin.do">LupinMine</a> (InterMine interface for accessing genetic and genomic data for several species in Lupinus.)</dd>
-  
-    <dd><a href="https://legumeinfo.org/gcv2/gene;lis=lupal.Lalb_Chr24g0398121?algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&sources=lis&bregexp=med&border=chromosome&regexp=&order=distance">Genome Context Viewer</a> (Browser for dynamically discovering and viewing genomic synteny across selected species.)</dd>
-  
-    <dd><a href="https://legumeinfo.org/germplasm/map#?zoom=5&maxRecs=1000&taxonQuery=Lupinus&traitOverlay=&traitScale=global&country=&geocodedOnly&traitExcludeUnchar=false&limitToMapExtent=false&lat=42.97&lng=-105.38&mapHeight=430&baseMap=ESRI%20-%20NatGeo%20(default,%20reference%20map)&ne_lat=49.49667452747045&ne_lng=-81.07910156250001&sw_lat=35.67514743608467&sw_lng=-129.68261718750003&accessionIdsInclusive=false">Germplasm GIS</a> (Geographic information system viewer, showing collection locations for Lupinus data held by the U.S. National Plant Germplasm System.)</dd>
-  
 
-</dt>
+<p>White lupin (Lupinus albus) has been used as a model to study the development of dense root hairs, for phosphorous uptake, in phosphorous-deficient soils. See O'Rourke et al., 2013 (DOI:10.1104/pp.112.209254).</p>
 
-<h3>Tools and resources for particular species</h3>
+<p>NCBI taxonomy ID: <b>3870</b></p>
 
 
-<dt>
 
+<h4><i>Lupinus albus</i> accessions</h4>
+
+<b>LAGI01</b> (Northern United States) <br/>
+Lupinus albus strain LAGI01 was used in a study of response to low-phosphorous stress, in O'Rourke et al., 2013 (DOI:10.1104/pp.112.209254). The strain identifier 'LAGI01' is informal, being an abbreviation of 'Lupinus albus Gene Index', and does not uniquely identify a particular accession.
+<ul>
   
-    <dd><strong>Lupinus albus</strong> (white lupin)</dd>
+</ul>
+
+<b>Amiga</b> (Mediterranean region, center of origin believed to be Greece, Western Turkey and southern Balkans) <br/>
+A modern improved cultivar used as the basis of whole genome sequencing and assembly (Hufnagel et al. 2020 https://doi.org/10.1038/s41467-019-14197-9)
+<ul>
+  
+</ul>
+
+
+
+
+<hr/>
+
+
+<h3><i>Lupinus angustifolius</i>: narrow-leafed lupin</h3>
+
+
+
+
+<div class="species-image">
+  <img src="/assets/img/species_images/lupan.jpg" alt="Image: narrow-leafed lupin"/>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="attribution">
     
-      <img src="/assets/img/species_images/lupal.jpg" alt="Image: lupal">
+    &copy; <a href="http://images.sciencedaily.com/2008/12/081208092147.jpg">sciencedaily.com</a>
     
-    <dd><i>Lupinus albus</i>, commonly known as the white lupin, is a member of the genus Lupinus in the family Fabaceae. It is a traditional pulse cultivated in the Mediterranean region.</dd>
-    <dd></dd>
-    
-      <dd><u>Genome browsers and genomic data</u></dd>
-      
-        <dd>XX (Lupinus albus accession XX)</dd>
-        
-          <dd>&nbsp; &nbsp;
-            Assembly gnm1:
-          </dd>
-          <dd>&nbsp; &nbsp;
-            
-              <a href="#">GBrowse at LIS</a>;
-            
-              <a href="#">JBrowse at LIS</a>;
-            
-              <a href="#">JBrowse at JGI</a>;
-            
-              <a href="#">Download from Data Store</a>;
-            
-          </dd>
-        
-      
-    
-    <br>
+  </div>
   
-    <dd><strong>Lupinus angustifolius</strong> (narrow-leafed lupin)</dd>
-    
-      <img src="/assets/img/species_images/lupan.jpg" alt="Image: lupan">
-    
-    <dd><i>Lupinus angustifolius</i> is a species of lupin known by many common names, including narrow-leafed lupin and blue lupin.  It is native to Eurasia and northern Africa and also naturalized in parts of Australia and North America.  It has been cultivated for over 6000 years as a food crop for its edible legume seeds, as a fodder for livestock, and for use as a green manure.</dd>
-    <dd></dd>
-    
-      <dd><u>Genome browsers and genomic data</u></dd>
-      
-        <dd>XX (Lupinus angustifolius accession XX)</dd>
-        
-          <dd>&nbsp; &nbsp;
-            Assembly gnm1:
-          </dd>
-          <dd>&nbsp; &nbsp;
-            
-              <a href="#">GBrowse at LIS</a>;
-            
-              <a href="#">JBrowse at LIS</a>;
-            
-              <a href="#">JBrowse at JGI</a>;
-            
-              <a href="#">Download from Data Store</a>;
-            
-          </dd>
-        
-      
-    
-    <br>
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
 
-</dt>
+
+<p>Narrow-leafed lupin (Lupinus angustifolius) is an important legume crop, for its high-protein seeds and ability to tolerate sandy, relatively acidic soil, in Australia and parts of Europe. The genome has been sequenced: Hane et al., 2016 (DOI:10.1111/pbi.12615).</p>
+
+<p>NCBI taxonomy ID: <b>3871</b></p>
+
+
+
+<h4><i>Lupinus angustifolius</i> accessions</h4>
+
+<b>Tanjil</b> (Australia) <br/>
+Lupinus angustifolius strain Tanjil is used as a crop variety in Australia, and has been used for genetic studies. Tanjil is resistant to Anthracnose (Colletotrichum gloeosporioides), Yang et al., 2004 (DOI:10.1023/B:MOLB.0000038003.49638.97)
+<ul>
+  
+</ul>
+
+<b>Unicrop</b> (Australia) <br/>
+Lupinus angustifolius strain Unicrop is used as a crop variety in Australia, and has been used for genetic studies. Unicrop is susceptible to Anthracnose (Colletotrichum gloeosporioides), Yang et al., 2004 (DOI:10.1023/B:MOLB.0000038003.49638.97)
+<ul>
+  
+</ul>
+
+<b>P27255</b> (Morocco) <br/>
+Lupinus angustifolius strain P27255 is a wild accession that has been used in genetic and gene expression studies: Kamphuis et al., 2014 (DOI:10.1111/pbi.12229).
+<ul>
+  
+</ul>
+
+
+
+
 
   </div>
 </div>

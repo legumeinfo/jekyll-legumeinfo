@@ -20,6 +20,24 @@
   <link rel="stylesheet" href="/assets/css/theme.css" type="text/css" />
 
   <!-- place globally-included stylesheet content here -->
+<style>
+  .species-image {
+      float:right;
+      margin:10px;
+  }
+  .species-image img {
+      border:1px solid darkgreen;
+  }
+  .species-image .attribution {
+      text-align: center; 
+      font-style: italic;
+      font-size: 80%;
+  }
+  .temp {
+      color: darkred;
+      font-weight: bold;
+</style>
+
 
 
   <!-- Custom JS -->
@@ -27,6 +45,10 @@
   <script src="/assets/js/uikit-icons.min.js"></script>
 
   <!-- place globally-included scripts here -->
+
+<!-- experimenting with the JS compiled under jekyll-data-js -->
+<script src="/assets/js/lis-data.js"></script>
+
 
 
   <!-- Icons -->
@@ -79,96 +101,196 @@
   
   <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .taxon_list; delay-hide: 0;">
     <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
-    
       
-        
-          <li> <a href="/taxa//arachis"> Arachis (peanut: domesticated and wild)</a></li>
-        
       
-    
       
-        
-          <li> <a href="/taxa//cajanus"> Cajanus (pigeonpea)</a></li>
-        
+      <li> <a href="/taxa//arachis"> Arachis (Warm-season oilseed crop, indigenous to South America.)</a></li>
       
-    
       
-        
-          <li> <a href="/taxa//cicer"> Cicer (chickpea)</a></li>
-        
       
-    
       
-        
-          <li> <a href="/taxa//glycine"> Glycine (soybean)</a></li>
-        
       
-    
+      <li> <a href="/taxa//cajanus"> Cajanus (Pigeonpea)</a></li>
       
-        
-          <li> <a href="/taxa//lotus"> Lotus (birdsfoot trefoil; model species)</a></li>
-        
       
-    
       
-        
-          <li> <a href="/taxa//lupinus"> Lupinus (several species of lupin grain legumes)</a></li>
-        
       
-    
       
-        
-          <li> <a href="/taxa//medicago"> Medicago (alfalfa/lucerne, barrel medic; model species)</a></li>
-        
+      <li> <a href="/taxa//cicer"> Cicer (Chickpea)</a></li>
       
-    
       
-        
-          <li> <a href="/taxa//phaseolus"> Phaseolus (common bean, lima bean, tepary bean, others)</a></li>
-        
       
-    
       
-        
-          <li> <a href="/taxa//pisum"> Pisum (pea)</a></li>
-        
       
-    
+      <li> <a href="/taxa//glycine"> Glycine (Soybean)</a></li>
       
-        
-          <li> <a href="/taxa//trifolium"> Trifolium (clovers)</a></li>
-        
       
-    
       
-        
       
-    
       
-        
+      <li> <a href="/taxa//lotus"> Lotus (Bird's-foot trefoil)</a></li>
       
-    
       
-        
       
-    
       
-        
       
-    
+      <li> <a href="/taxa//lupinus"> Lupinus (Several species of lupin grain legumes)</a></li>
       
-        
       
-    
       
-        
       
-    
       
-        
+      <li> <a href="/taxa//medicago"> Medicago (Alfalfa/Lucerne, Barrel Medic)</a></li>
       
-    
-    <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+      
+      
+      
+      
+      <li> <a href="/taxa//phaseolus"> Phaseolus (Common Bean, Lima Bean, Tepary Bean, etc.)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/taxa//pisum"> Pisum (Pea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/taxa//trifolium"> Trifolium (Clover)</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li><a href="/taxa/others">OTHERS (special-focus species and collections)</a></li>
+    </ul>
+  </div>
+  
+</li>
+<li>
+  <a class="collections" href="/collections">Collections</a>
+  
+  
+  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .collections; delay-hide: 0;">
+    <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+      
+      
+      
+      <li> <a href="/collections//arachis"> Arachis (Warm-season oilseed crop, indigenous to South America.)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//cajanus"> Cajanus (Pigeonpea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//cicer"> Cicer (Chickpea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//glycine"> Glycine (Soybean)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//lotus"> Lotus (Bird's-foot trefoil)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//lupinus"> Lupinus (Several species of lupin grain legumes)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//medicago"> Medicago (Alfalfa/Lucerne, Barrel Medic)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//phaseolus"> Phaseolus (Common Bean, Lima Bean, Tepary Bean, etc.)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//pisum"> Pisum (Pea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//trifolium"> Trifolium (Clover)</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li><a href="/taxa/others">OTHERS (special-focus species and collections)</a></li>
     </ul>
   </div>
   
@@ -179,58 +301,40 @@
   
   <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .tools; delay-hide: 0;">
     <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
-    
       
-        <li><a href="#">Gene Families</a></li>
       
-        <li><a href="#">Maps</a></li>
+      <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
       
-        <li><a href="#">QTL Search</a></li>
+      <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
       
-        <li><a href="#">Gene Search</a></li>
+      <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
       
-        <li><a href="#">Protein Domains</a></li>
+      <li><a href="https://legumeinfo.org/gcv2">Genome Context Viewer</a></li>
       
-        <li><a href="#">Genome Context Viewer</a></li>
+      <li><a href="https://zzbrowse.lis.ncgr.org/">ZZBrowse GWAS/QTL</a></li>
       
-        <li><a href="#">Data Store</a></li>
+      <li><a href="https://legumeinfo.org/germplasm/map">LIS Germplasm GIS Viewer</a></li>
       
-        <li><a href="#">Legume Mines</a></li>
+      <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
       
-        <li><a href="#">DSCensor Data Overviews</a></li>
       
-        <li><a href="#">Expression</a></li>
       
-        <li><a href="#">ZZBrowse GWAS/QTL</a></li>
+      <li><a href="https://legumeinfo.org/sequenceserver/">LIS SequenceServer BLAST</a></li>
       
-    
       
-        <li><a href="#">BLAST Sequence Search</a></li>
-      
-        <li><a href="#">BLAT Sequence Search</a></li>
-      
-        <li><a href="#">Keyword Search</a></li>
-      
-        <li><a href="#">SequenceServer</a></li>
-      
-        <li><a href="#">Annotate Your Sequences</a></li>
-      
-    
     </ul>
   </div>
   
 </li>
-<li><a href="/download">Download</a></li>
+<li><a href="/blog">Blog</a></li>
 <li><a href="/community">Community</a></li>
 <li><a href="/contact">Contact</a></li>
 <li><a href="/help">Help</a></li>
 
 
         
-          <li><a class="tm-no-underline" href="https://twitter.com/legumefed" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span></a></li>
+          <li><a class="tm-no-underline" href="https://twitter.com/legumeinfo" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span></a></li>
         
-        
-          <li><a class="tm-no-underline" href="" target="_blank" title="Subscribe to our newsletter"><span uk-icon="mail"</span></a></li>
         
         
           <li><a class="tm-no-underline" href="https://github.com/legumeinfo" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span></a></li>
@@ -243,55 +347,106 @@
 
 
 
+
+
   <div class="tm-sidebar-left uk-visible@m">
-  <h3>Tools</h3>
-  
-  
+  <h3>Taxa</h3>
   
   <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-    <li class="uk-nav-header">Browse and Search</li>
     
-    <li><a href="#">Gene Families</a></li>
     
-    <li><a href="#">Maps</a></li>
     
-    <li><a href="#">QTL Search</a></li>
+    <li><a href="/taxa/arachis">Arachis</a></li>
     
-    <li><a href="#">Gene Search</a></li>
     
-    <li><a href="#">Protein Domains</a></li>
     
-    <li><a href="#">Genome Context Viewer</a></li>
     
-    <li><a href="#">Data Store</a></li>
     
-    <li><a href="#">Legume Mines</a></li>
+    <li><a href="/taxa/cajanus">Cajanus</a></li>
     
-    <li><a href="#">DSCensor Data Overviews</a></li>
     
-    <li><a href="#">Expression</a></li>
     
-    <li><a href="#">ZZBrowse GWAS/QTL</a></li>
     
+    
+    <li><a href="/taxa/cicer">Cicer</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/taxa/glycine">Glycine</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/taxa/lotus">Lotus</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/taxa/lupinus">Lupinus</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/taxa/medicago">Medicago</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/taxa/phaseolus">Phaseolus</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/taxa/pisum">Pisum</a></li>
+    
+    
+    
+    
+    
+    <li><a href="/taxa/trifolium">Trifolium</a></li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li><a href="/taxa/others">OTHERS</a></li>
   </ul>
-  
-  <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-    <li class="uk-nav-header">Search sequences and features against sequence databases</li>
-    
-    <li><a href="#">BLAST Sequence Search</a></li>
-    
-    <li><a href="#">BLAT Sequence Search</a></li>
-    
-    <li><a href="#">Keyword Search</a></li>
-    
-    <li><a href="#">SequenceServer</a></li>
-    
-    <li><a href="#">Annotate Your Sequences</a></li>
-    
-  </ul>
-  
-  
 </div>
+
+
 
 
 
@@ -299,153 +454,942 @@
   <div class="uk-container uk-container-small uk-position-relative">
     
 
-<h2><i>Glycine</i></h2>
-
-<h3>Tools and resources for the genus as a whole</h3>
 
 
-<dt>
-
-  
-    <dd><strong><i>Glycine</i></strong> (soybean and wild soybean, originating in Asia.)</dd>
-  
-  
-
-  
-  
-    <dd><a href="https://mines.legumeinfo.org/soymine/begin.do">SoyMine</a> (InterMine interface for accessing genetic and genomic data for several species in Glycine.)</dd>
-  
-    <dd><a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&datasets=Soybean%20GWAS&chr=Gm01&selected=100000&window=250000&datasets2=Cowpea%20GWAS-QTL&chr2=Vu01&selected2=100000&window2=250000">ZZBrowse</a> (Association viewers (QTL, GWAS))</dd>
-  
-    <dd><a href="https://gcvit.soybase.org">GCViT</a> (Genetic variation viewer )</dd>
-  
-    <dd><a href="https://legumeinfo.org/gcv2/gene;lis=glyma.Glyma.06G149100?q=Lj1g3v1222710&sources=lis&algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&bregexp=&border=chromosome&regexp=&order=distance">Genome Context Viewer</a> (Browser for dynamically discovering and viewing genomic synteny across selected species.)</dd>
-  
-    <dd><a href="https://legumeinfo.org/germplasm/map#?zoom=6&maxRecs=1000&taxonQuery=Glycine&traitOverlay=&traitScale=global&country=&geocodedOnly&traitExcludeUnchar=false&limitToMapExtent=false&lat=35.14&lng=121.16&mapHeight=430&baseMap=ESRI%20-%20NatGeo%20(default,%20reference%20map)&ne_lat=38.90813299596705&ne_lng=133.30810546875003&sw_lat=31.18460913574325&sw_lng=109.00634765625&accessionIdsInclusive=false">Germplasm GIS</a> (Geographic information system viewer, showing collection locations for Glycine data held by the U.S. National Plant Germplasm System.)</dd>
-  
-
-</dt>
-
-<h3>Tools and resources for particular species</h3>
 
 
-<dt>
 
+<h1><i></i></h1>
+<p></p>
+
+
+<h1><i>Glycine</i> (soybean)</h2>
+
+<p>The best-known species in Glycine is the cultivated soybean, G. max, which was domesticated in Central and East Asia. The majority of the species in the genus are found only in Australia, while a few species extend from Australia to East Asia.</p>
+<p>NCBI taxonomy ID: <b>3847</b></p>
+
+
+<h2>Tools and resources for the genus as a whole</h2>
+<dl>
   
-    <dd><strong>Glycine max</strong> (soybean)</dd>
+  <dt><a href="https://mines.legumeinfo.org/soymine/begin.do">SoyMine</a></dt>
+  <dd>InterMine interface for accessing genetic and genomic data for several species in Glycine.</dd>
+  
+  <dt><a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&datasets=Peanut%20GWAS&chr=Arahy.01&selected=100000&window=250000&datasets2=Soybean%20GWAS&chr2=Gm01&selected2=100000&window2=250000">ZZBrowse</a></dt>
+  <dd>Association viewers (QTL, GWAS)</dd>
+  
+  <dt><a href="https://soybase.org/gcvit">GCViT</a></dt>
+  <dd>Genotype comparison visualization tool</dd>
+  
+  <dt><a href="https://legumeinfo.org/gcv2/gene;lis=glyma.Glyma.15G255600?q=Glyma.15G255600&sources=lis&algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&bregexp=&border=chromosome&regexp=&order=distance">Genome Context Viewer</a></dt>
+  <dd>Browser for dynamically discovering and viewing genomic synteny across selected species.</dd>
+  
+  <dt><a href="https://soybase.org/grindata/">Grin Data Explorer</a></dt>
+  <dd>Tool to facilitate searches of GRIN Descriptor Data</dd>
+  
+</dl>
+
+
+<h2>Tools and resources for particular species</h2>
+
+
+
+<hr/>
+
+
+<h3><i>Glycine max</i>: soybean</h3>
+
+
+
+
+<div class="species-image">
+  <img src="/assets/img/species_images/glyma.jpg" alt="Image: soybean"/>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="attribution">
     
-      <img src="/assets/img/species_images/glyma.jpg" alt="Image: glyma">
+    &copy; <a href="http://media.web.britannica.com/eb-media/17/9317-004-4A5AE8CB.jpg">britannica.com</a>
     
-    <dd>Soybean is the predominant oil-seed legume; it produces a high-protein meal and has many industrial uses.</dd>
-    <dd></dd>
-    
-      <dd><u>Genome browsers and genomic data</u></dd>
-      
-        <dd>Williams 82 (Glycine max accession Williams 82)</dd>
-        
-          <dd>&nbsp; &nbsp;
-            Assembly gnm1:
-          </dd>
-          <dd>&nbsp; &nbsp;
-            
-              <a href="#">GBrowse at LIS</a>;
-            
-              <a href="#">JBrowse at LIS</a>;
-            
-              <a href="#">JBrowse at JGI</a>;
-            
-              <a href="#">Download from Data Store</a>;
-            
-          </dd>
-        
-      
-        <dd>Williams 82 (Glycine max accession Williams 82)</dd>
-        
-          <dd>&nbsp; &nbsp;
-            Assembly gnm2:
-          </dd>
-          <dd>&nbsp; &nbsp;
-            
-              <a href="#">GBrowse at LIS</a>;
-            
-              <a href="#">JBrowse at LIS</a>;
-            
-              <a href="#">JBrowse at JGI</a>;
-            
-              <a href="#">Download from Data Store</a>;
-            
-          </dd>
-        
-      
-        <dd>Williams 82 (Glycine max accession Williams 82)</dd>
-        
-          <dd>&nbsp; &nbsp;
-            Assembly gnm4:
-          </dd>
-          <dd>&nbsp; &nbsp;
-            
-              <a href="#">GBrowse at LIS</a>;
-            
-              <a href="#">JBrowse at LIS</a>;
-            
-              <a href="#">JBrowse at JGI</a>;
-            
-              <a href="#">Download from Data Store</a>;
-            
-          </dd>
-        
-      
-    
-    <br>
+  </div>
   
-    <dd><strong>Glycine soja</strong> (wild soybean)</dd>
-    
-    <dd>XX A ~one-paragraph description</dd>
-    <dd></dd>
-    
-      <dd><u>Genome browsers and genomic data</u></dd>
-      
-        <dd>PI 483463 (Glycine soja accession PI 483463)</dd>
-        
-          <dd>&nbsp; &nbsp;
-            Assembly gnm1:
-          </dd>
-          <dd>&nbsp; &nbsp;
-            
-              <a href="#">GBrowse at LIS</a>;
-            
-              <a href="#">JBrowse at LIS</a>;
-            
-              <a href="#">JBrowse at JGI</a>;
-            
-              <a href="#">Download from Data Store</a>;
-            
-          </dd>
-        
-      
-        <dd>W05 (Glycine soja accession W05)</dd>
-        
-          <dd>&nbsp; &nbsp;
-            Assembly gnm1:
-          </dd>
-          <dd>&nbsp; &nbsp;
-            
-              <a href="#">GBrowse at LIS</a>;
-            
-              <a href="#">JBrowse at LIS</a>;
-            
-              <a href="#">JBrowse at JGI</a>;
-            
-              <a href="#">Download from Data Store</a>;
-            
-          </dd>
-        
-      
-    
-    <br>
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
 
-</dt>
+
+<p>Soybean (Glycine max), the predominant oil-seed legume worldwide, was likely domesticated in East Asia, ~6000-9000 years ago (Sedivy et al., 2017; https://doi.org/10.1111/nph.14418). It has many culinary and industrial uses. Some of the culinary uses include: for direct consumption of the green seed (i.e. edamame) and leaves (cooked, much like spinach); for tofu, soymilk, textured vegetable protein, soy sauce, tempeh, natto, and vegetable oil. Industrial uses include: oils, soap, cosmetics, and biodiesel. Soybean is also used as a high-protein forage, and can be prepared for fish- and animal-feed.</p>
+
+<p>NCBI taxonomy ID: <b>3847</b></p>
+
+
+<h4><i>Glycine max</i> resources</h4>
+<dl>
+  
+  <dt><a href="https://mines.legumeinfo.org/soymine/begin.do">SoyMine</a></dt>
+  <dd>InterMine interface for accessing genetic and genomic data for several species in Glycine.</dd>
+  
+  <dt><a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&datasets=Peanut%20GWAS&chr=Arahy.01&selected=100000&window=250000&datasets2=Soybean%20GWAS&chr2=Gm01&selected2=100000&window2=250000">ZZBrowse</a></dt>
+  <dd>Association viewers (QTL, GWAS)</dd>
+  
+  <dt><a href="https://soybase.org/gcvit">GCViT</a></dt>
+  <dd>Genotype comparison visualization tool </dd>
+  
+  <dt><a href="https://legumeinfo.org/gcv2/gene;lis=glyma.Glyma.15G255600?q=Glyma.15G255600&sources=lis&algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&bregexp=&border=chromosome&regexp=&order=distance">Genome Context Viewer</a></dt>
+  <dd>Browser for dynamically discovering and viewing genomic synteny across selected species.</dd>
+  
+  <dt><a href="https://soybase.org/grindata/">Grin Data Explorer</a></dt>
+  <dd>Tool to facilitate searches of GRIN Descriptor Data</dd>
+  
+</dl>
+
+
+<h4><i>Glycine max</i> accessions</h4>
+
+<b>Wm82</b> (Northern United States) <br/>
+Williams 82, the soybean cultivar used to produce the reference genome sequence, was derived from backcrossing a phytophthora root rot resistance locus from the donor parent Kingwa into the recurrent parent Williams.
+<ul>
+  
+  <li><a href="https://soybase.org/gb2/gbrowse/gmax2.0">Soybase Genome Browser (GBrowse)</a> : GBrowse for Wm82 assemblies 2.0</li>
+  
+  <li><a href="https://soybase.org/gb2/gbrowse/gmax1.01">Genome Browser (GBrowse), assembly 1</a> : GBrowse for Wm82 assemblies 1.01</li>
+  
+  <li><a href="https://legumeinfo.org/sequenceserver/">LIS SequenceServer</a> : SequenceServer BLAST against the Wm82 v2 assembly</li>
+  
+</ul>
+
+<b>Zh13</b> (China) <br/>
+Zhonghuang 13 is a Chinese cultivar derived from accessions Yudou 18 and Zhongzuo 90052-76 by pedigree selection for high yield and stress tolerance (Shen et al., 2018; https://doi.org/10.1007/s11427-018-9360-0).
+<ul>
+  
+  <li><a href="https://soybase.org/gb2/gbrowse/glyma.Zh13.gnm1">Soybase Genome Browser (GBrowse)</a> : GBrowse for glycine max Zh13 genome assembly verson 1</li>
+  
+  <li><a href="https://legumeinfo.org/sequenceserver/">LIS SequenceServer</a> : SequenceServer BLAST against the glycine max Zh13 assembly</li>
+  
+</ul>
+
+<b>Lee</b> (Southern United States) <br/>
+Cultivar Lee, which derives from a cross of Chinese lines CNS and S-100, has been widely used as a parent in many breeding projects in the Southern U.S. and in Brazil (Wysmierski and Vello, 2013; http://doi.org/10.1590/S1415-47572013005000041). The variety is notable for resistance to Phytophthora rot, Peanut Mottle Virus, and bacterial pustule (Wysmierski and Vello, 2013).
+<ul>
+  
+  <li><a href="https://soybase.org/gb2/gbrowse/glyma.Lee.gnm1">Soybase Genome Browser (GBrowse)</a> : GBrowse for glycine max Lee genome assembly verson 1</li>
+  
+  <li><a href="https://legumeinfo.org/sequenceserver/">LIS SequenceServer</a> : SequenceServer BLAST against the glycine max Lee assembly</li>
+  
+</ul>
+
+
+
+
+<hr/>
+
+
+<h3><i>Glycine soja</i>: wild soybean</h3>
+
+
+
+
+<div class="species-image">
+  <img src="/assets/img/species_images/glyso.jpg" alt="Image: wild soybean"/>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="attribution">
+    
+    &copy; Eun-Young Hwang, University of Maryland
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+<p>Glycine soja is the closest wild relative of soybean, Glycine max. Populations of G. soja exist in the wild in China, Japan, Korea, and Russia. Analysis of genetic differences between the two species suggests that the two separated approximately 200 thousand years ago. The species remain interfertile, and G. soja accessions are used in breeding projects in order to introgress traits such as tolerance to particular diseases or environmental stresses.</p>
+
+<p>NCBI taxonomy ID: <b>3848</b></p>
+
+
+<h4><i>Glycine soja</i> resources</h4>
+<dl>
+  
+  <dt><a href="https://mines.legumeinfo.org/soymine/begin.do">SoyMine</a></dt>
+  <dd>InterMine interface for accessing genetic and genomic data for several species in Glycine.</dd>
+  
+  <dt><a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&datasets=Peanut%20GWAS&chr=Arahy.01&selected=100000&window=250000&datasets2=Soybean%20GWAS&chr2=Gm01&selected2=100000&window2=250000">ZZBrowse</a></dt>
+  <dd>Association viewers (QTL, GWAS)</dd>
+  
+  <dt><a href="https://soybase.org/gcvit">GCViT</a></dt>
+  <dd>Genotype comparison visualization tool </dd>
+  
+  <dt><a href="https://legumeinfo.org/gcv2/gene;lis=glyma.Glyma.15G255600?q=Glyma.15G255600&sources=lis&algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&bregexp=&border=chromosome&regexp=&order=distance">Genome Context Viewer</a></dt>
+  <dd>Browser for dynamically discovering and viewing genomic synteny across selected species.</dd>
+  
+  <dt><a href="https://soybase.org/grindata/">Grin Data Explorer</a></dt>
+  <dd>Tool to facilitate searches of GRIN Descriptor Data</dd>
+  
+</dl>
+
+
+<h4><i>Glycine soja</i> accessions</h4>
+
+<b>PI483463</b> (Shanxi Province, China) <br/>
+Glycine soja accession PI 483463 has been identified as being unusually tolerant (Lee et al., 2009; https://doi.org/10.1093/jhered/esp027). The genome for this accession has been sequenced, partly on the basis of this salt-tolerance trait.
+<ul>
+  
+  <li><a href="https://soybase.org/gb2/gbrowse/glyso.PI483463.gnm1">Soybase Genome Browser (GBrowse)</a> : GBrowse for Glycine soja PI483463 genome assembly version 1</li>
+  
+</ul>
+
+<b>W05</b> (Henan Province, China) <br/>
+Glycine soja accession W05 is a salt-tolerant wild soybean whose genome has been sequenced to serve as a reference genome assembly. The W05 accession has been used for genetic studies of several traits, including indeterminacy, seed size, pod number per plant, and seed color (Xie et al., 2019; https://doi.org/10.1038/s41467-019-09142-9).
+<ul>
+  
+  <li><a href="https://soybase.org/gb2/gbrowse/glyso.W05.gnm1">Soybase Genome Browser (GBrowse)</a> : GBrowse for glycine soja W05 genome assembly verson 1</li>
+  
+</ul>
+
+
+
+
+<hr/>
+
+
+<h3><i>Glycine cyrtoloba</i></h3>
+
+
+
+
+<div class="species-image">
+  <img src="/assets/img/species_images/glycy.jpg" alt="Image: "/>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+<p>G. cyrotoloba (Tind) is a perennial plant with twining and stiff stems. G. cyrotoloba pods are curved and somewhat mottled in appearance containing 3-9 seeds that and are dark brown to black in color (Tindale, MD et al., 1984). G. cyrotoloba is a diploid (2n=40) member of the C-genome of Glycine. It is found along the coast of Queensland and Northern New South Wales (Ratnaparkhe et al 2011 ; Gonzalez-Orozco et al., 2012).</p>
+
+<p>NCBI taxonomy ID: <b>45689</b></p>
+
+
+<h4><i>Glycine cyrtoloba</i> resources</h4>
+<dl>
+  
+  <dt><a href="https://soybase.org/gb2/gbrowse/gmax1.01/?label=diversity_cyrtoloba_BES_alignments_relaxed_filtering">SoyMap2 Diversity Browser on Gmax1.01</a></dt>
+  <dd>GBrowse for G. cyrtoloba Bac End Sequence alignments on Gmax1.01</dd>
+  
+  <dt><a href="https://soybase.org/gb2/gbrowse/gmax2.0/?label=diversity_cyrtoloba_bes_alignments_relaxed_filtering">SoyMap2 Diversity Browser on Gmax2.0</a></dt>
+  <dd>GBrowse for G. cyrtoloba Bac End Sequence alignments on Gmax2.0</dd>
+  
+</dl>
+
+
+<h4><i>Glycine cyrtoloba</i> accessions</h4>
+
+<b>G1267</b> (Australian coasts of Queensland and Northern New South Wales) <br/>
+G. cyrotoloba (Tind) is a perennial plant with twining and stiff stems. G. cyrotoloba pods are curved and somewhat mottled in appearance containing 3-9 seeds that and are dark brown to black in color (Tindale, MD et al., 1984).
+<ul>
+  
+</ul>
+
+
+
+
+<hr/>
+
+
+<h3><i>Glycine dolichocarpa</i></h3>
+
+
+
+
+<div class="species-image">
+  <img src="/assets/img/species_images/glydo.jpg" alt="Image: "/>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="attribution">
+    
+    &copy; Eun-Young Hwang, University of Maryland
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+<p>Glycine dolichocarpa (Tateishi & Ohashi) is a twining plant with long straight dark brown pods with 5-7 seeds. Seeds are square and dark brown in color. G. dolichocarpa is an allotetraploid (2n = 4x = 80) formed by hybridizatoin between G. syndetika and G. tomentella D3 (both 2n = 40). (This species was formerly part of the Glycine tomentella species complex and was referred to as G. tomentella T2.) It has a limited Australian range in Queensland, but like several other Glycine allopolyploids, has colonized islands of the Pacific Ocean (in this case Taiwan) where no perennial diploid Glycine species have been found ( Ratnaparkhe et al 2011; Harbert et al 2014).</p>
+
+<p>NCBI taxonomy ID: <b>82538</b></p>
+
+
+<h4><i>Glycine dolichocarpa</i> resources</h4>
+<dl>
+  
+  <dt><a href="https://soybase.org/gb2/gbrowse/gmax1.01/?label=diversity_dolichocarpa_alignments_relaxed_filtering">SoyMap2 Diversity Browser on Gmax1.01</a></dt>
+  <dd>GBrowse for G. dolichocarpa Bac End Sequence alignments on Gmax1.01</dd>
+  
+  <dt><a href="https://soybase.org/gb2/gbrowse/gmax2.0/?label=diversity_dolichocarpa_alignments_relaxed_filtering">SoyMap2 Diversity Browser on Gmax2.0</a></dt>
+  <dd>GBrowse for G. dolichocarpa Bac End Sequence alignments on Gmax2.0</dd>
+  
+</dl>
+
+
+<h4><i>Glycine dolichocarpa</i> accessions</h4>
+
+<b>G1134</b> (Queensland, Australia) <br/>
+Glycine dolichocarpa (Tateishi & Ohashi) is a twining plant with long straight dark brown pods with 5-7 seeds. Seeds are square and dark brown in color.
+<ul>
+  
+</ul>
+
+
+
+
+<hr/>
+
+
+<h3><i>Glycine falcata</i></h3>
+
+
+
+
+<div class="species-image">
+  <img src="/assets/img/species_images/glyfa.jpg" alt="Image: "/>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="attribution">
+    
+    &copy; Eun-Young Hwang, University of Maryland
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+<p>Glycine falcata (Benth.) is unique among perennial Glycine species in that it does not form a vine but rather short, erect stems from a fibrous woody root system instead of the more common taproot. Seeds are round and smooth similar to the annual species. G. falcata is a diploid (2n = 40) and is the sole member of the F-genome. It is sister to the remainder of subgenus Glycine, and is distinctive ecologically, characteristically growing in the black soil region of Queensland and possessing both chasmogamous and below- ground cleistogamous flowers, the latter producing geocarpic fruits (Ratnaparkhe et al 2011; Gonzalez-Orozco et al., 2012).</p>
+
+<p>NCBI taxonomy ID: <b>45690</b></p>
+
+
+<h4><i>Glycine falcata</i> resources</h4>
+<dl>
+  
+  <dt><a href="https://soybase.org/gb2/gbrowse/gmax1.01/?label=diversity_falcata_BES_alignments">SoyMap2 Diversity Browser on Gmax1.01</a></dt>
+  <dd>GBrowse for G. falcata Bac End Sequence alignments on Gmax1.01</dd>
+  
+  <dt><a href="https://soybase.org/gb2/gbrowse/gmax2.0/?label=diversity_falcata_bes_alignments_relaxed_filtering">SoyMap2 Diversity Browser on Gmax2.0</a></dt>
+  <dd>GBrowse for G. falcata Bac End Sequence alignments on Gmax2.0</dd>
+  
+</dl>
+
+
+<h4><i>Glycine falcata</i> accessions</h4>
+
+<b>G1718</b> (Queensland, Australia) <br/>
+Glycine falcata (Benth.) is unique among perennial Glycine species in that it does not form a vine but rather short, erect stems from a fibrous woody root system instead of the more common taproot. Seeds are round and smooth similar to the annual species.
+<ul>
+  
+</ul>
+
+
+
+
+<hr/>
+
+
+<h3><i>Glycine stenophita</i></h3>
+
+
+
+
+<div class="species-image">
+  <img src="/assets/img/species_images/glyst.jpg" alt="Image: "/>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="attribution">
+    
+    &copy; Eun-Young Hwang, University of Maryland
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+<p>Glycine stenophita (B.E. Pfeil & Tind.) is a scrambling or climbing perennial that is glabrous or with sparse white hairs covering the stems. Pods are 4 to 6 seeded and seeds are generally barrel shaped with some variation in shape from elliptical to square. G. stenophita is a diploid (2n = 40) member of the B-genome group. It occurs in the Australian states of Queensland and New South Wales (Ratnaparkhe et al 2011; Gonzalez-Orozco et al., 2012).</p>
+
+<p>NCBI taxonomy ID: <b>96944</b></p>
+
+
+<h4><i>Glycine stenophita</i> resources</h4>
+<dl>
+  
+  <dt><a href="https://soybase.org/gb2/gbrowse/gmax1.01/?label=diversity_stenophita_BES_alignments">SoyMap2 Diversity Browser on Gmax1.01</a></dt>
+  <dd>GBrowse for G. stenophita Bac End Sequence alignments on Gmax1.01</dd>
+  
+  <dt><a href="https://soybase.org/gb2/gbrowse/gmax2.0/?label=diversity_stenophita_bes_alignments_relaxed_filtering">SoyMap2 Diversity Browser on Gmax2.0</a></dt>
+  <dd>GBrowse for G. stenophita Bac End Sequence alignments on Gmax2.0</dd>
+  
+</dl>
+
+
+<h4><i>Glycine stenophita</i> accessions</h4>
+
+<b>G1974</b> (Australian states of Queensland and New South Wales) <br/>
+Glycine stenophita (B.E. Pfeil & Tind.) is a scrambling or climbing perennial that is glabrous or with sparse white hairs covering the stems. Pods are 4 to 6 seeded and seeds are generally barrel shaped with some variation in shape from elliptical to square.
+<ul>
+  
+</ul>
+
+
+
+
+<hr/>
+
+
+<h3><i>Glycine syndetika</i></h3>
+
+
+
+
+<div class="species-image">
+  <img src="/assets/img/species_images/glysy.jpg" alt="Image: "/>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="attribution">
+    
+    &copy; Eun-Young Hwang, University of Maryland
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+<p>Glycine syndetika (B.E. Pfeil & Craven) is a twining perennial plant with three leathery, often persistent leaflets. Flowers are somewhat clustered towards to the top of the inflorescences and pods contain 4-9 relatively large square seeds (Pfeil. BE et al., 2006). G. syndetika is diploid (2n = 40) member of the A-genome clade. (This species was formerly part of the Glycine tomentella species complex and was referred to as G. tomentella D4. ) It is has a restricted range in the Eastern Queensland region of Australia (Ratnaparkhe et al 2011; Gonzalez-Orozco et al., 2012).</p>
+
+<p>NCBI taxonomy ID: <b>713886</b></p>
+
+
+<h4><i>Glycine syndetika</i> resources</h4>
+<dl>
+  
+  <dt><a href="https://soybase.org/gb2/gbrowse/gmax1.01/?label=diversity_syndetika_BES_alignments">SoyMap2 Diversity Browser on Gmax1.01</a></dt>
+  <dd>GBrowse for G. syndetika Bac End Sequence alignments on Gmax1.01</dd>
+  
+  <dt><a href="https://soybase.org/gb2/gbrowse/gmax2.0/?label=diversity_syndetika_bes_alignments_relaxed_filtering">SoyMap2 Diversity Browser on Gmax2.0</a></dt>
+  <dd>GBrowse for G. syndetika Bac End Sequence alignments on Gmax2.0</dd>
+  
+</dl>
+
+
+<h4><i>Glycine syndetika</i> accessions</h4>
+
+<b>G1300</b> (Eastern Queensland region of Australia) <br/>
+Glycine syndetika (B.E. Pfeil & Craven) is a twining perennial plant with three leathery, often persistent leaflets. Flowers are somewhat clustered towards to the top of the inflorescences and pods contain 4-9 relatively large square seeds (Pfeil. BE et al., 2006).
+<ul>
+  
+</ul>
+
+
+
+
+<hr/>
+
+
+<h3><i>Glycine D3-tomentella</i></h3>
+
+
+
+
+<div class="species-image">
+  <img src="/assets/img/species_images/glyd3.jpg" alt="Image: "/>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="attribution">
+    
+    &copy; Eun-Young Hwang, University of Maryland
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+<p>A complex of diploid and tetraploid taxa are lumped under the name "G. tomentella" but are each reproductively isolated species, e.g. G. tomentella D3 belongs to the D-genome, whereas D1 G. tomentella belongs to the E-genome.</p>
+
+<p>NCBI taxonomy ID: <b>2908013</b></p>
+
+
+<h4><i>Glycine D3-tomentella</i> resources</h4>
+<dl>
+  
+  <dt><a href="https://soybase.org/gb2/gbrowse/gmax1.01/?label=diversity_tomentella_BES_alignments_relaxed_filtering">SoyMap2 Diversity Browser on Gmax1.01</a></dt>
+  <dd>GBrowse for G. tomentella Bac End Sequence alignments on Gmax1.01</dd>
+  
+  <dt><a href="https://soybase.org/gb2/gbrowse/gmax2.0/?label=diversity_tomentella_bes_alignments_relaxed_filtering">SoyMap2 Diversity Browser on Gmax2.0</a></dt>
+  <dd>GBrowse for G. tomentella Bac End Sequence alignments on Gmax2.0</dd>
+  
+</dl>
+
+
+<h4><i>Glycine D3-tomentella</i> accessions</h4>
+
+<b>G1403</b> (Australian state of Queensland and the eastern portion of Papua New Guinea) <br/>
+G. D3 tomentella is a diploid (2n = 40) member of the complex of diploid and tetraploid taxa lumped under the name 'G. tomentella'. G. D3 tomentella is distinguished from other diploid members of Glycine tomentella species complex by ovated to broadly lanceolate leaves, a seed coat or testa that is dark brown to black (to see the testa the persistent endocarp must be removed) and pods 1.5 to 2 cm long with 2 to 6 seeds per pod (Hill, 1999). G. D3 tomentella occurs in the Australian state of Queensland and the eastern portion of Papua New Guinea (Ratnaparkhe et al 2011; Gonzalez-Orozco et al., 2012).
+<ul>
+  
+</ul>
+
+
+
+
 
   </div>
 </div>

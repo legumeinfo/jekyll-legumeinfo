@@ -1,12 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-01-19T01:12:58+00:00</updated><id>/feed.xml</id><title type="html">LIS: Legume Information System</title><subtitle>A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species.</subtitle><entry><title type="html">So, What is Jekyll?</title><link href="/announcements/jekyll/pixyll/2014/06/09/so-what-is-jekyll.html" rel="alternate" type="text/html" title="So, What is Jekyll?" /><published>2014-06-09T12:32:18+00:00</published><updated>2014-06-09T12:32:18+00:00</updated><id>/announcements/jekyll/pixyll/2014/06/09/so-what-is-jekyll</id><content type="html" xml:base="/announcements/jekyll/pixyll/2014/06/09/so-what-is-jekyll.html">&lt;p&gt;Jekyll is a tool for transforming your plain text into static websites and 
-blogs. It is simple, static, and blog-aware. Jekyll uses the 
-&lt;a href=&quot;http://docs.shopify.com/themes/liquid-basics&quot;&gt;Liquid&lt;/a&gt; templating
-language and has builtin &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;
-and &lt;a href=&quot;http://en.wikipedia.org/wiki/Textile_(markup_language)&quot;&gt;Textile&lt;/a&gt; support.&lt;/p&gt;
-
-&lt;p&gt;It also ties in nicely to &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Learn more about Jekyll on their &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;</content><author><name>Alan Cleary</name></author><category term="announcements" /><category term="jekyll" /><category term="pixyll" /><summary type="html">Jekyll is a tool for transforming your plain text into static websites and blogs. It is simple, static, and blog-aware. Jekyll uses the Liquid templating language and has builtin Markdown and Textile support.</summary></entry><entry><title type="html">So, What is Jekyll?</title><link href="/news/jekyll/pixyll/2014/06/09/so-what-is-jekyll.html" rel="alternate" type="text/html" title="So, What is Jekyll?" /><published>2014-06-09T12:32:18+00:00</published><updated>2014-06-09T12:32:18+00:00</updated><id>/news/jekyll/pixyll/2014/06/09/so-what-is-jekyll</id><content type="html" xml:base="/news/jekyll/pixyll/2014/06/09/so-what-is-jekyll.html">&lt;p&gt;Jekyll is a tool for transforming your plain text into static websites and 
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LIS: Legume Information System</title>
+    <description>A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species.</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>BIC &amp; NAPIA Biennial meeting 2-4 November, 2021 (virtual)</title>
+        <description>&lt;p&gt;2 - 4 November 2021:
+&lt;a href=&quot;https://www.bic-napia.org/&quot;&gt;BIC &amp;amp; NAPIA Biennial meeting&lt;/a&gt;, Virtual Meeting&lt;/p&gt;
+</description>
+        <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+        <link>/announcements/meetings/2021/11/02/bic-napia-biennial-meeting.html</link>
+        <guid isPermaLink="true">/announcements/meetings/2021/11/02/bic-napia-biennial-meeting.html</guid>
+      </item>
+    
+      <item>
+        <title>PAG XXIX 8-12 January, 2022, San Diego (in-person and virtual)</title>
+        <description>&lt;p&gt;8 - 12 January 2022:
+&lt;a href=&quot;https://www.intlpag.org/2022/&quot;&gt;International Plant &amp;amp; Animal Genome Conference (PAG XXIX)&lt;/a&gt;, San Diego, CA, USA&lt;/p&gt;
+</description>
+        <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+        <link>/announcements/meetings/2021/10/05/pag-xxix.html</link>
+        <guid isPermaLink="true">/announcements/meetings/2021/10/05/pag-xxix.html</guid>
+      </item>
+    
+      <item>
+        <title>Tepary bean genomes added to LIS</title>
+        <description>&lt;p&gt;&lt;a href=&quot;/organism/Phaseolus/acutifolius&quot;&gt;Phaseolus acutifolius (tepary bean)&lt;/a&gt; is a drought- and heat-tolerant crop
+native to the American Southwest and Mexico; it joins the growing set of annotated genomes at LIS,
+with a cultivated and wild accession described in &lt;a href=&quot;https://doi.org/10.1038/s41467-021-22858-x&quot;&gt;Moghaddam et al. 2021&lt;/a&gt;.
+The cultivated accession has been added as the primary representative of the species,
+and can be found via the standard gene search pages, and genome browsers, while the wild species is accessible via a
+Phaseolus data source for the GCV instance located
+&lt;a href=&quot;https://www.legumefederation.org/gcv/legfed_v1_0/search/lis/phavu.Phvul.002G021600;routeParam=1?neighbors=80&amp;amp;matched=15&amp;amp;intermediate=10&amp;amp;algorithm=smith-waterman&amp;amp;match=10&amp;amp;mismatch=-1&amp;amp;gap=-1&amp;amp;score=30&amp;amp;threshold=25&amp;amp;regexp=&amp;amp;order=distance&amp;amp;sources=phaseolus&amp;amp;bintermediate=10&amp;amp;bmask=10&amp;amp;bmatched=15&quot;&gt;here&lt;/a&gt;,
+which also includes several new accessions of Phaseolus vulgaris (UI111 and LaborOvalle), courtesy of Phytozome.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Oct 2021 17:00:00 +0000</pubDate>
+        <link>/news/genomes/2021/10/01/tepary-bean-genomes.html</link>
+        <guid isPermaLink="true">/news/genomes/2021/10/01/tepary-bean-genomes.html</guid>
+      </item>
+    
+      <item>
+        <title>Visualizing Genomes</title>
+        <description>&lt;p&gt;A whole genome view of genomic or genetic features that can can lead to new insights. For example, gene density compared with specific repeat families, 
+regions of higher heterozygosity in mapping populations, and distribution of BLAST hits across a genome assembly are all cases….&lt;/p&gt;
+</description>
+        <pubDate>Mon, 25 Feb 2019 00:00:00 +0000</pubDate>
+        <link>/blog/visualization/2019/02/25/visualizing-genomes.html</link>
+        <guid isPermaLink="true">/blog/visualization/2019/02/25/visualizing-genomes.html</guid>
+      </item>
+    
+      <item>
+        <title>Bringing Macrosynteny to the GCV Multi-view</title>
+        <description>&lt;p&gt;The Genomic Context Viewer (GCV) is a web application that provides interactive and synchronized comparative genomics visualizations.
+Comparisons are performed by determining conservation of gene order and orientation across related species or individuals using homology based on gene family assignments….&lt;/p&gt;
+</description>
+        <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
+        <link>/blog/macrosynteny/2018/09/10/macrosynteny-gcv.html</link>
+        <guid isPermaLink="true">/blog/macrosynteny/2018/09/10/macrosynteny-gcv.html</guid>
+      </item>
+    
+      <item>
+        <title>So, What is Jekyll?</title>
+        <description>&lt;p&gt;Jekyll is a tool for transforming your plain text into static websites and 
 blogs. It is simple, static, and blog-aware. Jekyll uses the 
 &lt;a href=&quot;http://docs.shopify.com/themes/liquid-basics&quot;&gt;Liquid&lt;/a&gt; templating
 language and has builtin &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;
@@ -14,4 +72,29 @@ and &lt;a href=&quot;http://en.wikipedia.org/wiki/Textile_(markup_language)&quot
 
 &lt;p&gt;It also ties in really really nicely to &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Learn more about Jekyll on their &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;</content><author><name>Alan Cleary</name></author><category term="news" /><category term="jekyll" /><category term="pixyll" /><summary type="html">Jekyll is a tool for transforming your plain text into static websites and blogs. It is simple, static, and blog-aware. Jekyll uses the Liquid templating language and has builtin Markdown and Textile support.</summary></entry></feed>
+&lt;p&gt;Learn more about Jekyll on their &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 09 Jun 2014 12:32:18 +0000</pubDate>
+        <link>/news/jekyll/pixyll/2014/06/09/so-what-is-jekyll.html</link>
+        <guid isPermaLink="true">/news/jekyll/pixyll/2014/06/09/so-what-is-jekyll.html</guid>
+      </item>
+    
+      <item>
+        <title>So, What is Jekyll?</title>
+        <description>&lt;p&gt;Jekyll is a tool for transforming your plain text into static websites and 
+blogs. It is simple, static, and blog-aware. Jekyll uses the 
+&lt;a href=&quot;http://docs.shopify.com/themes/liquid-basics&quot;&gt;Liquid&lt;/a&gt; templating
+language and has builtin &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;
+and &lt;a href=&quot;http://en.wikipedia.org/wiki/Textile_(markup_language)&quot;&gt;Textile&lt;/a&gt; support.&lt;/p&gt;
+
+&lt;p&gt;It also ties in nicely to &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Learn more about Jekyll on their &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 09 Jun 2014 12:32:18 +0000</pubDate>
+        <link>/announcements/jekyll/pixyll/2014/06/09/so-what-is-jekyll.html</link>
+        <guid isPermaLink="true">/announcements/jekyll/pixyll/2014/06/09/so-what-is-jekyll.html</guid>
+      </item>
+    
+  </channel>
+</rss>

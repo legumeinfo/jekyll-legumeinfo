@@ -20,6 +20,24 @@
   <link rel="stylesheet" href="/assets/css/theme.css" type="text/css" />
 
   <!-- place globally-included stylesheet content here -->
+<style>
+  .species-image {
+      float:right;
+      margin:10px;
+  }
+  .species-image img {
+      border:1px solid darkgreen;
+  }
+  .species-image .attribution {
+      text-align: center; 
+      font-style: italic;
+      font-size: 80%;
+  }
+  .temp {
+      color: darkred;
+      font-weight: bold;
+</style>
+
 
 
   <!-- Custom JS -->
@@ -27,6 +45,10 @@
   <script src="/assets/js/uikit-icons.min.js"></script>
 
   <!-- place globally-included scripts here -->
+
+<!-- experimenting with the JS compiled under jekyll-data-js -->
+<script src="/assets/js/lis-data.js"></script>
+
 
 
   <!-- Icons -->
@@ -79,96 +101,196 @@
   
   <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .taxon_list; delay-hide: 0;">
     <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
-    
       
-        
-          <li> <a href="/taxa//arachis"> Arachis (peanut: domesticated and wild)</a></li>
-        
       
-    
       
-        
-          <li> <a href="/taxa//cajanus"> Cajanus (pigeonpea)</a></li>
-        
+      <li> <a href="/taxa//arachis"> Arachis (Warm-season oilseed crop, indigenous to South America.)</a></li>
       
-    
       
-        
-          <li> <a href="/taxa//cicer"> Cicer (chickpea)</a></li>
-        
       
-    
       
-        
-          <li> <a href="/taxa//glycine"> Glycine (soybean)</a></li>
-        
       
-    
+      <li> <a href="/taxa//cajanus"> Cajanus (Pigeonpea)</a></li>
       
-        
-          <li> <a href="/taxa//lotus"> Lotus (birdsfoot trefoil; model species)</a></li>
-        
       
-    
       
-        
-          <li> <a href="/taxa//lupinus"> Lupinus (several species of lupin grain legumes)</a></li>
-        
       
-    
       
-        
-          <li> <a href="/taxa//medicago"> Medicago (alfalfa/lucerne, barrel medic; model species)</a></li>
-        
+      <li> <a href="/taxa//cicer"> Cicer (Chickpea)</a></li>
       
-    
       
-        
-          <li> <a href="/taxa//phaseolus"> Phaseolus (common bean, lima bean, tepary bean, others)</a></li>
-        
       
-    
       
-        
-          <li> <a href="/taxa//pisum"> Pisum (pea)</a></li>
-        
       
-    
+      <li> <a href="/taxa//glycine"> Glycine (Soybean)</a></li>
       
-        
-          <li> <a href="/taxa//trifolium"> Trifolium (clovers)</a></li>
-        
       
-    
       
-        
       
-    
       
-        
+      <li> <a href="/taxa//lotus"> Lotus (Bird's-foot trefoil)</a></li>
       
-    
       
-        
       
-    
       
-        
       
-    
+      <li> <a href="/taxa//lupinus"> Lupinus (Several species of lupin grain legumes)</a></li>
       
-        
       
-    
       
-        
       
-    
       
-        
+      <li> <a href="/taxa//medicago"> Medicago (Alfalfa/Lucerne, Barrel Medic)</a></li>
       
-    
-    <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+      
+      
+      
+      
+      <li> <a href="/taxa//phaseolus"> Phaseolus (Common Bean, Lima Bean, Tepary Bean, etc.)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/taxa//pisum"> Pisum (Pea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/taxa//trifolium"> Trifolium (Clover)</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li><a href="/taxa/others">OTHERS (special-focus species and collections)</a></li>
+    </ul>
+  </div>
+  
+</li>
+<li>
+  <a class="collections" href="/collections">Collections</a>
+  
+  
+  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .collections; delay-hide: 0;">
+    <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+      
+      
+      
+      <li> <a href="/collections//arachis"> Arachis (Warm-season oilseed crop, indigenous to South America.)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//cajanus"> Cajanus (Pigeonpea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//cicer"> Cicer (Chickpea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//glycine"> Glycine (Soybean)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//lotus"> Lotus (Bird's-foot trefoil)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//lupinus"> Lupinus (Several species of lupin grain legumes)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//medicago"> Medicago (Alfalfa/Lucerne, Barrel Medic)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//phaseolus"> Phaseolus (Common Bean, Lima Bean, Tepary Bean, etc.)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//pisum"> Pisum (Pea)</a></li>
+      
+      
+      
+      
+      
+      <li> <a href="/collections//trifolium"> Trifolium (Clover)</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <li><a href="/taxa/others">OTHERS (special-focus species and collections)</a></li>
     </ul>
   </div>
   
@@ -179,58 +301,40 @@
   
   <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .tools; delay-hide: 0;">
     <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
-    
       
-        <li><a href="#">Gene Families</a></li>
       
-        <li><a href="#">Maps</a></li>
+      <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
       
-        <li><a href="#">QTL Search</a></li>
+      <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
       
-        <li><a href="#">Gene Search</a></li>
+      <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
       
-        <li><a href="#">Protein Domains</a></li>
+      <li><a href="https://legumeinfo.org/gcv2">Genome Context Viewer</a></li>
       
-        <li><a href="#">Genome Context Viewer</a></li>
+      <li><a href="https://zzbrowse.lis.ncgr.org/">ZZBrowse GWAS/QTL</a></li>
       
-        <li><a href="#">Data Store</a></li>
+      <li><a href="https://legumeinfo.org/germplasm/map">LIS Germplasm GIS Viewer</a></li>
       
-        <li><a href="#">Legume Mines</a></li>
+      <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
       
-        <li><a href="#">DSCensor Data Overviews</a></li>
       
-        <li><a href="#">Expression</a></li>
       
-        <li><a href="#">ZZBrowse GWAS/QTL</a></li>
+      <li><a href="https://legumeinfo.org/sequenceserver/">LIS SequenceServer BLAST</a></li>
       
-    
       
-        <li><a href="#">BLAST Sequence Search</a></li>
-      
-        <li><a href="#">BLAT Sequence Search</a></li>
-      
-        <li><a href="#">Keyword Search</a></li>
-      
-        <li><a href="#">SequenceServer</a></li>
-      
-        <li><a href="#">Annotate Your Sequences</a></li>
-      
-    
     </ul>
   </div>
   
 </li>
-<li><a href="/download">Download</a></li>
+<li><a href="/blog">Blog</a></li>
 <li><a href="/community">Community</a></li>
 <li><a href="/contact">Contact</a></li>
 <li><a href="/help">Help</a></li>
 
 
         
-          <li><a class="tm-no-underline" href="https://twitter.com/legumefed" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span></a></li>
+          <li><a class="tm-no-underline" href="https://twitter.com/legumeinfo" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span></a></li>
         
-        
-          <li><a class="tm-no-underline" href="" target="_blank" title="Subscribe to our newsletter"><span uk-icon="mail"</span></a></li>
         
         
           <li><a class="tm-no-underline" href="https://github.com/legumeinfo" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span></a></li>
@@ -243,55 +347,8 @@
 
 
 
-  <div class="tm-sidebar-left uk-visible@m">
-  <h3>Tools</h3>
-  
-  
-  
-  <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-    <li class="uk-nav-header">Browse and Search</li>
-    
-    <li><a href="#">Gene Families</a></li>
-    
-    <li><a href="#">Maps</a></li>
-    
-    <li><a href="#">QTL Search</a></li>
-    
-    <li><a href="#">Gene Search</a></li>
-    
-    <li><a href="#">Protein Domains</a></li>
-    
-    <li><a href="#">Genome Context Viewer</a></li>
-    
-    <li><a href="#">Data Store</a></li>
-    
-    <li><a href="#">Legume Mines</a></li>
-    
-    <li><a href="#">DSCensor Data Overviews</a></li>
-    
-    <li><a href="#">Expression</a></li>
-    
-    <li><a href="#">ZZBrowse GWAS/QTL</a></li>
-    
-  </ul>
-  
-  <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-    <li class="uk-nav-header">Search sequences and features against sequence databases</li>
-    
-    <li><a href="#">BLAST Sequence Search</a></li>
-    
-    <li><a href="#">BLAT Sequence Search</a></li>
-    
-    <li><a href="#">Keyword Search</a></li>
-    
-    <li><a href="#">SequenceServer</a></li>
-    
-    <li><a href="#">Annotate Your Sequences</a></li>
-    
-  </ul>
-  
-  
-</div>
+
+
 
 
 
@@ -300,6 +357,9 @@
     <h1>News</h1>
 
 <dl class="uk-description-list uk-description-list-divider">
+
+<dt><a href="/news/genomes/2021/10/01/tepary-bean-genomes.html">Tepary bean genomes added to LIS</a></dt>
+  <dd>Phaseolus acutifolius (tepary bean) added to LIS</dd>
 
 <dt><a href="/news/jekyll/pixyll/2014/06/09/so-what-is-jekyll.html">So, What is Jekyll?</a></dt>
   <dd>Transform your plain text into static websites and blogs. Simple, static, and blog-aware.</dd>
