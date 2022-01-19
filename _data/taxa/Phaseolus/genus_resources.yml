@@ -9,7 +9,27 @@ description: 'Phaseolus (bean, wild bean) is a genus of herbaceous to woody annu
   prominent among these is the common bean, P. vulgaris, which today is cultivated
   worldwide in tropical, semitropical, and temperate climates.'
 genus: Phaseolus
+resources:
+- URL: https://mines.legumeinfo.org/Beanmine/begin.do
+  description: InterMine interface for accessing genetic and genomic data for several
+    species in Phaseolus.
+  name: BeanMine
+- URL: https://zzbrowse.legumeinfo.org/?tab=WhGen&datasets=Common%20Bean%20GWAS&chr=Chr01&selected=100000&window=250000&datasets2=Soybean%20GWAS&chr2=Gm01&selected2=100000&window2=250000&macroMatched=20&macroIntermediate=10&macroMask=10&macroDistance=levenshtein
+  description: Association viewers (QTL, GWAS)
+  name: ZZBrowse
+- URL: https://www.legumeinfo.org/gcv2/gene;lis=phavu.Phvul.002G100400?q=Phvul.002G100400&sources=lis&algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&bregexp=&border=chromosome&regexp=&order=distance
+  description: Browser for dynamically discovering and viewing genomic synteny across
+    selected species.
+  name: Genome Context Viewer
+- URL: https://gcvit.phaseolus.legumeinfo.org
+  description: Genome-wide views of genetic variants (SNPs) between bean accessions
+  name: GCVit
+- URL: https://legumeinfo.org/germplasm/map#?zoom=6&maxRecs=200&taxonQuery=Phaseolus&traitScale=global&geocodedOnly=false&traitExcludeUnchar=false&limitToMapExtent=false&lat=35.87&lng=-109.47&mapHeight=188.25&baseMap=ESRI%20-%20NatGeo%20(default,%20reference%20map)&ne_lat=37.52715361723378&ne_lng=-93.97705078125001&sw_lat=34.17999758688084&sw_lng=-124.95849609375001&accessionIdsInclusive=false
+  description: Geographic information system viewer, showing collection locations
+    for Phaseolus data held by the U.S. National Plant Germplasm System.
+  name: Germplasm GIS
 species:
 - lunatus
 - vulgaris
+- acutifolius
 taxid: 3883

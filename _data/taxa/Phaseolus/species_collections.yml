@@ -58,3 +58,16 @@ species:
     - collection: UI111.gnm1.3VTM
       synopsis: "Phaseolus vulgaris accession UI111 genome assembly v1"
   markers:
+- name: acutifolius
+  annotations:
+    - collection: W6_15578.gnm2.ann1.LVZ1
+      synopsis: "Phaseolus acutifolius accession W6_15578, annotations on genome assembly v2."
+  diversity:
+  expression:
+  genetic:
+  genomes:
+    - collection: Frijol_Bayo.gnm1.QH8L
+      synopsis: "Phaseolus acutifolius accession Frijol Bayo, genome assembly v1."
+    - collection: W6_15578.gnm2.L2V4
+      synopsis: "Phaseolus acutifolius accession W6_15578, genome assembly v2."
+  markers:

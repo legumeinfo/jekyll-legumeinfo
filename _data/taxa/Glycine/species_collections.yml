@@ -60,9 +60,9 @@ species:
     - collection: Wm82.gnm2.div.Song_Hyten_2015
       synopsis: "VCF, HapMap, and Flapjack files containing genotype information of the whole U.S. soybean germplasm collection using the SoySNP50K BeadChip."
     - collection: Wm82.gnm2.div.Song_NAM_2021a
-      synopsis: "Imputed genotypes for 5176 Nested Association Mapping RILs relative to 40 NAM parental genotypes, genotyped with WGS and the SoySNP50K and SoyNAM6K assays."
+      synopsis: "Imputed genotypes for 5176 Nested Association Mapping RILs relative to 40 NAM parental genotypes, genotyped using the SoySNP50K and SoyNAM6K assays. These data sets report alleles at 29,417 SNP positions."
     - collection: Wm82.gnm2.div.Song_NAM_2021b
-      synopsis: "Imputed genotypes for 5176 Nested Association Mapping RILs relative to 40 NAM parental genotypes, genotyped with WGS and the SoySNP50K and SoyNAM6K assays."
+      synopsis: "Imputed genotypes for 5176 Nested Association Mapping RILs relative to 40 NAM parental genotypes, genotyped with WGS and the SoySNP50K and SoyNAM6K assays. These data sets report alleles at 423,419 SNP positions."
     - collection: Wm82.gnm2.div.Torkamaneh_Laroche_2017
       synopsis: "Resequencing information for 102 Canadian soybean accessions."
     - collection: Wm82.gnm2.div.Torkamaneh_Laroche_2019
