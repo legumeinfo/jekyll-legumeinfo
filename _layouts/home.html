@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<div>
+  {{ content }}
+</div>
+
+{% if page.news_card or page.announcements_card %}
+  {% include card-column.html page=page %}
+{% endif %}

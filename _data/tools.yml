@@ -1,81 +1,76 @@
---- 
-- 
+---
+-
   category: "Browse and Search"
-  description: Description
-  name: "Gene Families"
-  url: "#"
-- 
-  category: "Browse and Search"
-  description: Description
-  name: Maps
-  url: "#"
-- 
-  category: "Browse and Search"
-  description: Description
-  name: "QTL Search"
-  url: "#"
-- 
-  category: "Browse and Search"
-  description: Description
-  name: "Gene Search"
-  url: "#"
-- 
-  category: "Browse and Search"
-  description: Description
-  name: "Protein Domains"
-  url: "#"
-- 
-  category: "Browse and Search"
-  description: "Browser for dynamically discovering and viewing genomic synteny across selected species."
-  name: "Genome Context Viewer"
-  url: "#"
-- 
-  category: "Browse and Search"
-  description: "Genetic and genomic data for all legume data held at LIS, for browsing and download."
-  name: "Data Store"
-  url: "#"
-- 
-  category: "Browse and Search"
-  description: "InterMine interfaces to legume species and genera at LIS."
-  name: "Legume Mines"
-  url: "#"
+  description: "Browser interface to all of the files in the Legume Information System."
+  name: "LIS Datastore"
+  url: "https://data.legumeinfo.org/"
 - 
   category: "Browse and Search"
   description: "Overviews of data characteristics at LIS: genome assembly sizes, gene counts, BUSCO coverage, etc."
   name: "DSCensor Data Overviews"
-  url: "#"
+  url: "https://dscensor.legumeinfo.org/"
+-
+  category: "Browse and Search"
+  description: "LIS InterMines: one mine per genus including genetic data, and an overall LegumeMine with genomes and annotations."
+  name: "LIS InterMines"
+  url: "https://mines.legumeinfo.org/"
 - 
   category: "Browse and Search"
-  description: Description
-  name: Expression
-  url: "#"
+  description: "Browser for dynamically discovering and viewing genomic synteny across selected species."
+  name: "Genome Context Viewer"
+  url: "https://legumeinfo.org/gcv2"
 - 
   category: "Browse and Search"
   description: "Interactive visualization of multiple GWAS and QTL data sets, using synteny to identify potentially conserved association regions between species."
   name: "ZZBrowse GWAS/QTL"
-  url: "#"
+  url: "https://zzbrowse.lis.ncgr.org/"
+-
+  category: "Browse and Search"
+  description: "View GIS location information for legume accessions."
+  name: "LIS Germplasm GIS Viewer"
+  url: "https://legumeinfo.org/germplasm/map"
+-
+  category: "Browse and Search"
+  description: "Conekt is a tool for comparative gene expression analysis."
+  name: "Conekt Comparative Expression"
+  url: "https://conekt.legumeinfo.org/species"
 - 
   category: "Search sequences and features against sequence databases"
-  description: Description
-  name: "BLAST Sequence Search"
-  url: "#"
-- 
-  category: "Search sequences and features against sequence databases"
-  description: Description
-  name: "BLAT Sequence Search"
-  url: "#"
-- 
-  category: "Search sequences and features against sequence databases"
-  description: Description
-  name: "Keyword Search"
-  url: "#"
-- 
-  category: "Search sequences and features against sequence databases"
-  description: Description
-  name: SequenceServer
-  url: "#"
-- 
-  category: "Search sequences and features against sequence databases"
-  description: Description
-  name: "Annotate Your Sequences"
-  url: "#"
+  description: "Run BLASTs against LIS genomes, CDSes, and proteins"
+  name: "LIS SequenceServer BLAST"
+  url: "https://legumeinfo.org/sequenceserver/"
+# - 
+#   category: "Browse and Search"
+#   description: Description
+#   name: "Gene Families"
+#   url: "#"
+# - 
+#   category: "Browse and Search"
+#   description: Description
+#   name: Maps
+#   url: "#"
+# - 
+#   category: "Browse and Search"
+#   description: Description
+#   name: "QTL Search"
+#   url: "#"
+# - 
+#   category: "Browse and Search"
+#   description: Description
+#   name: "Gene Search"
+#   url: "#"
+# - 
+#   category: "Browse and Search"
+#   description: Description
+#   name: "Protein Domains"
+#   url: "#"
+# - 
+#   category: "Search sequences and features against sequence databases"
+#   description: Description
+#   name: "Keyword Search"
+#   url: "#"
+# - 
+#   category: "Search sequences and features against sequence databases"
+#   description: Description
+#   name: "Annotate Your Sequences"
+#   url: "#"

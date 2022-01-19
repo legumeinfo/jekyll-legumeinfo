@@ -1,22 +1,29 @@
---- 
-- taxa: 
-  - name: "Cajanus cajan"
-    display_name: "pigeon pea"
-    image_name: cajca
-    about: "Pigeon pea is a member of the millettioid (warm-season legume) clade within the sub-family Papilionoideae.  Pigeon pea is the main protein source for more than a billion people in the developing world.  It is grown mainly in the semi-arid tropical regions (Asia, Africa and Central/South America)."
-    resources: 
-    - name: "Genome browsers and genomic data"
-      accessions:
-        - name: "ICPL87119"
-          description: "Cajanus cajan accession ICPL87119"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "GBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at LIS"
-                  URL: "#"
-                - name: "JBrowse at JGI"
-                  URL: "#"
-                - name: "Download from Data Store"
-                  URL: "https://legumeinfo.org/data/v2/Cajanus/cajan"
+---
+species:
+- abbrev: cajca
+  commonName: pigeonpea
+  description: Pigeonpea (Cajanus cajan) is a member of the millettioid (warm-season
+    legume) clade within the sub-family Papilionoideae. Pigeonpea is the main protein
+    source for more than a billion people in the developing world. It is grown mainly
+    in the semi-arid tropical regions (Asia, Africa and Central/South America).
+  genus: Cajanus
+  resources:
+  - URL: https://legumeinfo.org/genomes/gbrowse/Cc1.0
+    description: GBrowse for Cajanus cajan assembly v1.0
+    name: LIS Genome Browser (GBrowse)
+  - URL: https://legumeinfo.org/genomes/jbrowse/?data=Cc1.0
+    description: JBrowse for Cajanus cajan assembly v1.0
+    name: LIS Genome Browser (JBrowse)
+  - URL: https://legumeinfo.org/sequenceserver/
+    description: SequenceServer BLAST against the Cajanus cajan v1.0 assembly
+    name: LIS SequenceServer
+  - URL: https://legumeinfo.org/sequenceserver/
+    description: SequenceServer BLAST against the Cajanus cajan assembly v1.0
+    name: LIS SequenceServer
+  species: cajan
+  strains:
+  - accession: ICPL87119
+    identifier: ICPL87119
+    name: ICPL87119
+    origin: International Crops Research Inst. for the Semi-Arid Tropics (ICRISAT)
+  taxid: 3821

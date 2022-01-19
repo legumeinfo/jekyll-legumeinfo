@@ -1,14 +1,34 @@
---- 
-- taxon_features: 
-  - name: "Medicago"
-    display_name: "<i>M. truncatula</i> (barrel medic) is widely used as a biological model. <i>M. sativa</i> (alfalfa) is an important forage crop."
-- resources: 
-  - name: MedicMine
-    URL: "https://mines.legumeinfo.org/medicmine/begin.do"
-    description: "InterMine interface for accessing genetic and genomic data for several species in Medicago."
-  - name: "Genome Context Viewer"
-    URL: "https://legumeinfo.org/gcv2/gene;lis=medsa.XinJiangDaYe.MS.gene72620?algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&sources=lis&bregexp=med&border=chromosome&regexp=&order=distance"
-    description: "Browser for dynamically discovering and viewing genomic synteny across selected species."
-  - name: "Germplasm GIS"
-    URL: "https://legumeinfo.org/germplasm/map#?zoom=5&maxRecs=1000&taxonQuery=Medicago&traitOverlay=&traitScale=global&country=&geocodedOnly&traitExcludeUnchar=false&limitToMapExtent&lat=43.26&lng=33.64&mapHeight=430&baseMap=ESRI%20-%20NatGeo%20(default,%20reference%20map)&ne_lat=49.75287993415023&ne_lng=59.32617187500001&sw_lat=35.995785386420344&sw_lng=7.954101562500001&accessionIdsInclusive=false"
-    description: "Geographic information system viewer, showing collection locations for Medicago data held by the U.S. National Plant Germplasm System."
+---
+commonName: Medick, Burclover
+description: "Medicago is a genus of flowering plants, commonly known as medick or\
+  \ burclover, in the legume family (Fabaceae). It contains at least 87 species and\
+  \ is distributed mainly around the Mediterranean basin. The best-known member of\
+  \ the genus is alfalfa (M. sativa), an important forage crop, and the genus name\
+  \ is based on the Latin name for that plant, medica, from Greek: \u03BC\u03B7\u03B4\
+  \u03B9\u03BA\u03AE (\u03C0\u03CC\u03B1) Median (grass). Most members of the genus\
+  \ are low, creeping herbs, resembling clover, but with burs (hence the common name).\
+  \ However, alfalfa grows to a height of 1 meter, and tree medick (M. arborea) is\
+  \ a shrub. Members of the genus are known to produce bioactive compounds such as\
+  \ medicarpin (a flavonoid) and medicagenic acid (a triterpenoid saponin). Chromosome\
+  \ numbers in Medicago range from 2n = 14 to 48. The species Medicago truncatula\
+  \ is a model legume due to its relatively small stature, small genome (450\u2013\
+  500 Mbp), short generation time (about 3 months), and ability to reproduce both\
+  \ by outcrossing and selfing."
+genus: Medicago
+resources:
+- URL: https://mines.legumeinfo.org/medicmine/begin.do
+  description: InterMine interface for accessing genetic and genomic data for several
+    species in Medicago.
+  name: MedicMine
+- URL: https://www.legumeinfo.org/gcv2/gene;lis=medtr.Medtr1g009230?q=medtr.chr1:1000000-1500000&sources=lis&algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=61&matched=4&intermediate=5&bregexp=&border=chromosome&regexp=&order=distance
+  description: Browser for dynamically discovering and viewing genomic synteny across
+    selected species.
+  name: Genome Context Viewer
+- URL: https://www.legumeinfo.org/germplasm/map#?zoom=6&maxRecs=200&taxonQuery=Medicago&traitScale=global&geocodedOnly=false&traitExcludeUnchar=false&limitToMapExtent=false&lat=35.87&lng=-109.47&mapHeight=188.25&baseMap=ESRI%20-%20NatGeo%20(default,%20reference%20map)&ne_lat=37.52715361723378&ne_lng=-93.97705078125001&sw_lat=34.17999758688084&sw_lng=-124.95849609375001&accessionIdsInclusive=false
+  description: Geographic information system viewer, showing collection locations
+    for Medicago data held by the U.S. National Plant Germplasm System.
+  name: Germplasm GIS
+species:
+- sativa
+- truncatula
+taxid: 3877

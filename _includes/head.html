@@ -1,0 +1,44 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.title %}{{ page.title | strip_html }} &#8211; {% endif %}{{ site.title | strip_html }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% if page.meta_description %}{{ page.meta_description | xml_escape }}{% elsif page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}">
+  <link rel="manifest" type="application/manifest+json; charset=utf-8" href="{{ "/manifest.json" | relative_url }}" />
+  {% if page.meta_robots %}<meta name="robots" content="{{ page.meta_robots }}">
+  {% else %}<meta name="robots" content="all">{% endif %}
+  <meta name="author" content="{{ site.author }}">
+  {% if site.fb_page %}<meta property="fb:pages" content="{{ site.fb_page_id }}" />{% endif %}
+  {% if page.categories %}<meta name="keywords" content="{{ page.categories | join: ', ' }}">{% endif %}
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="{{ "/feed.xml" | relative_url }}" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ "assets/css/uikit.min.css" | relative_url }}" type="text/css" />
+  <link rel="stylesheet" href="{{ "assets/css/theme.css" | relative_url }}" type="text/css" />
+
+  {% include global-stylesheets.html %}
+
+  <!-- Custom JS -->
+  <script src="{{ "assets/js/uikit.min.js" | relative_url }}"></script>
+  <script src="{{ "assets/js/uikit-icons.min.js" | relative_url }}"></script>
+
+  {% include global-scripts.html %}
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ "/assets/icons/apple-touch-icon-57x57.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ "/assets/icons/apple-touch-icon-114x114.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ "/assets/icons/apple-touch-icon-72x72.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ "/assets/icons/apple-touch-icon-144x144.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ "/assets/icons/apple-touch-icon-60x60.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ "/assets/icons/apple-touch-icon-120x120.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ "/assets/icons/apple-touch-icon-76x76.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ "/assets/icons/apple-touch-icon-152x152.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/icons/apple-touch-icon-180x180.png" | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ "/assets/icons/favicon-192x192.png" | relative_url }}" sizes="192x192">
+  <link rel="icon" type="image/png" href="{{ "/assets/icons/favicon-160x160.png" | relative_url }}" sizes="160x160">
+  <link rel="icon" type="image/png" href="{{ "/assets/icons/favicon-96x96.png" | relative_url }}" sizes="96x96">
+  <link rel="icon" type="image/png" href="{{ "/assets/icons/favicon-16x16.png" | relative_url }}" sizes="16x16">
+  <link rel="icon" type="image/png" href="{{ "/assets/icons/favicon-32x32.png" | relative_url }}" sizes="32x32">
+  <link rel="shortcut icon" href="{{ "/assets/favicon.ico" | relative_url }}">
+</head>

@@ -1,0 +1,4 @@
+#!/bin/sh
+~/bin/bundle exec jekyll serve
+## hack to get around datapage-generator bug
+cp collections-index.html _site/collections/index.html

@@ -1,16 +1,26 @@
---- 
-- taxa: 
-  - name: "Aeschynomene evenia"
-    display_name: "shrubby jointvetch"
-    image_name: 
-    about: "The legume genus <i>Aeschynomene</i> L. includes approximately 150 tropical and subtropical species, part of them having a semi-aquatic lifestyle. Some hydrophytic Aeschynomene species display unusual symbiotic features such as stem nodulation and the presence of a Nod factor-independent infection process with some Bradyrhizobium strains."
-    resources: 
-    - name: "Genome browsers and genomic data"
-      accessions:
-        - name: CIAT22838
-          description: "Aeschynomene evenia accession CIAT22838"
-          versions: 
-            - name: gnm1
-              instances:
-                - name: "Download from Data Store"
-                  URL: "https://peanutbase.org/data/v2/Aeschynomene/evenia/genomes/CIAT22838.gnm1.XF73/"
+---
+species:
+- abbrev: aesev
+  commonName: shrubby jointvetch
+  description: The legume genus Aeschynomene L. includes approximately 150 tropical
+    and subtropical species, part of them having a semi-aquatic lifestyle. Some hydrophytic
+    Aeschynomene species display unusual symbiotic features such as stem nodulation
+    and the presence of a Nod factor-independent infection process with some Bradyrhizobium
+    strains. To decipher the mechanisms of this original symbiotic process, Aeschynomene
+    evenia has emerged as a new model legume because of its advantageous genetic and
+    developmental characteristics for molecular genetics. A. evenia (2n=20, 400 Mb/1C)
+    is an autogamous diploid species that is annual or short-lived perennial, consisting
+    of various genotypes.
+  genus: Aeschynomene
+  species: evenia
+  strains:
+  - accession: CIAT22838
+    description: The sequenced A. evenia genotype is an inbred line produced by IRD
+      from the accession CIAT22838 originating from Malawi. 94% of the 400 Mb genome
+      was assembled, 80% anchored to the 10 A. evenia chromosomes and 32,667 protein-coding
+      genes predicted, providing a platform for comparative genomics and analysis
+      of the nitrogen-fixing symbiosis in legumes.
+    identifier: CIAT22838
+    name: CIAT22838
+    origin: Malawi
+  taxid: 561484
