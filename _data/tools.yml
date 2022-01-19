@@ -3,7 +3,7 @@
   category: "Browse and Search"
   description: "Browser interface to all of the files in the Legume Information System."
   name: "LIS Datastore"
-  url: "https://legumeinfo.org/data/v2/"
+  url: "https://data.legumeinfo.org/"
 - 
   category: "Browse and Search"
   description: "Overviews of data characteristics at LIS: genome assembly sizes, gene counts, BUSCO coverage, etc."

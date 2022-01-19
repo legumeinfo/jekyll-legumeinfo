@@ -9,6 +9,16 @@ species:
     and Lj3.0, publication associated with this genome version is available here:
     Sato et al., 2008 (doi:10.1093/dnares/dsn008).'
   genus: Lotus
+  resources:
+  - URL: https://legumeinfo.org/genomes/gbrowse/Lj3.0
+    description: GBrowse for Lutus Japonicus assembly v3.0
+    name: LIS Genome Browser (GBrowse)
+  - URL: https://legumeinfo.org/genomes/jbrowse?data=Lj3.0
+    description: JBrowse for Lotus Japonicus assembly v3.0
+    name: LIS Genome Browser (JBrowse)
+  - URL: https://legumeinfo.org/sequenceserver/
+    description: SequenceServer BLAST against the Lotus Japonicus assembly v3.0
+    name: LIS SequenceServer
   species: japonicus
   strains:
   - accession: MG-20

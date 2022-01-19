@@ -7,13 +7,22 @@ species:
     source for more than a billion people in the developing world. It is grown mainly
     in the semi-arid tropical regions (Asia, Africa and Central/South America).
   genus: Cajanus
+  resources:
+  - URL: https://legumeinfo.org/genomes/gbrowse/Cc1.0
+    description: GBrowse for Cajanus cajan assembly v1.0
+    name: LIS Genome Browser (GBrowse)
+  - URL: https://legumeinfo.org/genomes/jbrowse/?data=Cc1.0
+    description: JBrowse for Cajanus cajan assembly v1.0
+    name: LIS Genome Browser (JBrowse)
+  - URL: https://legumeinfo.org/sequenceserver/
+    description: SequenceServer BLAST against the Cajanus cajan v1.0 assembly
+    name: LIS SequenceServer
+  - URL: https://legumeinfo.org/sequenceserver/
+    description: SequenceServer BLAST against the Cajanus cajan assembly v1.0
+    name: LIS SequenceServer
   species: cajan
   strains:
   - accession: ICPL87119
-    description: 'Pigeonpea variety ICPL 87119 was selected for resistance to fusarium
-      wilt and sterility mosaic. It is high-yielding and widely adapted. It was selected
-      as the first referece genome for this species. See more about the variety here:
-      http://oar.icrisat.org/566/1/PMD_43.pdf'
     identifier: ICPL87119
     name: ICPL87119
     origin: International Crops Research Inst. for the Semi-Arid Tropics (ICRISAT)
