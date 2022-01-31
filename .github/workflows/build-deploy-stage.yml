@@ -1,0 +1,42 @@
+name: Build and deploy jekyll-stage.legumeinfo.org
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          # for legumeinfo/jekyll-theme-legumeinfo submodule (while it's still used)
+          submodules: recursive
+
+      - name: setup ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+
+      - name: install dependencies and build site
+        uses: limjh16/jekyll-action-ts@v2
+        with:
+          enable_cache: true
+          jekyll_src: .
+
+      - name: Check HTML
+        uses: chabad360/htmlproofer@v1.1
+        with:
+          directory: "./_site"
+          # --disable-external included for efficiency, eventually remove?
+          arguments: "--disable-external --assume-extension"
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        # Always deploy for now, despite htmlproofer errors (eventually remove)
+        if: always()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: 'jekyll-stage.legumeinfo.org'
