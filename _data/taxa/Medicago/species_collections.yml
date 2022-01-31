@@ -3,7 +3,7 @@ species:
 - name: sativa
   annotations:
   diversity:
-    - collection: mixed.tcp1.div.Li_Acharya_2012
+    - collection: mixed.tcp.div.Li_Acharya_2012
       synopsis: "genotype variants called with respect to a transcriptome assembly, from 27 alfalfa genotypes, from Li, Acharya et al., 2012"
   expression:
   genetic:

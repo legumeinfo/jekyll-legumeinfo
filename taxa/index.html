@@ -1,5 +1,21 @@
 ---
-layout: taxon
+layout: default
 title: Taxa
 tools_menu: true
 ---
+<h1>Taxa</h1>
+
+<p class="temp">Some static introductory text for the default Taxa page goes here.</p>
+
+{% assign genera = site.data.taxon_list | group_by: "genus"  %}
+<dl>
+  {% for genus in genera %}
+  {% for item in genus.items %}
+  {% if item.category == "main" %}
+  <dt><a href="/taxa{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a></dt>
+  <dd>{{ item.description }}</dd>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+  <dd>Special-focus species and collections</a></dd>
+</dl>
