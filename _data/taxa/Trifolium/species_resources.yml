@@ -9,6 +9,16 @@ species:
     system. Red clover is a widely grown fodder legume crop and is valued for its
     role in increasing soil fertility by nitrogen fixation.
   genus: Trifolium
+  resources:
+  - URL: https://legumeinfo.org/genomes/gbrowse/Tp2.0
+    description: GBrowse Trifolium pratense assembly v2.0
+    name: LIS Genome Browser (GBrowse)
+  - URL: http//legumeinfo.org/genomes/jbrowse/?data=Tp2.0
+    description: JBrowse for Trifolium pratense assembly v2.0
+    name: LIS Genome Browser (JBrowse)
+  - URL: https://legumeinfo.org/sequenceserver/
+    description: SequenceServer BLAST against Trifolium pratense assembly v2.0
+    name: LIS SequenceServer
   species: pratense
   strains:
   - accession: MilvusB
