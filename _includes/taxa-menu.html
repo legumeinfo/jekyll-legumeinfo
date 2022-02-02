@@ -1,10 +1,20 @@
+{% assign genera = site.data.taxon_list | group_by: "genus"  %}
 <div class="tm-sidebar-left uk-visible@m">
   <h3>Taxa</h3>
-  {% assign genera = site.data.taxon_list | group_by: "genus"  %}
   <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
     {% for genus in genera %}
     {% for item in genus.items %}
     {% if item.category == "main" %}
+    <li><a href="/taxa{{ item.genus | downcase | relative_url }}">{{ item.genus }}</a></li>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+  </ul>
+  <hr class="menu-separator"/>
+  <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+    {% for genus in genera %}
+    {% for item in genus.items %}
+    {% if item.category == "special" %}
     <li><a href="/taxa{{ item.genus | downcase | relative_url }}">{{ item.genus }}</a></li>
     {% endif %}
     {% endfor %}

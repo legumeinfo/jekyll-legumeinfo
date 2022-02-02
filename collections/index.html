@@ -3,6 +3,8 @@ layout: default
 title: Collections
 tools_menu: true
 ---
+{% assign genera = site.data.taxon_list | group_by: "genus"  %}
+
 <h1>LIS Datastore Collections</h1>
 
 <p>
@@ -15,7 +17,6 @@ tools_menu: true
   Each collection contains a README file which describes that collection.
 </p>
 
-{% assign genera = site.data.taxon_list | group_by: "genus"  %}
 <dl>
   {% for genus in genera %}
   {% for item in genus.items %}
