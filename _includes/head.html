@@ -17,6 +17,17 @@
   <link rel="stylesheet" href="{{ "assets/css/uikit.min.css" | relative_url }}" type="text/css" />
   <link rel="stylesheet" href="{{ "assets/css/theme.css" | relative_url }}" type="text/css" />
 
+  <!-- TODO: these theme overrides should be added at compile time, i.e. we shouldn't be overriding our own theme! -->
+  <style type="text/css">
+    .tm-lower-navbar .uk-navbar-nav > li > a, .tm-lower-navbar .uk-navbar-item, .tm-lower-navbar .uk-navbar-toggle {
+      min-height: 40px;
+      height: 40px;
+    }
+    .tm-lower-navbar .uk-navbar-nav > li > a::before {
+      bottom: 10px;
+    }
+  </style>
+  
   {% include global-stylesheets.html %}
 
   <!-- Custom JS -->
