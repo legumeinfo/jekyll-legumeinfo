@@ -20,6 +20,40 @@ You can run the site with Docker as follows:
 ## Theme
 This site uses a modified version of the [Legume Information System Jekyll theme](https://github.com/legumeinfo/jekyll-theme-legumeinfo).
 
+## News Posts
+News posts are plain text markdown with a YAML header, created by adding a file under `news/_posts/` with a name of the format `yyyy-mm-dd-unique-identifier.md`.
+For example:
+```
+---
+layout: news-item
+title: Tepary bean genomes added to LIS
+author: Sam Hokin
+date: 2021-10-01 17:00
+summary: Phaseolus acutifolius (tepary bean) added to LIS
+---
+[Phaseolus acutifolius (tepary bean)](/taxa/phaseolus) is a drought- and heat-tolerant crop
+native to the American Southwest and Mexico; it joins the growing set of annotated genomes at LIS,
+with a cultivated and wild accession described in [Moghaddam et al. 2021](https://doi.org/10.1038/s41467-021-22858-x).
+The cultivated accession has been added as the primary representative of the species.
+```
+You can place blank lines in the content to generate paragraphs. Images are not supported in news items.
+
+## Announcements
+Announcements are just like news posts, created by adding a file under `announcements/_posts` with a name of the format `yyyy-mm-dd-unique-identifier.md`.
+For example:
+```
+---
+layout: announcement-item
+title: BIC & NAPIA Biennial meeting 2-4 November, 2021 (virtual)
+author: Sam Hokin
+date: 2021-11-02
+summary: BIC & NAPIA Biennial meeting will be held virtually, 2-4 November, 2021
+---
+2 - 4 November 2021:
+[BIC & NAPIA Biennial meeting](https://www.bic-napia.org/), Virtual Meeting
+```
+You can place blank lines in the content to generate paragraphs. Images are not supported in announcements.
+
 ## Blog Posts
 Blog posts are created by adding a file named `blog/_posts/yyyy-mm-dd-unique-identifier.md`.
 
