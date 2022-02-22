@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: home
+layout: default
 tools_menu: true
 news_card: true
 announcements_card: true
@@ -45,3 +45,7 @@ blog_card: true
     <img src="{{ "assets/img/ncgr.png" | relative_url }}" width="200" height="auto" alt="NCGR logo"/>
   </a>
 </div>
+
+{% if page.news_card or page.announcements_card %}
+  {% include card-column.html page=page %}
+{% endif %}

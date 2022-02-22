@@ -3,10 +3,10 @@ layout: default
 title: Tools
 taxa_menu: true
 ---
-<h1>Tools</h1>
-
-{% if site.data.tools %}
 {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
+
+<h1>Informatic Tools</h1>
+
 {% for group in groups %}
 <h2>{{ group.name }}</h2>
 <dl>
@@ -16,4 +16,3 @@ taxa_menu: true
   {% endfor %}
 </dl>
 {% endfor %}
-{% endif %}
