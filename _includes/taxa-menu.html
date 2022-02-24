@@ -9,9 +9,7 @@
     {% endif %}
     {% endfor %}
     {% endfor %}
-  </ul>
-  <hr class="menu-separator"/>
-  <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+    <li class="uk-nav-divider"></li>
     {% for genus in genera %}
     {% for item in genus.items %}
     {% if item.category == "special" %}
