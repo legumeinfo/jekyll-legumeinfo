@@ -18,7 +18,7 @@
 - category: "Browse and Search"
   description: "Interactive visualization of multiple GWAS and QTL data sets, using synteny to identify potentially conserved association regions between species."
   name: "ZZBrowse GWAS/QTL"
-  url: "https://zzbrowse.lis.ncgr.org/"
+  url: "https://zzbrowse.legumeinfo.org/"
 - category: "Browse and Search"
   description: "View genetic and comparative maps."
   name: "CMap"
