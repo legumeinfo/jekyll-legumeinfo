@@ -34,6 +34,9 @@ twitter_username: legumeinfo
 github_username: legumeinfo
 #newsletter: http://eepurl.com/cX_JjL
 
+# our Google Analytics ID
+google_analytics: "UA-49655154-1"
+
 # Set the LIS Datastore base URL here
 datastoreurl: https://data.legumeinfo.org
 

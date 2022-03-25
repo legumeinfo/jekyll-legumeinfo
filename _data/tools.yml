@@ -14,7 +14,7 @@
 - category: "Browse and Search"
   description: "Browser for dynamically discovering and viewing genomic synteny across selected species."
   name: "Genome Context Viewer"
-  url: "https://legumeinfo.org/gcv2"
+  url: "https://gcv.legumeinfo.org/"
 - category: "Browse and Search"
   description: "Interactive visualization of multiple GWAS and QTL data sets, using synteny to identify potentially conserved association regions between species."
   name: "ZZBrowse GWAS/QTL"
