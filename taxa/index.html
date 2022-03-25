@@ -7,27 +7,24 @@ tools_menu: true
 
 <h1>Resources by Taxon</h1>
 
-<h3>Major genera (containing significant crop and model species)</h3>
-<dl>
+<h3>Major genera (containing significant crops)</h3>
+<ul>
   {% for genus in genera %}
   {% for item in genus.items %}
   {% if item.category == "main" %}
-  <dt><a href="/taxa{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a></dt>
-  <dd>{{ item.description }}</dd>
+  <li><a href="/taxa{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
   {% endif %}
   {% endfor %}
   {% endfor %}
-  <dd>Special-focus species and collections</a></dd>
-</dl>
+</ul>
 
-<h3>Special-focus genera and data sets</h3>
-<dl>
+<h3>Special-focus genera</h3>
+<ul>
   {% for genus in genera %}
   {% for item in genus.items %}
   {% if item.category == "special" %}
-  <dt><a href="/taxa{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a></dt>
-  <dd>{{ item.description }}</dd>
+  <li><a href="/taxa{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
   {% endif %}
   {% endfor %}
   {% endfor %}
-</dl>
+</ul>

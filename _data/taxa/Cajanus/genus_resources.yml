@@ -8,7 +8,7 @@ resources:
 - URL: https://zzbrowse.legumeinfo.org/?tab=Chrom&datasets=Pigeonpea%20GWAS&chr=Cc01&selected=100000&window=250000&datasets2=Soybean%20GWAS&chr2=Gm01&selected2=100000&window2=250000&macroMatched=20&macroIntermediate=10&macroMask=10&macroDistance=levenshtein
   description: Association viewers (QTL, GWAS)
   name: ZZBrowse
-- URL: https://legumeinfo.org/gcv2/gene;lis=cajca.C.cajan_19480?q=C.cajan_19480&sources=lis&algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&bregexp=&border=chromosome&regexp=&order=distance
+- URL: https://gcv.legumeinfo.org/gene;lis=cajca.C.cajan_19480?q=C.cajan_19480&sources=lis&algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&bregexp=&border=chromosome&regexp=&order=distance
   description: Browser for dynamically discovering and viewing genomic synteny across
     selected species.
   name: Genome Context Viewer

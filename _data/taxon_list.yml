@@ -1,6 +1,6 @@
 --- 
 - 
-  description: "Warm-season oilseed crop, indigenous to South America."
+  description: "Peanut"
   genus: Arachis
   category: main
 - 
@@ -20,7 +20,7 @@
   genus: Lotus
   category: main
 - 
-  description: "Several species of lupin grain legumes"
+  description: "Lupin grain legumes"
   genus: Lupinus
   category: main
 - 

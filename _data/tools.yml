@@ -4,7 +4,7 @@
   name: "LIS Datastore"
   url: "https://data.legumeinfo.org/"
 - category: "Browse and Search"
-  description: "LIS InterMines: one mine per genus including genetic data, and an overall LegumeMine with genomes and annotations."
+  description: "LIS InterMines: one mine per genus including genetic data, and an overall LegumeMine with genome annotations. Tools include a powerful query engine."
   name: "LIS InterMines"
   url: "https://mines.legumeinfo.org/"
 - category: "Browse and Search"
