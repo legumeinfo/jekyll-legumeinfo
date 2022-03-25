@@ -22,10 +22,10 @@ species:
     name: G27455
     origin: Colombia
     resources:
-    - URL: https://legumeinfo.org/genomes/gbrowse/phalu.G27455.gnm1
+    - URL: https://legacy.legumeinfo.org/genomes/gbrowse/phalu.G27455.gnm1
       description: GBrowse for G27544 assembly v1.0
       name: LIS Genome Browser (GBrowse)
-    - URL: https://legumeinfo.org/genomes/jbrowse/?data=phalu.G27455.gnm1
+    - URL: https://legacy.legumeinfo.org/genomes/jbrowse/?data=phalu.G27455.gnm1
       description: JBrowse for G27544 assembly v1.0
       name: LIS Genome Browser (JBrowse)
   taxid: 3884
@@ -52,13 +52,13 @@ species:
     name: G19833
     origin: Peru
     resources:
-    - URL: https://legumeinfo.org/genomes/gbrowse/phavu.G19833.gnm2
+    - URL: https://legacy.legumeinfo.org/genomes/gbrowse/phavu.G19833.gnm2
       description: GBrowse for G19833 assembly v2.0
       name: LIS Genome Browser (GBrowse)
-    - URL: https://legumeinfo.org/genomes/jbrowse/?data=phavu.G19833.gnm2
+    - URL: https://legacy.legumeinfo.org/genomes/jbrowse/?data=phavu.G19833.gnm2
       description: JBrowse for G19833 assembly v2.0
       name: LIS Genome Browser (JBrowse)
-    - URL: https://legumeinfo.org/sequenceserver/
+    - URL: https://sequenceserver.legumeinfo.org/
       description: SequenceServer BLAST against the Phaseolus vulgaris genome v2.0
       name: LIS SequenceServer
   - accession: PI 633451
@@ -75,17 +75,17 @@ species:
     name: UI111
     origin: US National Plant Germplasm System
     resources:
-    - URL: https://legumeinfo.org/genomes/gbrowse/phavu.UI111.gnm1/
+    - URL: https://legacy.legumeinfo.org/genomes/gbrowse/phavu.UI111.gnm1/
       description: GBrowse for UI111 assembly v1.0
       name: LIS Genome Browser (GBrowse)
-    - URL: https://legumeinfo.org/genomes/jbrowse/phavu.UI111.gnm1/
+    - URL: https://legacy.legumeinfo.org/genomes/jbrowse/phavu.UI111.gnm1/
       description: JBrowse for UI111 assembly v1.0
       name: LIS Genome Browser (JBrowse)
-  - accession: ''
+  - accession: Labor Ovalle
     description: Guatemalan highlands landrace improved by selection; round-seeded
       Bolonilio market class bean.
     identifier: LaborOvalle
-    name: LaborOvalle
+    name: Labor Ovalle
     origin: Institute of Agricultural Science and Technology (ICTA)
   - accession: PI 608674
     description: 5-593 has been used by Dr. Mark Bassett at the University of Florida
@@ -104,15 +104,16 @@ species:
     common bean
   genus: Phaseolus
   resources:
-  - URL: https://legumeinfo.org/genomes/gbrowse/phaac.Frijol_Bayo.gnm1
+  - URL: https://legacy.legumeinfo.org/genomes/gbrowse/phaac.Frijol_Bayo.gnm1
     description: GBrowse for Frijol_Bayo assembly v1.0
     name: LIS Genome Browser (GBrowse)
-  - URL: https://legumeinfo.org/genomes/jbrowse/?data=phaac.Frijol_Bayo.gnm1
+  - URL: https://legacy.legumeinfo.org/genomes/jbrowse/?data=phaac.Frijol_Bayo.gnm1
     description: JBrowse for Frijol_Bayo assembly v1.0
     name: LIS Genome Browser (JBrowse)
   species: acutifolius
   strains:
-  - description: '[Description by Dr. Phil McClean] The cultivated landrace, Frijol
+  - accession: PI 692269
+    description: '[Description by Dr. Phil McClean] The cultivated landrace, Frijol
       Bayo, was collected in a market in Cordoba, Veracruz, Mexico in 1951 by Howard
       Scott Gentry. Frijol Bayo is white-seeded, photoperiod insensitive with indeterminate
       growth habit, and has a hundred seed weight of 12.3 g. It exhibits broad adaptation
@@ -122,10 +123,11 @@ species:
       griseola (Porch, T., unpublished data).  DNA for the Frijol Bayo genome assembly
       was isolated from leaves from single seed descent; seeds for Frijol Bayo are
       available from USDA GRIN (G40001-Seq; PI 692269)'
-    identifier: Frijol Bayo
+    identifier: Frijol_Bayo
     name: Frijol Bayo
     origin: Veracruz, Mexico
-  - description: '[Description by Dr. Kirstin Bett] W6 15578 is a wild P. acutifolius
+  - accession: PI 638833
+    description: '[Description by Dr. Kirstin Bett] W6 15578 is a wild P. acutifolius
       accession obtained from the Western Regional Plant Introduction Station of the
       USDA. Originally collected by O.W. Norvell in Mexico in 1955, it now has the
       Plant Introduction number PI 638833. It is photoperiod sensitive, has an indeterminate
@@ -135,7 +137,7 @@ species:
       W6 15578 was one of the parents, along with PI 430219, of the tepary bean mapping
       population, BR-06, developed and genotyped at the University of Saskatchewan
       (Gujaria-Verma et al. 2016(2)).'
-    identifier: Frijol Bayo
-    name: Frijol Bayo
+    identifier: W6_15578
+    name: W6 (15578)
     origin: Mexico
   taxid: 33129

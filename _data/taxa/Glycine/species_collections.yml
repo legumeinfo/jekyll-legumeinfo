@@ -12,6 +12,8 @@ species:
       synopsis: "Genome annotation files for cultivar Jinyuan, Chu et al. (2021)"
     - collection: Lee.gnm1.ann1.6NZV
       synopsis: "Glycine max accession Lee genome annotation files; JGI annotation version 1 on assembly version 1"
+    - collection: Lee.gnm2.ann1.1FNT
+      synopsis: "genome annotation of Glycine max Lee"
     - collection: Wenfeng7_IGA1001.gnm1.ann1.ZK5W
       synopsis: "Genome annotation files for cultivar  Wenfeng 7, Chu et al. (2021)"
     - collection: Wm82.gnm1.ann1.DvBy
@@ -81,6 +83,46 @@ species:
     - collection: Wm82.gnm2.ann1.expr.G7ZY
       synopsis: "Soybean gene expression atlas from 14 conditions (Libault et al., 2010)."
   genetic:
+    - collection: mixed.gwas.Bandillo_Jarquin_2015
+      synopsis: "GWAS of soybean seed protein and oil, using 12,000 accessions from the USDA soybean collection and the SoySNP50K BeadChip."
+    - collection: mixed.gwas.Bao_Kurle_2015
+      synopsis: "GWAS of soybean sudden death syndrome (SDS), based on 282 breeding lines, genotyped with a 1536-SNP chip."
+    - collection: mixed.gwas.Cao_Li_2017
+      synopsis: "GWAS and QTL study of soybean seed oil, conducted on 279 lines from a Chinese breeding population, genotyped with 59,845 SNPs."
+    - collection: mixed.gwas.Chang_Brown_2016
+      synopsis: "GWAS of Tobacco ringspot virus(TRSV), conducted on 19,652 lines in the USDA Soybean Collection, genotyped with the SoySNP50K BeadChip."
+    - collection: mixed.gwas.Che_Liu_2017
+      synopsis: "GWAS of Soybean mosaic virus (SMV), conducted on 165 lines from parents with differing susceptibility, genotyped with the 355K SoySNP array."
+    - collection: mixed.gwas.Dhanapal_Ray_2016
+      synopsis: "GWAS soybean chlorophyll traits based on canopy spectral reflectance and leaf extracts."
+    - collection: mixed.gwas.Fang_Ma_2017
+      synopsis: "GWAS of 84 agronomic traits, conducted on 809 soybean accessions, with genotyping by resequencing."
+    - collection: mixed.gwas.Hu_Zhang_2014
+      synopsis: "GWAS of soybean yield-related traits, conducted on 113 wild soybean accessions, genotyped with 85 simple sequence repeat (SSR) markers."
+    - collection: mixed.gwas.Kim_Kim_2020
+      synopsis: "GWAS study of control of flowering time in soybean, genotyped with the 180k Axiom SoyaSNP array."
+    - collection: mixed.gwas.Li_Zhao_2019
+      synopsis: "GWAS study of soybean seed protein and oil, conducted on 298 accessions, genotyped with a panel of 1536 SNPs."
+    - collection: mixed.gwas.Mamidi_Chikara_2011
+      synopsis: "GWAS study of iron deficiency chlorosis in soybean, conducted on two populations (n=141, n=143), genotyped with the 1536 SNP USLP1 array."
+    - collection: mixed.gwas.Meng_He_2016
+      synopsis: "GWAS study of seed isoflavone content (SIFC), conducted on 366 landraces, genotyped with 116,769 RAD-Seq markers."
+    - collection: mixed.gwas.Moellers_Singh_2017
+      synopsis: "GWAS study of Sclerotinia stem rot (SSR) in soybean, conducted on 466 accessions, genotyped with the SoySNP50K BeadChip."
+    - collection: mixed.gwas.Sonah_ODonoughue_2015
+      synopsis: "GWAS study of eight traits in soybean, conducted on 139 accessions, genotyped using GBS-derived markers."
+    - collection: mixed.gwas.Wang_Chu_2016
+      synopsis: "GWAS study of domestication-related traits in soybean, conducted on 105 wild and 262 cultivated soybeans, genotyped using the NJAU 355K SoySNP array."
+    - collection: mixed.gwas.Yan_Hofmann_2017
+      synopsis: "GWAS study of seed weight in soybean, conducted on 166 from the USDA soybean collection, genotyped using the SoySNP50K BeadChip."
+    - collection: mixed.gwas.Zhang_Hao_2015
+      synopsis: "GWAS study of architecture and yield-related traits in soybean, conducted on 219 accessions, genotyped using the 1536-SNP USLP1 array."
+    - collection: mixed.gwas.Zhang_Song_2015
+      synopsis: "GWAS study of flowering time, maturity dates and plant height in soybean, conducted on 309 soybean accessions, genotyped using the SoySNP50K BeadChip."
+    - collection: mixed.gwas.Zhang_Song_2016
+      synopsis: "GWAS study of seed weight in soybean, conducted on 309 soybean accessions, genotyped using the SoySNP50K BeadChip."
+    - collection: mixed.gwas.Zhao_Teng_2017
+      synopsis: "GWAS study of resistance to soybean cyst nematode (SCN), conducted on 200 soybean accessions, genotyped using a custom 33,194 SNP set."
   genomes:
     - collection: FiskebyIII.gnm1.F177
       synopsis: "Glycine max genotype Fiskeby III genome assembly v1.0"
@@ -92,6 +134,8 @@ species:
       synopsis: "Genome assembly files for cultivar Jinyuan (Jinyuan_IGA100 in the publication; 6HFS_GmJY_1.0 in the GenBank assembly record), Chu et al. (2021)"
     - collection: Lee.gnm1.BXNC
       synopsis: "Genome assembly"
+    - collection: Lee.gnm2.K7BV
+      synopsis: "Glycine max genotype Lee genome assembly v2.0"
     - collection: Wenfeng7_IGA1001.gnm1.L0QH
       synopsis: "Genome assembly files for cultivar Wenfeng 7 (Wenfeng7_IGA1001 in publication; WHFS_GmWF7_1.0 in the GenBank assembly record); Chu et al. (2021)"
     - collection: Wm82.gnm1.FCtY
@@ -111,6 +155,26 @@ species:
     - collection: Zh35_IGA1004.gnm1.DBYJ
       synopsis: "Genome assembly files for cultivar Zhonghuang 35 (Zh35_IGA1004 in publication; WHFS_GmZH35_1.0 in the GenBank assembly record), Chu et al. (2021)"
   markers:
+    - collection: Wm82.gnm1.mrk.SoySNP50K
+      synopsis: "SoySNP50K is an Illumina Infinium II BeadChip that contains over 50,000 SNPs from soybean useful for genotyping a wide variety of cultivated and wild soybean accessions."
+    - collection: Wm82.gnm1.mrk.SoySNP6K
+      synopsis: "Illumina Infinium SoySNP6K BeadChip"
+    - collection: Wm82.gnm2.mrk.Kim_Kim_2020
+      synopsis: "GWAS study of control of flowering time in soybean, genotyped with the 180k Axiom SoyaSNP array."
+    - collection: Wm82.gnm2.mrk.Li_Zhao_2019
+      synopsis: "12,072 SNPs from Li, Zhao, et al. (2019), a seed protein and oil study."
+    - collection: Wm82.gnm2.mrk.Meng_He_2016
+      synopsis: "GWAS study of seed isoflavone content (SIFC), conducted on 366 landraces, genotyped with 116,769 RAD-Seq markers."
+    - collection: Wm82.gnm2.mrk.NJAU355K
+      synopsis: "NJAU 355K SoySNP array used to study soybean domestication in Wang, et al. (2016)."
+    - collection: Wm82.gnm2.mrk.Sonah_ODonoughue_2015
+      synopsis: "GWAS study of eight traits in soybean, conducted on 139 accessions, genotyped using GBS-derived markers."
+    - collection: Wm82.gnm2.mrk.SoyaSNP180K
+      synopsis: "Axiom SoyaSNP180K array with 180,981 SNPs developed by Lee, et al. (2015)."
+    - collection: Wm82.gnm2.mrk.SoySNP50K
+      synopsis: "SoySNP50K is an Illumina Infinium II BeadChip that contains over 50,000 SNPs from soybean useful for genotyping a wide variety of cultivated and wild soybean accessions."
+    - collection: Wm82.gnm2.mrk.SoySNP6K
+      synopsis: "Illumina Infinium SoySNP6K BeadChip"
 - name: soja
   annotations:
     - collection: F_IGA1003.gnm1.ann1.G61B

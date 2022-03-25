@@ -66,6 +66,8 @@ species:
   diversity:
   expression:
   genetic:
+    - collection: PI475887_x_Grif15036.gen.Nagy_Guo_2012
+      synopsis: "AA_A.duranensis_x_A.duranensis_a, SNP and SSR-based genetic map of Arachis duranensis from a cross of 'PI 475887' and 'Grif 15036'."
   genomes:
     - collection: V14167.gnm1.SWBf
       synopsis: "Genome assembly 1 for Arachis duranensis, accession V14167"

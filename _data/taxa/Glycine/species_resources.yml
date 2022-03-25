@@ -22,7 +22,7 @@ species:
   - URL: https://soybase.org/gcvit
     description: 'Genotype comparison visualization tool '
     name: GCViT
-  - URL: https://legumeinfo.org/gcv2/gene;lis=glyma.Glyma.15G255600?q=Glyma.15G255600&sources=lis&algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&bregexp=&border=chromosome&regexp=&order=distance
+  - URL: https://gcv.legumeinfo.org/gene;lis=glyma.Glyma.15G255600?q=Glyma.15G255600&sources=lis&algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&bregexp=&border=chromosome&regexp=&order=distance
     description: Browser for dynamically discovering and viewing genomic synteny across
       selected species.
     name: Genome Context Viewer
@@ -45,7 +45,7 @@ species:
     - URL: https://soybase.org/gb2/gbrowse/gmax1.01
       description: GBrowse for Wm82 assemblies 1.01
       name: Genome Browser (GBrowse), assembly 1
-    - URL: https://legumeinfo.org/sequenceserver/
+    - URL: https://sequenceserver.legumeinfo.org/
       description: SequenceServer BLAST against the Wm82 v2 assembly
       name: LIS SequenceServer
   - accession: GWHAAEV00000000.1
@@ -59,7 +59,7 @@ species:
     - URL: https://soybase.org/gb2/gbrowse/glyma.Zh13.gnm1
       description: GBrowse for glycine max Zh13 genome assembly verson 1
       name: Soybase Genome Browser (GBrowse)
-    - URL: https://legumeinfo.org/sequenceserver/
+    - URL: https://sequenceserver.legumeinfo.org/
       description: SequenceServer BLAST against the glycine max Zh13 assembly
       name: LIS SequenceServer
   - accession: PI 548656
@@ -75,9 +75,55 @@ species:
     - URL: https://soybase.org/gb2/gbrowse/glyma.Lee.gnm1
       description: GBrowse for glycine max Lee genome assembly verson 1
       name: Soybase Genome Browser (GBrowse)
-    - URL: https://legumeinfo.org/sequenceserver/
+    - URL: https://sequenceserver.legumeinfo.org/
       description: SequenceServer BLAST against the glycine max Lee assembly
       name: LIS SequenceServer
+  - accession: IGA1001
+    description: Glycine max Wenfeng 7 (IGA1001) was sequenced and annotated by Chu,
+      et al. (2021).
+    identifier: Wenfeng7_IGA1001
+    name: Wenfeng 7
+    origin: National Soybean Preservation Center, ICS, CAAS
+  - accession: IGA1002
+    description: Glycine max Hefeng 25 (IGA1002) was sequenced and annotated by Chu,
+      et al. (2021).
+    identifier: Hefeng25_IGA1002
+    name: Hefeng 25
+    origin: Jiamusi Branch of Heilongjiang Academy of Agricultural Sciences
+  - accession: IGA1004
+    description: Glycine max Zhonghuang 35 (IGA1004) was sequenced and annotated by
+      Chu, et al. (2021).
+    identifier: Zh35_IGA1004
+    name: Zhonghuang 35
+    origin: National Soybean Improvement Sub-Center, ICS, CAAS
+  - accession: IGA1005
+    description: Zhonghuang 13 is a Chinese cultivar derived from accessions Yudou
+      18 and Zhongzuo 90052-76 by pedigree selection for high yield and stress tolerance
+      (Shen et al., 2018; https://doi.org/10.1007/s11427-018-9360-0). This line, IGA1005,
+      was sequenced and annotated by Chu, et al. (2021).
+    identifier: Zh13_IGA1005
+    name: Zhonghuang 13
+    origin: National Soybean Improvement Sub-Center, ICS, CAAS
+  - accession: IGA1006
+    description: Glycine max Jinyuan (IGA1006) was sequenced and annotated by Chu,
+      et al. (2021).
+    identifier: Jinyuan_IGA1006
+    name: Jinyuan
+    origin: National Soybean Preservation Center, ICS, CAAS
+  - accession: IGA1007
+    description: Glycine max Huaxia 3 (IGA1007) was sequenced and annotated by Chu,
+      et al. (2021).
+    identifier: Huaxia3_IGA1007
+    name: Huaxia 3
+    origin: South China Agricultural University
+  - accession: IGA1008
+    description: Williams 82, the soybean cultivar used to produce the reference genome
+      sequence, was derived from backcrossing a phytophthora root rot resistance locus
+      from the donor parent Kingwa into the recurrent parent Williams. This line,
+      IGA1008, was sequenced and annotated by Chu, et al. (2021).
+    identifier: Wm82_IGA1008
+    name: Williams 82
+    origin: Northeast Institute of Geography and Agroecology, CAS
   taxid: 3847
 - abbrev: glyso
   commonName: wild soybean
@@ -99,7 +145,7 @@ species:
   - URL: https://soybase.org/gcvit
     description: 'Genotype comparison visualization tool '
     name: GCViT
-  - URL: https://legumeinfo.org/gcv2/gene;lis=glyma.Glyma.15G255600?q=Glyma.15G255600&sources=lis&algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&bregexp=&border=chromosome&regexp=&order=distance
+  - URL: https://gcv.legumeinfo.org/gene;lis=glyma.Glyma.15G255600?q=Glyma.15G255600&sources=lis&algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&bregexp=&border=chromosome&regexp=&order=distance
     description: Browser for dynamically discovering and viewing genomic synteny across
       selected species.
     name: Genome Context Viewer
@@ -132,6 +178,12 @@ species:
     - URL: https://soybase.org/gb2/gbrowse/glyso.W05.gnm1
       description: GBrowse for glycine soja W05 genome assembly verson 1
       name: Soybase Genome Browser (GBrowse)
+  - accession: IGA1003
+    description: This Glycine soja wild soybean accession was sequenced and annotated
+      by Chu, et al. (2021).
+    identifier: F_IGA1003
+    name: GsojaF
+    origin: National Wild Soybean Preservation Center, ICS, CAAS
   taxid: 3848
 - abbrev: glycy
   description: G. cyrotoloba (Tind) is a perennial plant with twining and stiff stems.

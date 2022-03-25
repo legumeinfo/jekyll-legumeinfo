@@ -8,6 +8,10 @@ description: Lupinus, commonly known as lupin, lupine, or regionally bluebonnet 
   and New Zealand's South Island, introduced lupins are viewed as a severe environmental
   threat.
 genus: Lupinus
+resources:
+- URL: https://mines.legumeinfo.org/lupinmine/begin.do
+  description: InterMine for Lupinus species
+  name: LupinMine
 species:
 - albus
 - angustifolius

@@ -16,7 +16,7 @@ resources:
 - URL: https://soybase.org/gcvit
   description: Genotype comparison visualization tool
   name: GCViT
-- URL: https://legumeinfo.org/gcv2/gene;lis=glyma.Glyma.15G255600?q=Glyma.15G255600&sources=lis&algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&bregexp=&border=chromosome&regexp=&order=distance
+- URL: https://gcv.legumeinfo.org/gene;lis=glyma.Glyma.15G255600?q=Glyma.15G255600&sources=lis&algorithm=repeat&match=10&mismatch=-1&gap=-1&score=30&threshold=25&bmatched=20&bintermediate=10&bmask=10&linkage=average&cthreshold=20&neighbors=10&matched=4&intermediate=5&bregexp=&border=chromosome&regexp=&order=distance
   description: Browser for dynamically discovering and viewing genomic synteny across
     selected species.
   name: Genome Context Viewer

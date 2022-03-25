@@ -2,6 +2,8 @@
 species:
 - name: sativa
   annotations:
+    - collection: XinJiangDaYe.gnm1.ann1.RKB9
+      synopsis: "Gene annotations for pseudomolecule assemblies and scaffolds representing 4 haplotypes per chromosome for Medicago sativa XinJiangDaYe"
   diversity:
     - collection: mixed.tcp.div.Li_Acharya_2012
       synopsis: "genotype variants called with respect to a transcriptome assembly, from 27 alfalfa genotypes, from Li, Acharya et al., 2012"
@@ -10,6 +12,8 @@ species:
   genomes:
     - collection: CADL_HM342.gnm1.rVNY
       synopsis: "Genome assembly of Medicago sativa CADL (HM342)"
+    - collection: XinJiangDaYe.gnm1.12MR
+      synopsis: "Pseudomolecule assemblies and scaffolds representing 4 haplotypes per chromosome for Medicago sativa XinJiangDaYe"
   markers:
 - name: truncatula
   annotations:
@@ -48,6 +52,10 @@ species:
     - collection: R108_HM340.gnm1.ann1.85YW
       synopsis: "Genome annotation for Medicago truncatula R108 (HM340)"
   diversity:
+    - collection: A17.gnm5.div.Epstein_Burghardt_2022
+      synopsis: "Variant calling against Mt5.0 reference from Illumina-based whole genome resequencing across accessions from Medicago HapMap Collection."
+    - collection: A17_HM341.gnm4.div.Stanton-Geddes_Paape_2013
+      synopsis: "Variant calling from Illumina-based whole genome resequencing across accessions from Medicago HapMap Collection."
   expression:
     - collection: A17_HM341.gnm4.ann2.expr.RLZY
       synopsis: "Affymetrix GeneChip expression data from the Noble Medicago truncatula Gene Expression Atlas"

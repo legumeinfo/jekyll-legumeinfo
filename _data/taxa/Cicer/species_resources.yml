@@ -20,33 +20,33 @@ species:
     description: 'Chickpea variety CDC Frontier is a kabuli type chickpea (light-seeded),
       selected as a variety in Canada. The genome has been sequenced: Varshney et
       al., 2013 (DOI:10.1038/nbt.2491)'
-    identifier: CDC Frontier
+    identifier: CDCFrontier
     name: CDC Frontier
     origin: Canada
     resources:
-    - URL: https://legumeinfo.org/genomes/gbrowse/cicar.CDCFrontier.v1.0
+    - URL: https://legacy.legumeinfo.org/genomes/gbrowse/cicar.CDCFrontier.v1.0
       description: GBrowse for CDC Frontier assembly v1.0
       name: LIS Genome Browser (GBrowse)
-    - URL: https://legumeinfo.org/genomes/jbrowse/?data=cicar.CDCFrontier.v1.0
+    - URL: https://legacy.legumeinfo.org/genomes/jbrowse/?data=cicar.CDCFrontier.v1.0
       description: JBrowse for CDC Frontier assembly v1.0
       name: LIS Genome Browser (JBrowse)
-    - URL: https://legumeinfo.org/sequenceserver/
+    - URL: https://sequenceserver.legumeinfo.org/
       description: SequenceServer BLAST against the CDC Frontier v1.0 assembly
       name: LIS SequenceServer
   - accession: ICC 4958
     description: 'Chickpea variety ICC 4958 is a desi type chickpea (dark-seeded).
       The genome has been sequenced: Parween, S et al., 2015 (DOI:10.1038/srep12806)'
-    identifier: ICC 4958
+    identifier: ICC4958
     name: ICC 4958
     origin: India
     resources:
-    - URL: https://legumeinfo.org/genomes/gbrowse/cicar.ICC4958.v2.0
+    - URL: https://legacy.legumeinfo.org/genomes/gbrowse/cicar.ICC4958.v2.0
       description: GBrowse for ICC 4958 assembly v2.0
       name: LIS Genome Browser (GBrowse)
-    - URL: https://legumeinfo.org/genomes/jbrowse/?data=cicar.ICC4958.v2.0
+    - URL: https://legacy.legumeinfo.org/genomes/jbrowse/?data=cicar.ICC4958.v2.0
       description: JBrowse for assembly ICC 4958 v2.0
       name: LIS Genome Browser (JBrowse)
-    - URL: https://legumeinfo.org/sequenceserver/
+    - URL: https://sequenceserver.legumeinfo.org/
       description: SequenceServer BLAST against the ICC 4958 assembly v2.0
       name: LIS SequenceServer
   taxid: 3827

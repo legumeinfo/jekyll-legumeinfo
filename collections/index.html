@@ -17,13 +17,12 @@ tools_menu: true
   Each collection contains a README file which describes that collection.
 </p>
 
-<dl>
+<ul>
   {% for genus in genera %}
   {% for item in genus.items %}
   {% if item.category == "main" %}
-  <dt><a href="/collections{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a></dt>
-  <dd>{{ item.description }}</dd>
+  <li><a href="/collections{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
   {% endif %}
   {% endfor %}
   {% endfor %}
-</dl>
+</ul>
