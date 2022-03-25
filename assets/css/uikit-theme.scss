@@ -298,6 +298,14 @@ $navbar-nav-item-line-transition-duration: 0.3s;
 //.tm-navbar-container .uk-navbar-nav > li > a:hover::before { right: $navbar-nav-item-line-margin-horizontal; }
 .tm-navbar-container .uk-navbar-nav > li > a:not(.tm-no-underline):hover::before { right: $navbar-nav-item-line-margin-horizontal; }
 
+.tm-lower-navbar .uk-navbar-nav > li > a, .tm-lower-navbar .uk-navbar-item, .tm-lower-navbar .uk-navbar-toggle {
+    min-height: 40px;
+    height: 40px;
+}
+.tm-lower-navbar .uk-navbar-nav > li > a::before {
+    bottom: 10px;
+}
+
 /*
  * Nav
  */

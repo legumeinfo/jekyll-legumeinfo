@@ -1,28 +1,20 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+---
+layout: base
+---
 
-{% include head.html %}
-
-<body>
-
-{% include navbar.html %}
-
-{% if page.tools_menu %}
-  {% include tools-menu.html %}
+{% if page.tools_menu or page.taxa_menu or page.collections_menu %}
+  {% include left-menu.html %}
 {% endif %}
-
-{% if page.taxa_menu %}
-  {% include taxa-menu.html %}
-{% endif %}
-
-{% if page.collections_menu %}
-  {% include collections-menu.html %}
-{% endif %}
-
-<div class="tm-main uk-section uk-section-default">
-  <div class="uk-container uk-container-small uk-position-relative">
+<!-- NOTE: putting content between the left menu and tm-main blocks will break CSS selectors -->
+<div class="tm-main uk-section uk-section-default uk-flex">
+  <div class="uk-container">
     {{ content }}
   </div>
+
+  {% if page.news_card or page.announcements_card or page.blog_card %}
+    {% include card-column.html page=page %}
+  {% endif %}
+
 </div>
 
 </body>

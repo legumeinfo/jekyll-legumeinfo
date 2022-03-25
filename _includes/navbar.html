@@ -1,7 +1,7 @@
 {% assign default_paths = site.pages | map: "path" %}
 {% assign page_paths = site.header_pages | default: default_paths %}
 
-<div class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed" uk-sticky>
+<div id="navbar" class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed{% if site.style.invert_navbar_text %} uk-light{% endif %}" uk-sticky>
   <div class="uk-container uk-container-expand">
     <nav class="uk-navbar">
       <div class="uk-navbar-left uk-text-truncate">
