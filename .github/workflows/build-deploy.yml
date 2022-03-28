@@ -1,9 +1,11 @@
-name: Build and deploy jekyll-stage.legumeinfo.org
+name: Build and deploy jekyll-stage.legumeinfo.org or www.legumeinfo.org
 
 on:
   push:
     branches:
-      - main
+      - 'main'
+    tags:
+      - '**'
 
 jobs:
   github-pages:
@@ -32,11 +34,23 @@ jobs:
           # --disable-external included for efficiency, eventually remove?
           arguments: "--disable-external --assume-extension"
 
-      - name: Deploy
+      - name: Deploy (stage)
         uses: peaceiris/actions-gh-pages@v3
         # Always deploy for now, despite htmlproofer errors (eventually remove)
-        if: always()
+        if: github.ref_type == 'branch' && always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           publish_branch: 'jekyll-stage.legumeinfo.org'
+          cname: jekyll-stage.legumeinfo.org
+
+      - name: Deploy (prod)
+        uses: peaceiris/actions-gh-pages@v3
+        # Always deploy for now, despite htmlproofer errors (eventually remove)
+        if: github.ref_type == 'tag' && always()
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./_site
+          external_repository: legumeinfo/legumeinfo.org
+          publish_branch: www.legumeinfo.org
+          cname: www.legumeinfo.org
