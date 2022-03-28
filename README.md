@@ -1,5 +1,11 @@
 # legumeinfo.org
-This repository holds the [Jekyll](https://jekyllrb.com/) site hosted at legumeinfo.org.
+This repository holds the [Jekyll](https://jekyllrb.com/) site hosted at www.legumeinfo.org.
+
+Commits to the `main` branch will trigger a GitHub Action workflow that build the static site & deploy to the jekyll-stage.legumeinfo.org branch.
+This branch is hosted via GitHub Pages at https://jekyll-stage.legumeinfo.org.
+
+When a tag is pushed, a GitHub Action workflow will build the static site & deploy to the [legumeinfo/legumeinfo.org](https://github.com/legumeinfo/legumeinfo.org) repository (www.legumeinfo.org branch).
+This branch is hosted via GitHub Pages at https://www.legumeinfo.org (requests for https://legumeinfo.org will redirect to https://www.legumeinfo.org).
 
 ## Running the Site
 The following methods will run the site on your computer at http://localhost:4000.
