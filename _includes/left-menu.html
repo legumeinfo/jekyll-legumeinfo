@@ -21,10 +21,10 @@
       for (let entry of entries) {
         // use the newer contentBoxSize property if the browser supports it
         if (entry.contentBoxSize) {
-          left.style.top = entry.contentBoxSize[0].blockSize + 'px';
+          left.style.top = entry.contentBoxSize[0].blockSize + "px";
         // fallback to the older contentRect property
         } else {
-          left.style.top = entry.contentRect.height + 'px';
+          left.style.top = entry.contentRect.height + "px";
         }
       }
     });
