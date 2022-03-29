@@ -1,6 +1,12 @@
 # legumeinfo.org
 This repository holds the [Jekyll](https://jekyllrb.com/) site hosted at legumeinfo.org.
 
+The site is styled using a custom [UIkit](https://getuikit.com/) theme, which requires UIkit's SCSS files.
+As such, UIkit is a submodule of this repository and must be cloned with the repository:
+```console
+git clone --recurse-submodules https://github.com/legumeinfo/jekyll-legumeinfo.git
+```
+
 ## Running the Site
 The following methods will run the site on your computer at http://localhost:4000.
 Changes made will be immediately reflected in the browser due to [LiveReload](http://livereload.com/).
