@@ -4,7 +4,10 @@
 <div id="navbar" class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed{% if site.style.invert_navbar_text %} uk-light{% endif %}" uk-sticky>
 
   <div id="alerts">
-    {% include alerts.html %}
+    {% capture alerts %}
+      {% include alerts.html %}
+    {% endcapture %}
+    {{ alerts }}
   </div>
 
   <script type="text/javascript">
@@ -68,9 +71,12 @@
         {% endif %}
 
         </ul>
+        {% assign stripped_alerts = alerts | strip %}
+        {% if stripped_alerts != "" %}
         <ul class="uk-navbar-nav">
           <li><a class="tm-no-underline" title="Toggle alerts" uk-toggle="target: #alerts; animation: uk-animation-fade"><span uk-icon="bell"></span></a></li>
         </ul>
+        {% endif %}
       </div>
     </nav>
     <nav class="uk-navbar tm-lower-navbar">
