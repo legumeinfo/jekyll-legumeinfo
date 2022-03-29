@@ -7,6 +7,12 @@ This branch is hosted via GitHub Pages at https://jekyll-stage.legumeinfo.org.
 When a tag is pushed, a GitHub Action workflow will build the static site & deploy to the [legumeinfo/legumeinfo.org](https://github.com/legumeinfo/legumeinfo.org) repository (www.legumeinfo.org branch).
 This branch is hosted via GitHub Pages at https://www.legumeinfo.org (requests for https://legumeinfo.org will redirect to https://www.legumeinfo.org).
 
+The site is styled using a custom [UIkit](https://getuikit.com/) theme, which requires UIkit's SCSS files.
+As such, UIkit is a submodule of this repository and must be cloned with the repository:
+```console
+git clone --recurse-submodules https://github.com/legumeinfo/jekyll-legumeinfo.git
+```
+
 ## Running the Site
 The following methods will run the site on your computer at http://localhost:4000.
 Changes made will be immediately reflected in the browser due to [LiveReload](http://livereload.com/).

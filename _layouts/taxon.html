@@ -1,6 +1,6 @@
 ---
 layout: default
-tools_menu: true
+taxa_menu: true
 ---
 {% assign genus = page.title %}
 {% assign genus_resources = site.data.taxa[genus].genus_resources %}
@@ -10,9 +10,6 @@ tools_menu: true
 <p class="temp"><i>{{ page.title }}</i> has no resource data in the Datastore.</p>
 
 {% else %}
-
-<h1><i>{{ genus_resources.name }}</i></h1>
-<p>{{ genus_resources.display_name }}</p>
 
 {% if genus_resources.commonName==nil %}
 <h1><i>{{ genus_resources.genus }}</i></h2>
