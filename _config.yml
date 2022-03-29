@@ -61,6 +61,18 @@ page_gen:
     index_files: true
     debug: true
 
+# SASS compilation
+sass:
+    sass_dir: _sass
+    style: compressed
+
+# UIkit theme customization (sets LIS colors)
+style:
+    link_color: '#0071B3'
+    link_hover_color: '#018fe2'
+    primary_background: '#87a96b'
+    invert_navbar_text: true
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

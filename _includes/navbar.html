@@ -1,7 +1,44 @@
 {% assign default_paths = site.pages | map: "path" %}
 {% assign page_paths = site.header_pages | default: default_paths %}
 
-<div class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed" uk-sticky>
+<div id="navbar" class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed{% if site.style.invert_navbar_text %} uk-light{% endif %}" uk-sticky>
+
+  <div id="alerts">
+    {% capture alerts %}
+      {% include alerts.html %}
+    {% endcapture %}
+    {{ alerts }}
+  </div>
+
+  <script type="text/javascript">
+
+    // define the cookie key
+    const alertsKey = "lis-navbar-alerts";
+
+    // get the alerts element
+    const alerts = document.getElementById("alerts");
+
+    // define a callback that saves the toggle state
+    function toggleCallback(event) {
+      document.cookie = `${alertsKey}=${event.type};SameSite=Lax;path=/`;
+    }
+
+    // use the callback every time the element is toggled
+    alerts.addEventListener("show", toggleCallback);
+    alerts.addEventListener("hide", toggleCallback);
+
+    // load the element's state
+    const alertsCookie = document.cookie
+      .split('; ')
+      .find(row => row.startsWith(`${alertsKey}=`));
+
+    // hide the alerts if they're supposed to be hidden
+    if (alertsCookie && alertsCookie.split('=')[1].toLowerCase() === "hide") {
+      UIkit.toggle(alerts).toggle();
+    }
+
+  </script>
+
   <div class="uk-container uk-container-expand">
     <nav class="uk-navbar">
       <div class="uk-navbar-left uk-text-truncate">
@@ -34,6 +71,12 @@
         {% endif %}
 
         </ul>
+        {% assign stripped_alerts = alerts | strip %}
+        {% if stripped_alerts != "" %}
+        <ul class="uk-navbar-nav">
+          <li><a class="tm-no-underline" title="Toggle alerts" uk-toggle="target: #alerts; animation: uk-animation-fade"><span uk-icon="bell"></span></a></li>
+        </ul>
+        {% endif %}
       </div>
     </nav>
     <nav class="uk-navbar tm-lower-navbar">

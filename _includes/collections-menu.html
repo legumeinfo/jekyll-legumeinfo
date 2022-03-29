@@ -1,13 +1,11 @@
-<div class="tm-sidebar-left uk-visible@m">
-  <h3>Data Collections</h3>
-  {% assign genera = site.data.taxon_list | group_by: "genus"  %}
-  <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-    {% for genus in genera %}
-    {% for item in genus.items %}
-    {% if item.category == "main" %}
-    <li><a href="/collections{{ item.genus | downcase | relative_url }}">{{ item.genus }}</a></li>
-    {% endif %}
-    {% endfor %}
-    {% endfor %}
-  </ul>
-</div>
+<h3>Data Collections</h3>
+{% assign genera = site.data.taxon_list | group_by: "genus"  %}
+<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+  {% for genus in genera %}
+  {% for item in genus.items %}
+  {% if item.category == "main" %}
+  <li><a href="/collections{{ item.genus | downcase | relative_url }}">{{ item.genus }}</a></li>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+</ul>
