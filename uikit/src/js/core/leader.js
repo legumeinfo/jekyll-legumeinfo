@@ -1,0 +1,52 @@
+import Class from '../mixin/class';
+import Media from '../mixin/media';
+import { attr, getCssVar, toggleClass, unwrap, wrapInner } from 'uikit-util';
+import Resize from '../mixin/resize';
+
+export default {
+    mixins: [Class, Media, Resize],
+
+    props: {
+        fill: String,
+    },
+
+    data: {
+        fill: '',
+        clsWrapper: 'uk-leader-fill',
+        clsHide: 'uk-leader-hide',
+        attrFill: 'data-fill',
+    },
+
+    computed: {
+        fill({ fill }) {
+            return fill || getCssVar('leader-fill-content');
+        },
+    },
+
+    connected() {
+        [this.wrapper] = wrapInner(this.$el, `<span class="${this.clsWrapper}">`);
+    },
+
+    disconnected() {
+        unwrap(this.wrapper.childNodes);
+    },
+
+    update: {
+        read() {
+            const width = Math.trunc(this.$el.offsetWidth / 2);
+
+            return {
+                width,
+                fill: this.fill,
+                hide: !this.matchMedia,
+            };
+        },
+
+        write({ width, fill, hide }) {
+            toggleClass(this.wrapper, this.clsHide, hide);
+            attr(this.wrapper, this.attrFill, new Array(width).join(fill));
+        },
+
+        events: ['resize'],
+    },
+};
