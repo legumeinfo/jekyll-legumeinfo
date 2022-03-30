@@ -15,4 +15,14 @@ species:
     identifier: Cameor
     name: Cameor
     origin: France
+    resources:
+    - URL: https://legacy.legumeinfo.org/genomes/gbrowse/pissa.Cameor.gnm1
+      description: GBrowse for Cameor assembly v1.0
+      name: LIS Genome Browser (GBrowse)
+    - URL: https://legacy.legumeinfo.org/genomes/jbrowse/?data=pissa.Cameor.gnm1
+      description: JBrowse for Cameor assembly v1.0
+      name: LIS Genome Browser (JBrowse)
+    - URL: https://sequenceserver.legumeinfo.org/
+      description: SequenceServer BLAST against Cameor assembly v1.0
+      name: LIS SequenceServer
   taxid: 3888

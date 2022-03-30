@@ -2,35 +2,14 @@
 layout: default
 taxa_menu: true
 ---
-
 {% assign genus = page.title %}
-
-{% if genus == 'Taxa' %}
-
-<h1>Taxa</h1>
-
-<p class="temp">Some static introductory text for the default Taxa page goes here.</p>
-
-{% assign genera = site.data.taxon_list | group_by: "genus"  %}
-<dl>
-  {% for genus in genera %}
-  {% for item in genus.items %}
-  {% if item.category == "main" %}
-  <dt><a href="/taxa{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a></dt>
-  <dd>{{ item.description }}</dd>
-  {% endif %}
-  {% endfor %}
-  {% endfor %}
-  <dd>Special-focus species and collections</a></dd>
-</dl>
-
-{% else %}
-
 {% assign genus_resources = site.data.taxa[genus].genus_resources %}
 {% assign species_resources = site.data.taxa[genus].species_resources %}
+{% if genus_resources.taxid == nil %}
 
-<h1><i>{{ genus_resources.name }}</i></h1>
-<p>{{ genus_resources.display_name }}</p>
+<p class="temp"><i>{{ page.title }}</i> has no resource data in the Datastore.</p>
+
+{% else %}
 
 {% if genus_resources.commonName==nil %}
 <h1><i>{{ genus_resources.genus }}</i></h2>
@@ -106,4 +85,5 @@ taxa_menu: true
 {% endfor %}
 
 {% endfor %}
+
 {% endif %}

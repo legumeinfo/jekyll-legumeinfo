@@ -1,0 +1,170 @@
+---
+-
+  category: "Some plant genome and gene family tools"
+  description: "Plant genomes and gene families "
+  name: "Phytozome"
+  url: "https://phytozome-next.jgi.doe.gov"
+  link_type: "external"
+-
+  category: "Some plant genome and gene family tools"
+  description: "A resource for plant comparative genomics"
+  name: "Plaza"
+  url: "https://bioinformatics.psb.ugent.be/plaza"
+  link_type: "external"
+-
+  category: "Some plant genome and gene family tools"
+  description: "Arabidopsis genomic resources, including tools such as ThaleMine, JBrowse etc."
+  name: "The Arabidopsis Information Portal (AraPort)"
+  url: "https://www.araport.org"
+  link_type: "external"
+-
+  category: "Some plant genome and gene family tools"
+  description: "Curated information about <i>Arabidopsis</i> gene function"
+  name: "The Arabidopsis Information Resource (TAIR)"
+  url: "https://www.arabidopsis.org"
+  link_type: "external"
+-
+  category: "Some plant genome and gene family tools"
+  description: "Comprehensive resource for plant chromosome numbers."
+  name: "Chromosome Counts Database"
+  url: "http://ccdb.tau.ac.il/"
+  link_type: "external"
+-
+  category: "Some plant genome and gene family tools"
+  description: "A database of phylogenetic trees and alignments for plants and other taxa"
+  name: "PhylomeDB"
+  url: "http://www.phylomedb.org"
+  link_type: "external"
+-
+  category: "Legume resources"
+  description: "Site for exchange of legume research, and host of the society's journals <a href=\"https://www.legumesociety.org/2019/12/02/legume-perspectives/\" target=\"_blank\">Legume Perspectives</a> and <a href=\"https://www.legumesociety.org/2019/12/02/grain-legumes/\" target=\"_blank\">Grain Legumes</i>"
+  name: "International Legume Society"
+  url: "https://www.legumesociety.org/"
+  link_type: "external"
+-
+  category: "Legume resources"
+  description: "Voluntary and informal organization to effect the exchange of information and materials for the improvement of bean production worldwide."
+  name: "Bean Improvement Cooperative"
+  url: "http://bic.css.msu.edu"
+  link_type: "external"
+-
+  category: "Legume resources"
+  description: "Publications and newsletters from this center at the UWA"
+  name: "Center for Legumes in Mediterranean Agriculture"
+  url: "https://www.clima.uwa.edu.au"
+  link_type: "external"
+-
+  category: "Legume resources"
+  description: "Database for pea, lentil, and chickpea"
+  name: "Cool Season Food Legume Database"
+  url: "https://www.pulsedb.org/main"
+  link_type: "external"
+-
+  category: "Legume resources"
+  description: "Descriptive information about the family"
+  name: "Wikipedia: Legume"
+  url: "https://en.wikipedia.org/wiki/Legume"
+  link_type: "external"
+-
+  category: "Legume resources"
+  description: "A bioinformatics gateway towards integrative legume biology"
+  name: "Legoo.org"
+  url: "https://lipm-browsers.toulouse.inra.fr/k/legoo"
+  link_type: "external"
+-
+  category: "Legume resources"
+  description: "Pulse crop breeding and genetics, from University of Saskatchewan"
+  name: "KnowPulse"
+  url: "https://knowpulse.usask.ca"
+  link_type: "external"
+-
+  category: "Legume resources"
+  description: "International collaborative project to sequence the genome of narrow-leafed lupin"
+  name: "Lupin Genome Portal"
+  url: "https://lupinexpress.org"
+  link_type: "external"
+-
+  category: "Legume resources"
+  description: "Database of legumes and their nodulation status"
+  name: "Interactive Legume Database of Nodulation"
+  url: "http://www.ildon.org"
+  link_type: "external"
+-
+  category: "Legume resources"
+  description: "Website for legume taxonomy"
+  name: "ILDIS World Database of Legumes"
+  url: "http://www.legumes-online.net/ildis/aweb/database.htm"
+  link_type: "external"
+-
+  category: "Legume resources"
+  description: "Database of tropical forages, with extensive list of legume forage crops and information"
+  name: "Tropical Forages"
+  url: "https://www.tropicalforages.info"
+  link_type: "external"
+-
+  category: "Legume resources"
+  description: "Medicago truncatula resources at INRAE/CNRS"
+  name: "Medicago @ INRAE/CNRS"
+  url: "https://medicago.toulouse.inra.fr"
+  link_type: "external"
+-
+  category: "Legume resources"
+  description: "Reverse genetics (TILLING) resources for Medicago and Lotus; from the John Innes Centre"
+  name: "RevGenUK"
+  url: "https://www.jic.ac.uk/research-impact/technology-research-platforms/reverse-genetics"
+  link_type: "external"
+-
+  category: "Legume resources"
+  description: "Pea Multi-Stress adaptation and biological regulations for yield improvement and stability"
+  name: "PeaMUST"
+  url: "https://www.peamust-project.fr/peamust_eng"
+  link_type: "external"
+-
+  category: "Legume resources"
+  description: "Soybean genetic and genomic data: genome browser, maps, trait and QTL data, pathways, ..."
+  name: "SoyBase"
+  url: "https://soybase.org"
+  link_type: "external"
+-
+  category: "Legume resources"
+  description: "database of plant metabolic and regulatory pathways"
+  name: "Gramene Plant Reactome"
+  url: "https://plantreactome.gramene.org"
+  link_type: "external"
+-
+  category: "Recipes and nutrition"
+  description: "Extensive collection of recipes. Also resources from the U.S. Dry Bean Council and the USA Dry Pea &amp; Lentil Council."
+  name: "Legume Chef"
+  url: "https://legumechef.com"
+  link_type: "external"
+-
+  category: "Recipes and nutrition"
+  description: "Recipes, varieties, industry resources, nutrition"
+  name: "U.S. Dry Bean Council"
+  url: "https://www.usdrybeans.com"
+  link_type: "external"
+-
+  category: "Information for growers"
+  description: "Information for consumers and producers, on pulses grown in Canada (chickpeas, lentils, peas, beans) "
+  name: "Saskatchewan Pulse Growers"
+  url: "https://saskpulse.com"
+  link_type: "external"
+-
+  category: "Germplasm for Research"
+  description: "National Plant Germplasm System / Germplasm Resources Information Network"
+  name: "NPGS/GRIN"
+  url: "https://npgsweb.ars-grin.gov/gringlobal/search"
+  link_type: "external"
+-
+  category: "About the Legume Information System (LIS)"
+  description: "<p>The mission of LIS is to enable productive applied and basic research in the legumes by relating data from multiple crop and model species, and by helping researchers traverse among various data types.</p><p><strong>The <a href=\"https://legumeinfo.org\">prior version</a> of this site is in the process of transitioning to version of the site you see here. Please <a href=\"/contact\">contact us</a> if you have questions or suggestions about the functionality at either site.</strong></p><p>The Legume Information System, a component of the Model Plant Initiative (MPI), is developed by the National Center for Genome Resources in cooperation with the USDA Agricultural Research Service under a Specific Cooperative Agreement.</p>"
+  name: ~
+  url: ~
+  link_type: ~
+-
+  category: "The LIS team"
+  description: "<strong>NCGR team:</strong> Andrew Farmer, Sam Hokin, Sven Redsun, Alan Cleary, Connor Cameron, Sudhansu Dash</br><strong>NCGR alums:</strong> Hrishikesh Lokhande, Pooja Umale, Alex Rice, John Crow, Ken Seal, Arvind Bharti, Selene Virk, Michael Gonzales, Kamal Gajendran, Eric Archuleta, Mark Waugh, Illiana Toneva</br><strong>USDA LIS team:</strong> Steven Cannon, Nathan Weeks, Wei Huang, Scott Kalberer, Rex Nelson, Jacqueline Campbell<br><strong>USDA LIS alums:</strong> David Grant, Andrew Wilkey, Prateek Gupta, Shivan Gunda, Deepak Bitragunta, Vijay Karingula, Benjamin Mulaosmanovic, Randy Shoemaker"
+  name: ~
+  url: ~
+  link_type: ~
+

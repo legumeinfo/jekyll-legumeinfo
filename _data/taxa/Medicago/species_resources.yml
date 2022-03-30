@@ -11,19 +11,25 @@ species:
   genus: Medicago
   species: sativa
   strains:
+  - accession: HM342
+    description: CADL (HM342) was developed from cultivated tetraploids over 10 years
+      to produce a diploid form.
+    identifier: CADL_HM342
+    name: CADL (Cultivated Alfalfa at the Diploid Level)
+    origin: Noble Foundation
   - accession: XinJiangDaYe
     description: Xinjiang Daye is a salt-sensitive cultivar of alfalfa.
     identifier: XinJiangDaYe
     name: XinJiangDaYe
     origin: China
     resources:
-    - URL: https://legumeinfo.org/gb2/gbrowse/medsa.XinJiangDaYe.gnm1
+    - URL: https://legacy.legumeinfo.org/gb2/gbrowse/medsa.XinJiangDaYe.gnm1
       description: GBrowse for XinJiangDaYe assembly v1.0
       name: LIS Genome Browser (GBrowse)
-    - URL: https://legumeinfo.org/genomes/jbrowse/?data=medsa.XinJiangDaYe.gnm1
+    - URL: https://legacy.legumeinfo.org/genomes/jbrowse/?data=medsa.XinJiangDaYe.gnm1
       description: JBrowse for XinJiangDaYe assembly v1.0
       name: LIS Genome Browser (JBrowse)
-    - URL: https://legumeinfo.org/sequenceserver/
+    - URL: https://sequenceserver.legumeinfo.org/
       description: SequenceServer BLAST against the XinJiangDaYe assembly v1.0
       name: LIS SequenceServer
   taxid: 3879
@@ -36,29 +42,56 @@ species:
     and Pecrix et al., 2018 (DOI:10.1038/s41477-018-0286-7).
   genus: Medicago
   resources:
-  - URL: https://legumeinfo.org/genomes/gbrowse/Mt4.0
+  - URL: https://legacy.legumeinfo.org/genomes/gbrowse/Mt4.0
     description: GBrowse for Medicago truncatula assembly v4.0
     name: LIS Genome Browser (GBrowse)
-  - URL: https://legumeinfo.org/genomes/jbrowse/Mt4.0
+  - URL: https://legacy.legumeinfo.org/genomes/jbrowse/Mt4.0
     description: JBrowse for Medicago truncatula assembly v4.0
     name: LIS Genome Browser (JBrowse)
-  - URL: https://legumeinfo.org/sequenceserver/
+  - URL: https://sequenceserver.legumeinfo.org/
     description: SequenceServer BLAST against the Medicago truncatula assembly v4.0
     name: LIS SequenceServer
   species: truncatula
   strains:
-  - accession: A17_HM341
-    description: 'Medicago truncatula accession A17_HM341 has been used for a large
-      number of genetic and genomic studies. The genome for this accession has been
-      used as the basis for several high-quality genome assemblies: including Tang
-      et al., 2014 (DOI:10.1186/1471-2164-15-312) and Pecrix et al., 2018 (DOI:10.1038/s41477-018-0286-7).'
+  - description: 'Medicago truncatula accession A17 has been used for a large number
+      of genetic and genomic studies. The genome for this accession has been used
+      as the basis for several high-quality genome assemblies: including Tang et al.,
+      2014 (DOI:10.1186/1471-2164-15-312) and Pecrix et al., 2018 (DOI:10.1038/s41477-018-0286-7).'
+    identifier: A17
+    name: A17
+  - accession: HM341
+    description: 'Medicago truncatula accession A17 has been used for a large number
+      of genetic and genomic studies. The genome for this accession has been used
+      as the basis for several high-quality genome assemblies: including Tang et al.,
+      2014 (DOI:10.1186/1471-2164-15-312) and Pecrix et al., 2018 (DOI:10.1038/s41477-018-0286-7).'
     identifier: A17_HM341
-    name: A17_HM341
-  - accession: R108_HM340
-    description: 'Medicago truncatula strain R108 has been used in various genetic
+    name: A17 (HM341)
+  - accession: HM340
+    description: 'Medicago truncatula accession R108 has been used in various genetic
       and genomic studies, e.g. Gaige et al., 2011 (DOI:10.1080/07060661.2012.662176),
       Li et al., 2014 (DOI:10.1016/j.jplph.2013.12.018), and Cosson et al., 2006 (DOI:10.1385/1-59745-130-4:115).
       A genome assembly is available: https://www.ncbi.nlm.nih.gov/assembly/GCA_002024945.1/.'
     identifier: R108_HM340
-    name: R108_HM340
+    name: R108 (HM340)
+  - identifier: HM002
+  - identifier: HM004
+  - identifier: HM005
+  - identifier: HM006
+  - identifier: HM010
+  - identifier: HM017
+  - identifier: HM018
+  - identifier: HM020
+  - identifier: HM022
+  - identifier: HM023
+  - identifier: HM026
+  - identifier: HM034
+  - identifier: HM050
+  - identifier: HM056
+  - identifier: HM058
+  - identifier: HM060
+  - identifier: HM095
+  - identifier: HM125
+  - identifier: HM129
+  - identifier: HM185
+  - identifier: HM324
   taxid: 3880

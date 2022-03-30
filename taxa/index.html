@@ -1,5 +1,30 @@
 ---
-layout: taxon
+layout: default
 title: Taxa
-tools_menu: true
+taxa_menu: true
 ---
+{% assign genera = site.data.taxon_list | group_by: "genus"  %}
+
+<h1>Resources by Taxon</h1>
+
+<h3>Major genera (containing significant crops)</h3>
+<ul>
+  {% for genus in genera %}
+  {% for item in genus.items %}
+  {% if item.category == "main" %}
+  <li><a href="/taxa{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+</ul>
+
+<h3>Special-focus genera</h3>
+<ul>
+  {% for genus in genera %}
+  {% for item in genus.items %}
+  {% if item.category == "special" %}
+  <li><a href="/taxa{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+</ul>

@@ -1,4 +1,4 @@
-<div class="uk-card uk-card-default uk-margin-top">
+<div class="uk-card uk-card-small uk-card-default uk-margin-top">
   <div class="uk-card-header">
     <div class="uk-grid-small uk-flex-middle" uk-grid>
       <div class="uk-width-expand">
@@ -8,12 +8,12 @@
   </div>
   <div class="uk-card-body">
     <ul class="uk-list uk-list-disc">
-      {% for post in site.categories.announcements %}
+      {% for post in site.categories.announcements limit:3 %}
       <li><b>{{ post.date | date_to_string }}:</b> <a href="{{ post.url }}">{{ post.title }}</a>, San Diego, CA, USA </li>
       {% endfor %}
     </ul>
   </div>
   <div class="uk-card-footer">
-    <a href="{{ "/announcements" | relative_url }}" class="uk-button uk-button-text">Past Meetings</a>
+    <a href="{{ "/announcements" | relative_url }}" class="uk-button uk-button-text">More Announcements</a>
   </div>
 </div>
