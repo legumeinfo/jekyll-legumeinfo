@@ -32,6 +32,16 @@ species:
     - URL: https://sequenceserver.legumeinfo.org/
       description: SequenceServer BLAST against the XinJiangDaYe assembly v1.0
       name: LIS SequenceServer
+  - accession: RegenSY27x
+    description: This plant was selected for high regeneration in tissue culture.
+      It was bred by crossing two plants, first generation selfed (S1) parents from
+      Regen-S (Medicago sativa) and Regen-Y (Medicago falcata) (Bingham, ET. 1991.
+      Registration of alfalfa hybrid Regen-SY germplasm for tissue culture and transformation
+      research. Crop Science 31:1098.) It has purple flowers but clusters more closely
+      with M. falcata than with M. sativa.
+    identifier: RegenSY27x
+    name: RegenSY27x
+    origin: Samac Lab, USDA
   taxid: 3879
 - abbrev: medtr
   commonName: barrel medic

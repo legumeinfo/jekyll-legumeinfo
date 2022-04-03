@@ -1,0 +1,144 @@
+---
+species:
+- abbrev: vigan
+  commonName: adzuki bean
+  description: Adzuki bean (Vigna angularis) is a diploid legume crop (2n = 2x = 22).
+    Adzuki beans are commonly sweetened before eating by boiling the beans with sugar,
+    resulting in red bean paste. The adzuki bean is a good dietary source for a variety
+    of minerals including; magnesium, potassium and zinc. Genome assemblies have been
+    generated for several accessions.
+  genus: Vigna
+  resources:
+  - URL: https://legacy.legumeinfo.org/genomes/gbrowse/Va3.0
+    description: GBrowse for Vigna angularis assembly v3.0
+    name: LIS Genome Browser (GBrowse)
+  - URL: https://legacy.legumeinfo.org/genomes/jbrowse/?data=Va3.0
+    description: JBrowse for Vigna angularis assembly v3.0
+    name: LIS Genome Browser (JBrowse)
+  - URL: https://sequenceserver.legumeinfo.org/
+    description: SequenceServer BLAST against the Vigna angularis assembly v3.0
+    name: LIS SequenceServer
+  species: angularis
+  strains:
+  - accession: IT213134
+    description: Adzuki bean cultivar Gyeongwon was developed in South Korea for agronomic
+      and seed-quality characteristics. This line was used to generate a genome assembly
+      described in Kang et al., 2015 (10.1038/srep08069)
+    identifier: Gyeongwon
+    name: Gyeongwon
+    origin: South Korea
+  - accession: Shumari
+    description: Adzuki bean cultivar Shumari was used to generate a genome assembly
+      described in Sakai et al., 2015 (10.1038/srep16780).
+    identifier: Shumari
+    name: Shumari
+    origin: Japan
+  taxid: 3914
+- abbrev: vigra
+  commonName: mungbean
+  description: Mungbean (Vigna radiata), also known as moong bean, green gram, is
+    a fast-growing warm-season legume and has a diploid chromosome number of 2n=22.
+    Mungbean is mainly cultivated today in China, India and Southeast Asia but can
+    be found in dry regions within Southern Europe and United States. Mungbeans are
+    a good source of dietary protein, folate and iron. This legume species was moved
+    from the genus Phaseolus to Vigna and is correctly cites as Vigna radiata.
+  genus: Vigna
+  resources:
+  - URL: https://legacy.legumeinfo.org/genomes/gbrowse/Vr1.0
+    description: GBrowse for Vigna radiata assembly v1.0
+    name: LIS Genome Browser (GBrowse)
+  - URL: https://legacy.legumeinfo.org/genomes/jbrowse/?data=Vr1.0
+    description: JBrowse for Vigna radiata assembly v1.0
+    name: LIS Genome Browser (JBrowse)
+  - URL: https://sequenceserver.legumeinfo.org/
+    description: SequenceServer BLAST against the Vigna radiata assembly v1.0
+    name: LIS SequenceServer
+  species: radiata
+  strains:
+  - accession: GCF_000741045.1
+    description: Vigna radiata accession VC1973A was chosen for genome sequencing.
+      VC1973A was developed at the AVRDC-The World Vegetable Center in 1982; since
+      then, it has been widely grown in Korea, Thailand, Taiwan, Canada and China
+      as a heteronymous cultivar called 'Seonhwanogdu' in Korea, 'Kamphaeng Saen 1'
+      in Thailand and 'Zhong Lu' in China. Accession description is from Kang et al.,
+      2014 (DOI:10.1038/ncomms6443).
+    identifier: VC1973A
+    name: VC1973A
+    origin: South Korea
+  taxid: 157791
+- abbrev: vigun
+  commonName: cowpea
+  description: Cowpea (Vigna unguiculata) is used in many parts of the world for its
+    high-protein seeds, but also for its nutrient-rich edible leaves, forage, and
+    soil enrichment. Cowpea is generally more heat-tolerant than common bean. Cowpeas
+    are one of the most important food legume crops in the semi-arid tropics that
+    cover Asia, Africa, southern Europe and Central and South America. A drought-tolerant
+    and warm-weather crop, cowpeas are well-adapted to the drier regions of the tropics,
+    where other food legumes do not perform as well. It also has the useful ability
+    to fix atmospheric nitrogen through its root nodules, and it grows well in poor
+    soils.
+  genus: Vigna
+  resources:
+  - URL: https://sequenceserver.legumeinfo.org/
+    description: SequenceServer BLAST against the Vigna unguiculata assembly 1.0
+    name: LIS SequenceServer
+  species: unguiculata
+  strains:
+  - accession: PI 642160
+    description: Cowpea variety is an elite breeding line developed at the International
+      Institute of Tropical Agriculture (IITA, Nigeria). This accession was used for
+      generation of the reference genome assembly described in Lonardi et al., 2019
+      (DOI:10.1111/tpj.14349).
+    identifier: IT97K-499-35
+    name: IT97K-499-35
+    origin: IITA, Nigeria
+    resources:
+    - URL: https://legacy.legumeinfo.org/genomes/gbrowse/vigun.IT97K-499-35.gnm1
+      description: GBrowse for IT97K-499-35 v1.0
+      name: LIS Genome Browser (GBrowse)
+    - URL: https://legacy.legumeinfo.org/genomes/jbrowse/?data=vigun.IT97K-499-35.gnm1
+      description: JBrowse for IT97K-499-35 assembly v1.0
+      name: LIS Genome Browser (JBrowse)
+  - accession: CB5-2
+    description: CB5-2 is a fully inbred stock that is closely related to CB5, which
+      was the predominant Blackeye of the US Southwest for several decades. CB5 (Blackeye
+      8415) was bred by WW Mackie at the University of California (Mackie, 1946) to
+      add resistances to Fusarium wilt and nematodes to a previously preferred California
+      Blackeye landrace.
+    identifier: CB5-2
+    name: CB5-2
+    origin: USA
+  - accession: Sanzi
+    description: Sanzi is an early flowering, small-seeded landrace from Ghana with
+      resistance to flower bud thrips (Boukar et al. 2013).
+    identifier: Sanzi
+    name: Sanzi
+    origin: Ghana
+  - accession: PI 583259
+    description: Suvita2, also known as Gorom Local (IITA accession TVu-15553, US
+      NPGR PI 583259), is resistant to bruchids and some races of Striga, and is relatively
+      drought tolerant. This landrace was collected from a local market by VD Aggarwal
+      at the Institut de l'Environnement et de Recherches Agricoles (INERA) in Burkina
+      Faso (Aggarwal et al. 1984).
+    identifier: Suvita2
+    name: Suvita2
+    origin: Burkina Faso
+  - accession: TZ30
+    description: Elite longbean accession from the Asian sub-population, representing
+      the sesquipedalis cultivar group.
+    identifier: TZ30
+    name: TZ30
+    origin: Asia
+  - accession: PI 583014
+    description: UCR779 (PI 583014) is a landrace from Botswana, provided to UC Riverside
+      as BOTS 19A in 1987 by CJ DeMooy of Colorado State University.
+    identifier: UCR779
+    name: UCR779
+    origin: Botswana
+  - accession: ZN016
+    description: Landrace longbean accession from the Asian sub-population, representing
+      the sesquipedalis culitvar group.
+    identifier: ZN016
+    name: ZN016
+    origin: Asia
+  taxid: 3917
