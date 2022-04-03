@@ -56,12 +56,18 @@ species:
       synopsis: "GWAS of Soybean cyst nematode (Heterodera glycines) resistance in common bean, relative to G19833 assembly 1."
     - collection: mixed.gwas.Myers_Wallace_2019
       synopsis: "GWAS of total phenolic content of pods, pod color, and flower color in Snap beans, relative to the G19833 assembly 2."
+    - collection: mixed.gwas.Oladzad_Porch_2019
+      synopsis: "GWAS of production traits under heat and drought stress in Common bean, relative to the the G19833 assembly 2."
     - collection: mixed.gwas.Parker_BernyMierYTeran_2020
       synopsis: "GWAS study of pod dehiscence in Phaseolus vulgaris dry beans, using the Andean and Mesoamerican Diversity Panels."
+    - collection: mixed.gwas.Paulino_Almeida_2021
+      synopsis: "GWAS of Fusarium wilt resistance for Common bean, relative to the G19833 assembly 2.0."
     - collection: mixed.gwas.Raggi_Caproni_2019
       synopsis: "GWAS study of flowering time control in a panel of homozygous 192 common bean accessions derived from landraces."
     - collection: mixed.gwas.Shi_Gepts_2021
       synopsis: "GWAS of Soybean Cyst Nematode resistance in Common bean, relative to the the G19833 assembly 1."
+    - collection: mixed.gwas.Wu_Wang_2020
+      synopsis: "GWAS of agronomic, architecture, and biotic stress traits at different locations within China for Common bean, relative to the G19833 assembly 1.0."
     - collection: mixed.gwas.Zitnick-Anderson_Oladzad_2020
       synopsis: "GWAS of Fusarium root rot resistance in Common Bean, relative to the G19833 assembly 2."
     - collection: Stampede_x_RedHawk.gen.Song_Jia_2015
@@ -82,6 +88,8 @@ species:
   markers:
     - collection: G19833.gnm1.mrk.BARCBean6K
       synopsis: "A core set of 6000 SNPs based on the genotyping of 365 dry bean and 134 snap bean accessions with the BARCBean6K_1 and BARCBean6K_2 BeadChips."
+    - collection: G19833.gnm1.mrk.Bean683WGRS_5M
+      synopsis: "Approximately 5 million SNP markers reported by Wu, Wang et al. 2020, identified from whole genome resequencing (WGRS) of 683 common bean genotypes, relative to the Phaseolus vulgaris assembly G19833.gnm1."
     - collection: G19833.gnm1.mrk.Benchimol_deCampos_2007
       synopsis: "A common bean genomic library was constructed using the ‘IAC-UNA’ variety enriched for (CT) and (GT) for microsatellite motifs. From 1,209 sequenced clones, 714 showed microsatellites distributed over 471 simple and 243 compound motifs."
     - collection: G19833.gnm1.mrk.Blair_Pedraza_2003
@@ -114,10 +122,10 @@ species:
       synopsis: "Plant material was genotyped using double digest Restriction-site Associated DNA sequencing, producing about 50,000 SNPs."
     - collection: G19833.gnm1.mrk.Yu_Park_2000
       synopsis: "15 SSR markers assigned to the Phaseolus vulgaris molecular linkage map."
+    - collection: G19833.gnm2.mrk.Andean_MidAmer_GBS
+      synopsis: "Marker SNPs developed by GBS on Andean and Middle American gene pools, with reads mapped to the Phaseolus vulgaris G19833 gnm2 assembly."
     - collection: G19833.gnm2.mrk.DiVittori_Bitocchi_2021
       synopsis: "We developed a BC4/F4 introgression line population and narrowed the major locus for pod shattering down to a 22.5 kb region."
-    - collection: G19833.gnm2.mrk.Zitnick-Anderson_Oladzad_2020
-      synopsis: "GWA mapping using around 200,000 SNPs was performed to study Fusarium rot resistance."
 - name: acutifolius
   annotations:
     - collection: Frijol_Bayo.gnm1.ann1.ML22
