@@ -38,9 +38,6 @@
 - description: "Potato bean"
   genus: Apios
   category: special
-- description: "Orchid tree"
-  genus: Bauhinia
-  category: special
 - description: "Redbud tree"
   genus: Cercis
   category: special
@@ -49,7 +46,4 @@
   category: special
 - description: "Apple-ring acacia"
   genus: Faidherbia
-  category: special
-- description: "Southeast Asian tree"
-  genus: Zenia
   category: special

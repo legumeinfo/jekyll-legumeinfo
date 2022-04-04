@@ -63,12 +63,14 @@ species:
     name: LIS SequenceServer
   species: truncatula
   strains:
-  - description: 'Medicago truncatula accession A17 has been used for a large number
+  - accession: A17
+    description: 'Medicago truncatula accession A17 has been used for a large number
       of genetic and genomic studies. The genome for this accession has been used
       as the basis for several high-quality genome assemblies: including Tang et al.,
       2014 (DOI:10.1186/1471-2164-15-312) and Pecrix et al., 2018 (DOI:10.1038/s41477-018-0286-7).'
     identifier: A17
     name: A17
+    origin: Mediterranean region
   - accession: HM341
     description: 'Medicago truncatula accession A17 has been used for a large number
       of genetic and genomic studies. The genome for this accession has been used
@@ -76,6 +78,7 @@ species:
       2014 (DOI:10.1186/1471-2164-15-312) and Pecrix et al., 2018 (DOI:10.1038/s41477-018-0286-7).'
     identifier: A17_HM341
     name: A17 (HM341)
+    origin: Mediterranean region
   - accession: HM340
     description: 'Medicago truncatula accession R108 has been used in various genetic
       and genomic studies, e.g. Gaige et al., 2011 (DOI:10.1080/07060661.2012.662176),
@@ -83,25 +86,5 @@ species:
       A genome assembly is available: https://www.ncbi.nlm.nih.gov/assembly/GCA_002024945.1/.'
     identifier: R108_HM340
     name: R108 (HM340)
-  - identifier: HM002
-  - identifier: HM004
-  - identifier: HM005
-  - identifier: HM006
-  - identifier: HM010
-  - identifier: HM017
-  - identifier: HM018
-  - identifier: HM020
-  - identifier: HM022
-  - identifier: HM023
-  - identifier: HM026
-  - identifier: HM034
-  - identifier: HM050
-  - identifier: HM056
-  - identifier: HM058
-  - identifier: HM060
-  - identifier: HM095
-  - identifier: HM125
-  - identifier: HM129
-  - identifier: HM185
-  - identifier: HM324
+    origin: Mediterranean region
   taxid: 3880

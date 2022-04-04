@@ -21,8 +21,10 @@ species:
     name: LIS SequenceServer
   species: pratense
   strains:
-  - description: Red clover cultivar MilvusB is a selection from variety Milvus used
+  - accession: Milvus B
+    description: Red clover cultivar Milvus B is a selection from variety Milvus used
       for generation of the genome assembly described by De Vega et al. (2015) DOI:10.1038/srep17394
     identifier: MilvusB
-    name: MilvusB
+    name: Milvus B
+    origin: Swiss Federal Research Station of Reckenholz
   taxid: 57577
