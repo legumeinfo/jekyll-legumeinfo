@@ -34,6 +34,14 @@
         {% endif %}
         {% endfor %}
         {% endfor %}
+        <li class="uk-nav-divider"></li>
+        {% for genus in genera %}
+        {% for item in genus.items %}
+        {% if item.category == "special" %}
+        <li><a href="/collections{{ item.genus | downcase | relative_url }}"> {{ item.genus }} ({{ item.description }})</a></li>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
       </ul>
     </div>
   </li>
