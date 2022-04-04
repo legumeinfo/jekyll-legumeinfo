@@ -1,0 +1,18 @@
+---
+species:
+- abbrev: faial
+  commonName: apple-ring acacia
+  description: "Faidherbia albida, or apple-ring acacia, is a thorny tree growing\
+    \ up 6\u201330 m (20\u201398 ft) tall and 2 m (6.6 ft) in trunk diameter. Its\
+    \ deep-penetrating tap root makes it highly resistant to drought. The bark is\
+    \ grey, and fissured when old. There are 11,000 seeds/kg."
+  genus: Faidherbia
+  species: albida
+  strains:
+  - accession: WAFC
+    description: Faidherbia albida WAFC was sequenced and reported in Chang, et al.
+      DOI:10.1093/gigascience/giy152
+    identifier: WAFC
+    name: WAFC
+    origin: World AgroForestry Center, Kenya
+  taxid: 138055

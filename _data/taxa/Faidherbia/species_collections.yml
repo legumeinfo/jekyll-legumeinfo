@@ -1,0 +1,13 @@
+---
+species:
+- name: albida
+  annotations:
+    - collection: WAFC.gnm1.ann1.RTP9
+      synopsis: "Gene models for the Apple-Ring Acacia (Faidherbia albida)"
+  diversity:
+  expression:
+  genetic:
+  genomes:
+    - collection: WAFC.gnm1.ZT1R
+      synopsis: "Draft genome assembly for the Apple-Ring Acacia (Faidherbia albida)"
+  markers:

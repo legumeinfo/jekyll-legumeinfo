@@ -26,3 +26,12 @@ collections_menu: true
   {% endfor %}
   {% endfor %}
 </ul>
+<ul>
+  {% for genus in genera %}
+  {% for item in genus.items %}
+  {% if item.category == "special" %}
+  <li><a href="/collections{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+</ul>

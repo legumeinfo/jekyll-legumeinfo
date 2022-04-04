@@ -1,0 +1,19 @@
+---
+species:
+- abbrev: cerca
+  commonName: eastern redbud
+  description: Cercis canadensis, the eastern redbud, is a large deciduous shrub or
+    small tree, native to eastern North America from southern Michigan south to central
+    Mexico, east to New Jersey. Species thrive as far west as California and as far
+    north as southern Ontario, roughly corresponding to USDA hardiness zone 6b. It
+    is the state tree of Oklahoma.
+  genus: Cercis
+  species: canadensis
+  strains:
+  - accession: ISC 453364
+    description: 'This accession of eastern redbud was sequenced and reported in Griesmann,
+      et al. DOI: 10.1126/science.aat1743'
+    identifier: ISC453364
+    name: eastern redbud
+    origin: Ames, Iowa, USA
+  taxid: 49801
