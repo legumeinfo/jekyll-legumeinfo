@@ -2,8 +2,12 @@
 species:
 - name: evenia
   annotations:
+    - collection: CIAT22838.gnm1.ann1.ZM3R
+      synopsis: "Aeschynomene evenia isolate CIAT22838, whole genome shotgun sequencing project."
   diversity:
   expression:
   genetic:
   genomes:
+    - collection: CIAT22838.gnm1.XF73
+      synopsis: "Aeschynomene evenia isolate CIAT22838, whole genome shotgun sequencing project."
   markers:
