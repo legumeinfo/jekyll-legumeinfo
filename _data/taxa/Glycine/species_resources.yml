@@ -124,6 +124,13 @@ species:
     identifier: Wm82_IGA1008
     name: Williams 82
     origin: Northeast Institute of Geography and Agroecology, CAS
+  - accession: PI 438471
+    description: "Bred by the late Dr. Sven Holmberg in Fiskeby, Norrk\xF6pping, Sweden.\
+      \ Highly nutritious \u2014 up to 40% protein, high in calcium, iron, and vitamins\
+      \ (particularly A, B1, B12, and C). Thrives in northern climates. 75-80 days."
+    identifier: FiskebyIII
+    name: Fiskeby III
+    origin: "Fiskeby, Norrk\xF6pping, Sweden"
   taxid: 3847
 - abbrev: glyso
   commonName: wild soybean

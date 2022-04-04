@@ -12,6 +12,8 @@ species:
   genomes:
     - collection: CADL_HM342.gnm1.rVNY
       synopsis: "Genome assembly of Medicago sativa CADL (HM342)"
+    - collection: RegenSY27x.gnm0_9.2VSM
+      synopsis: "Genome assembly of Medicago sativa RegenSY27x"
     - collection: XinJiangDaYe.gnm1.12MR
       synopsis: "Pseudomolecule assemblies and scaffolds representing 4 haplotypes per chromosome for Medicago sativa XinJiangDaYe"
   markers:
@@ -107,6 +109,8 @@ species:
       synopsis: "Genome assembly for Medicago truncatula (HM185)"
     - collection: HM324.gnm1.SJSJ
       synopsis: "Genome assembly for Medicago truncatula (HM324)"
+    - collection: R108.gnmHiC_1.7RWS
+      synopsis: "An assembly based on the earlier PacBio-based genome (R108_HM340.gnm1.XT6J), put into pseudomolecules using HiC scaffolding."
     - collection: R108_HM340.gnm1.XT6J
       synopsis: "Genome assembly for Medicago truncatula R108 (HM340)"
   markers:

@@ -71,17 +71,23 @@ taxa_menu: true
   <dd>{{ resource.description }}</dd>
   {% endfor %}
 </dl>
+{% else %}
+<h4><i>No resources are currently listed for {{ item["genus"] }} {{ item["species"] }}</i></h4>
 {% endif %}
 
 <h4><i>{{ item["genus"] }} {{ item["species"] }}</i> accessions</h4>
 {% for strain in item["strains"] %}
 <b>{{ strain.identifier }}</b> ({{ strain.origin }}) <br/>
 {{ strain.description }}
+{% if strain.resources.size > 0 %}
 <ul>
   {% for resource in strain.resources %}
   <li><a href="{{ resource.URL }}">{{ resource.name }}</a> : {{ resource.description }}</li>
   {% endfor %}
 </ul>
+{% else %}
+<br/><i>No resources are currently listed for accession <b>{{ strain.identifier }}</b></i>.
+{% endif %}
 {% endfor %}
 
 {% endfor %}

@@ -83,30 +83,372 @@ species:
     - collection: Wm82.gnm2.ann1.expr.G7ZY
       synopsis: "Soybean gene expression atlas from 14 conditions (Libault et al., 2010)."
   genetic:
+    - collection: 0518BW-8_x_0734BW-1.gen.Oyoo_Benitez_2011
+      synopsis: "QTL Analysis of Soybean Seed Coat Discoloration Associated with <i>II TT</i> Genotype"
+    - collection: A5403_x_Archer.gen.Cornelious_Chen_2005
+      synopsis: "Identification of QTLs Underlying Water-Logging Tolerance in Soybean"
+    - collection: A81356022_x_A81356022.gen.Keim_Diers_1990
+      synopsis: "RFLP mapping in soybean: association between marker loci and variation in quantitative traits."
+    - collection: A81356022_x_PI468916.gen.Diers_Cianzio_1992
+      synopsis: "Possible identification of quantitative trait loci affecting iron efficiency in soybean"
+    - collection: A81356022_x_PI468916.gen.Diers_Keim_1992
+      synopsis: "RFLP analysis of soybean seed protein and oil content"
+    - collection: A81356022_x_PI468916.gen.Diers_Shoemaker_1992
+      synopsis: "Restriction fragment length polymorphism analysis of soybean fatty acid content"
+    - collection: A81356022_x_PI468916.gen.Keim_Diers_1990
+      synopsis: "Genetic analysis of soybean hard seededness with molecular markers"
+    - collection: A95-684043_x_LS94-3207.gen.Swaminathan_Abeysekara_2016
+      synopsis: "Quantitative trait loci underlying host responses of soybean to Fusarium virguliforme toxins that cause foliar sudden death syndrome"
+    - collection: A96-492058_x_A97-775026.gen.Hoeck_2002
+      synopsis: "Molecular marker analysis of seed size in soybean"
+    - collection: AC756_x_RCATAngora.gen.Primomo_Poysa_2006
+      synopsis: "Mapping QTL for Individual and Total Isoflavone Content in Soybean Seeds"
+    - collection: AGSBoggs-RR_x_CX1834-1-2.gen.Walker_Scaboo_2006
+      synopsis: "Genetic Mapping of Loci Associated with Seed Phytic Acid Content in CX1834‐1‐2 Soybean"
+    - collection: Anoka_x_A7.gen.Lin_Baumer_2000
+      synopsis: "Nutrient solution screening of Fe chlorosis resistance in soybean evaluated by molecular characterization"
+    - collection: Anoka_x_A7.gen.Peiffer_King_2012
+      synopsis: "Identification of Candidate Genes Underlying an Iron Efficiency Quantitative Trait Locus in Soybean"
+    - collection: Archer_x_Minsoy.gen.VanToai_St.-Martin_2001
+      synopsis: "Identification of a QTL Associated with Tolerance of Soybean to Soil Waterlogging"
+    - collection: BARC-8_x_Garimpo.gen.Vieira_Oliveira_2006
+      synopsis: "Use of the QTL approach to the study of soybean trait relationships in two populations of recombinant inbred lines at the F7 and F8 generations"
+    - collection: BD2_x_BX10.gen.Liang_Cheng_2010a
+      synopsis: "QTL analysis of root traits as related to phosphorus efficiency in soybean"
+    - collection: BD2_x_BX10.gen.Liang_Cheng_2010b
+      synopsis: "QTL analysis of root traits as related to phosphorus efficiency in soybean"
+    - collection: Bell_x_Colfax.gen.Glover_Wang_2004
+      synopsis: "Near Isogenic Lines Confirm a Soybean Cyst Nematode Resistance Gene from PI 88788 on Linkage Group J"
+    - collection: Bell_x_Colfax.gen.Patzoldt_Grau_2005
+      synopsis: "Localization of a Quantitative Trait Locus Providing Brown Stem Rot Resistance in the Soybean Cultivar Bell"
+    - collection: Benning_x_PI416937.gen.Abdel-Haleem_Carter_2012
+      synopsis: "Mapping of quantitative trait loci for canopy-wilting trait in soybean (Glycine max L. Merr)"
+    - collection: BenningPI595645_x_DanbaekkongPI619083.gen.Warrington_Abdel-Haleem_2015
+      synopsis: "QTL for seed protein and amino acids in the Benning × Danbaekkong soybean population"
+    - collection: BenningPI595645_x_PI416937.gen.Abdel-Haleem_Lee_2011
+      synopsis: "Identification of QTL for increased fibrous roots in soybean"
+    - collection: BenningPI595645_x_PI416937.gen.Carpentieri-Pipolo_Pipolo_2012
+      synopsis: "Identification of QTLs associated with limited leaf hydraulic conductance in soybean"
+    - collection: Birsasoya-1_x_JS71-05.gen.Singh_Raipuria_2008
+      synopsis: "SSR markers associated with seed longevity in soybean"
+    - collection: Bogao_x_Nannong94-156.gen.Jun_Freewalt_2014
+      synopsis: "Identification of novel QTL for leaf traits in soybean"
+    - collection: Bossier_x_Embrapa20.gen.Santos_Geraldi_2013
+      synopsis: "Mapping of QTLs associated with biological nitrogen fixation traits in soybean"
+    - collection: BSR101_x_LG82-8379.gen.Kabelka_Diers_2004
+      synopsis: "Putative Alleles for Increased Yield from Soybean Plant Introductions"
+    - collection: BSR101_x_PI437654.gen.Klos_Paz_2000
+      synopsis: "Molecular Markers Useful for Detecting Resistance to Brown Stem Rot in Soybean"
+    - collection: Chamame_x_Laco-1.gen.Juwattanasomran_Somta_2012
+      synopsis: "Identification of a new fragrance allele in soybean and development of its functional marker"
+    - collection: Charleston_x_Dongnong.gen.Qi_Wu_2011
+      synopsis: "Soybean oil content QTL mapping and integrating with meta-analysis method for mining genes"
+    - collection: Charleston_x_Dongnong594.gen.Sun_Li_2006
+      synopsis: "Quantitative trait loci analysis for the developmental behavior of Soybean (Glycine max L. Merr.)"
+    - collection: Charleston_x_Dongnong594.gen.Sun_Pan_2012
+      synopsis: "Multi-environment mapping and meta-analysis of 100-seed weight in soybean"
+    - collection: CNS_x_PI230977.gen.Tamulonis_Luzzi_1997a
+      synopsis: "RFLP Mapping of Resistance to Southern Root‐Knot Nematode in Soybean"
+    - collection: CNS_x_PI230977.gen.Tamulonis_Luzzi_1997b
+      synopsis: "DNA Markers Associated with Resistance to Javanese Root‐Knot Nematode in Soybean"
+    - collection: Cobb_x_PI171451.gen.Rector_All_1999
+      synopsis: "Quantitative Trait Loci for Antixenosis Resistance to Corn Earworm in Soybean"
+    - collection: Cobb_x_PI229358.gen.Narvel_Walker_2001
+      synopsis: "A Retrospective DNA Marker Assessment of the Development of Insect Resistant Soybean"
+    - collection: Cobb_x_PI229358.gen.Rector_All_1998
+      synopsis: "Identification of molecular markers linked to quantitative trait loci for soybean resistance to corn earworm"
+    - collection: Cobb_x_PI229358.gen.Rector_All_2000
+      synopsis: "Quantitative Trait Loci for Antibiosis Resistance to Corn Earworm in Soybean"
+    - collection: Conrad_x_Harosoy.gen.Burnham_Dorrance_2003
+      synopsis: "Quantitative Trait Loci for Partial Resistance to Phytophthora sojae in Soybean"
+    - collection: Conrad_x_Hefeng25.gen.Mideros_Nita_2007
+      synopsis: "Characterization of Components of Partial Resistance, <i>Rps</i>2, and Root Resistance to <i>Phytophthora sojae</i> in Soybean"
+    - collection: Conrad_x_OX760-6-1.gen.Han_Teng_2008
+      synopsis: "Mapping QTL tolerance to Phytophthora root rot in soybean using microsatellite and RAPD/SCAR derived markers"
+    - collection: Conrad_x_OX760-6-1.gen.Weng_Yu_2007
+      synopsis: "A quantitative trait locus influencing tolerance to Phytophthora root rot in the soybean cultivar ‘Conrad’"
+    - collection: Conrad_x_Sloan.gen.Ellis_Wang_2012
+      synopsis: "Identification of Soybean Genotypes Resistant toFusarium graminearumand Genetic Mapping of Resistance Quantitative Trait Loci in the Cultivar Conrad"
+    - collection: Conrad_x_Sloan.gen.Wang_St.-Martin_2012
+      synopsis: "Comparison of Phenotypic Methods and Yield Contributions of Quantitative Trait Loci for Partial Resistance toPhytophthora sojaein Soybean"
+    - collection: Conrad_x_Sloan.gen.Wang_Waller_2010
+      synopsis: "Analysis of Genes Underlying Soybean Quantitative Trait Loci Conferring Partial Resistance to Phytophthora sojae"
+    - collection: Conrad_x_Sloan.gen.Wang_Wijeratne_2012a
+      synopsis: "Dissection of two soybean QTL conferring partial resistance to Phytophthora sojae through sequence and gene expression analysis"
+    - collection: Conrad_x_Sloan.gen.Wang_Wijeratne_2012b
+      synopsis: "Dissection of two soybean QTL conferring partial resistance to Phytophthora sojae through sequence and gene expression analysis"
+    - collection: Cook_x_N87-2122-4.gen.Li_Wilson_2002
+      synopsis: "Molecular Mapping Genes Conditioning Reduced Palmitic Acid Content in N87-2122-4 Soybean"
+    - collection: CSSL3228_x_NN1138D2.gen.Zhang_Wang_2018
+      synopsis: "Combining QTL-seq and linkage mapping to fine map a wild soybean allele characteristic of greater plant height"
+    - collection: CX1834-1-2_x_5601T.gen.Scaboo_Pantalone_2009
+      synopsis: "Confirmation of Molecular Markers and Agronomic Traits Associated with Seed Phytate Content in Two Soybean RIL Populations"
+    - collection: CX1834-1-6_x_V99-3337.gen.Gao_Biyashev_2008
+      synopsis: "Validation of Low-Phytate QTLs and Evaluation of Seedling Emergence of Low-Phytate Soybeans"
+    - collection: DongNong1068_x_DongNong8004.gen.Zhao_Wang_2008
+      synopsis: "Identification of QTL underlying the resistance of soybean to pod borer, Leguminivora glycinivorella (Mats.) obraztsov, and correlations with plant, pod and seed traits"
+    - collection: DongNong46_x_KenJian23.gen.Mao_Jiang_2013
+      synopsis: "Identification of quantitative trait loci underlying seed protein and oil contents of soybean across multi-genetic backgrounds and environments"
+    - collection: Douglas_x_Pyramid.gen.Njiti_Meksem_2002
+      synopsis: "Common loci underlie field resistance to soybean sudden death syndrome in Forrest, Pyramid, Essex, and Douglas"
+    - collection: DunbarPI552538_x_GsojaPI326582A.gen.Manavalan_Prince_2015
+      synopsis: "Identification of Novel QTL Governing Root Architectural Traits in an Interspecific Soybean Population"
+    - collection: Elgin_x_PI436684.gen.Kim_Diers_2012a
+      synopsis: "Identification of positive yield QTL alleles from exotic soybean germplasm in two backcross populations"
+    - collection: Elgin_x_PI436684.gen.Kim_Diers_2012b
+      synopsis: "Identification of positive yield QTL alleles from exotic soybean germplasm in two backcross populations"
+    - collection: Essex_x_Forrest.gen.Chang_Doubler_1996
+      synopsis: "Two Additional Loci underlying Durable Field Resistance to Soybean Sudden Death Syndrome (SDS)"
+    - collection: Essex_x_Forrest.gen.Chang_Doubler_1997
+      synopsis: "Association of Loci Underlying Field Resistance to Soybean Sudden Death Syndrome (SDS) and Cyst Nematode (SCN) Race 3"
+    - collection: Essex_x_Forrest.gen.Cho_Njiti_2002
+      synopsis: "Quantitative Trait Loci Associated with Foliar Trigonelline Accumulation in<i>Glycine Max</i>L"
+    - collection: Essex_x_Forrest.gen.Hnetkovsky_Chang_1996
+      synopsis: "Genetic Mapping of Loci underlying Field Resistance to Soybean Sudden Death Syndrome (SDS)"
+    - collection: Essex_x_Forrest.gen.Iqbal_Meksem_2001
+      synopsis: "Microsatellite markers identify three additional quantitative trait loci for resistance to soybean sudden-death syndrome (SDS) in Essex × Forrest RILs"
+    - collection: Essex_x_Forrest.gen.Josie_Alcivar_2007
+      synopsis: "Research Article: Genomic regions containing QTL for plant height, internodes length, and flower color in soybean [Glycine max (L.) Merr]"
+    - collection: Essex_x_Forrest.gen.Kassem_Meksem_2004a
+      synopsis: "Loci underlying resistance to manganese toxicity mapped in a soybean recombinant inbred line population of `Essex' x `Forrest'"
+    - collection: Essex_x_Forrest.gen.Kassem_Meksem_2004b
+      synopsis: "QTL experiment reported in 10.1023/b:plso.0000030189.96115.21"
+    - collection: Essex_x_Forrest.gen.Meksem_Doubler_1999
+      synopsis: "Clustering among loci underlying soybean resistance to Fusarium solani, SDS and SCN in near-isogenic lines"
+    - collection: Essex_x_Forrest.gen.Meksem_Pantazopoulos_2001
+      synopsis: "’Forrest’ resistance to the soybean cyst nematode is bigenic: saturation mapping of the Rhg1and Rhg4 loci"
+    - collection: Essex_x_Forrest.gen.Sharma_Sharma_2011
+      synopsis: "The genetic control of tolerance to aluminum toxicity in the ‘Essex’ by ‘Forrest’ recombinant inbred line population"
+    - collection: Essex_x_Forrest.gen.Yuan_Njiti_2002
+      synopsis: "Quantitative trait loci in Two Soybean Recombinant Inbred Line Populations Segregating for Yield and Disease Resistance"
+    - collection: Essex_x_PI437654.gen.Gutierrez-Gonzalez_Wu_2009
+      synopsis: "Genetic control of soybean seed isoflavone content: importance of statistical model and epistasis in complex traits"
+    - collection: Essex_x_PI437654.gen.Gutierrez-Gonzalez_Wu_2010
+      synopsis: "Intricate environment-modulated genetic networks control isoflavone accumulation in soybean seeds"
+    - collection: Essex_x_Williams.gen.Hyten_Pantalone_2004a
+      synopsis: "Molecular mapping and identification of soybean fatty acid modifier quantitative trait loci"
+    - collection: Essex_x_Williams.gen.Hyten_Pantalone_2004b
+      synopsis: "Seed quality QTL in a prominent soybean population"
+    - collection: Evans_x_Peking.gen.Concibido_Lange_1997
+      synopsis: "Genome Mapping of Soybean Cyst Nematode Resistance Genes in ‘Peking’, PI 90763, and PI 88788 Using DNA Markers"
+    - collection: Evans_x_PI88788.gen.Concibido_Young_1996
+      synopsis: "Targeted comparative genome analysis and qualitative mapping of a major partial-resistance gene to the soybean cyst nematode"
+    - collection: FiskbeyIII_x_Williams82.gen.Do_Vuong_2018
+      synopsis: "Mapping and confirmation of loci for salt tolerance in a novel soybean germplasm, Fiskeby III"
+    - collection: FiskebyIII_x_Mandarin.gen.Burton_Burkey_2016
+      synopsis: "Phenotypic variation and identification of quantitative trait loci for ozone tolerance in a Fiskeby III × Mandarin (Ottawa) soybean population"
+    - collection: FiskebyIII_x_Mandarin.gen.Hacisalihoglu_Burton_2018
+      synopsis: "Quantitative trait loci associated with soybean seed weight and composition under different phosphorus levels"
+    - collection: Flyer_x_Hartwig.gen.Kazi_Shultz_2008
+      synopsis: "Separate loci underlie resistance to root infection and leaf scorch during soybean sudden death syndrome"
+    - collection: Flyer_x_Hartwig.gen.Prabhu_Njiti_1999
+      synopsis: "Selecting Soybean Cultivars for Dual Resistance to Soybean Cyst Nematode and Sudden Death Syndrome Using Two DNA Markers"
+    - collection: GD2422_x_LD01-5907.gen.Tan_Serven_2018
+      synopsis: "QTL mapping and epistatic interaction analysis of field resistance to sudden death syndrome (Fusarium virguliforme) in soybean"
+    - collection: Glycinemaxvariety7499_x_GlycinesojaPI245331.gen.Li_Pfeiffer_2008
+      synopsis: "Soybean QTL for Yield and Yield Components Associated with <i>Glycine soja</i> Alleles"
+    - collection: Hamilton_x_PI90763.gen.Guo_Sleper_2006
+      synopsis: "Identification of QTLs associated with resistance to soybean cyst nematode races 2, 3 and 5 in soybean PI 90763"
+    - collection: Harosoy_x_Fukuyutaka.gen.Benitez_Hajika_2010
+      synopsis: "A Major QTL Controlling Seed Cadmium Accumulation in Soybean"
+    - collection: Hartwig_x_Flyer.gen.Kazi_Shultz_2010
+      synopsis: "Iso-lines and inbred-lines confirmed loci that underlie resistance from cultivar ‘Hartwig’ to three soybean cyst nematode populations"
+    - collection: Hartwig_x_Williams82.gen.Vierling_Faghihi_1996
+      synopsis: "Association of RFLP markers with loci conferring broad-based resistance to the soybean cyst nematode (Heterodera glycines)"
+    - collection: Hartwig_x_Y23.gen.Ferreira_Cervigni_2011
+      synopsis: "QTLs for resistance to soybean cyst nematode, races 3, 9, and 14 in cultivar Hartwig"
+    - collection: Hayahikari_x_Toyomusume.gen.Funatsuki_Ishimoto_2006
+      synopsis: "Simple sequence repeat markers linked to a major QTL controlling pod shattering in soybean"
+    - collection: Hefeng25_x_Conrad.gen.Han_Li_2012
+      synopsis: "QTL analysis of soybean seed weight across multi-genetic backgrounds and environments"
+    - collection: HeFeng25_x_DongnongL-5.gen.Xie_Han_2012
+      synopsis: "SSR- and SNP-related QTL underlying linolenic acid and other fatty acid contents in soybean seeds across multiple environments"
+    - collection: Hefeng25_x_MapleArrow.gen.Li_Sun_2010
+      synopsis: "Identification of QTL underlying soluble pigment content in soybean stems related to resistance to soybean white mold (Sclerotinia sclerotiorum)"
+    - collection: Hefeng25_x_OACBayfield.gen.Li_Wang_2016
+      synopsis: "Mapping quantitative trait loci (QTLs) underlying seed vitamin E content in soybean with main, epistatic and QTL × environment effects"
+    - collection: Hefeng45_x_Dongnong48.gen.yang_Ding_2017
+      synopsis: "Identification of QTL underlying soybean agglutinin content in soybean seeds and analysis for epistatic effects among multiple genetic backgrounds and environments"
+    - collection: Huachun_x_Wayao.gen.Cai_Cheng_2018
+      synopsis: "Fine-mapping of QTLs for individual and total isoflavone content in soybean (Glycine max L.) using a high-density genetic map"
+    - collection: Hwangkeum_x_IT182932.gen.Yang_Moon_2011
+      synopsis: "Novel major quantitative trait loci regulating the content of isoflavone in soybean seeds"
+    - collection: IA2008_x_PI468916.gen.Wang_Graef_2004a
+      synopsis: "Identification of putative QTL that underlie yield in interspecific soybean backcross populations"
+    - collection: IA2008_x_PI468916.gen.Wang_Graef_2004b
+      synopsis: "Identification of putative QTL that underlie yield in interspecific soybean backcross populations"
+    - collection: Ippon-Sangoh_x_Fukuyutaka.gen.Komatsu_Hwang_2012
+      synopsis: "Identification of QTL controlling post-flowering period in soybean"
+    - collection: Jackson_x_JWS156-1.gen.Hamwieh_Xu_2008
+      synopsis: "Conserved salt tolerance quantitative trait locus (QTL) in wild and cultivated soybeans"
+    - collection: Jidou12_x_JiNF58.gen.Shi_Yan_2018
+      synopsis: "Identification of a major quantitative trait locus underlying salt tolerance in ‘Jidou 12’ soybean cultivar"
+    - collection: Jindou23_x_Huibuzhi.gen.LIANG_YU_2010
+      synopsis: "QTL Mapping of Isoflavone, Oil and Protein Contents in Soybean (Glycine max L. Merr.)"
+    - collection: JindouNo6PI574484_x_197PI471938.gen.Hamwieh_Tuyen_2011
+      synopsis: "Identification and validation of a major QTL for salt tolerance in soybean"
+    - collection: Jingdou23_x_ZDD2315.gen.Liang_Yu_2014
+      synopsis: "Inheritance and QTL mapping of related root traits in soybean at the seedling stage"
+    - collection: Jinpumkong2_x_SS2-2.gen.Liu_Kim_2011
+      synopsis: "QTL identification of yield-related traits and their association with flowering and maturity in soybean"
+    - collection: Jinpumkong_x_SS2-2.gen.Liu_Kim_2011
+      synopsis: "QTL identification of flowering time at three different latitudes reveals homeologous genomic regions that control flowering in soybean"
+    - collection: JP036034_x_Ryuhou.gen.Wang_Chen_2015
+      synopsis: "Identification of Quantitative Trait Loci for Oil Content in Soybean Seed"
+    - collection: JP110755_x_Fukuyutaka.gen.Kuroda_Kaga_2013
+      synopsis: "QTL affecting fitness of hybrids between wild and cultivated soybeans in experimental fields"
+    - collection: JWS156-1_x_Jackson.gen.Tuyen_Lal_2010
+      synopsis: "Identification of a major QTL allele from wild soybean (Glycine soja Sieb. & Zucc.) for increasing alkaline salt tolerance in soybean"
+    - collection: Kaori_x_ChiangMai60.gen.Juwattanasomran_Somta_2011
+      synopsis: "A SNP in GmBADH2 gene associates with fragrance in vegetable soybean variety “Kaori” and SNAP marker development for the fragrance"
+    - collection: Karafuto-1_x_Toyosuzu.gen.Khan_Githiri_2008
+      synopsis: "QTL analysis of cleistogamy in soybean"
+    - collection: Keburi_x_Mosshokutou.gen.Choi_Mano_2010
+      synopsis: "Identification of QTLs controlling somatic embryogenesis using RI population of cultivar × weedy soybean"
+    - collection: Kefeng1_x_Nannon1138-2.gen.Du_Wang_2009
+      synopsis: "Mapping QTLs for seed yield and drought susceptibility index in soybean (Glycine max L.) across different environments"
+    - collection: Kefeng1_x_Nannong1138-2.gen.DU_YU_2009
+      synopsis: "Analysis of QTLs for the Trichome Density on the Upper and Downer Surface of Leaf Blade in Soybean [Glycine max (L.) Merr.]"
+    - collection: KefengNo1_x_1138-2.gen.Gai_Wang_2007
+      synopsis: "A comparative study on segregation analysis and QTL mapping of quantitative traits in plants—with a case in soybean"
+    - collection: KefengNo1_x_Nannong.gen.Li_Wang_2005
+      synopsis: "QTL experiment reported in 10.1007/s10681-005-1192-4"
+    - collection: KefengNo1_x_Nannong1138-2.gen.Ma_Kan_2016
+      synopsis: "Quantitative Trait Loci (QTL) Mapping for Glycinin and β-Conglycinin Contents in Soybean (Glycine max L. Merr.)"
+    - collection: KefengNo1_x_Nannong1138-2.gen.Yan_Wang_2015
+      synopsis: "Detection and fine‐mapping of SC7 resistance genes via linkage and association analysis in soybean"
+    - collection: KefengNo1_x_Nannong1138-2.gen.Yang_Zhao_2011
+      synopsis: "Mapping QTLs for tissue culture response in soybean (Glycine max (L.) Merr.)"
+    - collection: KefengNo1_x_Nannong1138-2.gen.Zhang_Wang_2004
+      synopsis: "QTL mapping of ten agronomic traits on the soybean (Glycine max L. Merr.) genetic map and their association with EST markers"
+    - collection: KenfengNo1_x_Nannong.gen.Li_Wang_2005
+      synopsis: "QTL mapping of phosphorus deficiency tolerance in soybean (Glycine max L. Merr.)"
+    - collection: Kenjian4_x_Fengshou24.gen.Hu_Zhang_2013
+      synopsis: "Determination of the genetic architecture of seed size and shape via linkage and association analysis in soybean (Glycine max L. Merr.)"
+    - collection: Kenjian4_x_Fengshou24.gen.Wu_Xu_2012
+      synopsis: "Mapping QTLs for Phosphorus-deficiency Tolerance in Soybean at Seedling Stage"
+    - collection: Keunol_x_Iksan10.gen.Lee_Kim_2016
+      synopsis: "Positional mapping and identification of novel quantitative trait locus responsible for UV-B radiation tolerance in soybean [Glycine max (L.) Merr.]"
+    - collection: Keunolkong_x_Iksan10.gen.Kim_Kim_2010
+      synopsis: "Analysis of Quantitative Trait Loci (QTLs) for Seed Size and Fatty Acid Composition Using Recombinant Inbred Lines in Soybean"
+    - collection: Keunolkong_x_Iksan10.gen.Shim_Ha_2015
+      synopsis: "Detection of quantitative trait loci controlling UV-B resistance in soybean"
+    - collection: Keunolkong_x_Shinpaldalkong.gen.Kim_Kang_2005
+      synopsis: "Analysis of quantitative trait loci associated with leaflet types in two recombinant inbred lines of soybean"
+    - collection: Keunolkong_x_Shinpaldalkong.gen.Kim_Kang_2006
+      synopsis: "Mapping of putative quantitative trait loci controlling the total oligosaccharide and sucrose content of Glycine max seeds"
+    - collection: Keunolkong_x_Sinpaldalkong.gen.Ha_Kim_2012
+      synopsis: "Mapping QTLs with epistatic effects and QTL-by-environment interactions for seed coat cracking in soybeans"
+    - collection: Keunolkong_x_Sinpaldalkong.gen.Kang_Kwak_2009
+      synopsis: "Population-specific QTLs and their different epistatic interactions for pod dehiscence in soybean [Glycine max (L.) Merr.]"
+    - collection: KF1_x_NN1138-2.gen.Li_Zhao_2011
+      synopsis: "Genetic structure composed of additive QTL, epistatic QTL pairs and collective unmapped minor QTL conferring oil content and fatty acid components of soybeans"
+    - collection: KFNo1_x_NN1138-2.gen.Korir_Qi_2011
+      synopsis: "A study on relative importance of additive, epistasis and unmapped QTL for Aluminium tolerance at seedling stage in soybean"
+    - collection: Kitakomachi_x_Koganejiro.gen.Githiri_Yang_2007
+      synopsis: "QTL Analysis of Low Temperature Induced Browning in Soybean Seed Coats"
+    - collection: Kottman_x_PI391589B.gen.Guo_Wang_2008
+      synopsis: "Genetic Mapping of QTLs Underlying Partial Resistance to in Soybean PI 391589A and PI 391589B"
+    - collection: KS4303sp_x_PI407818B.gen.Orazaly_Chen_2015
+      synopsis: "Identification and Confirmation of Quantitative Trait Loci Associated with Soybean Seed Hardness"
+    - collection: KS4895_x_Jackson.gen.Charlson_Bhatnagar_2009
+      synopsis: "Polygenic inheritance of canopy wilting in soybean [Glycine max (L.) Merr.]"
+    - collection: L-10_x_Heinong37.gen.Chang_Dong_2011
+      synopsis: "QTL underlying resistance to two HG types of Heterodera glycines found in soybean cultivar 'L-10'"
+    - collection: L78-4094_x_Century84.gen.Bachman_Tamulonis_2001
+      synopsis: "Molecular Markers Linked to Brown Stem Rot Resistance Genes,Rbs1andRbs2, in Soybean"
+    - collection: LD00-2817P_x_LDX01-1-65.gen.Vald%C3%A9s-L%C3%B3pez_Thibivilliers_2011
+      synopsis: "Identification of Quantitative Trait Loci Controlling Gene Expression during the Innate Immunity Response of Soybean    "
+    - collection: Lineage69_x_Tucunare.gen.Leite_Pinheiro_2016
+      synopsis: "QTL mapping of soybean oil content for marker-assisted selection in plant breeding program"
+    - collection: Lishuizhongzihuangdou_x_Nannong493-1.gen.LI_LI_2010
+      synopsis: "QTL Analysis for Dynamic Expression of Chlorophyll Content in Soybean (Glycine max L. Merr.)"
+    - collection: Luheidou2_x_Nanhuizao.gen.Fan_Li_2015
+      synopsis: "Analysis of additive and epistatic quantitative trait loci underlying fatty acid concentrations in soybean seeds across multiple environments"
+    - collection: M82806_x_HHP.gen.Brummer_Graef_1997
+      synopsis: "Mapping QTL for Seed Protein and Oil Content in Eight Soybean Populations"
+    - collection: M91-212006_x_SZG9652.gen.Vollmann_Schausberger_2002
+      synopsis: "The presence or absence of the soybean Kunitz trypsin inhibitor as a quantitative trait locus for seed protein content"
+    - collection: MaBelle_x_Proto.gen.Csan%C3%A1di_Vollmann_2001
+      synopsis: "Seed quality QTLs identified in a molecular map of early maturing soybean"
+    - collection: Magellan_x_PI404198A.gen.Guo_Sleper_2006
+      synopsis: "Quantitative Trait Loci underlying Resistance to Three Soybean Cyst Nematode Populations in Soybean PI 404198A"
+    - collection: Magellan_x_PI437654.gen.Gutierrez-Gonzalez_Vuong_2011
+      synopsis: "Major locus and other novel additive and epistatic loci involved in modulation of isoflavone concentration in soybean seeds"
+    - collection: Magellan_x_PI438489B.gen.Vuong_Sleper_2011
+      synopsis: "Confirmation of quantitative trait loci for resistance to multiple-HG types of soybean cyst nematode (Heterodera glycines Ichinohe)"
+    - collection: Magellan_x_PI567516C.gen.Vuong_Sleper_2010
+      synopsis: "Novel quantitative trait loci for broad-based resistance to soybean cyst nematode (Heterodera glycines Ichinohe) in soybean PI 567516C"
+    - collection: MapleDonovan_x_OACBayfield.gen.Huynh_Bastien_2010
+      synopsis: "Identification of QTLs Associated with Partial Resistance to White Mold in Soybean Using Field-Based Inoculation"
+    - collection: MD96-5722_x_Spencer.gen.Akond_Liu_2014
+      synopsis: "Identification of Quantitative Trait Loci (QTL) Underlying Protein, Oil, and Five Major Fatty Acids’ Contents in Soybean"
+    - collection: MD96-5722_x_Spencer.gen.Anderson_Akond_2015
+      synopsis: "Quantitative trait loci underlying resistance to sudden death syndrome (SDS) in MD96-5722 by ‘Spencer’ recombinant inbred line population of soybean"
+    - collection: Merit_x_PI194639.gen.Vuong_Diers_2008
+      synopsis: "Identification of QTL for Resistance to Sclerotinia Stem Rot in Soybean Plant Introduction 194639"
+    - collection: MFS-553_x_PI243545.gen.Zeng_Chen_2014
+      synopsis: "Identification of Quantitative Trait Loci for Sucrose Content in Soybean Seed"
+    - collection: Minsoy_x_Archer.gen.Orf_Chase_1999a
+      synopsis: "Genetics of Soybean Agronomic Traits: II. Interactions between Yield Quantitative Trait Loci in Soybean"
+    - collection: Minsoy_x_Archer.gen.Orf_Chase_1999b
+      synopsis: "Genetics of Soybean Agronomic Traits: I. Comparison of Three Related Recombinant Inbred Populations"
+    - collection: Minsoy_x_Archer.gen.Stombaugh_Orf_2004
+      synopsis: "Quantitative Trait Loci Associated with Cell Wall Polysaccharides in Soybean Seed"
+    - collection: Minsoy_x_Noir1.gen.Njiti_Lightfoot_2006
+      synopsis: "Genetic analysis infers Dt loci underlie resistance to Fusarium solani f. sp. glycines in indeterminate soybeans"
+    - collection: Minsoy_x_Noir1.gen.Specht_Chase_2001
+      synopsis: "Soybean Response to Water: A QTL Analysis of Drought Tolerance"
+    - collection: Minsoy_x_Noir1.gen.Terry_Chase_2000
+      synopsis: "Soybean Quantitative Trait Loci for Resistance to Insects"
+    - collection: Minsoy_x_Noir1.gen.Tischner_Allphin_2003
+      synopsis: "Genetics of Seed Abortion and Reproductive Traits in Soybean"
+    - collection: Misuzudaizu_x_MoshidouGong503.gen.Tajuddin_Watanabe_2003
+      synopsis: "Analysis of Quantitative Trait Loci for Protein and Lipid Contents in Soybean Seeds Using Recombinant Inbred Lines"
+    - collection: Misuzudaizu_x_MoshidouGong503.gen.Yamanaka_2001
+      synopsis: "An Informative Linkage Map of Soybean Reveals QTLs for Flowering Time, Leaflet Morphology and Regions of Segregation Distortion"
+    - collection: Misuzudaizu_x_MoshidouGong503.gen.Yamanaka_Nagamura_2000
+      synopsis: "Quantitative Trait Locus Analysis of Flowering Time in Soybean Using a RFLP Linkage Map."
+    - collection: Misuzudaizu_x_MoshidouGong503MG503.gen.Githiri_Watanabe_2006
+      synopsis: "QTL analysis of flooding tolerance in soybean at an early vegetative growth stage"
+    - collection: mixed.gen.Glover_Wang_2004
+      synopsis: "Near Isogenic Lines Confirm a Soybean Cyst Nematode Resistance Gene from PI 88788 on Linkage Group J"
+    - collection: mixed.gen.Hwang_King_2016
+      synopsis: "Meta-analysis to refine map position and reduce confidence intervals for delayed-canopy-wilting QTLs in soybean"
+    - collection: mixed.gen.Jun_Van_2008
+      synopsis: "Association analysis using SSR markers to find QTL for seed protein content in soybean"
+    - collection: mixed.gen.Matthews_MacDonald_1998
+      synopsis: "Molecular markers residing close to the Rhg4 locus conferring resistance to soybean cyst nematode race 3 on linkage group A of soybean"
+    - collection: mixed.gen.Meksem_Ruben_2001
+      synopsis: "Conversion of AFLP bands into high-throughput DNA markers"
+    - collection: mixed.gen.Mudge_Cregan_1997
+      synopsis: "Two Microsatellite Markers That Flank the Major Soybean Cyst Nematode Resistance Locus"
+    - collection: mixed.gen.Pathan_Vuong_2013
+      synopsis: "Genetic Mapping and Confirmation of Quantitative Trait Loci for Seed Protein and Oil Contents and Seed Weight in Soybean"
+    - collection: mixed.gen.Qi_Wu_2011
+      synopsis: "Soybean oil content QTL mapping and integrating with meta-analysis method for mining genes"
     - collection: mixed.gwas.Bandillo_Jarquin_2015
       synopsis: "GWAS of soybean seed protein and oil, using 12,000 accessions from the USDA soybean collection and the SoySNP50K BeadChip."
     - collection: mixed.gwas.Bao_Kurle_2015
-      synopsis: "GWAS of soybean sudden death syndrome (SDS), based on 282 breeding lines, genotyped with a 1536-SNP chip."
+      synopsis: "GWAS of soybean sudden death syndrome (SDS), based on 282 breeding lines, genotyped with the 1536-SNP USLP1.0 chip."
     - collection: mixed.gwas.Cao_Li_2017
       synopsis: "GWAS and QTL study of soybean seed oil, conducted on 279 lines from a Chinese breeding population, genotyped with 59,845 SNPs."
     - collection: mixed.gwas.Chang_Brown_2016
-      synopsis: "GWAS of Tobacco ringspot virus(TRSV), conducted on 19,652 lines in the USDA Soybean Collection, genotyped with the SoySNP50K BeadChip."
+      synopsis: "GWAS of Tobacco ringspot virus (TRSV) conducted on 19,652 lines in the USDA Soybean Collection, genotyped with the SoySNP50K BeadChip."
     - collection: mixed.gwas.Che_Liu_2017
-      synopsis: "GWAS of Soybean mosaic virus (SMV), conducted on 165 lines from parents with differing susceptibility, genotyped with the 355K SoySNP array."
+      synopsis: "GWAS of Soybean mosaic virus (SMV), conducted on 165 lines from parents with differing susceptibility, genotyped with the NJAU 355K Soy SNP assay."
     - collection: mixed.gwas.Dhanapal_Ray_2016
-      synopsis: "GWAS soybean chlorophyll traits based on canopy spectral reflectance and leaf extracts."
+      synopsis: "GWAS of soybean chlorophyll traits based on canopy spectral reflectance and leaf extracts."
     - collection: mixed.gwas.Fang_Ma_2017
       synopsis: "GWAS of 84 agronomic traits, conducted on 809 soybean accessions, with genotyping by resequencing."
-    - collection: mixed.gwas.Hu_Zhang_2014
-      synopsis: "GWAS of soybean yield-related traits, conducted on 113 wild soybean accessions, genotyped with 85 simple sequence repeat (SSR) markers."
     - collection: mixed.gwas.Kim_Kim_2020
       synopsis: "GWAS study of control of flowering time in soybean, genotyped with the 180k Axiom SoyaSNP array."
     - collection: mixed.gwas.Li_Zhao_2019
       synopsis: "GWAS study of soybean seed protein and oil, conducted on 298 accessions, genotyped with a panel of 1536 SNPs."
     - collection: mixed.gwas.Mamidi_Chikara_2011
-      synopsis: "GWAS study of iron deficiency chlorosis in soybean, conducted on two populations (n=141, n=143), genotyped with the 1536 SNP USLP1 array."
+      synopsis: "GWAS study of iron deficiency chlorosis (IDC) in soybean, conducted on two populations (n=143, n=141), genotyped with the 1536 SNP USLP1 array."
     - collection: mixed.gwas.Meng_He_2016
-      synopsis: "GWAS study of seed isoflavone content (SIFC), conducted on 366 landraces, genotyped with 116,769 RAD-Seq markers."
+      synopsis: "Utilizing an innovative GWAS in CSLRP, 44 QTL 199 alleles with 72.2 % contribution to SIFC variation were detected and organized into a QTL-allele matrix for cross design and gene annotation."
     - collection: mixed.gwas.Moellers_Singh_2017
       synopsis: "GWAS study of Sclerotinia stem rot (SSR) in soybean, conducted on 466 accessions, genotyped with the SoySNP50K BeadChip."
     - collection: mixed.gwas.Sonah_ODonoughue_2015
@@ -122,7 +464,241 @@ species:
     - collection: mixed.gwas.Zhang_Song_2016
       synopsis: "GWAS study of seed weight in soybean, conducted on 309 soybean accessions, genotyped using the SoySNP50K BeadChip."
     - collection: mixed.gwas.Zhao_Teng_2017
-      synopsis: "GWAS study of resistance to soybean cyst nematode (SCN), conducted on 200 soybean accessions, genotyped using a custom 33,194 SNP set."
+      synopsis: "The aim of the present study was to investigate the genome-wide genetic architecture of resistance to SCN HG Type 2.5.7 (race 1) in landrace and elite cultivated soybeans."
+    - collection: MN1606SP_x_Spencer.gen.Luckew_Swaminathan_2017
+      synopsis: "‘MN1606SP’ by ‘Spencer’ filial soybean population reveals novel quantitative trait loci and interactions among loci conditioning SDS resistance"
+    - collection: Msoy8001_x_Conquista.gen.Silva_Schuster_2007
+      synopsis: "Validation of microsatellite markers for assisted selection of soybean resistance to cyst nematode races 3 and 14"
+    - collection: N87-984-16_x_TN93-99.gen.Panthee_Kwanyuen_2004
+      synopsis: "Quantitative trait loci for β-conglycinin (7S) and glycinin (11S) fractions of soybean storage protein"
+    - collection: N87-984-16_x_TN93-99.gen.Panthee_Pantalone_2004
+      synopsis: "Genomic regions governing soybean seed nitrogen accumulation"
+    - collection: N87-984-16_x_TN93-99.gen.Panthee_Pantalone_2005
+      synopsis: "Quantitative Trait Loci for Seed Protein and Oil Concentration, and Seed Size in Soybean"
+    - collection: N87-984-16_x_TN93-99.gen.Panthee_Pantalone_2006a
+      synopsis: "Quantitative trait loci controlling sulfur containing amino acids, methionine and cysteine, in soybean seeds"
+    - collection: N87-984-16_x_TN93-99.gen.Panthee_Pantalone_2006b
+      synopsis: "Genomic Regions Associated with Amino Acid Composition in Soybean"
+    - collection: N87-984-16_x_TN93-99.gen.Panthee_Pantalone_2006c
+      synopsis: "Modifier QTL for fatty acid composition in soybean oil"
+    - collection: N87-984-16_x_TN93-99.gen.Panthee_Pantalone_2007
+      synopsis: "Quantitative trait loci for agronomic traits in soybean"
+    - collection: N97-3363-3_x_PI423893.gen.Bachlava_Dewey_2009
+      synopsis: "Mapping and Comparison of Quantitative Trait Loci for Oleic Acid Seed Content in Two Segregating Soybean Populations"
+    - collection: N97-3708-13_x_Anand.gen.Spencer_Landau-Ellis_2004
+      synopsis: "Molecular markers associated with linolenic acid content in soybean"
+    - collection: Nannong94-156_x_Bogao.gen.Zhang_Cheng_2009
+      synopsis: "Detection of quantitative trait loci for phosphorus deficiency tolerance at soybean seedling stage"
+    - collection: Nannong94-156_x_Bogao.gen.Zhang_Cheng_2010
+      synopsis: "Identification of genomic regions determining flower and pod numbers development in soybean (Glycine max L.)"
+    - collection: Nannong94-156_x_Bogao.gen.Zhang_Li_2016
+      synopsis: "High-Density Genetic Mapping Identifies New Major Loci for Tolerance to Low-Phosphorus Stress in Soybean"
+    - collection: Nasushirome_x_Enrei.gen.Oyoo_Benitez_2010
+      synopsis: "QTL Analysis of Seed Coat Cracking in Soybean"
+    - collection: No9-I_x_Harosoy-e3.gen.Liu_Abe_2010
+      synopsis: "QTL Mapping for Photoperiod Insensitivity of a Japanese Soybean Landrace Sakamotowase"
+    - collection: Noir1_x_Archer.gen.Reyna_Sneller_2001
+      synopsis: "Evaluation of Marker‐Assisted Introgression of Yield QTL Alleles into Adapted Soybean"
+    - collection: Noir1_x_Minsoy.gen.Mansur_Orf_1996
+      synopsis: "Genetic Mapping of Agronomic Traits Using Recombinant Inbred Lines of Soybean"
+    - collection: Noir1_x_Minsoy.gen.Salas_Oyarzo-Llaipen_2006
+      synopsis: "Genetic mapping of seed shape in three populations of recombinant inbred lines of soybean (Glycine max L. Merr.)"
+    - collection: OACBayfield_x_Hefeng25.gen.Li_Liu_2010
+      synopsis: "Identification of QTL underlying vitamin E contents in soybean seed among multiple environments"
+    - collection: OACMillennium_x_Heinong38.gen.Palomeque_Li-Jun_2009a
+      synopsis: "QTL in mega-environments: II. Agronomic trait QTL co-localized with seed yield QTL detected in a population derived from a cross of high-yielding adapted × high-yielding exotic soybean lines"
+    - collection: OACMillennium_x_Heinong38.gen.Palomeque_Li-Jun_2009b
+      synopsis: "QTL in mega-environments: I. Universal and specific seed yield QTL detected in a population derived from a cross of high-yielding adapted × high-yielding exotic soybean lines"
+    - collection: OACWallace_x_OACGlencoe.gen.Eskandari_Cober_2013a
+      synopsis: "Genetic control of soybean seed oil: I. QTL and genes associated with seed oil concentration in RIL populations derived from crossing moderately high-oil parents"
+    - collection: OACWallace_x_OACGlencoe.gen.Eskandari_Cober_2013b
+      synopsis: "Genetic control of soybean seed oil: II. QTL and genes that increase oil concentration without decreasing protein or with increased seed yield"
+    - collection: Ohsuzu_x_PI595926.gen.Kato_Sayama_2014
+      synopsis: "A major and stable QTL associated with seed weight in soybean across multiple environments and genetic backgrounds"
+    - collection: Osage_x_RA-452.gen.Zeng_Lara_2017
+      synopsis: "Quantitative Trait Loci for Chloride Tolerance in ‘Osage’ Soybean"
+    - collection: OX20-8_x_PI398841.gen.Lee_Mian_2013
+      synopsis: "Novel quantitative trait loci for partial resistance to Phytophthora sojae in soybean PI 398841"
+    - collection: P9254_x_A97-770012.gen.Charlson_Bailey_2005
+      synopsis: "Molecular Marker Satt481 is Associated with Iron‐Deficiency Chlorosis Resistance in a Soybean Breeding Population"
+    - collection: Parker_x_Gsoja.gen.Sebolt_Shoemaker_2000
+      synopsis: "Analysis of a Quantitative Trait Locus Allele from Wild Soybean That Increases Seed Protein Concentration in Soybean"
+    - collection: Peking_x_Essex.gen.Mahalmgam_Skorupska_1995
+      synopsis: "DNA Markers for Resistance to Heterodera glycines I. Race 3 in Soybean Cultivar Peking."
+    - collection: Peking_x_Essex.gen.Qiu_Arelli_1999
+      synopsis: "RFLP markers associated with soybean cyst nematode resistance and seed composition in a ‘Peking’×‘Essex’ population"
+    - collection: Peking_x_Keburi.gen.Song_Han_2010
+      synopsis: "Identification of QTL underlying somatic embryogenesis capacity of immature embryos in soybean (Glycine max (L.) Merr.)"
+    - collection: Peking_x_Tamahomare.gen.Sayama_Nakazaki_2009
+      synopsis: "QTL analysis of seed-flooding tolerance in soybean (Glycine max [L.] Merr.)"
+    - collection: Peking_x_Tamahomare.gen.Yoshikawa_Okumoto_2010
+      synopsis: "Transgressive segregation of isoflavone contents under the control of four QTLs in a cross between distantly related soybean varieties"
+    - collection: PI200538_x_CNS.gen.Tamulonis_Luzzi_1997
+      synopsis: "DNA marker analysis of loci conferring resistance to peanut root-knot nematode in soybean"
+    - collection: PI27890_x_PI290136.gen.Lark_Chase_1995
+      synopsis: "Interactions between quantitative trait loci in soybean in which trait variation at one locus is conditional upon a specific allele at another."
+    - collection: PI27890_x_PI290136.gen.Lark_Orf_1994
+      synopsis: "Epistatic expression of quantitative trait loci (QTL) in soybean [Glycine max (L.) Merr.] determined by QTL association with RFLP alleles"
+    - collection: PI27890_x_PI290136.gen.Mansur_Orf_1993
+      synopsis: "Determining the linkage of quantitative trait loci to RFLP markers using extreme phenotypes of recombinant inbreds of soybean (Glycine max L. Merr.)"
+    - collection: PI417479_x_Williams82.gen.Berger_Minor_1999
+      synopsis: "An RFLP Marker Associated with Resistance to Phomopsis Seed Decay in Soybean PI 417479"
+    - collection: PI437654_x_Bell.gen.Brucker_Carlson_2005
+      synopsis: "Rhg1 alleles from soybean PI 437654 and PI 88788 respond differentially to isolates of Heterodera glycines in the greenhouse"
+    - collection: PI437654_x_BSR101.gen.Webb_Baltazar_1995
+      synopsis: "Genetic mapping of soybean cyst nematode race-3 resistance loci in the soybean PI 437.654"
+    - collection: PI437654_x_Essex.gen.Wu_Blake_2009
+      synopsis: "QTL, additive and epistatic effects for SCN resistance in PI 437654"
+    - collection: PI438489B_x_Hamilton.gen.Bobby_Bazzelle_2012
+      synopsis: "Genetic Analysis of Yield Components in the PI 438489B by ‘Hamilton’ Recombinant Inbred Line (RIL) Population of Soybean [Glycine max (L.) Merr.]"
+    - collection: PI438489B_x_Hamilton.gen.Masum-Akond_Ragin_2012
+      synopsis: "Quantitative Trait Loci Associated with Moisture, Protein, and Oil Content in Soybean [Glycine max (L.) Merr.]"
+    - collection: PI438489B_x_Hamilton.gen.Yue_Arelli_2001
+      synopsis: "Molecular characterization of resistance to Heterodera glycines in soybean PI 438489B"
+    - collection: PI442031_x_Sterling.gen.Zhao_Ablett_2005
+      synopsis: "Inheritance and Genetic Mapping of Resistance to Rhizoctonia Root and Hypocotyl Rot in Soybean"
+    - collection: PI468916_x_A81-356022.gen.Kabelka_Carlson_2005
+      synopsis: "Localization of Two Loci that Confer Resistance to Soybean Cyst Nematode from <i>Glycine soja</i> PI 468916"
+    - collection: PI468916_x_A81-356022.gen.Nichols_Glover_2006
+      synopsis: "Fine Mapping of a Seed Protein QTL on Soybean Linkage Group I and Its Correlated Effects on Agronomic Traits"
+    - collection: PI468916_x_A81356022.gen.Wang_Diers_2001
+      synopsis: "Loci underlying resistance to Race 3 of soybean cyst nematode in Glycine soja plant introduction 468916"
+    - collection: PI483463_x_Hutcheson.gen.Asekova_Kulkarni_2016
+      synopsis: "Novel Quantitative Trait Loci for Forage Quality Traits in a Cross between PI 483463 and ‘Hutcheson’ in Soybean"
+    - collection: PI483463_x_Hutcheson.gen.Ha_Kim_2014
+      synopsis: "Identification of quantitative trait loci controlling linolenic acid concentration in PI483463 (Glycine soja)"
+    - collection: PI483463_x_Hutcheson.gen.Ha_Vuong_2013
+      synopsis: "Genetic mapping of quantitative trait loci conditioning salt tolerance in wild soybean (Glycine soja) PI 483463"
+    - collection: PI507531_x_Spencer.gen.Brzostowski_Pruski_2017
+      synopsis: "Impact of seed protein alleles from three soybean sources on seed composition and agronomic traits"
+    - collection: PI561356_x_LD02-4485.gen.Kim_Unfried_2012
+      synopsis: "Molecular mapping of soybean rust resistance in soybean accession PI 561356 and SNP haplotype analysis of the Rpp1 region in diverse germplasm"
+    - collection: PI567296B_x_Century84.gen.Patzoldt_Carlson_2005
+      synopsis: "Characterization of Resistance to Brown Stem Rot of Soybean in Five Accessions from Central China"
+    - collection: PI567541B_x_Skylla.gen.Zhang_Gu_2009
+      synopsis: "Molecular mapping of soybean aphid resistance genes in PI 567541B"
+    - collection: PI595645_x_PI416937.gen.Harris_Abdel-Haleem_2015
+      synopsis: "Soybean Quantitative Trait Loci Conditioning Soybean Rust-Induced Canopy Damage"
+    - collection: PI68658_x_Lawrence.gen.Fox_Cary_2015
+      synopsis: "Confirmation of a Seed Yield QTL in Soybean"
+    - collection: PI88287_x_PI89008.gen.Vaghchhipawala_Bass%C3%BCner_2001
+      synopsis: "Modulations in Gene Expression and Mapping of Genes Associated with Cyst Nematode Infection of Soybean"
+    - collection: PI89772_x_Hamilton.gen.Yue_Sleper_2001
+      synopsis: "Mapping Resistance to Multiple Races ofHeterodera glycinesin Soybean PI 89772"
+    - collection: PI96354_x_Bossier.gen.Li_Jakkula_2001
+      synopsis: "SSR mapping and confirmation of the QTL from PI96354 conditioning soybean resistance to southern root-knot nematode"
+    - collection: PI97100_x_Coker237.gen.Lee_Bailey_1996
+      synopsis: "Identification of quantitative trait loci for plant height, lodging, and maturity in a soybean population segregating for growth habit"
+    - collection: PI97100_x_Coker237.gen.Mian_Bailey_1996
+      synopsis: "Molecular markers associated with seed weight in two soybean populations"
+    - collection: PI97100_x_Coker237.gen.Mian_Shipe_1997
+      synopsis: "RFLP Analysis of Chlorimuron Ethyl Sensitivity in Soybean"
+    - collection: Pioneer9071_x_8902.gen.Rossi_Orf_2013
+      synopsis: "Genetic basis of soybean adaptation to North American vs. Asian mega-environments in two independent populations from Canadian × Chinese crosses"
+    - collection: Pioneer9071_x_Line8902.gen.Palomeque_Liu_2010
+      synopsis: "Validation of mega-environment universal and specific QTL associated with seed yield and agronomic traits in soybeans"
+    - collection: Pureunkong_x_Jinpumkong2.gen.Lee_Park_2001
+      synopsis: "Genetic mapping of QTLs conditioning soybean sprout yield and quality"
+    - collection: RG10_x_OX948.gen.Reinprecht_Poysa_2006
+      synopsis: "Seed and agronomic QTL in low linolenic acid, lipoxygenase-free soybean (Glycine max(L.) Merrill) germplasm"
+    - collection: RIL6013_x_RIL3613.gen.Ning_Yuan_2018
+      synopsis: "Identification of QTLs related to the vertical distribution and seed-set of pod number in soybean [Glycine max (L.) Merri]"
+    - collection: Ripley_x_Spencer.gen.de-Farias-Neto_Hashmi_2007
+      synopsis: "Mapping and confirmation of a new sudden death syndrome resistance QTL on linkage group D2 from the soybean genotypes PI 567374 and ‘Ripley’"
+    - collection: S-100_x_Tokyo.gen.Lee_Boerma_2004
+      synopsis: "A major QTL conditioning salt tolerance in S-100 soybean and descendent cultivars"
+    - collection: S08-80_x_PI464925B.gen.Winter_Shelp_2007
+      synopsis: "QTL associated with horizontal resistance to soybean cyst nematode in Glycine soja PI464925B"
+    - collection: S100_x_Tokyo.gen.Mian_Ashley_1998
+      synopsis: "QTLs conditioning early growth in a soybean population segregating for growth habit"
+    - collection: S19-90_x_Williams82.gen.Kim_Diers_2000
+      synopsis: "Inheritance of Partial Resistance to Sclerotinia Stem Rot in Soybean"
+    - collection: S99-2281_x_PI408105A.gen.Nguyen_Vuong_2012
+      synopsis: "Mapping of Quantitative Trait Loci Associated with Resistance toPhytophthora sojaeand Flooding Tolerance in Soybean"
+    - collection: SD02-4-59_x_A02-381100.gen.Wang_Jiang_2012
+      synopsis: "Quantitative trait locus analysis of saturated fatty acids in a population of recombinant inbred lines of soybean"
+    - collection: Skylla_x_E00290.gen.Kandel_Chen_2018
+      synopsis: "Soybean Resistance to White Mold: Evaluation of Soybean Germplasm Under Different Conditions and Validation of QTL"
+    - collection: Sowon_x_V94-5152.gen.Jeong_Moon_2011
+      synopsis: "Fine genetic mapping of the genomic region controlling leaflet shape and number of seeds per pod in the soybean"
+    - collection: SS-516_x_Camp.gen.Zhang_Chen_2008
+      synopsis: "Quantitative Trait Loci Mapping of Seed Hardness in Soybean"
+    - collection: SS-516_x_Camp.gen.Zhang_Chen_2009
+      synopsis: "Putative Quantitative Trait Loci Associated with Calcium Content in Soybean Seed"
+    - collection: Su88-M21S_x_XinyixiaoheidouX.gen.Wu_Zhou_2011
+      synopsis: "Identification of quantitative trait loci for partial resistance to Phytophthora sojae in soybean"
+    - collection: Taekwangkong_x_SS2-2.gen.Sun_Kim_2013a
+      synopsis: "QTLs for resistance to Phomopsis seed decay are associated with days to maturity in soybean (Glycine max)"
+    - collection: Taekwangkong_x_SS2-2.gen.Sun_Kim_2013b
+      synopsis: "QTLs for resistance to Phomopsis seed decay are associated with days to maturity in soybean (Glycine max)"
+    - collection: TK780_x_Hidaka4.gen.Shibata_Takayama_2008
+      synopsis: "Genetic relationship between lipid content and linolenic acid concentration in soybean seeds"
+    - collection: Tokei758_x_To-8E.gen.Sayama_Hwang_2010
+      synopsis: "Mapping and comparison of quantitative trait loci for soybean branching phenotype in two locations"
+    - collection: Toyoharuka_x_Toyomusume.gen.Ohnishi_Funatsuki_2011
+      synopsis: "Variation of GmIRCHS (Glycine max inverted-repeat CHS pseudogene) is related to tolerance of low temperature-induced seed coat discoloration in yellow soybean"
+    - collection: Toyomusume_x_Harosoy.gen.Yamada_Funatsuki_2009
+      synopsis: "A major QTL, qPDH1, is commonly involved in shattering resistance of soybean cultivars"
+    - collection: Toyomusume_x_Hayahikan.gen.Funatsuki_Kawaguchi_2005
+      synopsis: "Mapping of QTL associated with chilling tolerance during reproductive growth in soybean"
+    - collection: Toyomusume_x_Tsurukogane.gen.Ferdous_Watanabe_2006
+      synopsis: "QTL Analysis of Resistance to Soybean Cyst Nematode Race 3 in Soybean Cultivar Toyomusume"
+    - collection: Uzuramame_x_L67-3469.gen.Oyoo_Githiri_2010
+      synopsis: "QTL analysis of net-like cracking in soybean seed coats"
+    - collection: V71-370_x_PI407162.gen.Maughan_Maroof_1996
+      synopsis: "Molecular-marker analysis of seed-weight: genomic locations, gene action, and evidence for orthologous evolution among three legume species"
+    - collection: V71-370_x_PI407162.gen.Tucker_Saghai-Maroof_2010
+      synopsis: "Mapping Quantitative Trait Loci for Partial Resistance to<i>Phytophthora sojae</i>in a Soybean Interspecific Cross"
+    - collection: W05_x_C08.gen.Qi_Li_2014
+      synopsis: "Identification of a novel salt tolerance gene in wild soybean by whole-genome sequencing"
+    - collection: Wan82-178_x_TSBPHDJ.gen.Xing_Zhou_2012
+      synopsis: "Genetic components and major QTL confer resistance to bean pyralid (Lamprosema indicata Fabricius) under multiple environments in four RIL populations of soybean"
+    - collection: Wilis_x_Toyokomachi.gen.Uchibori_Sasaki_2009
+      synopsis: "QTL analysis for resistance to Soybean dwarf virus in Indonesian soybean cultivar Wilis"
+    - collection: Williams82_x_PI366121.gen.Dhungana_Kulkarni_2017
+      synopsis: "Mapping quantitative trait loci controlling soybean seed starch content in an interspecific cross of ‘Williams 82’ (Glycine max ) and ‘PI 366121’ (Glycine soja )"
+    - collection: Williams82_x_PI366121.gen.Lee_Yoo_2015
+      synopsis: "Detection of novel QTLs for foxglove aphid resistance in soybean"
+    - collection: Wyandot_x_PI567301B.gen.Jun_Rouf-Mian_2012
+      synopsis: "Genetic mapping revealed two loci for soybean aphid resistance in PI 567301B"
+    - collection: Wyandot_x_PI567301B.gen.Lee_Jun_2015
+      synopsis: "SNP markers linked to QTL conditioning plant height, lodging, and maturity in soybean"
+    - collection: Wyandot_x_PI567324.gen.Jun_Rouf-Mian_2013
+      synopsis: "Genetic mapping of three quantitative trait loci for soybean aphid resistance in PI 567324"
+    - collection: X3145-B-B-3-15_x_ACBrant.gen.Pandurangan_Pajak_2012
+      synopsis: "Relationship between asparagine metabolism and protein concentration in soybean seed"
+    - collection: Xiaoheidou_x_GR8836.gen.Wang_Cheng_2015
+      synopsis: "Genetic analysis and quantitative trait locus identification of the reproductive to vegetative growth period ratio in soybean (Glycine max (L.) Merr.)"
+    - collection: XuyongHongdouXu_x_Baohexuan3.gen.Cheng_Wang_2011
+      synopsis: "Genetic analysis and QTL detection of reproductive period and post-flowering photoperiod responses in soybean"
+    - collection: Y23_x_Hartwig.gen.Arriagada_Mora_2012
+      synopsis: "Bayesian mapping of quantitative trait loci (QTL) controlling soybean cyst nematode resistant"
+    - collection: Young_x_PI229358.gen.Bianchi-Hall_Carter_2000
+      synopsis: "Aluminum Tolerance Associated with Quantitative Trait Loci Derived from Soybean PI 416937 in Hydroponics"
+    - collection: Young_x_PI416937.gen.Bailey_Mian_1997
+      synopsis: "Pod Dehiscence of Soybean: Identification of Quantitative Trait Loci"
+    - collection: Young_x_PI416937.gen.Fasoula_Harris_2003
+      synopsis: "Identification, Mapping, and Confirmation of a Soybean Gene for Bud Blight Resistance"
+    - collection: Young_x_PI416937.gen.Fasoula_Harris_2004
+      synopsis: "Validation and Designation of Quantitative Trait Loci for Seed Protein, Seed Oil, and Seed Weight from Two Soybean Populations"
+    - collection: Young_x_PI416937.gen.Lee_Bailey_1996a
+      synopsis: "Molecular Markers Associated with Soybean Plant Height, Lodging, and Maturity across Locations"
+    - collection: Young_x_PI416937.gen.Lee_Bailey_1996b
+      synopsis: "RFLP loci associated with soybean seed protein and oil content across populations and locations"
+    - collection: Young_x_PI416937.gen.Mian_Ashley_1998a
+      synopsis: "An Additional QTL for Water Use Efficiency in Soybean"
+    - collection: Young_x_PI416937.gen.Mian_Ashley_1998b
+      synopsis: "An Additional QTL for Water Use Efficiency in Soybean"
+    - collection: Young_x_PI416937.gen.Mian_Bailey_1996
+      synopsis: "Molecular Markers Associated with Water Use Efficiency and Leaf Ash in Soybean"
+    - collection: ZDD09454_x_Yudou12.gen.Lu_Wen_2013
+      synopsis: "Identification of the quantitative trait loci (QTL) underlying water soluble protein content in soybean"
+    - collection: Zhongdou27_x_Jiunong20.gen.Meng_Han_2011
+      synopsis: "QTL underlying the resistance to soybean aphid (Aphis glycines Matsumura) through isoflavone-mediated antibiosis in soybean cultivar ‘Zhongdou 27’"
+    - collection: ZhongDou27_x_JiuNong20.gen.Wang_Han_2015
+      synopsis: "Mapping Isoflavone QTL with Main, Epistatic and QTL × Environment Effects in Recombinant Inbred Lines of Soybean"
+    - collection: Zhongdou27_x_Jiunong20.gen.Zeng_Li_2009
+      synopsis: "Identification of QTL underlying isoflavone contents in soybean seeds among multiple environments"
   genomes:
     - collection: FiskebyIII.gnm1.F177
       synopsis: "Glycine max genotype Fiskeby III genome assembly v1.0"
@@ -155,12 +731,16 @@ species:
     - collection: Zh35_IGA1004.gnm1.DBYJ
       synopsis: "Genome assembly files for cultivar Zhonghuang 35 (Zh35_IGA1004 in publication; WHFS_GmZH35_1.0 in the GenBank assembly record), Chu et al. (2021)"
   markers:
+    - collection: Wm82.gnm1.mrk.Li_Guo_2016
+      synopsis: "59,845 single-nucleotide polymorphisms identified from re-sequencing of 279 accessions from Yangtze-Huai soybean breeding germplasm."
     - collection: Wm82.gnm1.mrk.SoySNP50K
       synopsis: "SoySNP50K is an Illumina Infinium II BeadChip that contains over 50,000 SNPs from soybean useful for genotyping a wide variety of cultivated and wild soybean accessions."
     - collection: Wm82.gnm1.mrk.SoySNP6K
       synopsis: "Illumina Infinium SoySNP6K BeadChip"
-    - collection: Wm82.gnm2.mrk.Kim_Kim_2020
-      synopsis: "GWAS study of control of flowering time in soybean, genotyped with the 180k Axiom SoyaSNP array."
+    - collection: Wm82.gnm2.mrk.1536_USLP1
+      synopsis: "Universal Soy Linkage Panel (USLP 1.0) contains 1536 SNPs selected based on even distribution throughout each of the 20 consensus linkage groups and to have a broad range of allele frequencies in diverse germplasm."
+    - collection: Wm82.gnm2.mrk.Fang_Ma_2017
+      synopsis: "GWAS of 84 agronomic traits, conducted on 809 soybean accessions, with genotyping by resequencing."
     - collection: Wm82.gnm2.mrk.Li_Zhao_2019
       synopsis: "12,072 SNPs from Li, Zhao, et al. (2019), a seed protein and oil study."
     - collection: Wm82.gnm2.mrk.Meng_He_2016
@@ -175,6 +755,8 @@ species:
       synopsis: "SoySNP50K is an Illumina Infinium II BeadChip that contains over 50,000 SNPs from soybean useful for genotyping a wide variety of cultivated and wild soybean accessions."
     - collection: Wm82.gnm2.mrk.SoySNP6K
       synopsis: "Illumina Infinium SoySNP6K BeadChip"
+    - collection: Wm82.gnm2.mrk.Zhao_Teng_2017
+      synopsis: "A total of 200 diverse soybean accessions were screened for resistance to SCN HG Type 2.5.7 and genotyped through sequencing using SLAF-seq. A total of 33,194 SNPs were identified with minor allele frequencies (MAF) over 4%, covering 97% of all the genotypes."
 - name: soja
   annotations:
     - collection: F_IGA1003.gnm1.ann1.G61B
@@ -186,6 +768,8 @@ species:
   diversity:
   expression:
   genetic:
+    - collection: mixed.gwas.Hu_Zhang_2014
+      synopsis: "GWAS of soybean yield-related traits, conducted on 113 wild soybean accessions, genotyped with 85 simple sequence repeat (SSR) markers."
   genomes:
     - collection: F_IGA1003.gnm1.V9RB
       synopsis: "Genome assembly files for Glycine soja F (F_IGA1003 in publication; WHFS_GsojaF_1.0 in the GenBank assembly record), Chu et al. (2021)"

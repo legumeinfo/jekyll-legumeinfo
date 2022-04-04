@@ -10,7 +10,8 @@ species:
   genus: Pisum
   species: sativum
   strains:
-  - description: The variety Cameor was released by the French breeding company Seminor
+  - accession: Cameor
+    description: The variety Cameor was released by the French breeding company Seminor
       in 1973.
     identifier: Cameor
     name: Cameor
