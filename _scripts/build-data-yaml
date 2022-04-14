@@ -1,0 +1,15 @@
+#!/bin/sh
+## script to build new _data files
+## requires python 3.9+ version of pyyaml
+
+## clone a local copy of the Datastore metadata
+git clone https://github.com/legumeinfo/datastore-metadata
+
+## generate the species_resources YAML files
+python3.9 genus_species_resources.py
+
+## generate the genes_specues_collections YAML files
+python3.9 genus_species_collections.py
+
+## remove the copy of the Datastore metadata
+rm -rf datastore-metadata
