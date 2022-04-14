@@ -6,10 +6,10 @@
 git clone https://github.com/legumeinfo/datastore-metadata
 
 ## generate the species_resources YAML files
-python3.9 genus_species_resources.py
+python3 genus_species_resources.py
 
 ## generate the genes_specues_collections YAML files
-python3.9 genus_species_collections.py
+python3 genus_species_collections.py
 
 ## remove the copy of the Datastore metadata
 rm -rf datastore-metadata
