@@ -166,7 +166,7 @@ species:
     - collection: Cobb_x_PI229358.gen.Rector_All_2000
       synopsis: "Quantitative Trait Loci for Antibiosis Resistance to Corn Earworm in Soybean"
     - collection: Conrad_x_Harosoy.gen.Burnham_Dorrance_2003
-      synopsis: "Quantitative Trait Loci for Partial Resistance to Phytophthora sojae in Soybean"
+      synopsis: "Quantitative Trait Loci for Partial Resistance to <i>Phytophthora sojae</i> in Soybean"
     - collection: Conrad_x_Hefeng25.gen.Mideros_Nita_2007
       synopsis: "Characterization of Components of Partial Resistance, <i>Rps</i>2, and Root Resistance to <i>Phytophthora sojae</i> in Soybean"
     - collection: Conrad_x_OX760-6-1.gen.Han_Teng_2008
@@ -174,11 +174,11 @@ species:
     - collection: Conrad_x_OX760-6-1.gen.Weng_Yu_2007
       synopsis: "A quantitative trait locus influencing tolerance to Phytophthora root rot in the soybean cultivar ‘Conrad’"
     - collection: Conrad_x_Sloan.gen.Ellis_Wang_2012
-      synopsis: "Identification of Soybean Genotypes Resistant toFusarium graminearumand Genetic Mapping of Resistance Quantitative Trait Loci in the Cultivar Conrad"
+      synopsis: "Identification of Soybean Genotypes Resistant to<i>Fusarium graminearum</i>and Genetic Mapping of Resistance Quantitative Trait Loci in the Cultivar Conrad"
     - collection: Conrad_x_Sloan.gen.Wang_St.-Martin_2012
-      synopsis: "Comparison of Phenotypic Methods and Yield Contributions of Quantitative Trait Loci for Partial Resistance toPhytophthora sojaein Soybean"
+      synopsis: "Comparison of Phenotypic Methods and Yield Contributions of Quantitative Trait Loci for Partial Resistance to<i>Phytophthora sojae</i>in Soybean"
     - collection: Conrad_x_Sloan.gen.Wang_Waller_2010
-      synopsis: "Analysis of Genes Underlying Soybean Quantitative Trait Loci Conferring Partial Resistance to Phytophthora sojae"
+      synopsis: "Analysis of Genes Underlying Soybean Quantitative Trait Loci Conferring Partial Resistance to <i>Phytophthora sojae</i>"
     - collection: Conrad_x_Sloan.gen.Wang_Wijeratne_2012a
       synopsis: "Dissection of two soybean QTL conferring partial resistance to Phytophthora sojae through sequence and gene expression analysis"
     - collection: Conrad_x_Sloan.gen.Wang_Wijeratne_2012b
@@ -210,9 +210,9 @@ species:
     - collection: Essex_x_Forrest.gen.Josie_Alcivar_2007
       synopsis: "Research Article: Genomic regions containing QTL for plant height, internodes length, and flower color in soybean [Glycine max (L.) Merr]"
     - collection: Essex_x_Forrest.gen.Kassem_Meksem_2004a
-      synopsis: "Loci underlying resistance to manganese toxicity mapped in a soybean recombinant inbred line population of `Essex' x `Forrest'"
+      synopsis: "Definition of Soybean Genomic Regions That Control Seed Phytoestrogen Amounts"
     - collection: Essex_x_Forrest.gen.Kassem_Meksem_2004b
-      synopsis: "QTL experiment reported in 10.1023/b:plso.0000030189.96115.21"
+      synopsis: "Loci underlying resistance to manganese toxicity mapped in a soybean recombinant inbred line population of `Essex' x `Forrest'"
     - collection: Essex_x_Forrest.gen.Meksem_Doubler_1999
       synopsis: "Clustering among loci underlying soybean resistance to Fusarium solani, SDS and SCN in near-isogenic lines"
     - collection: Essex_x_Forrest.gen.Meksem_Pantazopoulos_2001
@@ -284,7 +284,7 @@ species:
     - collection: JP110755_x_Fukuyutaka.gen.Kuroda_Kaga_2013
       synopsis: "QTL affecting fitness of hybrids between wild and cultivated soybeans in experimental fields"
     - collection: JWS156-1_x_Jackson.gen.Tuyen_Lal_2010
-      synopsis: "Identification of a major QTL allele from wild soybean (Glycine soja Sieb. & Zucc.) for increasing alkaline salt tolerance in soybean"
+      synopsis: "Identification of a major QTL allele from wild soybean (Glycine soja Sieb. &amp; Zucc.) for increasing alkaline salt tolerance in soybean"
     - collection: Jackson_x_JWS156-1.gen.Hamwieh_Xu_2008
       synopsis: "Conserved salt tolerance quantitative trait locus (QTL) in wild and cultivated soybeans"
     - collection: Jidou12_x_JiNF58.gen.Shi_Yan_2018
@@ -322,7 +322,7 @@ species:
     - collection: KefengNo1_x_Nannong.gen.Li_Wang_2005
       synopsis: "QTL experiment reported in 10.1007/s10681-005-1192-4"
     - collection: KefengNo1_x_Nannong1138-2.gen.Ma_Kan_2016
-      synopsis: "Quantitative Trait Loci (QTL) Mapping for Glycinin and β-Conglycinin Contents in Soybean (Glycine max L. Merr.)"
+      synopsis: "Quantitative Trait Loci (QTL) Mapping for Glycinin and β-Conglycinin Contents in Soybean (<i>Glycine max</i> L. Merr.)"
     - collection: KefengNo1_x_Nannong1138-2.gen.Yan_Wang_2015
       synopsis: "Detection and fine‐mapping of SC7 resistance genes via linkage and association analysis in soybean"
     - collection: KefengNo1_x_Nannong1138-2.gen.Yang_Zhao_2011
@@ -355,8 +355,6 @@ species:
       synopsis: "Genetic Mapping of QTLs Underlying Partial Resistance to in Soybean PI 391589A and PI 391589B"
     - collection: L-10_x_Heinong37.gen.Chang_Dong_2011
       synopsis: "QTL underlying resistance to two HG types of Heterodera glycines found in soybean cultivar 'L-10'"
-    - collection: L78-4094_x_Century84.gen.Bachman_Tamulonis_2001
-      synopsis: "Molecular Markers Linked to Brown Stem Rot Resistance Genes,Rbs1andRbs2, in Soybean"
     - collection: LD00-2817P_x_LDX01-1-65.gen.Valdés-López_Thibivilliers_2011
       synopsis: "Identification of Quantitative Trait Loci Controlling Gene Expression during the Innate Immunity Response of Soybean    "
     - collection: Lineage69_x_Tucunare.gen.Leite_Pinheiro_2016
@@ -398,7 +396,7 @@ species:
     - collection: Minsoy_x_Archer.gen.Stombaugh_Orf_2004
       synopsis: "Quantitative Trait Loci Associated with Cell Wall Polysaccharides in Soybean Seed"
     - collection: Minsoy_x_Noir1.gen.Njiti_Lightfoot_2006
-      synopsis: "Genetic analysis infers Dt loci underlie resistance to Fusarium solani f. sp. glycines in indeterminate soybeans"
+      synopsis: "Genetic analysis infers <i>Dt</i> loci underlie resistance to <i>Fusarium solani</i> f. sp. <i>glycines</i> in indeterminate soybeans"
     - collection: Minsoy_x_Noir1.gen.Specht_Chase_2001
       synopsis: "Soybean Response to Water: A QTL Analysis of Drought Tolerance"
     - collection: Minsoy_x_Noir1.gen.Terry_Chase_2000
@@ -518,7 +516,7 @@ species:
     - collection: PI88287_x_PI89008.gen.Vaghchhipawala_Bassüner_2001
       synopsis: "Modulations in Gene Expression and Mapping of Genes Associated with Cyst Nematode Infection of Soybean"
     - collection: PI89772_x_Hamilton.gen.Yue_Sleper_2001
-      synopsis: "Mapping Resistance to Multiple Races ofHeterodera glycinesin Soybean PI 89772"
+      synopsis: "Mapping Resistance to Multiple Races of<i>Heterodera glycines</i>in Soybean PI 89772"
     - collection: PI96354_x_Bossier.gen.Li_Jakkula_2001
       synopsis: "SSR mapping and confirmation of the QTL from PI96354 conditioning soybean resistance to southern root-knot nematode"
     - collection: PI97100_x_Coker237.gen.Lee_Bailey_1996
@@ -546,7 +544,7 @@ species:
     - collection: Pureunkong_x_Jinpumkong2.gen.Lee_Park_2001
       synopsis: "Genetic mapping of QTLs conditioning soybean sprout yield and quality"
     - collection: RG10_x_OX948.gen.Reinprecht_Poysa_2006
-      synopsis: "Seed and agronomic QTL in low linolenic acid, lipoxygenase-free soybean (Glycine max(L.) Merrill) germplasm"
+      synopsis: "Seed and agronomic QTL in low linolenic acid, lipoxygenase-free soybean (<i>Glycine max</i>(L.) Merrill) germplasm"
     - collection: RIL6013_x_RIL3613.gen.Ning_Yuan_2018
       synopsis: "Identification of QTLs related to the vertical distribution and seed-set of pod number in soybean [Glycine max (L.) Merri]"
     - collection: Ripley_x_Spencer.gen.de-Farias-Neto_Hashmi_2007
@@ -557,10 +555,12 @@ species:
       synopsis: "QTL associated with horizontal resistance to soybean cyst nematode in Glycine soja PI464925B"
     - collection: S100_x_Tokyo.gen.Mian_Ashley_1998
       synopsis: "QTLs conditioning early growth in a soybean population segregating for growth habit"
+    - collection: S19-90_x_Williams82.gen.Arahana_Graef_2001
+      synopsis: "Identification of QTLs for Resistance to<i>Sclerotinia sclerotiorum</i>in Soybean"
     - collection: S19-90_x_Williams82.gen.Kim_Diers_2000
       synopsis: "Inheritance of Partial Resistance to Sclerotinia Stem Rot in Soybean"
     - collection: S99-2281_x_PI408105A.gen.Nguyen_Vuong_2012
-      synopsis: "Mapping of Quantitative Trait Loci Associated with Resistance toPhytophthora sojaeand Flooding Tolerance in Soybean"
+      synopsis: "Mapping of Quantitative Trait Loci Associated with Resistance to<i>Phytophthora sojae</i>and Flooding Tolerance in Soybean"
     - collection: SD02-4-59_x_A02-381100.gen.Wang_Jiang_2012
       synopsis: "Quantitative trait locus analysis of saturated fatty acids in a population of recombinant inbred lines of soybean"
     - collection: SS-516_x_Camp.gen.Zhang_Chen_2008
@@ -602,7 +602,7 @@ species:
     - collection: Wilis_x_Toyokomachi.gen.Uchibori_Sasaki_2009
       synopsis: "QTL analysis for resistance to Soybean dwarf virus in Indonesian soybean cultivar Wilis"
     - collection: Williams82_x_PI366121.gen.Dhungana_Kulkarni_2017
-      synopsis: "Mapping quantitative trait loci controlling soybean seed starch content in an interspecific cross of ‘Williams 82’ (Glycine max ) and ‘PI 366121’ (Glycine soja )"
+      synopsis: "Mapping quantitative trait loci controlling soybean seed starch content in an interspecific cross of ‘Williams 82’ (<i>Glycine max</i> ) and ‘PI 366121’ (<i>Glycine soja</i> )"
     - collection: Williams82_x_PI366121.gen.Lee_Yoo_2015
       synopsis: "Detection of novel QTLs for foxglove aphid resistance in soybean"
     - collection: Wyandot_x_PI567301B.gen.Jun_Rouf-Mian_2012
@@ -757,6 +757,57 @@ species:
       synopsis: "Axiom SoyaSNP180K array with 180,981 SNPs developed by Lee, et al. (2015)."
     - collection: Wm82.gnm2.mrk.Zhao_Teng_2017
       synopsis: "A total of 200 diverse soybean accessions were screened for resistance to SCN HG Type 2.5.7 and genotyped through sequencing using SLAF-seq. A total of 33,194 SNPs were identified with minor allele frequencies (MAF) over 4%, covering 97% of all the genotypes."
+  maps:
+    - collection: mixed.map.GmComposite1999
+      synopsis: "Consensus genetic map GmComposite1999 from SoyBase."
+    - collection: mixed.map.GmComposite2003
+      synopsis: "Consensus genetic map GmComposite2003 from SoyBase."
+    - collection: mixed.map.GmFeChlorosis
+      synopsis: "Consensus genetic map GmFeChlorosis from SoyBase."
+    - collection: mixed.map.GmFeChlorosis2
+      synopsis: "Consensus genetic map GmFeChlorosis2 from SoyBase."
+    - collection: mixed.map.GmRAPD-SIU
+      synopsis: "Consensus genetic map GmRAPD-SIU from SoyBase."
+    - collection: mixed.map.GmRAPD-Sclero
+      synopsis: "Consensus genetic map GmRAPD-Sclero from SoyBase."
+    - collection: mixed.map.GmRFLP-CEW
+      synopsis: "Consensus genetic map GmRFLP-CEW from SoyBase."
+    - collection: mixed.map.GmRFLP-CEW2
+      synopsis: "Consensus genetic map GmRFLP-CEW2 from SoyBase."
+    - collection: mixed.map.GmRFLP-CEW3
+      synopsis: "Consensus genetic map GmRFLP-CEW3 from SoyBase."
+    - collection: mixed.map.GmRFLP-Chiba
+      synopsis: "Consensus genetic map GmRFLP-Chiba from SoyBase."
+    - collection: mixed.map.GmRFLP-Chiba2
+      synopsis: "Consensus genetic map GmRFLP-Chiba2 from SoyBase."
+    - collection: mixed.map.GmRFLP-GA1996a
+      synopsis: "Consensus genetic map GmRFLP-GA1996a from SoyBase."
+    - collection: mixed.map.GmRFLP-GA1996b
+      synopsis: "Consensus genetic map GmRFLP-GA1996b from SoyBase."
+    - collection: mixed.map.GmRFLP-GA1998
+      synopsis: "Consensus genetic map GmRFLP-GA1998 from SoyBase."
+    - collection: mixed.map.GmRFLP-JPT
+      synopsis: "Consensus genetic map GmRFLP-JPT from SoyBase."
+    - collection: mixed.map.GmRFLP-KGL
+      synopsis: "Consensus genetic map GmRFLP-KGL from SoyBase."
+    - collection: mixed.map.GmRFLP-USDAARS-RCS
+      synopsis: "Consensus genetic map GmRFLP-USDAARS-RCS from SoyBase."
+    - collection: mixed.map.GmSCN
+      synopsis: "Consensus genetic map GmSCN from SoyBase."
+    - collection: mixed.map.GmSSR-MO
+      synopsis: "Consensus genetic map GmSSR-MO from SoyBase."
+    - collection: mixed.map.GmSSR-SIU
+      synopsis: "Consensus genetic map GmSSR-SIU from SoyBase."
+    - collection: mixed.map.GmSSR-Utah
+      synopsis: "Consensus genetic map GmSSR-Utah from SoyBase."
+    - collection: mixed.map.GmSSR-Utah2
+      synopsis: "Consensus genetic map GmSSR-Utah2 from SoyBase."
+    - collection: mixed.map.GmSSR-Utah3
+      synopsis: "Consensus genetic map GmSSR-Utah3 from SoyBase."
+    - collection: mixed.map.GmUSDA1997
+      synopsis: "Consensus genetic map GmUSDA1997 from SoyBase."
+    - collection: mixed.map.GmUtah1996
+      synopsis: "Consensus genetic map GmUtah1996 from SoyBase."
 - name: soja
   annotations:
     - collection: F_IGA1003.gnm1.ann1.G61B
