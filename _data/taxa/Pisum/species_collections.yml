@@ -4,10 +4,6 @@ species:
   annotations:
     - collection: Cameor.gnm1.ann1.7SZR
       synopsis: "Pisum sativum accession Cameor annotation files on genome assembly version 1a"
-  diversity:
-  expression:
-  genetic:
   genomes:
     - collection: Cameor.gnm1.P4FG
       synopsis: "Pisum sativum accession Cameor genome assembly version 1a"
-  markers:
