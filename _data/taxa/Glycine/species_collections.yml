@@ -320,7 +320,7 @@ species:
     - collection: KefengNo1_x_1138-2.gen.Gai_Wang_2007
       synopsis: "A comparative study on segregation analysis and QTL mapping of quantitative traits in plants—with a case in soybean"
     - collection: KefengNo1_x_Nannong.gen.Li_Wang_2005
-      synopsis: "QTL experiment reported in 10.1007/s10681-005-1192-4"
+      synopsis: "QTL mapping of phosphorus deficiency tolerance in soybean (Glycine max L. Merr.)"
     - collection: KefengNo1_x_Nannong1138-2.gen.Ma_Kan_2016
       synopsis: "Quantitative Trait Loci (QTL) Mapping for Glycinin and β-Conglycinin Contents in Soybean (<i>Glycine max</i> L. Merr.)"
     - collection: KefengNo1_x_Nannong1138-2.gen.Yan_Wang_2015
@@ -329,8 +329,6 @@ species:
       synopsis: "Mapping QTLs for tissue culture response in soybean (Glycine max (L.) Merr.)"
     - collection: KefengNo1_x_Nannong1138-2.gen.Zhang_Wang_2004
       synopsis: "QTL mapping of ten agronomic traits on the soybean (Glycine max L. Merr.) genetic map and their association with EST markers"
-    - collection: KenfengNo1_x_Nannong.gen.Li_Wang_2005
-      synopsis: "QTL mapping of phosphorus deficiency tolerance in soybean (Glycine max L. Merr.)"
     - collection: Kenjian4_x_Fengshou24.gen.Hu_Zhang_2013
       synopsis: "Determination of the genetic architecture of seed size and shape via linkage and association analysis in soybean (Glycine max L. Merr.)"
     - collection: Kenjian4_x_Fengshou24.gen.Wu_Xu_2012
@@ -731,14 +729,20 @@ species:
     - collection: Zh35_IGA1004.gnm1.DBYJ
       synopsis: "Genome assembly files for cultivar Zhonghuang 35 (Zh35_IGA1004 in publication; WHFS_GmZH35_1.0 in the GenBank assembly record), Chu et al. (2021)"
   markers:
+    - collection: Wm82.gnm1.mrk.BARCSOYSSR
+      synopsis: "BARCSOYSSR contains 33,065 locus-specific SSR markers with di-, tri-, and tetranucleotide repeats of five or more."
     - collection: Wm82.gnm1.mrk.Li_Guo_2016
       synopsis: "59,845 single-nucleotide polymorphisms identified from re-sequencing of 279 accessions from Yangtze-Huai soybean breeding germplasm."
     - collection: Wm82.gnm1.mrk.SoySNP50K
       synopsis: "SoySNP50K is an Illumina Infinium II BeadChip that contains over 50,000 SNPs from soybean useful for genotyping a wide variety of cultivated and wild soybean accessions."
     - collection: Wm82.gnm1.mrk.SoySNP6K
       synopsis: "Illumina Infinium SoySNP6K BeadChip"
+    - collection: Wm82.gnm1.mrk.SoySSR
+      synopsis: "This marker set contains SSRs developed and published by Cregan, et al. in 1999, with names starting with Satt or Sat_."
     - collection: Wm82.gnm2.mrk.1536_USLP1
       synopsis: "Universal Soy Linkage Panel (USLP 1.0) contains 1536 SNPs selected based on even distribution throughout each of the 20 consensus linkage groups and to have a broad range of allele frequencies in diverse germplasm."
+    - collection: Wm82.gnm2.mrk.BARCSOYSSR
+      synopsis: "BARCSOYSSR contains 33,065 locus-specific SSR markers with di-, tri-, and tetranucleotide repeats of five or more."
     - collection: Wm82.gnm2.mrk.Fang_Ma_2017
       synopsis: "GWAS of 84 agronomic traits, conducted on 809 soybean accessions, with genotyping by resequencing."
     - collection: Wm82.gnm2.mrk.Li_Zhao_2019
@@ -753,6 +757,8 @@ species:
       synopsis: "SoySNP50K is an Illumina Infinium II BeadChip that contains over 50,000 SNPs from soybean useful for genotyping a wide variety of cultivated and wild soybean accessions."
     - collection: Wm82.gnm2.mrk.SoySNP6K
       synopsis: "Illumina Infinium SoySNP6K BeadChip"
+    - collection: Wm82.gnm2.mrk.SoySSR
+      synopsis: "This marker set contains SSRs developed and published by Cregan, et al. in 1999, with names starting with Satt or Sat_."
     - collection: Wm82.gnm2.mrk.SoyaSNP180K
       synopsis: "Axiom SoyaSNP180K array with 180,981 SNPs developed by Lee, et al. (2015)."
     - collection: Wm82.gnm2.mrk.Zhao_Teng_2017
