@@ -7,6 +7,21 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>LegumeInfo request your assistance</title>
+        <description>&lt;p&gt;We are asking you to participate in a survey about standardized data curation principles and their implementation in data repositories for agricultural research and breeding programs. This survey was developed by the &lt;a href=&quot;https://www.agbiodata.org&quot;&gt;AgBioData consortium&lt;/a&gt;, in which our database is a participant.&lt;/p&gt;
+
+&lt;p&gt;The survey is anonymous, and your answers will be used to shape AgBioData’s future goals and solutions for standardized data management in agriculture.&lt;/p&gt;
+
+&lt;p&gt;If you are willing to participate, please submit your answers &lt;a href=&quot;https://ncsu.qualtrics.com/jfe/form/SV_9Zv0sSXJhdz2bYO&quot;&gt;here&lt;/a&gt; by May 16th, 2022.&lt;/p&gt;
+
+&lt;p&gt;Your opinion is valuable to us and can help AgBioData define better genomic, genetic, and breeding data curation practices.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 06 May 2022 00:00:00 +0000</pubDate>
+        <link>/news/general/2022/05/06/news.html</link>
+        <guid isPermaLink="true">/news/general/2022/05/06/news.html</guid>
+      </item>
+    
+      <item>
         <title>Welcome to the new LIS site!</title>
         <description>&lt;p&gt;The LIS team has re-designed and reengineered the site from the ground up, in order to better accommodate and make use of the dramatic influx of new, high-quality genomic data being generated for all legume crops. Here are some of the main changes:&lt;/p&gt;
 &lt;ul&gt;
