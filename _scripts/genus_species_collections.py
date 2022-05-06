@@ -27,7 +27,7 @@ for taxon in taxonList:
             collectionsDir = speciesDir+"/"+collectionType+"/"
             if os.path.isdir(collectionsDir):
                 print('  '+collectionType+':', file=speciesCollectionsFile)
-                for collection in os.listdir(collectionsDir):
+                for collection in sorted(os.listdir(collectionsDir)):
                     readmeFile = collectionsDir+collection+"/"+"README."+collection+".yml"
                     rf = open(readmeFile, 'r')
                     readme = yaml.load(rf.read(), Loader=yaml.FullLoader)

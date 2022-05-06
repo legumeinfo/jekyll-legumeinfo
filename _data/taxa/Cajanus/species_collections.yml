@@ -2,18 +2,18 @@
 species:
 - name: cajan
   annotations:
-    - collection: ICPL87119.gnm2.ann1.L3ZH
-      synopsis: "genome annotation of Cajanus cajan (ICPL87119 genoome assembly 2)"
     - collection: ICPL87119.gnm1.ann1.Y27M
       synopsis: "Cajanus cajan accession ICPL87119 genome annotation, v1.0"
+    - collection: ICPL87119.gnm2.ann1.L3ZH
+      synopsis: "genome annotation of Cajanus cajan (ICPL87119 genoome assembly 2)"
   expression:
     - collection: ICPL87119.gnm1.ann1.expr.4H6Z
       synopsis: "Cajanus cajan accession ICPL87119 gene expression atlas"
   genomes:
-    - collection: ICPL87119.gnm2.KL9M
-      synopsis: "Cajanus cajan genotype ICPL87119 genome assembly v2.0"
     - collection: ICPL87119.gnm1.SBGP
       synopsis: "Cajanus cajon accession ICPL87119 genome assembly, v1.0"
+    - collection: ICPL87119.gnm2.KL9M
+      synopsis: "Cajanus cajan genotype ICPL87119 genome assembly v2.0"
   markers:
     - collection: mixed.mrk.1drZ
       synopsis: "Intron-spanning primers, derived from transcriptome assembly described in Kudapa et al. 2012"

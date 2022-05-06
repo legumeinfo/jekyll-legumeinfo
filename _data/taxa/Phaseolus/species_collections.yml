@@ -9,16 +9,16 @@ species:
       synopsis: "Phaseolus lunatus accession G27455 genome assembly V1"
 - name: vulgaris
   annotations:
+    - collection: 5-593.gnm1.ann1.3FBJ
+      synopsis: "Phaseolus vulgaris accession 5-593 (Middle American race), annotation 1, genome assembly v1."
     - collection: G19833.gnm1.ann1.pScz
       synopsis: "Phaseolus vulgaris accession G19833 annotation files"
     - collection: G19833.gnm2.ann1.PB8d
       synopsis: "Phaseolus vulgaris accession G19833 annotation files from genome assembly 2.0"
-    - collection: 5-593.gnm1.ann1.3FBJ
-      synopsis: "Phaseolus vulgaris accession 5-593 (Middle American race), annotation 1, genome assembly v1."
-    - collection: UI111.gnm1.ann1.8L4N
-      synopsis: "Phaseolus vulgaris accession UI111 annotation files from genome assembly 1.0"
     - collection: LaborOvalle.gnm1.ann1.L1DY
       synopsis: "Phaseolus vulgaris accession Labor Ovalle (race Guatemala), annotation 1, genome assembly v1."
+    - collection: UI111.gnm1.ann1.8L4N
+      synopsis: "Phaseolus vulgaris accession UI111 annotation files from genome assembly 1.0"
   diversity:
     - collection: G19833.gnm1.div.Moghaddam_Mamidi_2016
       synopsis: "Genotyping (variant) data for two diverse collections of Phaseolus vulgaris accessions: the Mesoamerican Diversity Panel (MDP) and the Andean Diversity Panel (ADP)."
@@ -26,113 +26,113 @@ species:
     - collection: G19833.gnm1.ann1.expr.4ZDQ
       synopsis: "LIS expression dataset phavu1 (An RNA-Seq based gene expression atlas of the common bean cv. Negro jamapa)."
   genetic:
-    - collection: G2333_x_G19839.gen.Checa_Blair_2008
-      synopsis: "The G2333_x_G19839_a genetic map contains all 11 common bean linkage groups.  It has a total length of 1175 cM and 149 mapped total markers."
-    - collection: mixed.gwas.DiVittori_Bitocchi_2021
-      synopsis: "GWAS of pod dehiscence in Common bean, relative to the G19833 assembly 2."
     - collection: BAT93_x_JALOEEP558.gen.Caldas_Blair_2009
       synopsis: "Three RIL populations were used to find QTLs for seed color."
-    - collection: mixed.gwas.Tigist_Melis_2019
-      synopsis: "GWAS of Mexican bean weevil (Zabrotes subfasciatus) resistance for Common bean, relative to the G19833 assembly 2.0."
-    - collection: mixed.gwas.Paulino_Almeida_2021
-      synopsis: "GWAS of Fusarium wilt resistance for Common bean, relative to the G19833 assembly 2.0."
-    - collection: mixed.gwas.Shi_Gepts_2021
-      synopsis: "GWAS of Soybean Cyst Nematode resistance in Common bean, relative to the the G19833 assembly 1."
-    - collection: ICABunsi_x_SXB405.gen.Parker_BernyMierYTeran_2020
-      synopsis: "Pod Dehiscence QTLs were identified using three phenotyping methods and an ICA Bunsi (PD-susceptible) x SXB 405 (PD-resistant) recombinant inbred mapping population."
-    - collection: mixed.gwas.Wu_Wang_2020
-      synopsis: "GWAS of agronomic, architecture, and biotic stress traits at different locations within China for Common bean, relative to the G19833 assembly 1.0."
-    - collection: mixed.gwas.Myers_Wallace_2019
-      synopsis: "GWAS of total phenolic content of pods, pod color, and flower color in Snap beans, relative to the G19833 assembly 2."
-    - collection: DOR364_x_BAT477.gen.Blair_Galeano_2012
-      synopsis: "A mapping population of 113 RILs in the F5:7 generation was generated using a DOR364 by BAT477 cross."
-    - collection: mixed.gwas.Jain_Poromarto_2019
-      synopsis: "GWAS of Soybean cyst nematode (Heterodera glycines) resistance in common bean, relative to G19833 assembly 1."
-    - collection: mixed.gwas.Parker_BernyMierYTeran_2020
-      synopsis: "GWAS study of pod dehiscence in Phaseolus vulgaris dry beans, using the Andean and Mesoamerican Diversity Panels."
-    - collection: Xana_x_Cornell49242.gen.Gaitán-Solís_Duque_2002
-      synopsis: "A map of 175 AFLP, 27 microsatellite, 30 SCAR, 33 ISSR, and 12 RAPD markers, as well as 13 loci coding for seed proteins, and four traditional genes (Fin/fin for growth habit, Asp/asp for seed coat shininess, P/p for seed color, and I/i for resistance to bean common mosaic virus)."
-    - collection: mixed.gwas.Oladzad_Porch_2019
-      synopsis: "GWAS of production traits under heat and drought stress in Common bean, relative to the the G19833 assembly 2."
-    - collection: mixed.gwas.Raggi_Caproni_2019
-      synopsis: "GWAS study of flowering time control in a panel of homozygous 192 common bean accessions derived from landraces."
-    - collection: mixed.gwas.Zitnick-Anderson_Oladzad_2020
-      synopsis: "GWAS of Fusarium root rot resistance in Common Bean, relative to the G19833 assembly 2."
     - collection: Cerinza_x_G24404.gen.Blair_Iriarte_2006
       synopsis: "Agronomic performance traits were studied in a population of BC2F(3:5) introgression lines created from the cross of a Colombian large red-seeded commercial cultivar, ICA Cerinza, and a wild common bean accession, G24404."
+    - collection: DOR364_x_BAT477.gen.Blair_Galeano_2012
+      synopsis: "A mapping population of 113 RILs in the F5:7 generation was generated using a DOR364 by BAT477 cross."
+    - collection: G2333_x_G19839.gen.Checa_Blair_2008
+      synopsis: "The G2333_x_G19839_a genetic map contains all 11 common bean linkage groups.  It has a total length of 1175 cM and 149 mapped total markers."
+    - collection: ICABunsi_x_SXB405.gen.Parker_BernyMierYTeran_2020
+      synopsis: "Pod Dehiscence QTLs were identified using three phenotyping methods and an ICA Bunsi (PD-susceptible) x SXB 405 (PD-resistant) recombinant inbred mapping population."
+    - collection: Xana_x_Cornell49242.gen.Gaitán-Solís_Duque_2002
+      synopsis: "A map of 175 AFLP, 27 microsatellite, 30 SCAR, 33 ISSR, and 12 RAPD markers, as well as 13 loci coding for seed proteins, and four traditional genes (Fin/fin for growth habit, Asp/asp for seed coat shininess, P/p for seed color, and I/i for resistance to bean common mosaic virus)."
+    - collection: mixed.gwas.DiVittori_Bitocchi_2021
+      synopsis: "GWAS of pod dehiscence in Common bean, relative to the G19833 assembly 2."
+    - collection: mixed.gwas.Jain_Poromarto_2019
+      synopsis: "GWAS of Soybean cyst nematode (Heterodera glycines) resistance in common bean, relative to G19833 assembly 1."
+    - collection: mixed.gwas.Myers_Wallace_2019
+      synopsis: "GWAS of total phenolic content of pods, pod color, and flower color in Snap beans, relative to the G19833 assembly 2."
+    - collection: mixed.gwas.Oladzad_Porch_2019
+      synopsis: "GWAS of production traits under heat and drought stress in Common bean, relative to the the G19833 assembly 2."
+    - collection: mixed.gwas.Parker_BernyMierYTeran_2020
+      synopsis: "GWAS study of pod dehiscence in Phaseolus vulgaris dry beans, using the Andean and Mesoamerican Diversity Panels."
+    - collection: mixed.gwas.Paulino_Almeida_2021
+      synopsis: "GWAS of Fusarium wilt resistance for Common bean, relative to the G19833 assembly 2.0."
+    - collection: mixed.gwas.Raggi_Caproni_2019
+      synopsis: "GWAS study of flowering time control in a panel of homozygous 192 common bean accessions derived from landraces."
+    - collection: mixed.gwas.Shi_Gepts_2021
+      synopsis: "GWAS of Soybean Cyst Nematode resistance in Common bean, relative to the the G19833 assembly 1."
+    - collection: mixed.gwas.Tigist_Melis_2019
+      synopsis: "GWAS of Mexican bean weevil (Zabrotes subfasciatus) resistance for Common bean, relative to the G19833 assembly 2.0."
+    - collection: mixed.gwas.Wu_Wang_2020
+      synopsis: "GWAS of agronomic, architecture, and biotic stress traits at different locations within China for Common bean, relative to the G19833 assembly 1.0."
+    - collection: mixed.gwas.Zitnick-Anderson_Oladzad_2020
+      synopsis: "GWAS of Fusarium root rot resistance in Common Bean, relative to the G19833 assembly 2."
   genomes:
-    - collection: UI111.gnm1.3VTM
-      synopsis: "Phaseolus vulgaris accession UI111 genome assembly v1"
-    - collection: LaborOvalle.gnm1.VZZS
-      synopsis: "Phaseolus vulgaris accession Labor Ovalle (race Guatemala) genome assembly v1."
+    - collection: 5-593.gnm1.1P7P
+      synopsis: "Phaseolus vulgaris accession 5-593 (Middle American race), genome assembly v1."
     - collection: G19833.gnm1.zBnF
       synopsis: "Phaseolus vulgaris accession G19833 genome assembly v1.0"
     - collection: G19833.gnm2.fC0g
       synopsis: "Phaseolus vulgaris accession G19833 genome assembly v2.1"
-    - collection: 5-593.gnm1.1P7P
-      synopsis: "Phaseolus vulgaris accession 5-593 (Middle American race), genome assembly v1."
+    - collection: LaborOvalle.gnm1.VZZS
+      synopsis: "Phaseolus vulgaris accession Labor Ovalle (race Guatemala) genome assembly v1."
+    - collection: UI111.gnm1.3VTM
+      synopsis: "Phaseolus vulgaris accession UI111 genome assembly v1"
   markers:
-    - collection: G19833.gnm1.mrk.Hougaard_Madsen_2008
-      synopsis: "One hundred and four new loci representing single-copy genes were added to the existing bean map."
-    - collection: G19833.gnm1.mrk.Blair_Pedraza_2003
-      synopsis: "A total of 150 microsatellite markers developed for common bean (Phaseolus vulgaris L.) were tested for parental polymorphism and used to determine the positions of 100 genetic loci on an integrated genetic map of the species."
-    - collection: G19833.gnm1.mrk.Hanai_deCampos_2007
-      synopsis: "Three cDNA libraries generated by the Bean EST project were analyzed for the presence of SSRs. A total of 219 expressed sequence tags (ESTs) were found to carry 240 SSRs (named EST-SSR), whereas 714 genomic sequences contained 471 SSRs (named genomic-SSR)."
     - collection: G19833.gnm1.mrk.BARCBean6K
       synopsis: "A core set of 6000 SNPs based on the genotyping of 365 dry bean and 134 snap bean accessions with the BARCBean6K_1 and BARCBean6K_2 BeadChips."
     - collection: G19833.gnm1.mrk.Bean683WGRS_5M
       synopsis: "Approximately 5 million SNP markers reported by Wu, Wang et al. 2020, identified from whole genome resequencing (WGRS) of 683 common bean genotypes, relative to the Phaseolus vulgaris assembly G19833.gnm1."
-    - collection: G19833.gnm1.mrk.Raggi_Caproni_2019
-      synopsis: "Plant material was genotyped using double digest Restriction-site Associated DNA sequencing, producing about 50,000 SNPs."
-    - collection: G19833.gnm2.mrk.Andean_MidAmer_GBS
-      synopsis: "Marker SNPs developed by GBS on Andean and Middle American gene pools, with reads mapped to the Phaseolus vulgaris G19833 gnm2 assembly."
-    - collection: G19833.gnm1.mrk.Murray_Larsen_2002
-      synopsis: "A set of 79 previously mapped bean (Phaseolus vulgaris) genomic (Bng) clones were partially sequenced. Sequence tagged site (STSs) were produced for 16 of the clones, 2 of which contain simple sequence repeats (SSRs)."
-    - collection: G19833.gnm1.mrk.Grisi_Blair_2007
-      synopsis: "61 polymorphic microsatellite markers for beans and the construction of a genetic map using the BAT93 x Jalo EEP558 (BJ) population."
-    - collection: G19833.gnm1.mrk.Galeano_Cortes_2012
-      synopsis: "In this study, a total of 313 new gene-based markers were developed at target genes."
     - collection: G19833.gnm1.mrk.Benchimol_deCampos_2007
       synopsis: "A common bean genomic library was constructed using the ‘IAC-UNA’ variety enriched for (CT) and (GT) for microsatellite motifs. From 1,209 sequenced clones, 714 showed microsatellites distributed over 471 simple and 243 compound motifs."
+    - collection: G19833.gnm1.mrk.Blair_Pedraza_2003
+      synopsis: "A total of 150 microsatellite markers developed for common bean (Phaseolus vulgaris L.) were tested for parental polymorphism and used to determine the positions of 100 genetic loci on an integrated genetic map of the species."
     - collection: G19833.gnm1.mrk.Cardoso_Oblessuc_2008
       synopsis: "Ninety-nine new microsatelitte loci were developed from a microsatellite-enriched library for (CT)8  and (GT)8  motifs, from CAL-143 line."
-    - collection: G19833.gnm1.mrk.Kim_Kaur_2006
-      synopsis: "Genetic markers from Kim, Kaur, et al. (2006) mapped to G19833.gnm1."
-    - collection: G19833.gnm1.mrk.Yu_Park_2000
-      synopsis: "15 SSR markers assigned to the Phaseolus vulgaris molecular linkage map."
-    - collection: G19833.gnm2.mrk.DiVittori_Bitocchi_2021
-      synopsis: "We developed a BC4/F4 introgression line population and narrowed the major locus for pod shattering down to a 22.5 kb region."
-    - collection: G19833.gnm1.mrk.McClean_Mamidi_2010
-      synopsis: "Around 15,000 common bean sequences (primarily EST contigs and EST singletons) were electronically positioned onto the common bean map using the shared syntentic blocks as references points."
-    - collection: G19833.gnm1.mrk.PvCookUCDavis2009
-      synopsis: "A 768-marker array of single nucleotide polymorphisms (SNP) based on Trans-legume Orthologous Group (TOG) genes."
     - collection: G19833.gnm1.mrk.Gaitan-Solis_Duque_2002
       synopsis: "18 polymorphic microsatellite markers from Bactris gasipaes."
-    - collection: G19833.gnm1.mrk.Parker_BernyMierYTeran_2020
-      synopsis: "Genetic markers for the GWAS dataset provided with Parker, Berny Mier y Teran (2020)."
+    - collection: G19833.gnm1.mrk.Galeano_Cortes_2012
+      synopsis: "In this study, a total of 313 new gene-based markers were developed at target genes."
     - collection: G19833.gnm1.mrk.Galeano_Fernandez_2011
       synopsis: "The DOR364 x BAT477 linkage map consisted of 291 markers with a total map length of 1,788 cM."
+    - collection: G19833.gnm1.mrk.Grisi_Blair_2007
+      synopsis: "61 polymorphic microsatellite markers for beans and the construction of a genetic map using the BAT93 x Jalo EEP558 (BJ) population."
+    - collection: G19833.gnm1.mrk.Hanai_deCampos_2007
+      synopsis: "Three cDNA libraries generated by the Bean EST project were analyzed for the presence of SSRs. A total of 219 expressed sequence tags (ESTs) were found to carry 240 SSRs (named EST-SSR), whereas 714 genomic sequences contained 471 SSRs (named genomic-SSR)."
+    - collection: G19833.gnm1.mrk.Hougaard_Madsen_2008
+      synopsis: "One hundred and four new loci representing single-copy genes were added to the existing bean map."
+    - collection: G19833.gnm1.mrk.Kim_Kaur_2006
+      synopsis: "Genetic markers from Kim, Kaur, et al. (2006) mapped to G19833.gnm1."
+    - collection: G19833.gnm1.mrk.McClean_Mamidi_2010
+      synopsis: "Around 15,000 common bean sequences (primarily EST contigs and EST singletons) were electronically positioned onto the common bean map using the shared syntentic blocks as references points."
+    - collection: G19833.gnm1.mrk.Murray_Larsen_2002
+      synopsis: "A set of 79 previously mapped bean (Phaseolus vulgaris) genomic (Bng) clones were partially sequenced. Sequence tagged site (STSs) were produced for 16 of the clones, 2 of which contain simple sequence repeats (SSRs)."
+    - collection: G19833.gnm1.mrk.Parker_BernyMierYTeran_2020
+      synopsis: "Genetic markers for the GWAS dataset provided with Parker, Berny Mier y Teran (2020)."
+    - collection: G19833.gnm1.mrk.PvCookUCDavis2009
+      synopsis: "A 768-marker array of single nucleotide polymorphisms (SNP) based on Trans-legume Orthologous Group (TOG) genes."
+    - collection: G19833.gnm1.mrk.Raggi_Caproni_2019
+      synopsis: "Plant material was genotyped using double digest Restriction-site Associated DNA sequencing, producing about 50,000 SNPs."
+    - collection: G19833.gnm1.mrk.Yu_Park_2000
+      synopsis: "15 SSR markers assigned to the Phaseolus vulgaris molecular linkage map."
+    - collection: G19833.gnm2.mrk.Andean_MidAmer_GBS
+      synopsis: "Marker SNPs developed by GBS on Andean and Middle American gene pools, with reads mapped to the Phaseolus vulgaris G19833 gnm2 assembly."
+    - collection: G19833.gnm2.mrk.DiVittori_Bitocchi_2021
+      synopsis: "We developed a BC4/F4 introgression line population and narrowed the major locus for pod shattering down to a 22.5 kb region."
   maps:
-    - collection: DOR364_x_BAT477.map.Blair_Galeano_2012
-      synopsis: "A mapping population of 113 RILs in the F5:7 generation was generated using a DOR364 by BAT477 cross."
-    - collection: Stampede_x_RedHawk.map.Song_Jia_2015
-      synopsis: "A mapping population of 267 F2 plants from the cross of common bean varieties Stampede and Red Hawk developed by Dr. Phil McClean at North Dakota State University."
-    - collection: BAT93_x_JALOEEP558.map.Caldas_Blair_2009
-      synopsis: "Three RIL populations were used to find QTLs for seed color."
     - collection: BAT93_x_JALOEEP558.map.Blair_Cortés_2018_c
       synopsis: "This BAT93 x JALOEEP558 map was constructed using Mapdisto v. 2.0 (Lorieux, 2012), assuming an RI model and using the create groups command both with and without anchor markers."
-    - collection: mixed.map.Galeano_Fernandez_2011
-      synopsis: "This common bean consensus map was created using the DB (DOR364_x_BAT477, Mesoamerican intra-gene pool cross), DG (DOR364_x_G19833, inter-gene pool cross), and BJ (BAT93_x_JALOEEP558, inter-gene pool cross) mapping populations."
     - collection: BAT93_x_JALOEEP558.map.Blair_Cortés_2018_d
       synopsis: "Genetic map of markers to Phaseolus vulgaris accession G19833 genome assembly v1.0"
-    - collection: Cerinza_x_G24404.map.Blair_Iriarte_2006
-      synopsis: "Agronomic performance traits were studied in a population of BC2F(3:5) introgression lines created from the cross of a Colombian large red-seeded commercial cultivar, ICA Cerinza, and a wild common bean accession, G24404."
-    - collection: Xana_x_Cornell49242.map.Gaitán-Solís_Duque_2002
-      synopsis: "A map of 175 AFLP, 27 microsatellite, 30 SCAR, 33 ISSR, and 12 RAPD markers, as well as 13 loci coding for seed proteins, and four traditional genes (Fin/fin for growth habit, Asp/asp for seed coat shininess, P/p for seed color, and I/i for resistance to bean common mosaic virus)."
+    - collection: BAT93_x_JALOEEP558.map.Caldas_Blair_2009
+      synopsis: "Three RIL populations were used to find QTLs for seed color."
     - collection: BAT93_x_JALOEEP558.map.Freyre_Skroch_1998
       synopsis: "A 75-member F8 mapping population derived from the cross of BAT93 with JALO EEP558 was used to produce a core linkage map for common bean."
+    - collection: Cerinza_x_G24404.map.Blair_Iriarte_2006
+      synopsis: "Agronomic performance traits were studied in a population of BC2F(3:5) introgression lines created from the cross of a Colombian large red-seeded commercial cultivar, ICA Cerinza, and a wild common bean accession, G24404."
+    - collection: DOR364_x_BAT477.map.Blair_Galeano_2012
+      synopsis: "A mapping population of 113 RILs in the F5:7 generation was generated using a DOR364 by BAT477 cross."
     - collection: G2333_x_G19839.map.Checa_Blair_2008
       synopsis: "The G2333_x_G19839_a genetic map contains all 11 common bean linkage groups.  It has a total length of 1175 cM and 149 mapped total markers."
+    - collection: Stampede_x_RedHawk.map.Song_Jia_2015
+      synopsis: "A mapping population of 267 F2 plants from the cross of common bean varieties Stampede and Red Hawk developed by Dr. Phil McClean at North Dakota State University."
+    - collection: Xana_x_Cornell49242.map.Gaitán-Solís_Duque_2002
+      synopsis: "A map of 175 AFLP, 27 microsatellite, 30 SCAR, 33 ISSR, and 12 RAPD markers, as well as 13 loci coding for seed proteins, and four traditional genes (Fin/fin for growth habit, Asp/asp for seed coat shininess, P/p for seed color, and I/i for resistance to bean common mosaic virus)."
+    - collection: mixed.map.Galeano_Fernandez_2011
+      synopsis: "This common bean consensus map was created using the DB (DOR364_x_BAT477, Mesoamerican intra-gene pool cross), DG (DOR364_x_G19833, inter-gene pool cross), and BJ (BAT93_x_JALOEEP558, inter-gene pool cross) mapping populations."
 - name: acutifolius
   annotations:
     - collection: Frijol_Bayo.gnm1.ann1.ML22

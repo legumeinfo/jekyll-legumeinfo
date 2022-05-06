@@ -14,54 +14,54 @@ species:
     - collection: aradu1_araip1.gnm1.div.Otyama_Wilkey_2019
       synopsis: "Genotype data for US Peanut Mini Core collection."
   genetic:
-    - collection: ICGS76_x_CSMG84.gen.Gautami_Pandey_2012
-      synopsis: "SSR genetic map generated from a RIL population derived from the cross of ICGS 76 with CSMG 84-1"
-    - collection: TAG24_x_ICGV86031.gen.Ravi_Vadez_2011
-      synopsis: "SSR genetic map from a cross of 'TAG 24' and 'ICGV 86031'"
-    - collection: VG9514_x_TAG24.gen.Mondal_Hadapad_2014
-      synopsis: "Genetic map derived from a cross of A. hypogaea cultivars VG 9514 and TAG 24."
-    - collection: TAG24_x_GPBD4.gen.Kolekar_Sujay_2016
-      synopsis: "An F6 population of 266 RILs was advanced by single seed descent from a cross of TAG 24 and GPBD 4. QTLs were found for Late leaf spot and Puccinia rust."
-    - collection: mixed.gen.Gautami_Pandey_2012
-      synopsis: "Consensus genetic map for Arachis hypogaea from three RIL populations: ICGS76 x CSMG84-1, ICGS44 x ICGS76, and TAG24 x ICGV86031"
-    - collection: ICGS44_x_ICGS76.gen.Gautami_Pandey_2012
-      synopsis: "SSR genetic map generated from a RIL mapping population derived from the cross of ICGS 44 and ICGS 76"
-    - collection: SunOleic97R_x_NC94022.gen.Qin_Feng_2012
-      synopsis: "SSR-based genetic map constructed using a F5:6 RIL population derived from the cross of SunOleic 97R with NC94022 along with a Tomato spotted wilt virus QTL"
-    - collection: Tifrunner_x_GT-C20.gen.Qin_Feng_2012
-      synopsis: "SSR-based genetic map constructed using a F5:6 RIL population derived from Tifrunner x GT-C20"
-    - collection: Tifrunner_x_GT-C20.gen.Agarwal_Clevenger_2018
-      synopsis: "Genetic map of Tifrunner x GT-C20 for the study of early and late leaf spots (ELS and LLS) and tomato spotted wilt virus (TSWV)."
-    - collection: TG26_x_GPBD4.gen.Sujay_Gowda_2012
-      synopsis: "Genetic map derived from a cross of A. hypogaea cultivers 'TG 26' and 'GPBD 4'."
-    - collection: mixed.gen.Sujay_Gowda_2012
-      synopsis: "A consensus genetic map for Arachis hypogaea built from TAG24 x GPBD4 and TG26 x GPBD4 RIL populations"
-    - collection: TG26_x_GPBD4.gen.Sarvamanga_Gowdaa_2011
-      synopsis: "TT_TG26_x_GPBD4_b, an SSR map created from a cross of the A. hypogaea cultivars 'TG 26' and 'GPBD 4'."
-    - collection: NAMFlor7.gwas.Gangurde_Wang_2020
-      synopsis: "Gangurde, Wang, et al. (2020) GWAS study of pod and seed weight on the NAM Florida-7 mapping population"
-    - collection: USPeanutCore.gwas.Otyama_Kulkarni_2020
-      synopsis: "GWAS determining markers associated with fatty acid composition in the USDA peanut core collection."
-    - collection: NAMTifr.gwas.Gangurde_Wang_2020
-      synopsis: "Gangurde, Wang, et al. (2020) NAM Tifrunner GWAS study of pod and seed weight"
     - collection: Huayu28_x_P76.gen.Hu_Zhang_2018
       synopsis: "A genetic map from a Huayu28 x P76 RIL population composed of 2,334 markers (2,266 SNPs and 68 microsatellites) for the study of seed oleic and linoleic acid content"
+    - collection: ICGS44_x_ICGS76.gen.Gautami_Pandey_2012
+      synopsis: "SSR genetic map generated from a RIL mapping population derived from the cross of ICGS 44 and ICGS 76"
+    - collection: ICGS76_x_CSMG84.gen.Gautami_Pandey_2012
+      synopsis: "SSR genetic map generated from a RIL population derived from the cross of ICGS 76 with CSMG 84-1"
+    - collection: NAMFlor7.gwas.Gangurde_Wang_2020
+      synopsis: "Gangurde, Wang, et al. (2020) GWAS study of pod and seed weight on the NAM Florida-7 mapping population"
+    - collection: NAMTifr.gwas.Gangurde_Wang_2020
+      synopsis: "Gangurde, Wang, et al. (2020) NAM Tifrunner GWAS study of pod and seed weight"
+    - collection: SunOleic97R_x_NC94022.gen.Qin_Feng_2012
+      synopsis: "SSR-based genetic map constructed using a F5:6 RIL population derived from the cross of SunOleic 97R with NC94022 along with a Tomato spotted wilt virus QTL"
+    - collection: TAG24_x_GPBD4.gen.Kolekar_Sujay_2016
+      synopsis: "An F6 population of 266 RILs was advanced by single seed descent from a cross of TAG 24 and GPBD 4. QTLs were found for Late leaf spot and Puccinia rust."
+    - collection: TAG24_x_ICGV86031.gen.Ravi_Vadez_2011
+      synopsis: "SSR genetic map from a cross of 'TAG 24' and 'ICGV 86031'"
+    - collection: TG26_x_GPBD4.gen.Sarvamanga_Gowdaa_2011
+      synopsis: "TT_TG26_x_GPBD4_b, an SSR map created from a cross of the A. hypogaea cultivars 'TG 26' and 'GPBD 4'."
+    - collection: TG26_x_GPBD4.gen.Sujay_Gowda_2012
+      synopsis: "Genetic map derived from a cross of A. hypogaea cultivers 'TG 26' and 'GPBD 4'."
+    - collection: Tifrunner_x_GT-C20.gen.Agarwal_Clevenger_2018
+      synopsis: "Genetic map of Tifrunner x GT-C20 for the study of early and late leaf spots (ELS and LLS) and tomato spotted wilt virus (TSWV)."
+    - collection: Tifrunner_x_GT-C20.gen.Qin_Feng_2012
+      synopsis: "SSR-based genetic map constructed using a F5:6 RIL population derived from Tifrunner x GT-C20"
     - collection: Tifrunner_x_GT-C20.gen.Wang_Penmetsa_2012
       synopsis: "TT_Tifrunner_x_GT-C20_b, an SSR-based map derived from a cross of the A. hypogaea cultivars Tifrunner and GT-C20."
+    - collection: USPeanutCore.gwas.Otyama_Kulkarni_2020
+      synopsis: "GWAS determining markers associated with fatty acid composition in the USDA peanut core collection."
+    - collection: VG9514_x_TAG24.gen.Mondal_Hadapad_2014
+      synopsis: "Genetic map derived from a cross of A. hypogaea cultivars VG 9514 and TAG 24."
+    - collection: mixed.gen.Gautami_Pandey_2012
+      synopsis: "Consensus genetic map for Arachis hypogaea from three RIL populations: ICGS76 x CSMG84-1, ICGS44 x ICGS76, and TAG24 x ICGV86031"
+    - collection: mixed.gen.Sujay_Gowda_2012
+      synopsis: "A consensus genetic map for Arachis hypogaea built from TAG24 x GPBD4 and TG26 x GPBD4 RIL populations"
   genomes:
     - collection: Fuhuasheng.gnm1.XX5Y
       synopsis: "Genome assembly for tetraploid peanut cultivar Fuhuasheng, from Chen et al., 2019"
-    - collection: Tifrunner.gnm1.KYV3
-      synopsis: "Genome assembly 1 for Arachis hypogaea, cultivar Tifrunner"
     - collection: Shitouqi.gnm1.L4VP
       synopsis: "Genome assembly for peanut cultivar Shitouqui, from Zhuang et al., 2019."
+    - collection: Tifrunner.gnm1.KYV3
+      synopsis: "Genome assembly 1 for Arachis hypogaea, cultivar Tifrunner"
     - collection: Tifrunner.gnm2.J5K5
       synopsis: "Genome assembly 2 for Arachis hypogaea, cultivar Tifrunner. This version has structural changes relative to assembly 1."
   markers:
-    - collection: Tifrunner.gnm1.mrk.Axiom_Arachis2
-      synopsis: "Axiom_Arachis2 is a SNP marker set developed by Clevenger, et al. DOI:10.1016/j.molp.2016.11.015"
     - collection: Tifrunner.gnm1.mrk.Agarwal_Clevenger_2018
       synopsis: "Genetic map of Tifrunner x GT-C20 for the study of early and late leaf spots (ELS and LLS) and tomato spotted wilt virus (TSWV)."
+    - collection: Tifrunner.gnm1.mrk.Axiom_Arachis2
+      synopsis: "Axiom_Arachis2 is a SNP marker set developed by Clevenger, et al. DOI:10.1016/j.molp.2016.11.015"
     - collection: Tifrunner.gnm1.mrk.Axiom_Arachis_58K
       synopsis: "Axiom_Arachis_58K is a high-density SNP array with 58,233 SNPs reduced from 163,782 SNPs derived from DNA resequencing and RNA-sequencing of 41 groundnut accessions and wild diploid ancestors."
 - name: duranensis
@@ -72,19 +72,19 @@ species:
     - collection: PI475887_x_Grif15036.gen.Nagy_Guo_2012
       synopsis: "AA_A.duranensis_x_A.duranensis_a, SNP and SSR-based genetic map of Arachis duranensis from a cross of 'PI 475887' and 'Grif 15036'."
   genomes:
-    - collection: V14167.gnm2.J7QH
-      synopsis: "Genome assembly 2 for Arachis duranensis, accession V14167"
     - collection: V14167.gnm1.SWBf
       synopsis: "Genome assembly 1 for Arachis duranensis, accession V14167"
+    - collection: V14167.gnm2.J7QH
+      synopsis: "Genome assembly 2 for Arachis duranensis, accession V14167"
 - name: ipaensis
   annotations:
     - collection: K30076.gnm1.ann1.J37m
       synopsis: "genome annotations for Arachis ipaensis K30076.gnm1.ann1"
   genomes:
-    - collection: K30076.gnm2.1GWY
-      synopsis: "Genome Assembly 2 for A. ipaensis K30076. A high-quality chromosome-scale assembly, based on PacBio RSII and Sequel reads, ordered into pseudomolecules by Dovetail using Hi-C Chicago libraries and the HiRise and SNAP."
     - collection: K30076.gnm1.bXJ8
       synopsis: "Genome assembly 1 for Arachis ipaensis, accession K30076."
+    - collection: K30076.gnm2.1GWY
+      synopsis: "Genome Assembly 2 for A. ipaensis K30076. A high-quality chromosome-scale assembly, based on PacBio RSII and Sequel reads, ordered into pseudomolecules by Dovetail using Hi-C Chicago libraries and the HiRise and SNAP."
 - name: cardenasii
   genomes:
     - collection: K10017.gnm1.DQ4M
