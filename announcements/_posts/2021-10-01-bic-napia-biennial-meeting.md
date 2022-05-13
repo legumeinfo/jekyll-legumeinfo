@@ -1,5 +1,4 @@
 ---
-layout: announcement-item
 title: BIC & NAPIA Biennial meeting 2-4 November, 2021 (virtual)
 author: Sam Hokin
 date: 2021-11-02

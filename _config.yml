@@ -73,6 +73,26 @@ style:
     primary_background: '#87a96b'
     invert_navbar_text: true
 
+# Site-wide defaults
+defaults:
+  -
+    scope:
+      path: "announcements/"
+      type: "posts"
+    values:
+      layout: "announcement-item"
+  -
+    scope:
+      path: "blog/"
+      type: "posts"
+    values:
+      layout: "blog-item"
+  -
+    scope:
+      path: "news/"
+      type: "posts"
+    values:
+      layout: "news-item"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
