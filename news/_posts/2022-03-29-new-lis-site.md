@@ -1,5 +1,4 @@
 ---
-layout:     news-item
 title:      Welcome to the new LIS site!
 author:     Steven Cannon and Andrew Farmer
 date:       2022-03-29 8:00
