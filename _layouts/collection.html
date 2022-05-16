@@ -42,10 +42,20 @@ collections_menu: true
 {% endif %}
 
 {% if species.genetic.size > 0 %}
-<h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/genetic/">Genetic Data</a></h4>
+<h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/genetic/">GWAS and QTL Studies</a></h4>
 <dl>
   {% for item in species.genetic %}
   <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/genetic/{{ item.collection }}/">{{ item.collection }}</a></dt>
+  <dd>{{ item.synopsis }}</dd>
+  {% endfor %}
+</dl>
+{% endif %}
+
+{% if species.maps.size > 0 %}
+<h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/maps/">Genetic Maps</a></h4>
+<dl>
+  {% for item in species.maps %}
+  <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/maps/{{ item.collection }}/">{{ item.collection }}</a></dt>
   <dd>{{ item.synopsis }}</dd>
   {% endfor %}
 </dl>

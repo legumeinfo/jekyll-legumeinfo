@@ -1,5 +1,4 @@
 ---
-layout:     news-item
 title:      Tepary bean genomes added to LIS
 author:     Sam Hokin
 date:       2021-10-01 17:00
