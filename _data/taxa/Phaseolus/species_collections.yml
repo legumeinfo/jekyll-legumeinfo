@@ -133,6 +133,8 @@ species:
       synopsis: "A map of 175 AFLP, 27 microsatellite, 30 SCAR, 33 ISSR, and 12 RAPD markers, as well as 13 loci coding for seed proteins, and four traditional genes (Fin/fin for growth habit, Asp/asp for seed coat shininess, P/p for seed color, and I/i for resistance to bean common mosaic virus)."
     - collection: mixed.map.Galeano_Fernandez_2011
       synopsis: "This common bean consensus map was created using the DB (DOR364_x_BAT477, Mesoamerican intra-gene pool cross), DG (DOR364_x_G19833, inter-gene pool cross), and BJ (BAT93_x_JALOEEP558, inter-gene pool cross) mapping populations."
+    - collection: mixed.map.PvMcCleanNDSU2007
+      synopsis: "Gene-based markers were used for mapping a RIL population of P. vulgaris. Over 1,800 SNPs and indels were found, 300 of which were screened in the RIL population. The resulting LOD 2.0 map is 1,545 cM in length and consists of 275 gene-based and previously mapped core markers."
 - name: acutifolius
   annotations:
     - collection: Frijol_Bayo.gnm1.ann1.ML22
