@@ -43,6 +43,10 @@
   description: "Functional annotation of protein or nucleotide sequences, and placement into gene trees"
   name: "Funnotate: Annotate Your Sequences"
   url: "https://funnotate.legumeinfo.org/"
+- category: "Genetic comparison"
+  description: "A multiple chromosome visualisation tool for visualizing resequencing or SNP array data"
+  name: "GCViT"
+  url: "/tools/gcvit"
 # - 
 #   category: "Browse and Search"
 #   description: Description
