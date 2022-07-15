@@ -22,6 +22,7 @@
 #     make install
 #
 # 4.  Start jekyll, listening on localhost:4000 (and livereload on default port 35729)
+#     ... or as specified below in the jekyll serve invocation.
 #
 #     make
 #

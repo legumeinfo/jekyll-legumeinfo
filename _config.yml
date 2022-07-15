@@ -21,23 +21,23 @@
 ## not sure what this is for
 # exclude_paths: ["news/index.html", "announcements/index.html"]
 
-title: "LIS: Legume Information System"
-subtitle: Information about legume traits for crop improvement
-logo: /assets/img/logo.png
-email: your-email@example.com
+title: "SoyBase"
+subtitle: Integrating Genetics and Genomics to Advance Soybean Research
+logo: /assets/img/sb_logo.png
+email: https://www.soybase.org/include/antispam.php?menu=1
 description: >- # this means to ignore newlines until "baseurl:"
   A collaborative, community resource to facilitate crop improvement by integrating
   genetic, genomic, and trait data across legume species.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: legumeinfo
-github_username: legumeinfo
-#newsletter: http://eepurl.com/cX_JjL
+twitter_username: soybasedatabase
+github_username: soybase
+newsletter: https://www.soybase.org/soybaselist/index.php
 
-# our Google Analytics ID
+# our Google Analytics ID. XX CHANGE THIS for SoyBase
 google_analytics: "UA-49655154-1"
 
-# Set the LIS Datastore base URL here
+# Set the SoyBase/LIS Datastore base URL here
 datastoreurl: https://data.legumeinfo.org
 
 # Build settings
@@ -66,11 +66,11 @@ sass:
     sass_dir: _sass
     style: compressed
 
-# UIkit theme customization (sets LIS colors)
+# UIkit theme customization (sets site colors)
 style:
-    link_color: '#0071B3'
-    link_hover_color: '#018fe2'
-    primary_background: '#87a96b'
+    link_color: '#006600'
+    link_hover_color: '#0071B3'
+    primary_background: '#006600'
     invert_navbar_text: true
 
 # Site-wide defaults
