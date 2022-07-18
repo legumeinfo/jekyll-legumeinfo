@@ -1,0 +1,17 @@
+---
+-
+  DataStoreID: "Bhattacharyya_2018"
+  short_title: "Improving Biotic and Abiotic Stress Tolerance"
+  SoyBaseID: "SoyBase.C2018.01"
+  title: "Improving Biotic and Abiotic Stress Tolerance in Soybean Using Existing Genetic Diversity and Genome Editing"
+  description: "This project focuses on genetic mechanisms to address biotic and abiotic stresses, with the goal of developing cultivars with robust responses to biotic and abiotic stresses, by identifying useful alleles from across a broad germplasm collection. The project wil also evaluate the feasibility of engineering the effector-triggered immunity for enhancing disease resistance against four serious soybean pathogens through gene editing."
+  BioProjectID: "none"
+  publications:
+    - citation: "Project directed by Madan Bhattacharyya. Status??"
+      doi: "XX"
+      abstract: "Soybean is one of the most important food crops globally. It is a major source of both protein and oil for humans, livestock and fish. In addition, its industrial usages include soy-based products and biodiesel production. In the United States, the total value of the soybean crop is $40 billion annually. Unfortunately, over 20% of the soybean yield is suppressed annually by abiotic and biotic stresses, which is expected to deteriorate due to climate change. Use of new genetic mechanisms to address abiotic and biotic stresses supports sustainable, environmentally benign soybean production, without additional input or cultivation costs. Development of cultivars with robust responses to abiotic and biotic stresses requires identification of the best alleles from across a broad germplasm collection. Identification and use of new genetic mechanisms to fight the abiotic and biotic stresses is considered ideal for sustainable soybean production because it does not add any additional costs to cultivation and is environmentally friendly. To reduce the losses from abiotic and biotic stresses, it is necessary to discover and develop superior soybean lines that can be used to develop genetically superior commercial cultivars. The rationale of the proposed research is that once we identify the desirable genetic stocks carrying genes for tolerances to abiotic and biotic stresses, it will be possible to design desirable cultivars that will sustain soybean production under environmental stress conditions."
+  data_links:
+    - type: data
+      description: "White mold GWAS Results File (XLSX File 1.2 MB) - FIX (put in DS collection)"
+      url: "#"
+

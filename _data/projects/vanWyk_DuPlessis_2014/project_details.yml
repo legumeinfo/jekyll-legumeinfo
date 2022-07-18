@@ -1,0 +1,26 @@
+---
+-
+  DataStoreID: "vanWyk_DuPlessis_2014"
+  short_title: "Cysteine protease and cystatin expression"
+  SoyBaseID: "SoyBase.A2014.01"
+  title: "Cysteine protease and cystatin expression and activity during soybean nodule development and senescence"
+  description: "Glycine max root nodules of different ages were sequenced to investigate the involvement of cysteine proteases and cystatins in the processes of nodule development and senescence."
+  BioProjectID: "PRJNA261105"
+  publications:
+    - citation: "van Wyk SG, Du Plessis M, Cullis CA, Kunert KJ, Vorster BJ. Cysteine protease and cystatin expression and activity during soybean nodule development and senescence. BMC Plant Biol. 2014 Nov 18;14:294. doi: 10.1186/s12870-014-0294-3. PMID: 25404209; PMCID: PMC4243279."
+      doi: "10.1186/s12870-014-0294-3"
+      abstract: "Nodules play an important role in fixing atmospheric nitrogen for soybean growth. Premature senescence of nodules can negatively impact on nitrogen availability for plant growth and as such we need a better understanding of nodule development and senescence. Cysteine proteases are known to play a role in nodule senescence, but knowledge is still fragmented regarding the function their inhibitors (cystatins) during the development and senescence of soybean nodules. This study provides the first data with regard to cystatin expression during nodule developement combined with biochemical characterization of their inhibition strength."
+  data_links:
+    - type: browser
+      description: SoyBase genome viewer
+      url: "https://soybase.org/gb2/gbrowse/gmax1.01/?q=Gm01;%20reset=1;l=soy_atlas_transcript_density%1Eprima_2000%1EGlyma1%1EGlyma1.1%1Ecentromere%3Aoverview%1Epericentromere%3Aoverview;"
+    - type: data
+      description: "Nodule RNA 4 Weeks Vegetative Stage (BAM File 5.4 Gigs) - FIX (put in DS collection)"
+      url: "#"
+    - type: data
+      description: "Nodule RNA 8 Weeks Reproductive Stage (BAM File 5.8 Gigs) - FIX (put in DS collection)"
+      url: "#"
+    - type: data
+      description: "Nodule RNA 14 Weeks Senescence Stage (BAM File 5.0 Gigs) - FIX (put in DS collection)"
+      url: "#"
+

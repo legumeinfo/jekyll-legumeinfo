@@ -1,0 +1,63 @@
+---
+layout: default
+title: Genomic Resources
+tools_menu: true
+---
+
+{% assign genus_resources = site.data.resources.genus_resources %}
+{% assign species_resources = site.data.resources.species_resources %}
+
+<p>{{ genus_resources.display_name }}</p>
+
+<h1><i>{{ genus_resources.genus }}</i> ({{ genus_resources.commonName }})</h2>
+<p>{{ genus_resources.description }}</p>
+<p>NCBI taxonomy ID: <b>{{ genus_resources.taxid }}</b></p>
+
+{% if genus_resources.resources.size > 0 %}
+  <h2>Tools and resources for the genus as a whole</h2>
+  <dl>
+    {% for resource in genus_resources.resources %}
+    <dt><a href="{{ resource.URL }}">{{ resource.name }}</a></dt>
+    <dd>{{ resource.description }}</dd>
+    {% endfor %}
+  </dl>
+{% endif %}
+
+<h2>Tools and resources for particular species</h2>
+
+{% for item in species_resources.species %}
+
+  <hr/>
+
+  <h3><i>{{ item["genus"] }} {{ item["species"] }}</i>: {{ item["commonName"] }}</h3>
+  {% capture species_photo %}{% file_exists assets/img/species_images/{{ item["abbrev"] }}.jpg %}{% endcapture %}
+  {% if species_photo == "true" %}
+    <div style="float:right;margin:10px;border:1px solid darkgreen;">
+      <img src="/assets/img/species_images/{{ item["abbrev"] }}.jpg" alt="Image: {{ item["commonName"] }}"/><br/>
+    </div>
+  {% endif %}
+  <p>{{ item["description"] }}</p>
+  <p>NCBI taxonomy ID: <b>{{ item["taxid"] }}</b></p>
+
+  {% if item["resources"].size > 0 %}
+    <h4><i>{{ item["genus"] }} {{ item["species"] }}</i> resources</h4>
+    <dl>
+      {% for resource in item["resources"] %}
+      <dt><a href="{{ resource.URL }}">{{ resource.name }}</a></dt>
+      <dd>{{ resource.description }}</dd>
+      {% endfor %}
+    </dl>
+  {% endif %}
+
+  <h4><i>{{ item["genus"] }} {{ item["species"] }}</i> accessions</h4>
+  {% for strain in item["strains"] %}
+    <b>{{ strain.identifier }}</b> ({{ strain.origin }}) <br/>
+    {{ strain.description }}
+    <ul>
+      {% for resource in strain.resources %}
+      <li><a href="{{ resource.URL }}">{{ resource.name }}</a> : {{ resource.description }}</li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+
+{% endfor %}

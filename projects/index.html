@@ -1,0 +1,30 @@
+---
+layout: default
+title: Projects
+---
+{% if site.data.project_list %}
+{% assign groups = site.data.project_list | sort: "year" %}
+<h3>Projects - Table of Contents</h3>
+{% for group in groups %}
+  <dt>
+    <dd> <a href="#{{ group.DataStoreID }}">{{ group.short_title }}</a> </dd>
+  </dt>
+{% endfor %}
+<hr>
+{% for group in groups %}
+  <dl>
+    <th>
+      <dt> <h4><a id="{{ group.DataStoreID }}" 
+                  href="{{ group.DataStoreID | downcase | prepend: '/projects/' | relative_url }}">
+                    {{ group.short_title }}</a> </h4> 
+        <dd>
+          <strong>Description:</strong> {{ group.description }} <br>
+          SoyBase ID {{ group.SoyBaseID }}; Data Store ID {{ group.DataStoreID }}
+        </dd> 
+      </dt>
+    </th>
+  </dl>
+  <hr>
+{% endfor %}
+{% endif %}
+

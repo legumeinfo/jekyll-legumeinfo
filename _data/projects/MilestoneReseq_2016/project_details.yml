@@ -1,0 +1,23 @@
+---
+-
+  DataStoreID: "MilestoneReseq_2016"
+  short_title: "Milestone Cultivar Sequencing"
+  SoyBaseID: "SoyBase.C2016.01"
+  title: "High impact research for soybean improvement using genetics and genomics"
+  description: "This project aims to identify determinants of yield potential of soybean varieties. Through resequencing of  79 cultivars that represent milestone parents, as well as the 41 SoyNAM parents, the project detects the genetic signatures of breeding work. Copy number variants (CNV) and in single nucleotide polymorphisms (SNP) are identified and presented interactively."
+  BioProjectID: "none"
+  publications:
+    - citation: "In preparation"
+      doi: "XX"
+      abstract: "The CNV data were derived from 79 lines of soybean next-generation sequencing data for selected plant introductions and milestone cultivars. SNP data were derived from these 79 lines along with the 41 parents of the SoyNAM project (data provided by Dr. Perry Cregan (USDA-ARS) and the Soybean NAM project). For this project twenty seeds from each line were acquired from USDA Soybean Germplasm Collection and planted in the USDA greenhouse at Iowa State University. Once plants reached the trifoliolate stage, leaves from up to 10 plants were pooled and genomic DNA was extracted. DNA was sent to Hudson Alpha Institute for Biotechnology for next-generation sequencing. In addition, replicated field trials were conducted on a subset of lines (30 of the 79 lines, plus ancestral varieties that were not sequenced) to measure protein, oil, yield, and other characteristics under standard growth conditions, to dissociate the effect of on-farm improvements from genetic gain. Additional details for each of the data types are available in the Methodology tab in the respective visualization tools."
+  data_links:
+    - type: visualization
+      description: "Interactive copy-number viewer"
+      url: "http://shiny.soybase.org/CNV/"
+    - type: visualization
+      description: "Interactive SNP analysis viewer"
+      url: "https://shiny.soybase.org/SNP/"
+    - type: visualization
+      description: "Interactive strain & pedigree viwer"
+      url: "https://shiny.soybase.org/SNP/"
+

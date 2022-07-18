@@ -1,0 +1,36 @@
+---
+layout: default
+title: Genetic Resources
+tools_menu: true
+---
+{% assign chr = 0 %}
+
+{% assign maps = site.data.maps %}
+
+<h2>Genetic Map Resources for Soybean</h2>
+
+{% for resource in maps.resources %}
+  <dl>
+    <dt><a href="{{ resource.str }}">{{ resource.name }}</a></dt>
+    <dd>{{ resource.description }}</dd>
+    {% if resource.linkage_groups %}
+      <table class="uk-table">
+        <tbody>
+          <tr>
+            {% for LG in resource.linkage_groups %}
+              {% assign chr = chr | plus:1 %}
+              <td>
+                <div  data-uk-tooltip="{pos:'bottom-left'}"; uk-tooltip="title: {{ LG }}">
+                  {% capture map_path %}maps/cmap/{{ chr | prepend: '00' | slice: -2,2 }} {% endcapture %}
+                  <a href="{{ map_path | relative_url }}">{{ chr | prepend: '00' | slice: -2,2 }}</a>
+                </div>
+              </td>
+            {% endfor %}
+          </tr>
+        </tbody>
+      </table>
+      </table>
+    {% endif %}
+  </dl>
+{% endfor %}
+

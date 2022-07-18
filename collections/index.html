@@ -1,36 +1,142 @@
 ---
-title: Collections
-collections_menu: true
+layout: default
+title: Data Collections
 ---
-{% assign genera = site.data.taxon_list | group_by: "genus"  %}
 
-<h1>LIS Datastore Collections</h1>
+<h1>SoyBase Datastore Collections</h1>
 
 <p>
-  All of the files housed by the Legume Information System are available at the <a target="_blank" href="{{ site.datastoreurl }}"><b>LIS Datastore</b></a>.
+  All of the files housed by SoyBase are available at the 
+  <a target="_blank" href="{{ site.datastoreurl }}"><b>SoyBase and LIS Datastore</b></a>.
 </p>
 
 <p>
-  The LIS Datastore is organized by Genus and species, with individual <i>data collections</i> under species directories for: genomes, annotations, expression,
+  The Datastore is organized by Genus and species, with individual <i>data collections</i> 
+  under species directories for: genomes, annotations, expression,
   genetic data, markers, synteny, diversity, and others.
   Each collection contains a README file which describes that collection.
 </p>
 
-<ul>
-  {% for genus in genera %}
-  {% for item in genus.items %}
-  {% if item.category == "main" %}
-  <li><a href="/collections{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
+<h2>Collection synopses and links</h2>
+
+{% assign species_collections = site.data.collections %}
+{% assign genus = "Glycine" %}
+
+{% for species in species_collections.species %}
+
+  <h3><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/"><i>{{genus}} {{ species.name }}</i></a></h3>
+
+  {% if species.genomes.size > 0 %}
+  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/genomes/">Genomes</a></h4>
+  <dl>
+    {% for item in species.genomes %}
+    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/genomes/{{ item.collection }}/">{{ item.collection }}</a></dt>
+    <dd>{{ item.synopsis }}</dd>
+    {% endfor %}
+  </dl>
   {% endif %}
-  {% endfor %}
-  {% endfor %}
-</ul>
-<ul>
-  {% for genus in genera %}
-  {% for item in genus.items %}
-  {% if item.category == "special" %}
-  <li><a href="/collections{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
+
+  {% if species.annotations.size > 0 %}
+  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/annotations/">Annotations</a></h4>
+  <dl>
+    {% for item in species.annotations %}
+    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/annotations/{{ item.collection }}/">{{ item.collection }}</a></dt>
+    <dd>{{ item.synopsis }}</dd>
+    {% endfor %}
+  </dl>
   {% endif %}
-  {% endfor %}
-  {% endfor %}
-</ul>
+
+  {% if species.expression.size > 0 %}
+  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/expression/">Expression</a></h4>
+  <dl>
+    {% for item in species.expression %}
+    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/expression/{{ item.collection }}/">{{ item.collection }}</a></dt>
+    <dd>{{ item.synopsis }}</dd>
+    {% endfor %}
+  </dl>
+  {% endif %}
+
+  {% if species.genetic.size > 0 %}
+  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/genetic/">Genetic Data</a></h4>
+  <dl>
+    {% for item in species.genetic %}
+    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/genetic/{{ item.collection }}/">{{ item.collection }}</a></dt>
+    <dd>{{ item.synopsis }}</dd>
+    {% endfor %}
+  </dl>
+  {% endif %}
+
+  {% if species.markers.size > 0 %}
+  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/markers/">Markers</a></h4>
+  <dl>
+    {% for item in species.markers %}
+    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/markers/{{ item.collection }}/">{{ item.collection }}</a></dt>
+    <dd>{{ item.synopsis }}</dd>
+    {% endfor %}
+  </dl>
+  {% endif %}
+
+  {% if species.synteny.size > 0 %}
+  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/synteny/">Synteny</a></h4>
+  <dl>
+    {% for item in species.synteny %}
+    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/synteny/{{ item.collection }}/">{{ item.collection }}</a></dt>
+    <dd>{{ item.synopsis }}</dd>
+    {% endfor %}
+  </dl>
+  {% endif %}
+
+  {% if species.diversity.size > 0 %}
+  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/diversity/">Diversity</a></h4>
+  <dl>
+    {% for item in species.diversity %}
+    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/diversity/{{ item.collection }}/">{{ item.collection }}</a></dt>
+    <dd>{{ item.synopsis }}</dd>
+    {% endfor %}
+  </dl>
+  {% endif %}
+
+  {% if species.gwas.size > 0 %}
+  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/gwas/">GWAS</a> (NOTE: THIS WILL BE MOVED INTO "GENETIC")</h4>
+  <dl>
+    {% for item in species.gwas %}
+    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/gwas/{{ item.collection }}/">{{ item.collection }}</a></dt>
+    <dd>{{ item.synopsis }}</dd>
+    {% endfor %}
+  </dl>
+  {% endif %}
+
+  {% if species.methylation.size > 0 %}
+  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/methylation/">Methylation</a></h4>
+  <dl>
+    {% for item in species.methylation %}
+    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/methylation/{{ item.collection }}/">{{ item.collection }}</a></dt>
+    <dd>{{ item.synopsis }}</dd>
+    {% endfor %}
+  </dl>
+  {% endif %}
+
+  {% if species.pangenomes.size > 0 %}
+  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/pangenomes/">Pangenomes</a> (Note: these are specialized pangenome collections, relative to reference assemblies for the indicated accessions. For genus-wide pan-gene sets, see above under GENUS.)</h4>
+  <dl>
+    {% for item in species.pangenomes %}
+    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/pangenomes/{{ item.collection }}/">{{ item.collection }}</a></dt>
+    <dd>{{ item.synopsis }}</dd>
+    {% endfor %}
+  </dl>
+  {% endif %}
+
+  {% if species.supplements.size > 0 %}
+  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/supplements/">Supplements</a> (i.e. from publications)</h4>
+  <dl>
+    {% for item in species.supplements %}
+    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/supplements/{{ item.collection }}/">{{ item.collection }}</a></dt>
+    <dd>{{ item.synopsis }}</dd>
+    {% endfor %}
+  </dl>
+  {% endif %}
+
+  <hr/>
+
+{% endfor %}
+

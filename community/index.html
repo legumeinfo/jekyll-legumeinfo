@@ -1,22 +1,23 @@
 ---
+layout: default
 title: Community
-tools_menu: true
 ---
-<h1>Community</h1>
+
+<h2>Community</h2>
 
 {% if site.data.community %}
-{% assign groups = site.data.community | group_by: "category" %}
-{% for group in groups %}
-  <h2>{{ group.name }}</h2>
-  {% if item.url != "" %}
-    <dl>
-      {% for item in group.items %}
-        <dt><a href="{{ item.url }}">{{ item.name }}</a></dt>
-        <dd>{{ item.description }}</dd>
-      {% endfor %}
-    </dl>
-  {% else %}
-    {{ item.description }}
-  {% endif %}
+{% assign community = site.data.community %}
+{% for item in community %}
+  {% for cat in item.category %}
+    <th>
+      <dt>{{ cat.name }}</dt>
+      <ul>
+        {% for resource in cat.resources %}
+          <li><a href="{{ resource.url }}">{{ resource.description }}</a></li>
+        {% endfor %}
+      </ul>
+    </th>
+  {% endfor %}
 {% endfor %}
 {% endif %}
+

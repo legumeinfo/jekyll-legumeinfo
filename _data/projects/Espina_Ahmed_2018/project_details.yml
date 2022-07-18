@@ -1,0 +1,23 @@
+---
+-
+  DataStoreID: "Espina_Ahmed_2018"
+  short_title: "Soybean EMS Mutagenized Population"
+  SoyBaseID: "SoyBase.P2019.01"
+  title: "Development and Phenotypic Screening of an Ethyl Methane Sulfonate Mutant Population in Soybean"
+  description: "In order to provide genetic diversity and resources for identifying important genes, a new ethyl methane sulfonate (EMS) mutagenized soybean population was generated using the newly released germplasm, JTN-5203 (maturity group V). After harvest of a muagenized population, seed traits were evaluated including total oil, protein, starch, moisture content, fatty acid and amino acid compositions. Phenotypic variations observed in this population include changes in leaf morphology, plant architecture, seed compositions, and yield. We identified plants with increased amounts of total protein (50% vs. 41% for control) and plants with higher amounts of total oil (25% vs. 21.2% control). We also identified plants with increases in oleic acid content and decreases in linoleic acid and linolenic acid. This EMS mutant population will be used for further studies including screening for various traits such as amino acid pathways, allergens, phytic acids, and other important soybean agronomic traits."
+  BioProjectID: "none"
+  publications:
+    - citation: "Espina MJ, Ahmed CMS, Bernardini A, Adeleke E, Yadegari Z, Arelli P, Pantalone V, Taheri A. Development and Phenotypic Screening of an Ethyl Methane Sulfonate Mutant Population in Soybean. Front Plant Sci. 2018 Mar 29;9:394."
+      doi: "10.3389/fpls.2018.00394"
+      abstract: "Soybean is an important oil-producing crop in the Fabaceae family and there are increasing demands for soybean oil and other soybean products. Genetic improvement of soybean is needed to increase its production. In order to provide genetic diversity and resources for identifying important genes, a new ethyl methane sulfonate (EMS) mutagenized soybean population was generated using the newly released germplasm, JTN-5203 (maturity group V). Treatment of soybean seeds with 60 mM EMS concentration was found to be suitable for inducing mutation. A total of 1,820 M1 individuals were produced from 15,000 treated seeds. The resulting M2 population was planted in the field for phenotyping. After harvest, seed traits including total oil, protein, starch, moisture content, fatty acid and amino acid compositions were measured by NIR. Phenotypic variations observed in this population include changes in leaf morphology, plant architecture, seed compositions, and yield. Of most interest, we identified plants with increased amounts of total protein (50% vs. 41% for control) and plants with higher amounts of total oil (25% vs. 21.2% control). Similarly, we identified plants with increases in oleic acid content and decreases in linoleic acid and linolenic acid. This EMS mutant population will be used for further studies including screening for various traits such as amino acid pathways, allergens, phytic acids, and other important soybean agronomic traits. In addition, these mutant individuals will be evaluated in the next generation to assess the heritability. Beneficial traits from these mutants can be exploited for future soybean breeding programs. This germplasm can also be used for discovering novel mutant alleles and for functional gene expression analysis using reverse genetics tools such as TILLING."
+  data_links:
+    - type: visualization
+      description: "EMS Induced Mutant Phenotype Data Explorer - choose mutant by phenotype"
+      url: "https://soybase.org/mutantdata/"
+    - type: visualization
+      description: "EMS Induced Mutant Phenotype Data Summary - summary of all phenotypes for a mutant"
+      url: "https://taheri.weebly.com/protein.html"
+    - type: data
+      description: "Espina et al. Supplementary Table NIR data.xlsx - FIX (put in DS collection)"
+      url: "#"
+

@@ -1,0 +1,17 @@
+---
+-
+  DataStoreID: "Phansak_Soonsuwon_2016"
+  short_title: "Seed Protein and Oil QTLs"
+  SoyBaseID: "SoyBase.D2016.01"
+  title: "Multi-Population Selective Genotyping to Identify Soybean (Glycine max (L.) Merr.) Seed Protein and Oil QTLs"
+  description: "48 high protein soybean accessions in seven MGs (000 to IV) were mated to a matching MG high yield cultivar of ordinary protein content. Selective genotyping of multiple bi-parental populations was used to identify QTL for seed protein and oil."
+  BioProjectID: "PRJNA314872"
+  publications:
+    - citation: "Phansak P, Soonsuwon W, Hyten DL, Song Q, Cregan PB, Graef GL, Specht JE. Multi-Population Selective Genotyping to Identify Soybean [Glycine max (L.) Merr.] Seed Protein and Oil QTLs. G3 (Bethesda). 2016 Jun 1;6(6):1635-48. "
+      doi: "10.1534/g3.116.027656"
+      abstract: "Plant breeders continually generate ever-higher yielding cultivars, but also want to improve seed constituent value, which is mainly protein and oil, in soybean [Glycine max (L.) Merr.]. Identification of genetic loci governing those two traits would facilitate that effort. Though genome-wide association offers one such approach, selective genotyping of multiple biparental populations offers a complementary alternative, and was evaluated here, using 48 F2:3 populations (n = ∼224 plants) created by mating 48 high protein germplasm accessions to cultivars of similar maturity, but with normal seed protein content. All F2:3 progeny were phenotyped for seed protein and oil, but only 22 high and 22 low extreme progeny in each F2:3 phenotypic distribution were genotyped with a 1536-SNP chip (ca 450 bimorphic SNPs detected per mating). A significant quantitative trait locus (QTL) on one or more chromosomes was detected for protein in 35 (73%), and for oil in 25 (52%), of the 48 matings, and these QTL exhibited additive effects of ≥ 4 g kg(-1) and R(2) values of 0.07 or more. These results demonstrated that a multiple-population selective genotyping strategy, when focused on matings between parental phenotype extremes, can be used successfully to identify germplasm accessions possessing large-effect QTL alleles. Such accessions would be of interest to breeders to serve as parental donors of those alleles in cultivar development programs, though 17 of the 48 accessions were not unique in terms of SNP genotype, indicating that diversity among high protein accessions in the germplasm collection is less than what might ordinarily be assumed."
+  data_links:
+    - type: data
+      description: "XX - FIX: probably put CSV files etc. into Data Store"
+      url: "#"
+

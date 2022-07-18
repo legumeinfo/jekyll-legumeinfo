@@ -1,16 +1,16 @@
-# legumeinfo.org
-This repository holds the [Jekyll](https://jekyllrb.com/) site hosted at www.legumeinfo.org.
+# soybase.org
+This repository holds the [Jekyll](https://jekyllrb.com/) site hosted at www.soybase.org.
 
-Commits to the `main` branch will trigger a GitHub Action workflow that build the static site & deploy to the jekyll-stage.legumeinfo.org branch.
-This branch is hosted via GitHub Pages at https://jekyll-stage.legumeinfo.org.
+Commits to the `main` branch will trigger a GitHub Action workflow that build the static site & deploy to the dev.soybase.org branch.
+This branch is hosted via GitHub Pages at https://dev.soybase.org.
 
-When a tag is pushed, a GitHub Action workflow will build the static site & deploy to the [legumeinfo/legumeinfo.org](https://github.com/legumeinfo/legumeinfo.org) repository (www.legumeinfo.org branch).
-This branch is hosted via GitHub Pages at https://www.legumeinfo.org (requests for https://legumeinfo.org will redirect to https://www.legumeinfo.org).
+When a tag is pushed, a GitHub Action workflow will build the static site & deploy to the [soybase/soybase.org](https://github.com/soybase/soybase.org) repository.
+This branch is hosted via GitHub Pages at https://www.dev.soybase.org.
 
 The site is styled using a custom [UIkit](https://getuikit.com/) theme, which requires UIkit's SCSS files.
 As such, UIkit is a submodule of this repository and must be cloned with the repository:
 ```console
-git clone --recurse-submodules https://github.com/legumeinfo/jekyll-legumeinfo.git
+git clone --recurse-submodules https://github.com/soybase/jekyll-soybase.git
 ```
 
 ## Running the Site

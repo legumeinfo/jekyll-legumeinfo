@@ -1,0 +1,44 @@
+---
+-
+  DataStoreID: "Torkamaneh_Laroche_2021"
+  short_title: "Soybean Haplotype Map"
+  SoyBaseID: "SoyBase.C2020.01"
+  title: "Soybean Haplotype Map (GmHapMap) and HaplotypeMiner"
+  description: "Haplotype map for soybean (GmHapMap) constructed using whole-genome sequence data for 1,007 soybean accessions yielding close to 15 million SNPs. This haplotype map serves as a unique worldwide resource for soybean genomics and breeding. The HaplotypeMiner tool allows for selection of SNPs useful in defining genes at a given loci in germplasm collections."
+  BioProjectID: "none"
+  publications:
+    - citation: "Torkamaneh D, Laroche J, Valliyodan B, O'Donoughue L, Cober E, Rajcan I, Vilela Abdelnoor R, Sreedasyam A, Schmutz J, Nguyen HT, Belzile F. Soybean (Glycine max) Haplotype Map (GmHapMap): a universal resource for soybean translational and functional genomics. Plant Biotechnol J. 2021 Feb;19(2):324-334."
+      doi: "10.1111/pbi.13466"
+      abstract: "Here, we describe a worldwide haplotype map for soybean (GmHapMap) constructed using whole-genome sequence data for 1007 Glycine max accessions and yielding 14.9 million variants as well as 4.3 M tag single-nucleotide polymorphisms (SNPs). When sampling random subsets of these accessions, the number of variants and tag SNPs plateaued beyond approximately 800 and 600 accessions, respectively. This suggests extensive coverage of diversity within the cultivated soybean. GmHapMap variants were imputed onto 21 618 previously genotyped accessions with up to 96% success for common alleles. A local association analysis was performed with the imputed data using markers located in a 1-Mb region known to contribute to seed oil content and enabled us to identify a candidate causal SNP residing in the NPC1 gene. We determined gene-centric haplotypes (407 867 GCHs) for the 55 589 genes and showed that such haplotypes can help to identify alleles that differ in the resulting phenotype. Finally, we predicted 18 031 putative loss-of-function (LOF) mutations in 10 662 genes and illustrated how such a resource can be used to explore gene function. The GmHapMap provides a unique worldwide resource for applied soybean genomics and breeding."
+    - citation: "Tardivel A, Torkamaneh D, Lemay MA, Belzile F, O'Donoughue LS. A Systematic Gene-Centric Approach to Define Haplotypes and Identify Alleles on the Basis of Dense Single Nucleotide Polymorphism Datasets. Plant Genome. 2019 Nov;12(3):1-11. doi: 10.3835/plantgenome2018.08.0061. PMID: 33016581."
+      doi: "10.3835/plantgenome2018.08.0061"
+      abstract: "A gene-centric approach for haplotype definition was developed and implemented in R. The tool allows for allelic characterization at given loci in germplasm collections. Allelic status at four maturity genes is predicted on the basis of marker genotyping data. Assessing the allelic diversity within a germplasm collection and identifying individuals carrying favorable alleles is challenging. Advances in high-throughput technologies allow the genotyping of many individuals for thousands of markers but bridging the gap between single nucleotide polymorphisms (SNPs) and relevant alleles remains difficult. We developed a systematic approach that defines haplotypes from large SNP catalogs that aims to identify haplotypes that can be equated to alleles at given genes. Unlike haplotype visualization tools, our approach selects SNP markers that flank a gene and define haplotypes that correspond to this gene's alleles. We tested this approach on four known soybean [Glycine max (L.) Merr.] maturity genes (E1, GmGia, GmPhyA3, and GmPhyA2) in a collection of 67 lines and two genotypic datasets [a SNP array and genotyping-by-sequencing (GBS)]. For E1, GmGia, and GmPhyA3, we identified SNP haplotypes such that the allele found at these genes could be accurately predicted from the haplotype in 97.3% of the cases. For these genes, of the 12 known alleles in the collection, 10 and 8 could be correctly predicted from the haplotypes found with the SNP array and GBS datasets, with success rates of 98 and 97% for all allele-line combinations, respectively. The approach proved equally successful for data derived from a SNP array and GBS. However, in the case of GmPhyA2, a lack of markers in the genomic region prevented the identification of alleles, regardless of the dataset. We demonstrate the feasibility and reproducibility of our approach and identify limits to its applicability."
+  data_links:
+    - type: code
+      description: "R library documentation"
+      url: "https://rdrr.io/github/malemay/HaplotypeMiner/"
+    - type: code
+      description: "Code repository on GitHub"
+      url: "https://github.com/malemay/HaplotypeMiner"
+    - type: data
+      description: "FigShare repository"
+      url: "https://figshare.com/projects/Soybean_Haplotype_Map_GmHapMap_A_Universal_Resource_for_Soybean_Translational_and_Functional_Genomics/56921"
+    - type: data
+      description: "Data Store repository"
+      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019"
+    - type: data
+      description: "Download List of Accessions"
+      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.HVCP.AccessionTable.txt.gz"
+    - type: data
+      description: "Download GmHapMap data in VCF format (1.9 GB compressed)"
+      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.HVCP.SNPData.vcf.gz"
+    - type: data
+      description: "Download Genotypes by Gene"
+      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.HVCP.genotypes_by_gene.hmp.gz"
+    - type: data
+      description: "Download Haplotypes by Gene"
+      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.HVCP.haplotypes_by_gene.tsv.gz"
+    - type: data
+      description: "Download Loss of Function SNPs"
+      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.HVCP.loss_of_function.xlsx.gz"
+

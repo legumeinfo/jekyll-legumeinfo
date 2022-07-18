@@ -1,0 +1,30 @@
+---
+layout: default
+title: Help
+---
+
+<h2>Help and Tutorials</h2>
+
+{% if site.data.tutorials %}
+{% assign tutorials = site.data.tutorials %}
+{% for item in tutorials %}
+  {% for cat1 in item.category_main %}
+    <h3>{{ cat1.name }}</h3>
+    {% for resource in cat1.resources %}
+      <dl>
+        {% for cat2 in resource.category_sub %}
+          <th>
+            <dt>{{ cat2.name }}</dt>
+            <ul>
+              {% for instance in cat2.instances %}
+                <li><a href="{{ instance.url }}" target="_blank">{{ instance.description }}</a></li>
+              {% endfor %}  
+            </ul>
+          </th>
+        {% endfor %}
+      </dl>
+    {% endfor %}
+  {% endfor %}
+{% endfor %}
+{% endif %}
+
