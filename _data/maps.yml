@@ -38,6 +38,6 @@ resources:
     description: "Genotype comparison visualization tool"
     name: GCViT
   - 
-    URL: "https://gcv.legumeinfo.org/instructions"
+    URL: "https://gcv.soybase.org/instructions"
     description: "Browser for dynamically discovering and viewing genomic synteny across selected species"
     name: "Genome Context Viewer"

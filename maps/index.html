@@ -11,7 +11,7 @@ tools_menu: true
 
 {% for resource in maps.resources %}
   <dl>
-    <dt><a href="{{ resource.str }}">{{ resource.name }}</a></dt>
+    <dt><a href="{{ resource.URL }}">{{ resource.name }}</a></dt>
     <dd>{{ resource.description }}</dd>
     {% if resource.linkage_groups %}
       <table class="uk-table">
