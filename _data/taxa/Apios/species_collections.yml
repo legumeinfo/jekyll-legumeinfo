@@ -1,6 +1,0 @@
----
-species:
-- name: americana
-  diversity:
-    - collection: LA2155.tcp.div.Singh_Kalberer_2018
-      synopsis: "SNP calls on a collection of accessions, relative to a reference sequence (derived from a transcriptome assembly of Apios americana)"

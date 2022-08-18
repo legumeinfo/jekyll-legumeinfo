@@ -7,7 +7,11 @@ taxa_menu: true
 {% assign species_resources = site.data.taxa[genus].species_resources %}
 {% if genus_resources.taxid == nil %}
 
-<p class="temp"><i>{{ page.title }}</i> has no resource data in the Datastore.</p>
+<h1>Collections</h1>
+
+<dl>
+  <dt><a href="/collections">Collections</a></dt>
+</dl>
 
 {% else %}
 

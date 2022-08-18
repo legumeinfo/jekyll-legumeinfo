@@ -21,13 +21,12 @@
 ## not sure what this is for
 # exclude_paths: ["news/index.html", "announcements/index.html"]
 
-title: "LIS: Legume Information System"
-subtitle: Information about legume traits for crop improvement
-logo: /assets/img/logo.png
-email: your-email@example.com
+title: Cicer Genome Portal
+subtitle: Resources for the Cicer Genus
+logo: /assets/img/cicer-logo.jpg
+email: ctc@ncgr.org
 description: >- # this means to ignore newlines until "baseurl:"
-  A collaborative, community resource to facilitate crop improvement by integrating
-  genetic, genomic, and trait data across legume species.
+  A collection of resources for the Cicer Genus.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: legumeinfo
