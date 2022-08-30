@@ -35,7 +35,7 @@ jobs:
         run: htmlproofer --disable-external --assume-extension --empty-alt-ignore --ignore-files '/uikit/tests/' ./_site || exit 0
 
       - name: Deploy (stage)
-        uses: actions/deploy-pages@v1
+        uses: peaceiris/actions-gh-pages@v3
         # Always deploy for now, despite htmlproofer errors (eventually remove)
         if: github.ref_type == 'branch' && always()
         with:
@@ -45,7 +45,7 @@ jobs:
           cname: jekyll-stage.legumeinfo.org
 
       - name: Deploy (prod)
-        uses: actions/deploy-pages@v1
+        uses: peaceiris/actions-gh-pages@v3
         # Always deploy for now, despite htmlproofer errors (eventually remove)
         if: github.ref_type == 'tag' && always()
         with:
