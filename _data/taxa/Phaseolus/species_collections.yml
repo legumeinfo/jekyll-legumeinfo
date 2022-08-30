@@ -23,8 +23,8 @@ species:
     - collection: G19833.gnm1.div.Moghaddam_Mamidi_2016
       synopsis: "Genotyping (variant) data for two diverse collections of Phaseolus vulgaris accessions: the Mesoamerican Diversity Panel (MDP) and the Andean Diversity Panel (ADP)."
   expression:
-    - collection: G19833.gnm1.ann1.expr.4ZDQ
-      synopsis: "LIS expression dataset phavu1 (An RNA-Seq based gene expression atlas of the common bean cv. Negro jamapa)."
+    - collection: G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014
+      synopsis: "Bean Expression Atlas for common bean cv. Negro jamapa mapped to the G19833 version 1 genome annotation."
   genetic:
     - collection: BAT93_x_JALOEEP558.gen.Caldas_Blair_2009
       synopsis: "Three RIL populations were used to find QTLs for seed color."
@@ -40,6 +40,8 @@ species:
       synopsis: "A map of 175 AFLP, 27 microsatellite, 30 SCAR, 33 ISSR, and 12 RAPD markers, as well as 13 loci coding for seed proteins, and four traditional genes (Fin/fin for growth habit, Asp/asp for seed coat shininess, P/p for seed color, and I/i for resistance to bean common mosaic virus)."
     - collection: mixed.gwas.DiVittori_Bitocchi_2021
       synopsis: "GWAS of pod dehiscence in Common bean, relative to the G19833 assembly 2."
+    - collection: mixed.gwas.Escobar_Oladzad_2022
+      synopsis: "GWAS of white mold (Sclerotinia sclerotiorum) resistance for Common bean, relative to the G19833 assembly 2."
     - collection: mixed.gwas.Jain_Poromarto_2019
       synopsis: "GWAS of Soybean cyst nematode (Heterodera glycines) resistance in common bean, relative to G19833 assembly 1."
     - collection: mixed.gwas.Myers_Wallace_2019
@@ -56,6 +58,8 @@ species:
       synopsis: "GWAS of Soybean Cyst Nematode resistance in Common bean, relative to the the G19833 assembly 1."
     - collection: mixed.gwas.Tigist_Melis_2019
       synopsis: "GWAS of Mexican bean weevil (Zabrotes subfasciatus) resistance for Common bean, relative to the G19833 assembly 2.0."
+    - collection: mixed.gwas.Wen_Chang_2019
+      synopsis: "GWAS assessing soybean cyst nematode (SCN) (Heterodera glycines) resistance, seed coat color, and seed weight in 363 diverse accessions of common bean, P. vulgaris relative to the G19833 assembly 1.0"
     - collection: mixed.gwas.Wu_Wang_2020
       synopsis: "GWAS of agronomic, architecture, and biotic stress traits at different locations within China for Common bean, relative to the G19833 assembly 1.0."
     - collection: mixed.gwas.Zitnick-Anderson_Oladzad_2020
@@ -106,12 +110,16 @@ species:
       synopsis: "A 768-marker array of single nucleotide polymorphisms (SNP) based on Trans-legume Orthologous Group (TOG) genes."
     - collection: G19833.gnm1.mrk.Raggi_Caproni_2019
       synopsis: "Plant material was genotyped using double digest Restriction-site Associated DNA sequencing, producing about 50,000 SNPs."
+    - collection: G19833.gnm1.mrk.Wen_Chang_2019
+      synopsis: "GWAS assessing soybean cyst nematode (SCN) (Heterodera glycines) resistance, seed coat color, and seed weight in 363 diverse accessions of common bean, P. vulgaris relative to the G19833 assembly 1.0"
     - collection: G19833.gnm1.mrk.Yu_Park_2000
       synopsis: "15 SSR markers assigned to the Phaseolus vulgaris molecular linkage map."
     - collection: G19833.gnm2.mrk.Andean_MidAmer_GBS
       synopsis: "Marker SNPs developed by GBS on Andean and Middle American gene pools, with reads mapped to the Phaseolus vulgaris G19833 gnm2 assembly."
     - collection: G19833.gnm2.mrk.DiVittori_Bitocchi_2021
       synopsis: "We developed a BC4/F4 introgression line population and narrowed the major locus for pod shattering down to a 22.5 kb region."
+    - collection: G19833.gnm2.mrk.Escobar_Oladzad_2022
+      synopsis: "A set of 52,201 SNPs reported by Escobar, Oladzad et al. (2022) based on genotyping-by-sequencing (GBS) of a multiparent advanced generation inter-cross (MAGIC) dry bean population of 1,050 F5:7 RILs. Reads were mapped and sorted against the G19833.gnm2 reference assembly for common bean."
   maps:
     - collection: BAT93_x_JALOEEP558.map.Blair_Cortés_2018_c
       synopsis: "This BAT93 x JALOEEP558 map was constructed using Mapdisto v. 2.0 (Lorieux, 2012), assuming an RI model and using the create groups command both with and without anchor markers."

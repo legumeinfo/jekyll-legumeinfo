@@ -53,7 +53,7 @@ species:
     - collection: IT97K-499-35.gnm1.div.Huynh_Ehlers_2018
       synopsis: "VCF file containing genotype information for 305 F8 RILs, 98.74% homozygous on average while diverse in agronomic traits, mapped to the cowpea IT97K-499-35.gnm1 genome."
   expression:
-    - collection: IT97K-499-35.gnm1.ann1.expr.BWH5
+    - collection: IT97K-499-35.gnm1.ann1.expr.Yao_Jiang_2016
       synopsis: "Black-eyed pea gene expression atlas (IT97K-499-35)"
   genetic:
     - collection: CB27_x_IT82E-18.mst.Pottorff_Li_2014

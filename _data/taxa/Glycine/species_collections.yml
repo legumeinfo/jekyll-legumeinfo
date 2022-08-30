@@ -35,8 +35,6 @@ species:
     - collection: Zh35_IGA1004.gnm1.ann1.RGN6
       synopsis: "Genome annotation files for cultivar Zhonghuang 35,  Chu et al. (2021)"
   diversity:
-    - collection: Wm82.gnm1.div.Bandillo_Lorenz_2017
-      synopsis: "Haplotypes of SoyNAM parents and progeny with respect to Williams 82 genome assembly gnm1."
     - collection: Wm82.gnm1.div.ContrerasSoto_Mora_2017
       synopsis: "Haplotype information for 169 Brazilian soybean cultivars genotyped with the 6K SNPchip."
     - collection: Wm82.gnm1.div.Hu_Zhang_2020
@@ -45,12 +43,12 @@ species:
       synopsis: "VCF, HapMap, and Flapjack files containing genotype information of the whole U.S. soybean germplasm collection using the SoySNP50K BeadChip."
     - collection: Wm82.gnm1.div.Song_Wei_2015
       synopsis: "The polymorphism information of INDELS and SNPs between Hedou12 and Wm82."
+    - collection: Wm82.gnm1.div.Song_Yan_2017
+      synopsis: "Haplotypes of SoyNAM parents and progeny with respect to Williams 82 genome assembly gnm1."
     - collection: Wm82.gnm1.div.Wang_Jiao_2016
       synopsis: "Variant information in vcf format for 367 Chinese soybean accessions using the NJAU 355K SoySNP array, provided by Dr. Jiao Wang."
     - collection: Wm82.gnm1.div.Zhou_Jiang_2015
       synopsis: "Resequencing information for 302 wild and cultivated soybean accessions."
-    - collection: Wm82.gnm2.div.Bandillo_Lorenz_2017
-      synopsis: "Haplotypes of SoyNAM parents and progeny with respect to Williams 82 gnm2."
     - collection: Wm82.gnm2.div.Jeong_Moon_2019
       synopsis: "Variant information for 4234 soybean accessions (Glycine max and Glycine soja) genotyped with the Axiom SoyaSNP array containing 180,961 SNPs."
     - collection: Wm82.gnm2.div.Lam_Xu_2010
@@ -63,6 +61,8 @@ species:
       synopsis: "Imputed genotypes for 5176 Nested Association Mapping RILs relative to 40 NAM parental genotypes, genotyped using the SoySNP50K and SoyNAM6K assays. These data sets report alleles at 29,417 SNP positions."
     - collection: Wm82.gnm2.div.Song_NAM_2021b
       synopsis: "Imputed genotypes for 5176 Nested Association Mapping RILs relative to 40 NAM parental genotypes, genotyped with WGS and the SoySNP50K and SoyNAM6K assays. These data sets report alleles at 423,419 SNP positions."
+    - collection: Wm82.gnm2.div.Song_Yan_2017
+      synopsis: "Haplotypes of SoyNAM parents and progeny with respect to Williams 82 gnm2."
     - collection: Wm82.gnm2.div.Torkamaneh_Laroche_2017
       synopsis: "Resequencing information for 102 Canadian soybean accessions."
     - collection: Wm82.gnm2.div.Torkamaneh_Laroche_2019
@@ -78,9 +78,7 @@ species:
     - collection: Wm82.gnm2.div.dosSantos_Valliyodan_2016
       synopsis: "VCF and HapMap file containing genotype information for 28 Brazilian soybean accessions."
   expression:
-    - collection: Wm82.gnm1.ann1.expr.Z679
-      synopsis: "Cystatin expression during 3 root nodule development stages : vegetative, reproductive and senescence (Van Wyk et. al. 2014)."
-    - collection: Wm82.gnm2.ann1.expr.G7ZY
+    - collection: Wm82.gnm2.ann1.expr.Wm82.Libault_Farmer_2010
       synopsis: "Soybean gene expression atlas from 14 conditions (Libault et al., 2010)."
   genetic:
     - collection: 0518BW-8_x_0734BW-1.gen.Oyoo_Benitez_2011
@@ -713,6 +711,8 @@ species:
       synopsis: "GWAS of soybean seed protein and oil, using 12,000 accessions from the USDA soybean collection and the SoySNP50K BeadChip."
     - collection: mixed.gwas.Bao_Kurle_2015
       synopsis: "GWAS of soybean sudden death syndrome (SDS), based on 282 breeding lines, genotyped with the 1536-SNP USLP1.0 chip."
+    - collection: mixed.gwas.Bao_Vuong_2014
+      synopsis: "282 representative accessions from the University of Minnesota soybean breeding program using a genome-wide panel of 1536 single nucleotide polymorphism (SNP) markers and evaluated plant responses to SCN HG type 0"
     - collection: mixed.gwas.Cao_Li_2017
       synopsis: "GWAS and QTL study of soybean seed oil, conducted on 279 lines from a Chinese breeding population, genotyped with 59,845 SNPs."
     - collection: mixed.gwas.Chang_Brown_2016
@@ -723,6 +723,8 @@ species:
       synopsis: "GWAS of soybean chlorophyll traits based on canopy spectral reflectance and leaf extracts."
     - collection: mixed.gwas.Fang_Ma_2017
       synopsis: "GWAS of 84 agronomic traits, conducted on 809 soybean accessions, with genotyping by resequencing."
+    - collection: mixed.gwas.Han_Zhao_2015
+      synopsis: "440 soybean landraces and elite cultivars were screened for resistance to SCN HG Type 0 and HG Type 1.2.3.5.7; GWAS relative to Wm82.gnm2"
     - collection: mixed.gwas.Kim_Kim_2020
       synopsis: "GWAS study of control of flowering time in soybean, genotyped with the 180k Axiom SoyaSNP array."
     - collection: mixed.gwas.Li_Zhao_2019
@@ -735,16 +737,24 @@ species:
       synopsis: "GWAS study of Sclerotinia stem rot (SSR) in soybean, conducted on 466 accessions, genotyped with the SoySNP50K BeadChip."
     - collection: mixed.gwas.Sonah_ODonoughue_2015
       synopsis: "GWAS study of eight traits in soybean, conducted on 139 accessions, genotyped using GBS-derived markers."
+    - collection: mixed.gwas.Tran_Steketee_2019
+      synopsis: "GWAS of Soybean Cyst Nematode (SCN) (Heterodera glycines) resistance for Soybean, relative to the Williams 82 assembly 2.0."
+    - collection: mixed.gwas.Vuong_Sonah_2015
+      synopsis: "GWAS of Soybean Cyst Nematode (SCN) (Heterodera glycines) resistance for Soybean, relative to the Wm82.gnm2 assembly (originally reported with respect to Wm82.gnm1)"
     - collection: mixed.gwas.Wang_Chu_2016
       synopsis: "GWAS study of domestication-related traits in soybean, conducted on 105 wild and 262 cultivated soybeans, genotyped using the NJAU 355K SoySNP array."
     - collection: mixed.gwas.Yan_Hofmann_2017
       synopsis: "GWAS study of seed weight in soybean, conducted on 166 from the USDA soybean collection, genotyped using the SoySNP50K BeadChip."
     - collection: mixed.gwas.Zhang_Hao_2015
       synopsis: "GWAS study of architecture and yield-related traits in soybean, conducted on 219 accessions, genotyped using the 1536-SNP USLP1 array."
+    - collection: mixed.gwas.Zhang_Li_2016
+      synopsis: "GWAS of soybean cyst nematode (SCN)  resistance for wild soybean bean, relative to the soybean genome Wm82.gnm2"
     - collection: mixed.gwas.Zhang_Song_2015
       synopsis: "GWAS study of flowering time, maturity dates and plant height in soybean, conducted on 309 soybean accessions, genotyped using the SoySNP50K BeadChip."
     - collection: mixed.gwas.Zhang_Song_2016
       synopsis: "GWAS study of seed weight in soybean, conducted on 309 soybean accessions, genotyped using the SoySNP50K BeadChip."
+    - collection: mixed.gwas.Zhang_Song_2017
+      synopsis: "GWAS of Soybean Cyst Nematode (SCN) resistance in 1032 accessions of Glycine soja, using the SoySNP50K marker set relative to the Wm82.gnm1 assembly"
     - collection: mixed.gwas.Zhao_Teng_2017
       synopsis: "The aim of the present study was to investigate the genome-wide genetic architecture of resistance to SCN HG Type 2.5.7 (race 1) in landrace and elite cultivated soybeans."
   genomes:
@@ -789,12 +799,16 @@ species:
       synopsis: "Illumina Infinium SoySNP6K BeadChip"
     - collection: Wm82.gnm1.mrk.SoySSR
       synopsis: "This marker set contains SSRs developed and published by Cregan, et al. in 1999, with names starting with Satt or Sat_."
+    - collection: Wm82.gnm1.mrk.Zhao_Teng_2017
+      synopsis: "SLAF-seq markers associated with resistance to soybean cyst nematode (SCN) HG type 2.5.7, with respect to Wm82 gnm1 coordinates."
     - collection: Wm82.gnm2.mrk.1536_USLP1
       synopsis: "Universal Soy Linkage Panel (USLP 1.0) contains 1536 SNPs selected based on even distribution throughout each of the 20 consensus linkage groups and to have a broad range of allele frequencies in diverse germplasm."
     - collection: Wm82.gnm2.mrk.BARCSOYSSR
       synopsis: "BARCSOYSSR contains 33,065 locus-specific SSR markers with di-, tri-, and tetranucleotide repeats of five or more."
     - collection: Wm82.gnm2.mrk.Fang_Ma_2017
       synopsis: "GWAS of 84 agronomic traits, conducted on 809 soybean accessions, with genotyping by resequencing."
+    - collection: Wm82.gnm2.mrk.Han_Zhao_2015
+      synopsis: "SNP markers generated Specific Locus Amplified Fragment Sequencing (SLAF-seq) approach, and showing association with resistance against two soybean cyst nematode types."
     - collection: Wm82.gnm2.mrk.Li_Zhao_2019
       synopsis: "12,072 SNPs from Li, Zhao, et al. (2019), a seed protein and oil study."
     - collection: Wm82.gnm2.mrk.Meng_He_2016
@@ -811,8 +825,12 @@ species:
       synopsis: "This marker set contains SSRs developed and published by Cregan, et al. in 1999, with names starting with Satt or Sat_."
     - collection: Wm82.gnm2.mrk.SoyaSNP180K
       synopsis: "Axiom SoyaSNP180K array with 180,981 SNPs developed by Lee, et al. (2015)."
+    - collection: Wm82.gnm2.mrk.Tran_Steketee_2019
+      synopsis: "Diverse soybean accessions (462) were screened for resistance to SCN and genotyped using SoySNP50K Infinium Chip and a set of 3 funtional KASP SNP markers, identifying both 88788-type and Peking-type resistance."
+    - collection: Wm82.gnm2.mrk.Vuong_Sonah_2015
+      synopsis: "Markers associated with Soybean Cyst Nematode (SCN) resistance in Soybean, relative to the Wm82.gnm2 assembly. Markers derive from the SoySNP50K set."
     - collection: Wm82.gnm2.mrk.Zhao_Teng_2017
-      synopsis: "A total of 200 diverse soybean accessions were screened for resistance to SCN HG Type 2.5.7 and genotyped through sequencing using SLAF-seq. A total of 33,194 SNPs were identified with minor allele frequencies (MAF) over 4%, covering 97% of all the genotypes."
+      synopsis: "SLAF-seq markers associated with resistance to soybean cyst nematode (SCN) HG type 2.5.7, with respect to Wm82 gnm2 coordinates (derived via sequence homology, from markers originally with positions in Wm82 gnm1)."
   maps:
     - collection: mixed.map.GmComposite1999
       synopsis: "Consensus genetic map GmComposite1999 from SoyBase."
@@ -894,7 +912,7 @@ species:
 - name: dolichocarpa
   annotations:
     - collection: G1134.gnm1.ann1.4BJM
-      synopsis: "Genome annotation files for Glycine tolichocarpa, accession G1134, from Zhuang, Wang et al. (2021)"
+      synopsis: "Genome annotation files for Glycine dolichocarpa, accession G1134, from Zhuang, Wang et al. (2021)"
   genomes:
     - collection: G1134.gnm1.PP7B
       synopsis: "Genome assemblies for Glycine dolichocarpa, accession G1134, from Zhuang, Wang et al. (2021)"

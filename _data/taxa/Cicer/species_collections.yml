@@ -4,16 +4,20 @@ species:
   annotations:
     - collection: CDCFrontier.gnm1.ann1.nRhs
       synopsis: "genome annotation of Cicer arietium (kabuli variety)"
+    - collection: CDCFrontier.gnm2.ann1.9M1L
+      synopsis: "genome annotation of Cicer arietium (kabuli variety)"
     - collection: ICC4958.gnm2.ann1.LCVX
       synopsis: "genome annotation of Cicer arietium (desi variety)"
   diversity:
     - collection: CDCFrontier.div.vonWettberg_Chang_2018
       synopsis: "Variant data, from genome resequencing of 279 Cicer accessions, called relative to Cicer arietium CDCFrontier (kabuli type)."
   expression:
-    - collection: CDCFrontier.gnm1.ann1.expr.C14F
-      synopsis: "Gene expression dataset for Cicer arietinum ICC4958 desi variety MAPPED TO CDCFrontier (kabuli variety) genome."
+    - collection: ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013
+      synopsis: "Chickpea Transcriptome Atlas - I"
   genomes:
     - collection: CDCFrontier.gnm1.GkHc
       synopsis: "Genome assembly of Cicer arietinum CDCFrontier (kabuli variety)."
+    - collection: CDCFrontier.gnm2.S2FF
+      synopsis: "Cicer arietinum genotype CDCFrontier genome assembly v2.0"
     - collection: ICC4958.gnm2.bg5m
       synopsis: "Genome assembly of Cicer arietinum ICC4958 (desi variety)."

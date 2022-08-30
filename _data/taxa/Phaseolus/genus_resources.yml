@@ -10,7 +10,7 @@ description: 'Phaseolus (bean, wild bean) is a genus of herbaceous to woody annu
   worldwide in tropical, semitropical, and temperate climates.'
 genus: Phaseolus
 resources:
-- URL: https://mines.legumeinfo.org/Beanmine/begin.do
+- URL: https://mines.legumeinfo.org/beanmine/begin.do
   description: InterMine interface for accessing genetic and genomic data for several
     species in Phaseolus.
   name: BeanMine

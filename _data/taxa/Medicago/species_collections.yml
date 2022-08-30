@@ -10,10 +10,14 @@ species:
   genomes:
     - collection: CADL_HM342.gnm1.rVNY
       synopsis: "Genome assembly of Medicago sativa CADL (HM342)"
+    - collection: PI464715.gnm1.8GK6
+      synopsis: "Pseudomolecule assemblies and unanchored contigs representing 1 haplotype per chromosome for diploid progenitor Medicago sativa spp. caerulea PI464715"
     - collection: RegenSY27x.gnm0_9.2VSM
       synopsis: "Genome assembly of Medicago sativa RegenSY27x"
     - collection: XinJiangDaYe.gnm1.12MR
       synopsis: "Pseudomolecule assemblies and scaffolds representing 4 haplotypes per chromosome for Medicago sativa XinJiangDaYe"
+    - collection: Zhongmu_No_1.gnm1.TRQW
+      synopsis: "Pseudomolecule assemblies and unanchored contigs representing 1 haplotype per chromosome for Medicago sativa Zhongmu No. 1"
 - name: truncatula
   annotations:
     - collection: A17.gnm5.ann1_6.L2RX
@@ -58,7 +62,7 @@ species:
     - collection: A17_HM341.gnm4.div.Stanton-Geddes_Paape_2013
       synopsis: "Variant calling from Illumina-based whole genome resequencing across accessions from Medicago HapMap Collection."
   expression:
-    - collection: A17_HM341.gnm4.ann2.expr.RLZY
+    - collection: A17_HM341.gnm4.ann2.expr.He_Vagner_2009
       synopsis: "Affymetrix GeneChip expression data from the Noble Medicago truncatula Gene Expression Atlas"
   genomes:
     - collection: A17.gnm5.MVZ2
@@ -111,3 +115,11 @@ species:
       synopsis: "An assembly based on the earlier PacBio-based genome (R108_HM340.gnm1.XT6J), put into pseudomolecules using HiC scaffolding."
     - collection: R108_HM340.gnm1.XT6J
       synopsis: "Genome assembly for Medicago truncatula R108 (HM340)"
+- name: ruthenica
+  genomes:
+    - collection: Xinghe.gnm1.KKFS
+      synopsis: "Pseudomolecule assembly and unanchored contigs for wild diploid Medicago ruthenica Xinghe"
+- name: polymorpha
+  genomes:
+    - collection: Huaiyang_Jinhuacai.gnm1.ZH4B
+      synopsis: "Pseudomolecule assembly and unanchored contigs for diploid Medicago polymorpha Huaiyang Jinhuacai"

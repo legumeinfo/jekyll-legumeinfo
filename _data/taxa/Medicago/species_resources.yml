@@ -17,6 +17,10 @@ species:
     identifier: CADL_HM342
     name: CADL (Cultivated Alfalfa at the Diploid Level)
     origin: Noble Foundation
+    resources:
+    - URL: https://medicago.legumeinfo.org/tools/sequenceserver
+      description: SequenceServer BLAST against the CADL_HM342 genome assembly v1.0
+      name: Medicago SequenceServer
   - accession: XinJiangDaYe
     description: Xinjiang Daye is a salt-sensitive cultivar of alfalfa.
     identifier: XinJiangDaYe
@@ -32,6 +36,26 @@ species:
     - URL: https://sequenceserver.legumeinfo.org/
       description: SequenceServer BLAST against the XinJiangDaYe assembly v1.0
       name: LIS SequenceServer
+  - accession: Zhongmu_No_1
+    description: Zhongmu No. 1 is a widely grown cultivar in Northern China
+    identifier: Zhongmu_No_1
+    name: Zhongmu No. 1
+    origin: China
+    resources:
+    - URL: https://medicago.legumeinfo.org/tools/sequenceserver
+      description: SequenceServer BLAST against the Zhongmu No. 1 genome assembly
+        v1.0
+      name: Medicago SequenceServer
+  - accession: PI464715
+    description: PI464715 is a representative of Medicago sativa spp. caerulea, the
+      diploid progenitor of the cultivated autotetraploid
+    identifier: PI464715
+    name: PI464715
+    origin: Turkey
+    resources:
+    - URL: https://medicago.legumeinfo.org/tools/sequenceserver
+      description: SequenceServer BLAST against the PI464715 genome assembly v1.0
+      name: Medicago SequenceServer
   - accession: RegenSY27x
     description: This plant was selected for high regeneration in tissue culture.
       It was bred by crossing two plants, first generation selfed (S1) parents from
@@ -42,6 +66,10 @@ species:
     identifier: RegenSY27x
     name: RegenSY27x
     origin: Samac Lab, USDA
+    resources:
+    - URL: https://medicago.legumeinfo.org/tools/sequenceserver
+      description: SequenceServer BLAST against the RegenSY27x genome assembly v0.9
+      name: Medicago SequenceServer
   taxid: 3879
 - abbrev: medtr
   commonName: barrel medic
@@ -88,3 +116,37 @@ species:
     name: R108 (HM340)
     origin: Mediterranean region
   taxid: 3880
+- abbrev: medru
+  description: A wild perennial forage species widely distributed in semi-arid grasslands
+    and adapted tolerate environmental stresses including drought, low temperatures,
+    and infertile soils
+  genus: Medicago
+  resources:
+  - URL: https://medicago.legumeinfo.org/tools/sequenceserver
+    description: SequenceServer BLAST against the Medicago ruthenica Xinghe v1.0 genome
+      assembly
+    name: Medicago SequenceServer
+  species: ruthenica
+  strains:
+  - accession: Xinghe
+    description: Occurs naturally in arid and semi-arid areas of northern China
+    identifier: Xinghe
+    name: Xinghe
+    origin: Northern China
+  taxid: 70973
+- abbrev: medpo
+  description: Highly nutritious forage legume with global distribution, widely consumed
+    by livestock and also used as a vegetable in China.
+  genus: Medicago
+  resources:
+  - URL: https://medicago.legumeinfo.org/tools/sequenceserver
+    description: SequenceServer BLAST against Medicago polymorpha sequence resources
+    name: Medicago SequenceServer
+  species: polymorpha
+  strains:
+  - accession: Huaiyang_Jinhuacai
+    description: Main nationally authorized cultivar in China
+    identifier: Huaiyang_Jinhuacai
+    name: Huaiyang Jinhuacai
+    origin: China
+  taxid: 47084
