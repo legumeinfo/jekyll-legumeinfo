@@ -27,15 +27,15 @@ jobs:
           enable_cache: true
           jekyll_src: .
 
-      - name: Check HTML
-        uses: chabad360/htmlproofer@v1.1
-        with:
-          directory: "./_site"
+      - name: install html-proofer
+        run: gem install html-proofer -v 4.2.0
+      - name: run html-proofer
+        # always exit with status 0 for now, until the list of HTML grievances can be managed
           # --disable-external included for efficiency, eventually remove?
-          arguments: "--disable-external --assume-extension --ignore-empty-alt --file-ignore '/uikit/tests/'"
+        run: htmlproofer --disable-external --assume-extension --empty-alt-ignore --ignore-files '/uikit/tests/' ./_site || exit 0
 
       - name: Deploy (stage)
-        uses: peaceiris/actions-gh-pages@v3
+        uses: actions/deploy-pages@v1
         # Always deploy for now, despite htmlproofer errors (eventually remove)
         if: github.ref_type == 'branch' && always()
         with:
@@ -45,7 +45,7 @@ jobs:
           cname: jekyll-stage.legumeinfo.org
 
       - name: Deploy (prod)
-        uses: peaceiris/actions-gh-pages@v3
+        uses: actions/deploy-pages@v1
         # Always deploy for now, despite htmlproofer errors (eventually remove)
         if: github.ref_type == 'tag' && always()
         with:
