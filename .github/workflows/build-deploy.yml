@@ -32,7 +32,7 @@ jobs:
         with:
           directory: "./_site"
           # --disable-external included for efficiency, eventually remove?
-          arguments: "--disable-external --assume-extension --empty-alt-ignore --file-ignore '/uikit/tests/'"
+          arguments: "--disable-external --assume-extension --ignore-empty-alt --file-ignore '/uikit/tests/'"
 
       - name: Deploy (stage)
         uses: peaceiris/actions-gh-pages@v3
