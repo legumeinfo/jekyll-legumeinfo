@@ -1,0 +1,18 @@
+---
+layout: default
+title: About SoyBase and Soybean Resources
+tools_menu: false
+---
+
+{% assign groups = site.data.about | group_by: "category" | sort: "name" %}
+
+<h2>About SoyBase and Soybean Resources</h2>
+
+{% for group in groups %}
+<dl>
+  {% for item in group.items %}
+  <dt><a href="{{ item.url }}">{{ item.name }}</a></dt>
+  {% endfor %}
+</dl>
+{% endfor %}
+
