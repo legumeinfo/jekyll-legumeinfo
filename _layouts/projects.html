@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+{% assign DataStoreID = page.title %}
+{% assign proj_details = site.data.projects[DataStoreID].project_details %}
+
+{% for item in proj_details %}
+  <h2>{{ item.short_title }}</h2>
+
+  <dt>
+    <dd><h3>Description:</h3></dd> 
+    <dd>{{ item.description }}</dd>
+    {% if item.BioProjectID %} <dd>BioProject: {{ item.BioProjectID }}</dd> {% endif %}
+    {% if item.SoyBaseID %} <dd>SoyBaseID: {{ item.SoyBaseID }}</dd> {% endif %}
+    <br>
+    
+    <dd><h3>Publications:</h3></dd>
+    {% for publication in item.publications %}
+      <dd><strong>Citation:</strong> {{ publication.citation }}</dd>
+      {% if publication.doi %} 
+        <dd><strong>Publication link:</strong>
+          <a href="https://doi.org/{{ publication.doi }}" target="_blank"> {{ publication.doi }} </a>
+        </dd>
+      {% endif %}
+      {% if publication.abstract %} 
+        <details>
+          <summary><strong>Abstract:</strong> (click to read)</summary> 
+
+          <dd> {{ publication.abstract }}</dd> 
+        </details>
+      {% endif %}
+    {% endfor %}
+    <br>
+
+    <dd><h3>Data Links:</h3></dd>
+    {% for data_link in item.data_links %}
+      <dd>{{ data_link.type }}: <a href="{{ data_link.url }}">{{ data_link.description }}</a></dd>
+    {% endfor %}
+  </dt>
+{% endfor %}
+
+<h4><a href="/projects/index.html">Back to Projects index page</a></dd></h4>
