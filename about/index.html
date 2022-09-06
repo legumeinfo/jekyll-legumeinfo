@@ -12,9 +12,8 @@ tools_menu: false
 <dl>
   {% for item in group.items %}
   <dt><a href="{{ item.url }}">{{ item.name }}</a>
-  <span style="font-weight:normal">({{ item.description }})</span>
+    <span style="font-weight:normal">({{ item.description }})</span>
   </dt>
-  <!--<dd> ({{ item.description }}) </dd>-->
   {% endfor %}
 </dl>
 {% endfor %}
