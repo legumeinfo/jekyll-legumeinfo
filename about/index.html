@@ -1,0 +1,46 @@
+---
+layout: default
+title: About SoyBase and Soybean Resources
+tools_menu: false
+---
+
+{% assign groups = site.data.about | group_by: "category" | sort: "category" %}
+
+<h2>About SoyBase and Soybean Resources</h2>
+
+{% for group in groups %}
+<dl>
+  {% for item in group.items %}
+  <dt><a href="{{ item.url }}">{{ item.name }}</a>
+  <span style="font-weight:normal">({{ item.description }})</span>
+  </dt>
+  <!--<dd> ({{ item.description }}) </dd>-->
+  {% endfor %}
+</dl>
+{% endfor %}
+
+<H2 id="contact">We welcome your questions and comments!</H2>
+<p>Please let us know if you have questions, requests, or anything else we should hear about!</p>
+
+<form
+  action="https://formspree.io/f/xbjbdojy"
+  method="POST"
+>
+  <label>
+    Your name:
+    <input type="name" name="name">
+  </label>
+  <br>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <br>
+  <label>
+    Message:
+    <textarea name="message" rows="10" cols="80"></textarea>
+  </label>
+  <br>
+  <button type="submit"><b>Send</b></button>
+</form>
+

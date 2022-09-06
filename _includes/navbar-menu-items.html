@@ -22,21 +22,7 @@
   </li>
 
   <li>
-    <a class="project_list" href="{{ "/projects" | relative_url }}">Projects</a>
-    {% if site.data.project_list %}
-    {% assign groups = site.data.project_list | sort: "year" %}
-    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .project_list; delay-hide: 0;">
-      <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
-      {% for group in groups %}
-        <li><a href="{{ group.DataStoreID | downcase | prepend: '/projects/' | relative_url }}">{{ group.short_title }}</a></li>
-      {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
-  </li>
-
-  <li>
-    <a href="{{ "/collections" | relative_url }}">Collections</a>
+    <a href="{{ "/collections" | relative_url }}">Data Collections</a>
     {% assign genera = site.data.taxon_list | group_by: "genus"  %}
     <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
       <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
@@ -59,6 +45,24 @@
     </div>
   </li>
 
+  <li>
+    <a class="project_list" href="{{ "/projects" | relative_url }}">Projects</a>
+    {% if site.data.project_list %}
+    {% assign groups = site.data.project_list | sort: "year" %}
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="toggle: .project_list; delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+      {% for group in groups %}
+        <li><a href="{{ group.DataStoreID | downcase | prepend: '/projects/' | relative_url }}">{{ group.short_title }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </li>
+
   <li><a href="{{ "/community" | relative_url }}">Community</a></li>
 
-  <li><a href="{{ "/help" | relative_url }}">Help</a></li>
+  <li><a href="{{ "/about" | relative_url }}">About & Contact</a></li>
+
+  <li><a href="{{ "/help" | relative_url }}">Help & Tutorials</a></li>
+
+

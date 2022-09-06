@@ -50,7 +50,7 @@ plugins:
 page_gen:
   - data: taxon_list
     template: taxon
-    dir: taxa
+    dir: resources
     name: genus
     index_files: true
     debug: true
@@ -60,6 +60,14 @@ page_gen:
     name: genus
     index_files: true
     debug: true
+  - data: project_list
+    template: projects
+    page_data_prefix: projects
+    dir: projects
+    name: DataStoreID
+    index_files: true
+    debug: true
+
 
 # SASS compilation
 sass:
