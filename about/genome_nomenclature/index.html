@@ -3,45 +3,51 @@ title: Genome Nomenclature
 tools_menu: false
 ---
 
-<h2>About Genome Nomenclature</h2>
-
-<h3>SoyBase Genome Nomenclature</h3>
-
+<h2>SoyBase Gene and Genome Nomenclature</h2>
+<p>
 The second Williams 82 genome assembly was released by JGI in February, 2013. The existence of multiple assemblies and annotations prompted JGI and key user groups to develop the following nomenclature conventions.
+</p>
 
-<h3>Gene Model Version Glyma 1.1 to Glyma 2.0 Correspondence Lookup</h3>
+<h4>Gene Model Version Glyma 1.1 to Glyma 2.0 Correspondence Lookup:</h4>
+<p>
+Use <a href="https://soybase.org/correspondence/index.php"><b>this quick and easy tool</b></a> to look up the name correspondences between the Wm82.a1.v1.1 and Wm82.a2.v1 annotations
+</p>
 
-Use this quick and easy tool to look up the name correspondences between the Wm82.a1.v1.1 and Wm82.a2.v1 annotations
+<h4>Genome assembly nomenclature:</h4>
+<p>
+ • Glyma.Wm82.a1 <-- the original JGI assembly, previously known as Glyma1.01, aka assembly 1<br>
+ • Glyma.Wm82.a2 <-- assembly 2<br>
+As other cultivars are sequenced, the genotype prefix (Wm82) will be changed as needed, e.g.:<br>
+ • Glyma.Forr.a1<br>
+Similarly a G. soja genome assembly would be:<br>
+ • Glyso.PI25345.a1<br>
+Gene annotation nomenclature:<br>
+An annotation version number is appended to the assembly name<br>
+ • Glyma.Wm82.a1.v1 <-- initial JGI annotation<br>
+ • Glyma.Wm82.a1.v1.1 <-- the JGI 1.1 annotation<br>
+ • Glyma.Wm82.a2.v1 <-- the current annotation
+</p>
 
-<h3>Genome assembly nomenclature:</h3>
-Glyma.Wm82.a1 <-- the original JGI assembly, previously known as Glyma1.01, aka assembly 1
-Glyma.Wm82.a2 <-- assembly 2
-As other cultivars are sequenced, the genotype prefix (Wm82) will be changed as needed, e.g.:
-Glyma.Forr.a1
-Similarly a G. soja genome assembly would be:
-Glyso.PI25345.a1
-Gene annotation nomenclature:
-An annotation version number is appended to the assembly name
-Glyma.Wm82.a1.v1 <-- initial JGI annotation
-Glyma.Wm82.a1.v1.1 <-- the JGI 1.1 annotation
-Glyma.Wm82.a2.v1 <-- the current annotation
+<h4>Gene model nomenclature:</h4>
+<p>
+Since many papers have been published for the assembly 1, annotation 1 or 1.1 the names will remain unchanged<br>
+ • Glyma10g34560 <-- no change from previous usage<br>
+Genes in the 2nd and future JGI assemblies and annotations are distinguished by a period after "Glyma" and 6 rather than 5 digits after the "g"<br>
+ • Glyma.01g123450.1.Wm82.a2.v1 (Note: the .1 after the locus name is used to distinguish a transcript or splice variant)<br>
+ • Glyso.01g112340.1.PI125345.a1.v1<br>
+</p>
 
-<h3>Gene model nomenclature:</h3>
-
-Since many papers have been published for the assembly 1, annotation 1 or 1.1 the names will remain unchanged
-Glyma10g34560 <-- no change from previous usage
-Genes in the 2nd and future JGI assemblies and annotations are distinguished by a period after "Glyma" and 6 rather than 5 digits after the "g"
-Glyma.01g123450.1.Wm82.a2.v1 (Note: the .1 after the locus name is used to distinguish a transcript or splice variant)
-Glyso.01g112340.1.PI125345.a1.v1
-Use this quick and easy tool to look up the name correspondences between the Wm82.a1.v1.1 and Wm82.a2.v1 annotations
-
-<h3>An example</h3>
-
-A locus in Williams 82 assembly version 2, annotation version 1, with 2 transcripts
-locus (i.e. gene model) identifier = Glyma.01g123499.Wm82.a2.v1
-locus name = Glyma.01g123499
-transcript identifiers = Glyma.01g123499.1.Wm82.a2.v1 and Glyma.01g123499.2.Wm82.a2.v1
-transcript names = Glyma.01g123499.1 and Glyma.01g123499.2
-In publications the full locus identifier can be used as part of each gene name, or the locus name can be provided separately to describe a set of genes if this can be done unambiguously in the context of the paper. For example "We studied Glyma.01g123450 in genotype, assembly, and annotation version Glyma.Wm82.a2.v1." Subsequent uses in the paper could then use only the shorter locus names (e.g. Glyma.01g123450).
-
+<h4>An example:</h4>
+<p>
+A locus in Williams 82 assembly version 2, annotation version 1, with 2 transcripts:<br>
+ • locus (i.e. gene model) identifier = Glyma.01g123499.Wm82.a2.v1<br>
+ • locus name = Glyma.01g123499<br>
+ • transcript identifiers = Glyma.01g123499.1.Wm82.a2.v1 and Glyma.01g123499.2.Wm82.a2.v1<br>
+ • transcript names = Glyma.01g123499.1 and Glyma.01g123499.2<br>
+</p>
+<p>
+In publications, the full locus identifier can be used as part of each gene name, or the locus name can be provided separately to describe a set of genes if this can be done unambiguously in the context of the paper. For example "We studied Glyma.01g123450 in genotype, assembly, and annotation version Glyma.Wm82.a2.v1." Subsequent uses in the paper could then use only the shorter locus names (e.g. Glyma.01g123450).
+</p>
+<p>
 At SoyBase we will use the brief locus name in the genome browser, with the annotation/assembly/annotation metadata being provided in the track name. Text report pages will use the long and short names as appropriate to the particular data being displayed.
+</p>
