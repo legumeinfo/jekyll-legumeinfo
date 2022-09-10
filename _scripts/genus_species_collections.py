@@ -12,6 +12,7 @@ taxonList = yaml.load(f.read(), Loader=yaml.FullLoader)
 
 print("##########")
 for taxon in taxonList:
+    # genus description file lists species
     genusDescriptionFile = "datastore-metadata/"+taxon["genus"]+"/GENUS/about_this_collection/description_"+taxon["genus"]+".yml"
     gdf = open(genusDescriptionFile, 'r')
     genusDescription = yaml.load(gdf.read(), Loader=yaml.FullLoader)
@@ -23,7 +24,7 @@ for taxon in taxonList:
         print("## "+taxon["genus"]+" "+species)
         print('- '+'name: '+species, file=speciesCollectionsFile)
         speciesDir = "datastore-metadata/"+taxon["genus"]+"/"+species
-        for collectionType in ["annotations", "diversity", "expression", "genetic", "genomes", "markers", "maps"]:
+        for collectionType in ["genomes", "annotations", "diversity", "expression", "gwas", "qtl", "markers", "maps"]:
             collectionsDir = speciesDir+"/"+collectionType+"/"
             if os.path.isdir(collectionsDir):
                 print('  '+collectionType+':', file=speciesCollectionsFile)

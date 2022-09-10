@@ -1,13 +1,24 @@
 ---
 species:
 - name: lunatus
-  annotations:
-    - collection: G27455.gnm1.ann1.JD7C
-      synopsis: "Phaseolus lunatus accession G27455 annotation files from genome assembly V1"
   genomes:
     - collection: G27455.gnm1.7NXX
       synopsis: "Phaseolus lunatus accession G27455 genome assembly V1"
+  annotations:
+    - collection: G27455.gnm1.ann1.JD7C
+      synopsis: "Phaseolus lunatus accession G27455 annotation files from genome assembly V1"
 - name: vulgaris
+  genomes:
+    - collection: 5-593.gnm1.1P7P
+      synopsis: "Phaseolus vulgaris accession 5-593 (Middle American race), genome assembly v1."
+    - collection: G19833.gnm1.zBnF
+      synopsis: "Phaseolus vulgaris accession G19833 genome assembly v1.0"
+    - collection: G19833.gnm2.fC0g
+      synopsis: "Phaseolus vulgaris accession G19833 genome assembly v2.1"
+    - collection: LaborOvalle.gnm1.VZZS
+      synopsis: "Phaseolus vulgaris accession Labor Ovalle (race Guatemala) genome assembly v1."
+    - collection: UI111.gnm1.3VTM
+      synopsis: "Phaseolus vulgaris accession UI111 genome assembly v1"
   annotations:
     - collection: 5-593.gnm1.ann1.3FBJ
       synopsis: "Phaseolus vulgaris accession 5-593 (Middle American race), annotation 1, genome assembly v1."
@@ -25,19 +36,7 @@ species:
   expression:
     - collection: G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014
       synopsis: "Bean Expression Atlas for common bean cv. Negro jamapa mapped to the G19833 version 1 genome annotation."
-  genetic:
-    - collection: BAT93_x_JALOEEP558.gen.Caldas_Blair_2009
-      synopsis: "Three RIL populations were used to find QTLs for seed color."
-    - collection: Cerinza_x_G24404.gen.Blair_Iriarte_2006
-      synopsis: "Agronomic performance traits were studied in a population of BC2F(3:5) introgression lines created from the cross of a Colombian large red-seeded commercial cultivar, ICA Cerinza, and a wild common bean accession, G24404."
-    - collection: DOR364_x_BAT477.gen.Blair_Galeano_2012
-      synopsis: "A mapping population of 113 RILs in the F5:7 generation was generated using a DOR364 by BAT477 cross."
-    - collection: G2333_x_G19839.gen.Checa_Blair_2008
-      synopsis: "The G2333_x_G19839_a genetic map contains all 11 common bean linkage groups.  It has a total length of 1175 cM and 149 mapped total markers."
-    - collection: ICABunsi_x_SXB405.gen.Parker_BernyMierYTeran_2020
-      synopsis: "Pod Dehiscence QTLs were identified using three phenotyping methods and an ICA Bunsi (PD-susceptible) x SXB 405 (PD-resistant) recombinant inbred mapping population."
-    - collection: Xana_x_Cornell49242.gen.Gaitán-Solís_Duque_2002
-      synopsis: "A map of 175 AFLP, 27 microsatellite, 30 SCAR, 33 ISSR, and 12 RAPD markers, as well as 13 loci coding for seed proteins, and four traditional genes (Fin/fin for growth habit, Asp/asp for seed coat shininess, P/p for seed color, and I/i for resistance to bean common mosaic virus)."
+  gwas:
     - collection: mixed.gwas.DiVittori_Bitocchi_2021
       synopsis: "GWAS of pod dehiscence in Common bean, relative to the G19833 assembly 2."
     - collection: mixed.gwas.Escobar_Oladzad_2022
@@ -64,17 +63,19 @@ species:
       synopsis: "GWAS of agronomic, architecture, and biotic stress traits at different locations within China for Common bean, relative to the G19833 assembly 1.0."
     - collection: mixed.gwas.Zitnick-Anderson_Oladzad_2020
       synopsis: "GWAS of Fusarium root rot resistance in Common Bean, relative to the G19833 assembly 2."
-  genomes:
-    - collection: 5-593.gnm1.1P7P
-      synopsis: "Phaseolus vulgaris accession 5-593 (Middle American race), genome assembly v1."
-    - collection: G19833.gnm1.zBnF
-      synopsis: "Phaseolus vulgaris accession G19833 genome assembly v1.0"
-    - collection: G19833.gnm2.fC0g
-      synopsis: "Phaseolus vulgaris accession G19833 genome assembly v2.1"
-    - collection: LaborOvalle.gnm1.VZZS
-      synopsis: "Phaseolus vulgaris accession Labor Ovalle (race Guatemala) genome assembly v1."
-    - collection: UI111.gnm1.3VTM
-      synopsis: "Phaseolus vulgaris accession UI111 genome assembly v1"
+  qtl:
+    - collection: BAT93_x_JALOEEP558.qtl.Caldas_Blair_2009
+      synopsis: "Three RIL populations were used to find QTLs for seed color."
+    - collection: Cerinza_x_G24404.qtl.Blair_Iriarte_2006
+      synopsis: "Agronomic performance traits were studied in a population of BC2F(3:5) introgression lines created from the cross of a Colombian large red-seeded commercial cultivar, ICA Cerinza, and a wild common bean accession, G24404."
+    - collection: DOR364_x_BAT477.qtl.Blair_Galeano_2012
+      synopsis: "A mapping population of 113 RILs in the F5:7 generation was generated using a DOR364 by BAT477 cross."
+    - collection: G2333_x_G19839.qtl.Checa_Blair_2008
+      synopsis: "The G2333_x_G19839_a genetic map contains all 11 common bean linkage groups.  It has a total length of 1175 cM and 149 mapped total markers."
+    - collection: ICABunsi_x_SXB405.qtl.Parker_BernyMierYTeran_2020
+      synopsis: "Pod Dehiscence QTLs were identified using three phenotyping methods and an ICA Bunsi (PD-susceptible) x SXB 405 (PD-resistant) recombinant inbred mapping population."
+    - collection: Xana_x_Cornell49242.qtl.Gaitán-Solís_Duque_2002
+      synopsis: "A map of 175 AFLP, 27 microsatellite, 30 SCAR, 33 ISSR, and 12 RAPD markers, as well as 13 loci coding for seed proteins, and four traditional genes (Fin/fin for growth habit, Asp/asp for seed coat shininess, P/p for seed color, and I/i for resistance to bean common mosaic virus)."
   markers:
     - collection: G19833.gnm1.mrk.BARCBean6K
       synopsis: "A core set of 6000 SNPs based on the genotyping of 365 dry bean and 134 snap bean accessions with the BARCBean6K_1 and BARCBean6K_2 BeadChips."
@@ -144,13 +145,13 @@ species:
     - collection: mixed.map.PvMcCleanNDSU2007
       synopsis: "Gene-based markers were used for mapping a RIL population of P. vulgaris. Over 1,800 SNPs and indels were found, 300 of which were screened in the RIL population. The resulting LOD 2.0 map is 1,545 cM in length and consists of 275 gene-based and previously mapped core markers."
 - name: acutifolius
-  annotations:
-    - collection: Frijol_Bayo.gnm1.ann1.ML22
-      synopsis: "Genome annotation files for Phaseolus acutifolius accession Frijol Bayo; JGI annotation version 1 on assembly 1"
-    - collection: W6_15578.gnm2.ann1.LVZ1
-      synopsis: "Phaseolus acutifolius accession W6_15578, annotations on genome assembly v2."
   genomes:
     - collection: Frijol_Bayo.gnm1.QH8L
       synopsis: "Phaseolus acutifolius accession Frijol Bayo, genome assembly v1."
     - collection: W6_15578.gnm2.L2V4
       synopsis: "Phaseolus acutifolius accession W6_15578, genome assembly v2."
+  annotations:
+    - collection: Frijol_Bayo.gnm1.ann1.ML22
+      synopsis: "Genome annotation files for Phaseolus acutifolius accession Frijol Bayo; JGI annotation version 1 on assembly 1"
+    - collection: W6_15578.gnm2.ann1.LVZ1
+      synopsis: "Phaseolus acutifolius accession W6_15578, annotations on genome assembly v2."
