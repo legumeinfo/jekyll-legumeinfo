@@ -1,12 +1,6 @@
 ---
 species:
 - name: sativa
-  annotations:
-    - collection: XinJiangDaYe.gnm1.ann1.RKB9
-      synopsis: "Gene annotations for pseudomolecule assemblies and scaffolds representing 4 haplotypes per chromosome for Medicago sativa XinJiangDaYe"
-  diversity:
-    - collection: mixed.tcp.div.Li_Acharya_2012
-      synopsis: "genotype variants called with respect to a transcriptome assembly, from 27 alfalfa genotypes, from Li, Acharya et al., 2012"
   genomes:
     - collection: CADL_HM342.gnm1.rVNY
       synopsis: "Genome assembly of Medicago sativa CADL (HM342)"
@@ -18,52 +12,13 @@ species:
       synopsis: "Pseudomolecule assemblies and scaffolds representing 4 haplotypes per chromosome for Medicago sativa XinJiangDaYe"
     - collection: Zhongmu_No_1.gnm1.TRQW
       synopsis: "Pseudomolecule assemblies and unanchored contigs representing 1 haplotype per chromosome for Medicago sativa Zhongmu No. 1"
-- name: truncatula
   annotations:
-    - collection: A17.gnm5.ann1_6.L2RX
-      synopsis: "Genome annotation for Medicago truncatula (A17)"
-    - collection: A17_HM341.gnm4.ann2.G3ZY
-      synopsis: "Genome annotation for Medicago truncatula (A17 HM341)"
-    - collection: HM004.gnm1.ann1.2XTB
-      synopsis: "Genome annotation for Medicago truncatula (HM004)"
-    - collection: HM010.gnm1.ann1.WV9J
-      synopsis: "Genome annotation for Medicago truncatula (HM010)"
-    - collection: HM022.gnm1.ann1.6C8N
-      synopsis: "Genome annotation for Medicago truncatula (HM022)"
-    - collection: HM023.gnm1.ann1.WZN8
-      synopsis: "Genome annotation for Medicago truncatula (HM023)"
-    - collection: HM034.gnm1.ann1.YR6S
-      synopsis: "Genome annotation for Medicago truncatula (HM034)"
-    - collection: HM050.gnm1.ann1.GWRX
-      synopsis: "Genome annotation for Medicago truncatula (HM050)"
-    - collection: HM056.gnm1.ann1.CHP6
-      synopsis: "Genome annotation for Medicago truncatula (HM056)"
-    - collection: HM058.gnm1.ann1.LXPZ
-      synopsis: "Genome annotation for Medicago truncatula (HM058)."
-    - collection: HM060.gnm1.ann1.H41P
-      synopsis: "Genome annotation for Medicago truncatula (HM060)"
-    - collection: HM095.gnm1.ann1.55W4
-      synopsis: "Genome annotation for Medicago truncatula (HM095)"
-    - collection: HM125.gnm1.ann1.KY5W
-      synopsis: "Genome annotation for Medicago truncatula (HM125)."
-    - collection: HM129.gnm1.ann1.7FTD
-      synopsis: "Genome annotation for Medicago truncatula (HM129)"
-    - collection: HM185.gnm1.ann1.GB3D
-      synopsis: "Genome annotation for Medicago truncatula (HM185)"
-    - collection: HM324.gnm1.ann1.SQH2
-      synopsis: "Genome annotation for Medicago truncatula (HM324)"
-    - collection: R108.gnmHiC_1.ann1.Y8NH
-      synopsis: "An assembly based on the earlier PacBio-based genome (R108_HM340.gnm1.XT6J), put into pseudomolecules using HiC scaffolding."
-    - collection: R108_HM340.gnm1.ann1.85YW
-      synopsis: "Genome annotation for Medicago truncatula R108 (HM340)"
+    - collection: XinJiangDaYe.gnm1.ann1.RKB9
+      synopsis: "Gene annotations for pseudomolecule assemblies and scaffolds representing 4 haplotypes per chromosome for Medicago sativa XinJiangDaYe"
   diversity:
-    - collection: A17.gnm5.div.Epstein_Burghardt_2022
-      synopsis: "Variant calling against Mt5.0 reference from Illumina-based whole genome resequencing across accessions from Medicago HapMap Collection."
-    - collection: A17_HM341.gnm4.div.Stanton-Geddes_Paape_2013
-      synopsis: "Variant calling from Illumina-based whole genome resequencing across accessions from Medicago HapMap Collection."
-  expression:
-    - collection: A17_HM341.gnm4.ann2.expr.He_Vagner_2009
-      synopsis: "Affymetrix GeneChip expression data from the Noble Medicago truncatula Gene Expression Atlas"
+    - collection: mixed.tcp.div.Li_Acharya_2012
+      synopsis: "genotype variants called with respect to a transcriptome assembly, from 27 alfalfa genotypes, from Li, Acharya et al., 2012"
+- name: truncatula
   genomes:
     - collection: A17.gnm5.MVZ2
       synopsis: "Scaffold assemblies and pseudomolecule assemblies for Medicago truncatula A17"
@@ -115,6 +70,51 @@ species:
       synopsis: "An assembly based on the earlier PacBio-based genome (R108_HM340.gnm1.XT6J), put into pseudomolecules using HiC scaffolding."
     - collection: R108_HM340.gnm1.XT6J
       synopsis: "Genome assembly for Medicago truncatula R108 (HM340)"
+  annotations:
+    - collection: A17.gnm5.ann1_6.L2RX
+      synopsis: "Genome annotation for Medicago truncatula (A17)"
+    - collection: A17_HM341.gnm4.ann2.G3ZY
+      synopsis: "Genome annotation for Medicago truncatula (A17 HM341)"
+    - collection: HM004.gnm1.ann1.2XTB
+      synopsis: "Genome annotation for Medicago truncatula (HM004)"
+    - collection: HM010.gnm1.ann1.WV9J
+      synopsis: "Genome annotation for Medicago truncatula (HM010)"
+    - collection: HM022.gnm1.ann1.6C8N
+      synopsis: "Genome annotation for Medicago truncatula (HM022)"
+    - collection: HM023.gnm1.ann1.WZN8
+      synopsis: "Genome annotation for Medicago truncatula (HM023)"
+    - collection: HM034.gnm1.ann1.YR6S
+      synopsis: "Genome annotation for Medicago truncatula (HM034)"
+    - collection: HM050.gnm1.ann1.GWRX
+      synopsis: "Genome annotation for Medicago truncatula (HM050)"
+    - collection: HM056.gnm1.ann1.CHP6
+      synopsis: "Genome annotation for Medicago truncatula (HM056)"
+    - collection: HM058.gnm1.ann1.LXPZ
+      synopsis: "Genome annotation for Medicago truncatula (HM058)."
+    - collection: HM060.gnm1.ann1.H41P
+      synopsis: "Genome annotation for Medicago truncatula (HM060)"
+    - collection: HM095.gnm1.ann1.55W4
+      synopsis: "Genome annotation for Medicago truncatula (HM095)"
+    - collection: HM125.gnm1.ann1.KY5W
+      synopsis: "Genome annotation for Medicago truncatula (HM125)."
+    - collection: HM129.gnm1.ann1.7FTD
+      synopsis: "Genome annotation for Medicago truncatula (HM129)"
+    - collection: HM185.gnm1.ann1.GB3D
+      synopsis: "Genome annotation for Medicago truncatula (HM185)"
+    - collection: HM324.gnm1.ann1.SQH2
+      synopsis: "Genome annotation for Medicago truncatula (HM324)"
+    - collection: R108.gnmHiC_1.ann1.Y8NH
+      synopsis: "An assembly based on the earlier PacBio-based genome (R108_HM340.gnm1.XT6J), put into pseudomolecules using HiC scaffolding."
+    - collection: R108_HM340.gnm1.ann1.85YW
+      synopsis: "Genome annotation for Medicago truncatula R108 (HM340)"
+  diversity:
+    - collection: A17.gnm5.div.Epstein_Burghardt_2022
+      synopsis: "Variant calling against Mt5.0 reference from Illumina-based whole genome resequencing across accessions from Medicago HapMap Collection."
+    - collection: A17_HM341.gnm4.div.Stanton-Geddes_Paape_2013
+      synopsis: "Variant calling from Illumina-based whole genome resequencing across accessions from Medicago HapMap Collection."
+  expression:
+    - collection: A17_HM341.gnm4.ann2.expr.He_Vagner_2009
+      synopsis: "Affymetrix GeneChip expression data from the Noble Medicago truncatula Gene Expression Atlas"
 - name: ruthenica
   genomes:
     - collection: Xinghe.gnm1.KKFS

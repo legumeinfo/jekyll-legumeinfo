@@ -41,11 +41,21 @@ collections_menu: true
 </dl>
 {% endif %}
 
-{% if species.genetic.size > 0 %}
-<h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/genetic/">GWAS and QTL Studies</a></h4>
+{% if species.gwas.size > 0 %}
+<h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/gwas/">GWAS</a></h4>
 <dl>
-  {% for item in species.genetic %}
-  <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/genetic/{{ item.collection }}/">{{ item.collection }}</a></dt>
+  {% for item in species.gwas %}
+  <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/gwas/{{ item.collection }}/">{{ item.collection }}</a></dt>
+  <dd>{{ item.synopsis }}</dd>
+  {% endfor %}
+</dl>
+{% endif %}
+
+{% if species.qtl.size > 0 %}
+<h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/qtl/">QTL Studies</a></h4>
+<dl>
+  {% for item in species.qtl %}
+  <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/qtl/{{ item.collection }}/">{{ item.collection }}</a></dt>
   <dd>{{ item.synopsis }}</dd>
   {% endfor %}
 </dl>
