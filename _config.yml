@@ -36,6 +36,8 @@ newsletter: https://www.soybase.org/soybaselist/index.php
 author: SoyBase curator
 lang: en
 
+card_item_limit: 3
+
 # our Google Analytics ID. XX CHANGE THIS for SoyBase
 google_analytics: "UA-49655154-1"
 
