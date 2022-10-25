@@ -9,8 +9,8 @@ tools_menu: false
   Soybean chromosome and historical linkage group correspondences.  Linkage group lengths in cM are based on the Soybean Consensus Map 3.0 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1893076/">(Choi et al., 2017)</a> produced by Perry Cregan's group at the USDA-ARS Soybean Genomics and Improvement Lab. The 11 initial linkage group to chromosome number assignments were made by Ted Hymowitz's group <a href="https://pubmed.ncbi.nlm.nih.gov/12783169/">(Zou et al., 2003)</a>. The remaining 9 were given chromosome numbers in decreasing order of linkage group genetic length.
 </p>
 
- | Chr# | LG| Len (cM) | Criteria |
- | :---: | :---: | :-----: | :-----------------: |
+ | Chr# | LG| Len (cM) | |
+ | :---: | :---: | :-----: | :--: |
  | 01 | D1a | 98.41 | previously assigned |
  | 02 | D1b | 140.63 | genetic length |
  | 03 | N | 99.51 | previously assigned |
