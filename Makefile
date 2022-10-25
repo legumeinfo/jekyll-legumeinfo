@@ -30,9 +30,8 @@ serve:
 CPATH = /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/Headers/
 
 install:
-	$(ENV) gem install --conservative bundler
 	# Hack make ffi to work on M1 MacBook: https://github.com/ffi/ffi/issues/864
-	$(ENV) gem install ffi:1.15.5 -- --enable-libffi-alloc
+	$(ENV) bundle config build.ffi --enable-libffi-alloc
 	$(ENV) CPATH=$(CPATH) bundle install
 
 clean:
