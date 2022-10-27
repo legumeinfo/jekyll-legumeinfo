@@ -2,3 +2,6 @@
 	path = uikit
 	url = https://github.com/uikit/uikit.git
 	branch = v3.13.4
+[submodule "_data/datastore-metadata"]
+	path = _data/datastore-metadata
+	url = git@github.com:legumeinfo/datastore-metadata.git

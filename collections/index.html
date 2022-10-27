@@ -19,124 +19,31 @@ title: Data Collections
 
 <h2>Collection synopses and links</h2>
 
-{% assign species_collections = site.data.collections %}
 {% assign genus = "Glycine" %}
 
-{% for species in species_collections.species %}
-
-  <h3><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/"><i>{{genus}} {{ species.name }}</i></a></h3>
-
-  {% if species.genomes.size > 0 %}
-  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/genomes/">Genomes</a></h4>
-  <dl>
-    {% for item in species.genomes %}
-    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/genomes/{{ item.collection }}/">{{ item.collection }}</a></dt>
-    <dd>{{ item.synopsis }}</dd>
-    {% endfor %}
-  </dl>
+{% for species_dir in site.data.datastore-metadata[genus] %}
+  {% assign species = species_dir[0] %}
+  {% if species == "GENUS" %}
+    {% continue %}
   {% endif %}
-
-  {% if species.annotations.size > 0 %}
-  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/annotations/">Annotations</a></h4>
-  <dl>
-    {% for item in species.annotations %}
-    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/annotations/{{ item.collection }}/">{{ item.collection }}</a></dt>
-    <dd>{{ item.synopsis }}</dd>
+  <h3><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/"><i>{{genus}} {{ species }}</i></a></h3>
+  {% for datatype_dir in species_dir[1] %}
+    {% assign datatype = datatype_dir[0] %}
+    {% if datatype == "about_this_collection" %} 
+      {% continue %}
+    {% endif %}
+    <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/{{ datatype }}/">{{ datatype }}</a></h4>
+    {% for collection_dir in datatype_dir[1] %}
+      {% assign collection = collection_dir[0] %}
+      {% for metadata_file in collection_dir[1] %}
+        {% if metadata_file[0] contains "README" %}
+        {% assign readme = metadata_file[1] %}
+          <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/{{ datatype }}/{{ readme.identifier }}/">{{ readme.identifier }}</a></dt>
+          <dd>{{ readme.synopsis }}</dd>
+        {% endif %}
+      {% endfor %}
     {% endfor %}
-  </dl>
-  {% endif %}
-
-  {% if species.expression.size > 0 %}
-  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/expression/">Expression</a></h4>
-  <dl>
-    {% for item in species.expression %}
-    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/expression/{{ item.collection }}/">{{ item.collection }}</a></dt>
-    <dd>{{ item.synopsis }}</dd>
-    {% endfor %}
-  </dl>
-  {% endif %}
-
-  {% if species.genetic.size > 0 %}
-  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/genetic/">Genetic Data</a></h4>
-  <dl>
-    {% for item in species.genetic %}
-    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/genetic/{{ item.collection }}/">{{ item.collection }}</a></dt>
-    <dd>{{ item.synopsis }}</dd>
-    {% endfor %}
-  </dl>
-  {% endif %}
-
-  {% if species.markers.size > 0 %}
-  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/markers/">Markers</a></h4>
-  <dl>
-    {% for item in species.markers %}
-    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/markers/{{ item.collection }}/">{{ item.collection }}</a></dt>
-    <dd>{{ item.synopsis }}</dd>
-    {% endfor %}
-  </dl>
-  {% endif %}
-
-  {% if species.synteny.size > 0 %}
-  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/synteny/">Synteny</a></h4>
-  <dl>
-    {% for item in species.synteny %}
-    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/synteny/{{ item.collection }}/">{{ item.collection }}</a></dt>
-    <dd>{{ item.synopsis }}</dd>
-    {% endfor %}
-  </dl>
-  {% endif %}
-
-  {% if species.diversity.size > 0 %}
-  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/diversity/">Diversity</a></h4>
-  <dl>
-    {% for item in species.diversity %}
-    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/diversity/{{ item.collection }}/">{{ item.collection }}</a></dt>
-    <dd>{{ item.synopsis }}</dd>
-    {% endfor %}
-  </dl>
-  {% endif %}
-
-  {% if species.gwas.size > 0 %}
-  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/gwas/">GWAS</a> (NOTE: THIS WILL BE MOVED INTO "GENETIC")</h4>
-  <dl>
-    {% for item in species.gwas %}
-    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/gwas/{{ item.collection }}/">{{ item.collection }}</a></dt>
-    <dd>{{ item.synopsis }}</dd>
-    {% endfor %}
-  </dl>
-  {% endif %}
-
-  {% if species.methylation.size > 0 %}
-  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/methylation/">Methylation</a></h4>
-  <dl>
-    {% for item in species.methylation %}
-    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/methylation/{{ item.collection }}/">{{ item.collection }}</a></dt>
-    <dd>{{ item.synopsis }}</dd>
-    {% endfor %}
-  </dl>
-  {% endif %}
-
-  {% if species.pangenomes.size > 0 %}
-  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/pangenomes/">Pangenomes</a> (Note: these are specialized pangenome collections, relative to reference assemblies for the indicated accessions. For genus-wide pan-gene sets, see above under GENUS.)</h4>
-  <dl>
-    {% for item in species.pangenomes %}
-    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/pangenomes/{{ item.collection }}/">{{ item.collection }}</a></dt>
-    <dd>{{ item.synopsis }}</dd>
-    {% endfor %}
-  </dl>
-  {% endif %}
-
-  {% if species.supplements.size > 0 %}
-  <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/supplements/">Supplements</a> (i.e. from publications)</h4>
-  <dl>
-    {% for item in species.supplements %}
-    <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/supplements/{{ item.collection }}/">{{ item.collection }}</a></dt>
-    <dd>{{ item.synopsis }}</dd>
-    {% endfor %}
-  </dl>
-  {% endif %}
-
-  <hr/>
-
+  {% endfor %}
+  <hr>
 {% endfor %}
 
