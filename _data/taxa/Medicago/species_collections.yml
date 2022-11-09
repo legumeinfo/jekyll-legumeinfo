@@ -18,6 +18,9 @@ species:
   diversity:
     - collection: mixed.tcp.div.Li_Acharya_2012
       synopsis: "genotype variants called with respect to a transcriptome assembly, from 27 alfalfa genotypes, from Li, Acharya et al., 2012"
+  expression:
+    - collection: XinJiangDaYe.gnm1.ann1.expr.B47_F56.ORourke_Fu_2015
+      synopsis: "Alfalfa expression atlas for M. sativa ssp. sativa (B47) and M. sativa ssp. falcata (F56) roots, root nodules, leaves, flowers, and elongating and post-elongation stem internodes."
 - name: truncatula
   genomes:
     - collection: A17.gnm5.MVZ2

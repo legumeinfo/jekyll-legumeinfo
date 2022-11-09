@@ -6,6 +6,8 @@ species:
       synopsis: "Genome assembly of Cicer arietinum CDCFrontier (kabuli variety)."
     - collection: CDCFrontier.gnm2.S2FF
       synopsis: "Cicer arietinum genotype CDCFrontier genome assembly v2.0"
+    - collection: CDCFrontier.gnm3.QT0P
+      synopsis: "Cicer arietinum genotype CDCFrontier genome assembly v3"
     - collection: ICC4958.gnm2.bg5m
       synopsis: "Genome assembly of Cicer arietinum ICC4958 (desi variety)."
   annotations:
@@ -13,11 +15,37 @@ species:
       synopsis: "genome annotation of Cicer arietium (kabuli variety)"
     - collection: CDCFrontier.gnm2.ann1.9M1L
       synopsis: "genome annotation of Cicer arietium (kabuli variety)"
+    - collection: CDCFrontier.gnm3.ann1.NPD7
+      synopsis: "Genome annotation v1 of Cicer arietium genotype CDC Frontier assembly v3"
     - collection: ICC4958.gnm2.ann1.LCVX
       synopsis: "genome annotation of Cicer arietium (desi variety)"
   diversity:
     - collection: CDCFrontier.div.vonWettberg_Chang_2018
       synopsis: "Variant data, from genome resequencing of 279 Cicer accessions, called relative to Cicer arietium CDCFrontier (kabuli type)."
   expression:
+    - collection: CDCFrontier.gnm3.ann1.expr.CDC_Consul.Perilla-Henao_2018
+      synopsis: "Study of nitrogen effects on gene expression from chickpea genotype CDC_Consul, with reads mapped to the CDCFrontier.gnm3.ann1 genome annotation."
+    - collection: CDCFrontier.gnm3.ann1.expr.Hybrid.Cook_2018
+      synopsis: "Study of development in a hybrid chickpea genotype, with reads mapped to the CDCFrontier.gnm3.ann1 genome annotation."
+    - collection: CDCFrontier.gnm3.ann1.expr.mixed.Moenga_2018
+      synopsis: "Study of drought stress effects on gene expression from contrasting drought tolerance chickpea genotypes ICC14778 and ICC8058, with reads mapped to the CDCFrontier.gnm3.ann1 genome annotation."
+    - collection: CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018a
+      synopsis: "Study of gene expression in contrasting salt tolerance chickpea genotypes Genesis836 and Rupali, mapped to the CDCFrontier.gnm3.ann1 genome annotation."
+    - collection: CDCFrontier.gnm3.ann1.expr.mixed.Sutton_2018b
+      synopsis: "Study of Phytophthora effects on gene expression from differing PRR resistance chickpea genotypes Rupali and Yorker, mapped to the CDCFrontier.gnm3.ann1 genome annotation."
     - collection: ICC4958.gnm2.ann1.expr.ICC4958.Singh_Garg_2013
       synopsis: "Chickpea Transcriptome Atlas - I"
+- name: echinospermum
+  genomes:
+    - collection: S2Drd065.gnm1.R888
+      synopsis: "Cicer echinospermum genotype S2Drd065 genome assembly v1"
+  annotations:
+    - collection: S2Drd065.gnm1.ann1.YZ9H
+      synopsis: "Cicer arietinum genotype S2Drd065 genome assembly v1 annotation v1"
+- name: reticulatum
+  genomes:
+    - collection: Besev079.gnm1.2FZC
+      synopsis: "Cicer reticulatum genotype Besev079 genome assembly v1"
+  annotations:
+    - collection: Besev079.gnm1.ann1.F01Z
+      synopsis: "Cicer reticulatum annotation v1 for genotype Besev079 genome assembly v1"

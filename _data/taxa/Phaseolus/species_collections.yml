@@ -64,18 +64,24 @@ species:
     - collection: mixed.gwas.Zitnick-Anderson_Oladzad_2020
       synopsis: "GWAS of Fusarium root rot resistance in Common Bean, relative to the G19833 assembly 2."
   qtl:
-    - collection: BAT93_x_JALOEEP558.qtl.Caldas_Blair_2009
-      synopsis: "Three RIL populations were used to find QTLs for seed color."
     - collection: Cerinza_x_G24404.qtl.Blair_Iriarte_2006
       synopsis: "Agronomic performance traits were studied in a population of BC2F(3:5) introgression lines created from the cross of a Colombian large red-seeded commercial cultivar, ICA Cerinza, and a wild common bean accession, G24404."
     - collection: DOR364_x_BAT477.qtl.Blair_Galeano_2012
       synopsis: "A mapping population of 113 RILs in the F5:7 generation was generated using a DOR364 by BAT477 cross."
     - collection: G2333_x_G19839.qtl.Checa_Blair_2008
-      synopsis: "The G2333_x_G19839_a genetic map contains all 11 common bean linkage groups.  It has a total length of 1175 cM and 149 mapped total markers."
-    - collection: ICABunsi_x_SXB405.qtl.Parker_BernyMierYTeran_2020
-      synopsis: "Pod Dehiscence QTLs were identified using three phenotyping methods and an ICA Bunsi (PD-susceptible) x SXB 405 (PD-resistant) recombinant inbred mapping population."
-    - collection: Xana_x_Cornell49242.qtl.Gaitán-Solís_Duque_2002
-      synopsis: "A map of 175 AFLP, 27 microsatellite, 30 SCAR, 33 ISSR, and 12 RAPD markers, as well as 13 loci coding for seed proteins, and four traditional genes (Fin/fin for growth habit, Asp/asp for seed coat shininess, P/p for seed color, and I/i for resistance to bean common mosaic virus)."
+      synopsis: "QTLs for growth habit: Plant height, Internode length, Climbing ability, and Branch number, from a G2333 x G19839 genetic map."
+    - collection: Xana_x_BAT93.qtl.Murube_Campa_2020
+      synopsis: "QTL study of seed and pod phenotypes using two nested RIL populations from Xana x Cornell 49242 (XC) and Xana x BAT93 (XB); XB QTLs are listed here."
+    - collection: Xana_x_Cornell49242.qtl.Murube_Campa_2020
+      synopsis: "QTL study of seed and pod phenotypes using two nested RIL populations from Xana x Cornell 49242 (XC) and Xana x BAT93 (XB); XC QTLs are listed here."
+    - collection: Xana_x_Cornell49242.qtl.Pérez-Vega_Pascual_2012
+      synopsis: "QTL study of white mold resistance performed on a genetic map of 104 F7 RILs from Xana x Cornell 49242."
+    - collection: Xana_x_Cornell49242.qtl.Pérez-Vega_Pañeda_2010
+      synopsis: "QTL study of phenological traits performed on a genetic map of 104 F7 RILs from Xana x Cornell 49242."
+    - collection: Xana_x_Cornell49242.qtl.Pérez-Vega_Trabanco_2013
+      synopsis: "QTL study of resistance to powdery mildew performed on a genetic map of 329 loci from Xana x Cornell49242."
+    - collection: mixed.qtl.Caldas_Blair_2009
+      synopsis: "Three RIL populations, from DOR364xG19833, BAT93xJALOEEP558, and G2333xG19839, were used to find QTLs for seed tannin concentration."
   markers:
     - collection: G19833.gnm1.mrk.BARCBean6K
       synopsis: "A core set of 6000 SNPs based on the genotyping of 365 dry bean and 134 snap bean accessions with the BARCBean6K_1 and BARCBean6K_2 BeadChips."
@@ -83,13 +89,15 @@ species:
       synopsis: "Approximately 5 million SNP markers reported by Wu, Wang et al. 2020, identified from whole genome resequencing (WGRS) of 683 common bean genotypes, relative to the Phaseolus vulgaris assembly G19833.gnm1."
     - collection: G19833.gnm1.mrk.Benchimol_deCampos_2007
       synopsis: "A common bean genomic library was constructed using the ‘IAC-UNA’ variety enriched for (CT) and (GT) for microsatellite motifs. From 1,209 sequenced clones, 714 showed microsatellites distributed over 471 simple and 243 compound motifs."
+    - collection: G19833.gnm1.mrk.Blair_Cortés_2013
+      synopsis: "A 768-marker Illumina GoldenGate array of SNP markers based on Trans-legume Orthologous Group (TOG) genes; marker physical coordinates relative to G19833.gnm1"
     - collection: G19833.gnm1.mrk.Blair_Pedraza_2003
       synopsis: "A total of 150 microsatellite markers developed for common bean (Phaseolus vulgaris L.) were tested for parental polymorphism and used to determine the positions of 100 genetic loci on an integrated genetic map of the species."
     - collection: G19833.gnm1.mrk.Cardoso_Oblessuc_2008
       synopsis: "Ninety-nine new microsatelitte loci were developed from a microsatellite-enriched library for (CT)8  and (GT)8  motifs, from CAL-143 line."
-    - collection: G19833.gnm1.mrk.Gaitan-Solis_Duque_2002
+    - collection: G19833.gnm1.mrk.Gaitán-Solís_Duque_2002
       synopsis: "18 polymorphic microsatellite markers from Bactris gasipaes."
-    - collection: G19833.gnm1.mrk.Galeano_Cortes_2012
+    - collection: G19833.gnm1.mrk.Galeano_Cortés_2012
       synopsis: "In this study, a total of 313 new gene-based markers were developed at target genes."
     - collection: G19833.gnm1.mrk.Galeano_Fernandez_2011
       synopsis: "The DOR364 x BAT477 linkage map consisted of 291 markers with a total map length of 1,788 cM."
@@ -107,8 +115,6 @@ species:
       synopsis: "A set of 79 previously mapped bean (Phaseolus vulgaris) genomic (Bng) clones were partially sequenced. Sequence tagged site (STSs) were produced for 16 of the clones, 2 of which contain simple sequence repeats (SSRs)."
     - collection: G19833.gnm1.mrk.Parker_BernyMierYTeran_2020
       synopsis: "Genetic markers for the GWAS dataset provided with Parker, Berny Mier y Teran (2020)."
-    - collection: G19833.gnm1.mrk.PvCookUCDavis2009
-      synopsis: "A 768-marker array of single nucleotide polymorphisms (SNP) based on Trans-legume Orthologous Group (TOG) genes."
     - collection: G19833.gnm1.mrk.Raggi_Caproni_2019
       synopsis: "Plant material was genotyped using double digest Restriction-site Associated DNA sequencing, producing about 50,000 SNPs."
     - collection: G19833.gnm1.mrk.Wen_Chang_2019
@@ -117,33 +123,39 @@ species:
       synopsis: "15 SSR markers assigned to the Phaseolus vulgaris molecular linkage map."
     - collection: G19833.gnm2.mrk.Andean_MidAmer_GBS
       synopsis: "Marker SNPs developed by GBS on Andean and Middle American gene pools, with reads mapped to the Phaseolus vulgaris G19833 gnm2 assembly."
+    - collection: G19833.gnm2.mrk.Blair_Cortés_2013
+      synopsis: "A 768-marker Illumina GoldenGate array of SNP markers based on Trans-legume Orthologous Group (TOG) genes; marker physical coordinates relative to G19833.gnm2"
     - collection: G19833.gnm2.mrk.DiVittori_Bitocchi_2021
       synopsis: "We developed a BC4/F4 introgression line population and narrowed the major locus for pod shattering down to a 22.5 kb region."
     - collection: G19833.gnm2.mrk.Escobar_Oladzad_2022
       synopsis: "A set of 52,201 SNPs reported by Escobar, Oladzad et al. (2022) based on genotyping-by-sequencing (GBS) of a multiparent advanced generation inter-cross (MAGIC) dry bean population of 1,050 F5:7 RILs. Reads were mapped and sorted against the G19833.gnm2 reference assembly for common bean."
   maps:
-    - collection: BAT93_x_JALOEEP558.map.Blair_Cortés_2018_c
-      synopsis: "This BAT93 x JALOEEP558 map was constructed using Mapdisto v. 2.0 (Lorieux, 2012), assuming an RI model and using the create groups command both with and without anchor markers."
-    - collection: BAT93_x_JALOEEP558.map.Blair_Cortés_2018_d
-      synopsis: "Genetic map of markers to Phaseolus vulgaris accession G19833 genome assembly v1.0"
-    - collection: BAT93_x_JALOEEP558.map.Caldas_Blair_2009
-      synopsis: "Three RIL populations were used to find QTLs for seed color."
+    - collection: BAT93_x_JALOEEP558.map.Blair_Cortés_2018
+      synopsis: "Map of BAT93 x JALOEEP558, using 'TOG' markers from the GoldenGate SNP array reported in Blair, Cortés et al. 2013; Also known as PvCookUCDavis2009."
     - collection: BAT93_x_JALOEEP558.map.Freyre_Skroch_1998
       synopsis: "A 75-member F8 mapping population derived from the cross of BAT93 with JALO EEP558 was used to produce a core linkage map for common bean."
+    - collection: BAT93_x_JALOEEP558.map.McClean_Mamidi_2010
+      synopsis: "Gene-based markers were used for mapping a RIL population of P. vulgaris. Over 1,800 SNPs and indels were found, 300 of which were screened in the RIL population. The resulting LOD 2.0 map is 1,545 cM in length and consists of 275 gene-based and previously mapped core markers."
     - collection: Cerinza_x_G24404.map.Blair_Iriarte_2006
       synopsis: "Agronomic performance traits were studied in a population of BC2F(3:5) introgression lines created from the cross of a Colombian large red-seeded commercial cultivar, ICA Cerinza, and a wild common bean accession, G24404."
     - collection: DOR364_x_BAT477.map.Blair_Galeano_2012
       synopsis: "A mapping population of 113 RILs in the F5:7 generation was generated using a DOR364 by BAT477 cross."
     - collection: G2333_x_G19839.map.Checa_Blair_2008
-      synopsis: "The G2333_x_G19839_a genetic map contains all 11 common bean linkage groups.  It has a total length of 1175 cM and 149 mapped total markers."
+      synopsis: "This G2333 x G19839 genetic map contains all 11 common bean linkage groups. It has a total length of 1175 cM."
     - collection: Stampede_x_RedHawk.map.Song_Jia_2015
       synopsis: "A mapping population of 267 F2 plants from the cross of common bean varieties Stampede and Red Hawk developed by Dr. Phil McClean at North Dakota State University."
-    - collection: Xana_x_Cornell49242.map.Gaitán-Solís_Duque_2002
-      synopsis: "A map of 175 AFLP, 27 microsatellite, 30 SCAR, 33 ISSR, and 12 RAPD markers, as well as 13 loci coding for seed proteins, and four traditional genes (Fin/fin for growth habit, Asp/asp for seed coat shininess, P/p for seed color, and I/i for resistance to bean common mosaic virus)."
+    - collection: Xana_x_BAT93.map.XBRIL2020
+      synopsis: "Genetic map from a RIL population from Xana x BAT93."
+    - collection: Xana_x_Cornell49242.map.Pérez-Vega_Trabanco_2013
+      synopsis: "Genetic map of 329 loci from Xana x Cornell49242 used for a QTL study of powdery mildew resistance."
+    - collection: Xana_x_Cornell49242.map.XCRIL2010
+      synopsis: "Genetic map derived from 104 F7 RILs from Xana x Cornell 49242 with a total length of 1,042 cM across 11 linkage groups."
+    - collection: Xana_x_Cornell49242.map.XCRIL2020
+      synopsis: "Genetic map from a RIL population from Xana x Cornell 49242."
+    - collection: mixed.map.Caldas_Blair_2009
+      synopsis: "Genetic maps derived from three RIL populations, DOR364xG19833, BAT93xJALOEEP558, and G2333xG19839, were used to find QTLs for seed color."
     - collection: mixed.map.Galeano_Fernandez_2011
       synopsis: "This common bean consensus map was created using the DB (DOR364_x_BAT477, Mesoamerican intra-gene pool cross), DG (DOR364_x_G19833, inter-gene pool cross), and BJ (BAT93_x_JALOEEP558, inter-gene pool cross) mapping populations."
-    - collection: mixed.map.PvMcCleanNDSU2007
-      synopsis: "Gene-based markers were used for mapping a RIL population of P. vulgaris. Over 1,800 SNPs and indels were found, 300 of which were screened in the RIL population. The resulting LOD 2.0 map is 1,545 cM in length and consists of 275 gene-based and previously mapped core markers."
 - name: acutifolius
   genomes:
     - collection: Frijol_Bayo.gnm1.QH8L
