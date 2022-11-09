@@ -50,3 +50,36 @@ species:
       description: SequenceServer BLAST against the ICC 4958 assembly v2.0
       name: LIS SequenceServer
   taxid: 3827
+- abbrev: cicec
+  commonName: chickpea wild relative
+  description: Cicer echinospermum is a wild relative of cultivated C. arietinum (chickpea)
+    and native to Southeastern Turkey. C. echinospermum genotypes are partially compatible
+    with cultivated C. ariteinum and its immediate wild progenitor Cicer reticulatum.
+  genus: Cicer
+  species: echinospermum
+  strains:
+  - accession: S2Drd 065
+    description: One member (strain 065) of a wild plant population named S2Drd between
+      the cities Siverek and Diyarbakir (https://doi.org/10.1038/s41467-018-02867-z).
+    identifier: S2Drd065
+    name: S2Drd 065
+    origin: 'Sanliurfa province, Turkey: latitude 37.821118, longitude 39,641649,
+      altitude 1,126 meters.'
+  taxid: 90897
+- abbrev: cicre
+  commonName: chickpea wild progenitor
+  description: Cicer reticulatum is a wild relative of cultivated C. arietinum (chickpea)
+    and native to Southeastern Turkey. C. reticulatum is the immediate progenitor
+    of cultivated chickpea, C. arietinum.
+  genus: Cicer
+  species: reticulatum
+  strains:
+  - accession: Besev 079
+    description: "One member (strain 079) of a wild plant population named \u201C\
+      Be\u015Fevler\u201D located south of the city of Savur (https://doi.org/10.1038/s41467-018-02867-z)."
+    identifier: Besev079
+    name: Besev 079
+    origin: "Be\u015Fevler is a small town in the Mardin province of Turkey: latitude\
+      \ 37.516581, longitude 40.855175 altitude 902 meters. The name of the town (Be\u015F\
+      evler) literally means \u201Cfive houses\u201D."
+  taxid: 90898

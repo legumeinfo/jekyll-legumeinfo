@@ -6,10 +6,10 @@ description: Cicer is a genus of the legume family, Fabaceae, and the only genus
   Cicer arietinum, the chickpea.
 genus: Cicer
 resources:
-- URL: https://mines.legumeinfo.org/chickpeamine/begin.do
+- URL: https://mines.legumeinfo.org/cicermine/begin.do
   description: InterMine interface for accessing genetic and genomic data for several
-    species in Cicer.
-  name: ChickpeaMine
+    Cicer species.
+  name: CicerMine
 - URL: https://gcvit.cicer.legumeinfo.org
   description: Genotype comparison visualization tool.
   name: GCViT
@@ -23,4 +23,6 @@ resources:
   name: Germplasm GIS
 species:
 - arietinum
+- echinospermum
+- reticulatum
 taxid: 3826

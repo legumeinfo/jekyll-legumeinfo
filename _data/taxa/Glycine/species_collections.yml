@@ -26,6 +26,8 @@ species:
       synopsis: "Glycine max accession Williams 82 genome assembly v4.0"
     - collection: Wm82_IGA1008.gnm1.5CQQ
       synopsis: "Genome assembly files for cultivar Williams 82 (Wm82_IGA1008 in publication; WHFS_GmW82_1.0 in the GenBank assembly record), Chu et al. (2021)"
+    - collection: Wm82_ISU01.gnm2.JFPQ
+      synopsis: "Glycine max accession Williams 82 ISU01, genome assembly v2"
     - collection: Zh13.gnm1.N6C8
       synopsis: "Genome assembly files for cultivar Zhonghuang 13, Shen et al. (2018)"
     - collection: Zh13.gnm2.LV9P
@@ -61,6 +63,8 @@ species:
       synopsis: "Glycine max accession Williams genome annotation files; JGI annotation version 1 on assembly 4"
     - collection: Wm82_IGA1008.gnm1.ann1.FGN6
       synopsis: "Genome annotation files for cultivar William 82, Chu et al. (2021)"
+    - collection: Wm82_ISU01.gnm2.ann1.FGFB
+      synopsis: "Annotation 1 for Glycine max accession Williams 82 ISU01, genome assembly v2"
     - collection: Zh13.gnm1.ann1.8VV3
       synopsis: "Genome annotation files for cultivar Zhonghuang 13, Shen et al. (2018)"
     - collection: Zh13.gnm2.ann1.FJ3G
