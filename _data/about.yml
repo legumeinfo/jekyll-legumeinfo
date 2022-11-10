@@ -31,3 +31,7 @@
   description: "How to cite SoyBase"
   name: "Citing SoyBase"
   url: "/about/citing_soybase"
+- category: "About SoyBase"
+  description: "About SoyBase and Soybeans"
+  name: "SoyBase and Soybeans"
+  url: "/about/SoyBase_soybeans"
