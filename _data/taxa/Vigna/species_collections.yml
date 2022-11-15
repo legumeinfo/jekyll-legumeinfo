@@ -15,9 +15,13 @@ species:
   genomes:
     - collection: VC1973A.gnm6.3nL8
       synopsis: "Directory of scaffold assemblies and pseudomolecule assemblies."
+    - collection: VC1973A.gnm7.SB53
+      synopsis: "Vigna radiata (mungbean) accession VC1973A, assembly version 7 (2021)"
   annotations:
     - collection: VC1973A.gnm6.ann1.M1Qs
       synopsis: "Gene annotations"
+    - collection: VC1973A.gnm7.ann1.RWBG
+      synopsis: "Annotation version 1 Vigna radiata (mungbean) accession VC1973A, assembly version 7 (2021)"
   diversity:
     - collection: VC1973A.gnm6.div.Sandhu_Singh_2020
       synopsis: "Genetic variants for Vigna radiata, assessed across 500 accessions to create the Iowamung bean panel; genotyped relative to accession VC1973A.gnm6"
