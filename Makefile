@@ -37,5 +37,5 @@ install:
 clean:
 	rm -rf .jekyll-cache/ .jekyll-metadata _site/
 
-#distclean: clean
-#	rm -rf $${PWD}/vendor # or maybe just "git clean -xfd"
+distclean: clean
+	rm -rf $${PWD}/vendor # or maybe just "git clean -xfd"
