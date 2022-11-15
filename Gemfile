@@ -15,6 +15,7 @@ group :jekyll_plugins do
   gem 'jekyll_file_exists', :git => 'https://github.com/asperduti/jekyll_file_exists.git'
   ## generates pages based on files under _data
   gem "jekyll-datapage-generator", "~> 1.4.0"
+  gem "jekyll-sitemap"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
