@@ -6,10 +6,10 @@ description: The genus Arachis contains approximately 69 species, distributed in
   by D.E. Williams & C.E. Simpson.
 genus: Arachis
 resources:
-- URL: https://mines.legumeinfo.org/peanutmine/begin.do
-  description: InterMine interface for accessing genetic and genomic data for several
-    species in Arachis.
-  name: PeanutMine
+- URL: https://mines.legumeinfo.org/arachismine/begin.do
+  description: InterMine interface for accessing genetic and genomic data for Arachis
+    species.
+  name: ArachisMine
 - URL: https://zzbrowse.legumeinfo.org/?tab=WhGen&datasets=Peanut%20GWAS&chr=Arahy.01&selected=100000&window=250000&datasets2=Soybean%20GWAS&chr2=Gm01&selected2=100000&window2=250000
   description: Association viewers (QTL, GWAS)
   name: ZZBrowse
