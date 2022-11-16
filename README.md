@@ -1,33 +1,40 @@
 # soybase.org
 This repository holds the [Jekyll](https://jekyllrb.com/) site hosted at www.soybase.org.
 
+## Deployment
 Commits to the `main` branch will trigger a GitHub Action workflow that build the static site & deploy to the dev.soybase.org branch.
 This branch is hosted via GitHub Pages at https://dev.soybase.org.
 
 When a tag is pushed, a GitHub Action workflow will build the static site & deploy to the [soybase/soybase.org](https://github.com/soybase/soybase.org) repository.
 This branch is hosted via GitHub Pages at https://www.dev.soybase.org.
 
+## Development
+### Local (macOS)
 The site is styled using a custom [UIkit](https://getuikit.com/) theme, which requires UIkit's SCSS files.
 As such, UIkit is a submodule of this repository and must be cloned with the repository:
 ```console
 git clone --recurse-submodules https://github.com/soybase/jekyll-soybase.git
 ```
 
-## Running the Site
-The following methods will run the site on your computer at http://localhost:4000.
+The following methods will run the site on your computer at http://localhost:4001.
 Changes made will be immediately reflected in the browser due to [LiveReload](http://livereload.com/).
 
-### Ruby
-You can run the site with Ruby as follows:
+```sh
+    make install # one-time installation of dependencies into vendor/
+    make         # Starts jekyll server listening on localhost:4001
+```
 
-    gem install bundler jekyll
+### GitHub Codespaces
+To develop on a branch using [GitHub Codespaces](https://github.com/features/codespaces)
+
+```sh
+    # one-time setup per codespace
+    git submodule init
+    git submodule update
     bundle install
-    bundle exec jekyll serve
-
-### Docker
-You can run the site with Docker as follows:
-
-    docker-compose up -d
+    # start jekyll (note --livereload not supported)
+    bundle exec jekyll serve --incremental
+```
 
 ## Theme
 This site uses a modified version of the [Legume Information System Jekyll theme](https://github.com/legumeinfo/jekyll-theme-legumeinfo).
