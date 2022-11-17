@@ -29,8 +29,7 @@ To develop on a branch using [GitHub Codespaces](https://github.com/features/cod
 
 ```sh
     # one-time setup per codespace
-    git submodule init
-    git submodule update
+    git submodule update --init
     bundle install
     # start jekyll (note --livereload not supported)
     bundle exec jekyll serve --incremental
