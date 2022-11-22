@@ -10,10 +10,7 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
-	"onCreateCommand": [
-		"git submodule update --init",
-		"bundle install"
-	]
+	"onCreateCommand": "git submodule update --init && bundle install"
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "ruby --version",
