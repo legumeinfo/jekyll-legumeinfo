@@ -28,8 +28,6 @@ Changes made will be immediately reflected in the browser due to [LiveReload](ht
 To develop on a branch using [GitHub Codespaces](https://github.com/features/codespaces)
 
 ```sh
-    bundle install
-    # start jekyll (note --livereload not supported)
     bundle exec jekyll serve --incremental
 ```
 
