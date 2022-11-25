@@ -48,6 +48,15 @@ species:
     - URL: https://sequenceserver.legumeinfo.org/
       description: SequenceServer BLAST against the Wm82 v2 assembly
       name: LIS SequenceServer
+  - accession: Wm82-ISU-01
+    description: Glycine max var. Williams 82-ISU-01 is an inbred line developed by
+      Robert Stupar (University of Minnesota) by inbreeding original W82 seed. The
+      resulting genome is a haploid version of W82. This genome can be used as an
+      updated version of W82. It is the most complete and highest quality soybean
+      genome completed to date.
+    identifier: Wm82_ISU01
+    name: Williams 82-ISU-01
+    origin: Northern United States
   - accession: GWHAAEV00000000.1
     description: Zhonghuang 13 is a Chinese cultivar derived from accessions Yudou
       18 and Zhongzuo 90052-76 by pedigree selection for high yield and stress tolerance
