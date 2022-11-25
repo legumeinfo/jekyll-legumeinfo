@@ -10,7 +10,10 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
-	"onCreateCommand": "git submodule update --init && bundle install"
+	// Automatically populate git sumobule working tree when the codespace is created.
+	// For the Ruby 2.7 environment, install Bundler 1.x to work around the bundler error described at:
+	// https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html
+	"onCreateCommand": "git submodule update --init && gem install bundler -v $(grep -A 1 'BUNDLED WITH' Gemfile.lock | tail -n 1) && bundle install"
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "ruby --version",
