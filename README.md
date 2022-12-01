@@ -25,7 +25,11 @@ Changes made will be immediately reflected in the browser due to [LiveReload](ht
 ```
 
 ### GitHub Codespaces
-To develop on a branch using [GitHub Codespaces](https://github.com/features/codespaces)
+When creating a [GitHub Codespace](https://github.com/features/codespaces) on a branch, a [Dev Container](https://containers.dev/) has been defined to automatically install the software environment defined in the Gemfile, start `jekyll serve --incremental` in a terminal to enable interactive development, and open Simple Browser to display the site.
+
+Due to an incompatibility between `jekyll serve --livereload` and GitHub Codespaces port forwarding, a browser reload is necessary to reflect any changes made to site code.
+
+If the `jekyll serve` process terminates, or needs to be restarted (e.g., due to updating _config.yml), stop the `jekyll serve` process in the terminal (if it is still executing) and execute the following manually in a terminal:
 
 ```sh
     bundle exec jekyll serve --incremental
