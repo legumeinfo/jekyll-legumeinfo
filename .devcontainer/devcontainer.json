@@ -1,26 +1,11 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/ruby
+// https://github.blog/changelog/2022-10-26-codespaces-customizable-initial-experience
 {
-	"name": "Ruby",
-	"image": "mcr.microsoft.com/devcontainers/ruby:2.7-bullseye",
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Automatically populate git sumobule working tree when the codespace is created.
-	// For the Ruby 2.7 environment, install Bundler 1.x to work around the bundler error described at:
-	// https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html
-	"onCreateCommand": "git submodule update --init && gem install bundler -v $(grep -A 1 'BUNDLED WITH' Gemfile.lock | tail -n 1) && bundle install"
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "ruby --version",
-
-	// Configure tool-specific properties.
-	// "customizations": {},
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	"onCreateCommand": "git submodule update --init && bundle install",
+	"postAttachCommand": "bundle exec jekyll serve --incremental",
+	"portsAttributes": {
+		"4000": {
+			"label": "jekyll",
+			"onAutoForward": "openPreview"
+		}
+	}
 }
