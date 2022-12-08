@@ -23,7 +23,7 @@
 ENV = PATH=$${PWD}/vendor/gems/bin:$${PATH} GEM_HOME=$${PWD}/vendor/gems 
 
 serve:
-	$(ENV) jekyll serve --incremental --livereload --livereload_port 35728 --port 4001
+	$(ENV) bundle exec jekyll serve --incremental --livereload --livereload_port 35728 --port 4001
 
 # additional macOS environment variable needed at install time due to broken
 # xcode ruby framework
@@ -37,5 +37,5 @@ install:
 clean:
 	rm -rf .jekyll-cache/ .jekyll-metadata _site/
 
-#distclean: clean
-#	rm -rf $${PWD}/vendor # or maybe just "git clean -xfd"
+distclean: clean
+	rm -rf $${PWD}/vendor # or maybe just "git clean -xfd"
