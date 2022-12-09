@@ -21,6 +21,8 @@
 #     make clean
  
 ENV = PATH=$${PWD}/vendor/gems/bin:$${PATH} GEM_HOME=$${PWD}/vendor/gems 
+JBROWSE_VERSION = 2.2.2
+NPM_GLOBAL= # set to "-g" to install nodejs packages globally
 
 serve:
 	$(ENV) bundle exec jekyll serve --incremental --livereload --livereload_port 35728 --port 4001
@@ -33,6 +35,15 @@ install:
 	# Hack make ffi to work on M1 MacBook: https://github.com/ffi/ffi/issues/864
 	$(ENV) bundle config build.ffi --enable-libffi-alloc
 	$(ENV) CPATH=$(CPATH) bundle install
+
+jbrowse-install:
+	rm -rf ./assets/js/jbrowse
+	npm install ${NPM_GLOBAL} @jbrowse/cli@${JBROWSE_VERSION}
+	npx jbrowse create ./assets/js/jbrowse --tag=v${JBROWSE_VERSION}
+
+jbrowse:
+	rm -f assets/js/jbrowse/config.json
+	_scripts/jbrowse-tracks.sh
 
 clean:
 	rm -rf .jekyll-cache/ .jekyll-metadata _site/

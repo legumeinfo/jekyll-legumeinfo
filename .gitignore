@@ -4,5 +4,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 .DS_Store
+assets/js/jbrowse
+node_modules
 vendor
 *~
