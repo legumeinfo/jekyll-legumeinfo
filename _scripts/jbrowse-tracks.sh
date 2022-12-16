@@ -1,32 +1,42 @@
 #!/bin/sh
+set -o errexit -o nounset
 
-set -o errexit
+readonly DATASTORE_URL=https://data.legumeinfo.org
 
-readonly URL_PREFIX=https://data.legumeinfo.org/Glycine
+# convert YAML "key: value" into shell assignments
+yaml2sh() { 
+   sed -n -e 's/: *"*/='"'"'/' -e 's/ *"* *$/'"'"'/' -e '/=/p' "${@}"
+}
 
-cd assets/js/jbrowse
+for readme in _data/datastore-metadata/Glycine/*/genomes/*/README.*.yml
+do
+  (
+    eval $(yaml2sh ${readme})
+    npx jbrowse add-assembly \
+      ${DATASTORE_URL}/$(dirname ${readme#_data/datastore-metadata/})/${scientific_name_abbrev}.${identifier}.genome_main.fna.gz \
+      --name=${identifier%.*} \
+      --type=bgzipFasta \
+      --out=assets/js/jbrowse
+  )
+done
 
-########################################
-# Wm82_ISU01.gnm2
-########################################
-
-npx jbrowse add-assembly \
-  ${URL_PREFIX}/max/genomes/Wm82_ISU01.gnm2.JFPQ/glyma.Wm82_ISU01.gnm2.JFPQ.genome_main.fna.gz \
-  --name='Wm82_ISU01.gnm2' \
-  --displayName='Williams 82 ISU01 Assembly 2' \
-  --type=bgzipFasta
-
-npx jbrowse add-track \
-  ${URL_PREFIX}/max/annotations/Wm82_ISU01.gnm2.ann1.FGFB/glyma.Wm82_ISU01.gnm2.ann1.FGFB.gene_models_main.gff3.gz \
-  --assemblyNames='Wm82_ISU01.gnm2' \
-  --category='Genes' \
-  --trackId='Wm82_ISU01.gnm2.ann1' \
-  --name='Gene models - Glyma.Wm82_ISU01.gnm2.ann1' \
-  --description='Annotation was retrieved from the DOE JGI.'
+for readme in _data/datastore-metadata/Glycine/*/annotations/*/README.*.yml
+do
+  (
+    eval $(yaml2sh ${readme})
+    npx jbrowse add-track \
+      ${DATASTORE_URL}/$(dirname ${readme#_data/datastore-metadata/})/${scientific_name_abbrev}.${identifier}.gene_models_main.gff3.gz \
+      --assemblyNames=${identifier%.ann[0-9].*} \
+      --category='Genes' \
+      --trackId=${identifier%.*} \
+      --description="${synopsis}" \
+      --out=assets/js/jbrowse
+  )
+done
 
 # FIXME: too big & slow to generate for testing
 # https://github.com/GMOD/jbrowse-components/issues/3019
 #npx jbrowse text-index \
 #  --perTrack \
-#  --tracks='Wm82_ISU01.gnm2.ann1' \
+#  --tracks='...' \
 #  --attributes='Name'
