@@ -29,7 +29,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          submodules: recursive # for uikit
+          submodules: recursive
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -45,6 +45,12 @@ jobs:
       - name: run html-proofer
         # always exit with status 0 for now, until the list of HTML grievances can be managed
         run: htmlproofer --disable-external --assume-extension --empty-alt-ignore --ignore-files '/uikit/tests/' ./_site || exit 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: make jbrowse-install
+      - run: make jbrowse
+      - run: mv assets/js/jbrowse _site/assets/js
       - name: Upload artifact
         if: always()
         uses: actions/upload-pages-artifact@v1 # This will automatically upload an artifact from the '/_site' directory
