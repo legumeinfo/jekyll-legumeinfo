@@ -1,0 +1,37 @@
+---
+-
+  DataStoreID: "Zhuang_Wang_2022"
+  short_title: "SoyMap II"
+  SoyBaseID: "SoyBase.C2022.01"
+  title: "SoyMap II: Leveraging untapped genetic diversity in soybean"
+  description: "Genomes and gene models were generated from multiple perennial soybean species across the Glycine genus to study insights into the polyploid and perennial genome evolution and genetic potential for soybean improvement."
+  BioProjectID: "PRJNA503746"
+  publications:
+    - citation: "Zhuang Y, Wang X, Li X, Hu J, Fan L, Landis JB, Cannon SB, Grimwood J, Schmutz J, Jackson SA, Doyle JJ, Zhang XS, Zhang D, Ma J. Phylogenomics of the genus Glycine sheds light on polyploid evolution and life-strategy transition. Nat Plants. 2022 Mar;8(3):233-244."
+      doi: "10.1038/s41477-022-01102-4."
+      abstract: "Polyploidy and life-strategy transitions between annuality and perenniality often occur in flowering plants. However, the evolutionary propensities of polyploids and the genetic bases of such transitions remain elusive. We assembled chromosome-level genomes of representative perennial species across the genus Glycine including five diploids and a young allopolyploid, and constructed a Glycine super-pangenome framework by integrating 26 annual soybean genomes. These perennial diploids exhibit greater genome stability and possess fewer centromere repeats than the annuals. Biased subgenomic fractionation occurred in the allopolyploid, primarily by accumulation of small deletions in gene clusters through illegitimate recombination, which was associated with pre-existing local subgenomic differentiation. Two genes annotated to modulate vegetative-reproductive phase transition and lateral shoot outgrowth were postulated as candidates underlying the perenniality-annuality transition. Our study provides insights into polyploid genome evolution and lays a foundation for unleashing genetic potential from the perennial gene pool for soybean improvement."
+  data_links:
+    - type: data
+      description: "Genome sequence of Glycine cyrtoloba version 1"
+      url: "https://soybase.org/data/v2/Glycine/cyrtoloba/genomes/G1267.gnm1.YWW6/glycy.G1267.gnm1.YWW6.genome_main.fna.gz"
+    - type: data
+      description: "GFF3 file of genes not in Lee"
+      url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.div.96SR.genes_not_in_Lee.gff3.gz"
+    - type: data
+      description: "Protein sequences of Lee gene transcripts and protein sequences unique to each accession"
+      url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.div.96SR.protein_Lee_and_other.fna.gz"
+    - type: data
+      description: "VCF file of SNPs >= 5 MAF"
+      url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.div.96SR.SNPs_maf05.vcf.gz"
+    - type: data
+      description: "Matrix of genes present/absence in Lee"
+      url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.pan.96SR.gene_pav_matrix.gz"
+    - type: data
+      description: "Fasta file of sequences not present in Lee"
+      url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.pan.96SR.seq_not_in_Lee.fna.gz"
+    - type: genome browser
+      description: "SoyBase genome viewer representation of gene presence/absence compared to Lee gene models"
+      url: "https://soybase.org/gb2/gbrowse/glyma.Lee.gnm1/?start=28535000;stop=28650000;ref=Gm15;width=1024;version=100;flip=0;grid=1;l=glyma_lee_gnm1_gene_models%1Esoy_lee_pangenome"
+    - type: data
+      description: "Soybean pangenome data repository at the Univ. of Western Australia"
+      url: "https://research-repository.uwa.edu.au/en/datasets/soybean-pangenome-snps-assembly-annotation-pav"
