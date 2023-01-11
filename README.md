@@ -25,6 +25,8 @@ Changes made will be immediately reflected in the browser due to [LiveReload](ht
     make jbrowse-install # (optional; requires npm) one-time installation of JBrowse CLI
     make jbrowse # (optional) run _scripts/jbrowse-tracks.sh to generate JBrowse config.json
     make         # Starts jekyll server listening on localhost:4001
+    ... CTRL-C ...
+    make check   # build site & check for broken links
 ```
 
 ### GitHub Codespaces

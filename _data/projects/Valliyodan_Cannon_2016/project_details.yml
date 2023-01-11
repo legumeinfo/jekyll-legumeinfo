@@ -13,10 +13,10 @@
   data_links:
     - type: data
       description: "Genome assembly for Glycine max cv. Lee"
-      url: "https://soybase.org/data/v2/Glycine/max/genomes/Lee.gnm1.BXNC"
+      url: "https://soybase.org/data/v2/Glycine/max/genomes/Lee.gnm1.BXNC/"
     - type: data
       description: "Genome assembly for Glycine max PI 483463"
-      url: "https://soybase.org/data/v2/Glycine/soja/genomes/PI483463.gnm1.YJWS"
+      url: "https://soybase.org/data/v2/Glycine/soja/genomes/PI483463.gnm1.YJWS/"
     - type: browser
       description: "Genome assembly for Glycine max PI 483463"
       url: "https://soybase.org/gb2/gbrowse/glyma.Lee.gnm1/"

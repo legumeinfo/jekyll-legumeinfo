@@ -1,11 +1,12 @@
 // https://github.blog/changelog/2022-10-26-codespaces-customizable-initial-experience
 {
 	"onCreateCommand": "git submodule update --init && bundle install && make jbrowse-install NPM_GLOBAL=-g && make jbrowse",
+	"postCreateCommand": "", // disable Oryx platform detection / old ruby installation
 	"postAttachCommand": "bundle exec jekyll serve --incremental",
 	"portsAttributes": {
 		"4000": {
 			"label": "jekyll",
 			"onAutoForward": "openPreview"
 		}
-	}
+	},
 }

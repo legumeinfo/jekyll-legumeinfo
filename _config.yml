@@ -50,18 +50,6 @@ plugins:
 
 #### jekyll-datapage-generator config
 page_gen:
-  - data: taxon_list
-    template: taxon
-    dir: resources
-    name: genus
-    index_files: true
-    debug: true
-  - data: taxon_list
-    template: collection
-    dir: collections
-    name: genus
-    index_files: true
-    debug: true
   - data: project_list
     template: projects
     page_data_prefix: projects

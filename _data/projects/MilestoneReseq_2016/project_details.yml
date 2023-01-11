@@ -13,7 +13,7 @@
   data_links:
     - type: visualization
       description: "Interactive copy-number viewer"
-      url: "http://shiny.soybase.org/CNV/"
+      url: "https://shiny.soybase.org/CNV/"
     - type: visualization
       description: "Interactive SNP analysis viewer"
       url: "https://shiny.soybase.org/SNP/"

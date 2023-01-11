@@ -21,7 +21,7 @@
 #     make clean
  
 ENV = PATH=$${PWD}/vendor/gems/bin:$${PATH} GEM_HOME=$${PWD}/vendor/gems 
-JBROWSE_VERSION = 2.2.2
+JBROWSE_VERSION = 2.3.2
 NPM_GLOBAL= # set to "-g" to install nodejs packages globally
 
 serve:
@@ -36,6 +36,10 @@ install:
 	$(ENV) bundle config build.ffi --enable-libffi-alloc
 	$(ENV) CPATH=$(CPATH) bundle install
 
+check:
+	$(ENV) bundle exec jekyll build
+	$(ENV) bundle exec htmlproofer --allow-missing-href=true --ignore-missing-alt=true --ignore-files '/\/uikit\/tests\//' --ignore-status-codes 503 --cache '{"timeframe": {"external": "30d"}}' --log-level debug ./_site 
+
 jbrowse-install:
 	rm -rf ./assets/js/jbrowse
 	npm install ${NPM_GLOBAL} @jbrowse/cli@${JBROWSE_VERSION}
@@ -46,7 +50,7 @@ jbrowse:
 	_scripts/jbrowse-tracks.sh
 
 clean:
-	rm -rf .jekyll-cache/ .jekyll-metadata _site/
+	rm -rf .jekyll-cache/ .jekyll-metadata _site/ tmp/
 
 distclean: clean
-	rm -rf $${PWD}/vendor # or maybe just "git clean -xfd"
+	rm -rf Gemfile.lock $${PWD}/vendor # or maybe just "git clean -xfd"
