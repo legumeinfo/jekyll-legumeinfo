@@ -20,8 +20,12 @@
 #
 #     make clean
  
-ENV = PATH=$${PWD}/vendor/gems/bin:$${PATH} GEM_HOME=$${PWD}/vendor/gems 
-JBROWSE_VERSION = 2.3.2
+# don't override GEM_HOME for GitHub Codespace
+OS = $(shell uname)
+ifeq ($(OS), Darwin)
+ENV = PATH=$${PWD}/vendor/gems/bin:$${PATH} GEM_HOME=$${PWD}/vendor/gems
+endif
+JBROWSE_VERSION = 2.3.3
 NPM_GLOBAL= # set to "-g" to install nodejs packages globally
 
 serve:
