@@ -16,11 +16,11 @@
       url: "#"
     - type: data
       description: "InDel coordinates for Hedou12 relative to Wm82.a1 (Text File 2.1 Mb)"
-      url: "http://www.soybase.org/data_distribution/projects/SoyBase.B2014.01/InDel_coordinates.txt"
+      url: "https://www.soybase.org/data_distribution/projects/SoyBase.B2014.01/InDel_coordinates.txt"
     - type: data
       description: "SNP coordinates for Hedou12 relative to Wm82.a1 (Text File 8.2 Mb)"
-      url: "http://www.soybase.org/data_distribution/projects/SoyBase.B2014.01/SNP_coordinates.txt"
+      url: "https://www.soybase.org/data_distribution/projects/SoyBase.B2014.01/SNP_coordinates.txt"
     - type: sequence reads
       description: "NCBI Short Read Archive SRP051486"
-      url: "http://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP051486"
+      url: "https://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP051486"
 

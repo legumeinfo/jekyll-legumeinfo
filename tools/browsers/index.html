@@ -1,5 +1,6 @@
 ---
 title: Genome browsers
+sitemap: sequence map
 tools_menu: true
 ---
 
@@ -17,6 +18,8 @@ Williams 82, the soybean cultivar used to produce the reference genome sequence,
 <ul>
   <li><a href="https://soybase.org/gb2/gbrowse/gmax2.0">Genome Browser (GBrowse)</a> for Wm82 assembly 2.0</li>
   <li><a href="https://soybase.org/gb2/gbrowse/gmax1.01">Genome Browser (GBrowse)</a> for Wm82 assembly 1.01</li>
+  {% capture map_path %}/assets/js/jbrowse/?assembly=Wm82_ISU01.gnm2&tracks=Wm82_ISU01.gnm2.ann1&loc=glyma.Wm82_ISU01.gnm2.Gm01:1-1000000{% endcapture %}
+  <li><a href="{{ map_path | relative_url }}">Genome Browser (JBrowse)</a> for Wm82_ISU01 assembly 2</li>
 </ul>
 
 <b>Zh13</b> (China) <br/>

@@ -1,13 +1,18 @@
 ---
 layout: default
 title: Genomic Resources
+sitemap: sequence map
 tools_menu: true
 ---
 
-{% assign genus_resources = site.data.resources.genus_resources %}
-{% assign species_resources = site.data.resources.species_resources %}
+{% assign genus = "Glycine" %}
 
-<p>{{ genus_resources.display_name }}</p>
+{% for about_file in site.data.datastore-metadata[genus].GENUS.about_this_collection %}
+  {% if about_file[0] contains "description_" %}
+    {% assign genus_resources = about_file[1] %}
+    {% break %}
+  {% endif %}
+{% endfor %}
 
 <h1><i>{{ genus_resources.genus }}</i> ({{ genus_resources.commonName }})</h2>
 <p>{{ genus_resources.description }}</p>
@@ -25,32 +30,38 @@ tools_menu: true
 
 <h2>Tools and resources for particular species</h2>
 
-{% for item in species_resources.species %}
+{% for species in genus_resources.species %}
+{% for about_file in site.data.datastore-metadata[genus][species].about_this_collection %}
+  {% if about_file[0] contains "description_" %}
+    {% assign species_resources = about_file[1] %}
+    {% break %}
+  {% endif %}
+{% endfor %}
 
   <hr/>
 
-  <h3><i>{{ item["genus"] }} {{ item["species"] }}</i>: {{ item["commonName"] }}</h3>
-  {% capture species_photo %}{% file_exists assets/img/species_images/{{ item["abbrev"] }}.jpg %}{% endcapture %}
+  <h3><i>{{ species_resources.genus }} {{ species_resources.species }}</i>: {{ genus_resources.commonName }}</h3>
+  {% capture species_photo %}{% file_exists assets/img/species_images/{{ species_resources.abbrev }}.jpg %}{% endcapture %}
   {% if species_photo == "true" %}
     <div style="float:right;margin:10px;border:1px solid darkgreen;">
-      <img src="/assets/img/species_images/{{ item["abbrev"] }}.jpg" alt="Image: {{ item["commonName"] }}"/><br/>
+      <img src="/assets/img/species_images/{{ species_resources.abbrev }}.jpg" alt="Image: {{ species_resources.commonName }}"/><br/>
     </div>
   {% endif %}
-  <p>{{ item["description"] }}</p>
-  <p>NCBI taxonomy ID: <b>{{ item["taxid"] }}</b></p>
+  <p>{{ species_resources.description }}</p>
+  <p>NCBI taxonomy ID: <b>{{ species_resources.taxid }}</b></p>
 
-  {% if item["resources"].size > 0 %}
-    <h4><i>{{ item["genus"] }} {{ item["species"] }}</i> resources</h4>
+  {% if species_resources.resources.size > 0 %}
+    <h4><i>{{ species_resources.genus }} {{ species_resources.species }}</i> resources</h4>
     <dl>
-      {% for resource in item["resources"] %}
+      {% for resource in species_resources.resources %}
       <dt><a href="{{ resource.URL }}">{{ resource.name }}</a></dt>
       <dd>{{ resource.description }}</dd>
       {% endfor %}
     </dl>
   {% endif %}
 
-  <h4><i>{{ item["genus"] }} {{ item["species"] }}</i> accessions</h4>
-  {% for strain in item["strains"] %}
+  <h4><i>{{ species_resources.genus }} {{ species_resources.species }}</i> accessions</h4>
+  {% for strain in species_resources.strains %}
     <b>{{ strain.identifier }}</b> ({{ strain.origin }}) <br/>
     {{ strain.description }}
     <ul>

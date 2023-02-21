@@ -25,20 +25,20 @@
       url: "https://figshare.com/projects/Soybean_Haplotype_Map_GmHapMap_A_Universal_Resource_for_Soybean_Translational_and_Functional_Genomics/56921"
     - type: data
       description: "Data Store repository"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019"
+      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/"
     - type: data
       description: "Download List of Accessions"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.HVCP.AccessionTable.txt.gz"
+      url: "https://www.soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.Torkamaneh_Laroche_2019.AccessionTable.txt.gz"
     - type: data
       description: "Download GmHapMap data in VCF format (1.9 GB compressed)"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.HVCP.SNPData.vcf.gz"
+      url: "https://www.soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.Torkamaneh_Laroche_2019.SNPdata.vcf.gz"
     - type: data
       description: "Download Genotypes by Gene"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.HVCP.genotypes_by_gene.hmp.gz"
+      url: "https://www.soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.Torkamaneh_Laroche_2019.genotypes_by_gene.hmp.gz"
     - type: data
       description: "Download Haplotypes by Gene"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.HVCP.haplotypes_by_gene.tsv.gz"
+      url: "https://www.soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.Torkamaneh_Laroche_2019.haplotypes_by_gene.tsv.gz"
     - type: data
       description: "Download Loss of Function SNPs"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.HVCP.loss_of_function.xlsx.gz"
+      url: "https://www.soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.Torkamaneh_Laroche_2019.loss_of_function.xlsx.gz"
 

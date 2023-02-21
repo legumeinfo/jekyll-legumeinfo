@@ -3,13 +3,13 @@
   - name: "Community resources at SoyBase"
     resources:
     - description: "Soybean Breeders Workshop"
-      url: "sbw/index.html"
+      url: "https://www.soybase.org/meeting_presentations/soybean_breeders_workshop/"
     - description: "Biennial Conference - Molecular and Cellular Biology of the Soybean"
-      url: "mcbs/index.html"
+      url: "https://www.soybase.org/meeting_presentations/soy_biennial/"
     - description: "Soybean Genetics Executive Committee"
-      url: "soygec/index.html"
+      url: "https://soybase.org/resources/SoyGEC/soygec.php"
     - description: "Job Postings at SoyBase"
-      url: "jobs/index.html"
+      url: "https://soybase.org/resources/jobs.php"
     - description: "Soybean Genomics Research: A Strategic Plan for 2017-2021"
       url: "https://soybase.org/resources/SoyGEC/2017/SoyGenStratPlan_2017-2021.pdf"
     - description: "Research and Goals to Control Losses from Stink Bugs and Related Pests"
@@ -19,11 +19,11 @@
   - name: "Soybean resources provided by the community"
     resources:
     - description: "American Soybean Associataion"
-      url: "http://www.soygrowers.com/"
+      url: "https://www.soygrowers.com/"
     - description: "United Soybean Board"
-      url: "http://www.unitedsoybean.org/"
+      url: "https://www.unitedsoybean.org/"
     - description: "North Central Soybean Research Program"
-      url: "http://www.ncsrp.com/"
+      url: "https://www.ncsrp.com/"
   - name: "Communications"
     resources:
     - description: "About the SoyBase Genetic Maps"
@@ -39,7 +39,7 @@
   - name: "USDA Crop and Climatic Resources"
     resources:
     - description: "Calendar of NASS reports"
-      url: "http://www.nass.usda.gov/Publications/Reports_By_Date/"
+      url: "https://www.nass.usda.gov/Publications/Reports_By_Date/"
     - description: "NOAA National Centers for Environmental Information"
       url: "https://www.ncdc.noaa.gov/climate-information"
     - description: "Germplasm Resources Information Network (GRIN)"
@@ -47,9 +47,9 @@
   - name: "Uniform Field and Variety Trials"
     resources:
     - description: "Southern states uniform soybean tests"
-      url: "http://www.ars.usda.gov/Main/docs.htm?docid=23815"
+      url: "https://www.ars.usda.gov/Main/docs.htm?docid=23815"
     - description: "Northern states uniform soybean tests"
       url: "https://www.ars.usda.gov/midwest-area/west-lafayette-in/crop-production-and-pest-control-research/docs/uniform-soybean-tests-northern-region/"
     - description: "2016 Soybean Sudden Death Syndrome Variety Trails"
-      url: "http://bulletin.ipm.illinois.edu/?p=3780"
+      url: "https://farmdoc.illinois.edu/field-crop-production/weeds/2016-university-of-illinois-plant-clinic-herbicide-resistance-report.html"
 

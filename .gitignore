@@ -1,7 +1,12 @@
 _site
+.bundle
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 .DS_Store
+assets/js/jbrowse
+node_modules
+Gemfile.lock
+tmp
 vendor
 *~

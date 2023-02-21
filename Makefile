@@ -20,7 +20,13 @@
 #
 #     make clean
  
-ENV = PATH=$${PWD}/vendor/gems/bin:$${PATH} GEM_HOME=$${PWD}/vendor/gems 
+# don't override GEM_HOME for GitHub Codespace
+OS = $(shell uname)
+ifeq ($(OS), Darwin)
+ENV = PATH=$${PWD}/vendor/gems/bin:$${PATH} GEM_HOME=$${PWD}/vendor/gems
+endif
+JBROWSE_VERSION = 2.3.3
+NPM_GLOBAL= # set to "-g" to install nodejs packages globally
 
 serve:
 	$(ENV) bundle exec jekyll serve --incremental --livereload --livereload_port 35728 --port 4001
@@ -34,8 +40,21 @@ install:
 	$(ENV) bundle config build.ffi --enable-libffi-alloc
 	$(ENV) CPATH=$(CPATH) bundle install
 
-clean:
-	rm -rf .jekyll-cache/ .jekyll-metadata _site/
+check:
+	$(ENV) bundle exec jekyll build
+	$(ENV) bundle exec htmlproofer --allow-missing-href=true --ignore-missing-alt=true --ignore-files '/\/uikit\/tests\//' --ignore-status-codes 503 --cache '{"timeframe": {"external": "30d"}}' --log-level debug ./_site 
 
-#distclean: clean
-#	rm -rf $${PWD}/vendor # or maybe just "git clean -xfd"
+jbrowse-install:
+	rm -rf ./assets/js/jbrowse
+	npm install ${NPM_GLOBAL} @jbrowse/cli@${JBROWSE_VERSION}
+	npx jbrowse create ./assets/js/jbrowse --tag=v${JBROWSE_VERSION}
+
+jbrowse:
+	rm -f assets/js/jbrowse/config.json
+	_scripts/jbrowse-tracks.sh
+
+clean:
+	rm -rf .jekyll-cache/ .jekyll-metadata _site/ tmp/
+
+distclean: clean
+	rm -rf Gemfile.lock $${PWD}/vendor # or maybe just "git clean -xfd"

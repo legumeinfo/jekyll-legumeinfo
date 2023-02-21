@@ -25,7 +25,7 @@
       url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.div.96SR.SNPs_maf05.vcf.gz"
     - type: data
       description: "Matrix of genes present/absence in Lee"
-      url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.pan.96SR.gene_pav_matrix.gz"
+      url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.pan.96SR.gene_pav_matrix.txt.gz"
     - type: data
       description: "Fasta file of sequences not present in Lee"
       url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.pan.96SR.seq_not_in_Lee.fna.gz"

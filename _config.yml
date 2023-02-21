@@ -45,21 +45,11 @@ datastoreurl: https://data.legumeinfo.org
 plugins:
   - jekyll-feed
   - jekyll-datapage-generator
+  # generate /sitemap.xml
+  - jekyll-sitemap
 
 #### jekyll-datapage-generator config
 page_gen:
-  - data: taxon_list
-    template: taxon
-    dir: resources
-    name: genus
-    index_files: true
-    debug: true
-  - data: taxon_list
-    template: collection
-    dir: collections
-    name: genus
-    index_files: true
-    debug: true
   - data: project_list
     template: projects
     page_data_prefix: projects
@@ -107,6 +97,11 @@ defaults:
       type: "posts"
     values:
       layout: "news-item"
+  -
+    scope:
+      path: "uikit/"
+    values:
+      sitemap: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.

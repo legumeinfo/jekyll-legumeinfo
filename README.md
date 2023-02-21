@@ -1,33 +1,44 @@
 # soybase.org
 This repository holds the [Jekyll](https://jekyllrb.com/) site hosted at www.soybase.org.
 
+## Deployment
 Commits to the `main` branch will trigger a GitHub Action workflow that build the static site & deploy to the dev.soybase.org branch.
 This branch is hosted via GitHub Pages at https://dev.soybase.org.
 
 When a tag is pushed, a GitHub Action workflow will build the static site & deploy to the [soybase/soybase.org](https://github.com/soybase/soybase.org) repository.
 This branch is hosted via GitHub Pages at https://www.dev.soybase.org.
 
+## Development
+### Local (macOS)
 The site is styled using a custom [UIkit](https://getuikit.com/) theme, which requires UIkit's SCSS files.
 As such, UIkit is a submodule of this repository and must be cloned with the repository:
 ```console
 git clone --recurse-submodules https://github.com/soybase/jekyll-soybase.git
 ```
+If running the optional JBrowse setup steps, NodeJS (https://nodejs.org/) is required for the `npm` package manager.
 
-## Running the Site
-The following methods will run the site on your computer at http://localhost:4000.
+The following methods will run the site on your computer at http://localhost:4001.
 Changes made will be immediately reflected in the browser due to [LiveReload](http://livereload.com/).
 
-### Ruby
-You can run the site with Ruby as follows:
+```sh
+    make install # one-time installation of dependencies into vendor/
+    make jbrowse-install # (optional; requires npm) one-time installation of JBrowse CLI
+    make jbrowse # (optional) run _scripts/jbrowse-tracks.sh to generate JBrowse config.json
+    make         # Starts jekyll server listening on localhost:4001
+    ... CTRL-C ...
+    make check   # build site & check for broken links
+```
 
-    gem install bundler jekyll
-    bundle install
-    bundle exec jekyll serve
+### GitHub Codespaces
+When creating a [GitHub Codespace](https://github.com/features/codespaces) on a branch, a [Dev Container](https://containers.dev/) has been defined to automatically install the software environment defined in the Gemfile, start `jekyll serve --incremental` in a terminal to enable interactive development, and open Simple Browser to display the site.
 
-### Docker
-You can run the site with Docker as follows:
+Due to an incompatibility between `jekyll serve --livereload` and GitHub Codespaces port forwarding, a browser reload is necessary to reflect any changes made to site code.
 
-    docker-compose up -d
+If the `jekyll serve` process terminates, or needs to be restarted (e.g., due to updating _config.yml), stop the `jekyll serve` process in the terminal (if it is still executing) and execute the following manually in a terminal:
+
+```sh
+    bundle exec jekyll serve --incremental
+```
 
 ## Theme
 This site uses a modified version of the [Legume Information System Jekyll theme](https://github.com/legumeinfo/jekyll-theme-legumeinfo).

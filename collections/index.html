@@ -1,5 +1,6 @@
 ---
 layout: default
+sitemap: homepage
 title: Data Collections
 ---
 
@@ -19,11 +20,18 @@ title: Data Collections
 
 <h2>Collection synopses and links</h2>
 
+<h3>TEST: Report species list in description_Glycine.yml</h3>
+{% assign genus_description = site.data.datastore-metadata.Glycine.GENUS.about_this_collection.description_Glycine %}
+{% for species in genus_description.species %}
+  <li>{{ species }}</li>
+{% endfor %}
+
 {% assign genus = "Glycine" %}
 
 {% for species_dir in site.data.datastore-metadata[genus] %}
   {% assign species = species_dir[0] %}
   {% if species == "GENUS" %}
+    <h2>TEST: {{ species }} </h2>
     {% continue %}
   {% endif %}
   <h3><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/"><i>{{genus}} {{ species }}</i></a></h3>

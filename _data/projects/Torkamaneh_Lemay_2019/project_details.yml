@@ -25,10 +25,10 @@
       url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Wm82.gnm4.pan.W46N/glyma.Wm82.gnm4.pan.W46N.PanSoy.ptpg.gtf.gz"
     - type: data
       description: "Coding sequence (CDS) predicted from the PanSoy genomic sequence, not in Wm84.gnm4."
-      url: "https://soybase.org/data/v2/Glycine/max/pangenomes/glyma.Wm82.gnm4.pan.W46N.PanSoy_cds_not_in_Wm82.fna.gz"
+      url: "https://www.soybase.org/data/v2/Glycine/max/pangenomes/Wm82.gnm4.pan.W46N/glyma.Wm82.gnm4.pan.W46N.PanSoy_cds_not_in_Wm82.fna.gz"
     - type: data
       description: "The PanSoy genomic sequence, present in one or more of the 204 accessions described in Torkamaneh, Lemay, Belzile (2021) but not in the reference Wm82.gnm4."
-      url: "https://soybase.org/data/v2/Glycine/max/pangenomes/glyma.Wm82.gnm4.pan.W46N.PanSoy_seq_not_in_Wm82.fna.gz"
+      url: "https://www.soybase.org/data/v2/Glycine/max/pangenomes/Wm82.gnm4.pan.W46N/glyma.Wm82.gnm4.pan.W46N.PanSoy_seq_not_in_Wm82.fna.gz"
     - type: data
       description: "Supplementary tables S1-S7 from Torkamaneh, Lemay, Belzile (2021), including gene presence-absence variation for genes predicted in Wm82.gnm4.ann1 and in the 204 accessions described in this study."
-      url: "https://soybase.org/data/v2/Glycine/max/pangenomes/glyma.Wm82.gnm4.pan.W46N.PanSoy_supp_tables.xlsx"
+      url: "https://www.soybase.org/data/v2/Glycine/max/pangenomes/Wm82.gnm4.pan.W46N/glyma.Wm82.gnm4.pan.W46N.PanSoy_supp_tables.xlsx"

@@ -8,6 +8,12 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.3.1"
+# pin jekyll dependency jekyll-sass-converter, as 3.0.0 won't work on macos
+# aarch64 ultimately due to dependency on google-protobuf, which isn't available
+# for aarch64 due to this issue:
+# https://github.com/protocolbuffers/protobuf/issues/9397
+gem "jekyll-sass-converter", "= 2.2.0"
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
@@ -15,6 +21,17 @@ group :jekyll_plugins do
   gem 'jekyll_file_exists', :git => 'https://github.com/asperduti/jekyll_file_exists.git'
   ## generates pages based on files under _data
   gem "jekyll-datapage-generator", "~> 1.4.0"
+  gem "jekyll-sitemap"
+end
+
+group :test do
+  # html-proofer 5.x requires ruby >= 3.1
+  gem "html-proofer", "= 4.4.3"
+  # install nokogiri from source for macos system/Xcode ruby (2.6.10p210) on arm64,
+  # as otherwise nokogiri-1.13.10-x86_64-darwin.gem is installed
+  if RUBY_PLATFORM =~ /arm64.*darwin/
+    gem "nokogiri", :git => "https://github.com/sparklemotion/nokogiri.git", :tag => "v1.13.10"
+  end
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
