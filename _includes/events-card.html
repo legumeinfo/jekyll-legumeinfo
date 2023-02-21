@@ -1,0 +1,19 @@
+<div class="uk-card uk-card-small uk-card-default uk-margin-top">
+  <div class="uk-card-header">
+    <div class="uk-grid-small uk-flex-middle" uk-grid>
+      <div class="uk-width-expand">
+        <h3 class="uk-card-title uk-margin-remove-bottom">EVENTS</h3>
+      </div>
+    </div>
+  </div>
+  <div class="uk-card-body">
+    <ul class="uk-list uk-list-disc">
+      {% for post in site.categories.events limit:site.card_item_limit %}
+      <li><a href="{{ post.url }}"><b>{{ post.title }}</b></a> {{ post.date | date_to_string }}{% if post.end_date %} - {{ post.end_date | date_to_string }}{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="uk-card-footer">
+    <a href="{{ "/events" | relative_url }}" class="uk-button uk-button-text">More Events</a>
+  </div>
+</div>

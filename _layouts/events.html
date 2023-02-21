@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<h1>Events</h1>
+
+<dl class="uk-description-list uk-description-list-divider">
+{% for post in site.categories.events %}
+<dt><a href="{{ post.url }}"><b>{{ post.title }}</b></a> {{ post.date | date_to_string }}{% if post.end_date %} - {{ post.end_date | date_to_string }}{% endif %}</dt>
+  <dd>{{ post.summary }}</dd>
+{% endfor %}
+</dl>
