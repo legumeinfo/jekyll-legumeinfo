@@ -4,9 +4,64 @@ layout: default
 
 <h1>Events</h1>
 
-<dl class="uk-description-list uk-description-list-divider">
-{% for post in site.categories.events %}
-<dt><a href="{{ post.url }}"><b>{{ post.title }}</b></a> {{ post.date | date_to_string }}{% if post.end_date %} - {{ post.end_date | date_to_string }}{% endif %}</dt>
-  <dd>{{ post.summary }}</dd>
-{% endfor %}
-</dl>
+<h2>Current and Upcoming Events</h2>
+<dl id="upcoming-events" class="uk-description-list uk-description-list-divider"></dl>
+
+<h2>Past Events</h2>
+<dl id="past-events" class="uk-description-list uk-description-list-divider"></dl>
+
+{% comment %}
+Populate the description lists using JavaScript so the site doesn't have to be rebuilt when the event is over
+{% endcomment %}
+<script type="text/javascript">
+
+  /* generates the description list HTML for an event */
+  function eventHtml(event) {
+    const titleLink = `<a href="${ event.url }"><b>${ event.title }</b></a>`;
+    let dates = event.date;
+    if (event.endDate) {
+      dates += ` - ${ event.endDate }`;
+    }
+    return `
+      <dt>${ titleLink } ${ dates }</dt>
+      <dd>${ event.summary }<dd>
+    `;
+  }
+
+  /* all events */
+  const events = [
+    {% for post in site.categories.events reversed %}
+      {
+        url: "{{ post.url }}",
+        title: "{{ post.title }}",
+        date: "{{ post.date | date_to_string }}",
+        unixDate: {{ post.date | date: '%s' }},
+        {% if post.end_date %}
+        endDate: "{{ post.end_date | date_to_string }}",
+        unixEndDate: {{ post.end_date | date: '%s' }},
+        {% else %}
+        endDate: null,
+        unixEndDate: null,
+        {% endif %}
+        summary: "{{ post.summary }}",
+      },
+    {% endfor %}
+    ];
+
+  /* separate current and upcoming events from past events */
+  const currentUnixDate = Math.floor(Date.now() / 1000);
+  const upcomingEvents = events
+    .filter((event) => event.unixDate >= currentUnixDate || event.unixEndDate >= currentUnixDate);
+  const pastEvents = events
+    .filter((event) => event.unixDate < currentUnixDate && event.unixEndDate < currentUnixDate);
+
+  /* generate HTML for events */
+  const upcomingHtml = upcomingEvents.map(eventHtml);
+  const pastHtml = pastEvents.map(eventHtml);
+
+  /* add the events to the events elements */
+  const upcomingElement = document.getElementById("upcoming-events");
+  upcomingElement.innerHTML = upcomingHtml.join("");
+  const pastElement = document.getElementById("past-events");
+  pastElement.innerHTML = pastHtml.join("");
+</script>
