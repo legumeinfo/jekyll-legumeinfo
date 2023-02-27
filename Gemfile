@@ -8,11 +8,6 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.3.1"
-# pin jekyll dependency jekyll-sass-converter, as 3.0.0 won't work on macos
-# aarch64 ultimately due to dependency on google-protobuf, which isn't available
-# for aarch64 due to this issue:
-# https://github.com/protocolbuffers/protobuf/issues/9397
-gem "jekyll-sass-converter", "= 2.2.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
@@ -27,10 +22,15 @@ end
 group :test do
   # html-proofer 5.x requires ruby >= 3.1
   gem "html-proofer", "= 4.4.3"
-  # install nokogiri from source for macos system/Xcode ruby (2.6.10p210) on arm64,
-  # as otherwise nokogiri-1.13.10-x86_64-darwin.gem is installed
   if RUBY_PLATFORM =~ /arm64.*darwin/
+    # install nokogiri from source for macos system/Xcode ruby (2.6.10p210) on arm64,
+    # as otherwise nokogiri-1.13.10-x86_64-darwin.gem is installed
     gem "nokogiri", :git => "https://github.com/sparklemotion/nokogiri.git", :tag => "v1.13.10"
+    # pin jekyll dependency jekyll-sass-converter, as 3.0.0 won't work on macos
+    # aarch64 ultimately due to dependency on google-protobuf, which isn't available
+    # for aarch64 due to this issue:
+    # https://github.com/protocolbuffers/protobuf/issues/9397
+    gem "jekyll-sass-converter", "= 2.2.0"
   end
 end
 

@@ -30,15 +30,18 @@ Changes made will be immediately reflected in the browser due to [LiveReload](ht
 ```
 
 ### GitHub Codespaces
-When creating a [GitHub Codespace](https://github.com/features/codespaces) on a branch, a [Dev Container](https://containers.dev/) has been defined to automatically install the software environment defined in the Gemfile, start `jekyll serve --incremental` in a terminal to enable interactive development, and open Simple Browser to display the site.
+When creating a [GitHub Codespace](https://github.com/features/codespaces) on a branch, a [Dev Container](https://containers.dev/) has been defined (at [.devcontainer/devcontainer.json](.devcontainer/devcontainer.json)) to automatically install the software environment defined in the Gemfile and package.json.
 
-Due to an incompatibility between `jekyll serve --livereload` and GitHub Codespaces port forwarding, a browser reload is necessary to reflect any changes made to site code.
-
-If the `jekyll serve` process terminates, or needs to be restarted (e.g., due to updating _config.yml), stop the `jekyll serve` process in the terminal (if it is still executing) and execute the following manually in a terminal:
+After the Codespace starts, build/serve the site with:
 
 ```sh
-    bundle exec jekyll serve --incremental
+    make jbrowse # (optional) run _scripts/jbrowse-tracks.sh to generate JBrowse config.json
+    make
 ```
+
+Port 4000 will automatically be forwarded & a Simple Browser instance will be opened to display the site.
+
+Due to an incompatibility between `jekyll serve --livereload` and GitHub Codespaces port forwarding, a browser reload is necessary to reflect any changes made to site code.
 
 ## Theme
 This site uses a modified version of the [Legume Information System Jekyll theme](https://github.com/legumeinfo/jekyll-theme-legumeinfo).
