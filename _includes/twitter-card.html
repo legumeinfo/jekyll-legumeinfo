@@ -15,7 +15,11 @@
   <!-- code from Twitter -->
   <a class="twitter-timeline uk-padding-small"
     href="https://twitter.com/{{ site.twitter_username }}"
-    data-tweet-limit={{ site.card_item_limit }}
+    data-tweet-limit={% if site.twitter_card_item_limit %}
+      {{ site.twitter_card_item_limit }}
+    {% else %}
+      {{ site.card_item_limit }}
+    {% endif %}
     data-chrome="noheader, nofooter, noborders"
     dnt=true
   >Tweets by {{ site.twitter_username }}</a>

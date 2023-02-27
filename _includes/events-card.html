@@ -37,10 +37,15 @@ Populate the widget using JavaScript so the site doesn't have to be rebuilt when
     {% endfor %}
     ];
   /* only keep soonest {{ site.card_item_limit }} events that are currently happening or upcoming */
+  const eventsLimit = {% if site.events_card_item_limit %}
+    {{ site.events_card_item_limit }}
+  {% else %}
+    {{ site.card_item_limit }}
+  {% endif %};
   const currentUnixDate = Math.floor(Date.now() / 1000);
   const upcomingEvents = events
     .filter((event) => event.unixDate >= currentUnixDate || event.unixEndDate >= currentUnixDate)
-    .slice(0, {{ site.card_item_limit }});
+    .slice(0, eventsLimit);
   /* generate HTML for each event */
   const listItems = upcomingEvents
     .map((event) => {
