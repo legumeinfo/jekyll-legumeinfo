@@ -36,7 +36,7 @@ Populate the widget using JavaScript so the site doesn't have to be rebuilt when
       },
     {% endfor %}
     ];
-  /* only keep soonest {{ site.card_item_limit }} events that are currently happening or upcoming */
+  /* only keep soonest eventsLimit events that are currently happening or upcoming */
   const eventsLimit = {% if site.events_card_item_limit %}
     {{ site.events_card_item_limit }}
   {% else %}
