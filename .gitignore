@@ -9,4 +9,5 @@ node_modules
 Gemfile.lock
 tmp
 vendor
+package*.json
 *~

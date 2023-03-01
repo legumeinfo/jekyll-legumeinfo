@@ -20,35 +20,33 @@ title: Data Collections
 
 <h2>Collection synopses and links</h2>
 
-<h3>TEST: Report species list in description_Glycine.yml</h3>
 {% assign genus_description = site.data.datastore-metadata.Glycine.GENUS.about_this_collection.description_Glycine %}
-{% for species in genus_description.species %}
-  <li>{{ species }}</li>
-{% endfor %}
+{% assign species_list=genus_description.species %}
 
 {% assign genus = "Glycine" %}
 
-{% for species_dir in site.data.datastore-metadata[genus] %}
-  {% assign species = species_dir[0] %}
-  {% if species == "GENUS" %}
-    <h2>TEST: {{ species }} </h2>
-    {% continue %}
-  {% endif %}
-  <h3><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/"><i>{{genus}} {{ species }}</i></a></h3>
-  {% for datatype_dir in species_dir[1] %}
-    {% assign datatype = datatype_dir[0] %}
-    {% if datatype == "about_this_collection" %} 
+{% for desired_species in species_list %}
+  {% for species_dir in site.data.datastore-metadata[genus] %}
+    {% assign species = species_dir[0] %}
+    {% if species != desired_species%}
       {% continue %}
     {% endif %}
-    <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/{{ datatype }}/">{{ datatype }}</a></h4>
-    {% for collection_dir in datatype_dir[1] %}
-      {% assign collection = collection_dir[0] %}
-      {% for metadata_file in collection_dir[1] %}
-        {% if metadata_file[0] contains "README" %}
-        {% assign readme = metadata_file[1] %}
-          <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/{{ datatype }}/{{ readme.identifier }}/">{{ readme.identifier }}</a></dt>
-          <dd>{{ readme.synopsis }}</dd>
-        {% endif %}
+    <h3><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/"><i>{{genus}} {{ species }}</i></a></h3>
+    {% for datatype_dir in species_dir[1] %}
+      {% assign datatype = datatype_dir[0] %}
+      {% if datatype == "about_this_collection" %} 
+        {% continue %}
+      {% endif %}
+      <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/{{ datatype }}/">{{ datatype }}</a></h4>
+      {% for collection_dir in datatype_dir[1] %}
+        {% assign collection = collection_dir[0] %}
+        {% for metadata_file in collection_dir[1] %}
+          {% if metadata_file[0] contains "README" %}
+          {% assign readme = metadata_file[1] %}
+            <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/{{ datatype }}/{{ readme.identifier }}/">{{ readme.identifier }}</a></dt>
+            <dd>{{ readme.synopsis }}</dd>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
     {% endfor %}
   {% endfor %}
