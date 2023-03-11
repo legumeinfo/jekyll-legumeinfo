@@ -10,7 +10,7 @@
 - category: "Download / Query"
   description: "Overviews of data characteristics at SoyBase and LIS: genome assembly sizes, gene counts, BUSCO coverage, etc."
   name: "Data Overviews for soy genomic data"
-  url: "https://dscensor.legumeinfo.org/multiqc-demo/genome_main:glycine"
+  url: "https://dscensor.legumeinfo.org/multiqc-demo/genome_main:Glycine"
 - category: "Visualize / Browse"
   description: "Genome browsers for soybean and related species. (Also accessible from the GENOMICS tab)"
   name: "Genome browsers"
