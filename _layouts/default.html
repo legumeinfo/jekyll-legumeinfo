@@ -2,7 +2,7 @@
 layout: base
 ---
 
-{% if page.tools_menu or page.taxa_menu or page.collections_menu %}
+{% if page contains "tools_menu" or page contains "taxa_menu" or page contains "collections_menu" %}
   {% include left-menu.html %}
 {% endif %}
 <!-- NOTE: putting content between the left menu and tm-main blocks will break CSS selectors -->
@@ -11,7 +11,7 @@ layout: base
     {{ content }}
   </div>
 
-  {% if page.news_card or page.announcements_card or page.blog_card %}
+  {% if page contains "news_card" or page contains "announcements_card" or page contains "blog_card" %}
     {% include card-column.html page=page %}
   {% endif %}
 

@@ -12,7 +12,7 @@ tools_menu: false
 ### SoyBase Home Page and Toolbox
 
 {% for page in site.pages %}
-  {% if page.sitemap == "homepage" %}
+  {% if page contains "sitemap" and page.sitemap == "homepage" %}
 - [{{ page.title }}]({{ page.url }})
   {% endif %}
 {% endfor %}
@@ -20,7 +20,7 @@ tools_menu: false
 ### Genetic and Physical Map Resources
 
 {% for page in site.pages %}
-  {% if page.sitemap == "maps" %}
+  {% if page contains "sitemap" and page.sitemap == "maps" %}
 - [{{ page.title }}]({{ page.url }})
   {% endif %}
 {% endfor %}
@@ -28,7 +28,7 @@ tools_menu: false
 ### Sequence Map Resources
 
 {% for page in site.pages %}
-  {% if page.sitemap == "sequence map" %}
+  {% if page contains "sitemap" and page.sitemap == "sequence map" %}
 - [{{ page.title }}]({{ page.url }})
   {% endif %}
 {% endfor %}
@@ -36,7 +36,7 @@ tools_menu: false
 ### Anaylsis Tools
 
 {% for page in site.pages %}
-  {% if page.sitemap == "sequence map" %}
+  {% if page contains "sitemap" and page.sitemap == "sequence map" %}
 - [{{ page.title }}]({{ page.url }})
   {% endif %}
 {% endfor %}
@@ -44,7 +44,7 @@ tools_menu: false
 ### Community Resources
 
 {% for page in site.pages %}
-  {% if page.sitemap == "community" %}
+  {% if page contains "sitemap" and page.sitemap == "community" %}
 - [{{ page.title }}]({{ page.url }})
   {% endif %}
 {% endfor %}

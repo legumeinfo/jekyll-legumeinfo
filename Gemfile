@@ -16,7 +16,9 @@ group :jekyll_plugins do
   gem 'jekyll_file_exists', :git => 'https://github.com/asperduti/jekyll_file_exists.git'
   ## generates pages based on files under _data
   gem "jekyll-datapage-generator", "~> 1.4.0"
-  gem "jekyll-sitemap"
+  # FIXME: jekyll-sitemap doesn't work with liquid.strict_variables: true
+  # https://github.com/jekyll/jekyll-sitemap/issues/272
+# gem "jekyll-sitemap"
 end
 
 group :test do

@@ -18,7 +18,7 @@ tools_menu: true
 <p>{{ genus_resources.description }}</p>
 <p>NCBI taxonomy ID: <b>{{ genus_resources.taxid }}</b></p>
 
-{% if genus_resources.resources.size > 0 %}
+{% if genus_resources contains "resources" %}
   <h2>Tools and resources for the genus as a whole</h2>
   <dl>
     {% for resource in genus_resources.resources %}
@@ -44,13 +44,13 @@ tools_menu: true
   {% capture species_photo %}{% file_exists assets/img/species_images/{{ species_resources.abbrev }}.jpg %}{% endcapture %}
   {% if species_photo == "true" %}
     <div style="float:right;margin:10px;border:1px solid darkgreen;">
-      <img src="/assets/img/species_images/{{ species_resources.abbrev }}.jpg" alt="Image: {{ species_resources.commonName }}"/><br/>
+      <img src="/assets/img/species_images/{{ species_resources.abbrev }}.jpg" alt="Image: {{ species_resources.abbrev }}"/><br/>
     </div>
   {% endif %}
   <p>{{ species_resources.description }}</p>
   <p>NCBI taxonomy ID: <b>{{ species_resources.taxid }}</b></p>
 
-  {% if species_resources.resources.size > 0 %}
+  {% if species_resources contains "resources" %}
     <h4><i>{{ species_resources.genus }} {{ species_resources.species }}</i> resources</h4>
     <dl>
       {% for resource in species_resources.resources %}
@@ -64,11 +64,13 @@ tools_menu: true
   {% for strain in species_resources.strains %}
     <b>{{ strain.identifier }}</b> ({{ strain.origin }}) <br/>
     {{ strain.description }}
+    {% if strain contains "resources" %}
     <ul>
       {% for resource in strain.resources %}
       <li><a href="{{ resource.URL }}">{{ resource.name }}</a> : {{ resource.description }}</li>
       {% endfor %}
     </ul>
+    {% endif %}
   {% endfor %}
 
 {% endfor %}

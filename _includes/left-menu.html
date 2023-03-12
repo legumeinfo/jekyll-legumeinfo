@@ -1,9 +1,9 @@
 <div id="left-menu" class="tm-sidebar-left uk-visible@m">
 
-  {% if page.tools_menu %}
+  {% if page contains "tools_menu" %}
     {% include tools-menu.html %}
   {% endif %}
-  {% if page.collections_menu %}
+  {% if page contains "collections_menu" %}
     {% include collections-menu.html %}
   {% endif %}
 

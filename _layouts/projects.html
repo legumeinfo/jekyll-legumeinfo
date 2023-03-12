@@ -23,7 +23,7 @@ layout: default
           <a href="https://doi.org/{{ publication.doi }}" target="_blank"> {{ publication.doi }} </a>
         </dd>
       {% endif %}
-      {% if publication.abstract %} 
+      {% if publication contains "abstract" %} 
         <details>
           <summary><strong>Abstract:</strong> (click to read)</summary> 
 

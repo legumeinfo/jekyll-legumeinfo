@@ -33,6 +33,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: soybasedatabase
 github_username: soybase
 newsletter: https://www.soybase.org/soybaselist/index.php
+author: SoyBase curator
+lang: en
 
 # our Google Analytics ID. XX CHANGE THIS for SoyBase
 google_analytics: "UA-49655154-1"
@@ -40,13 +42,22 @@ google_analytics: "UA-49655154-1"
 # Set the SoyBase/LIS Datastore base URL here
 datastoreurl: https://data.legumeinfo.org
 
+# https://jekyllrb.com/docs/configuration/liquid/
+liquid:
+  error_mode: strict
+  strict_filters: true
+  # note incompatibility with "default" filter: https://github.com/Shopify/liquid/issues/1404
+  strict_variables: true
+
 # Build settings
 #theme: jekyll-theme-legumeinfo
 plugins:
   - jekyll-feed
   - jekyll-datapage-generator
   # generate /sitemap.xml
-  - jekyll-sitemap
+  # FIXME: jekyll-sitemap doesn't work with liquid.strict_variables: true
+  # https://github.com/jekyll/jekyll-sitemap/issues/272
+  #- jekyll-sitemap
 
 #### jekyll-datapage-generator config
 page_gen:

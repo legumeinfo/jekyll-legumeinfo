@@ -27,8 +27,7 @@
   <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
     <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
       {% for species in genus_description.species %}
-        {% comment %} <li> <a href="/collections{{ species | downcase | relative_url }}"> {{ species }}</a></li> {% endcomment %}
-        <li> <a href="/collections{{ downcase | relative_url }}"> {{ species }}</a></li>
+        <li> <a href="/collections{{ species | downcase | relative_url }}"> {{ species }}</a></li>
       {% endfor %}
     </ul>
   </div>

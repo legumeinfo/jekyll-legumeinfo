@@ -1,5 +1,9 @@
 {% assign default_paths = site.pages | map: "path" %}
-{% assign page_paths = site.header_pages | default: default_paths %}
+{% if site contains "header_pages" %}
+  {% assign page_paths = site.header_pages %}
+{% else %}
+  {% assign page_paths = default_paths %}
+{% endif %}
 
 <div id="navbar" class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed{% if site.style.invert_navbar_text %} uk-light{% endif %}" uk-sticky>
 
@@ -60,13 +64,13 @@
 
         <ul class="uk-navbar-nav uk-visible@s">
 
-        {% if site.twitter_username %}
+        {% if site contains "twitter_username" %}
           <li><a class="tm-no-underline" href="https://twitter.com/{{ site.twitter_username }}" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span></a></li>
         {% endif %}
-        {% if site.newsletter %}
+        {% if site contains "newsletter" %}
           <li><a class="tm-no-underline" href="{{ site.newsletter }}" target="_blank" title="Subscribe to our newsletter"><span uk-icon="mail"</span></a></li>
         {% endif %}
-        {% if site.github_username %}
+        {% if site contains "github_username" %}
           <li><a class="tm-no-underline" href="https://github.com/{{ site.github_username }}" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span></a></li>
         {% endif %}
 
@@ -94,16 +98,16 @@
 
     {% include off-screen-menu.html %}
 
-    {% if site.twitter_username or site.newsletter or site.github_username %}
+    {% if site contains "twitter_username" or site contains "newsletter" or site contains "github_username" %}
     <ul class="uk-nav uk-nav-default">
       <li class="uk-nav-divider"></li>
-      {% if site.twitter_username %}
+      {% if site contains "twitter_username" %}
       <li><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span> Twitter</a></li>
       {% endif %}
-      {% if site.newsletter %}
+      {% if site contains "newsletter" %}
       <li><a href="{{ site.newletter }}" target="_blank" title="Subscribe to our newsletter"><span uk-icon="mail"></span> Newsletter</a></li>
       {% endif %}
-      {% if site.github_username %}
+      {% if site contains "github_username" %}
       <li><a href="https://github.com/{{ site.github_username }}" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span> GitHub</a></li>
       {% endif %}
     </ul>

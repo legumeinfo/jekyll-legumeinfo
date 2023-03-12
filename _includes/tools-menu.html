@@ -4,7 +4,8 @@
 {% for group in groups %}
 <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
   <li class="uk-nav-header">{{ group.name }}</li>
-  {% for item in group.items | sort: "name" %}
+  {% assign items_sorted = group.items | sort: "name" %}
+  {% for item in items_sorted %}
   <li uk-tooltip="title: {{ item.description }}"><a href="{{ item.url }}">{{ item.name }}</a></li>
   {% endfor %}
 </ul>
