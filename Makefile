@@ -39,8 +39,6 @@ serve:
 CPATH = /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/Headers/
 
 install:
-	# Hack make ffi to work on M1 MacBook: https://github.com/ffi/ffi/issues/864
-	if [ $$(uname) = Darwin ]; then $(ENV) bundle config build.ffi --enable-libffi-alloc; fi
 	$(ENV) CPATH=$(CPATH) bundle install
 
 check:
