@@ -1,4 +1,5 @@
 ---
+layout:     news-item
 title:      SoyBase is hiring an IT Specialist
 author:     Jacqueline Campbell
 date:       2022-05-19

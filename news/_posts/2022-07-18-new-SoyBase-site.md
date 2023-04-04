@@ -1,4 +1,5 @@
 ---
+layout:     news-item
 title:      Welcome to the new SoyBase site!
 author:     Steven Cannon and Andrew Farmer
 date:       2022-07-18

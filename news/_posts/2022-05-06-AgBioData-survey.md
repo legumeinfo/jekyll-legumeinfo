@@ -1,4 +1,5 @@
 ---
+layout:     news-item
 title:      AgBioData data management survey
 author:     Jacqueline Campbell
 date:       2022-05-06
