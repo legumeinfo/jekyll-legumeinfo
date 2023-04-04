@@ -9,7 +9,7 @@
   <div class="uk-card-body">
     <ul class="uk-list uk-list-disc">
       {% assign newsLimit = site.card_item_limit %}
-      {% if site.news_card_item_limit %}
+      {% if site contains "news_card_item_limit" %}
         {% assign newsLimit = site.news_card_item_limit %}
       {% endif %}
       {% for post in site.categories.news limit:newsLimit %}
