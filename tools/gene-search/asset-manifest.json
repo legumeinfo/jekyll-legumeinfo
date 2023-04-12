@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tools/gene-search/static/css/main.700620f6.css",
+    "main.js": "/tools/gene-search/static/js/main.bdc55296.js",
+    "index.html": "/tools/gene-search/index.html",
+    "main.700620f6.css.map": "/tools/gene-search/static/css/main.700620f6.css.map",
+    "main.bdc55296.js.map": "/tools/gene-search/static/js/main.bdc55296.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.700620f6.css",
+    "static/js/main.bdc55296.js"
+  ]
+}

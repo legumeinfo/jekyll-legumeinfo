@@ -5,3 +5,7 @@ _site
 .DS_Store
 vendor
 *~
+
+.env
+/react-gene-search/node_modules/
+/react-gene-search/build/

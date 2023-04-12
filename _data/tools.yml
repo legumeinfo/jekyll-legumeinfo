@@ -47,11 +47,10 @@
   description: "A multiple chromosome visualisation tool for visualizing resequencing or SNP array data"
   name: "GCViT: SNP Comparison Tool"
   url: "/tools/gcvit"
-# - 
-#   category: "FIXME"
-#   description: Description
-#   name: Maps
-#   url: "#"
+- category: "Entity Search"
+  description: "Search for genes by identifier, description, and/or gene family."
+  name: "Gene Search"
+  url: "/tools/gene-search/"
 # - 
 #   category: "FIXME"
 #   description: Description

@@ -109,6 +109,8 @@ defaults:
 #
 exclude:
   - docker-compose.yml
+  - node_modules
+  - react-gene-search
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
