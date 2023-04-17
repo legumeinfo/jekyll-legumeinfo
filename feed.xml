@@ -7,6 +7,28 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Site updates</title>
+        <description>&lt;p&gt;The LIS team has decommissioned the previous site (formerly housed at https://legacy.legumeinfo.org), as most site components have either been reimplemented or replaced by new functionality. Additional search features will be added in 2023, but rich options for queries, reports, visualization, and analysis exist now via the &lt;a href=&quot;https://mines.legumeinfo.org&quot;&gt;LIS InterMines&lt;/a&gt; and other &lt;a href=&quot;/tools&quot;&gt;Tools&lt;/a&gt; at the site.&lt;/p&gt;
+
+&lt;p&gt;Many new datasets have been added to the Data Store and the Mines in the last six months, including genome assemblies and annotation sets:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;i&gt;Arachis&lt;/i&gt; (peanut; 3)&lt;/li&gt;
+  &lt;li&gt;&lt;i&gt;Cercis&lt;/i&gt; (redbud; 1)&lt;/li&gt;
+  &lt;li&gt;&lt;i&gt;Cicer&lt;/i&gt; (chickpea; 2)&lt;/li&gt;
+  &lt;li&gt;&lt;i&gt;Glycine&lt;/i&gt; (soybean; 29)&lt;/li&gt;
+  &lt;li&gt;&lt;i&gt;Medicago&lt;/i&gt; (medics; 4)&lt;/li&gt;
+  &lt;li&gt;&lt;i&gt;Vigna&lt;/i&gt; (mung bean; 1)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There have also been many updates to the &lt;a href=&quot;https://mines.legumeinfo.org&quot;&gt;Legume InterMines&lt;/a&gt;, which now span 10 legume genera.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 15 Apr 2023 08:00:00 +0000</pubDate>
+        <link>/news/general/2023/04/15/site-updates.html</link>
+        <guid isPermaLink="true">/news/general/2023/04/15/site-updates.html</guid>
+      </item>
+    
+      <item>
         <title>WSRC11 18-23 June, 2023, Vienna Austria</title>
         <description>&lt;p&gt;18 - 23 June 2023:
 &lt;a href=&quot;https://www.wsrc11vienna.com&quot;&gt;World Soybean Research Conference (WSRC11)&lt;/a&gt;, Vienna Austria&lt;/p&gt;
@@ -33,15 +55,6 @@
         <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
         <link>/announcements/2022/05/25/plantbio.html</link>
         <guid isPermaLink="true">/announcements/2022/05/25/plantbio.html</guid>
-      </item>
-    
-      <item>
-        <title>LIS is hiring an IT Specialist</title>
-        <description>&lt;p&gt;The Legume Information System and SoyBase team is hiring an Information Technology Specialist. In this postition, the IT Specialist will perform web programming and database maintenance and evaluate and interpret data in biological contexts related to research and breeding applications. Please review &lt;a href=&quot;https://www.usajobs.gov/job/652664100&quot;&gt;job posting&lt;/a&gt;for more details.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 19 May 2022 00:00:00 +0000</pubDate>
-        <link>/news/general/2022/05/19/LIS-job.html</link>
-        <guid isPermaLink="true">/news/general/2022/05/19/LIS-job.html</guid>
       </item>
     
       <item>
