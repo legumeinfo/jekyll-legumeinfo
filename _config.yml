@@ -70,6 +70,7 @@ sass:
 style:
     link_color: '#0071B3'
     link_hover_color: '#018fe2'
+    global_muted_color: '#666'
     primary_background: '#87a96b'
     invert_navbar_text: true
 
