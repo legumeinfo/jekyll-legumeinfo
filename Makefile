@@ -28,8 +28,11 @@ endif
 ifeq ($(CODESPACE_NAME),)
 # livereload doesn't work behind reverse proxy
 LIVERELOAD = --port 4001 --livereload --livereload_port 35728 
+else
+# temporarily disable in codespace to work around https://github.com/devcontainers/images/issues/551
+BUNDLE_INSTALL_OPTS=--without test
 endif
-JBROWSE_VERSION = 2.4.0
+JBROWSE_VERSION = 2.4.2
 
 serve:
 	$(ENV) bundle exec jekyll serve --incremental $(LIVERELOAD)
@@ -39,7 +42,7 @@ serve:
 CPATH = /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/Headers/
 
 install:
-	$(ENV) CPATH=$(CPATH) bundle install
+	$(ENV) CPATH=$(CPATH) bundle install $(BUNDLE_INSTALL_OPTS)
 
 check:
 	$(ENV) bundle exec jekyll build
