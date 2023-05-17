@@ -40,6 +40,9 @@ google_analytics: "UA-49655154-1"
 # Set the LIS Datastore base URL here
 datastoreurl: https://data.legumeinfo.org
 
+# Set the GraphQL URI for tools that use it
+graphqluri: https://jekyll-dev.lis.ncgr.org/graphql
+
 # Build settings
 #theme: jekyll-theme-legumeinfo
 plugins:
