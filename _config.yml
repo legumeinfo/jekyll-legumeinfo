@@ -86,7 +86,7 @@ sass:
 style:
     link_color: '#006600'
     link_hover_color: '#0071B3'
-    primary_background: '#ffffff' # Very dark green: '#296e01'  
+    primary_background: '#235626' # Very dark green: '#296e01'  
     global_muted_color: '#006600'
     invert_navbar_text: true
     
