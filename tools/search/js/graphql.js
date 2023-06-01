@@ -1,11 +1,15 @@
+---
+layout: blank
+---
+
 // query a local instance of the LIS GraphQL server:
 // https://github.com/legumeinfo/graphql-server
 
-// should put graphqluri in _config.yml but I can't figure out how to do it here! /Sam
-const uri = 'https://jekyll-dev.lis.ncgr.org/graphql' 
+// we can use system variables when we have (empty) front matter in a js file?
+// TODO: use system.graphqluri
+const uri = "{{ site.graphqluri }}"
 
-// dev
-// const uri = 'http://localhost:4444/';
+// const uri = "https://jekyll.dev.lis.ncgr.org/graphql"
 
 // A function that gets data from a GraphQL server via a POST request.
 // Adapted from https://graphql.org/graphql-js/graphql-clients/
