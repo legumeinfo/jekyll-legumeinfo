@@ -2,14 +2,10 @@
 layout: blank
 ---
 
-// query a local instance of the LIS GraphQL server:
+// query the LIS GraphQL server given by graphqluri in _config.yml.
 // https://github.com/legumeinfo/graphql-server
-
-// we can use system variables when we have (empty) front matter in a js file?
-// TODO: use system.graphqluri
+// we can use system variables in a js file when we have front matter as above!
 const uri = "{{ site.graphqluri }}"
-
-// const uri = "https://jekyll.dev.lis.ncgr.org/graphql"
 
 // A function that gets data from a GraphQL server via a POST request.
 // Adapted from https://graphql.org/graphql-js/graphql-clients/
