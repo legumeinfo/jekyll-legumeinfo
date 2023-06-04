@@ -10,38 +10,30 @@ This branch is hosted via GitHub Pages at https://www.dev.soybase.org.
 
 ## Development
 ### Local (macOS)
-The site is styled using a custom [UIkit](https://getuikit.com/) theme, which requires UIkit's SCSS files.
-As such, UIkit is a submodule of this repository and must be cloned with the repository:
 ```console
-git clone --recurse-submodules https://github.com/soybase/jekyll-soybase.git
+git clone https://github.com/soybase/jekyll-soybase.git
 ```
 If running the optional JBrowse setup steps, NodeJS (https://nodejs.org/) is required for the `npm` package manager.
 
+### GitHub Codespaces or VS Code
+When creating a [GitHub Codespace](https://github.com/features/codespaces) on a branch, or using VS Code locally with a Docker engine installed (e.g., Docker Desktop or Rancher Desktop), a [Dev Container](https://containers.dev/) has been defined (at [.devcontainer/devcontainer.json](.devcontainer/devcontainer.json)) to automatically set up Ruby and NodeJS.
+
+### Next steps
 The following methods will run the site on your computer at http://localhost:4001.
 Changes made will be immediately reflected in the browser due to [LiveReload](http://livereload.com/).
 
 ```sh
-    make install # one-time installation of dependencies into vendor/
-    make jbrowse-install # (optional; requires npm) one-time installation of JBrowse CLI
-    make jbrowse # (optional) run _scripts/jbrowse-tracks.sh to generate JBrowse config.json
-    make         # Starts jekyll server listening on localhost:4001
+    make jbrowse # (optional) install JBrowse dependencies if needed
+                 # & run _scripts/jbrowse-tracks.sh to generate JBrowse config.json
+    make         # install dependencies if needed & start jekyll server listening on localhost:4001
     ... CTRL-C ...
     make check   # build site & check for broken links
 ```
 
-### GitHub Codespaces
-When creating a [GitHub Codespace](https://github.com/features/codespaces) on a branch, a [Dev Container](https://containers.dev/) has been defined (at [.devcontainer/devcontainer.json](.devcontainer/devcontainer.json)) to automatically install the software environment defined in the Gemfile and package.json.
+When running `jekyll serve` with `make`, Port 4000 will automatically be forwarded.
 
-After the Codespace starts, build/serve the site with:
+(*Codespace only*) Due to an incompatibility between `jekyll serve --livereload` and GitHub Codespaces port forwarding, a browser reload is necessary to reflect any changes made to site code.
 
-```sh
-    make jbrowse # (optional) run _scripts/jbrowse-tracks.sh to generate JBrowse config.json
-    make
-```
-
-Port 4000 will automatically be forwarded & a Simple Browser instance will be opened to display the site.
-
-Due to an incompatibility between `jekyll serve --livereload` and GitHub Codespaces port forwarding, a browser reload is necessary to reflect any changes made to site code.
 
 ## Theme
 This site uses a modified version of the [Legume Information System Jekyll theme](https://github.com/legumeinfo/jekyll-theme-legumeinfo).

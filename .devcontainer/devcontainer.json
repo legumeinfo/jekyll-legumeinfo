@@ -1,9 +1,8 @@
-// https://github.blog/changelog/2022-10-26-codespaces-customizable-initial-experience
 {
     "image": "mcr.microsoft.com/devcontainers/jekyll",
     "features": {
         "ghcr.io/devcontainers/features/node:1": {
-            "version": 18,
+            "version": 16,
             "nodeGypDependencies": false
         },
         "ghcr.io/devcontainers-contrib/features/npm-package:1": {
@@ -23,7 +22,7 @@
             }
         }   
     },
-    "onCreateCommand": "git config --global --add safe.directory /workspaces/jekyll-soybase && git submodule update --init",
+    "postCreateCommand": "git config --global --add safe.directory /workspaces/jekyll-soybase",
     "portsAttributes": {
         "4000": {
             "label": "jekyll",
