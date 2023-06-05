@@ -10,30 +10,39 @@ This branch is hosted via GitHub Pages at https://www.dev.soybase.org.
 
 ## Development
 ### Local (macOS)
+
+1. Install XCode Developer Tools (if not already installed):
+
+```console
+xcode-select --install
+```
+
+2. Install [Node.js](https://nodejs.org/) version >= 16.
+
+3. Clone the repository:
+
 ```console
 git clone https://github.com/soybase/jekyll-soybase.git
 ```
-If running the optional JBrowse setup steps, NodeJS (https://nodejs.org/) is required for the `npm` package manager.
 
-### GitHub Codespaces or VS Code
+### Dev Container (GitHub Codespaces or VS Code)
 When creating a [GitHub Codespace](https://github.com/features/codespaces) on a branch, or using VS Code locally with a Docker engine installed (e.g., Docker Desktop or Rancher Desktop), a [Dev Container](https://containers.dev/) has been defined (at [.devcontainer/devcontainer.json](.devcontainer/devcontainer.json)) to automatically set up Ruby and NodeJS.
 
-### Next steps
-The following methods will run the site on your computer at http://localhost:4001.
-Changes made will be immediately reflected in the browser due to [LiveReload](http://livereload.com/).
+### Building the Site
+The following methods will run the site on your computer at http://localhost:4000/.
+Changes made to HTML/Liquid files will be immediately reflected in the browser due to [LiveReload](http://livereload.com/) (*when running a codespace in the browser, LiveReload does not work; a browser reload is necessary to reflect any changes made to the site*).
+Changes made to other file types (e.g., data and config files) may only be reflected the next time `make` is run.
+
 
 ```sh
-    make jbrowse # (optional) install JBrowse dependencies if needed
-                 # & run _scripts/jbrowse-tracks.sh to generate JBrowse config.json
-    make         # install dependencies if needed & start jekyll server listening on localhost:4001
-    ... CTRL-C ...
-    make check   # build site & check for broken links
+make jbrowse # (optional) install JBrowse dependencies if needed
+             # & run _scripts/jbrowse-tracks.sh to generate JBrowse config.json
+make         # install dependencies if needed & start jekyll server listening on localhost:4000
+... CTRL-C ...
+make check   # build site & check for broken links
+
+# make clean : remove everything installed/created by `make jbrowse` and `make`
 ```
-
-When running `jekyll serve` with `make`, Port 4000 will automatically be forwarded.
-
-(*Codespace only*) Due to an incompatibility between `jekyll serve --livereload` and GitHub Codespaces port forwarding, a browser reload is necessary to reflect any changes made to site code.
-
 
 ## Theme
 This site uses a modified version of the [Legume Information System Jekyll theme](https://github.com/legumeinfo/jekyll-theme-legumeinfo).

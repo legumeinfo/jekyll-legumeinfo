@@ -1,15 +1,5 @@
 .POSIX:
 
-# USAGE
-#
-# 1. (macOS) Install XCode Developer Tools (if not already installed):
-#
-#     xcode-select --install
-#
-# 2.  Start jekyll (macOS: installing of not installed)
-#
-#     make
- 
 OS = $(shell uname)
 ifeq ($(OS), Darwin)
   # additional macOS environment variable needed at install time due to broken
@@ -19,7 +9,7 @@ ifeq ($(OS), Darwin)
   export GEM_HOME=${PWD}/vendor/gems
   export PATH := ${PWD}/vendor/gems/bin:${PATH}
 
-  LIVERELOAD = --port 4001 --livereload --livereload_port 35728 
+  JEKYLL_SERVE_ARGS = --livereload
   HTMLPROOFER_ARGS = --allow-missing-href=true --ignore-missing-alt=true --cache '{"timeframe": {"external": "30d"}}'
 else # assume dev container
   # html-proofer 5.x
@@ -28,10 +18,10 @@ endif
 
 JBROWSE_VERSION = 2.5.0
 
-serve: clean setup
-	bundle exec jekyll serve --incremental $(LIVERELOAD)
+serve: mostlyclean setup
+	bundle exec jekyll serve --incremental $(JEKYLL_SERVE_ARGS)
 
-check: clean setup
+check: mostlyclean setup
 	bundle exec jekyll build
 	bundle exec htmlproofer $(HTMLPROOFER_ARGS) --ignore-status-codes 503 --ignore-files '/\/uikit\/tests\//' --log-level debug ./_site
 
@@ -46,8 +36,8 @@ setup:
 	if ! npm ls jbrowse; then npm install @jbrowse/cli@${JBROWSE_VERSION}; fi
 	if ! [ -d ./assets/js/jbrowse ]; then npx jbrowse create assets/js/jbrowse --tag=v${JBROWSE_VERSION}; fi
 
-clean:
+mostlyclean:
 	rm -rf .jekyll-cache/ .jekyll-metadata _site/ tmp/
 
-distclean: clean
-	rm -rf Gemfile.lock $${PWD}/vendor # or maybe just "git clean -xfd"
+clean: mostlyclean
+	rm -rf ./assets/js/jbrowse Gemfile.lock $${PWD}/vendor package.json package-lock.json node_modules
