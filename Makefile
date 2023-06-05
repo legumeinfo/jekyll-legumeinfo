@@ -1,5 +1,3 @@
-.POSIX:
-
 OS = $(shell uname)
 ifeq ($(OS), Darwin)
   # additional macOS environment variable needed at install time due to broken
