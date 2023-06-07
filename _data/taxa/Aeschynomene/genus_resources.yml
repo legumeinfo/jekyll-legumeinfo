@@ -9,8 +9,8 @@ description: Aeschynomene is a genus of flowering plants in the family Fabaceae,
   genus monophyletic.
 genus: Aeschynomene
 resources:
-- name: JointvetchMine
-- URL: https://mines.legumeinfo.org/jointvetchmine/begin.do
+- name: AeschynomeneMine
+- URL: https://mines.legumeinfo.org/aeschynomenemine/begin.do
 - description: InterMine for Aeschynomene species
 species:
 - evenia

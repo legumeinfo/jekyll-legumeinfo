@@ -9,9 +9,9 @@ description: Lupinus, commonly known as lupin, lupine, or regionally bluebonnet 
   threat.
 genus: Lupinus
 resources:
-- URL: https://mines.legumeinfo.org/lupinmine/begin.do
+- URL: https://mines.legumeinfo.org/lupinusmine/begin.do
   description: InterMine for Lupinus species
-  name: LupinMine
+  name: LupinusMine
 species:
 - albus
 - angustifolius
