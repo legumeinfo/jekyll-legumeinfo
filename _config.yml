@@ -34,6 +34,9 @@ twitter_username: legumeinfo
 github_username: legumeinfo
 #newsletter: http://eepurl.com/cX_JjL
 
+# allow direct port 4000 requests from outside so we don't have to proxy
+host: 0.0.0.0
+
 # our Google Analytics ID
 google_analytics: "UA-49655154-1"
 
