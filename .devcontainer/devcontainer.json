@@ -2,12 +2,12 @@
     "image": "mcr.microsoft.com/devcontainers/jekyll",
     "features": {
         "ghcr.io/devcontainers/features/node:1": {
-            "version": 16,
+            "version": 18,
             "nodeGypDependencies": false
         },
         "ghcr.io/devcontainers-contrib/features/npm-package:1": {
             "package": "@jbrowse/cli",
-            "version": "v2.5.0"
+            "version": "v2.6.1"
         }
     },
     "customizations": {

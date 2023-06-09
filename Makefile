@@ -14,7 +14,7 @@ else # assume dev container
   HTMLPROOFER_ARGS = --allow-missing-href --ignore-missing-alt --cache '{"timeframe": {"external": "30d"}}'
 endif
 
-JBROWSE_VERSION = 2.5.0
+JBROWSE_VERSION = 2.6.1
 
 serve: mostlyclean setup
 	bundle exec jekyll serve --incremental $(JEKYLL_SERVE_ARGS)
