@@ -50,7 +50,7 @@
 - category: "Search"
   description: "Search for genes"
   name: "Gene search tool"
-  url: "/tools/search/gene-search.html"
+  url: "/tools/search/gene.html"
 #   category: "FIXME"
 #   description: Description
 #   name: Maps
