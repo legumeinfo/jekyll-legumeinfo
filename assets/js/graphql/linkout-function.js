@@ -1,3 +1,23 @@
+// gene linkout query for the LIS GraphQL API
+const geneLinkoutsQuery = `
+      query GeneLinkoutsQuery($identifier: ID!) {
+        geneLinkouts(identifier: $identifier) {
+          href
+          text
+        }
+      }
+`;
+
+// location linkout query for the LIS GraphQL API
+const locationLinkoutsQuery = `
+      query LocationLinkoutsQuery($identifier: ID!, $start: Int!, $end: Int!) {
+        locationLinkouts(identifier: $identifier, start: $start, end: $end) {
+          href
+          text
+        }
+      }
+`;
+
 // the linkout function to give to the linkout component
 function linkoutFunction({type, variables}, {abortSignal}) {
     if (type == 'gene') {
