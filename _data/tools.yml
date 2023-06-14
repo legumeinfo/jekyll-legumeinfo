@@ -51,6 +51,10 @@
   description: "A multiple chromosome visualisation tool for visualizing resequencing or SNP array data"
   name: "GCViT: SNP Comparison Tool"
   url: "https://gcvit.soybase.org"
+- category: "Search"
+  description: "Search for genes"
+  name: "Gene search tool"
+  url: "/tools/search/gene.html"
 # - 
 #   category: "FIXME"
 #   description: Description

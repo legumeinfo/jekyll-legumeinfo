@@ -44,6 +44,9 @@ google_analytics: "UA-49655154-1"
 # Set the SoyBase/LIS Datastore base URL here
 datastoreurl: https://data.legumeinfo.org
 
+# Set the GraphQL URI for tools that use it
+graphqluri: https://jekyll.dev.lis.ncgr.org/graphql
+
 # https://jekyllrb.com/docs/configuration/liquid/
 liquid:
   error_mode: strict
