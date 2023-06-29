@@ -31,7 +31,8 @@ jbrowse: setup
 setup:
 	git submodule update --init
 	if ! bundle check; then bundle install; fi
-	if ! npm ls jbrowse; then npm install @jbrowse/cli@${JBROWSE_VERSION}; fi
+	if ! command -v jbrowse >/dev/null 2>&1 || npm ls jbrowse; then npm install @jbrowse/cli@${JBROWSE_VERSION}; fi
+	if ! command -v jq >/dev/null 2>&1; then curl -Lo ./node_modules/.bin/jq https://github.com/jqlang/jq/releases/download/jq-1.6/jq-osx-amd64 && chmod +x ./node_modules/.bin/jq; fi
 	if ! [ -d ./assets/js/jbrowse ]; then npx jbrowse create assets/js/jbrowse --tag=v${JBROWSE_VERSION}; fi
 
 mostlyclean:

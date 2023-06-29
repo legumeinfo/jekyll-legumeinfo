@@ -1,9 +1,0 @@
----
-species:
-- name: canadensis
-  annotations:
-    - collection: ISC453364.gnm1.ann1.HZJM
-      synopsis: "Gene annotations for Cercis canadensis genome assembly 1"
-  genomes:
-    - collection: ISC453364.gnm1.B05Z
-      synopsis: "Draft genome assembly for Cercis canadensis"

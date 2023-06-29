@@ -4,6 +4,7 @@ sitemap: sequence map
 tools_menu: true
 ---
 
+{% capture jbrowse_base_url %}/assets/js/jbrowse{% endcapture %}
 <h2>Genome browsers</h2>
 
 <p>
@@ -18,8 +19,7 @@ Williams 82, the soybean cultivar used to produce the reference genome sequence,
 <ul>
   <li><a href="https://soybase.org/gb2/gbrowse/gmax2.0">Genome Browser (GBrowse)</a> for Wm82 assembly 2.0</li>
   <li><a href="https://soybase.org/gb2/gbrowse/gmax1.01">Genome Browser (GBrowse)</a> for Wm82 assembly 1.01</li>
-  {% capture map_path %}/assets/js/jbrowse/?assembly=Wm82_ISU01.gnm2&tracks=Wm82_ISU01.gnm2.ann1&loc=glyma.Wm82_ISU01.gnm2.Gm01:1-1000000{% endcapture %}
-  <li><a href="{{ map_path | relative_url }}">Genome Browser (JBrowse)</a> for Wm82_ISU01 assembly 2</li>
+  <li><a href="{{ jbrowse_base_url }}?assembly=Wm82_ISU01.gnm2&tracks=Wm82_ISU01.gnm2.ann1&loc=glyma.Wm82_ISU01.gnm2.Gm01:1-1000000">Genome Browser (JBrowse)</a> for Wm82_ISU01 assembly 2</li>
 </ul>
 
 <b>Zh13</b> (China) <br/>
@@ -47,4 +47,50 @@ Glycine soja accession W05 is a salt-tolerant wild soybean whose genome has been
 <ul>
   <li><a href="https://soybase.org/gb2/gbrowse/glyso.W05.gnm1">Genome Browser (GBrowse)</a> :for glycine soja W05 genome assembly verson 1</li>
 </ul>
+
+{% assign genus = "Glycine" %}
+
+{% for species_dir in site.data.datastore-metadata[genus] %}
+  {% assign species = species_dir[0] %}
+  {% if species == "GENUS" %}
+    {% continue %}
+  {% endif %}
+  <h4><i>Glycine {{ species }}</i> accessions</h4>
+  {% for datatype_dir in species_dir[1] %}
+    {% assign datatype = datatype_dir[0] %}
+    {% if datatype == "annotations" %} 
+      {% for collection_dir in datatype_dir[1] %}
+        {% assign collection = collection_dir[0] %}
+        {% for metadata_file in collection_dir[1] %}
+          {% if metadata_file[0] contains "README" %}
+            {% assign readme = metadata_file[1] %}
+            {% assign assembly = readme.identifier | split: '.' | slice: 0, 2 | join: '.' %}
+            {% assign annotation = readme.identifier | split: '.' | slice: 0, 3 | join: '.' %}
+            {% for datatype_dir in species_dir[1] %}
+              {% assign datatype = datatype_dir[0] %}
+              {% if datatype == "genomes" %} 
+                {% for collection_dir in datatype_dir[1] %}
+                  {% assign collection = collection_dir[0] %}
+                  {% for metadata_file in collection_dir[1] %}
+                    {% if metadata_file[0] contains "README" %}
+                      {% assign readme_genome = metadata_file[1] %}
+                      {% assign assembly_genome = readme_genome.identifier | split: '.' | slice: 0, 2 | join: '.' %}
+                      {% if assembly_genome == assembly %}
+                        {% assign chromosome_prefix = readme_genome.chromosome_prefix %}
+                        {% assign synopsis = readme_genome.synopsis %}
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+              {% endif %} 
+            {% endfor %}
+            <dt><a target="_blank" href="{{ jbrowse_base_url }}/?assembly={{ assembly }}&tracks={{ annotation }}&loc={{ readme.scientific_name_abbrev }}.{{ assembly }}.{{ chromosome_prefix }}01:1-1000000">{{ assembly }}</a></dt>
+            <dd>{{ synopsis }}</dd>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+  <hr>
+{% endfor %}
 

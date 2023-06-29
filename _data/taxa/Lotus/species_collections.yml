@@ -1,9 +1,0 @@
----
-species:
-- name: japonicus
-  annotations:
-    - collection: MG20.gnm3.ann1.WF9B
-      synopsis: "Genome annotation of Lotus japonicus (MG20 variety)"
-  genomes:
-    - collection: MG20.gnm3.QPGB
-      synopsis: "Genome assembly of Lotus japonicus (MG20 variety)"
