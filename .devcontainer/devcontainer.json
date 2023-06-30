@@ -1,11 +1,32 @@
-// https://github.blog/changelog/2022-10-26-codespaces-customizable-initial-experience
 {
-	"onCreateCommand": "git submodule update --init && make install && make jbrowse-install",
-	"postCreateCommand": "", // disable Oryx platform detection / old ruby installation
-	"portsAttributes": {
-		"4000": {
-			"label": "jekyll",
-			"onAutoForward": "openPreview"
-		}
-	},
+    "image": "mcr.microsoft.com/devcontainers/jekyll",
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": 18,
+            "nodeGypDependencies": false
+        },
+        "ghcr.io/devcontainers-contrib/features/npm-package:1": {
+            "package": "@jbrowse/cli",
+            "version": "v2.6.1"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "sissel.shopify-liquid"
+            ],
+            "settings": {
+                "files.associations": {
+                    "*.html": "liquid"
+                }
+            }
+        }   
+    },
+    "postCreateCommand": "git config --global --add safe.directory /workspaces/jekyll-soybase",
+    "portsAttributes": {
+        "4000": {
+            "label": "jekyll",
+            "onAutoForward": "openPreview"
+        }
+    }
 }
