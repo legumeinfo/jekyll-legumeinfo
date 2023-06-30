@@ -1,0 +1,128 @@
+---
+-
+  DataStoreID: "Zhuang_Wang_2022"
+  short_title: "SoyMap II"
+  SoyBaseID: "SoyBase.C2022.01"
+  title: "SoyMap II: Leveraging untapped genetic diversity in soybean"
+  description: "Genomes and gene models were generated from multiple perennial soybean species across the Glycine genus to study insights into the polyploid and perennial genome evolution and genetic potential for soybean improvement."
+  BioProjectID: "PRJNA503746"
+  publications:
+    - citation: "Zhuang Y, Wang X, Li X, Hu J, Fan L, Landis JB, Cannon SB, Grimwood J, Schmutz J, Jackson SA, Doyle JJ, Zhang XS, Zhang D, Ma J. Phylogenomics of the genus Glycine sheds light on polyploid evolution and life-strategy transition. Nat Plants. 2022 Mar;8(3):233-244."
+      doi: "10.1038/s41477-022-01102-4"
+      abstract: "Polyploidy and life-strategy transitions between annuality and perenniality often occur in flowering plants. However, the evolutionary propensities of polyploids and the genetic bases of such transitions remain elusive. We assembled chromosome-level genomes of representative perennial species across the genus Glycine including five diploids and a young allopolyploid, and constructed a Glycine super-pangenome framework by integrating 26 annual soybean genomes. These perennial diploids exhibit greater genome stability and possess fewer centromere repeats than the annuals. Biased subgenomic fractionation occurred in the allopolyploid, primarily by accumulation of small deletions in gene clusters through illegitimate recombination, which was associated with pre-existing local subgenomic differentiation. Two genes annotated to modulate vegetative-reproductive phase transition and lateral shoot outgrowth were postulated as candidates underlying the perenniality-annuality transition. Our study provides insights into polyploid genome evolution and lays a foundation for unleashing genetic potential from the perennial gene pool for soybean improvement."
+  data_links:
+    - type: assembly
+      description: "Genome sequence of Glycine cyrtoloba version 1"
+      url: "https://soybase.org/data/v2/Glycine/cyrtoloba/genomes/G1267.gnm1.YWW6/glycy.G1267.gnm1.YWW6.genome_main.fna.gz"
+    - type: gene models
+      description: "Gene models (GFF3) from Glycine cyrtoloba version 1"
+      url: "https://soybase.org/data/v2/Glycine/cyrtoloba/annotations/G1267.gnm1.ann1.HRFD/glycy.G1267.gnm1.ann1.HRFD.gene_models_main.gff3.gz"
+    - type: coding sequence
+      description: "Coding sequence from Glycine cyrtoloba version 1"
+      url: "https://soybase.org/data/v2/Glycine/cyrtoloba/annotations/G1267.gnm1.ann1.HRFD/glycy.G1267.gnm1.ann1.HRFD.cds.fna.gz"
+    - type: protein sequence
+      description: "Protein sequence from Glycine cyrtoloba version 1"
+      url: "https://soybase.org/data/v2/Glycine/cyrtoloba/annotations/G1267.gnm1.ann1.HRFD/glycy.G1267.gnm1.ann1.HRFD.protein.faa.gz"
+    - type: transcript sequences
+      description: "Transcript sequences mRNA from Glycine cyrtoloba version 1"
+      url: "https://soybase.org/data/v2/Glycine/cyrtoloba/annotations/G1267.gnm1.ann1.HRFD/glycy.G1267.gnm1.ann1.HRFD.mrna.fna.gz"
+    - type: interproscan results
+      description: "Interproscan results (GFF3) from Glycine cyrtoloba version 1"
+      url: "https://soybase.org/data/v2/Glycine/cyrtoloba/annotations/G1267.gnm1.ann1.HRFD/glycy.G1267.gnm1.ann1.HRFD.iprscan.gff3.gz"
+    
+    - type: assembly
+      description: "Genome sequence of Glycine D3 tomentella version 1"
+      url: "https://soybase.org/data/v2/Glycine/D3-tomentella/genomes/G1403.gnm1.CL6K/glyd3.G1403.gnm1.CL6K.genome_main.fna.gz"
+    - type: gene models
+      description: "Gene models (GFF3) from Glycine D3 tomentella version 1"
+      url: "https://soybase.org/data/v2/Glycine/D3-tomentella/annotations/G1403.gnm1.ann1.XNZQ/glyd3.G1403.gnm1.ann1.XNZQ.gene_models_main.gff3.gz"
+    - type: coding sequence
+      description: "Coding sequence from Glycine D3 tomentella version 1"
+      url: "https://soybase.org/data/v2/Glycine/D3-tomentella/annotations/G1403.gnm1.ann1.XNZQ/glyd3.G1403.gnm1.ann1.XNZQ.cds.fna.gz"
+    - type: protein sequence
+      description: "Protein sequence from Glycine D3 tomentella version 1"
+      url: "https://soybase.org/data/v2/Glycine/D3-tomentella/annotations/G1403.gnm1.ann1.XNZQ/glyd3.G1403.gnm1.ann1.XNZQ.protein.faa.gz"
+    - type: transcript sequences
+      description: "Transcript sequences mRNA from Glycine D3 tomentella version 1"
+      url: "https://soybase.org/data/v2/Glycine/D3-tomentella/annotations/G1403.gnm1.ann1.XNZQ/glyd3.G1403.gnm1.ann1.XNZQ.mrna.fna.gz"
+    - type: interproscan results
+      description: "Interproscan results (GFF3) from Glycine D3 tomentella version 1"
+      url: "https://soybase.org/data/v2/Glycine/D3-tomentella/annotations/G1403.gnm1.ann1.XNZQ/glyd3.G1403.gnm1.ann1.XNZQ.iprscan.gff3.gz" 
+    
+    - type: assembly
+      description: "Genome sequence of Glycine dolichocarpa version 1"
+      url: "https://soybase.org/data/v2/Glycine/dolichocarpa/genomes/G1134.gnm1.PP7B/glydo.G1134.gnm1.PP7B.genome_main.fna.gz"
+    - type: gene models
+      description: "Gene models (GFF3) from Glycine dolichocarpa version 1"
+      url: "https://soybase.org/data/v2/Glycine/dolichocarpa/annotations/G1134.gnm1.ann1.4BJM/glydo.G1134.gnm1.ann1.4BJM.gene_models_main.gff3.gz"
+    - type: coding sequence
+      description: "Coding sequence from Glycine dolichocarpa version 1"
+      url: "https://soybase.org/data/v2/Glycine/dolichocarpa/annotations/G1134.gnm1.ann1.4BJM/glydo.G1134.gnm1.ann1.4BJM.cds.fna.gz"
+    - type: protein sequence
+      description: "Protein sequence from Glycine dolichocarpa version 1"
+      url: "https://soybase.org/data/v2/Glycine/dolichocarpa/annotations/G1134.gnm1.ann1.4BJM/glydo.G1134.gnm1.ann1.4BJM.protein.faa.gz"
+    - type: transcript sequences
+      description: "Transcript sequences mRNA from Glycine dolichocarpa version 1"
+      url: "https://soybase.org/data/v2/Glycine/dolichocarpa/annotations/G1134.gnm1.ann1.4BJM/glydo.G1134.gnm1.ann1.4BJM.mrna.fna.gz"
+    - type: interproscan results
+      description: "Interproscan results (GFF3) from Glycine dolichocarpa version 1"
+      url: "https://soybase.org/data/v2/Glycine/dolichocarpa/annotations/G1134.gnm1.ann1.4BJM/glydo.G1134.gnm1.ann1.4BJM.iprscan.gff3.gz"
+    
+    - type: assembly
+      description: "Genome sequence of Glycine falcata version 1"
+      url: "https://soybase.org/data/v2/Glycine/falcata/genomes/G1718.gnm1.B1PY/glyfa.G1718.gnm1.B1PY.genome_main.fna.gz"
+    - type: gene models
+      description: "Gene models (GFF3) from Glycine falcata version 1"
+      url: "https://soybase.org/data/v2/Glycine/falcata/annotations/G1718.gnm1.ann1.2KSV/glyfa.G1718.gnm1.ann1.2KSV.gene_models_main.gff3.gz"
+    - type: coding sequence
+      description: "Coding sequence from Glycine falcata version 1"
+      url: "https://soybase.org/data/v2/Glycine/falcata/annotations/G1718.gnm1.ann1.2KSV/glyfa.G1718.gnm1.ann1.2KSV.cds.fna.gz" 
+    - type: protein sequence
+      description: "Protein sequence from Glycine falcata version 1"
+      url: "https://soybase.org/data/v2/Glycine/falcata/annotations/G1718.gnm1.ann1.2KSV/glyfa.G1718.gnm1.ann1.2KSV.protein.faa.gz"
+    - type: transcript sequences
+      description: "Transcript sequences mRNA from Glycine falcata version 1"
+      url: "https://soybase.org/data/v2/Glycine/falcata/annotations/G1718.gnm1.ann1.2KSV/glyfa.G1718.gnm1.ann1.2KSV.mrna.fna.gz"
+    - type: interproscan results
+      description: "Interproscan results (GFF3) from Glycine falcata version 1"
+      url: "https://soybase.org/data/v2/Glycine/falcata/annotations/G1718.gnm1.ann1.2KSV/glyfa.G1718.gnm1.ann1.2KSV.iprscan.gff3.gz"
+
+
+    - type: assembly
+      description: "Genome sequence of Glycine stenophita version 1"
+      url: "https://soybase.org/data/v2/Glycine/stenophita/genomes/G1974.gnm1.7MZB/glyst.G1974.gnm1.7MZB.genome_main.fna.gz"
+    - type: gene models
+      description: "Gene models (GFF3) from Glycine stenophita version 1"
+      url: "https://soybase.org/data/v2/Glycine/stenophita/annotations/G1974.gnm1.ann1.F257/glyst.G1974.gnm1.ann1.F257.gene_models_main.gff3.gz  "
+    - type: coding sequence
+      description: "Coding sequence from Glycine stenophita version 1"
+      url: "https://soybase.org/data/v2/Glycine/stenophita/annotations/G1974.gnm1.ann1.F257/glyst.G1974.gnm1.ann1.F257.cds.fna.gz" 
+    - type: protein sequence
+      description: "Protein sequence from Glycine stenophita version 1"
+      url: "https://soybase.org/data/v2/Glycine/stenophita/annotations/G1974.gnm1.ann1.F257/glyst.G1974.gnm1.ann1.F257.protein.faa.gz"
+    - type: transcript sequences
+      description: "Transcript sequences mRNA from Glycine stenophita version 1"
+      url: "https://soybase.org/data/v2/Glycine/stenophita/annotations/G1974.gnm1.ann1.F257/glyst.G1974.gnm1.ann1.F257.mrna.fna.gz"
+    - type: interproscan results
+      description: "Interproscan results (GFF3) from Glycine stenophita version 1"
+      url: "https://soybase.org/data/v2/Glycine/stenophita/annotations/G1974.gnm1.ann1.F257/glyst.G1974.gnm1.ann1.F257.iprscan.gff3.gz"
+
+
+    - type: assembly
+      description: "Genome sequence of Glycine syndetika version 1"
+      url: "https://soybase.org/data/v2/Glycine/syndetika/genomes/G1300.gnm1.C11H/glysy.G1300.gnm1.C11H.genome_main.fna.gz"
+    - type: gene models
+      description: "Gene models (GFF3) from Glycine syndetika version 1"
+      url: "https://soybase.org/data/v2/Glycine/syndetika/annotations/G1300.gnm1.ann1.RRK6/glysy.G1300.gnm1.ann1.RRK6.gene_models_main.gff3.gz"
+    - type: coding sequence
+      description: "Coding sequence from Glycine syndetika version 1"
+      url: "https://soybase.org/data/v2/Glycine/syndetika/annotations/G1300.gnm1.ann1.RRK6/glysy.G1300.gnm1.ann1.RRK6.cds.fna.gz" 
+    - type: protein sequence
+      description: "Protein sequence from Glycine syndetika version 1"
+      url: "https://soybase.org/data/v2/Glycine/syndetika/annotations/G1300.gnm1.ann1.RRK6/glysy.G1300.gnm1.ann1.RRK6.protein.faa.gz"
+    - type: transcript sequences
+      description: "Transcript sequences mRNA from Glycine syndetika version 1"
+      url: "https://soybase.org/data/v2/Glycine/syndetika/annotations/G1300.gnm1.ann1.RRK6/glysy.G1300.gnm1.ann1.RRK6.mrna.fna.gz"
+    - type: interproscan results
+      description: "Interproscan results (GFF3) from Glycine syndetika version 1"
+      url: "https://soybase.org/data/v2/Glycine/syndetika/annotations/G1300.gnm1.ann1.RRK6/glysy.G1300.gnm1.ann1.RRK6.iprscan.gff3.gz"

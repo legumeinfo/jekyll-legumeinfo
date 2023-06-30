@@ -101,4 +101,9 @@
   description: "Glycine max root nodules of different ages were sequenced to investigate the involvement of cysteine proteases and cystatins in the processes of nodule development and senescence."
   SoyBaseID: "SoyBase.A2014.01"
   DataStoreID: "vanWyk_DuPlessis_2014"
-
+-
+  title: "SoyMap II: Leveraging untapped genetic diversity in soybean"
+  short_title: "SoyMap II"
+  description: "Genomes and gene models were generated from multiple perennial soybean species across the Glycine genus to study insights into the polyploid and perennial genome evolution and genetic potential for soybean improvement."  
+  SoyBaseID: "SoyBase.C2022.01" 
+  DataStoreID: "Zhuang_Wang_2022"
