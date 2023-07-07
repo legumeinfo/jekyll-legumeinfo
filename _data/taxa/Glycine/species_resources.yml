@@ -12,10 +12,10 @@ species:
     and can be prepared for fish- and animal-feed.'
   genus: Glycine
   resources:
-  - URL: https://mines.legumeinfo.org/soymine/begin.do
+  - URL: https://mines.legumeinfo.org/glycinemine/begin.do
     description: InterMine interface for accessing genetic and genomic data for several
       species in Glycine.
-    name: SoyMine
+    name: GlycineMine
   - URL: https://zzbrowse.legumeinfo.org/?tab=WhGen&datasets=Peanut%20GWAS&chr=Arahy.01&selected=100000&window=250000&datasets2=Soybean%20GWAS&chr2=Gm01&selected2=100000&window2=250000
     description: Association viewers (QTL, GWAS)
     name: ZZBrowse
@@ -140,6 +140,142 @@ species:
     identifier: FiskebyIII
     name: Fiskeby III
     origin: "Fiskeby, Norrk\xF6pping, Sweden"
+  - accession: SoyL04
+    description: Landrace 58-161 (SoyL04 from China, Jiang Su, from Liu et al. 2020
+    identifier: 58-161
+    name: 58-161
+    origin: China, Jiang Su
+  - accession: SoyC05
+    description: Cultivar Amsoy (SoyC05 from United States, Iowa, from Liu et al.
+      2020
+    identifier: Amsoy
+    name: Amsoy
+    origin: United States, Iowa
+  - accession: SoyC12
+    description: Cultivar Dong Nong No.50 (SoyC12 from China, Hei Long Jiang, from
+      Liu et al. 2020
+    identifier: DongNongNo_50
+    name: Dong Nong No.50
+    origin: China, Hei Long Jiang
+  - accession: SoyL07
+    description: Landrace Feng Di Huang (SoyL07 from China, Ji Lin, from Liu et al.
+      2020
+    identifier: FengDiHuang
+    name: Feng Di Huang
+    origin: China, Ji Lin
+  - accession: SoyC09
+    description: Cultivar Han Dou No.5 (SoyC09 from China, He Bei, from Liu et al.
+      2020
+    identifier: HanDouNo_5
+    name: Han Dou No.5
+    origin: China, He Bei
+  - accession: SoyC13
+    description: Cultivar Hei He No.43  (SoyC13 from China, Hei Long Jiang, from Liu
+      et al. 2020
+    identifier: HeiHeNo_43
+    name: Hei He No.43
+    origin: China, Hei Long Jiang
+  - accession: SoyC11
+    description: Cultivar Ji Dou No.17 (SoyC11 from China, He Bei, from Liu et al.
+      2020
+    identifier: JiDouNo_17
+    name: Ji Dou No.17
+    origin: China, He Bei
+  - accession: SoyC07
+    description: Cultivar Jin Dou No.23 (SoyC07 from China, Shan Xi, from Liu et al.
+      2020
+    identifier: JinDouNo_23
+    name: Jin Dou No.23
+    origin: China, Shan Xi
+  - accession: SoyC03
+    description: Cultivar Ju Xuan No.23 (SoyC03 from China, Shan Dong, from Liu et
+      al. 2020
+    identifier: JuXuanNo_23
+    name: Ju Xuan No.23
+    origin: China, Shan Dong
+  - accession: SoyC14
+    description: Cultivar Ke Shan No.1 (SoyC14 from China, Hei Long Jiang, from Liu
+      et al. 2020
+    identifier: KeShanNo_1
+    name: Ke Shan No.1
+    origin: China, Hei Long Jiang
+  - accession: SoyL05
+    description: Landrace PI 398296 (SoyL05 from South Korea, Kyonggi, from Liu et
+      al. 2020
+    identifier: PI_398296
+    name: PI 398296
+    origin: South Korea, Kyonggi
+  - accession: SoyC10
+    description: Cultivar PI 548362 (SoyC10 from United States, Illinois, from Liu
+      et al. 2020
+    identifier: PI_548362
+    name: PI 548362
+    origin: United States, Illinois
+  - accession: SoyC08
+    description: Cultivar Qi Huang No.34 (SoyC08 from China, Shan Dong, from Liu et
+      al. 2020
+    identifier: QiHuangNo_34
+    name: Qi Huang No.34
+    origin: China, Shan Dong
+  - accession: SoyL09
+    description: Landrace Shi Sheng Chang Ye (SoyL09 from Japan, Hokkaido, from Liu
+      et al. 2020
+    identifier: ShiShengChangYe
+    name: Shi Sheng Chang Ye
+    origin: Japan, Hokkaido
+  - accession: SoyC02
+    description: Cultivar Tie Feng No.18 (SoyC02 from China, Hei Long Jiang, from
+      Liu et al. 2020
+    identifier: TieFengNo_18
+    name: Tie Feng No.18
+    origin: China, Hei Long Jiang
+  - accession: SoyL08
+    description: Landrace Tie Jia Si Li Huang (SoyL08 from China, Ji Lin, from Liu
+      et al. 2020
+    identifier: TieJiaSiLiHuang
+    name: Tie Jia Si Li Huang
+    origin: China, Ji Lin
+  - accession: SoyL03
+    description: Landrace Tong Shan Tian E Dan (SoyL03 from China, Jiang Su, from
+      Liu et al. 2020
+    identifier: TongShanTianEDan
+    name: Tong Shan Tian E Dan
+    origin: China, Jiang Su
+  - accession: SoyC04
+    description: Cultivar Wan Dou No.28 (SoyC04 from China, An Hui, from Liu et al.
+      2020
+    identifier: WanDouNo_28
+    name: Wan Dou No.28
+    origin: China, An Hui
+  - accession: SoyC01
+    description: Cultivar Xu Dou No.1 (SoyC01 from China, Jiang Su, from Liu et al.
+      2020
+    identifier: XuDouNo_1
+    name: Xu Dou No.1
+    origin: China, Jiang Su
+  - accession: SoyC06
+    description: Cultivar Yu Dou No.22 (SoyC06 from China, He Nan, from Liu et al.
+      2020
+    identifier: YuDouNo_22
+    name: Yu Dou No.22
+    origin: China, He Nan
+  - accession: SoyL06
+    description: Landrace Chang Chun Man Cang Jin (SoyL06 from China, Ji Lin, from
+      Liu et al. 2020
+    identifier: ZhangChunManCangJin
+    name: Chang Chun Man Cang Jin
+    origin: China, Ji Lin
+  - accession: SoyL01
+    description: Landrace Zhutwinning2 (SoyL01 from China, from Liu et al. 2020
+    identifier: Zhutwinning2
+    name: Zhutwinning2
+    origin: China
+  - accession: SoyL02
+    description: Landrace Zi Hua No.4 (SoyL02 from China, Hei Long Jiang, from Liu
+      et al. 2020
+    identifier: ZiHuaNo_4
+    name: Zi Hua No.4
+    origin: China, Hei Long Jiang
   taxid: 3847
 - abbrev: glyso
   commonName: wild soybean
@@ -151,10 +287,10 @@ species:
     as tolerance to particular diseases or environmental stresses.
   genus: Glycine
   resources:
-  - URL: https://mines.legumeinfo.org/soymine/begin.do
+  - URL: https://mines.legumeinfo.org/glycinemine/begin.do
     description: InterMine interface for accessing genetic and genomic data for several
       species in Glycine.
-    name: SoyMine
+    name: GlycineMine
   - URL: https://zzbrowse.legumeinfo.org/?tab=WhGen&datasets=Peanut%20GWAS&chr=Arahy.01&selected=100000&window=250000&datasets2=Soybean%20GWAS&chr2=Gm01&selected2=100000&window2=250000
     description: Association viewers (QTL, GWAS)
     name: ZZBrowse
@@ -200,6 +336,24 @@ species:
     identifier: F_IGA1003
     name: GsojaF
     origin: National Wild Soybean Preservation Center, ICS, CAAS
+  - accession: SoyW02
+    description: Wild (G. soja) accession PI 549046 (SoyW02 from China, Shaan Xi,
+      from Liu et al. 2020
+    identifier: PI_549046
+    name: PI 549046
+    origin: China, Shaan Xi
+  - accession: SoyW01
+    description: Wild (G. soja) accession PI 562565 (SoyW01 from South Korea, Jeolla
+      Puk, from Liu et al. 2020
+    identifier: PI_562565
+    name: PI 562565
+    origin: South Korea, Jeolla Puk
+  - accession: SoyW03
+    description: Wild (G. soja) accession PI 578357 (SoyW03 from Russian Federation,
+      Federation Amur, from Liu et al. 2020
+    identifier: PI_578357
+    name: PI 578357
+    origin: Russian Federation, Federation Amur
   taxid: 3848
 - abbrev: glycy
   description: G. cyrotoloba (Tind) is a perennial plant with twining and stiff stems.

@@ -32,9 +32,11 @@ species:
       synopsis: "Strategies for the utilization of the USDA mung bean germplasm collection for breeding outcomes"
   markers:
     - collection: VC1973A.gnm6.mrk.Sandhu_Singh_2020
-      synopsis: "Genotyping with the 51,128 single nucleotide polymorphism (SNP) Illumina iSelect BeadArray resulted in 36,346 SNPs that were polymorphic between the eight parents (68.26%)."
+      synopsis: "SNP markers from the mung bean Illumina iSelect BeadArray, with associations reported in Sandhu Singh 2020 relative to gnm6"
     - collection: VC1973A.gnm6.mrk.microsatellites
       synopsis: "SSR markers and genomic locations on the genome sequence of Vigna radiata, accession VC1973A"
+    - collection: VC1973A.gnm7.mrk.Sandhu_Singh_2020
+      synopsis: "SNP markers from the mung bean Illumina iSelect BeadArray, with associations reported in Sandhu Singh 2020 relative to gnm6, and projected into gnm7 coordinates"
 - name: unguiculata
   genomes:
     - collection: CB5-2.gnm1.WDTB
