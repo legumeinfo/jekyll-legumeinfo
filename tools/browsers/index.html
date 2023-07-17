@@ -9,47 +9,12 @@ tools_menu: true
 
 <p>
   Genome browsers are available for most of the genome assemblies at SoyBase. 
-  These can be accessed from the <a href="/resources">GENOMICS</a> tab, with browsers listed under each accession -- or directly from the links below.
+  These can be accessed from the
+  <a href="/resources">GENOMICS</a>
+  tab, with browsers listed under each accession -- or directly from the links below.
 </p>
 
-<h4><i>Glycine max</i> accessions</h4>
-
-<b>Wm82</b> (Northern United States) <br/>
-Williams 82, the soybean cultivar used to produce the reference genome sequence, was derived from backcrossing a phytophthora root rot resistance locus from the donor parent Kingwa into the recurrent parent Williams.
-<ul>
-  <li><a href="https://soybase.org/gb2/gbrowse/gmax2.0">Genome Browser (GBrowse)</a> for Wm82 assembly 2.0</li>
-  <li><a href="https://soybase.org/gb2/gbrowse/gmax1.01">Genome Browser (GBrowse)</a> for Wm82 assembly 1.01</li>
-  <li><a href="{{ jbrowse_base_url }}?assembly=Wm82_ISU01.gnm2&tracks=Wm82_ISU01.gnm2.ann1&loc=glyma.Wm82_ISU01.gnm2.Gm01:1-1000000">Genome Browser (JBrowse)</a> for Wm82_ISU01 assembly 2</li>
-</ul>
-
-<b>Zh13</b> (China) <br/>
-Zhonghuang 13 is a Chinese cultivar derived from accessions Yudou 18 and Zhongzuo 90052-76 by pedigree selection for high yield and stress tolerance (Shen et al., 2018; https://doi.org/10.1007/s11427-018-9360-0).
-<ul>
-  <li><a href="https://soybase.org/gb2/gbrowse/glyma.Zh13.gnm1">Genome Browser (GBrowse)</a> for glycine max Zh13 genome assembly verson 1</li>
-</ul>
-
-<b>Lee</b> (Southern United States) <br/>
-Cultivar Lee, which derives from a cross of Chinese lines CNS and S-100, has been widely used as a parent in many breeding projects in the Southern U.S. and in Brazil (Wysmierski and Vello, 2013; http://doi.org/10.1590/S1415-47572013005000041). The variety is notable for resistance to Phytophthora rot, Peanut Mottle Virus, and bacterial pustule (Wysmierski and Vello, 2013).
-<ul>
-  <li><a href="https://soybase.org/gb2/gbrowse/glyma.Lee.gnm1">Genome Browser (GBrowse)</a> for glycine max Lee genome assembly verson 1</li>
-</ul>
-
-<h4><i>Glycine soja</i> accessions</h4>
-
-<b>PI483463</b> (Shanxi Province, China) <br/>
-Glycine soja accession PI 483463 has been identified as being unusually tolerant (Lee et al., 2009; https://doi.org/10.1093/jhered/esp027). The genome for this accession has been sequenced, partly on the basis of this salt-tolerance trait.
-<ul>
-  <li><a href="https://soybase.org/gb2/gbrowse/glyso.PI483463.gnm1">Genome Browser (GBrowse)</a> for Glycine soja PI483463 genome assembly version 1</li>
-</ul>
-
-<b>W05</b> (Henan Province, China) <br/>
-Glycine soja accession W05 is a salt-tolerant wild soybean whose genome has been sequenced to serve as a reference genome assembly. The W05 accession has been used for genetic studies of several traits, including indeterminacy, seed size, pod number per plant, and seed color (Xie et al., 2019; https://doi.org/10.1038/s41467-019-09142-9).
-<ul>
-  <li><a href="https://soybase.org/gb2/gbrowse/glyso.W05.gnm1">Genome Browser (GBrowse)</a> :for glycine soja W05 genome assembly verson 1</li>
-</ul>
-
 {% assign genus = "Glycine" %}
-
 {% for about_file in site.data.datastore-metadata[genus].GENUS.about_this_collection %}
   {% if about_file[0] contains "description_" %}
     {% assign genus_resources = about_file[1] %}
@@ -84,7 +49,6 @@ Glycine soja accession W05 is a salt-tolerant wild soybean whose genome has been
         {% for collection_dir in datatype_dir[1] %}
           {% assign collection_name = collection_dir[0] | split: 'gnm' %}
           {% if collection_name[0] == strain.identifier %}
-            {% assign count = count | plus: 1 %}
             {% assign collection = collection_dir[0] %}
             {% for metadata_file in collection_dir[1] %}
               {% if metadata_file[0] contains "README" %}
@@ -122,4 +86,3 @@ Glycine soja accession W05 is a salt-tolerant wild soybean whose genome has been
   {% endfor %}
   {% if forloop.last == false %}<hr>{% endif %}
 {% endfor %}
-
