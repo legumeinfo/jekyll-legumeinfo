@@ -25,9 +25,10 @@ tools_menu: true
   {% if species == "GENUS" %}
     {% continue %}
   {% endif %}
-  <h4>
-    <i>Glycine {{ species }}</i>
-    accessions</h4>
+  <hr>
+  <h3>
+    <b><i>Glycine {{ species }}</i> accessions</b>
+  </h3>
   {% for datatype_dir in site.data.datastore-metadata[genus][species] %}
     {% assign datatype = datatype_dir[0] %}
     {% if datatype == "about_this_collection" %}
@@ -37,13 +38,16 @@ tools_menu: true
         {% endif %}
       {% endfor %}
     {% endif %}
+  {% endfor %}
+  {% for datatype_dir in site.data.datastore-metadata[genus][species] %}
+    {% assign datatype = datatype_dir[0] %}
     {% if datatype == "annotations" %}
       {% assign existing_headers = '' | split: ',' %}
       {% for strain in about.strains %}
         {% unless existing_headers contains strain.accession_group %}
-          <h5>
-            <i>{{ strain.accession_group }}</i>
-          </h5>
+          <h4>
+            <b>{{ strain.accession_group }}</b>
+          </h4>
           {% assign existing_headers = existing_headers | push: strain.accession_group %}
         {% endunless %}
         {% for collection_dir in datatype_dir[1] %}
@@ -84,5 +88,5 @@ tools_menu: true
       {% endfor %}
     {% endif %}
   {% endfor %}
-  {% if forloop.last == false %}<hr>{% endif %}
 {% endfor %}
+
