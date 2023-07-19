@@ -27,7 +27,9 @@ tools_menu: true
   {% endif %}
   <hr>
   <h3>
-    <b><i>Glycine {{ species }}</i> accessions</b>
+    <b>
+      <i>{{ genus }} {{ species }}</i>
+      accessions</b>
   </h3>
   {% for datatype_dir in site.data.datastore-metadata[genus][species] %}
     {% assign datatype = datatype_dir[0] %}
@@ -45,9 +47,15 @@ tools_menu: true
       {% assign existing_headers = '' | split: ',' %}
       {% for strain in about.strains %}
         {% unless existing_headers contains strain.accession_group %}
-          <h4>
-            <b>{{ strain.accession_group }}</b>
+          <h4 class="uk-margin-small-bottom">
+            <b>{{ strain.accession_group }}</b><br>
           </h4>
+          <h5 class="uk-margin-small-top">
+            <i>
+              <a href="https://doi.org/{{ strain.publication_doi }}">doi.org/{{ strain.publication_doi }}</a>
+            </i>
+          </h5>
+
           {% assign existing_headers = existing_headers | push: strain.accession_group %}
         {% endunless %}
         {% for collection_dir in datatype_dir[1] %}
@@ -89,4 +97,3 @@ tools_menu: true
     {% endif %}
   {% endfor %}
 {% endfor %}
-
