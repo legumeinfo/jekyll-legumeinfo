@@ -50,11 +50,14 @@ tools_menu: true
           <h4 class="uk-margin-small-bottom">
             <b>{{ strain.accession_group }}</b><br>
           </h4>
-          <h5 class="uk-margin-small-top">
-            <i>
-              <a href="https://doi.org/{{ strain.publication_doi }}">doi.org/{{ strain.publication_doi }}</a>
-            </i>
-          </h5>
+          {% assign doiCheck = strain.publication_doi | slice: 0, 2 %}
+          {% if doiCheck == "10" %}
+            <h5 class="uk-margin-small-top">
+              <i>
+                <a href="https://doi.org/{{ strain.publication_doi }}">doi.org/{{ strain.publication_doi }}</a>
+              </i>
+            </h5>
+          {% endif %}
 
           {% assign existing_headers = existing_headers | push: strain.accession_group %}
         {% endunless %}
