@@ -63,8 +63,11 @@ tools_menu: true
 
   {% if species_resources contains "resources" %}
     <h4>
-      <i>{{ species_resources.genus }} {{ species_resources.species }}</i>
-      resources</h4>
+      <b>
+        <i>{{ species_resources.genus }} {{ species_resources.species }}</i>
+        resources
+      </b>
+    </h4>
     <dl>
       {% for resource in species_resources.resources %}
         <dt>
@@ -76,8 +79,11 @@ tools_menu: true
   {% endif %}
 
   <h4>
-    <i>{{ species_resources.genus }} {{ species_resources.species }}</i>
-    accessions</h4>
+    <b>
+      <i>{{ species_resources.genus }} {{ species_resources.species }}</i>
+      accessions
+    </b>
+  </h4>
   {% for datatype_dir in site.data.datastore-metadata[genus][species] %}
     {% assign datatype = datatype_dir[0] %}
     {% if datatype == "about_this_collection" %}
@@ -95,7 +101,7 @@ tools_menu: true
       {% for strain in about.strains %}
         {% unless existing_headers contains strain.accession_group %}
           <h4 class="uk-margin-small-bottom">
-            <b>{{ strain.accession_group }}</b><br>
+            {{ strain.accession_group }}
           </h4>
           {% assign existing_headers = existing_headers | push: strain.accession_group %}
         {% endunless %}
@@ -127,10 +133,9 @@ tools_menu: true
                     {% endfor %}
                   {% endif %}
                 {% endfor %}
-                <dt>
-                  <a target="_blank" href="{{ jbrowse_base_url }}/?assembly={{ assembly }}&tracks={{ annotation }}&loc={{ readme.scientific_name_abbrev }}.{{ assembly }}.{{ chromosome_prefix }}01:1-1000000">{{ assembly }}</a>
-                </dt>
-                <dd>{{ synopsis }}
+                <span>
+                  <b>{{ assembly }}</b>
+                  - {{ synopsis }}
                   {% assign doiCheck = doi | slice: 0, 2 %}
                   <i>
                     {% if doiCheck == "10" %}
@@ -139,7 +144,12 @@ tools_menu: true
                       {{ doi }}
                     {% endif %}
                   </i>
-                </dd>
+                </span>
+                <div class="uk-margin-left">
+                  <dd>
+                    <a target="_blank" href="{{ jbrowse_base_url }}/?assembly={{ assembly }}&tracks={{ annotation }}&loc={{ readme.scientific_name_abbrev }}.{{ assembly }}.{{ chromosome_prefix }}01:1-1000000">Genome Browser</a>
+                  </dd>
+                </div>
               {% endif %}
             {% endfor %}
           {% endif %}
