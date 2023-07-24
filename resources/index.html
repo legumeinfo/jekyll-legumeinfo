@@ -5,6 +5,7 @@ sitemap: sequence map
 tools_menu: true
 ---
 
+{% capture jbrowse_base_url %}/assets/js/jbrowse{% endcapture %}
 {% assign genus = "Glycine" %}
 
 {% for about_file in site.data.datastore-metadata[genus].GENUS.about_this_collection %}
@@ -14,16 +15,22 @@ tools_menu: true
   {% endif %}
 {% endfor %}
 
-<h1><i>{{ genus_resources.genus }}</i> ({{ genus_resources.commonName }})</h2>
+<h1>
+  <i>{{ genus_resources.genus }}</i>
+  ({{ genus_resources.commonName }})</h2>
 <p>{{ genus_resources.description }}</p>
-<p>NCBI taxonomy ID: <b>{{ genus_resources.taxid }}</b></p>
+<p>NCBI taxonomy ID:
+  <b>{{ genus_resources.taxid }}</b>
+</p>
 
 {% if genus_resources contains "resources" %}
   <h2>Tools and resources for the genus as a whole</h2>
   <dl>
     {% for resource in genus_resources.resources %}
-    <dt><a href="{{ resource.URL }}">{{ resource.name }}</a></dt>
-    <dd>{{ resource.description }}</dd>
+      <dt>
+        <a href="{{ resource.URL }}">{{ resource.name }}</a>
+      </dt>
+      <dd>{{ resource.description }}</dd>
     {% endfor %}
   </dl>
 {% endif %}
@@ -31,46 +38,113 @@ tools_menu: true
 <h2>Tools and resources for particular species</h2>
 
 {% for species in genus_resources.species %}
-{% for about_file in site.data.datastore-metadata[genus][species].about_this_collection %}
-  {% if about_file[0] contains "description_" %}
-    {% assign species_resources = about_file[1] %}
-    {% break %}
-  {% endif %}
-{% endfor %}
+  {% for about_file in site.data.datastore-metadata[genus][species].about_this_collection %}
+    {% if about_file[0] contains "description_" %}
+      {% assign species_resources = about_file[1] %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
 
   <hr/>
 
-  <h3><i>{{ species_resources.genus }} {{ species_resources.species }}</i>: {{ genus_resources.commonName }}</h3>
-  {% capture species_photo %}{% file_exists assets/img/species_images/{{ species_resources.abbrev }}.jpg %}{% endcapture %}
+  <h3>
+    <i>{{ species_resources.genus }} {{ species_resources.species }}</i>: {{ genus_resources.commonName }}</h3>
+  {% capture species_photo %}
+    {% file_exists assets/img/species_images/{{ species_resources.abbrev }}.jpg %}{% endcapture %}
   {% if species_photo == "true" %}
     <div style="float:right;margin:10px;border:1px solid darkgreen;">
-      <img src="/assets/img/species_images/{{ species_resources.abbrev }}.jpg" alt="Image: {{ species_resources.abbrev }}"/><br/>
+      <img src="/assets/img/species_images/{{ species_resources.abbrev }}.jpg" alt="Image: {{ species_resources.abbrev }}" /><br/>
     </div>
   {% endif %}
   <p>{{ species_resources.description }}</p>
-  <p>NCBI taxonomy ID: <b>{{ species_resources.taxid }}</b></p>
+  <p>NCBI taxonomy ID:
+    <b>{{ species_resources.taxid }}</b>
+  </p>
 
   {% if species_resources contains "resources" %}
-    <h4><i>{{ species_resources.genus }} {{ species_resources.species }}</i> resources</h4>
+    <h4>
+      <i>{{ species_resources.genus }} {{ species_resources.species }}</i>
+      resources</h4>
     <dl>
       {% for resource in species_resources.resources %}
-      <dt><a href="{{ resource.URL }}">{{ resource.name }}</a></dt>
-      <dd>{{ resource.description }}</dd>
+        <dt>
+          <a href="{{ resource.URL }}">{{ resource.name }}</a>
+        </dt>
+        <dd>{{ resource.description }}</dd>
       {% endfor %}
     </dl>
   {% endif %}
 
-  <h4><i>{{ species_resources.genus }} {{ species_resources.species }}</i> accessions</h4>
-  {% for strain in species_resources.strains %}
-    <b>{{ strain.identifier }}</b> ({{ strain.origin }}) <br/>
-    {{ strain.description }}
-    {% if strain contains "resources" %}
-    <ul>
-      {% for resource in strain.resources %}
-      <li><a href="{{ resource.URL }}">{{ resource.name }}</a> : {{ resource.description }}</li>
+  <h4>
+    <i>{{ species_resources.genus }} {{ species_resources.species }}</i>
+    accessions</h4>
+  {% for datatype_dir in site.data.datastore-metadata[genus][species] %}
+    {% assign datatype = datatype_dir[0] %}
+    {% if datatype == "about_this_collection" %}
+      {% for about_file in datatype_dir[1] %}
+        {% if about_file[0] contains "description_" %}
+          {% assign about = about_file[1] %}
+        {% endif %}
       {% endfor %}
-    </ul>
     {% endif %}
   {% endfor %}
-
+  {% for datatype_dir in site.data.datastore-metadata[genus][species] %}
+    {% assign datatype = datatype_dir[0] %}
+    {% if datatype == "annotations" %}
+      {% assign existing_headers = '' | split: ',' %}
+      {% for strain in about.strains %}
+        {% unless existing_headers contains strain.accession_group %}
+          <h4 class="uk-margin-small-bottom">
+            <b>{{ strain.accession_group }}</b><br>
+          </h4>
+          {% assign existing_headers = existing_headers | push: strain.accession_group %}
+        {% endunless %}
+        {% for collection_dir in datatype_dir[1] %}
+          {% assign collection_name = collection_dir[0] | split: 'gnm' %}
+          {% if collection_name[0] == strain.identifier %}
+            {% assign collection = collection_dir[0] %}
+            {% for metadata_file in collection_dir[1] %}
+              {% if metadata_file[0] contains "README" %}
+                {% assign readme = metadata_file[1] %}
+                {% assign assembly = readme.identifier | split: '.' | slice: 0, 2 | join: '.' %}
+                {% assign annotation = readme.identifier | split: '.' | slice: 0, 3 | join: '.' %}
+                {% for datatype_dir in site.data.datastore-metadata[genus][species] %}
+                  {% assign datatype = datatype_dir[0] %}
+                  {% if datatype == "genomes" %}
+                    {% for collection_dir in datatype_dir[1] %}
+                      {% assign collection = collection_dir[0] %}
+                      {% for metadata_file in collection_dir[1] %}
+                        {% if metadata_file[0] contains "README" %}
+                          {% assign readme_genome = metadata_file[1] %}
+                          {% assign assembly_genome = readme_genome.identifier | split: '.' | slice: 0, 2 | join: '.' %}
+                          {% if assembly_genome == assembly %}
+                            {% assign chromosome_prefix = readme_genome.chromosome_prefix %}
+                            {% assign synopsis = readme_genome.synopsis %}
+                            {% assign doi = readme_genome.publication_doi %}
+                          {% endif %}
+                        {% endif %}
+                      {% endfor %}
+                    {% endfor %}
+                  {% endif %}
+                {% endfor %}
+                <dt>
+                  <a target="_blank" href="{{ jbrowse_base_url }}/?assembly={{ assembly }}&tracks={{ annotation }}&loc={{ readme.scientific_name_abbrev }}.{{ assembly }}.{{ chromosome_prefix }}01:1-1000000">{{ assembly }}</a>
+                </dt>
+                <dd>{{ synopsis }}
+                  {% assign doiCheck = doi | slice: 0, 2 %}
+                  <i>
+                    {% if doiCheck == "10" %}
+                      <a href="https://doi.org/{{ doi }}">doi.org/{{ doi }}</a>
+                    {% else %}
+                      {{ doi }}
+                    {% endif %}
+                  </i>
+                </dd>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
 {% endfor %}
