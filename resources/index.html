@@ -47,10 +47,12 @@ tools_menu: true
   <hr/>
 
   <h3>
-    <i>{{ species_resources.genus }} {{ species_resources.species }}</i>: {{ genus_resources.commonName }}</h3>
+    <i>{{ species_resources.genus }} {{ species_resources.species }}</i>: {{ genus_resources.commonName }}
+  </h3>
   {% capture species_photo %}
-    {% file_exists assets/img/species_images/{{ species_resources.abbrev }}.jpg %}{% endcapture %}
-  {% if species_photo == "true" %}
+    {% file_exists assets/img/species_images/{{ species_resources.abbrev }}.jpg %}
+  {% endcapture %}
+  {% if species_photo %}
     <div style="float:right;margin:10px;border:1px solid darkgreen;">
       <img src="/assets/img/species_images/{{ species_resources.abbrev }}.jpg" alt="Image: {{ species_resources.abbrev }}" /><br/>
     </div>
