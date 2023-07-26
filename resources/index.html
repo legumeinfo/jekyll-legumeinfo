@@ -22,7 +22,6 @@ tools_menu: true
 <p>NCBI taxonomy ID:
   <b>{{ genus_resources.taxid }}</b>
 </p>
-
 {% if genus_resources contains "resources" %}
   <h2>Tools and resources for the genus as a whole</h2>
   <dl>
@@ -105,7 +104,7 @@ tools_menu: true
           </h4>
           {% assign existing_headers = existing_headers | push: strain.accession_group %}
         {% endunless %}
-        {% for collection_dir in datatype_dir[1] %}
+        {% for collection_dir in datatype_dir[1] reversed %}
           {% assign collection_name = collection_dir[0] | split: 'gnm' %}
           {% if collection_name[0] == strain.identifier %}
             {% assign collection = collection_dir[0] %}
