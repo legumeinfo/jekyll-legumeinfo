@@ -35,3 +35,8 @@
   description: "How to cite SoyBase"
   name: "Citing SoyBase"
   url: "/about/citing_soybase"
+- category: "Sitemap"
+  description: "Overview of pages and content at SoyBase"
+  name: "SoyBase Sitemap"
+  url: "/about/sitemap"
+
