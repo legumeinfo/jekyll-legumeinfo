@@ -49,7 +49,7 @@
   url: "/tools/gcvit"
 - category: "Search"
   description: "Search for genes"
-  name: "Gene search tool"
+  name: "Gene Search Tool"
   url: "/tools/search/gene.html"
 #   category: "FIXME"
 #   description: Description

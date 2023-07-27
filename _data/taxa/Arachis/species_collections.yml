@@ -121,3 +121,7 @@ species:
   genomes:
     - collection: K10017.gnm1.DQ4M
       synopsis: "Genome assembly 1 for Arachis cardenasii, accession K10017"
+- name: stenosperma
+  genomes:
+    - collection: V10309.gnm1.PFL2
+      synopsis: "Genome assembly 1 for Arachis stenosperma, accession V10309"

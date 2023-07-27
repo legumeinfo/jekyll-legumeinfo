@@ -25,7 +25,7 @@ species:
     description: Browser for dynamically discovering and viewing genomic synteny across
       selected species.
     name: Genome Context Viewer
-  - URL: https://legacy.legumeinfo.org/germplasm/map#?zoom=5&maxRecs=1000&taxonQuery=Arachis&traitOverlay=&traitScale=global&country=&geocodedOnly&traitExcludeUnchar=false&limitToMapExtent=false&lat=-15.71&lng=-62.62&mapHeight=430&baseMap=ESRI%20-%20NatGeo%20(default,%20reference%20map)&ne_lat=-6.446317749457646&ne_lng=-38.3203125&sw_lat=-24.56710835257599&sw_lng=-86.923828125&accessionIdsInclusive=false
+  - URL: https://germplasm-map.legumeinfo.org/#?zoom=6&maxRecs=200&taxonQuery=&traitOverlay=&traitScale=global&country=&geocodedOnly=false&traitExcludeUnchar=false&limitToMapExtent&lat=35.87&lng=-109.48&mapHeight=210.25&baseMap=ESRI%20-%20NatGeo%20(default,%20reference%20map)&ne_lat=37.71859032558816&ne_lng=-95.00976562500001&sw_lat=33.97980872872457&sw_lng=-123.94775390625001
     description: Geographic information system viewer, showing collection locations
       for Arachis data held by the U.S. National Plant Germplasm System.
     name: Germplasm GIS
@@ -39,10 +39,7 @@ species:
     name: Tifrunner
     origin: Southeastern United States
     resources:
-    - URL: https://peanutbase.org/gbrowse_peanut1.0
-      description: GBrowse for Tifrunner assemblies 1.0 and 2.0
-      name: Peanutbase Genome Browser (GBrowse)
-    - URL: https://peanutbase.org/node/319881/?data=arahy.Tifrunner.gnm1
+    - URL: /assets/js/jbrowse/?assembly=Tifrunner.gnm1.KYV3&tracks=Tifrunner.gnm2.ann1.4K0L&loc=arahy.Tifrunner.chr01:1-1000000
       description: JBrowse for Tifrunner assembly 1.0
       name: Peanutbase Genome Browser (JBrowse)
     - URL: https://sequenceserver.legumeinfo.org/
@@ -56,13 +53,20 @@ species:
     name: Fuhuasheng
     origin: North China
   - accession: zh.h0235
-    description: A. hypogaea var. Shitouqi (zh.h0235), the most widely cultivated
+    description: Arachis hypogaea var. Shitouqi (zh.h0235), the most widely cultivated
       peanut ecotype in the world, is a Chinese cultivar and breeding parent belonging
       to subspecies fastigiata, botanical type vulgaris and agronomic type Spanish
       with heterozygosity only 1/6,537 nucleotides on average.
     identifier: Shitouqi
     name: Shitouqi
     origin: China
+  - accession: BaileyII
+    description: Virginia-type peanut cultivar developed by NCSU breeding program.
+      Bailey II is a near-isogenic line to Bailey, possessing high-oleic trait and
+      resistance to several important pathogens, derived from A. cardenasii introgressions.
+    identifier: BaileyII
+    name: Bailey II
+    origin: Southeast US
   taxid: 3818
 - abbrev: aradu
   commonName: diploid wild peanut - A-genome
@@ -138,3 +142,23 @@ species:
     name: GKP10017
     origin: Robore, Bolivia
   taxid: 51121
+- abbrev: arast
+  commonName: Amendoim silvestre (wild peanut)
+  description: Arachis stenosperma Krapov. & W.C. Greg. is a wild peanut relative
+    native to central Brazil, in the past it was cultivated by native peoples of South
+    America, and was carried to the Atlantic coast, where populations persist to the
+    present day. It is a source of strong pest and disease resistance and has been
+    used by peanut breeders and geneticists in interspecific hybrids. A. stenosperma
+    is diploid species in the A-genome group of Arachis, which has similarity to the
+    A genome of tetraploid cultivated peanut (A. hypogaea).
+  genus: Arachis
+  species: stenosperma
+  strains:
+  - accession: PI 666100
+    description: This accession was sequenced with PacBio long reads, with contributions
+      by USDA-ARS and researchers at Mars Inc. and the University of Georgia. Seed
+      collected in Brazil by Jose F. Valls and Glocimar de Silva.
+    identifier: V10309
+    name: V10309
+    origin: Brazil
+  taxid: 217475
