@@ -1,0 +1,248 @@
+{
+  "#": "cmap-js example configuration file (json format)",
+  "header" : ": soybean and common bean genomes and genetic maps",
+  "attribution" : "data attribution: soybase, LIS",
+  "initialView" : [ {
+      "source" : "gm_gwas",
+      "map" : "H"
+        
+    }, {
+     "source" : "gm_composite",
+     "map" : "H",
+     "tracks" : [
+      {
+        "type" : "qtl",
+        "title": "QTL",
+        "type_acc": "QTL",
+        "filters":["QTL"],
+        "default_rank":2,
+        "drawing_lane":2,
+        "drawing_priority":1,
+        "fillColor": ["black"],
+        "shape": ["dumbbell"],
+        "position":-1
+      }, {
+        "type" : "qtl",
+        "title": "QTL_fungal",
+        "type_acc": "QTL_fungal",
+        "filters":["QTL_fungal"],
+        "default_rank":1,
+        "drawing_lane":3,
+        "drawing_priority":1,
+        "fillColor": ["brown"],
+        "shape": ["dumbbell"],
+        "position":-1
+      }, {
+        "type" : "qtl",
+        "title": "QTL_inorganic",
+        "type_acc": "QTL_inorganic",
+        "filters":["QTL_inorganic"],
+        "default_rank":2,
+        "drawing_lane":3,
+        "drawing_priority":1,
+        "fillColor": ["black"],
+        "shape": ["dumbbell"],
+        "position":-1
+      }, {
+        "type" : "qtl",
+        "title": "QTL_insect",
+        "type_acc": "QTL_insect",
+        "filters":["QTL_insect"],
+        "default_rank":2,
+        "drawing_lane":3,
+        "drawing_priority":1,
+        "fillColor": ["orangered"],
+        "shape": ["dumbbell"],
+        "position":-1
+      }, {
+        "type" : "qtl",
+        "title": "QTL_leaf-stem",
+        "type_acc": "QTL_leaf-stem",
+        "filters":["QTL_leaf-stem"],
+        "default_rank":2,
+        "drawing_lane":4,
+        "drawing_priority":1,
+        "fillColor": ["mediumseagreen"],
+        "shape": ["dumbbell"],
+        "position":-1
+      }, {
+        "type" : "qtl",
+        "title": "QTL_misc",
+        "type_acc": "QTL_misc",
+        "filters":["QTL_misc"],
+        "default_rank":2,
+        "drawing_lane":5,
+        "drawing_priority":1,
+        "fillColor": ["blueviolet"],
+        "shape": ["dumbbell"],
+        "position":-1
+      }, {
+        "type" : "qtl",
+        "title": "QTL_nematode",
+        "type_acc": "QTL_nematode",
+        "filters":["QTL_nematode"],
+        "default_rank":2,
+        "drawing_lane":3,
+        "drawing_priority":1,
+        "fillColor": ["fuschia"],
+        "shape": ["dumbbell"],
+        "position":-1
+      }, {
+        "type" : "qtl",
+        "title": "QTL_oil",
+        "type_acc": "QTL_oil",
+        "filters":["QTL_oil"],
+        "default_rank":2,
+        "drawing_lane":2,
+        "drawing_priority":1,
+        "fillColor": ["darkgoldenrod"],
+        "shape": ["dumbbell"],
+        "position":-1
+      }, {
+        "type" : "qtl",
+        "title": "QTL_other-seed",
+        "type_acc": "QTL_other-seed",
+        "filters":["QTL_other-seed"],
+        "default_rank":2,
+        "drawing_lane":2,
+        "drawing_priority":1,
+        "fillColor": ["violet"],
+        "shape": ["dumbbell"],
+        "position":-1
+      }, {
+        "type" : "qtl",
+        "title": "QTL_pod",
+        "type_acc": "QTL_pod",
+        "filters":["QTL_pod"],
+        "default_rank":2,
+        "drawing_lane":4,
+        "drawing_priority":1,
+        "fillColor": ["darkgreen"],
+        "shape": ["dumbbell"],
+        "position":-1
+      }, {
+        "type" : "qtl",
+        "title": "QTL_protein",
+        "type_acc": "QTL_protein",
+        "filters":["QTL_protein"],
+        "default_rank":2,
+        "drawing_lane":2,
+        "drawing_priority":1,
+        "fillColor": ["cornflowerblue"],
+        "shape": ["dumbbell"],
+        "position":-1
+      }, {
+        "type" : "qtl",
+        "title": "QTL_reprod-period",
+        "type_acc": "QTL_reprod-period",
+        "filters":["QTL_reprod-period"],
+        "default_rank":2,
+        "drawing_lane":2,
+        "drawing_priority":1,
+        "fillColor": ["red"],
+        "shape": ["dumbbell"],
+        "position":-1
+      }, {
+        "type" : "qtl",
+        "title": "QTL_root",
+        "type_acc": "QTL_root",
+        "filters":["QTL_root"],
+        "default_rank":2,
+        "drawing_lane":4,
+        "drawing_priority":1,
+        "fillColor": ["purple"],
+        "shape": ["dumbbell"],
+        "position":-1
+      }, {
+        "type" : "qtl",
+        "title": "QTL_whole-plant",
+        "type_acc": "QTL_whole-plant",
+        "filters":["QTL_whole-plant"],
+        "default_rank":2,
+        "drawing_lane":4,
+        "drawing_priority":1,
+        "fillColor": ["indigo"],
+        "shape": ["dumbbell"],
+        "position":-1
+      }, {
+        "type" : "qtl",
+        "title": "QTL_yield",
+        "type_acc": "QTL_yield",
+        "filters":["QTL_yield"],
+        "default_rank":2,
+        "drawing_lane":2,
+        "drawing_priority":1,
+        "fillColor": ["blue"],
+        "shape": ["dumbbell"],
+        "position":-1
+      }, {
+        "type" : "qtl",
+        "title": "QTL_viral",
+        "type_acc": "QTL_viral",
+        "filters":["QTL_viral"],
+        "default_rank":2,
+        "drawing_lane":3,
+        "drawing_priority":1,
+        "fillColor": ["darkolivegreen"],
+        "shape": ["dumbbell"],
+        "position":-1
+      }, {
+        "type" : "qtl",
+        "title": "QTL_bacterial",
+        "type_acc": "QTL_bacterial",
+        "filters":["QTL_bacterial"],
+        "default_rank":2,
+        "drawing_lane":3,
+        "drawing_priority":1,
+        "fillColor": ["green"],
+        "shape": ["dumbbell"],
+        "position":-1
+        }
+      ]
+    }
+  ],
+  "sources" : [ {
+      "id" : "gm_gwas",
+      "method": "GET",
+      "url": "https://raw.githubusercontent.com/LegumeFederation/cmap-js/soy-test/data/Soybean-GmGWAS.cmap",
+      "filters" : [],
+      "config": {
+        "method" : "GET",
+        "url" : "https://raw.githubusercontent.com/LegumeFederation/cmap-js/soy-test/config/gm_gwas.json"
+      },
+      "linkouts" : [
+        {
+            "featuretype" : "gene",
+            "url" : "https://legumeinfo.org/gene_links/${item.id}/json",
+            "isLinkingService" : true
+        }
+      ]
+    }, {
+      "id" : "gm_composite",
+      "method": "GET",
+      "url" : "https://data.legumeinfo.org/annex/Glycine/max/maps/mixed.map.GmComposite2003/Soybean-GmComposite2003.cmap.gz?display=text",
+      "filters" : [],
+      "config": {
+        "method" : "GET",
+        "url" : "https://raw.githubusercontent.com/LegumeFederation/cmap-js/soy-test/config/gm_composite.json"
+      },
+      "linkouts" : [
+        {
+            "featuretypePattern" : "QTL",
+            "url" : "https://soybase.org/sbt/search/search_results.php?category=QTLName&search_term=${item.id}",
+            "text" : "View QTL info at SoyBase"
+        },
+        {
+            "featuretype" : "SNP",
+            "url" : "https://soybase.org/sbt/search/search_results.php?category=SNP&search_term=${item.id}",
+            "text" : "View SNP info at SoyBase"
+        },
+        {
+            "featuretypePattern" : "^(SSR|[AR]FLP|Gene|PCR)$",
+            "url" : "https://soybase.org/sbt/search/search_results.php?category=LocusName&search_term=${item.id}",
+            "text" : "View Marker info at SoyBase"
+        }
+      ]
+    }
+  ]
+}
