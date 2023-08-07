@@ -31,24 +31,8 @@ species:
     name: Grin Data Explorer
   species: max
   strains:
-  - accession: PI 518671
-    description: Williams 82, the soybean cultivar used to produce the reference genome
-      sequence, was derived from backcrossing a phytophthora root rot resistance locus
-      from the donor parent Kingwa into the recurrent parent Williams.
-    identifier: Wm82
-    name: Williams 82
-    origin: Northern United States
-    resources:
-    - URL: https://soybase.org/gb2/gbrowse/gmax2.0
-      description: GBrowse for Wm82 assemblies 2.0
-      name: Soybase Genome Browser (GBrowse)
-    - URL: https://soybase.org/gb2/gbrowse/gmax1.01
-      description: GBrowse for Wm82 assemblies 1.01
-      name: Genome Browser (GBrowse), assembly 1
-    - URL: https://sequenceserver.legumeinfo.org/
-      description: SequenceServer BLAST against the Wm82 v2 assembly
-      name: LIS SequenceServer
   - accession: Wm82-ISU-01
+    accession_group: Reference - Williams 82
     description: Glycine max var. Williams 82-ISU-01 is an inbred line developed by
       Robert Stupar (University of Minnesota) by inbreeding original W82 seed. The
       resulting genome is a haploid version of W82. This genome can be used as an
@@ -57,21 +41,16 @@ species:
     identifier: Wm82_ISU01
     name: Williams 82-ISU-01
     origin: Northern United States
-  - accession: GWHAAEV00000000.1
-    description: Zhonghuang 13 is a Chinese cultivar derived from accessions Yudou
-      18 and Zhongzuo 90052-76 by pedigree selection for high yield and stress tolerance
-      (Shen et al., 2018; https://doi.org/10.1007/s11427-018-9360-0).
-    identifier: Zh13
-    name: Zhonghuang 13
-    origin: China
-    resources:
-    - URL: https://soybase.org/gb2/gbrowse/glyma.Zh13.gnm1
-      description: GBrowse for glycine max Zh13 genome assembly verson 1
-      name: Soybase Genome Browser (GBrowse)
-    - URL: https://sequenceserver.legumeinfo.org/
-      description: SequenceServer BLAST against the glycine max Zh13 assembly
-      name: LIS SequenceServer
+  - accession: PI 518671
+    accession_group: Reference - Williams 82
+    description: Williams 82, the soybean cultivar used to produce the reference genome
+      sequence, was derived from backcrossing a phytophthora root rot resistance locus
+      from the donor parent Kingwa into the recurrent parent Williams.
+    identifier: Wm82
+    name: Williams 82
+    origin: Northern United States
   - accession: PI 548656
+    accession_group: Reference - Lee
     description: Cultivar Lee, which derives from a cross of Chinese lines CNS and
       S-100, has been widely used as a parent in many breeding projects in the Southern
       U.S. and in Brazil (Wysmierski and Vello, 2013; http://doi.org/10.1590/S1415-47572013005000041).
@@ -80,32 +59,54 @@ species:
     identifier: Lee
     name: Lee
     origin: Southern United States
-    resources:
-    - URL: https://soybase.org/gb2/gbrowse/glyma.Lee.gnm1
-      description: GBrowse for glycine max Lee genome assembly verson 1
-      name: Soybase Genome Browser (GBrowse)
-    - URL: https://sequenceserver.legumeinfo.org/
-      description: SequenceServer BLAST against the glycine max Lee assembly
-      name: LIS SequenceServer
+  - accession: PI 438471
+    accession_group: Reference - Fiskeby III
+    description: "Bred by the late Dr. Sven Holmberg in Fiskeby, Norrk\xF6pping, Sweden.\
+      \ Highly nutritious \u2014 up to 40% protein, high in calcium, iron, and vitamins\
+      \ (particularly A, B1, B12, and C). Thrives in northern climates. 75-80 days."
+    identifier: FiskebyIII
+    name: Fiskeby III
+    origin: "Fiskeby, Norrk\xF6pping, Sweden"
+  - accession: GWHAAEV00000000.1
+    accession_group: Reference - Zhonghuang 13
+    description: Zhonghuang 13 is a Chinese cultivar derived from accessions Yudou
+      18 and Zhongzuo 90052-76 by pedigree selection for high yield and stress tolerance
+      (Shen et al., 2018; https://doi.org/10.1007/s11427-018-9360-0).
+    identifier: Zh13
+    name: Zhonghuang 13
+    origin: China
+  - accession: Hwangkeum
+    accession_group: Reference - Hwangkeum
+    description: Hwangkeum is an important South Korean cultivar, released in 1979
+      and widely used since then as a breeding parent in Korea. Hwangkeum has a determinate
+      growth habit and nonshattering pods and is adapted to the middle Korean peninsula
+      (Maturity Group V).
+    identifier: Hwangkeum
+    name: Hwangkeum
+    origin: South Korea
   - accession: IGA1001
+    accession_group: Chu, Peng et al., 2021
     description: Glycine max Wenfeng 7 (IGA1001) was sequenced and annotated by Chu,
       et al. (2021).
     identifier: Wenfeng7_IGA1001
     name: Wenfeng 7
     origin: National Soybean Preservation Center, ICS, CAAS
   - accession: IGA1002
+    accession_group: Chu, Peng et al., 2021
     description: Glycine max Hefeng 25 (IGA1002) was sequenced and annotated by Chu,
       et al. (2021).
     identifier: Hefeng25_IGA1002
     name: Hefeng 25
     origin: Jiamusi Branch of Heilongjiang Academy of Agricultural Sciences
   - accession: IGA1004
+    accession_group: Chu, Peng et al., 2021
     description: Glycine max Zhonghuang 35 (IGA1004) was sequenced and annotated by
       Chu, et al. (2021).
     identifier: Zh35_IGA1004
     name: Zhonghuang 35
     origin: National Soybean Improvement Sub-Center, ICS, CAAS
   - accession: IGA1005
+    accession_group: Chu, Peng et al., 2021
     description: Zhonghuang 13 is a Chinese cultivar derived from accessions Yudou
       18 and Zhongzuo 90052-76 by pedigree selection for high yield and stress tolerance
       (Shen et al., 2018; https://doi.org/10.1007/s11427-018-9360-0). This line, IGA1005,
@@ -114,18 +115,21 @@ species:
     name: Zhonghuang 13
     origin: National Soybean Improvement Sub-Center, ICS, CAAS
   - accession: IGA1006
+    accession_group: Chu, Peng et al., 2021
     description: Glycine max Jinyuan (IGA1006) was sequenced and annotated by Chu,
       et al. (2021).
     identifier: Jinyuan_IGA1006
     name: Jinyuan
     origin: National Soybean Preservation Center, ICS, CAAS
   - accession: IGA1007
+    accession_group: Chu, Peng et al., 2021
     description: Glycine max Huaxia 3 (IGA1007) was sequenced and annotated by Chu,
       et al. (2021).
     identifier: Huaxia3_IGA1007
     name: Huaxia 3
     origin: South China Agricultural University
   - accession: IGA1008
+    accession_group: Chu, Peng et al., 2021
     description: Williams 82, the soybean cultivar used to produce the reference genome
       sequence, was derived from backcrossing a phytophthora root rot resistance locus
       from the donor parent Kingwa into the recurrent parent Williams. This line,
@@ -134,143 +138,166 @@ species:
     name: Williams 82
     origin: Northeast Institute of Geography and Agroecology, CAS
   - accession: PI 438471
-    description: "Bred by the late Dr. Sven Holmberg in Fiskeby, Norrk\xF6pping, Sweden.\
-      \ Highly nutritious \u2014 up to 40% protein, high in calcium, iron, and vitamins\
-      \ (particularly A, B1, B12, and C). Thrives in northern climates. 75-80 days."
+    description: "Bred by the late Dr. Sven Holmberg in Fiskeby, Norrk\xF6pping, Sweden.
+      Highly nutritious \u2014 up to 40% protein, high in calcium, iron, and vitamins
+      (particularly A, B1, B12, and C). Thrives in northern climates. 75-80 days."
     identifier: FiskebyIII
     name: Fiskeby III
     origin: "Fiskeby, Norrk\xF6pping, Sweden"
   - accession: SoyL04
+    accession_group: Liu, Du et al., 2020
     description: Landrace 58-161 (SoyL04 from China, Jiang Su, from Liu et al. 2020
     identifier: 58-161
     name: 58-161
     origin: China, Jiang Su
   - accession: SoyC05
+    accession_group: Liu, Du et al., 2020
     description: Cultivar Amsoy (SoyC05 from United States, Iowa, from Liu et al.
       2020
     identifier: Amsoy
     name: Amsoy
     origin: United States, Iowa
   - accession: SoyC12
+    accession_group: Liu, Du et al., 2020
     description: Cultivar Dong Nong No.50 (SoyC12 from China, Hei Long Jiang, from
       Liu et al. 2020
     identifier: DongNongNo_50
     name: Dong Nong No.50
     origin: China, Hei Long Jiang
   - accession: SoyL07
+    accession_group: Liu, Du et al., 2020
     description: Landrace Feng Di Huang (SoyL07 from China, Ji Lin, from Liu et al.
       2020
     identifier: FengDiHuang
     name: Feng Di Huang
     origin: China, Ji Lin
   - accession: SoyC09
+    accession_group: Liu, Du et al., 2020
     description: Cultivar Han Dou No.5 (SoyC09 from China, He Bei, from Liu et al.
       2020
     identifier: HanDouNo_5
     name: Han Dou No.5
     origin: China, He Bei
   - accession: SoyC13
+    accession_group: Liu, Du et al., 2020
     description: Cultivar Hei He No.43  (SoyC13 from China, Hei Long Jiang, from Liu
       et al. 2020
     identifier: HeiHeNo_43
     name: Hei He No.43
     origin: China, Hei Long Jiang
   - accession: SoyC11
+    accession_group: Liu, Du et al., 2020
     description: Cultivar Ji Dou No.17 (SoyC11 from China, He Bei, from Liu et al.
       2020
     identifier: JiDouNo_17
     name: Ji Dou No.17
     origin: China, He Bei
   - accession: SoyC07
+    accession_group: Liu, Du et al., 2020
     description: Cultivar Jin Dou No.23 (SoyC07 from China, Shan Xi, from Liu et al.
       2020
     identifier: JinDouNo_23
     name: Jin Dou No.23
     origin: China, Shan Xi
   - accession: SoyC03
+    accession_group: Liu, Du et al., 2020
     description: Cultivar Ju Xuan No.23 (SoyC03 from China, Shan Dong, from Liu et
       al. 2020
     identifier: JuXuanNo_23
     name: Ju Xuan No.23
     origin: China, Shan Dong
   - accession: SoyC14
+    accession_group: Liu, Du et al., 2020
     description: Cultivar Ke Shan No.1 (SoyC14 from China, Hei Long Jiang, from Liu
       et al. 2020
     identifier: KeShanNo_1
     name: Ke Shan No.1
     origin: China, Hei Long Jiang
   - accession: SoyL05
+    accession_group: Liu, Du et al., 2020
     description: Landrace PI 398296 (SoyL05 from South Korea, Kyonggi, from Liu et
       al. 2020
     identifier: PI_398296
     name: PI 398296
     origin: South Korea, Kyonggi
   - accession: SoyC10
+    accession_group: Liu, Du et al., 2020
     description: Cultivar PI 548362 (SoyC10 from United States, Illinois, from Liu
       et al. 2020
     identifier: PI_548362
     name: PI 548362
     origin: United States, Illinois
   - accession: SoyC08
+    accession_group: Liu, Du et al., 2020
     description: Cultivar Qi Huang No.34 (SoyC08 from China, Shan Dong, from Liu et
       al. 2020
     identifier: QiHuangNo_34
     name: Qi Huang No.34
     origin: China, Shan Dong
   - accession: SoyL09
+    accession_group: Liu, Du et al., 2020
     description: Landrace Shi Sheng Chang Ye (SoyL09 from Japan, Hokkaido, from Liu
       et al. 2020
     identifier: ShiShengChangYe
     name: Shi Sheng Chang Ye
     origin: Japan, Hokkaido
   - accession: SoyC02
+    accession_group: Liu, Du et al., 2020
     description: Cultivar Tie Feng No.18 (SoyC02 from China, Hei Long Jiang, from
       Liu et al. 2020
     identifier: TieFengNo_18
     name: Tie Feng No.18
     origin: China, Hei Long Jiang
   - accession: SoyL08
+    accession_group: Liu, Du et al., 2020
     description: Landrace Tie Jia Si Li Huang (SoyL08 from China, Ji Lin, from Liu
       et al. 2020
     identifier: TieJiaSiLiHuang
     name: Tie Jia Si Li Huang
     origin: China, Ji Lin
   - accession: SoyL03
+    accession_group: Liu, Du et al., 2020
     description: Landrace Tong Shan Tian E Dan (SoyL03 from China, Jiang Su, from
       Liu et al. 2020
     identifier: TongShanTianEDan
     name: Tong Shan Tian E Dan
     origin: China, Jiang Su
   - accession: SoyC04
+    accession_group: Liu, Du et al., 2020
     description: Cultivar Wan Dou No.28 (SoyC04 from China, An Hui, from Liu et al.
       2020
     identifier: WanDouNo_28
     name: Wan Dou No.28
     origin: China, An Hui
   - accession: SoyC01
+    accession_group: Liu, Du et al., 2020
     description: Cultivar Xu Dou No.1 (SoyC01 from China, Jiang Su, from Liu et al.
       2020
     identifier: XuDouNo_1
     name: Xu Dou No.1
     origin: China, Jiang Su
   - accession: SoyC06
+    accession_group: Liu, Du et al., 2020
     description: Cultivar Yu Dou No.22 (SoyC06 from China, He Nan, from Liu et al.
       2020
     identifier: YuDouNo_22
     name: Yu Dou No.22
     origin: China, He Nan
   - accession: SoyL06
+    accession_group: Liu, Du et al., 2020
     description: Landrace Chang Chun Man Cang Jin (SoyL06 from China, Ji Lin, from
       Liu et al. 2020
     identifier: ZhangChunManCangJin
     name: Chang Chun Man Cang Jin
     origin: China, Ji Lin
   - accession: SoyL01
+    accession_group: Liu, Du et al., 2020
     description: Landrace Zhutwinning2 (SoyL01 from China, from Liu et al. 2020
     identifier: Zhutwinning2
     name: Zhutwinning2
     origin: China
   - accession: SoyL02
+    accession_group: Liu, Du et al., 2020
     description: Landrace Zi Hua No.4 (SoyL02 from China, Hei Long Jiang, from Liu
       et al. 2020
     identifier: ZiHuaNo_4
@@ -307,6 +334,7 @@ species:
   species: soja
   strains:
   - accession: PI 483463
+    accession_group: Valliyodan, Cannon et al., 2019
     description: Glycine soja accession PI 483463 has been identified as being unusually
       tolerant (Lee et al., 2009; https://doi.org/10.1093/jhered/esp027). The genome
       for this accession has been sequenced, partly on the basis of this salt-tolerance
@@ -314,11 +342,8 @@ species:
     identifier: PI483463
     name: PI 483463
     origin: Shanxi Province, China
-    resources:
-    - URL: https://soybase.org/gb2/gbrowse/glyso.PI483463.gnm1
-      description: GBrowse for Glycine soja PI483463 genome assembly version 1
-      name: Soybase Genome Browser (GBrowse)
   - accession: W05
+    accession_group: Xie, Chung et al., 2019
     description: Glycine soja accession W05 is a salt-tolerant wild soybean whose
       genome has been sequenced to serve as a reference genome assembly. The W05 accession
       has been used for genetic studies of several traits, including indeterminacy,
@@ -326,29 +351,29 @@ species:
     identifier: W05
     name: W05
     origin: Henan Province, China
-    resources:
-    - URL: https://soybase.org/gb2/gbrowse/glyso.W05.gnm1
-      description: GBrowse for glycine soja W05 genome assembly verson 1
-      name: Soybase Genome Browser (GBrowse)
   - accession: IGA1003
+    accession_group: Chu, Peng et al., 2021
     description: This Glycine soja wild soybean accession was sequenced and annotated
       by Chu, et al. (2021).
     identifier: F_IGA1003
     name: GsojaF
     origin: National Wild Soybean Preservation Center, ICS, CAAS
   - accession: SoyW02
+    accession_group: Liu, Du et al., 2020
     description: Wild (G. soja) accession PI 549046 (SoyW02 from China, Shaan Xi,
       from Liu et al. 2020
     identifier: PI_549046
     name: PI 549046
     origin: China, Shaan Xi
   - accession: SoyW01
+    accession_group: Liu, Du et al., 2020
     description: Wild (G. soja) accession PI 562565 (SoyW01 from South Korea, Jeolla
       Puk, from Liu et al. 2020
     identifier: PI_562565
     name: PI 562565
     origin: South Korea, Jeolla Puk
   - accession: SoyW03
+    accession_group: Liu, Du et al., 2020
     description: Wild (G. soja) accession PI 578357 (SoyW03 from Russian Federation,
       Federation Amur, from Liu et al. 2020
     identifier: PI_578357
@@ -373,6 +398,7 @@ species:
   species: cyrtoloba
   strains:
   - accession: G1267
+    accession_group: Zhuang, Wang et al., 2022
     description: G. cyrotoloba (Tind) is a perennial plant with twining and stiff
       stems. G. cyrotoloba pods are curved and somewhat mottled in appearance containing
       3-9 seeds that and are dark brown to black in color (Tindale, MD et al., 1984).
@@ -401,6 +427,7 @@ species:
   species: dolichocarpa
   strains:
   - accession: G1134
+    accession_group: Zhuang, Wang et al., 2022
     description: Glycine dolichocarpa (Tateishi & Ohashi) is a twining plant with
       long straight dark brown pods with 5-7 seeds. Seeds are square and dark brown
       in color.
@@ -429,6 +456,7 @@ species:
   species: falcata
   strains:
   - accession: G1718
+    accession_group: Zhuang, Wang et al., 2022
     description: Glycine falcata (Benth.) is unique among perennial Glycine species
       in that it does not form a vine but rather short, erect stems from a fibrous
       woody root system instead of the more common taproot. Seeds are round and smooth
@@ -455,6 +483,7 @@ species:
   species: stenophita
   strains:
   - accession: G1974
+    accession_group: Zhuang, Wang et al., 2022
     description: Glycine stenophita (B.E. Pfeil & Tind.) is a scrambling or climbing
       perennial that is glabrous or with sparse white hairs covering the stems. Pods
       are 4 to 6 seeded and seeds are generally barrel shaped with some variation
@@ -483,6 +512,7 @@ species:
   species: syndetika
   strains:
   - accession: G1300
+    accession_group: Zhuang, Wang et al., 2022
     description: Glycine syndetika (B.E. Pfeil & Craven) is a twining perennial plant
       with three leathery, often persistent leaflets. Flowers are somewhat clustered
       towards to the top of the inflorescences and pods contain 4-9 relatively large
@@ -506,6 +536,7 @@ species:
   species: D3-tomentella
   strains:
   - accession: G1403
+    accession_group: Zhuang, Wang et al., 2022
     description: G. D3 tomentella is a diploid (2n = 40) member of the complex of
       diploid and tetraploid taxa lumped under the name 'G. tomentella'. G. D3 tomentella
       is distinguished from other diploid members of Glycine tomentella species complex
