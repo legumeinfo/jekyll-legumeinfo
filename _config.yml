@@ -67,6 +67,12 @@ page_gen:
     index_files: true
     debug: true
 
+# shows posts (i.e. news and events) with a date after the date the site was built on
+future: true
+
+# the default number of items shown in card widgets
+card_item_limit: 3
+
 # SASS compilation
 sass:
     sass_dir: _sass
