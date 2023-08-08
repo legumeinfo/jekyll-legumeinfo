@@ -46,9 +46,9 @@ species:
       description: SequenceServer BLAST against the Tifrunner v2 assembly
       name: LIS SequenceServer
   - accession: GH00910
-    description: The mid-twentieth century landrace Fuhuasheng, from North China,
-      is a widely used parent from which \u223C70% of Chinese peanut cultivars released
-      during the past half century have been derived.
+    description: "The mid-twentieth century landrace Fuhuasheng, from North China,\
+      \ is a widely used parent from which \u223C70% of Chinese peanut cultivars released\
+      \ during the past half century have been derived."
     identifier: Fuhuasheng
     name: Fuhuasheng
     origin: North China
@@ -64,13 +64,9 @@ species:
     description: Virginia-type peanut cultivar developed by NCSU breeding program.
       Bailey II is a near-isogenic line to Bailey, possessing high-oleic trait and
       resistance to several important pathogens, derived from A. cardenasii introgressions.
-    identifier: Bailey_II
+    identifier: BaileyII
     name: Bailey II
     origin: Southeast US
-    resources:
-    - URL: https://www.peanutbase.org/tools/jbrowse2/?session=share-h9filRRpe1&password=JvI9y
-      description: JBrowse for Bailey II assembly 1
-      name: Peanutbase Genome Browser (JBrowse)
   taxid: 3818
 - abbrev: aradu
   commonName: diploid wild peanut - A-genome
