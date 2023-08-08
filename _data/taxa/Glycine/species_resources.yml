@@ -84,13 +84,6 @@ species:
     identifier: Hwangkeum
     name: Hwangkeum
     origin: South Korea
-  - accession: IGA1001
-    accession_group: Chu, Peng et al., 2021
-    description: Glycine max Wenfeng 7 (IGA1001) was sequenced and annotated by Chu,
-      et al. (2021).
-    identifier: Wenfeng7_IGA1001
-    name: Wenfeng 7
-    origin: National Soybean Preservation Center, ICS, CAAS
   - accession: IGA1002
     accession_group: Chu, Peng et al., 2021
     description: Glycine max Hefeng 25 (IGA1002) was sequenced and annotated by Chu,
@@ -98,29 +91,6 @@ species:
     identifier: Hefeng25_IGA1002
     name: Hefeng 25
     origin: Jiamusi Branch of Heilongjiang Academy of Agricultural Sciences
-  - accession: IGA1004
-    accession_group: Chu, Peng et al., 2021
-    description: Glycine max Zhonghuang 35 (IGA1004) was sequenced and annotated by
-      Chu, et al. (2021).
-    identifier: Zh35_IGA1004
-    name: Zhonghuang 35
-    origin: National Soybean Improvement Sub-Center, ICS, CAAS
-  - accession: IGA1005
-    accession_group: Chu, Peng et al., 2021
-    description: Zhonghuang 13 is a Chinese cultivar derived from accessions Yudou
-      18 and Zhongzuo 90052-76 by pedigree selection for high yield and stress tolerance
-      (Shen et al., 2018; https://doi.org/10.1007/s11427-018-9360-0). This line, IGA1005,
-      was sequenced and annotated by Chu, et al. (2021).
-    identifier: Zh13_IGA1005
-    name: Zhonghuang 13
-    origin: National Soybean Improvement Sub-Center, ICS, CAAS
-  - accession: IGA1006
-    accession_group: Chu, Peng et al., 2021
-    description: Glycine max Jinyuan (IGA1006) was sequenced and annotated by Chu,
-      et al. (2021).
-    identifier: Jinyuan_IGA1006
-    name: Jinyuan
-    origin: National Soybean Preservation Center, ICS, CAAS
   - accession: IGA1007
     accession_group: Chu, Peng et al., 2021
     description: Glycine max Huaxia 3 (IGA1007) was sequenced and annotated by Chu,
@@ -128,6 +98,20 @@ species:
     identifier: Huaxia3_IGA1007
     name: Huaxia 3
     origin: South China Agricultural University
+  - accession: IGA1006
+    accession_group: Chu, Peng et al., 2021
+    description: Glycine max Jinyuan (IGA1006) was sequenced and annotated by Chu,
+      et al. (2021).
+    identifier: Jinyuan_IGA1006
+    name: Jinyuan
+    origin: National Soybean Preservation Center, ICS, CAAS
+  - accession: IGA1001
+    accession_group: Chu, Peng et al., 2021
+    description: Glycine max Wenfeng 7 (IGA1001) was sequenced and annotated by Chu,
+      et al. (2021).
+    identifier: Wenfeng7_IGA1001
+    name: Wenfeng 7
+    origin: National Soybean Preservation Center, ICS, CAAS
   - accession: IGA1008
     accession_group: Chu, Peng et al., 2021
     description: Williams 82, the soybean cultivar used to produce the reference genome
@@ -137,13 +121,22 @@ species:
     identifier: Wm82_IGA1008
     name: Williams 82
     origin: Northeast Institute of Geography and Agroecology, CAS
-  - accession: PI 438471
-    description: "Bred by the late Dr. Sven Holmberg in Fiskeby, Norrk\xF6pping, Sweden.
-      Highly nutritious \u2014 up to 40% protein, high in calcium, iron, and vitamins
-      (particularly A, B1, B12, and C). Thrives in northern climates. 75-80 days."
-    identifier: FiskebyIII
-    name: Fiskeby III
-    origin: "Fiskeby, Norrk\xF6pping, Sweden"
+  - accession: IGA1005
+    accession_group: Chu, Peng et al., 2021
+    description: Zhonghuang 13 is a Chinese cultivar derived from accessions Yudou
+      18 and Zhongzuo 90052-76 by pedigree selection for high yield and stress tolerance
+      (Shen et al., 2018; https://doi.org/10.1007/s11427-018-9360-0). This line, IGA1005,
+      was sequenced and annotated by Chu, et al. (2021).
+    identifier: Zh13_IGA1005
+    name: Zhonghuang 13
+    origin: National Soybean Improvement Sub-Center, ICS, CAAS
+  - accession: IGA1004
+    accession_group: Chu, Peng et al., 2021
+    description: Glycine max Zhonghuang 35 (IGA1004) was sequenced and annotated by
+      Chu, et al. (2021).
+    identifier: Zh35_IGA1004
+    name: Zhonghuang 35
+    origin: National Soybean Improvement Sub-Center, ICS, CAAS
   - accession: SoyL04
     accession_group: Liu, Du et al., 2020
     description: Landrace 58-161 (SoyL04 from China, Jiang Su, from Liu et al. 2020
