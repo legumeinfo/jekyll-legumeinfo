@@ -13,13 +13,18 @@
 
 $global-color: #666;
 $global-emphasis-color: #333;
-$global-muted-color: #999;
+
+{% if site.style.global_muted_color %}
+  $global-muted-color: {{ site.style.global_muted_color }};
+{% else %}
+  $global-muted-color: #999;
+{% endif %}
 
 {% if site.style.link_color %}
 $global-link-color: {{ site.style.link_color }};
 {% endif %}
 {% if site.style.link_hover_color %}
-$global-link-hover-color: {{ site.style.link_hover_color }};
+  $global-link-hover-color: {{ site.style.link_hover_color }};
 {% endif %}
 
 $global-inverse-color: #fff;

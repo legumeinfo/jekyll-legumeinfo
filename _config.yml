@@ -61,6 +61,12 @@ page_gen:
     index_files: true
     debug: true
 
+# shows posts (i.e. news and events) with a date after the date the site was built on
+future: true
+
+# the default number of items shown in card widgets
+card_item_limit: 3
+
 # SASS compilation
 sass:
     sass_dir: _sass
@@ -70,6 +76,7 @@ sass:
 style:
     link_color: '#0071B3'
     link_hover_color: '#018fe2'
+    global_muted_color: '#666'
     primary_background: '#87a96b'
     invert_navbar_text: true
 

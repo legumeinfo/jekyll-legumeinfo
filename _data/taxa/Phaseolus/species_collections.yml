@@ -37,6 +37,8 @@ species:
     - collection: G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014
       synopsis: "Bean Expression Atlas for common bean cv. Negro jamapa mapped to the G19833 version 1 genome annotation."
   gwas:
+    - collection: mixed.gwas.Bassett_Kamfwa_2021
+      synopsis: "Genetic variability and GWAS of flavor, texture, and cooking quality attributes for Common beans of 20 Andean seed types, relative to the G19833 assembly v2.1."
     - collection: mixed.gwas.DiVittori_Bitocchi_2021
       synopsis: "GWAS of pod dehiscence in Common bean, relative to the G19833 assembly 2."
     - collection: mixed.gwas.Escobar_Oladzad_2022
@@ -123,6 +125,8 @@ species:
       synopsis: "15 SSR markers assigned to the Phaseolus vulgaris molecular linkage map."
     - collection: G19833.gnm2.mrk.Andean_MidAmer_GBS
       synopsis: "Marker SNPs developed by GBS on Andean and Middle American gene pools, with reads mapped to the Phaseolus vulgaris G19833 gnm2 assembly."
+    - collection: G19833.gnm2.mrk.Bassett_Kamfwa_2021
+      synopsis: "Marker SNPs developed via Genotyping by Sequencing (GBS) of the Andean Diversity Panel; reads were mapped to the Phaseolus vulgaris G19833 v2.1 reference assembly."
     - collection: G19833.gnm2.mrk.Blair_Cortés_2013
       synopsis: "A 768-marker Illumina GoldenGate array of SNP markers based on Trans-legume Orthologous Group (TOG) genes; marker physical coordinates relative to G19833.gnm2"
     - collection: G19833.gnm2.mrk.DiVittori_Bitocchi_2021

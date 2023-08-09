@@ -2,6 +2,8 @@
 species:
 - name: hypogaea
   genomes:
+    - collection: BaileyII.gnm1.1JTF
+      synopsis: "Arachis hypogaea accession Bailey II, genome assembly 1"
     - collection: Fuhuasheng.gnm1.XX5Y
       synopsis: "Genome assembly for tetraploid peanut cultivar Fuhuasheng, from Chen et al., 2019"
     - collection: Shitouqi.gnm1.L4VP
@@ -11,10 +13,14 @@ species:
     - collection: Tifrunner.gnm2.J5K5
       synopsis: "Genome assembly 2 for Arachis hypogaea, cultivar Tifrunner. This version has structural changes relative to assembly 1."
   annotations:
+    - collection: BaileyII.gnm1.ann1.PQM7
+      synopsis: "Annotation 1 for Arachis hypogaea accession Bailey II, genome assembly 1"
     - collection: Tifrunner.gnm1.ann1.CCJH
       synopsis: "Arachis hypogaea accession Tifrunner annotation files from genome assembly 1.0"
     - collection: Tifrunner.gnm2.ann1.4K0L
       synopsis: "Gene models for genome assembly 2 for Arachis hypogaea, cultivar Tifrunner."
+    - collection: Tifrunner.gnm2.ann2.PVFB
+      synopsis: "Annotation 2, using the BIND pipeline, for Arachis hypogaea, cultivar Tifrunner"
   diversity:
     - collection: aradu1_araip1.gnm1.div.Clevenger_Korani_2018
       synopsis: "Genotyping of African germplasm collection"
@@ -29,6 +35,8 @@ species:
       synopsis: "Gangurde, Wang, et al. (2020) NAM Tifrunner GWAS study of pod and seed weight"
     - collection: USPeanutCore.gwas.Otyama_Kulkarni_2020
       synopsis: "GWAS determining markers associated with fatty acid composition in the USDA peanut core collection."
+    - collection: mixed.gwas.Li_Cui_2022
+      synopsis: "Arachis hypogaea genetic loci associated with growth habit-related traits mapped onto the A. duranensis V14167 and A. ipaensis K30076 v1.0 assemblies."
   qtl:
     - collection: Huayu28_x_P76.qtl.Hu_Zhang_2018
       synopsis: "A genetic map from a Huayu28 x P76 RIL population composed of 2,334 markers (2,266 SNPs and 68 microsatellites) for the study of seed oleic and linoleic acid content"
@@ -91,6 +99,9 @@ species:
   annotations:
     - collection: V14167.gnm1.ann1.cxSM
       synopsis: "genome annotations"
+  markers:
+    - collection: V14167.gnm1.mrk.Li_Cui_2022
+      synopsis: "Markers from the Affymetrix version 2.0 SNP array mapped to the Arachis duranensis V14167 v1.0 assembly."
   maps:
     - collection: PI475887_x_Grif15036.map.Nagy_Guo_2012
       synopsis: "AA_A.duranensis_x_A.duranensis_a, SNP and SSR-based genetic map of Arachis duranensis from a cross of 'PI 475887' and 'Grif 15036'."
@@ -103,7 +114,14 @@ species:
   annotations:
     - collection: K30076.gnm1.ann1.J37m
       synopsis: "genome annotations for Arachis ipaensis K30076.gnm1.ann1"
+  markers:
+    - collection: K30076.gnm1.mrk.Li_Cui_2022
+      synopsis: "Markers from the Affymetrix version 2.0 SNP array mapped to the Arachis ipaensis K30076 v1.0 assembly."
 - name: cardenasii
   genomes:
     - collection: K10017.gnm1.DQ4M
       synopsis: "Genome assembly 1 for Arachis cardenasii, accession K10017"
+- name: stenosperma
+  genomes:
+    - collection: V10309.gnm1.PFL2
+      synopsis: "Genome assembly 1 for Arachis stenosperma, accession V10309"
