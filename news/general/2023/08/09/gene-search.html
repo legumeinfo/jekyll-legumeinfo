@@ -4,15 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>News &#8211; LIS: Legume Information System</title>
+  <title>Gene search &#8211; LIS: Legume Information System</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species.">
+  <meta name="description" content="New interface for gene search">
   <link rel="manifest" type="application/manifest+json; charset=utf-8" href="/manifest.json" />
   <meta name="robots" content="all">
   <meta name="author" content="">
   
-  
-  <link rel="canonical" href="/news/">
+  <meta name="keywords" content="news, general">
+  <link rel="canonical" href="/news/general/2023/08/09/gene-search.html">
   <link rel="alternate" type="application/rss+xml" title="RSS Feed for LIS: Legume Information System" href="/feed.xml" />
   
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -986,113 +986,18 @@
 
 
 
-  <div id="left-menu" class="tm-sidebar-left uk-visible@m">
-
-  
-    <h3>Tools</h3>
-
-
-
-<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-  <li class="uk-nav-header">Download / Query</li>
-  
-  <li uk-tooltip="title: Browser interface to all of the files in the Legume Information System."><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
-  
-  <li uk-tooltip="title: LIS InterMines: one mine per genus including genetic data, and an overall LegumeMine with genome annotations. Tools include a powerful query engine."><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
-  
-  <li uk-tooltip="title: Overviews of data characteristics at LIS: genome assembly sizes, gene counts, BUSCO coverage, etc."><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
-  
-</ul>
-
-<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-  <li class="uk-nav-header">Search</li>
-  
-  <li uk-tooltip="title: Search for genes"><a href="/tools/search/gene.html">Gene Search Tool</a></li>
-  
-</ul>
-
-<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-  <li class="uk-nav-header">Sequence search</li>
-  
-  <li uk-tooltip="title: Run BLASTs against LIS genomes, CDSes, and proteins"><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
-  
-  <li uk-tooltip="title: Functional annotation of protein or nucleotide sequences, and placement into gene trees"><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
-  
-</ul>
-
-<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-  <li class="uk-nav-header">Visualize / Browse</li>
-  
-  <li uk-tooltip="title: Browser for dynamically discovering and viewing genomic synteny across selected species."><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
-  
-  <li uk-tooltip="title: Interactive visualization of multiple GWAS and QTL data sets, using synteny to identify potentially conserved association regions between species."><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
-  
-  <li uk-tooltip="title: View genetic and comparative maps."><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
-  
-  <li uk-tooltip="title: View GIS location information for legume accessions."><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
-  
-  <li uk-tooltip="title: Conekt is a tool for comparative gene expression analysis."><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
-  
-  <li uk-tooltip="title: Functional keyword search for gene families"><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
-  
-  <li uk-tooltip="title: A multiple chromosome visualisation tool for visualizing resequencing or SNP array data"><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
-  
-</ul>
-
-
-
-  
-  
-  
-
-  <!-- dynamically set the top style property of the left menu when the height of the navbar changes -->
-  <!-- NOTE: the script tag is nested so it doesn't break a CSS selector -->
-  <script type="text/javascript">
-
-    const navbar = document.getElementById("navbar");
-    const left = document.getElementById("left-menu");
-
-    const leftTopObserver = new ResizeObserver(entries => {
-      for (let entry of entries) {
-        // use the newer contentBoxSize property if the browser supports it
-        if (entry.contentBoxSize) {
-          left.style.top = entry.contentBoxSize[0].blockSize + "px";
-        // fallback to the older contentRect property
-        } else {
-          left.style.top = entry.contentRect.height + "px";
-        }
-      }
-    });
-
-    leftTopObserver.observe(navbar);
-
-  </script>
-</div>
-
-
 <!-- NOTE: putting content between the left menu and tm-main blocks will break CSS selectors -->
 <div class="tm-main uk-section uk-section-default uk-flex">
   <div class="uk-container uk-width-1-1">
-    <h1>News</h1>
+    <div class="uk-container uk-container-small">
+  <article class="uk-article">
+  <h1 class="uk-article-title">Gene search</h1>
+  <p class="uk-article-meta">Posted by Andrew Farmer on 09 Aug 2023.</p>
+  <p>We’ve just released a new <a href="/tools/search/gene.html">gene search</a> interface that we hope will provide users with an easy-to-use entry point to many functions of the site, as an alternative to more complex search capabilities available through our InterMine instances. We’ve started with a few of the most relevant fields that we think will be generally useful for query and display, but would love to have your feedback. Note that the results display includes two fields (identifier and location) that support “linkouts” to other pages on the site (report pages, genome browsers, synteny views) where more information about the genes can be obtained; if you’d like to see other links to your favorite locations within the site or on other sites, please let us know. The underlying implementation of this search functionality is quite generic, so it should be relatively easy to provide similar searches for other types of data stored at the site. If you have ideas for similar searches that would be immediately useful for your work, please let us know.</p>
 
-<dl class="uk-description-list uk-description-list-divider">
+</article>
 
-<dt><a href="/news/general/2023/08/09/gene-search.html">Gene search</a></dt>
-  <dd>New interface for gene search</dd>
-
-<dt><a href="/news/general/2023/04/15/site-updates.html">Site updates</a></dt>
-  <dd>Legacy site decommissioned; many updates.</dd>
-
-<dt><a href="/news/general/2022/05/06/news.html">AgBioData data management survey</a></dt>
-  <dd>AgBioData survey</dd>
-
-<dt><a href="/news/general/2022/03/29/new-lis-site.html">Welcome to the new LIS site!</a></dt>
-  <dd>Announcing the new LIS</dd>
-
-<dt><a href="/news/2021/10/01/tepary-bean-genomes.html">Tepary bean genomes added to LIS</a></dt>
-  <dd>Phaseolus acutifolius (tepary bean) added to LIS</dd>
-
-</dl>
+</div>
 
   </div>
 

@@ -40,6 +40,15 @@
       </item>
     
       <item>
+        <title>Gene search</title>
+        <description>&lt;p&gt;We’ve just released a new &lt;a href=&quot;/tools/search/gene.html&quot;&gt;gene search&lt;/a&gt; interface that we hope will provide users with an easy-to-use entry point to many functions of the site, as an alternative to more complex search capabilities available through our InterMine instances. We’ve started with a few of the most relevant fields that we think will be generally useful for query and display, but would love to have your feedback. Note that the results display includes two fields (identifier and location) that support “linkouts” to other pages on the site (report pages, genome browsers, synteny views) where more information about the genes can be obtained; if you’d like to see other links to your favorite locations within the site or on other sites, please let us know. The underlying implementation of this search functionality is quite generic, so it should be relatively easy to provide similar searches for other types of data stored at the site. If you have ideas for similar searches that would be immediately useful for your work, please let us know.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 09 Aug 2023 16:00:00 +0000</pubDate>
+        <link>/news/general/2023/08/09/gene-search.html</link>
+        <guid isPermaLink="true">/news/general/2023/08/09/gene-search.html</guid>
+      </item>
+    
+      <item>
         <title>8th International Legume Conference, Brazil</title>
         <description>&lt;p&gt;6 - 11 August 2023&lt;/p&gt;
 
@@ -118,31 +127,6 @@
         <pubDate>Fri, 06 May 2022 00:00:00 +0000</pubDate>
         <link>/news/general/2022/05/06/news.html</link>
         <guid isPermaLink="true">/news/general/2022/05/06/news.html</guid>
-      </item>
-    
-      <item>
-        <title>Welcome to the new LIS site!</title>
-        <description>&lt;p&gt;The LIS team has re-designed and reengineered the site from the ground up, in order to better accommodate and make use of the dramatic influx of new, high-quality genomic data being generated for all legume crops. Here are some of the main changes:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;All data sets are now held in the LIS &lt;a href=&quot;https://data.legumeinfo.org/&quot;&gt;Data Store&lt;/a&gt;, with standardized naming patterns and metadata. The data are organized by genus and species, and then by data type. Data quality metrics are summarized in the &lt;a href=&quot;https://dscensor.legumeinfo.org&quot;&gt;DSCensor tool&lt;/a&gt;. You are welcome to browse the Data Store and download file collections, if those serve your needs. This change helps us accommodate the high volumes of incoming data, requiring streamlined and regularized approaches to data curation. We hope the Data Store organization helps you to efficiently explore and find what you want.&lt;/li&gt;
-  &lt;li&gt;For all crops and models, we anticipate large numbers of genome assemblies and annotations; there is therefore a need to support pan-genome and pan-gene analyses. The &lt;a href=&quot;https://gcv.legumeinfo.org/&quot;&gt;Genome Context Viewer&lt;/a&gt; is a flexible and fast tool for exploring genomic regions in terms of gene content and gene-level synteny. We will be adding genus-level pan-gene collections later this year.&lt;/li&gt;
-  &lt;li&gt;To support complex queries, we are using InterMine. Mine instances are currently available for &lt;a href=&quot;https://mines.legumeinfo.org&quot;&gt;more than 20 species, in eight genus-level mines&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Many important traits have a common molecular basis across related species. Orthologs in, say, soybean, common bean, and cowpea, may be responsible for traits such as flowering time or determinacy. To help track down these correspondences, we offer the &lt;a href=&quot;https://zzbrowse.legumeinfo.org&quot;&gt;ZZBrowse&lt;/a&gt; tool, which allows comparisons of GWAS or QTL studies across pairs of species, with genomic features linked via synteny.&lt;/li&gt;
-  &lt;li&gt;Explore expression data in a phylogenetic context using the &lt;a href=&quot;https://conekt.legumeinfo.org/species/&quot;&gt;Connekt comparative expression tool&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;We maintain a collection of legume-focused gene families, which are &lt;a href=&quot;https://funnotate.legumeinfo.org/?search&quot;&gt;searchable&lt;/a&gt; and viewable in interactive phylogenies - &lt;a href=&quot;https://funnotate.legumeinfo.org/?family=L_54XDXL&quot;&gt;like this, for example&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Annotate your submitted sequences using &lt;a href=&quot;https://funnotate.legumeinfo.org&quot;&gt;Funnotate&lt;/a&gt;. This system determines functional annotations for submitted sequences, and places your sequences into the closest phylogenetic trees.&lt;/li&gt;
-  &lt;li&gt;Do &lt;a href=&quot;https://sequenceserver.legumeinfo.org/&quot;&gt;BLAST searches&lt;/a&gt; against most of the genomes and annotation sets at LIS.&lt;/li&gt;
-  &lt;li&gt;Explore geographical distribution and trait information in legume germplasm collections held in the U.S. National Plant Germplasm Repository System, with the &lt;a href=&quot;https://germplasm-map.legumeinfo.org/&quot;&gt;LIS Germplasm GIS viewer&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Substantial genus-centric data sets will be presented at satellite sites developed using the new framework, for example a replacement for older M. truncatula and alfalfa sites now combined under a single genus &lt;a href=&quot;https://medicago.legumeinfo.org&quot;&gt;Medicago&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For genetic/genomic database geeks who have an interest in the “how and why” of this change: we have switched from Drupal to Jekyll for handling the core website. &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, as a static site generator, offers light-weight and modular methods for generating the site from accessible data formats (yaml, tables, json, or markdown) and lightweight code (with the &lt;a href=&quot;https://shopify.github.io/liquid/&quot;&gt;liquid&lt;/a&gt; templating language). By driving site content directly from validated metadata held in the LIS Data Store and kept under revision control in a dedicated &lt;a href=&quot;https://github.com/legumeinfo/datastore-metadata&quot;&gt;github repository&lt;/a&gt;, we thereby increase the consistency and coherence of different components of the site while maintaining agility in the face of increasing data volume. Interactive tools (described above) are written in more performant web languages, but ultimately source their data and metadata from these same files. If you’d like to contribute (or just see how the site is put together), the code and website data are in GitHub &lt;a href=&quot;https://github.com/legumeinfo/jekyll-legumeinfo&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;With such a large site overhaul, we expect that LIS users will have questions about features that may have moved or may be handled differently in this new version. We very much welcome your questions! You are also welcome to use the &lt;a href=&quot;https://legacy.legumeinfo.org&quot;&gt;previous site&lt;/a&gt;, which will remain available through most of 2022.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 29 Mar 2022 08:00:00 +0000</pubDate>
-        <link>/news/general/2022/03/29/new-lis-site.html</link>
-        <guid isPermaLink="true">/news/general/2022/03/29/new-lis-site.html</guid>
       </item>
     
   </channel>
