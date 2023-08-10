@@ -34,11 +34,17 @@ twitter_username: legumeinfo
 github_username: legumeinfo
 #newsletter: http://eepurl.com/cX_JjL
 
+# allow direct port 4000 requests from outside so we don't have to proxy
+host: 0.0.0.0
+
 # our Google Analytics ID
 google_analytics: "UA-49655154-1"
 
 # Set the LIS Datastore base URL here
 datastoreurl: https://data.legumeinfo.org
+
+# Set the GraphQL URI for tools that use it
+graphqluri: https://graphql.lis.ncgr.org/
 
 # Build settings
 #theme: jekyll-theme-legumeinfo
