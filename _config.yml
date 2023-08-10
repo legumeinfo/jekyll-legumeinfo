@@ -47,7 +47,7 @@ datastoreurl: https://data.legumeinfo.org
 graphqluri: https://graphql.lis.ncgr.org/
 
 # Build settings
-#theme: jekyll-theme-legumeinfo
+theme: jekyll-theme-legumeinfo
 plugins:
   - jekyll-feed
   - jekyll-datapage-generator

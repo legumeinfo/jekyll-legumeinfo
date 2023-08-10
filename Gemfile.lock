@@ -4,6 +4,14 @@ GIT
   specs:
     jekyll_file_exists (0.1.0)
 
+PATH
+  remote: _themes/jekyll-theme-legumeinfo
+  specs:
+    jekyll-theme-legumeinfo (0.0.0)
+      jekyll (~> 4.2)
+      jekyll-datapage-generator (~> 1.4.0)
+      webrick (~> 1.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -76,6 +84,7 @@ DEPENDENCIES
   jekyll (~> 4.2.0)
   jekyll-datapage-generator (~> 1.4.0)
   jekyll-feed (~> 0.12)
+  jekyll-theme-legumeinfo!
   jekyll_file_exists!
   tzinfo (~> 1.2)
   tzinfo-data

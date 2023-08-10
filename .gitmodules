@@ -1,4 +1,3 @@
-[submodule "uikit"]
-	path = uikit
-	url = https://github.com/uikit/uikit.git
-	branch = v3.13.4
+[submodule "_themes/jekyll-theme-legumeinfo"]
+	path = _themes/jekyll-theme-legumeinfo
+	url = https://github.com/legumeinfo/jekyll-theme-legumeinfo

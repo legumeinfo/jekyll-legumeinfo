@@ -31,3 +31,5 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
+# The LIS theme
+gem "jekyll-theme-legumeinfo", path: "./_themes/jekyll-theme-legumeinfo"

@@ -1,12 +1,40 @@
 <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
   <li><a href="{{ "/" | relative_url }}">Home</a></li>
-  <li><a href="{{ "/taxa" | relative_url}}">Taxa</a></li>
-  <li><a href="{{ "/collections" | relative_url}}">Collections</a></li>
-  <li><a href="{{ "/tools" | relative_url}}">Tools</a></li>
-  <li><a href="{{ "/blog" | relative_url}}">Blog</a></li>
+  {% if site.data.taxon_list %}
+  <li class="uk-parent">
+    <a href="#">Taxa</a>
+    {% assign genera = site.data.taxon_list | group_by: "genus"  %}
+    <ul class="uk-nav-sub">
+      {% for genus in genera %}
+        {% for organism in genus.items %}
+          {% if organism.category == "main" %}
+            <li><a href="/taxa/{{ organism.genus | downcase | relative_url }}"> {{ organism.genus }} {{ organism.description }}</a></li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      <li><a href="{{ "/taxa" | relative_url }}">OTHERS (Many special-focus species and collections)</a></li>
+    </ul>
+  </li>
+  {% else %}
+  <li><a href="{{ "/taxa" | relative_url }}">Taxa</a></li>
+  {% endif %}
+  {% if site.data.tools %}
+  <li class="uk-parent">
+    <a href="{{ "/tools" | relative_url }}">Tools</a>
+    {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
+    <ul class="uk-nav-sub">
+      {% for group in groups %}
+        {% for item in group.items %}
+          <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+        {% endfor %}
+      {% endfor %}
+    </ul>
+  </li>
+  {% else %}
+  <li><a href="{{ "/tools" | relative_url }}">Tools</a></li>
+  {% endif %}
+  <li><a href="{{ "/download" | relative_url }}">Download</a></li>
   <li><a href="{{ "/community" | relative_url }}">Community</a></li>
-  <li><a href="{{ "/about" | relative_url }}">About & Contact</a></li>
-  <li class="uk-nav-divider"></li>
-  <li><a href="{{ "/news" | relative_url}}">News</a></li>
-  <li><a href="{{ "/announcements" | relative_url}}">Announcements</a></li>
+  <li><a href="{{ "/contact" | relative_url }}">Contact</a></li>
+  <li><a href="{{ "/help" | relative_url }}">Help</a></li>
 </ul>
