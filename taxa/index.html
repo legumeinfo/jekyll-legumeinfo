@@ -1,29 +1,32 @@
 ---
+layout: default
 title: Taxa
-taxa_menu: true
 ---
+<h1>Taxa</h1>
+
+<h3>Major genera (containing significant crop and model species)</h3>
+{% if site.data.taxon_list %}
 {% assign genera = site.data.taxon_list | group_by: "genus"  %}
+<dt>
+  {% for element in genera %}
+    {% for item in element.items %}
+      {% if item.category == "main" %}
+        <dd><a href="{{ item.genus | downcase }}">{{ item.genus }}</a> {{ item.description }}</dd>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</dt>
 
-<h1>Resources by Taxon</h1>
+<h3>Special-focus genera and data sets</h3>
+<dt>
+  {% for element in genera %}
+    {% for item in element.items %}
+      {% if item.category == "special" %}
+        <dd><a href="{{ item.genus | downcase }}">{{ item.genus }}</a> {{ item.description }}</dd>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</dt>
+{% endif %}
 
-<h3>Major genera (containing significant crops)</h3>
-<ul>
-  {% for genus in genera %}
-  {% for item in genus.items %}
-  {% if item.category == "main" %}
-  <li><a href="/taxa{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
-  {% endif %}
-  {% endfor %}
-  {% endfor %}
-</ul>
 
-<h3>Special-focus genera</h3>
-<ul>
-  {% for genus in genera %}
-  {% for item in genus.items %}
-  {% if item.category == "special" %}
-  <li><a href="/taxa{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
-  {% endif %}
-  {% endfor %}
-  {% endfor %}
-</ul>
