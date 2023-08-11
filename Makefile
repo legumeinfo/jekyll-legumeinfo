@@ -14,10 +14,10 @@ else # assume dev container
   HTMLPROOFER_ARGS = --allow-missing-href --ignore-missing-alt --cache '{"timeframe": {"external": "30d"}}'
 endif
 
-JBROWSE_VERSION = 2.6.1
+JBROWSE_VERSION = 2.6.2
 
 serve: mostlyclean setup
-	bundle exec jekyll serve --incremental $(JEKYLL_SERVE_ARGS)
+	bundle exec jekyll serve --trace --incremental $(JEKYLL_SERVE_ARGS)
 
 check: mostlyclean setup
 	bundle exec jekyll build
@@ -29,10 +29,10 @@ jbrowse: setup
 	npm exec -c '_scripts/jbrowse-tracks.sh'
 
 setup:
-	git submodule update --init
+	git submodule update --init --recursive
 	if ! bundle check; then bundle install; fi
-	if ! command -v jbrowse >/dev/null 2>&1 || npm ls jbrowse; then npm install @jbrowse/cli@${JBROWSE_VERSION}; fi
-	if ! command -v jq >/dev/null 2>&1; then curl -Lo ./node_modules/.bin/jq https://github.com/jqlang/jq/releases/download/jq-1.6/jq-osx-amd64 && chmod +x ./node_modules/.bin/jq; fi
+	if ! { command -v jbrowse || npm ls @jbrowse/cli ; } >/dev/null 2>&1; then npm install @jbrowse/cli@${JBROWSE_VERSION}; fi
+	if ! npm exec -c 'command -v jq' >/dev/null 2>&1; then curl -Lo ./node_modules/.bin/jq https://github.com/jqlang/jq/releases/download/jq-1.6/jq-osx-amd64 && chmod +x ./node_modules/.bin/jq; fi
 	if ! [ -d ./assets/js/jbrowse ]; then npx jbrowse create assets/js/jbrowse --tag=v${JBROWSE_VERSION}; fi
 
 mostlyclean:
