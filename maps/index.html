@@ -17,19 +17,24 @@ tools_menu: true
 
 <p>
   Maps below show QTLs and GWAS features. Click a chromosome number to go to the corresponding linkage group views. 
-  See correspondences on rollover: chromosome Gm<strong>01</strong>
-  ==> linkage group
-  <strong>D1a</strong>; 
-  chromosome Gm<strong>20</strong>
-  ==> linkage group
-  <strong>I</strong>, etc. <br>
+  See correspondences on rollover: chromosome Gm<strong>01</strong> ==> linkage group <strong>D1a</strong>; 
+  chromosome Gm<strong>20</strong> ==> linkage group <strong>I</strong>, etc. <br>
   For more convenient browsing, the QTLs have been divided into the categories listed below.
 </p>
 
+{% comment %}
+  Use idx as the index of cmap-set groups. Set the first accordion item to "open".
+{% endcomment %}
+{% assign idx = 0 %}
 {% for cmap-set in map_cmap.cmap-sets %}
   <ul uk-accordion>
-    <li>
-      <a class="uk-accordion-title" href="#">{{ cmap-set.description }}</a>
+    {% if idx == 0 %}
+      <li class="uk-open">
+    {% else %}
+      <li>
+    {% endif %}
+    {% assign idx = idx | plus: 1 %}
+      <a class="uk-accordion-title" href="#"><strong>&#8226;</strong> {{ cmap-set.description }}</a>
       <div class="uk-accordion-content">
         <table class="uk-table">
           <tbody>
@@ -38,14 +43,9 @@ tools_menu: true
               {% for LG in cmap-set.linkage_groups %}
                 {% assign chr = chr | plus: 1 %}
                 <td>
-                  <div
-                    data-uk-tooltip="{pos:'bottom-left'}"
-                    ;
-                    uk-tooltip="title: {{ LG }}">
-                    {% capture map_path %}
-                      {{ cmap-set.URL }}?config=map-{{ chr | prepend: '00' | slice: -2, 2 }}.json
-                    {% endcapture %}
-                    <a href="{{ map_path | relative_url }}">{{ chr | prepend: '00' | slice: -2, 2 }}</a>
+                  <div  data-uk-tooltip="{pos:'bottom-left'}"; uk-tooltip="title: {{ LG }}">
+                    {% capture map_path %}{{ cmap-set.URL }}?config=map-{{ chr | prepend: '00' | slice: -2,2 }}.json {% endcapture %}
+                    <a href="{{ map_path | relative_url }}">{{ chr | prepend: '00' | slice: -2,2 }}</a>
                   </div>
                 </td>
               {% endfor %}
@@ -59,9 +59,7 @@ tools_menu: true
 
 {% for resource in map_resource.resources %}
   <dl>
-    <dt>
-      <a href="{{ resource.URL }}">{{ resource.name }}</a>
-    </dt>
+    <dt><a href="{{ resource.URL }}">{{ resource.name }}</a></dt>
     {{ resource.description }}
   </dl>
 {% endfor %}
