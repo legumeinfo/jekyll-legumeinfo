@@ -127,7 +127,11 @@ tools_menu: true
                           {% if assembly_genome == assembly %}
                             {% assign chromosome_prefix = readme_genome.chromosome_prefix %}
                             {% assign synopsis = readme_genome.synopsis %}
-                            {% assign doi = readme_genome.publication_doi %}
+                            {% if readme_genome contains "publication_doi" %}
+                              {% assign doi = readme_genome.publication_doi %}
+                            {% else %}
+                              {% assign doi = "DOI" %}
+                            {% endif %}
                           {% endif %}
                         {% endif %}
                       {% endfor %}
