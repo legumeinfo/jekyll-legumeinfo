@@ -484,6 +484,13 @@ $navbar-nav-item-line-transition-duration: 0.3s;
         color: $global-muted-color;
     }
 }
+/* Table borders */
+table, th, td {
+  border: 1px solid;
+}
+table {
+  border-collapse: collapse;
+}
 
 
 /* Reset container for docs
