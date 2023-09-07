@@ -14,6 +14,7 @@ tools_menu: true
   tab, with browsers listed under each accession -- or directly from the links below.
 </p>
 
+{% assign doi = "DOI" %}
 {% assign genus = "Glycine" %}
 {% for about_file in site.data.datastore-metadata[genus].GENUS.about_this_collection %}
   {% if about_file[0] contains "description_" %}
@@ -73,7 +74,11 @@ tools_menu: true
                           {% if assembly_genome == assembly %}
                             {% assign chromosome_prefix = readme_genome.chromosome_prefix %}
                             {% assign synopsis = readme_genome.synopsis %}
-                            {% assign doi = readme_genome.publication_doi %}
+                            {% if readme_genome contains "publication_doi" %}
+                              {% assign doi = readme_genome.publication_doi %}
+                            {% else %}
+                              {% assign doi = "DOI" %}
+                            {% endif %}
                           {% endif %}
                         {% endif %}
                       {% endfor %}

@@ -38,6 +38,9 @@ lang: en
 
 card_item_limit: 3
 
+# allow direct port 4000 requests from outside so we don't have to proxy
+host: 0.0.0.0
+
 # our Google Analytics ID. XX CHANGE THIS for SoyBase
 google_analytics: "UA-49655154-1"
 
@@ -49,6 +52,7 @@ liquid:
   error_mode: strict
   strict_filters: true
   # note incompatibility with "default" filter: https://github.com/Shopify/liquid/issues/1404
+
 # strict_variables: true
 
 # Build settings
