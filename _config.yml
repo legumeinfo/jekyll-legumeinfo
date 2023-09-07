@@ -52,13 +52,14 @@ liquid:
   error_mode: strict
   strict_filters: true
   # note incompatibility with "default" filter: https://github.com/Shopify/liquid/issues/1404
-  strict_variables: true
-  
-# Set the GraphQL URI for tools that use it
-graphqluri: https://graphql.lis.ncgr.org/
+
+# strict_variables: true
 
 # Build settings
-#theme: jekyll-theme-legumeinfo
+theme: jekyll-theme-legumeinfo
+# enable post from the future so the theme can show upcoming events
+future: true
+
 plugins:
   - jekyll-feed
   - jekyll-datapage-generator
@@ -104,11 +105,6 @@ defaults:
       path: ""
     values:
       layout: "default"
-  -
-    scope:
-      path: "uikit/"
-    values:
-      sitemap: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -7,7 +7,8 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.3.1"
+gem "jekyll", "~> 4.3.2"
+gem "jekyll-theme-legumeinfo", path: "./_themes/jekyll-theme-legumeinfo"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
