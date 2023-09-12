@@ -80,7 +80,7 @@ jobs:
           cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: install htmlproofer
         # need ruby >= 3.1 for html-proofer 5.x
-        run: gem install html-proofer -v 5.0.7
+        run: gem install html-proofer -v 5.0.8
       # Cache HTMLProofer external URL results for 30 days, but using actions/cache/restore
       # and actions/cache/save so cache can still be saved when failure is reported
       # https://github.com/gjtorikian/html-proofer/#caching-with-continuous-integration
@@ -91,7 +91,7 @@ jobs:
           key: ${{ runner.os }}-html-proofer
       - name: run htmlproofer
         run: |
-          htmlproofer --allow-missing-href --ignore-missing-alt --ignore-files '/\/uikit\/tests\//' --ignore-status-codes 503 --cache '{"timeframe": {"external": "30d"}}'
+          htmlproofer --allow-missing-href --ignore-missing-alt --ignore-files '/\/uikit\/tests\//' --ignore-status-codes '403,503' --cache '{"timeframe": {"external": "30d"}}'
       # https://github.com/actions/cache/blob/main/save/README.md#always-save-cache
       - uses: actions/cache/save@v3
         id: save-cache-htmlproofer

@@ -52,8 +52,10 @@ liquid:
   error_mode: strict
   strict_filters: true
   # note incompatibility with "default" filter: https://github.com/Shopify/liquid/issues/1404
+  strict_variables: true
 
-# strict_variables: true
+# Set the GraphQL URI for tools that use it
+graphqluri: https://graphql.lis.ncgr.org/
 
 # Build settings
 theme: jekyll-theme-legumeinfo
