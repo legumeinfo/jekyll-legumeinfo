@@ -38,7 +38,7 @@ github_username: legumeinfo
 host: 0.0.0.0
 
 # our Google Analytics ID
-google_analytics: "UA-49655154-1"
+google_analytics_id: "UA-49655154-1"
 
 # Set the LIS Datastore base URL here
 datastoreurl: https://data.legumeinfo.org
