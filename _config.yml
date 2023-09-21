@@ -73,6 +73,18 @@ future: true
 # the default number of items shown in card widgets
 card_item_limit: 3
 
+# announcements on home page with 3-card draw
+announcements_card: true
+announcements_card_item_limit: 3
+
+# blog on home page with 3-card draw
+blog_card: true
+blog_card_item_limit: 3
+
+# news on home page with 3-card draw
+news_card: true
+news_card_item_limit: 3
+
 # SASS compilation
 sass:
     sass_dir: _sass

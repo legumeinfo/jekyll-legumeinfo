@@ -1,13 +1,5 @@
 ---
+layout: announcements
 title: Announcements
 tools_menu: true
 ---
-
-<h1>Announcements</h1>
-
-<dl class="uk-description-list uk-description-list-divider">
-{% for post in site.categories.announcements %}
-  <dt>{{ post.title }}</dt>
-  <dd>{{ post.summary }}</dd>
-{% endfor %}
-</dl>
