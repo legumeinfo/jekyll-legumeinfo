@@ -18,9 +18,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-## not sure what this is for
-# exclude_paths: ["news/index.html", "announcements/index.html"]
-
 title: "LIS: Legume Information System"
 subtitle: Information about legume traits for crop improvement
 logo: /assets/img/logo.png
@@ -73,10 +70,6 @@ future: true
 # the default number of items shown in card widgets
 card_item_limit: 3
 
-# announcements on home page with 3-card draw
-announcements_card: true
-announcements_card_item_limit: 3
-
 # blog on home page with 3-card draw
 blog_card: true
 blog_card_item_limit: 3
@@ -105,12 +98,6 @@ defaults:
       path: ""
     values:
       layout: "default"
-  -
-    scope:
-      path: "announcements/"
-      type: "posts"
-    values:
-      layout: "announcement-item"
   -
     scope:
       path: "blog/"

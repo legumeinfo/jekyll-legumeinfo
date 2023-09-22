@@ -50,22 +50,6 @@ The cultivated accession has been added as the primary representative of the spe
 ```
 You can place blank lines in the content to generate paragraphs. Images are not supported in news items.
 
-## Announcements
-Announcements are just like news posts, created by adding a file under `announcements/_posts` with a name of the format `yyyy-mm-dd-unique-identifier.md`.
-For example:
-```
----
-layout: announcement-item
-title: BIC & NAPIA Biennial meeting 2-4 November, 2021 (virtual)
-author: Sam Hokin
-date: 2021-11-02
-summary: BIC & NAPIA Biennial meeting will be held virtually, 2-4 November, 2021
----
-2 - 4 November 2021:
-[BIC & NAPIA Biennial meeting](https://www.bic-napia.org/), Virtual Meeting
-```
-You can place blank lines in the content to generate paragraphs. Images are not supported in announcements.
-
 ## Blog Posts
 Blog posts are created by adding a file named `blog/_posts/yyyy-mm-dd-unique-identifier.md`.
 
