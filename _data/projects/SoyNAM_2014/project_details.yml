@@ -9,28 +9,40 @@
   publications:
     - citation: "Cook DE, Bayless AM, Wang K, Guo X, Song Q, Jiang J, Bent AF. Distinct Copy Number, Coding Sequence, and Locus Methylation Patterns Underlie Rhg1-Mediated Soybean Resistance to Soybean Cyst Nematode. Plant Physiol. 2014 Jun;165(2):630-647. Epub 2014 Apr 14. PMID: 24733883; PMCID: PMC4044848."
       doi: "10.1104/pp.114.235952"
+      abstract: ~
     - citation: "Xavier A, Muir WM, Rainey KM. 2016. Impact of imputation methods on the amount of genetic variation captured by a single-nucleotide polymorphism panel in soybeans. BMC Bioinformatics 17(55) 2016 "
       doi: "10.1186/s12859-016-0899-7" 
+      abstract: ~
     - citation: "Xavier A, Muir WM Rainey KM. 2016. Assessing Predictive Properties of Genome-Wide Selection in Soybeans. G3: Genes, Genomes, Genetics 2016 6(8):2611-2616"
       doi: "10.1534/g3.116.032268" 
+      abstract: ~
     - citation: "Justin E. Anderson, Jean-Michel Michno, Thomas J. Y. Kono, Adrian O. Stec, Benjamin W. Campbell, Shaun J. Curtin & Robert M. Stupar. 2016. Genomic variation and DNA repair associated with soybean transgenesis: a comparison to cultivars and mutagenized plants. BMC Biotechnology 2016, 16(41) "
       doi: "10.1186/s12896-016-0271-z" 
+      abstract: ~
     - citation: "Song, Q., L. Yan, C. Quigley, B. D. Jordan, E. Fickus, S. Schroeder, B. Song, Y. Charles An, D. Hyten, R. Nelson, K. Rainey, W. D. Beavis, J. Specht, B. Diers, and P. Cregan. Genetic Characterization of the Soybean Nested Association Mapping Population. Plant Genome 10 (2017). "
       doi: "10.3835/plantgenome2016.10.0109"
+      abstract: ~
     - citation: "Alencar Xavier, Benjamin Hall, Shaun Casteel, William Muir, Katy Martin Rainey. 2017. Using unsupervised learning techniques to assess interactions among complex traits in soybeans. Euphytica 2017 213:200. "
       doi: "10.1007/s10681-017-1975-4"
+      abstract: ~
     - citation: "Alencar Xavier, Benjamin Hall, Anthony A. Hearst, Keith A. Cherkauer and Katy M. Rainey. 2017. Genetic Architecture of Phenomic-Enabled Canopy Coverage in Glycine max. Genetics 2017 206(2):1081-1089."
       doi: "10.1534/genetics.116.198713" 
+      abstract: ~
     - citation: "Brian W. Diers, Jim Specht, Katy Martin Rainey, Perry Cregan, Qijian Song, Vishnu Ramasubramanian, George Graef, Randall Nelson, William Schapaugh, Dechun Wang, Grover Shannon, Leah McHale, Stella K. Kantartzi, Alencar Xavier, Rouf Mian, Robert M. Stupar, Jean-Michel Michno, Yong-Qiang Charles An, Wolfgang Goettel, Russell Ward, Carolyn Fox, Alexander E. Lipka, David Hyten, Troy Cary and William D. Beavis. 2018. Genetic Architecture of Soybean Yield and Agronomic Traits. G3: Genes, Genomes, Genetics October 1, 2018 vol. 8 no. 10 3367-3375. "
       doi: "10.1534/g3.118.200332"
+      abstract: ~
     - citation: "Jarquin D, Howard R, Xavier A, Choudhury SD. 2018. Increasing Predictive Ability by Modeling Interactions between Environments, Genotype and Canopy Coverage Image Data for Soybeans. Agronomy 2018, 8(4), 51 "
       doi: "10.3390/agronomy8040051" 
+      abstract: ~
     - citation: "Xavier A, Jarquin D, Howard R, Ramasubramanian V, Specht JE, Graef GL, Beavis WD, Diers BW, Song Q, Cregan PB, Nelson R, Mian R, Shannon JG, McHale L, Wang D, Schapaugh W, Lorenz AJ, Xu S, Muir WM, Rainey KM. Genome-Wide Analysis of Grain Yield Stability and Environmental Interactions in a Multiparental Soybean Population. G3 (Bethesda). 2018 Feb 2;8(2):519-529. PMID: 29217731; PMCID: PMC5919731."
       doi: "10.1534/g3.117.300300" 
+      abstract: ~
     - citation: "Lopez MA, Xavier A, Rainey KM. Phenotypic Variation and Genetic Architecture for Photosynthesis and Water Use Efficiency in Soybean (Glycine max L. Merr). Front Plant Sci. 2019 May 24;10:680. PMID: 31178887; PMCID: PMC6543851."
       doi: "10.3389/fpls.2019.00680"
+      abstract: ~
     - citation: "Scott K, Balk C, Veney D, McHale LK, Dorrance AE. 2019. Quantitative Disease Resistance Loci towards Phytophthora sojae and Three Species of Pythium in Six Soybean Nested Association Mapping Populations. Crop Science 2019, 59(2):605-623 "
       doi: "10.2135/cropsci2018.09.0573"
+      abstract: ~
   data_links:
     - type: code
       description: "R Package SoyNAM, by Xavier, Beavis, Specht et al."
@@ -61,31 +73,34 @@
       url: "https://soybase.org/SoyNAM/data/genotypes/Wm82.a1/SoyNAM%20parents%204312%20SNP%20genotypes%20Wm82.a1.zip"
     - type: data
       description: "SNP alleles for all SoyNAM parents using Wm82.a1 coordinates"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm1.div.Bandillo_Lorenz_2017/glyma.Wm82.gnm1.div.Bandillo_Lorenz_2017.SNPs.parents.vcf.gz"
+      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm1.div.Song_Yan_2017/glyma.Wm82.gnm1.div.Song_Yan_2017.SNPs.parents.vcf.gz"
     - type: data
       description: "SNP haplotypes for all SoyNAM parents using Wm82.a2 coordinates"
       url: "https://soybase.org/SoyNAM/data/genotypes/Wm82.a2/SoyNAM%20parents%204312%20SNP%20genotypes%20Wm82.a2.zip"
     - type: data
       description: "SNP alleles for all SoyNAM parents using Wm82.a2 coordinates"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Bandillo_Lorenz_2017/glyma.Wm82.gnm2.div.Bandillo_Lorenz_2017.SNPdata.parents.vcf.gz"
+      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Song_Yan_2017/glyma.Wm82.gnm2.div.Song_Yan_2017.SNPdata.parents.vcf.gz"
     - type: data
       description: "SNP haplotypes for the parents and progeny for all SoyNAM families using Wm82.a1 coordinates"
       url: "https://soybase.org/SoyNAM/data/genotypes/Wm82.a1/SoyNAM%20parents+progeny%204312%20SNP%20genotypes%20Wm82.a1.zip"
     - type: data
       description: "SNP alleles for the parents and progeny for all SoyNAM families using Wm82.a1 coordinates"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm1.div.Bandillo_Lorenz_2017/glyma.Wm82.gnm1.div.Bandillo_Lorenz_2017.SNPs.parents-progeny.vcf.gz"
+      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm1.div.Song_Yan_2017/glyma.Wm82.gnm1.div.Song_Yan_2017.SNPs.parents-progeny.vcf.gz"
     - type: data
       description: "SNP haplotypes for the parents and progeny for all SoyNAM families using Wm82.a2 coordinates"
       url: "https://soybase.org/SoyNAM/data/genotypes/Wm82.a2/SoyNAM%20parents+progeny%204312%20SNP%20genotypes%20Wm82.a2.zip"
     - type: data
       description: "SNP alleles for the parents and progeny for all SoyNAM families using Wm82.a2 coordinates"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Bandillo_Lorenz_2017/glyma.Wm82.gnm2.div.Bandillo_Lorenz_2017.SNPdata.parents-progeny.vcf.gz"
+      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Song_Yan_2017/glyma.Wm82.gnm2.div.Song_Yan_2017.SNPdata.parents-progeny.vcf.gz"
     - type: data
       description: "Supplemental Table S1: 103 Marker Trait Associations that were signficant for yield, maturity, height, lodging, or seed mass in the soybean NAM population."
       url: "https://soybase.org/SoyNAM/data/Diers%20et%20al._G3_2018_Table_S1.xlsx"
     - type: data
-      description: "Soy50K imputed haplotypes for the parents and progeny for all SoyNAM families"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Song_NAM_2021"
+      description: "Soy50K imputed haplotypes for the parents and progeny for all SoyNAM families, genotyped using the SoySNP50K and SoyNAM6K assays"
+      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Song_NAM_2021a"
+    - type: data
+      description: "Soy50K imputed haplotypes for the parents and progeny for all SoyNAM families, genotyped with WGS and the SoySNP50K and SoyNAM6K assays"
+      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Song_NAM_2021b"
     - type: request seed
       description: "Click here to request Parent seed."
       url: "https://soybase.org/SoyNAM/SoyNAM_Parent_request.htm"

@@ -15,12 +15,15 @@ sitemap: community
 {% for group in groups %}
   <dl>
     <th>
-      <dt> <h4><a id="{{ group.DataStoreID }}" 
-                  href="{{ group.DataStoreID | downcase | prepend: '/projects/' | relative_url }}">
-                    {{ group.short_title }}</a> </h4> 
+      <dt> 
+        <h4><a id="{{ group.DataStoreID }}" href="{{ group.DataStoreID | downcase | prepend: '/projects/' | relative_url }}">
+                    {{ group.short_title }}</a> 
+        </h4> 
         <dd>
           <strong>Description:</strong> {{ group.description }} <br>
-          SoyBase ID {{ group.SoyBaseID }}; Data Store ID {{ group.DataStoreID }}
+          SoyBase ID {{ group.SoyBaseID }}; Data Store ID {{ group.DataStoreID }} <br>
+          <a href="{{ group.DataStoreID | downcase | prepend: '/projects/' | relative_url }}">
+                    Project page: {{ group.short_title }}</a>
         </dd> 
       </dt>
     </th>

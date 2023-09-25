@@ -12,6 +12,8 @@
       abstract: "Plant breeders continually generate ever-higher yielding cultivars, but also want to improve seed constituent value, which is mainly protein and oil, in soybean [Glycine max (L.) Merr.]. Identification of genetic loci governing those two traits would facilitate that effort. Though genome-wide association offers one such approach, selective genotyping of multiple biparental populations offers a complementary alternative, and was evaluated here, using 48 F2:3 populations (n = ∼224 plants) created by mating 48 high protein germplasm accessions to cultivars of similar maturity, but with normal seed protein content. All F2:3 progeny were phenotyped for seed protein and oil, but only 22 high and 22 low extreme progeny in each F2:3 phenotypic distribution were genotyped with a 1536-SNP chip (ca 450 bimorphic SNPs detected per mating). A significant quantitative trait locus (QTL) on one or more chromosomes was detected for protein in 35 (73%), and for oil in 25 (52%), of the 48 matings, and these QTL exhibited additive effects of ≥ 4 g kg(-1) and R(2) values of 0.07 or more. These results demonstrated that a multiple-population selective genotyping strategy, when focused on matings between parental phenotype extremes, can be used successfully to identify germplasm accessions possessing large-effect QTL alleles. Such accessions would be of interest to breeders to serve as parental donors of those alleles in cultivar development programs, though 17 of the 48 accessions were not unique in terms of SNP genotype, indicating that diversity among high protein accessions in the germplasm collection is less than what might ordinarily be assumed."
   data_links:
     - type: data
-      description: "XX - FIX: probably put CSV files etc. into Data Store"
-      url: "#"
-
+      description: "Variant counts of Accessions"
+      url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.div.96SR.gene_variant_counts.txt.gz"
+    - type: data
+      description: "A collection of the .csv files of phenotype and genotype data and the corresponding .txt files with R/qtl program code for each of the 48 individual populations or the three composite populations (Cmm04, Cm005, C0008)."
+      url: "https://data.legumeinfo.org/annex/Glycine/max/projects/Phansak_Soonsuwon_2016/"
