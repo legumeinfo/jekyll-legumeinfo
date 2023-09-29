@@ -3,33 +3,21 @@ title: Genetic maps
 tools_menu: false
 ---
 
-<h3>Citing SoyBase</h3>
-
-<p>
-About the SoyBase Genetic Maps
-
-Genetic Maps
-
-The original soybean genetic map was created using a G. max x G. soja population using RFLPs. As other populations were studied, it became clear that the RFLP variability between soybean cultivars was quite low, resulting in most markers being monomorphic in most crosses. This meant that each published genetic map contained only a (sometimes small) subset of the available genetic markers, thus making comparisons between studies difficult.
-
-In 1999 and again in 2003 Perry Cregan and his collaborators made a composite genetic map using JoinMap to combine data from multiple populations. Because these composite maps contained essentially all of the genetic markers it was finally possible to position all of the published QTL on a single map set. Since then we have continued to add newly published QTL to the composite map along with any markers needed to describe them. As an aside, because we add new markers using a simple linear interpolation between common flanking markers, the exact order of closely spaced markers should be considered only approximate. This map set at SoyBase is named GmComposite2003 as it is based on the Cregan et al. 2003 composite maps.
-
-Recently the number of genetic markers has exploded as SNPs have been identified and genetically mapped. Because the creation of a new composite map would be both very time consuming (literally several weeks of computer time) and a neverending endeavor, we decided to fork the genetic maps into two paths: the composite map (based on the 2003 version) that would continue to get new QTL and a consensus map (currently the 4.0 release developed by Cregan et al.) that would contain all of the new sequence-based markers. Of course to allow these to be compared we made sure there were sufficient common markers between the two. The consensus map set at SoyBase is named GmConsensus40.
-
-The consensus maps are composed of markers that are also on the Wm82 genomic sequence (SNPs and SSRs), while the composite map contains mostly RFLP markers that can not be accurately put on the Wm82 sequence along with the SSRs and a few SNPs. By showing both in the default genetic map view we allow users to easily move between the genetic and sequence views of soybean.
-
-An example of a SoyBase genetic map view can be seen here.
-
-QTL
-
-Most of the QTL reported in soybean were identified by ANOVA at the markers, not by using some sort of interval mapping. Typically the paper only provided the marker with the highest correlation to the measured phenotype while neither the flanking markers with lower correlations or the entire set of tested markers were given. Because of these inexact data we really only know that the gene(s) conditioning the phenotype is (perhaps only loosely) linked to the marker. This means we have no idea in which direction the QTL lies relative to the most associated marker, nor how large the interval is that could contain the gene(s) of interest. To accommodate these inexact data and to avoid showing the QTL as a point in the SoyBase genetic maps, we arbitrarily made the QTL ends equal to the marker position +/- 1 cM. This explains why many of the SoyBase QTL are exactly 2 cM in length. Thus the gene(s) underlying the QTLis likely only loosely linked to the marker reported and could in principle be anywhere +/- 0-30 cM from the QTL as shown on the genetic maps. This uncertainty also explains why QTL are not shown on the SoyBase sequence maps as the 2 cM region would have only a small probability of containing the gene(s) of interest.
-
-Sequence Map vs. Genetic Map
-
-Genetic maps and sequence maps at SoyBase, although they are both representations of the same biological chromosome, are sometimes not congruent. This can be for one or more reasons:
-
-recombination is not uniform across the chromosome and hot/cold spots of recombination expand/contract the two representations of the genome relative to each other
-the genetic map SoyBase presents is a hand-constructed composite of many different published maps; among other things this means the exact order of closely linked markers in the genetic map is not necessarily correct
-the current Wm82.a2 genome sequence assembly, while based on the most complete data available, may still contain small errors relative to the actual biological chromosome due to uncertainties in orienting contigs that do not contain a genetically mapped marker
-To help users recognize where such discrepancies occur, we have developed a visualization tool that shows the genetically mapped markers in both genetic order and sequence order. This sequence <> genetic map comparison tool can be accessed at Genetic and Sequence Maps Comparison 
+<h2>About the SoyBase Genetic Maps</h2>
+<h4>Genetic Maps</h4>
+<p>The original soybean genetic map was created using a G. max x G. soja population using RFLPs. As other populations were studied, it became clear that the RFLP variability between soybean cultivars was quite low, resulting in most markers being monomorphic in most crosses. This meant that each published genetic map contained only a (sometimes small) subset of the available genetic markers, thus making comparisons between studies difficult.</p>
+<p>In 1999 and again in 2003 Perry Cregan and his collaborators made a composite genetic map using JoinMap to combine data from multiple populations. Because these composite maps contained essentially all of the genetic markers it was finally possible to position all of the published QTL on a single map set. Since then we have continued to add newly published QTL to the composite map along with any markers needed to describe them. As an aside, because we add new markers using a simple linear interpolation between common flanking markers, the exact order of closely spaced markers should be considered only approximate. This map set at SoyBase is named GmComposite2003 as it is based on the Cregan et al. 2003 composite maps.</p>
+<p>Recently the number of genetic markers has exploded as SNPs have been identified and genetically mapped. Because the creation of a new composite map would be both very time consuming (literally several weeks of computer time) and a neverending endeavor, we decided to fork the genetic maps into two paths: the composite map (based on the 2003 version) that would continue to get new QTL and a consensus map (currently the 4.0 release developed by Cregan et al.) that would contain all of the new sequence-based markers. Of course to allow these to be compared we made sure there were sufficient common markers between the two. The consensus map set at SoyBase is named GmConsensus40.</p>
+<p>The consensus maps are composed of markers that are also on the Wm82 genomic sequence (SNPs and SSRs), while the composite map contains mostly RFLP markers that can not be accurately put on the Wm82 sequence along with the SSRs and a few SNPs. By showing both in the default genetic map view we allow users to easily move between the genetic and sequence views of soybean.</p>
+<p><a href="/maps/cmap-all/?config=map-01.json%20" target="_blank">An example of a SoyBase genetic map view can be seen here.</a></p>
+<h4>QTL</h4>
+<p>Most of the QTL reported in soybean were identified by ANOVA at the markers, not by using some sort of interval mapping. Typically the paper only provided the marker with the highest correlation to the measured phenotype while neither the flanking markers with lower correlations or the entire set of tested markers were given. Because of these inexact data we really only know that the gene(s) conditioning the phenotype is (perhaps only loosely) linked to the marker. This means we have no idea in which direction the QTL lies relative to the most associated marker, nor how large the interval is that could contain the gene(s) of interest. To accommodate these inexact data and to avoid showing the QTL as a point in the SoyBase genetic maps, we arbitrarily made the QTL ends equal to the marker position +/- 1 cM. This explains why many of the SoyBase QTL are exactly 2 cM in length. Thus the gene(s) underlying the QTLis likely only loosely linked to the marker reported and could in principle be anywhere +/- 0-30 cM from the QTL as shown on the genetic maps. This uncertainty also explains why QTL are not shown on the SoyBase sequence maps as the 2 cM region would have only a small probability of containing the gene(s) of interest.</p>
+<h4>Sequence Map vs. Genetic Map</h4>
+<p>Genetic maps and sequence maps at SoyBase, although they are both representations of the same biological chromosome, are sometimes not congruent. This can be for one or more reasons:
+<ul>
+<li>recombination is not uniform across the chromosome and hot/cold spots of recombination expand/contract the two representations of the genome relative to each other</li>
+<li>the genetic map SoyBase presents is a hand-constructed composite of many different published maps; among other things this means the exact order of closely linked markers in the genetic map is not necessarily correct</li>
+<li>the current Wm82 genome sequence assembly, while based on the most complete data available, may still contain small errors relative to the actual biological chromosome due to uncertainties in orienting contigs that do not contain a genetically mapped marker</li>
+</ul>
 </p>
+<p>To help users recognize where such discrepancies occur, we have developed a visualization tool that shows the genetically mapped markers in both genetic order and sequence order. This sequence/genetic map comparison tool called CMapJS can be accessed <a href="/maps/index.html">here</a>.</p>
