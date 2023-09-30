@@ -1,4 +1,4 @@
---- 
+---
 -
   title: "Sequencing the USDA core soybean collection reveals gene loss during domestication and breeding"
   short_title: "Sequencing the USDA core soybean collection"
@@ -104,6 +104,6 @@
 -
   title: "SoyMap II: Leveraging untapped genetic diversity in soybean"
   short_title: "SoyMap II"
-  description: "Genomes and gene models were generated from multiple perennial soybean species across the Glycine genus to study insights into the polyploid and perennial genome evolution and genetic potential for soybean improvement."  
-  SoyBaseID: "SoyBase.C2022.01" 
+  description: "Genomes and gene models were generated from multiple perennial soybean species across the Glycine genus to study insights into the polyploid and perennial genome evolution and genetic potential for soybean improvement."
+  SoyBaseID: "SoyBase.C2022.01"
   DataStoreID: "Zhuang_Wang_2022"

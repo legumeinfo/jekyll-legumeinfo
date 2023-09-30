@@ -1,3 +1,4 @@
+---
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -8,7 +9,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -35,8 +36,6 @@ github_username: soybase
 newsletter: https://www.soybase.org/soybaselist/index.php
 author: SoyBase curator
 lang: en
-
-card_item_limit: 3
 
 # allow direct port 4000 requests from outside so we don't have to proxy
 host: 0.0.0.0
@@ -68,7 +67,7 @@ plugins:
   # generate /sitemap.xml
   # FIXME: jekyll-sitemap doesn't work with liquid.strict_variables: true
   # https://github.com/jekyll/jekyll-sitemap/issues/272
-  #- jekyll-sitemap
+  # - jekyll-sitemap
 
 #### jekyll-datapage-generator config
 page_gen:
@@ -80,25 +79,22 @@ page_gen:
     index_files: true
     debug: true
 
-# shows posts (i.e. news and events) with a date after the date the site was built on
-future: true
-
 # the default number of items shown in card widgets
 card_item_limit: 3
 
 # SASS compilation
 sass:
-    sass_dir: _sass
-    style: compressed
+  sass_dir: _sass
+  style: compressed
 
 # UIkit theme customization (sets site colors)
 style:
-    link_color: '#006600'
-    link_hover_color: '#0071B3'
-    primary_background: '#235626' # Very dark green: '#296e01'  
-    global_muted_color: '#006600'
-    invert_navbar_text: true
-    
+  link_color: '#006600'
+  link_hover_color: '#0071B3'
+  primary_background: '#235626' # Very dark green: '#296e01'
+  global_muted_color: '#006600'
+  invert_navbar_text: true
+
 
 # Site-wide defaults
 defaults:
@@ -117,7 +113,7 @@ defaults:
 # their entries' file path in the `include:` list.
 #
 exclude:
-  - docker-compose.yml
+  - vendor/
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
