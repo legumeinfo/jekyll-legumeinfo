@@ -1,0 +1,15 @@
+extends: default
+ignore:
+  - .*
+  - _data/datastore-metadata
+  - _themes
+  - node_modules
+  - vendor
+
+rules:
+  comments:
+    min-spaces-from-content: 1
+  empty-lines: disable
+  indentation:
+    indent-sequences: consistent
+  line-length: disable

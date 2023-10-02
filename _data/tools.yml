@@ -59,22 +59,22 @@
 #   description: Description
 #   name: Maps
 #   url: "#"
-# - 
+# -
 #   category: "FIXME"
 #   description: Description
 #   name: "QTL Search"
 #   url: "#"
-# - 
+# -
 #   category: "FIXME"
 #   description: Description
 #   name: "Gene Search"
 #   url: "#"
-# - 
+# -
 #   category: "FIXME"
 #   description: Description
 #   name: "Protein Domains"
 #   url: "#"
-# - 
+# -
 #   category: "Search sequences and features against sequence databases"
 #   description: Description
 #   name: "Keyword Search"

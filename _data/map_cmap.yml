@@ -1,18 +1,18 @@
---- 
-cmap-sets: 
-  - 
+---
+cmap-sets:
+  -
     URL: "maps/cmap-all"
     description: "All QTL features"
     linkage_groups: ['D1a', 'D1b', 'N', 'C1', 'A1', 'C2', 'M', 'A2', 'K', 'O', 'B1', 'H', 'F', 'B2', 'E', 'J', 'D2', 'G', 'L', 'I']
-  - 
+  -
     URL: "maps/cmap-disease"
     description: "Disease and resistance-related features"
     linkage_groups: ['D1a', 'D1b', 'N', 'C1', 'A1', 'C2', 'M', 'A2', 'K', 'O', 'B1', 'H', 'F', 'B2', 'E', 'J', 'D2', 'G', 'L', 'I']
-  - 
+  -
     URL: "maps/cmap-seed"
     description: "Seed, oil, and protein features"
     linkage_groups: ['D1a', 'D1b', 'N', 'C1', 'A1', 'C2', 'M', 'A2', 'K', 'O', 'B1', 'H', 'F', 'B2', 'E', 'J', 'D2', 'G', 'L', 'I']
-  - 
+  -
     URL: "maps/cmap-misc"
     description: "Growth, architecture, yield and other traits"
     linkage_groups: ['D1a', 'D1b', 'N', 'C1', 'A1', 'C2', 'M', 'A2', 'K', 'O', 'B1', 'H', 'F', 'B2', 'E', 'J', 'D2', 'G', 'L', 'I']
