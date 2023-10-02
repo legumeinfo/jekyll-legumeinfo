@@ -38,7 +38,7 @@
 - category: "Sequence search"
   description: "Run BLASTs against LIS genomes, CDSes, and proteins"
   name: "SoyBase SequenceServer BLAST"
-  url: "https://soybase.org/sequenceserver/"
+  url: "tools/sequenceserver/"
 - category: "Visualize / Browse"
   description: "Functional keyword search for gene families"
   name: "Gene Family Search"
