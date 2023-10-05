@@ -7,7 +7,7 @@
     - description: "Biennial Conference - Molecular and Cellular Biology of the Soybean"
       url: "https://www.soybase.org/meeting_presentations/soy_biennial/"
     - description: "Soybean Genetics Executive Committee"
-      url: "https://soybase.org/resources/SoyGEC/soygec.php"
+      url: "/community/soygec"
     - description: "Job Postings at SoyBase"
       url: "https://soybase.org/resources/jobs.php"
     - description: "Soybean Genomics Research: A Strategic Plan for 2017-2021"
