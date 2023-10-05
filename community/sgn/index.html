@@ -1,0 +1,35 @@
+---
+layout: default
+title: Soybean Genetics Newsletter and Minutes
+sitemap: community/sgn
+---
+{% if site.data.sgn_list %}
+{% assign groups = site.data.sgn_list | sort: "sgn_year" %}
+
+<h2>Soybean Genetics Newsletter archive (1999-2010)</h2>
+
+<p> 
+  Welcome to the Soybean Genetics Newsletter (SGN), previously edited by Henry Nguyen and hosted by 
+  the National Center for Soybean Biotechnology at the University of Missouri.
+  Based on open discussion at the 2010 Soybean Breeders Conference it was decided to cease publication of the Newsletter. 
+  However, the community thought it was important that the past issues of the SGN remain available. 
+  To accomplish this the entire SGN web site has been moved to SoyBase.
+</p>
+<p>
+  Links below lead to each SGN issue and the papers associated with that issue, and also to the minutes of the Soybean Genetics Committee for that year.
+</p>
+
+
+<table class="uk-table uk-width-1-2 uk-text-center uk-table-striped uk-table-condensed">
+  <tbody>
+    {% for group in groups %}
+      <tr>
+        <td><a href="{{ group.sgn_year | prepend: '/community/sgn_issues/' | relative_url }}">{{ group.year }} Issue</td>
+        <td><a href="{{ group.sgn_year | prepend: '/community/sgn_minutes/' | relative_url }}">{{ group.year }} Minutes</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+  
+{% endif %}
+

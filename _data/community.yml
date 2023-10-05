@@ -29,7 +29,7 @@
     - description: "About the SoyBase Genetic Maps"
       url: "https://soybase.org/community/aboutgeneticmaps.php"
     - description: "Soybean Genetics Newsletter"
-      url: "https://soybase.org/sgn/"
+      url: "/community/sgn"
     - description: "2009 Soybean Genomic Sequence Assembly Announcement"
       url: "https://soybase.org/community/about_sequence_map.php"
     - description: "2000 Soybean Genomics White Paper"

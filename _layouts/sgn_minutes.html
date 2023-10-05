@@ -1,0 +1,17 @@
+---
+title: {{ page.title }}
+layout: default
+---
+
+{% assign sgn_year = page.sgn_year %}
+{% assign minutes = site.data.sgn[sgn_year].minutes %}
+
+{% for item in minutes %}
+  <h1>Minutes for the Soybean Genetics Committee, {{ item.year }}</h1>
+  <p>{{ item.document }}</p>
+{% endfor %}
+
+<h4><a href="/community/sgn/index.html">Back to the Soybean Genetics Newsletter index page</a></h4>
+
+{% comment %}
+{% endcomment %}

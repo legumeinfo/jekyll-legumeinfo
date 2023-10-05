@@ -1,0 +1,41 @@
+---
+- title: "Integrated physical mapping of the soybean genome: A tool for rapid"
+  authors: "Jeffry Shultz 1, Chad LaMontagne 1 Kimbely Zobrist 1, Khalid Meksem 1, Chengcang Wu2, Quanzhou Tao2, Padmavathi Nimmakayala 2, Filip Santos 2, Hongbin Zhang 2, David A. Lightfoot 1"
+  abstract: "  The complex genomes of crops like soybean are rich in highly repeated sequences (55%) that block
+    chromosome walking from linked DNA markers to target genes (Danesh et al., 1998) and confound
+    shotgun approaches to complete genome sequencing (Boysen et al., 1999). In addition, much of
+    the rest of the soybean genome is moderately repeated (25%) or unique but duplicated in two
+    homeologous loci (20%)(Grant et al., 2000). Success of map-based cloning in crop plants depends
+    on the target<br>gene being localized to such a short genetic interval (0.01-0.1 cM) that the
+    markers and target gene are separated from regions rich in repeated sequences (Meksem et al.,
+    2000; 2001). Fine mapping to this degree can be accomplished 10-50 fold more efficiently with a
+    physical map that encompasses the whole genome than by marker saturation and chromosome walking
+    or landing (Zhang and Wing, 1997; Meksem et al., 2001a)."
+  file: "SGN2002Shultzetal.pdf"
+
+- title: "Users Guide to the Soybean Physical Map at the Website http://hbz.tamu.edu/."
+  authors: "Jeffry Shultz 1, David A. Lightfoot 1"
+  abstract: "  To develop the physical map of soybean, we have developed three large-insert soybean DNA
+    libraries from 'Forrest' (Meksem et al., 2000). Texas A&M has generated restriction enzyme
+    fragment fingerprints for 90,000 of 112,600 clones. About 50,000 clone fingerprints have been
+    posted at at Physical Mapping sections of http://hbz.tamu.edu/. Each clone was tested for the
+    content of known genetic markers and some ESTs (Wu et al., 2001) and SNPs (Zobrist et al.,
+    2000; Meksem et al., 2001; Shultz et al., 2001). We have shown that fingerprints of BACs from
+    other cultivars can be integrated with this data set (Shultz et al., 2001). The integrated
+    genetic and physical map will inexpensively and rapidly enable identification of a number of
+    genes underlying QTL of economic importance. Here we report methods of use for the genetic and
+    physical map. This guide should allow soybean researchers to use the website at which data can
+    be retrieved, clones submitted for fingerprinting and clones requested."
+  file: "SGN2002ShultzLightfoot.pdf"
+
+- title: "Selection Limits - How Close Are We?"
+  authors: "S.K. St. Martin"
+  abstract: "  Theoretical and empirical studies of selection limits have provided a way to use estimates of
+    genetic gain and effective population size to calculate the plateau (selection limit) beyond
+    which further gains are impossible. Literature pertinent to genetic gain for soybean yield in
+    North America was surveyed for this purpose. Most results indicate that the highest-yielding
+    existing cultivars are far from the calculated selection limit. Selection limits are not an
+    imminent threat to North American soybean breeders, but this does not imply that efforts to
+    broaden the germplasm base are wasted."
+  file: "Selection_Limits_How_Close_Are_We.pdf"
+

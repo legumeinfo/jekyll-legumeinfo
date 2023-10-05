@@ -1,0 +1,35 @@
+---
+title: {{ page.title }}
+layout: default
+---
+{% assign sgn_year = page.sgn_year %}
+{% assign year = page.year %}
+{% assign issue = site.data.sgn[sgn_year].issue %}
+
+<h2>Soybean Genetics Newsletter - {{ year }}</h2>
+
+{% for item in issue %}
+  <h3>{{ item.title}}</h3>
+
+  <dt>
+    <dd><strong>Authors:</strong></dd> 
+    <dd>{{ item.authors}}</dd>
+    <br>
+    
+    <dd><strong>Abstract:</strong></dd>
+    <dd>{{ item.abstract}}</dd>
+    <br>
+
+    {% if item.file != "" and item.file != nil %}
+      <dd><strong>Submitted paper: </strong></dd>
+      <dd>
+        <a href="https://soybase.org/data/annex/Glycine/max/documents/sgn_papers/{{ item.file }}" target="_blank"> {{ item.file }} </a>
+      </dd>
+    {% endif %}
+  </dt>
+{% endfor %}
+
+<h4><a href="/community/sgn/index.html">Back to the Soybean Genetics Newsletter index page</a></h4>
+
+{% comment %}
+{% endcomment %}

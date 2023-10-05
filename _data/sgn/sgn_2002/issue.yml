@@ -1,0 +1,29 @@
+---
+- title: "Database and information retrieval system for soybean varieties"
+  authors: "Savita Kolhe*, Kavita Mundankar, C.Tara Satyavathi, P.G. Karmakar and S.P. Tiwari"
+  abstract: "  A software package (VIS) on varietal Information for Soybean has been developed in MSACCESS 97.
+    This package provides detailed information on 35 different morphological characters of all the
+    released/notified varieties of soybean in India. The information is retrieved in the form of
+    comparison tables, colorful pictures and reports in a quick, easy and efficient manner with
+    minimal keyboard intervention as per different users' needs."
+  file: "paper.pdf"
+
+- title: "Soybean Transformation via the Pollen Tube Pathway"
+  authors: "Zenglu Li1,2, Randall L. Nelson1,3, Jack M. Widholm1, and Andrew Bent1,4"
+  abstract: "  The pollen tube pathway method of transformation has been reported to be successful in several
+    crops including soybean. DNA can be transferred by cutting the stigma following<br>pollination
+    and applying the DNA solution on the severed style. DNA presumably reaches the ovary by flowing
+    down the pollen tube and then integrates into the just fertilized but undivided zygotic cells.
+    To provide the molecular evidence for this procedure, the plasmids pBI221 carrying a CaMV35S
+    promoter-beta glucuronidase (gus) gene-nos terminator gene fusion construct and pBI0122
+    carrying a CaMV35S promoter-bar-g73' terminator gene fusion construct were used. Approximately
+    5000 seeds were produced from the flowers treated with DNA. None of the seeds from the plants
+    treated with DNA containing the bar gene were found to be as resistant as the positive control.
+    Morphological variation was observed in some plants, but this was not observed in the following
+    generation. Approximately 2% of the seeds from plants treated with DNA containing the gus gene
+    had a positive reaction in the GUS assay, however, no GUS activity was observed in the plant
+    leaves from those seeds. Less than 3% of progeny seeds tested expressed a positive reaction and
+    polymerase chain reaction (PCR) with seedling DNA did not detect the gus gene. Thus, we were
+    unable to confirm the positive results of others when we used screenable marker genes."
+  file: "TransSGN.pdf"
+
