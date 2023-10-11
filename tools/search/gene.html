@@ -3,11 +3,7 @@ layout: full-width
 title: Gene Search
 web_components: true
 ---
-
-<script type="text/javascript" src="/assets/js/graphql/graphql.js"></script>
-<script type="text/javascript" src="/assets/js/graphql/linkout-function.js"></script>
-<script type="text/javascript" src="/assets/js/graphql/get-gene-form-data.js"></script>
-<script type="text/javascript" src="/assets/js/graphql/get-genes.js"></script>
+<script type="module" src="{{ "assets/js/graphql/index.js" | relative_url }}"></script>
 
 <!-- the custom gene search element -->
 <lis-gene-search-element id="gene-search"></lis-gene-search-element>
