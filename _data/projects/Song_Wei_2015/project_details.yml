@@ -11,16 +11,21 @@
       doi: "10.1534/g3.115.022780"
       abstract: "Soybean (Glycine max (L.) Merrill) is an important crop in the world. In this study, a Chinese local soybean cultivar, Hedou 12, was re-sequenced by next generation sequencing technology to develop INsertion/DELetion (INDEL) markers for genetic mapping. 49,276 INDEL polymorphisms and 242,059 single nucleotide polymorphisms (SNP) were detected between Hedou 12 and the Williams 82 reference sequence. Of these, 243 candidate INDEL .markers ranging from 5 to 50 bp in length were chosen for PCR validation, and 165 (68%) of them revealed polymorphisms between Hedou 12 and Williams 82. The validated INDEL markers were also tested in 12 other soybean .cultivars. The number of polymorphisms in the pairwise comparisons of 14 soybean cultivars varied from 27 to 165. To test the utility of these INDEL markers, they were used to perform a genetic mapping of a crinkly leaf mutant, and the CRINKLY LEAF locus was successfully mapped to a 360 Kb region on chromosome 7. This research shows that high-throughput sequencing technologies can facilitate the development of genome-wide molecular markers for genetic mapping in soybean."
   data_links:
-    - type: map
-      description: "SoyBase genome viewer - FIX"
-      url: "#"
-    - type: data
-      description: "InDel coordinates for Hedou12 relative to Wm82.a1 (Text File 2.1 Mb)"
-      url: "https://www.soybase.org/data_distribution/projects/SoyBase.B2014.01/InDel_coordinates.txt"
-    - type: data
-      description: "SNP coordinates for Hedou12 relative to Wm82.a1 (Text File 8.2 Mb)"
-      url: "https://www.soybase.org/data_distribution/projects/SoyBase.B2014.01/SNP_coordinates.txt"
-    - type: sequence reads
-      description: "NCBI Short Read Archive SRP051486"
-      url: "https://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP051486"
+    - category:
+        - name: map
+          instances:
+            - description: "SoyBase genome viewer - FIX"
+              url: "#"
+    - category:
+        - name: data
+          instances:
+            - description: "InDel coordinates for Hedou12 relative to Wm82.a1 (Text File 2.1 Mb)"
+              url: "https://www.soybase.org/data_distribution/projects/SoyBase.B2014.01/InDel_coordinates.txt"
+            - description: "SNP coordinates for Hedou12 relative to Wm82.a1 (Text File 8.2 Mb)"
+              url: "https://www.soybase.org/data_distribution/projects/SoyBase.B2014.01/SNP_coordinates.txt"
+    - category:
+        - name: sequence reads
+          instances:
+            - description: "NCBI Short Read Archive SRP051486"
+              url: "https://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP051486"
 

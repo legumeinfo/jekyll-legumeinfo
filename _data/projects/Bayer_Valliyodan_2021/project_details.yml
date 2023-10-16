@@ -11,27 +11,25 @@
       doi: "10.1002/tpg2.20109"
       abstract: "The gene content of plants varies between individuals of the same species due to gene presence/absence variation, and selection can alter the frequency of specific genes in a population. Selection during domestication and breeding will modify the genomic landscape, though the nature of these modifications is only understood for specific genes or on a more general level (e.g., by a loss of genetic diversity). Here we have assembled and analyzed a soybean (Glycine spp.) pangenome representing more than 1,000 soybean accessions derived from the USDA Soybean Germplasm Collection, including both wild and cultivated lineages, to assess genomewide changes in gene and allele frequency during domestication and breeding. We identified 3,765 genes that are absent from the Lee reference genome assembly and assessed the presence/absence of all genes across this population. In addition to a loss of genetic diversity, we found a significant reduction in the average number of protein-coding genes per individual during domestication and subsequent breeding, though with some genes and allelic variants increasing in frequency associated with selection for agronomic traits. This analysis provides a genomic perspective of domestication and breeding in this important oilseed crop."
   data_links:
-    - type: data
-      description: "Variant counts of Accessions"
-      url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.div.96SR.gene_variant_counts.txt.gz"
-    - type: data
-      description: "GFF3 file of genes not in Lee"
-      url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.div.96SR.genes_not_in_Lee.gff3.gz"
-    - type: data
-      description: "Protein sequences of Lee gene transcripts and protein sequences unique to each accession"
-      url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.div.96SR.protein_Lee_and_other.fna.gz"
-    - type: data
-      description: "VCF file of SNPs >= 5 MAF"
-      url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.div.96SR.SNPs_maf05.vcf.gz"
-    - type: data
-      description: "Matrix of genes present/absence in Lee"
-      url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.pan.96SR.gene_pav_matrix.txt.gz"
-    - type: data
-      description: "Fasta file of sequences not present in Lee"
-      url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.pan.96SR.seq_not_in_Lee.fna.gz"
-    - type: genome browser
-      description: "SoyBase genome viewer representation of gene presence/absence compared to Lee gene models"
-      url: "https://soybase.org/gb2/gbrowse/glyma.Lee.gnm1/?start=28535000;stop=28650000;ref=Gm15;width=1024;version=100;flip=0;grid=1;l=glyma_lee_gnm1_gene_models%1Esoy_lee_pangenome"
-    - type: data
-      description: "Soybean pangenome data repository at the Univ. of Western Australia"
-      url: "https://research-repository.uwa.edu.au/en/datasets/soybean-pangenome-snps-assembly-annotation-pav"
+    - category:
+        - name: data
+          instances:
+            - description: "Variant counts of Accessions"
+              url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.div.96SR.gene_variant_counts.txt.gz"
+            - description: "GFF3 file of genes not in Lee"
+              url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.div.96SR.genes_not_in_Lee.gff3.gz"
+            - description: "Protein sequences of Lee gene transcripts and protein sequences unique to each accession"
+              url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.div.96SR.protein_Lee_and_other.fna.gz"
+            - description: "VCF file of SNPs >= 5 MAF"
+              url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.div.96SR.SNPs_maf05.vcf.gz"
+            - description: "Matrix of genes present/absence in Lee"
+              url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.pan.96SR.gene_pav_matrix.txt.gz"
+            - description: "Fasta file of sequences not present in Lee"
+              url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.pan.96SR.seq_not_in_Lee.fna.gz"
+    - category:
+        - name: genome browser
+          instances:
+            - description: "SoyBase genome viewer representation of gene presence/absence compared to Lee gene models"
+              url: "https://soybase.org/gb2/gbrowse/glyma.Lee.gnm1/?start=28535000;stop=28650000;ref=Gm15;width=1024;version=100;flip=0;grid=1;l=glyma_lee_gnm1_gene_models%1Esoy_lee_pangenome"
+            - description: "Soybean pangenome data repository at the Univ. of Western Australia"
+              url: "https://research-repository.uwa.edu.au/en/datasets/soybean-pangenome-snps-assembly-annotation-pav"

@@ -14,10 +14,11 @@
       doi: "10.1007/s00122-018-3271-7"
       abstract: "Understanding diversity and evolution of a crop is an essential step to implement a strategy to expand its germplasm base for crop improvement research. Accessions intensively collected from Korea, which is a small but central region in the distribution geography of soybean, were genotyped to provide sufficient data to underpin population genetic questions. After removing natural hybrids and duplicated or redundant accessions, we obtained a non-redundant set comprising 1957 domesticated and 1079 wild accessions to perform population structure analyses. Our analysis demonstrates that while wild soybean germplasm will require additional sampling from diverse indigenous areas to expand the germplasm base, the current domesticated soybean germplasm is saturated in terms of genetic diversity. We then showed that our genome-wide polymorphism map enabled us to detect genetic loci underlying flower color, seed-coat color, and domestication syndrome. A representative soybean set consisting of 194 accessions was divided into one domesticated subpopulation and four wild subpopulations that could be traced back to their geographic collection areas. Population genomics analyses suggested that the monophyletic group of domesticated soybeans was likely originated at a Japanese region. The results were further substantiated by a phylogenetic tree constructed from domestication-associated single nucleotide polymorphisms identified in this study."
   data_links:
-    - type: data
-      description: "Genotype information for 4234 cultivars (Data Store repository)"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Jeong_Moon_2019/"
-    - type: data
-      description: "Genotype information for 222 cultivars (Data Store repository)"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Lee_Jeong_2015/"
+    - category:
+        - name: data
+          instances:
+            - description: "Genotype information for 4234 cultivars (Data Store repository)"
+              url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Jeong_Moon_2019/"
+            - description: "Genotype information for 222 cultivars (Data Store repository)"
+              url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Lee_Jeong_2015/"
 

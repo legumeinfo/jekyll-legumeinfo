@@ -14,10 +14,11 @@
       doi: "10.1007/s00425-019-03329-6"
       abstract: "Crop-related wild species contain new sources of genetic diversity for crop improvement. Wild soybean (Glycine soja Sieb. and Zucc.) is the progenitor of cultivated soybean [Glycine max (L.) Merr.] and can be used as an essential genetic resource for yield improvements. In this research, using genome-wide association study (GWAS) in 96 out of 113 wild soybean accessions with 114,090 single nucleotide polymorphisms (SNPs) (with minor allele frequencies ≤ 0.05), SNPs associated with five yield-related traits were identified across multiple environments. In total, 41 SNPs were significantly associated with the traits in two or more environments (significance threshold P ≤ 8.76 × 10–6), with 29, 7, 3, and 2 SNPs detected for 100-seed weight (SW), maturity time (MT), seed yield per plant (SY) and flowering time (FT), respectively. BLAST search against the Glycine soja W05 reference genome was performed, 20 candidate genes were identified based on these 41 significant SNPs. One candidate gene, GsCID1 (Glysoja.04g010563), harbored two significant SNPs—AX-93713187, with a non-synonymous mutation, and AX-93713188, with a synonymous mutation. GsCID1 was highly expressed during seed development based on public information resources. The polymorphisms in this gene were associated with SW. We developed a derived cleaved amplified polymorphic sequence (dCAPS) marker for GsCID1 that was highly associated with SW and was validated as a functional marker. In summary, the revealed SNPs/genes are useful for understanding the genetic architecture of yield-related traits in wild soybean, which could be used as a potential exotic resource to improve cultivated soybean yields."
   data_links:
-    - type: data
-      description: "Genotype information for 367 soybean accessions (Data Store)"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm1.div.Wang_Jiao_2016/"
-    - type: data
-      description: "Genotype information for 96 soybean accessions (Data Store)"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm1.div.Hu_Zhang_2020/"
+    - category:
+        - name: data
+          instances:
+            - description: "Genotype information for 367 soybean accessions (Data Store)"
+              url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm1.div.Wang_Jiao_2016/"
+            - description: "Genotype information for 96 soybean accessions (Data Store)"
+              url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm1.div.Hu_Zhang_2020/"
 

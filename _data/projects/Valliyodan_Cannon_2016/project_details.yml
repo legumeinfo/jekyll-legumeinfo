@@ -1,25 +1,65 @@
 ---
--
-  DataStoreID: "Valliyodan_Cannon_2016"
-  short_title: "Lee and PI 483463 Reference Genomes"
-  SoyBaseID: "SoyBase.B2018.01"
-  title: "High-Quality Genome Assemblies for G. max cultivar 'Lee' and G. soja accession PI 483463"
-  description: "High-quality genome assemblies for soybean (Glycine max) and wild soybean (Glycine soja). These provide complements to the primary reference assembly for Glycine max cv. Williams 82 (Wm82.a2). The G. max assembly is for cultivar Lee, which has been used a parent in many southern U.S. breeding projects. The G. soja assembly is for accession PI 483463. This line was chosen for its high genotypic dissimilarity with respect to cultivated soybean. It originates from Shanxi Province, in north-central China."
-  BioProjectID: "PRJNA407817, PRJNA407822"
+- DataStoreID: Valliyodan_Cannon_2016
+  short_title: Lee and PI 483463 Reference Genomes
+  SoyBaseID: SoyBase.B2018.01
+  title: High-Quality Genome Assemblies for G. max cultivar 'Lee' and G. soja
+    accession PI 483463
+  description: High-quality genome assemblies for soybean (Glycine max) and wild
+    soybean (Glycine soja). These provide complements to the primary reference
+    assembly for Glycine max cv. Williams 82 (Wm82.a2). The G. max assembly is
+    for cultivar Lee, which has been used a parent in many southern U.S.
+    breeding projects. The G. soja assembly is for accession PI 483463. This
+    line was chosen for its high genotypic dissimilarity with respect to
+    cultivated soybean. It originates from Shanxi Province, in north-central
+    China.
+  BioProjectID: PRJNA407817, PRJNA407822
   publications:
-    - citation: "Valliyodan B, Cannon SB, Bayer PE, Shu S, Brown AV, Ren L, Jenkins J, Chung CY, Chan TF, Daum CG, Plott C, Hastie A, Baruch K, Barry KW, Huang W, Patil G, Varshney RK, Hu H, Batley J, Yuan Y, Song Q, Stupar RM, Goodstein DM, Stacey G, Lam HM, Jackson SA, Schmutz J, Grimwood J, Edwards D, Nguyen HT. Construction and comparison of three reference-quality genome assemblies for soybean. Plant J. 2019 Dec;100(5):1066-1082."
-      doi: "10.1111/tpj.14500"
-      abstract: "We report reference-quality genome assemblies and annotations for two accessions of soybean (Glycine max) and for one accession of Glycine soja, the closest wild relative of G. max. The G. max assemblies provided are for widely used US cultivars: the northern line Williams 82 (Wm82) and the southern line Lee. The Wm82 assembly improves the prior published assembly, and the Lee and G. soja assemblies are new for these accessions. Comparisons among the three accessions show generally high structural conservation, but nucleotide difference of 1.7 single-nucleotide polymorphisms (snps) per kb between Wm82 and Lee, and 4.7 snps per kb between these lines and G. soja. snp distributions and comparisons with genotypes of the Lee and Wm82 parents highlight patterns of introgression and haplotype structure. Comparisons against the US germplasm collection show placement of the sequenced accessions relative to global soybean diversity. Analysis of a pan-gene collection shows generally high conservation, with variation occurring primarily in genomically clustered gene families. We found approximately 40-42 inversions per chromosome between either Lee or Wm82v4 and G. soja, and approximately 32 inversions per chromosome between Wm82 and Lee. We also investigated five domestication loci. For each locus, we found two different alleles with functional differences between G. soja and the two domesticated accessions. The genome assemblies for multiple cultivated accessions and for the closest wild ancestor of soybean provides a valuable set of resources for identifying causal variants that underlie traits for the domestication and improvement of soybean, serving as a basis for future research and crop improvement efforts for this important crop species."
+    - citation: Valliyodan B, Cannon SB, Bayer PE, Shu S, Brown AV, Ren L, Jenkins J,
+        Chung CY, Chan TF, Daum CG, Plott C, Hastie A, Baruch K, Barry KW, Huang
+        W, Patil G, Varshney RK, Hu H, Batley J, Yuan Y, Song Q, Stupar RM,
+        Goodstein DM, Stacey G, Lam HM, Jackson SA, Schmutz J, Grimwood J,
+        Edwards D, Nguyen HT. Construction and comparison of three
+        reference-quality genome assemblies for soybean. Plant J. 2019
+        Dec;100(5):1066-1082.
+      doi: 10.1111/tpj.14500
+      abstract: "We report reference-quality genome assemblies and annotations for two
+        accessions of soybean (Glycine max) and for one accession of Glycine
+        soja, the closest wild relative of G. max. The G. max assemblies
+        provided are for widely used US cultivars: the northern line Williams 82
+        (Wm82) and the southern line Lee. The Wm82 assembly improves the prior
+        published assembly, and the Lee and G. soja assemblies are new for these
+        accessions. Comparisons among the three accessions show generally high
+        structural conservation, but nucleotide difference of 1.7
+        single-nucleotide polymorphisms (snps) per kb between Wm82 and Lee, and
+        4.7 snps per kb between these lines and G. soja. snp distributions and
+        comparisons with genotypes of the Lee and Wm82 parents highlight
+        patterns of introgression and haplotype structure. Comparisons against
+        the US germplasm collection show placement of the sequenced accessions
+        relative to global soybean diversity. Analysis of a pan-gene collection
+        shows generally high conservation, with variation occurring primarily in
+        genomically clustered gene families. We found approximately 40-42
+        inversions per chromosome between either Lee or Wm82v4 and G. soja, and
+        approximately 32 inversions per chromosome between Wm82 and Lee. We also
+        investigated five domestication loci. For each locus, we found two
+        different alleles with functional differences between G. soja and the
+        two domesticated accessions. The genome assemblies for multiple
+        cultivated accessions and for the closest wild ancestor of soybean
+        provides a valuable set of resources for identifying causal variants
+        that underlie traits for the domestication and improvement of soybean,
+        serving as a basis for future research and crop improvement efforts for
+        this important crop species."
   data_links:
-    - type: data
-      description: "Genome assembly for Glycine max cv. Lee"
-      url: "https://soybase.org/data/v2/Glycine/max/genomes/Lee.gnm1.BXNC/"
-    - type: data
-      description: "Genome assembly for Glycine max PI 483463"
-      url: "https://soybase.org/data/v2/Glycine/soja/genomes/PI483463.gnm1.YJWS/"
-    - type: browser
-      description: "Genome assembly for Glycine max PI 483463"
-      url: "https://soybase.org/gb2/gbrowse/glyma.Lee.gnm1/"
-    - type: browser
-      description: "Genome assembly for Glycine max PI 483463"
-      url: "https://soybase.org/gb2/gbrowse/glyso.PI483463.gnm1/"
+    - category:
+        - name: data
+          instances:
+            - description: Genome assembly for Glycine max cv. Lee
+              url: https://soybase.org/data/v2/Glycine/max/genomes/Lee.gnm1.BXNC/
+            - description: Genome assembly for Glycine max PI 483463
+              url: https://soybase.org/data/v2/Glycine/soja/genomes/PI483463.gnm1.YJWS/
+    - category:
+        - name: browser
+          instances:
+            - description: Genome assembly for Glycine max PI 483463
+              url: https://soybase.org/gb2/gbrowse/glyma.Lee.gnm1/
+            - description: Genome assembly for Glycine max PI 483463
+              url: https://soybase.org/gb2/gbrowse/glyso.PI483463.gnm1/

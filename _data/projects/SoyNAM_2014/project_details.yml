@@ -44,67 +44,64 @@
       doi: "10.2135/cropsci2018.09.0573"
       abstract: ~
   data_links:
-    - type: code
-      description: "R Package SoyNAM, by Xavier, Beavis, Specht et al."
-      url: "https://cran.r-project.org/web/packages/SoyNAM/SoyNAM.pdf"
-    - type: visualization
-      description: Descriptions and images of recombinant inbred lines from the cross between the NAM parents and IA3023.
-      url: "https://soybase.org/SoyNAM/"
-    - type: map
-      description: See SoyNAM QTL in SoyBase genetic maps
-      url: "https://soybase.org/cmap/cgi-bin/cmap/viewer?data_source=sbt_cmap;ref_map_set_aid=GmComposite2003&ref_map_aids=GmComposite2003_N&comparative_map_left=GmGWAS_N;highlight=%22Lodging,%20SoyNAM%204-g1%22"
-    - type: browser
-      description: See SoyNAM QTL in SoyBase sequence browser
-      url: "https://soybase.org/gb2/gbrowse/gmax2.0/?start=1;stop=45779781;ref=Gm03;width=1024;version=100;flip=0;grid=1;l=soynam;h_feat=Lodging,%20SoyNAM%204-g1@yellow"
-    - type: visualization
-      description: "View the distribution in the soybean genome of the SoyNAM SNPs."
-      url: "https://soybase.org/SoyNAM/SoyNAM_SNP_distribution.jpg"
-    - type: data
-      description: "Get field and collaborator information for the SoyNAM trials."
-      url: "https://soybase.org/SoyNAM/SoyNAMfields.php"
-    - type: visualization
-      description: "See copy number estimates for gene models in the SoyNAM population."
-      url: "https://soybase.org/SoyNAM/cnvExplorer.php"
-    - type: data
-      description: "Phenotypic data for all SoyNAM Populations."
-      url: "https://soybase.org/SoyNAM/data/phenotypes/SoyNAM%20all%20familes%20phenotype%20data.txt.zip"
-    - type: data
-      description: "SNP haplotypes for all SoyNAM parents using Wm82.a1 coordinates"
-      url: "https://soybase.org/SoyNAM/data/genotypes/Wm82.a1/SoyNAM%20parents%204312%20SNP%20genotypes%20Wm82.a1.zip"
-    - type: data
-      description: "SNP alleles for all SoyNAM parents using Wm82.a1 coordinates"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm1.div.Song_Yan_2017/glyma.Wm82.gnm1.div.Song_Yan_2017.SNPs.parents.vcf.gz"
-    - type: data
-      description: "SNP haplotypes for all SoyNAM parents using Wm82.a2 coordinates"
-      url: "https://soybase.org/SoyNAM/data/genotypes/Wm82.a2/SoyNAM%20parents%204312%20SNP%20genotypes%20Wm82.a2.zip"
-    - type: data
-      description: "SNP alleles for all SoyNAM parents using Wm82.a2 coordinates"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Song_Yan_2017/glyma.Wm82.gnm2.div.Song_Yan_2017.SNPdata.parents.vcf.gz"
-    - type: data
-      description: "SNP haplotypes for the parents and progeny for all SoyNAM families using Wm82.a1 coordinates"
-      url: "https://soybase.org/SoyNAM/data/genotypes/Wm82.a1/SoyNAM%20parents+progeny%204312%20SNP%20genotypes%20Wm82.a1.zip"
-    - type: data
-      description: "SNP alleles for the parents and progeny for all SoyNAM families using Wm82.a1 coordinates"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm1.div.Song_Yan_2017/glyma.Wm82.gnm1.div.Song_Yan_2017.SNPs.parents-progeny.vcf.gz"
-    - type: data
-      description: "SNP haplotypes for the parents and progeny for all SoyNAM families using Wm82.a2 coordinates"
-      url: "https://soybase.org/SoyNAM/data/genotypes/Wm82.a2/SoyNAM%20parents+progeny%204312%20SNP%20genotypes%20Wm82.a2.zip"
-    - type: data
-      description: "SNP alleles for the parents and progeny for all SoyNAM families using Wm82.a2 coordinates"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Song_Yan_2017/glyma.Wm82.gnm2.div.Song_Yan_2017.SNPdata.parents-progeny.vcf.gz"
-    - type: data
-      description: "Supplemental Table S1: 103 Marker Trait Associations that were signficant for yield, maturity, height, lodging, or seed mass in the soybean NAM population."
-      url: "https://soybase.org/SoyNAM/data/Diers%20et%20al._G3_2018_Table_S1.xlsx"
-    - type: data
-      description: "Soy50K imputed haplotypes for the parents and progeny for all SoyNAM families, genotyped using the SoySNP50K and SoyNAM6K assays"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Song_NAM_2021a"
-    - type: data
-      description: "Soy50K imputed haplotypes for the parents and progeny for all SoyNAM families, genotyped with WGS and the SoySNP50K and SoyNAM6K assays"
-      url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Song_NAM_2021b"
-    - type: request seed
-      description: "Click here to request Parent seed."
-      url: "https://soybase.org/SoyNAM/SoyNAM_Parent_request.htm"
-    - type: request seed
-      description: "Click here to request RIL seed."
-      url: "https://soybase.org/SoyNAM/SoyNAM_RIL_request.htm"
+    - category:
+        - name: code
+          instances:
+            - description: "R Package SoyNAM, by Xavier, Beavis, Specht et al."
+              url: "https://cran.r-project.org/web/packages/SoyNAM/SoyNAM.pdf"
+    - category:
+        - name: visualization
+          instances:
+            - description: Descriptions and images of recombinant inbred lines from the cross between the NAM parents and IA3023.
+              url: "https://soybase.org/SoyNAM/"
+            - description: "View the distribution in the soybean genome of the SoyNAM SNPs."
+              url: "https://soybase.org/SoyNAM/SoyNAM_SNP_distribution.jpg"
+            - description: "See copy number estimates for gene models in the SoyNAM population."
+              url: "https://soybase.org/SoyNAM/cnvExplorer.php"
+    - category:
+        - name: map
+          instances:
+            - description: See SoyNAM QTL in SoyBase genetic maps
+              url: "https://soybase.org/cmap/cgi-bin/cmap/viewer?data_source=sbt_cmap;ref_map_set_aid=GmComposite2003&ref_map_aids=GmComposite2003_N&comparative_map_left=GmGWAS_N;highlight=%22Lodging,%20SoyNAM%204-g1%22"
+    - category:
+        - name: browser
+          instances:
+            - description: See SoyNAM QTL in SoyBase sequence browser
+              url: "https://soybase.org/gb2/gbrowse/gmax2.0/?start=1;stop=45779781;ref=Gm03;width=1024;version=100;flip=0;grid=1;l=soynam;h_feat=Lodging,%20SoyNAM%204-g1@yellow"
+    - category:
+        - name: data
+          instances:
+            - description: "Get field and collaborator information for the SoyNAM trials."
+              url: "https://soybase.org/SoyNAM/SoyNAMfields.php"
+            - description: "Phenotypic data for all SoyNAM Populations."
+              url: "https://soybase.org/SoyNAM/data/phenotypes/SoyNAM%20all%20familes%20phenotype%20data.txt.zip"
+            - description: "SNP haplotypes for all SoyNAM parents using Wm82.a1 coordinates"
+              url: "https://soybase.org/SoyNAM/data/genotypes/Wm82.a1/SoyNAM%20parents%204312%20SNP%20genotypes%20Wm82.a1.zip"
+            - description: "SNP alleles for all SoyNAM parents using Wm82.a1 coordinates"
+              url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm1.div.Song_Yan_2017/glyma.Wm82.gnm1.div.Song_Yan_2017.SNPs.parents.vcf.gz"
+            - description: "SNP haplotypes for all SoyNAM parents using Wm82.a2 coordinates"
+              url: "https://soybase.org/SoyNAM/data/genotypes/Wm82.a2/SoyNAM%20parents%204312%20SNP%20genotypes%20Wm82.a2.zip"
+            - description: "SNP alleles for all SoyNAM parents using Wm82.a2 coordinates"
+              url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Song_Yan_2017/glyma.Wm82.gnm2.div.Song_Yan_2017.SNPdata.parents.vcf.gz"
+            - description: "SNP haplotypes for the parents and progeny for all SoyNAM families using Wm82.a1 coordinates"
+              url: "https://soybase.org/SoyNAM/data/genotypes/Wm82.a1/SoyNAM%20parents+progeny%204312%20SNP%20genotypes%20Wm82.a1.zip"
+            - description: "SNP alleles for the parents and progeny for all SoyNAM families using Wm82.a1 coordinates"
+              url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm1.div.Song_Yan_2017/glyma.Wm82.gnm1.div.Song_Yan_2017.SNPs.parents-progeny.vcf.gz"
+            - description: "SNP haplotypes for the parents and progeny for all SoyNAM families using Wm82.a2 coordinates"
+              url: "https://soybase.org/SoyNAM/data/genotypes/Wm82.a2/SoyNAM%20parents+progeny%204312%20SNP%20genotypes%20Wm82.a2.zip"
+            - description: "SNP alleles for the parents and progeny for all SoyNAM families using Wm82.a2 coordinates"
+              url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Song_Yan_2017/glyma.Wm82.gnm2.div.Song_Yan_2017.SNPdata.parents-progeny.vcf.gz"
+            - description: "Supplemental Table S1: 103 Marker Trait Associations that were signficant for yield, maturity, height, lodging, or seed mass in the soybean NAM population."
+              url: "https://soybase.org/SoyNAM/data/Diers%20et%20al._G3_2018_Table_S1.xlsx"
+            - description: "Soy50K imputed haplotypes for the parents and progeny for all SoyNAM families, genotyped using the SoySNP50K and SoyNAM6K assays"
+              url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Song_NAM_2021a"
+            - description: "Soy50K imputed haplotypes for the parents and progeny for all SoyNAM families, genotyped with WGS and the SoySNP50K and SoyNAM6K assays"
+              url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Song_NAM_2021b"
+    - category:
+        - name: request seed
+          instances:
+            - description: "Click here to request Parent seed."
+              url: "https://soybase.org/SoyNAM/SoyNAM_Parent_request.htm"
+            - description: "Click here to request RIL seed."
+              url: "https://soybase.org/SoyNAM/SoyNAM_RIL_request.htm"
 

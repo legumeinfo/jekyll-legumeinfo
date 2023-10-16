@@ -35,7 +35,18 @@ layout: default
 
     <dd><h3>Data Links:</h3></dd>
     {% for data_link in item.data_links %}
-      <dd>{{ data_link.type }}: <a href="{{ data_link.url }}">{{ data_link.description }}</a></dd>
+      {% for category in data_link.category %}
+        {% for name in category.name %}
+          <dd> 
+            <strong>{{ name }}</strong>
+            <ul>
+              {% for instance in category.instances %}
+                <li><a href="{{ instance.url }}">{{ instance.description }}</a></li>
+              {% endfor %}
+            </ul>
+          </dd>
+        {% endfor %}
+      {% endfor %}
     {% endfor %}
   </dt>
 {% endfor %}

@@ -11,10 +11,11 @@
       doi: 10.1007/978-3-030-90044-1_1
       abstract: "Soybean is one of the most important food crops globally. It is a major source of both protein and oil for humans, livestock and fish. In addition, its industrial usages include soy-based products and biodiesel production. In the United States, the total value of the soybean crop is $40 billion annually. Unfortunately, over 20% of the soybean yield is suppressed annually by abiotic and biotic stresses, which is expected to deteriorate due to climate change. Use of new genetic mechanisms to address abiotic and biotic stresses supports sustainable, environmentally benign soybean production, without additional input or cultivation costs. Development of cultivars with robust responses to abiotic and biotic stresses requires identification of the best alleles from across a broad germplasm collection. Identification and use of new genetic mechanisms to fight the abiotic and biotic stresses is considered ideal for sustainable soybean production because it does not add any additional costs to cultivation and is environmentally friendly. To reduce the losses from abiotic and biotic stresses, it is necessary to discover and develop superior soybean lines that can be used to develop genetically superior commercial cultivars. The rationale of the proposed research is that once we identify the desirable genetic stocks carrying genes for tolerances to abiotic and biotic stresses, it will be possible to design desirable cultivars that will sustain soybean production under environmental stress conditions."
   data_links:
-    - type: data
-      description: "Excel file of soybean accessions resequenced or identified for resequencing, and information about resistance status to selected diseases."
-      url: "https://soybase.org/data/annex/Glycine/max/projects/Bhattacharyya_2018/mixed.prj.Bhattacharyya_2018.536_genotypes.xlsx"
-    - type: data
-      description: "Soybean Science Institute (SSI) lesson plan, created by the Lincoln Public Schools (Nebraska) science curriculum team to prepare middle school science teachers."
-      url: "https://soybase.org/data/annex/Glycine/max/projects/Bhattacharyya_2018/mixed.prj.Bhattacharyya_2018.SSI_Lesson_Plan.docx"
+    - category:
+        - name: data
+          instances:
+            - description: "Excel file of soybean accessions resequenced or identified for resequencing, and information about resistance status to selected diseases."
+              url: "https://soybase.org/data/annex/Glycine/max/projects/Bhattacharyya_2018/mixed.prj.Bhattacharyya_2018.536_genotypes.xlsx"
+            - description: "Soybean Science Institute (SSI) lesson plan, created by the Lincoln Public Schools (Nebraska) science curriculum team to prepare middle school science teachers."
+              url: "https://soybase.org/data/annex/Glycine/max/projects/Bhattacharyya_2018/mixed.prj.Bhattacharyya_2018.SSI_Lesson_Plan.docx"
 
