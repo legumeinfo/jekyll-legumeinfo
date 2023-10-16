@@ -4,12 +4,20 @@ title: Projects
 sitemap: projects
 ---
 {% if site.data.project_list %}
-{% assign groups = site.data.project_list | sort: "year" %}
-<h3>Projects - Table of Contents</h3>
+{% assign groups = site.data.project_list | sort: "short_title" %}
+<h3>Projects - Table of Contents</h3> <a id="top"</a>
+
+{% comment %} 
+  Shift the in-page anchor links to the preceding item; otherwise the links are too high in the page. 
+{% endcomment %}
+
+{% assign prev_DataStoreID = "top" %}
+
 {% for group in groups %}
   <dt>
-    <dd> <a href="#{{ group.DataStoreID }}">{{ group.short_title }}</a> </dd>
+    <dd> <a href="#{{ prev_DataStoreID }}">{{ group.short_title }}</a> </dd>
   </dt>
+  {% assign prev_DataStoreID = group.DataStoreID %}
 {% endfor %}
 <hr>
 {% for group in groups %}

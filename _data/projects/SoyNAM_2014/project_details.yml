@@ -4,7 +4,7 @@
   short_title: "SoyNAM"
   SoyBaseID: "SoyBase.C2014.02"
   title: "Nested Association Mapping (NAM) of Genes Controlling Soybean Yield and Other Key Traits"
-  description: "This project identifies the genes and locations that control yield and other important agronomic traits in both domestic and exotic germplasm using association mapping, with a nested association mapping (NAM) population."
+  description: "This project identifies the genes and locations that control yield and other important agronomic traits in both domestic and exotic germplasm using association mapping, with a nested association mapping (NAM) population. Please also see the <strong><a href=\"/projects/SoyNAM/\">dedicated SoyNAM page</a></strong>, with additional information and plant images."
   BioProjectID: "none"
   publications:
     - citation: "Cook DE, Bayless AM, Wang K, Guo X, Song Q, Jiang J, Bent AF. Distinct Copy Number, Coding Sequence, and Locus Methylation Patterns Underlie Rhg1-Mediated Soybean Resistance to Soybean Cyst Nematode. Plant Physiol. 2014 Jun;165(2):630-647. Epub 2014 Apr 14. PMID: 24733883; PMCID: PMC4044848."

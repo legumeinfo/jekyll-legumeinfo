@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+{% assign accession = page.title %}
+{% assign display_name = page.title | replace: ' ', '_' %}
+{% assign nam_details = site.data.nam_lines[accession].details %}
+
+{% for item in nam_details %}
+  {% if item[0] != "Descriptors" %}
+    {{ item[0] }} : <strong>{{ item[1] }}</strong><br>
+  {% elsif item[0] == "Descriptors" %}
+    Descriptors:<br>
+    {% for trait in item[1] %}
+      &nbsp; &nbsp; {{ trait[0] }} : <strong>{{ trait[1] }}</strong><br>
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% assign image_url_base = "https://soybase.org/data/annex/Glycine/max/images/SoyNAM/" %}
+{% capture image_base %}{{ display_name }}_{{ nam_details.Population }}{% endcapture %}
+{% capture alt_mid %}Mid-season field image of NAM line {{ nam_details.Parent }}.{% endcapture %}
+{% capture alt_late %}Late-season field image of NAM line {{ nam_details.Parent }}.{% endcapture %}
+
+<table>
+  <tr>
+    <td><img src={{ image_url_base }}med/{{ image_base }}_early.jpg alt={{ alt_mid }} }}></td>
+    <td><img src={{ image_url_base }}med/{{ image_base }}_late.jpg  alt={{ alt_mid }} }}></td>
+  </tr>
+  <tr>
+    <td>{{ alt_mid }}</td>
+    <td>{{ alt_late }}</td>
+  </tr>
+  <tr>
+    <td>&nbsp;<a href="{{ image_url_base }}lg/{{ image_base }}_early.jpg">Click for full-size image</a></td>
+    <td>&nbsp;<a href="{{ image_url_base }}lg/{{ image_base }}_late.jpg">Click for full-size image</a><td>
+  </tr>
+</table>
+
+
+{% assign data_url_base = "https://soybase.org/data/annex/Glycine/max/projects/SoyNAM/" %}
+{% capture phenotype_data %}{{ display_name }}_{{ nam_details.Population }}_phenotype_data.tsv.gz{% endcapture %}
+{% capture genotype_Wm82a1 %}{{ display_name }}_{{ nam_details.Population }}_4312_SNP_genotype_Wm82.a1.tsv.gz{% endcapture %}
+{% capture gt_Wm82a2 %}{{ display_name }}_{{ nam_details.Population }}_4312_SNP_genotype_Wm82.a2.tsv.gz{% endcapture %}
+
+<h4>Population Phenotype Data</h4>
+<p>Replicated trials were used to measure yield, maturity, plant height,... for the NAM Parents and RILs.</p>
+
+<ul>
+<li>
+  <a href="{{ data_url_base }}phenotypes/{{ phenotype_data }}">
+    Download the phenotypic data for this SoyNAM Family
+  </a>
+</li>
+<li>
+  <a href="{{ data_url_base }}genotypes/Wm82.a1/{{ genotype_Wm82a1 }}">
+    Download the SNP haplotypes for the parents and progeny for this SoyNAM family using Wm82.a1 coordinates
+  </a>
+</li>
+<li>
+  <a href="{{ data_url_base }}genotypes/Wm82.a2/{{ gt_Wm82a2 }}">
+    Download the SNP haplotypes for the parents and progeny for this SoyNAM family using Wm82.a2 coordinates
+  </a>
+</li>
+</ul>
+
+<h4><a href="/projects/SoyNAM/">Back to the SoyNAM index page</a></dd></h4>
+

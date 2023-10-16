@@ -56,7 +56,7 @@
 -
   title: "Nested Association Mapping (NAM) of Genes Controlling Soybean Yield and Other Key Traits"
   short_title: "SoyNAM"
-  description: "This project identifies the genes and locations that control yield and other important agronomic traits in both domestic and exotic germplasm using association mapping, with a nested association mapping (NAM) population."
+  description: "This project identifies the genes and locations that control yield and other important agronomic traits in both domestic and exotic germplasm using association mapping, with a nested association mapping (NAM) population. For this large project, see both the project page linked below, and the <strong><a href=\"/projects/SoyNAM/\">dedicated SoyNAM page</a></strong>, with additional information and plant images."
   SoyBaseID: "SoyBase.C2014.02"
   DataStoreID: "SoyNAM_2014"
 -

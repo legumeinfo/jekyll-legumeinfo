@@ -90,6 +90,12 @@ page_gen:
     name: sgn_year
     index_files: true
     debug: true
+  - data: nam_list
+    template: nam_lines
+    dir: projects/SoyNAM
+    name: accession
+    index_files: true
+    debug: true
 
 # the default number of items shown in card widgets
 card_item_limit: 3

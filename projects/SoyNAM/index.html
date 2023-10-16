@@ -1,0 +1,69 @@
+---
+layout: default
+title: SoyNAM project
+sitemap: projects/SoyNAM
+---
+<h2>Nested Association Mapping of Genes Controlling Soybean Yield and Other Key Traits</h2>
+
+<p> 
+  The goal of the soybean Nested Association Mapping project is to improve the yield potential of soybean varieties. 
+  To this end, the chromosomal locations of genes that control yield and other important agronomic traits in both 
+  domestic and exotic germplasm have been mapped using a Nested Association Panel composed of 40 important 
+  soybean varieties and cultivars crossed to a common hub parent. 
+  See further <a href="/projects/soynam_2014/">details about the SoyNAM Project</a>. 
+  Funding was provided by the North Central Soybean research Program (<a href="https://ncsrp.com">NCSRP</a>) 
+  and the United Soybean Board (<a href="https://www.unitedsoybean.org">USB</a>).
+</p>
+<p>
+  See links below for information about each line: images, phenotypes, and associated data.
+</p>
+
+<table border="1" cellspacing="1" cellpadding="1" >
+  <thead>
+    <tr>
+      <th style="text-align: center"><b>High yielding</b></th>
+      <th style="text-align: center"><b>Diverse ancestry</b></th>
+      <th style="text-align: center"><b>High yield in drought</b></th>
+      <th style="text-align: center"><b>Hub parent</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for nam_cat in site.data.nam_table %}
+      <tr>
+        {% assign drought_display = nam_cat.drought | replace: '_', ' ' %}
+        {% if nam_cat.yield != "~" %}
+          <td><a href="{{ "/projects/SoyNAM/" | relative_url }}{{ nam_cat.yield | downcase }}">{{ nam_cat.yield }}</a></td>
+        {% else %}
+          <td>~</td>
+        {% endif %}
+
+        {% if nam_cat.diverse != "~" %}
+          <td><a href="{{ "/projects/SoyNAM/" | relative_url }}{{ nam_cat.diverse | downcase }}">{{ nam_cat.diverse }}</a></td>
+        {% else %}
+          <td>~</td>
+        {% endif %}
+
+        {% if nam_cat.drought != "~" %}
+          <td><a href="{{ "/projects/SoyNAM/" | relative_url }}{{ nam_cat.drought | downcase }}">{{ drought_display }}</a></td>
+        {% else %}
+          <td>~</td>
+        {% endif %}
+
+        {% if nam_cat.hub != "~" %}
+          <td><a href="{{ "/projects/SoyNAM/" | relative_url }}{{ nam_cat.hub | downcase }}">{{ nam_cat.hub }}</a></td>
+        {% else %}
+          <td>~</td>
+        {% endif %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<p class="uk-text-small">Note that line PI 507681B is not shown. Analysis of the progeny of SoyNAM population 46 (PI 507681B x IA3023) <br>
+showed that the cross was not as described. No phenotypic data for SoyNAM 46 are available.
+</p>
+
+{% comment %}
+
+<table class="uk-table uk-width-1-2 uk-text-center uk-text-nowrap uk-table-condensed uk-padding-small">
+{% endcomment %}

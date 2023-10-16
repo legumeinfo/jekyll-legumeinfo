@@ -1,0 +1,165 @@
+---
+- category: High Yielding
+  accession: 4J105-3-4
+  display_name: 4J105-3-4
+  nam_id: NAM03
+- category: High Yielding
+  accession: 5M20-2-5-2
+  display_name: 5M20-2-5-2
+  nam_id: NAM04
+- category: High Yielding
+  accession: CL0J095-4-6
+  display_name: CL0J095-4-6
+  nam_id: NAM05
+- category: High Yielding
+  accession: CL0J173-6-8
+  display_name: CL0J173-6-8
+  nam_id: NAM06
+- category: High Yielding
+  accession: HS6-3976
+  display_name: HS6-3976
+  nam_id: NAM08
+- category: High Yielding
+  accession: LD00-3309
+  display_name: LD00-3309
+  nam_id: NAM10
+- category: High Yielding
+  accession: LD01-5907
+  display_name: LD01-5907
+  nam_id: NAM11
+- category: High Yielding
+  accession: LD02-4485
+  display_name: LD02-4485
+  nam_id: NAM12
+- category: High Yielding
+  accession: LD02-9050
+  display_name: LD02-9050
+  nam_id: NAM13
+- category: High Yielding
+  accession: Magellan
+  display_name: Magellan
+  nam_id: NAM14
+- category: High Yielding
+  accession: Maverick
+  display_name: Maverick
+  nam_id: NAM15
+- category: High Yielding
+  accession: NE3001
+  display_name: NE3001
+  nam_id: NAM18
+- category: High Yielding
+  accession: Prohio
+  display_name: Prohio
+  nam_id: NAM09
+- category: High Yielding
+  accession: S06-13640
+  display_name: S06-13640
+  nam_id: NAM17
+- category: High Yielding
+  accession: Skylla
+  display_name: Skylla
+  nam_id: NAM22
+- category: High Yielding
+  accession: TN05-3027
+  display_name: TN05-3027
+  nam_id: NAM02
+- category: High Yielding
+  accession: U03-100612
+  display_name: U03-100612
+  nam_id: NAM23
+- category: Diverse Ancestry
+  accession: LG03-2979
+  display_name: LG03-2979
+  nam_id: NAM24
+- category: Diverse Ancestry
+  accession: LG03-3191
+  display_name: LG03-3191
+  nam_id: NAM25
+- category: Diverse Ancestry
+  accession: LG00-3372
+  display_name: LG00-3372
+  nam_id: NAM38
+- category: Diverse Ancestry
+  accession: LG04-4717
+  display_name: LG04-4717
+  nam_id: NAM26
+- category: Diverse Ancestry
+  accession: LG04-6000
+  display_name: LG04-6000
+  nam_id: NAM39
+- category: Diverse Ancestry
+  accession: LG05-4292
+  display_name: LG05-4292
+  nam_id: NAM27
+- category: Diverse Ancestry
+  accession: LG05-4317
+  display_name: LG05-4317
+  nam_id: NAM28
+- category: Diverse Ancestry
+  accession: LG05-4464
+  display_name: LG05-4464
+  nam_id: NAM29
+- category: Diverse Ancestry
+  accession: LG05-4832
+  display_name: LG05-4832
+  nam_id: NAM30
+- category: Diverse Ancestry
+  accession: LG90-2550
+  display_name: LG90-2550
+  nam_id: NAM31
+- category: Diverse Ancestry
+  accession: LG92-1255
+  display_name: LG92-1255
+  nam_id: NAM32
+- category: Diverse Ancestry
+  accession: LG94-1128
+  display_name: LG94-1128
+  nam_id: NAM33
+- category: Diverse Ancestry
+  accession: LG94-1906
+  display_name: LG94-1906
+  nam_id: NAM34
+- category: Diverse Ancestry
+  accession: LG97-7012
+  display_name: LG97-7012
+  nam_id: NAM36
+- category: Diverse Ancestry
+  accession: LG98-1605
+  display_name: LG98-1605
+  nam_id: NAM37
+- category: High yield in drought
+  accession: PI_398881
+  display_name: PI 398881
+  nam_id: NAM40
+- category: High yield in drought
+  accession: PI_427136
+  display_name: PI 427136
+  nam_id: NAM41
+- category: High yield in drought
+  accession: PI_437169B
+  display_name: PI 437169B
+  nam_id: NAM42
+- category: High yield in drought
+  accession: PI_518751
+  display_name: PI 518751
+  nam_id: NAM48
+- category: High yield in drought
+  accession: PI_561370
+  display_name: PI 561370
+  nam_id: NAM50
+- category: High yield in drought
+  accession: PI_404188A
+  display_name: PI 404188A
+  nam_id: NAM54
+- category: High yield in drought
+  accession: PI_574486
+  display_name: PI 574486
+  nam_id: NAM64
+ #- category: High yield in drought
+ #  accession: PI_507681B
+ #  display_name: PI 507681B
+ #  nam_id: NAM46
+- category: Hub parent
+  accession: IA3023
+  display_name: IA3023
+  nam_id: NAMzz
