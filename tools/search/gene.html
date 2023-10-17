@@ -3,7 +3,9 @@ layout: full-width
 title: Gene Search
 web_components: true
 ---
-<script type="module" src="{{ "assets/js/graphql/index.js" | relative_url }}"></script>
+
+<!-- graphql functions -->
+<script type="module" src="{{ 'assets/js/graphql/index.js' | relative_url }}"></script>
 
 <!-- the custom gene search element -->
 <lis-gene-search-element id="gene-search"></lis-gene-search-element>
@@ -13,7 +15,7 @@ web_components: true
 
 <!-- set the search function by property because functions can't be set as attributes -->
 <script type="text/javascript">
-      // get the web components elements and set their function properties
+  // get the web components elements and set their function properties
       const geneSearchElement = document.getElementById('gene-search');
       geneSearchElement.formDataFunction = getGeneFormData;
       geneSearchElement.searchFunction = getGenes;
