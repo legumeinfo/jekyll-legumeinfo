@@ -2,10 +2,15 @@
 layout: full-width
 title: Gene Search
 web_components: true
+graphql: true
 ---
 
-<!-- graphql functions -->
-<script type="module" src="{{ 'assets/js/graphql/index.js' | relative_url }}"></script>
+{% if page.graphql %}
+<script type="module">    
+  import * as graphql from "{{ 'assets/js/graphql/index.js' | relative_url }}";
+  window.graphql = graphql;
+</script>
+{% endif %}
 
 <!-- the custom gene search element -->
 <lis-gene-search-element id="gene-search"></lis-gene-search-element>
@@ -17,10 +22,10 @@ web_components: true
 <script type="text/javascript">
   // get the web components elements and set their function properties
       const geneSearchElement = document.getElementById('gene-search');
-      geneSearchElement.formDataFunction = getGeneFormData;
-      geneSearchElement.searchFunction = getGenes;
+      geneSearchElement.formDataFunction = graphql.getGeneFormData;
+      geneSearchElement.searchFunction = graphql.getGenes;
       const linkoutElement = document.getElementById('linkouts');
-      linkoutElement.linkoutFunction = linkoutFunction;
+      linkoutElement.linkoutFunction = graphql.linkoutFunction;
       // wait for the modal slot to load before adding an event listener
       window.onload = (event) => {
         const modal = document.getElementById('modal');
