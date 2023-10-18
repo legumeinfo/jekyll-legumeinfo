@@ -32,7 +32,7 @@
   name: "Data submission"
   url: "/about/submitting_data"
 - category: "Data"
-  description: "Findable, Accessible, Interoperable and Reusable, and applies to scientific data used by people and computers"
+  description: "FAIR data at SoyBase"
   name: "FAIRpractices"
   url: "/about/fairpractices"
 - category: "About SoyBase"
