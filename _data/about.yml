@@ -43,4 +43,12 @@
   description: "Overview of pages and content at SoyBase"
   name: "SoyBase Sitemap"
   url: "/about/sitemap"
+- category: "About SoyBase"
+  description: "SoyBase Staff and Contributors"
+  name: "Soybase Team"
+  url: "/about/soybase_team"
+- category: "About SoyBase"
+  description: "About the SoyBase database and soybeans"
+  name: "About SoyBase"
+  url: "/about/soybase_about"
 
