@@ -1,0 +1,36 @@
+Growth Stage	Growth Stage Title	SOY Accession Number	SOY Title	BBCH Scale ID Number	PO Accession Number	PO Accession Title
+VE	Emergence	SOY:0000014	"1.00 Cotyledon visible PO:0007049, BBCH 10 100"	10 100	PO:0007049	Cotyledons emergence
+VC	Unifoliolate	SOY:0000015	1.01 Unifoliolate leaves unfolded PO:0007094 BBCH 11 101	11 101	PO:0007094	LP.01 one leaf visible
+V1	1st Trifoliolate	SOY:0000016	1.02 1st Trifoliolate leaf unfolded PO:0007098 BBCH 12 102	12 102	PO:0007098	LP02 two leaves visible
+V2	2nd Trifoliolate	SOY:0000017	1.03 2nd Trifoliolate leaf unfolded PO:0007106 BBCH 13 103	13 103	PO:0007106	LP.03 three leaves visible
+V3	3rd Trifoliolate	SOY:0000018	1.04 3rd Trifoliolate leaf unfolded PO:0007115 BBCH 14 104	14 104	PO:0007115	LP.04 four leaves visible
+V4	4th Trifoliolate	SOY:0000019	1.05 4th Trifoliolate leaf unfolded PO:0007065 BBCH 15 105	15 105	PO:0007065	LP.05 five leaves visible
+V5	5th Trifoliolate	SOY:0000020	1.06 5th Trifoliolate leaf unfolded PO:0007123 BBCH 16 106	16 106	PO:0007123	LP.06 six leaves visible
+V6	6th Trifoliolate	SOY:0000021	1.07 6th Trifoliolate leaf unfolded PO:0007063 BBCH 17 107	17 107	PO:0007063	LP.07 seven leaves visible
+V7	7th Trifoliolate	SOY:0000022	1.08 7th Trifoliolate leaf unfolded PO:0007095 BBCH 18 108	18 108	PO:0007095	LP.08 eight leaves visible
+V8	8th Trifoliolate	SOY:0000023	1.09 8th Trifoliolate leaf unfolded PO:0007101 BBCH 19 109	19 109	PO:0007101	LP.09 nine leaves visible
+V9	9th Trifoliolate	SOY:0000024	1.10 9th Trifoliolate leaf unfolded PO:0007103 BBCH 19 110	19 110	PO:0007103	LP.10 ten leaves visible
+V10	10th Trifoliolate	SOY:0000025	1.11 10th Trifoliolate leaf unfolded PO:0007116 BBCH 19 111	19 111	PO:0007116	LP.11 eleven leaves visible
+V11	11th Trifoliolate	SOY:0000026	1.12 11th Trifoliolate leaf unfolded PO:0007064 BBCH 19 112	19 112	PO:0007064	LP.12 twelve leaves visible
+V12	12th Trifoliolate	SOY:0000027	1.13 12th Trifoliolate leaf unfolded PO:0007083 BBCH 19 113	19 113	PO:0007083	LP.13 thirteen leaves visible
+V13	13th Trifoliolate	SOY:0000028	1.14 13th Trifoliolate leaf unfolded PO:0007085 BBCH 19 114	19 114	PO:0007085	LP.14 fourteen leaves visible
+V14	14th Trifoliolate	SOY:0000029	1.15 14th Trifoliolate leaf unfolded PO:0007104 BBCH 19 115	19 115	PO:0007104	LP.15 fifteen leaves visible
+V15	15th Trifoliolate	SOY:0000030	1.16 15th Trifoliolate leaf unfolded PO:0007119 BBCH 19 116	19 116	PO:0007119	16 leaves unfolded
+V16	16th Trifoliolate	SOY:0000031	1.17 16th Trifoliolate leaf unfolded PO:0007067 BBCH 19 117	19 117	PO:0007067	17 leaves unfolded
+V17	17th Trifoliolate	SOY:0000032	1.18 17th Trifoliolate leaf unfolded PO:0007072 BBCH 19 118	19 118	PO:0007072	18 leaves unfolded
+V18	18th Trifoliolate	SOY:0000033	1.19 18th Trifoliolate leaf unfolded PO:0007120 BBCH 19 119	19 119	PO:0007120	19 leaves unfolded
+V19	19th Trifoliolate	SOY:0000034	1.20 19th Trifoliolate leaf unfolded PO:0007082	None	PO:0007082	20 or more leaves unfolded
+V20	20th Trifoliolate	SOY:0000035	1.21 20th Trifoliolate leaf unfolded PO:0007082	None	PO:0007082	20 or more leaves unfolded
+V21	21st Trifoliolate	SOY:0000036	1.22 21st Trifoliolate leaf unfolded PO:0007082	None	PO:0007082	20 or more leaves unfolded
+V22	22nd Trifoliolate	SOY:0000037	1.23 22nd Trifoliolate leaf unfolded PO:0007082	None	PO:0007082	20 or more leaves unfolded
+V23	23rd Trifoliolate	SOY:0000038	1.24 23rd Trifoliolate leaf unfolded PO:0007082	None	PO:0007082	20 or more leaves unfolded
+V24	24th Trifoliolate	SOY:0000096	1.25 24th Trifoliolate leaf unfolded PO:0007082	None	PO:0007082	20 or more leaves unfolded
+V25	25th Trifoliolate	SOY:0000025	1.26 25 or more trifoliolate leaf unfolded PO:0007082	None	PO:0007082	20 or more leaves unfolded
+R1	Beginning Bloom	SOY:0000072	6.00 1st flowers on main stem open PO:0007026 BBCH 60 600	60 600	PO:0007026	First flower(s) open
+R2	Full Bloom	SOY:0000075	6.08 Full flowering approx. equiv. PO:0007062	None	PO:0007052	FL.03 3/4 of flowers open
+R3	Beginning Pod	SOY:0000079	"Pod 10% of final length PO:0007032, approx. equiv. R3, BBCH 71 701"	71 701	PO:0007032	Fruit size 10%
+R4	Full Pod	SOY:0000084	"7.03 Pod 50% of final length PO:0007029, approx. equiv. R4, BBCH 75 705"	75 705	PO:0007029	FF.02 fruit size 50%
+R5	Beginning Seed	SOY:0000085	8.01 Beginning bean ripening PO:0007001 approx. equiv. R5	None	PO:0007001	FR.01 early stage of fruit ripening
+R6	Full Seed	SOY:0000087	"8.05 Mid ripening approx. equiv. PO:0007031, R6"	None	PO:0007031	Mid stage of fruit ripening
+R7	Beginning Maturity	SOY:0000088	"8.07 Late ripening approx. equiv. PO:0007050, R7, BBCH 79 709"	79 709	PO:0007050	Late stage of fruit ripening
+R8	Full maturity	SOY:0000089	"8.09 Final ripening approx. equiv. PO:0007038, R8, BBCH 89 909"	89 909	PO:0007038	FR.04 Fruit ripening complete

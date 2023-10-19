@@ -15,8 +15,11 @@
 <iframe id="myiframe" src="{{ page.iframe_url }}" style="{{ iframe_style }}"></iframe>
 
 <script language="javascript">
+    var params = new URL(window.location).searchParams;
+    var iframe_pathname_suffix = params.get("iframe_pathname_suffix") || '';
+    params.delete("iframe_pathname_suffix");
     var iframe = document.getElementById('myiframe');
-        iframe.src = iframe.src + window.location.search;
+        iframe.src = iframe.src + iframe_pathname_suffix + window.location.search;
 </script>
 
 </body>

@@ -1,0 +1,74 @@
+---
+title: OntologyConversion
+sitemap: ontologyConversion
+tools_menu: true
+---
+
+
+<div class="sb_main2">
+	
+			<div class="top_bar">
+				<h4>SoyBase Soybean Growth Stages Conversion Page</h4>
+			</div>
+		<br>
+		<p>
+		The Soybase Soybean Whole Plant Growth stage ontology (SOY growth) was developed to 
+		unite the familar soybean growth and development stages (V and R stages) 
+		with the more generic Plant Ontology Whole Plant Growth stages (PO) and the
+		BBCH scale.  This is intended to facilitate the translation of observations 
+		using these disparate ontologies and allow researchers to more easily collate
+		the relevent literature based on shared developmental points.
+</p><fieldset background="#CCFFCC">
+<legend>
+Conversions Between SOY growth, PO Whole Plant Growth Stages and BBCH Scale
+</legend> 
+<table border="1" bordercolor="DarkGreen" bordercolorlight="LightGreen" bordercolordark="DarkGreen" cellspacing="1" cellpadding="1" bgcolor="#FFFFFF">
+	<tr align="left" valign="middle" bgcolor="#FFFFFF">
+	  <th align="center" valign="middle" bgcolor="#CCFFCC">
+		Growth Stage
+	  </th>
+	  <th align="center" valign="middle" bgcolor="#CCFFCC">
+		Growth Stage Title
+	  </th>
+	  <th align="center" valign="middle" bgcolor="#CCFFCC">
+		SOY Accession Number
+	  </th>
+	  <th align="center" valign="middle" bgcolor="#CCFFCC">
+		SOY Title
+	  </th>
+	  <th align="center" valign="middle" bgcolor="#CCFFCC">
+		BBCH Scale ID Number
+	  </th>
+	  <th align="center" valign="middle" bgcolor="#CCFFCC">
+		PO Accession Number
+	  </th>
+	  <th align="center" valign="middle" bgcolor="#CCFFCC">
+		PO Accession Title
+	  </th>
+	</tr>
+	{% for row in site.data.SoybeanConversion %}
+	<tr align="left" valign="middle" bgcolor="#FFFFFF">
+	  <td align="center" valign="middle" bgcolor="#FFFFFF">
+		{{ row['Growth Stage'] }}
+	  </td>
+	  <td align="center" valign="middle" bgcolor="#FFFFFF">
+		{{ row['Growth Stage Title'] }}
+	  </td>
+	  <td align="center" valign="middle" bgcolor="#FFFFFF">
+		<a href="https://amigo.soybase.org/amigo/amigo/term/{{ row['SOY Accession Number'] }}" id="SoyWGR" name="SoyWGR" title="Soybase Soybean Whole Plant Growth Ontology" target="_blank">{{ row['SOY Accession Number'] }}</a>
+	  </td>
+	  <td align="center" valign="middle" bgcolor="#FFFFFF">
+		{{ row['SOY Title'] }}
+	  </td>
+	  <td align="center" valign="middle" bgcolor="#FFFFFF">
+		{{ row['BBCH Scale ID Number'] }}
+	  </td>
+	  <td align="center" valign="middle" bgcolor="#FFFFFF">
+		<a href="https://planteome.org/?view=details&search_constraint=terms&query={{ row['PO Accession Number'] }}" title="Plant Ontology Search" style="background:url(./images/external.png) center right no-repeat;padding-right:13px" target="_blank">{{ row['PO Accession Number'] }}</a>
+	  </td>
+	  <td align="center" valign="middle" bgcolor="#FFFFFF">
+		{{ row['PO Accession Title'] }}
+	  </td>
+	</tr>
+	{% endfor %}
+  </table>
