@@ -1,25 +1,112 @@
 ---
-title: GCViT
-sitemap: tools
-tools_menu: true
+layout: null
+iframe_url: "https://gcvit.soybase.org"
 ---
 
-<h1>Informatic Tools: GCViT</h1>
+<!DOCTYPE html>
+{% if page contains "lang" %}
+<html lang="{{ page.lang }}">
+{% else %}
+<html lang="{{ site.lang }}">
+{% endif %}
 
+{% include head.html %}
+
+<body>
+
+{% include navbar.html %}
+
+<style>
+p, h2, h3, details {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+</style>
+                           
+<h2 style='font-weight:bold;'>GCViT (Genotype Comparison Visualization Tool)</h2>
+<p style='font-weight:bold;'> <a href='https://youtu.be/B2gPVUipWo0'>Video Tutorial on GCViT</a> </p>
+
+<!-- ################# add details button for Datasets on GCVIT-->
 <p>
-  GCViT is a multiple chromosome visualisation tool for visualizing resequencing or SNP array data.
-  GCViT permits comparison of multiple accessions to a reference accession within a single dataset, to visually identify regions of similarities and differences across the genome.
+  <strong>Learn more about the Datasets available on GCViT</strong>
 </p>
+<details>
+<style>
+th, td {
+  padding: 7px;
+}
+</style>
 
-<p>
-  View a <a href="https://youtu.be/B2gPVUipWo0">video tutorial</a>.
-</p>
+<!--<h3>  GCViT Datasets</h3>-->
+<p>SNPs were sampled at a density of no more than one SNP per 25kb prior to display. This has the effect of partially normalizing the SNP density (though regions of the genome with very sparse SNP density will still show sparse density). </p>
+<p><a href='https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Song_Hyten_2015/glyma.Wm82.gnm2.div.Song_Hyten_2015.PIconversion.txt.gz' style='font-weight:bold;'>Click Here To Download PI to Common Name Conversion Table</a></p>
+<p style="color:blue; font-size:100%;"> If you would like to submit your data to be run on this tool please <span><a href='/about/' style="color:red;">Contact Us </a></span></p>
 
-<p>
-  GCViT is currently available for the folowing genera:
-</p>
+<table style="width:100%">
+  <tr>
+    <th>Dataset</th>
+    <th>Citation*</th> 
+    <th>Source</th>
+  </tr>
+  <tr>
+    <td>SoySNP50K</td>
+    <td>Song, Q., Hyten, D. L., Jia, G., Quigley, C. V., Fickus, E. W., Nelson, R. L., Cregan, P. B. (2015). Fingerprinting soybean germplasm and its utility in genomic research. G3: Genes, Genomes, Genetics, 5(10). <a href='https://doi.org/10.1534/g3.115.019000'>doi.org/10.1534/g3.115.019000</a></td>
+    <td><a href='https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Song_Hyten_2015/'>View Here</a></td>
+  </tr>
+  <tr>
+    <td>USB 481 </td>
+    <td>Valliyodan, B., Brown, A., Wang, J., Patil, G., Liu, Y., Otyama, P., Nelson, R., Vuong, T., Song, Q., Musket, T., Wagner, R., Marri, P., Reddy, S., Sessions, A., Wu, X., Grant, D., Bayer, P., Roorkiwal, M.,Varshney, R., Liu, X., Edwards, D., Xu, D., Joshi, T., Cannon, S., Nguyen, H. (2021). Genetic variation among 481 diverse soybean accessions, inferred from genomic re-sequencing. Sci. Data, 8;8(1):50 (2021). <a href='https://doi.org/10.1038/s41597-021-00834-w'>doi.org/10.1038/s41597-021-00834-w</a></td>
+    <td><a href='https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Valliyodan_Brown_2021/'>View Here</a></td>
+    </tr>
+ <tr>
+   <td>102 Canadian Accessions </td>
+   <td>Torkamaneh, D., Laroche, J., Tardivel, A., O'Donoughue, L., Cober, E., Rajcan, I., Belzile, F. (2017). Comprehensive description of genomewide nucleotide and structural variation in short-season soya bean. Plant Biotechnology Journal. <a href='https://doi.org/10.1111/pbi.12825'>doi.org/10.1111/pbi.12825</a></td>
+   <td><a href='https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2017/'>View Here</a></td>
+ </tr>
+ <tr>
+   <td>SoyNAM parents and Progeny </td>
+   <td> Bandillo, Nonoy B., Aaron J. Lorenz, George L. Graef, Diego Jarquin, David L. Hyten, Randall L. Nelson, and James E. Specht. Genome-wide association mapping of qualitatively inherited traits in a germplasm collection. The plant genome 10, no. 2 (2017). <a href='https://doi.org/10.3835/plantgenome2016.06.0054'>doi.org/10.3835/plantgenome2016.06.0054</a><br/>
+ Song, Qijian, Long Yan, Charles Quigley, Brandon D. Jordan, Edward Fickus, Steve Schroeder, Bao-Hua Song et al. Genetic characterization of the soybean nested association mapping population. The plant genome (2017). <a href='https://doi.org/10.3835/plantgenome2016.10.0109'>doi.org/10.3835/plantgenome2016.10.0109</a><br/>
+ Diers, Brian W., Jim Specht, Katy Martin Rainey, Perry Cregan, Qijian Song, Vishnu Ramasubramanian, George Graef et al. Genetic Architecture of Soybean Yield and Agronomic Traits. G3: Genes, Genomes, Genetics 8, no. 10 (2018): 3367-3375. <a href='https://doi.org/10.1534/g3.118.200332'>doi.org/10.1534/g3.118.200332</a></td>
+   <td><a href='https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Song_Yan_2017/'>View Here</a></td>
+ </tr>
+ 
+ <tr>
+   <td>222 Korean Accessions using Axiom SoyaSNP array</td>
+   <td> Lee, Y. G., Jeong, N., Kim, J. H., Lee, K., Kim, K. H., Pirani, A., ...Jeong, S.C. (2015). Development, validation and genetic analysis of a large soybean SNP genotyping array. The Plant Journal, 81(4), 625-636. <a href='https://doi.org/10.1111/tpj.12755'>doi.org/10.1111/tpj.12755</a></td>
+   <td><a href='https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Lee_Jeong_2015/'>View Here</a></td>
+ </tr>
 
-<ul>
-  <li><a href="https://soybase.org/gcvit/">Glycine @ SoyBase <span uk-icon="icon: forward"></span></a></li>
-</ul>
+ <tr>
+   <td>4234 Korean Accessions using Axiom SoyaSNP array </td>
+   <td>Jeong, S. C., Moon, J. K., Park, S. K., Kim, M. S., Lee, K., Lee, S. R., ...Park, E. (2019). Genetic diversity patterns and domestication origin of soybean. Theoretical and Applied Genetics, 132(4), 1179-1193. <a href='https://doi.org/10.1007/s00122-018-3271-7'>doi.org/10.1007/s00122-018-3271-7</a></td>
+   <td><a href='https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Jeong_Moon_2019/'>View Here</a></td>
+ </tr>
+
+ <tr>
+   <td>GmHapMap Data</td>
+   <td>Torkamaneh, D., Laroche, J., Valliyodan, B., O'donoughue, L., Cober, E., Rajcan, I., ...Belzile, F. (2019). Soybean Haplotype Map (GmHapMap): A Universal Resource for Soybean Translational and Functional Genomics. BioRxiv, 534578. <a href='https://doi.org/10.1101/534578'>doi.org/10.1101/534578</a> </td>
+   <td><a href='https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/'>View Here</a></td>
+ </tr>
+
+ <tr>
+   <td>374 US and Brazilian accessions </td>
+   <td>Wei, W., Mesquita, A. C. O., FigueirÃ, A. D. A., Wu, X., Manjunatha, S., Wickland, D. P., ...Clough, S. J. (2017). Genome-wide association mapping of resistance to a Brazilian isolate of Sclerotinia sclerotiorum in soybean genotypes mostly from Brazil. BMC genomics, 18(1), 849. <a href='https://doi.org/10.1186/s12864-017-4160-1'>doi.org/10.1186/s12864-017-4160-1</a> </td>
+   <td><a href='https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Wei_Mesquita_2017/'>View Here</a></td>
+ </tr>
+</table>
+<p> * please cite accordingly </p> 
+</details>
+<br>
+
+{% assign iframe_style="display: flex; width: 100%; height: 100vh; flex-direction: column;" %}
+<iframe id="myiframe" src="{{ page.iframe_url }}" style="{{ iframe_style }}"></iframe>
+
+<script language="javascript">
+    var iframe = document.getElementById('myiframe');
+        iframe.src = iframe.src + window.location.search;
+</script>
+
+  </body>
+</html>
 
