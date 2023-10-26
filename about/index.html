@@ -10,37 +10,26 @@ tools_menu: false
 <h2>About SoyBase and Soybean Resources</h2>
 
 {% for group in groups %}
-<dl>
-  {% for item in group.items %}
-  <dt><a href="{{ item.url }}">{{ item.name }}</a>
-    <span style="font-weight:normal">({{ item.description }})</span>
-  </dt>
-  {% endfor %}
-</dl>
+  <dl>
+    {% for item in group.items %}
+      <dt>
+        <a href="{{ item.url }}">{{ item.name }}</a>
+        <span style="font-weight:normal">({{ item.description }})</span>
+      </dt>
+    {% endfor %}
+  </dl>
 {% endfor %}
 
-<H2 id="contact">We welcome your questions and comments!</H2>
-<p>Please let us know if you have questions, requests, or anything else we should hear about!</p>
-
-<form
-  action="https://formspree.io/f/xbjbdojy"
-  method="POST"
->
-  <label>
-    Your name:
-    <input type="name" name="name">
-  </label>
-  <br>
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <br>
-  <label>
-    Message:
-    <textarea name="message" rows="10" cols="80"></textarea>
-  </label>
-  <br>
-  <button type="submit"><b>Send</b></button>
-</form>
-
+<a name="contact" id="contact">
+<iframe
+  width="640px"
+  height="800px"
+  src="https://forms.office.com/Pages/ResponsePage.aspx?id=5zZb7e4BvE6GfuA8-g1Glykqlk2qz6REpva4KviuwwxUNjZVSkM2TUI2NjdVSVZVVDRYUEZHSEZDRSQlQCN0PWcu&embed=true"
+  frameborder="0"
+  marginwidth="0"
+  marginheight="0"
+  style="border: none; max-width:100%; max-height:100vh"
+  allowfullscreen
+  webkitallowfullscreen
+  mozallowfullscreen
+  msallowfullscreen></iframe></a>
