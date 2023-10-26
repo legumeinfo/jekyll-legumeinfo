@@ -93,11 +93,11 @@ style:
 
 # Site-wide defaults
 defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
+#  -
+#    scope:
+#      path: ""
+#    values:
+#      layout: "default"
   -
     scope:
       path: "blog/"

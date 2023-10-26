@@ -5,25 +5,24 @@ web_components: true
 graphql: true
 ---
 
-{% if page.graphql %}
-<script type="module">    
-  import * as graphql from "{{ 'assets/js/graphql/index.js' | relative_url }}";
-  window.graphql = graphql;
-</script>
-{% endif %}
-
-<!-- the custom gene search element -->
 <lis-gene-search-element id="gene-search"></lis-gene-search-element>
 <lis-modal-element modalId="modal">
   <lis-linkout-element id="linkouts"></lis-linkout-element>
 </lis-modal-element>
 
+<script type="module">
+  import {getOrganismsFormData, geneSearch} from "lis-graphql";
+  const geneSearchElement = document.getElementById('gene-search');
+  geneSearchElement.formDataFunction = getOrganismsFormData;
+  geneSearchElement.searchFunction = geneSearch;
+</script>
+
 <!-- set the search function by property because functions can't be set as attributes -->
 <script type="text/javascript">
   // get the web components elements and set their function properties
       const geneSearchElement = document.getElementById('gene-search');
-      geneSearchElement.formDataFunction = graphql.getGeneFormData;
-      geneSearchElement.searchFunction = graphql.getGenes;
+      geneSearchElement.formDataFunction = graphql.getOrganismsFormData;
+      geneSearchElement.searchFunction = graphql.geneSearch;
       const linkoutElement = document.getElementById('linkouts');
       linkoutElement.linkoutFunction = graphql.linkoutFunction;
       // wait for the modal slot to load before adding an event listener
