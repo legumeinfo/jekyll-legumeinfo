@@ -17,30 +17,3 @@ graphql: true
   geneSearchElement.searchFunction = geneSearch;
 </script>
 
-<!-- set the search function by property because functions can't be set as attributes -->
-<script type="text/javascript">
-  // get the web components elements and set their function properties
-      const geneSearchElement = document.getElementById('gene-search');
-      geneSearchElement.formDataFunction = graphql.getOrganismsFormData;
-      geneSearchElement.searchFunction = graphql.geneSearch;
-      const linkoutElement = document.getElementById('linkouts');
-      linkoutElement.linkoutFunction = graphql.linkoutFunction;
-      // wait for the modal slot to load before adding an event listener
-      window.onload = (event) => {
-        const modal = document.getElementById('modal');
-        modal.addEventListener('toggle', (event) => {
-          const [{$el: link}, ...uikitComponents] = event.detail;
-          const {gene, location, start, end} = link.dataset;
-          let type = '';
-          let variables = {};
-          if (gene !== undefined) {
-            type = 'gene';
-            variables = {identifier: gene};
-          } else if (location !== undefined && start !== undefined && end !== undefined) {
-            type = 'location';
-            variables = {identifier: location, start: parseInt(start), end: parseInt(end)};
-          }
-          linkoutElement.getLinkouts({type, variables});
-        });
-      };
-</script>
