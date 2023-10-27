@@ -10,9 +10,29 @@ web_components: true
 </lis-modal-element>
 
 <script type="module">
-  import {getOrganismsFormData, geneSearch} from "lis-graphql";
+  import {getOrganismsFormData, geneSearch, getGeneOrLocationLinkouts} from "lis-graphql";
   const geneSearchElement = document.getElementById('gene-search');
   geneSearchElement.formDataFunction = getOrganismsFormData;
   geneSearchElement.searchFunction = geneSearch;
+  const linkoutElement = document.getElementById('linkouts');
+  linkoutElement.linkoutFunction = getGeneOrLocationLinkouts;
+  // wait for the modal slot to load before adding an event listener
+  window.onload = (event) => {
+      const modal = document.getElementById('modal');
+      modal.addEventListener('toggle', (event) => {
+          const [{$el: link}, ...uikitComponents] = event.detail;
+          const {gene, location, start, end} = link.dataset;
+          let type = '';
+          let variables = {};
+          if (gene !== undefined) {
+              type = 'gene';
+              variables = {identifier: gene};
+          } else if (location !== undefined && start !== undefined && end !== undefined) {
+              type = 'location';
+              variables = {identifier: location, start: parseInt(start), end: parseInt(end)};
+          }
+          linkoutElement.getLinkouts({type, variables});
+      });
+  };
 </script>
 
