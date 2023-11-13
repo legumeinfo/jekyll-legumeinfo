@@ -16,6 +16,8 @@
       url: "https://soybase.org/community/StinkBugStratPlan/StinkBugStratPlan.php"
     - description: "Soybean Photographs"
       url: "https://soybase.org/resources/SoyWebPics/index.php"
+    - description: "Soybean Germplasm Committee"
+      url: "/community/soygermplasm"
   - name: "Soybean resources provided by the community"
     resources:
     - description: "American Soybean Associataion"
