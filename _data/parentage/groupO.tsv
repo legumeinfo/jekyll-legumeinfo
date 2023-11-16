@@ -1,0 +1,153 @@
+Individual	Parent1	Parent2	Pedigree	Synonyms	Comment
+O-200	Manchu	-	( Manchu ( PI_30593 , - ) , - )	-	Selection from Manchu
+O-4323	Capital	Hardome	( Capital , Hardome )	-	-
+O-4456	Hardome	Adams	( Hardome , Adams )	-	-
+O50-11	A.K.	Pagoda	( A.K. , Pagoda ( Manitoba_Brown , Mandarin ( PI_36653 , - ) ) )	-	-
+O52-793	A45-251	Flambeau	( A45-251 ( Mukden ( PI_50523 , - ) , Richland ) , Flambeau )	-	-
+O52-903	PI_194654	-	( PI_194654 ( Pagoda_2 , 201-14-20 ) , - )	-	Sel. 753-1 S.A. Holmberg same as PI 194654
+O56-2678	Blackhawk	Capital	( Blackhawk , Capital )	-	-
+O57-2824	Adams	A43K-884	( Adams , A43K-884 ( Mukden ( PI_50523 , - ) , Richland ) )	-	-
+O57-2826	Adams	A43K-884	( Adams , A43K-884 ( Mukden ( PI_50523 , - ) , Richland ) )	-	-
+O57-2905	Blackhawk	Capital	( Blackhawk , Capital )	-	-
+O57-2909	Blackhawk	Capital	( Blackhawk , Capital )	-	-
+O57-2921-M	O57-2921	-	( O57-2921 , - )	-	Farmer selection from O57-2921
+O57-2921-O	O57-2921	-	( O57-2921 , - )	-	Farmer selection from O57-2921
+O60-3396	PI_180501	-	( PI_180501 , - )	-	Selection from PI 180501 in Germany ca. 1949
+OAC-22-815	Fiskeby_V	Harosoy_63	( Fiskeby_V , Harosoy_63 )	-	-
+OAC00-17	A92-525014	OAC_Vision	( A92-525014 ( IA2008 ( BSR_101 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Kenwood ) , OAC_Vision )	-	-
+OAC07-26C	ND95-1564	OAC_Champion	( ND95-1564 ( Parker , Pioneer_P9061 ) , OAC_Champion ( M88-207 ( M81-99 ( M70-9 ( M64-3 ( Traverse , PI_196163 ) , Amsoy_71 ) , M68-201 ( Evans , Steele ) ) , Hardin ) , OAC_Bayfield ( KG_60 , Bicentennial ) ) )	-	-
+OAC86-07	Maple_Arrow	Williams	( Maple_Arrow , Williams )	-	-
+OAC92-08	OAC86-07	OT84-12	( OAC86-07 ( Maple_Arrow , Williams ) , OT84-12 )	-	-
+OAC97-07	Y3916F38	M84-916	( Y3916F38 , M84-916 )	-	-
+OAC_00-09	OAC_Atwood	OAC_Vision	( OAC_Atwood , OAC_Vision )	-	-
+OAC_00-11	OAC_Erin	OAC_Wingham	( OAC_Erin , OAC_Wingham )	-	-
+OAC_00-17	A92-525014	OAC_Vision	( A92-525014 ( IA2008 ( BSR_101 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Kenwood ) , OAC_Vision )	-	-
+OAC_01-15	OAC_Bayfield	OAC_Millennium	( OAC_Bayfield ( KG_60 , Bicentennial ) , OAC_Millennium )	-	-
+OAC_01-26	OAC_96-06	M91-821	( OAC_96-06 , M91-821 ( M83-766 ( Evans , M74-394 ( Hodgson , Wells ) ) , Leslie ( Hodgson_78 , Pella ) ) )	-	-
+OAC_02-25	OAC_97-01	OAC_Stratford	( OAC_97-01 ( KG20 ( McCall , 2S11 ( 059-903 , Hardome ) ) , OAC_Exeter ( A83-172007 ( A77-211021 ( Beeson , A72-507 ( Amsoy , Wayne ) ) , Merschman_Washington_V ( IVR_1120 , Calland ) ) , M75-25 ) ) , OAC_Stratford )	NULL	NULL
+OAC_02-31	OAC_Stratford	OAC97-07	( OAC_Stratford , OAC97-07 ( Y3916F38 , M84-916 ) )	-	-
+OAC_03-07	OAC_97-01	OAC_Walton	( OAC_97-01 ( KG20 ( McCall , 2S11 ( 059-903 , Hardome ) ) , OAC_Exeter ( A83-172007 ( A77-211021 ( Beeson , A72-507 ( Amsoy , Wayne ) ) , Merschman_Washington_V ( IVR_1120 , Calland ) ) , M75-25 ) ) , OAC_Walton )	-	-
+OAC_05-17_	RCAT_99-01	OAC_00-01	( RCAT_99-01 ( Northrup_King_S24-92 , RCAT_Bobcat ( T8508 , OAC86-07 ( Maple_Arrow , Williams ) ) ) , OAC_00-01 )	-	-
+OAC_05-21	OT99-2	OAC00-17	( OT99-2 , OAC00-17 ( A92-525014 ( IA2008 ( BSR_101 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Kenwood ) , OAC_Vision ) )	-	-
+OAC_07-26C	ND95-1564	OAC_Champion	( ND95-1564 ( Parker , Pioneer_P9061 ) , OAC_Champion ( M88-207 ( M81-99 ( M70-9 ( M64-3 ( Traverse , PI_196163 ) , Amsoy_71 ) , M68-201 ( Evans , Steele ) ) , Hardin ) , OAC_Bayfield ( KG_60 , Bicentennial ) ) )	-	-
+OAC_10-20C	OAC_Lakeview	RCAT_Wildcat	( OAC_Lakeview , RCAT_Wildcat ( Syngenta_S24-92 , OAC_Bayfield ( KG_60 , Bicentennial ) ) )	-	-
+OAC_10-24C	OAC_Lakeview	SD00-167	( OAC_Lakeview , SD00-167 ( M91-821 ( M83-766 ( Evans , M74-394 ( Hodgson , Wells ) ) , Leslie ( Hodgson_78 , Pella ) ) , A94-572028 ( Northrup_King_S19-90 , Bell ) ) )	-	-
+OAC_11-13C	OAC_Prodigy	S03-W4	( OAC_Prodigy , S03-W4 )	-	-
+OAC_11-34C	OAC_Prodigy	OAC_Champion	( OAC_Prodigy , OAC_Champion ( M88-207 ( M81-99 ( M70-9 ( M64-3 ( Traverse , PI_196163 ) , Amsoy_71 ) , M68-201 ( Evans , Steele ) ) , Hardin ) , OAC_Bayfield ( KG_60 , Bicentennial ) ) )	-	-
+OAC_12-21C	Colby	OAC_05-30	( Colby , OAC_05-30 )	-	-
+OAC_13-87C-SCN	SC_Starfield	OAC_Wallace	( SC_Starfield , OAC_Wallace )	-	-
+OAC_14-05C	OAC_Lakeview	Venus	( OAC_Lakeview , Venus )	-	-
+OAC_14-16C-SCN	OAC_Lakeview	S18-R6	( OAC_Lakeview , S18-R6 ( 89694 , 62755 ) )	-	-
+OAC_14-37C-SCN	OAC_Lakeview	S18-R6	( OAC_Lakeview , S18-R6 ( 89694 , 62755 ) )	-	-
+OAC_15-06C	OAC_Wallace	Colby	( OAC_Wallace , Colby )	-	-
+OAC_15-11C	OAC_Wallace	DH_748	( OAC_Wallace , DH_748 )	-	-
+OAC_15-13C	OAC_Wallace	DH_748	( OAC_Wallace , DH_748 )	-	-
+OAC_15-15C	OAC_Wallace	OAC_Sunny	( OAC_Wallace , OAC_Sunny )	-	-
+OAC_17-112C	DH618	OAC_11-51C	( DH618 , OAC_11-51C )	-	-
+OAC_17-129C	OAC_Strive	DH530	( OAC_Strive ( Colby , S03-W4 ) , DH530 ( OAC_Clinton , PH9718 ) )	-	-
+OAC_17-14C	OAC_07-26C	SeCan_11-12C	( OAC_07-26C ( ND95-1564 ( Parker , Pioneer_P9061 ) , OAC_Champion ( M88-207 ( M81-99 ( M70-9 ( M64-3 ( Traverse , PI_196163 ) , Amsoy_71 ) , M68-201 ( Evans , Steele ) ) , Hardin ) , OAC_Bayfield ( KG_60 , Bicentennial ) ) ) , SeCan_11-12C )	-	-
+OAC_17-56C	Saska	DH530	( Saska , DH530 ( OAC_Clinton , PH9718 ) )	-	-
+OAC_17-93C	SeCan_09-42C	Saska	( SeCan_09-42C , Saska )	-	-
+OAC_18-110C	OAC_Wallace	S23-T5	( OAC_Wallace , S23-T5 )	-	-
+OAC_18-111C-SCN	OAC_Wallace	Sheyenne	( OAC_Wallace , Sheyenne )	-	-
+OAC_18-58C	MN1410	OAC_Nation	( MN1410 , OAC_Nation ( OAC_02-25 ( OAC_97-01 ( KG20 ( McCall , 2S11 ( 059-903 , Hardome ) ) , OAC_Exeter ( A83-172007 ( A77-211021 ( Beeson , A72-507 ( Amsoy , Wayne ) ) , Merschman_Washington_V ( IVR_1120 , Calland ) ) , M75-25 ) ) , OAC_Stratford ) , RCAT_Corbett ( J-251 , Westag_97 ( RCAT_8703 ( FH_22-815 ( Harosoy_63 , Fiskeby_V ) , Hodgson ) , S26-06 ) ) ) )	-	-
+OAC_18-64C	OAC_Nation	Syngenta_S05-T6	( OAC_Nation ( OAC_02-25 ( OAC_97-01 ( KG20 ( McCall , 2S11 ( 059-903 , Hardome ) ) , OAC_Exeter ( A83-172007 ( A77-211021 ( Beeson , A72-507 ( Amsoy , Wayne ) ) , Merschman_Washington_V ( IVR_1120 , Calland ) ) , M75-25 ) ) , OAC_Stratford ) , RCAT_Corbett ( J-251 , Westag_97 ( RCAT_8703 ( FH_22-815 ( Harosoy_63 , Fiskeby_V ) , Hodgson ) , S26-06 ) ) ) , Syngenta_S05-T6 )	-	-
+OAC_18-75C	OAC_11-34C	Syngenta_S05-T6	( OAC_11-34C ( OAC_Prodigy , OAC_Champion ( M88-207 ( M81-99 ( M70-9 ( M64-3 ( Traverse , PI_196163 ) , Amsoy_71 ) , M68-201 ( Evans , Steele ) ) , Hardin ) , OAC_Bayfield ( KG_60 , Bicentennial ) ) ) , Syngenta_S05-T6 )	-	-
+OAC_211	Habaro	-	( Habaro ( PI_20405 , - ) , - )	-	Selection from Habaro
+OAC_88-09	OAC_Thames	-	( OAC_Thames , - )	-	-
+OAC_92-01	OAC_Eclipse	OT84-12	( OAC_Eclipse , OT84-12 )	-	-
+OAC_94-11	RCAT_Angora	Haroson	( RCAT_Angora ( Pride_B152 , Thompson_T8112 ( Harwood , Williams ) ) , Haroson )	-	-
+OAC_95-06	OT89-18	OAC_Shire	( OT89-18 ( Maple_Arrow , X881-57 ) , OAC_Shire )	-	-
+OAC_97-01	KG20	OAC_Exeter	( KG20 ( McCall , 2S11 ( 059-903 , Hardome ) ) , OAC_Exeter ( A83-172007 ( A77-211021 ( Beeson , A72-507 ( Amsoy , Wayne ) ) , Merschman_Washington_V ( IVR_1120 , Calland ) ) , M75-25 ) )	-	-
+OAC_97-02	OAC_Exeter	OAC_92-01	( OAC_Exeter ( A83-172007 ( A77-211021 ( Beeson , A72-507 ( Amsoy , Wayne ) ) , Merschman_Washington_V ( IVR_1120 , Calland ) ) , M75-25 ) , OAC_92-01 ( OAC_Eclipse , OT84-12 ) )	-	-
+OAC_97-07	Y3916F38	M84-916	( Y3916F38 , M84-916 )	-	-
+OAC_97-11	OAC_Auburn	M84-748	( OAC_Auburn ( Talon , OAC_Scorpio ( McCall , Bicentennial ) ) , M84-748 ( M75-274 ( Evans , L70T-543 ( L15 , Amsoy_71 ) ) , M76-151 ( M70-271 , Hodgson_78 ) ) )	-	-
+OAC_98-01	OAC_Frontier	ND88-686	( OAC_Frontier , ND88-686 ( Evans , Bicentennial ) )	-	-
+OAC_98-12	92546-01td	OAC_Bayfield	( 92546-01td ( Tall , OAC88-09 ) , OAC_Bayfield ( KG_60 , Bicentennial ) )	-	-
+OAC_99-21	M88-207	OAC92-08	( M88-207 ( M81-99 ( M70-9 ( M64-3 ( Traverse , PI_196163 ) , Amsoy_71 ) , M68-201 ( Evans , Steele ) ) , Hardin ) , OAC92-08 ( OAC86-07 ( Maple_Arrow , Williams ) , OT84-12 ) )	-	-
+OAC_99-36	OAC_Bayfield	Marcus_BC	( OAC_Bayfield ( KG_60 , Bicentennial ) , Marcus_BC )	-	-
+OAC_Adare	Colby	OAC_Perth	( Colby , OAC_Perth )	-	-
+OAC_Auburn	Talon	OAC_Scorpio	( Talon , OAC_Scorpio ( McCall , Bicentennial ) )	OAC 91-06	-
+OAC_Bayfield	KG_60	Bicentennial	( KG_60 , Bicentennial )	OAC 90-06	-
+OAC_Brooke	RCAT_Pinehurst	A01-409031	( RCAT_Pinehurst , A01-409031 ( A97-874007 ( A93-751019 ( A89-246006 , LS301 ( A79-140022 , A79-140011 ) ) , IA3006 ) , AgriPro_AP1995 ( AgriPro_AP1989 ( AgriPro_AP26 ( Beeson , Calland ) , Vickery ) , Asgrow_A3427 ( Asgrow_X3836 , Asgrow_A3127 ( Williams , Essex ) ) ) ) )	-	-
+OAC_Brussels	KG_60	Bicentennial	( KG_60 , Bicentennial )	OAC 90-02	-
+OAC_Champion	M88-207	OAC_Bayfield	( M88-207 ( M81-99 ( M70-9 ( M64-3 ( Traverse , PI_196163 ) , Amsoy_71 ) , M68-201 ( Evans , Steele ) ) , Hardin ) , OAC_Bayfield ( KG_60 , Bicentennial ) )	OAC 99-01	-
+OAC_Exeter	A83-172007	M75-25	( A83-172007 ( A77-211021 ( Beeson , A72-507 ( Amsoy , Wayne ) ) , Merschman_Washington_V ( IVR_1120 , Calland ) ) , M75-25 )	OAC 92-06	-
+OAC_Libra	FH_31-3	Evans	( FH_31-3 ( Fiskeby_V , Harosoy_63 ) , Evans )	PI 548638	-
+OAC_Nation	OAC_02-25	RCAT_Corbett	( OAC_02-25 ( OAC_97-01 ( KG20 ( McCall , 2S11 ( 059-903 , Hardome ) ) , OAC_Exeter ( A83-172007 ( A77-211021 ( Beeson , A72-507 ( Amsoy , Wayne ) ) , Merschman_Washington_V ( IVR_1120 , Calland ) ) , M75-25 ) ) , OAC_Stratford ) , RCAT_Corbett ( J-251 , Westag_97 ( RCAT_8703 ( FH_22-815 ( Harosoy_63 , Fiskeby_V ) , Hodgson ) , S26-06 ) ) )	-	-
+OAC_Scorpio	McCall	Bicentennial	( McCall , Bicentennial )	OAC 83-01	-
+OAC_Strive	Colby	S03-W4	( Colby , S03-W4 )	-	-
+OK88-5409	Forrest	Essex	( Forrest , Essex )	-	-
+OK88-5420	Douglas	Essex	( Douglas , Essex )	-	-
+OK89-5602	Bedford	Essex	( Bedford , Essex )	-	Confilicting parentage, maybe Essex x Sohoma
+OK89-5606	Bedford	Mitchell	( Bedford , Mitchell ( Amsoy , Wayne ) )	-	-
+OK89-5618	Coker_156	Essex	( Coker_156 ( Dare , D64-3937 ( Hill , D59-1619 ) ) , Essex )	-	-
+OK89-6001	Essex	Gail	( Essex , Gail )	-	-
+OK92-6508	Miles	Forrest	( Miles , Forrest )	-	-
+OK92-6520	Miles	Lee_74	( Miles , Lee_74 )	-	-
+OK92-6524	Miles	Lee_74	( Miles , Lee_74 )	-	-
+OK93-5907	Sohoma	Forrest	( Sohoma ( Davis , Lee_68 ) , Forrest )	-	-
+OK96-7006	Forrest	R85-3280	( Forrest , R85-3280 ( Narow , R75-579 ( Forrest , Mack ) ) )	-	-
+OK_710	Chief	Arksoy	( Chief , Arksoy ( PI_35335 , - ) )	-	-
+OR5-12-1T	PA4-11g1	Ripley	( PA4-11g1 , Ripley )	-	-
+ORC8605	HC77-878	A79-138024	( HC77-878 ( Woodworth , V68-1034 ( York , PI_71506 ) ) , A79-138024 ( A74-102011 ( M62-263 ( Grant , M319W ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Hawkeye ) ) , IVR_Ex4426 ( Amsoy , Wayne ) ) , C1523 ( Beeson , L63-1397 ) ) )	-	-
+ORC8805	A80-147002	Pride_B152	( A80-147002 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) , Pride_B152 )	-	-
+ORC9001	Pride_B152	Jewel	( Pride_B152 , Jewel ( Corsoy , Wells ) )	-	-
+ORC9201	Conrad	RCAT_Alliance	( Conrad , RCAT_Alliance ( Wells_II , Williams_82 ) )	-	-
+ORC9205	Conrad	RCAT_Alliance	( Conrad , RCAT_Alliance ( Wells_II , Williams_82 ) )	-	-
+ORC_14.150.284	RCAT_1003	LD-073419	( RCAT_1003 , LD-073419 )	-	-
+ORC_14.150.305	RCAT_1003	LD-073419	( RCAT_1003 , LD-073419 )	-	-
+ORC_14.150.307	RCAT_1003	LD-073419	( RCAT_1003 , LD-073419 )	-	-
+ORC_3119N	RCAT_1003	AAC_Malden	( RCAT_1003 , AAC_Malden )	-	-
+ORC_3313N	S18-R6	HD_369	( S18-R6 ( 89694 , 62755 ) , HD_369 )	-	-
+ORC_3419	SC_3313N_	OAC_Brooke	( SC_3313N_ , OAC_Brooke ( RCAT_Pinehurst , A01-409031 ( A97-874007 ( A93-751019 ( A89-246006 , LS301 ( A79-140022 , A79-140011 ) ) , IA3006 ) , AgriPro_AP1995 ( AgriPro_AP1989 ( AgriPro_AP26 ( Beeson , Calland ) , Vickery ) , Asgrow_A3427 ( Asgrow_X3836 , Asgrow_A3127 ( Williams , Essex ) ) ) ) ) )	-	-
+ORC_3713N	SC_Starfield	SC_2307	( SC_Starfield , SC_2307 ( Pro30-05 , OAC_Kent ) )	-	-
+ORC_4217N	RCAT_1001	S23-T5	( RCAT_1001 , S23-T5 )	-	-
+ORC_4219N	SC_3313N	AAC_Malden	( SC_3313N , AAC_Malden )	-	-
+ORC_4817N	Mersea	RCAT_1003	( Mersea , RCAT_1003 )	-	-
+ORC_5220N	SC_7912N	U11-610107	( SC_7912N , U11-610107 ( LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) , U03-100612 ( MSPB6S4 , Pioneer_P93B82 ) ) )	-	-
+ORC_5317N	Kenjiangdou_43	XC_2211	( Kenjiangdou_43 , XC_2211 )	-	-
+ORC_5517N	RCAT_1005	S23-T5	( RCAT_1005 , S23-T5 )	-	-
+ORC_5520N	LD07-3419	OAC_Bruton	( LD07-3419 ( WW115926 , LD00-2817 ) , OAC_Bruton )	-	-
+ORC_6218N	OAC_Prosper	SC_6218N	( OAC_Prosper , SC_6218N ( OAC_Prosper , S18-R6 ( 89694 , 62755 ) ) )	-	-
+ORC_8518N	OAC_Prosper	OX-111	( OAC_Prosper , OX-111 )	-	-
+ORC_8703	Hodgson	FH22-815	( Hodgson , FH22-815 )	-	-
+ORC_8715	SC_4009	SC_2407	( SC_4009 , SC_2407 )	-	-
+ORC_9002	A81-151026	Eglin	( A81-151026 ( A75-204018 ( IVR_4731 ( Amsoy , Wayne ) , Wirth ) , Century ) , Eglin ( AP6 , - ) )	-	-
+ORC_9205	Conrad	RCAT_Alliance	( Conrad , RCAT_Alliance ( Wells_II , Williams_82 ) )	-	-
+ORC_9404	ORC_8703	Northrup_King_S26-06	( ORC_8703 ( Hodgson , FH22-815 ) , Northrup_King_S26-06 )	-	-
+ORC_9803	PS_42	Northrup_King_S20-20	( PS_42 ( Premier , BK22-1-3 ) , Northrup_King_S20-20 )	-	-
+ORC_9808	Pioneer_P9273	Pride_B152	( Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) , Pride_B152 )	-	-
+OT80-2	Maple_Presto	Evans	( Maple_Presto , Evans )	-	-
+OT81-6	Maple_Presto	Evans	( Maple_Presto , Evans )	-	-
+OT84-14	Maple_Arrow	Wayne	( Maple_Arrow , Wayne )	-	-
+OT84-14BR	Maple_Arrow	Wayne	( Maple_Arrow , Wayne )	-	-
+OT84-7	231-4-5-1	McCall	( 231-4-5-1 , McCall )	-	-
+OT86-1	Coles	DO-9-2-1-2	( Coles , DO-9-2-1-2 )	-	-
+OT88-1	BD22115-13	Weber	( BD22115-13 , Weber )	-	-
+OT88-11	Maple_Ridge	Lakota	( Maple_Ridge , Lakota )	-	-
+OT89-16	AC_Proteus	-	( AC_Proteus , - )	-	Selection from AC Proteus
+OT89-18	Maple_Arrow	X881-57	( Maple_Arrow , X881-57 )	-	-
+OT89-24	OX611	Maple_Presto	( OX611 , Maple_Presto )	-	-
+OT92-8	Baron	Maple_Donovan	( Baron , Maple_Donovan )	-	-
+OW0800084	97026-N99-42648	MT103884	( 97026-N99-42648 , MT103884 ( X006 ( Syngenta_S19-90 , MP91133 ) , Syngenta_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) )	-	-
+OW0800367	G1490N	03KL015826	( G1490N , 03KL015826 ( Syngenta_S10-F2 ( Exp_91133 , Exp_C319428 ( McCall , S19-90 ) ) , Pioneer_P91B92 ) )	-	-
+OW0902053	03KL015366	Syngenta_S05-T6	( 03KL015366 ( Syngenta_S18-N5 ( Asgrow_A3431 , Syngenta_S18-11 ) , MT803006 ( ST2621 , Pioneer_P9172 ) ) , Syngenta_S05-T6 )	-	-
+OX-85242-3	C3S1-57	C3S1-53	( C3S1-57 , C3S1-53 )	-	-
+OX-85251-16	C3S1-62	C3S1-53	( C3S1-62 , C3S1-53 )	-	-
+OX-85284-4	C3S1-71	C3S1-69	( C3S1-71 , C3S1-69 )	-	-
+OX-89182-2-1	OX-8601-1	OX-85284-4	( OX-8601-1 , OX-85284-4 ( C3S1-71 , C3S1-69 ) )	-	-
+OX-89194-1-8	OX-85242-3	OX-85251-16	( OX-85242-3 ( C3S1-57 , C3S1-53 ) , OX-85251-16 ( C3S1-62 , C3S1-53 ) )	-	-
+OX-Hodgson_1cHm	Hodgson	M75-2	( Hodgson , M75-2 )	PI 548641, Haroson	-
+OX383	Corsoy	Harosoy_63	( Corsoy , Harosoy_63 )	-	-
+OX720-26	Harosoy	Higan	( Harosoy , Higan ( PI_80475 , - ) )	L60-347-l-60-28 	-
+OX752	A83-378001	OX736	( A83-378001 , OX736 )	-	-
+OXC-9227-4	OX-89182-2-1	OX-89194-1-8	( OX-89182-2-1 ( OX-8601-1 , OX-85284-4 ( C3S1-71 , C3S1-69 ) ) , OX-89194-1-8 ( OX-85242-3 ( C3S1-57 , C3S1-53 ) , OX-85251-16 ( C3S1-62 , C3S1-53 ) ) )	-	-
+OXC-9227-7	OX-89182-2-1	OX-89194-1-8	( OX-89182-2-1 ( OX-8601-1 , OX-85284-4 ( C3S1-71 , C3S1-69 ) ) , OX-89194-1-8 ( OX-85242-3 ( C3S1-57 , C3S1-53 ) , OX-85251-16 ( C3S1-62 , C3S1-53 ) ) )	-	-
+OXR-96243	Northrup_King_S29-18	PI_274421	( Northrup_King_S29-18 , PI_274421 )	-	-
+OXR961095	Resnik_RR	HS93-1882-41	( Resnik_RR , HS93-1882-41 ( HS88-4906 ( Conrad , Hayes ) , BARC-6 ( CX797-21 , D76-8070 ) ) )	-	-
+Oakland	L66L-137	Calland	( L66L-137 ( Wayne , L57-0034 ( Clark , Adams ) ) , Calland )	PI 548543, A74-303013 	PVP 7900062
+Ogden	Tokyo	PI_54610	( Tokyo ( PI_8424 , - ) , PI_54610 )	PI 548477	-
+Ohio_FG1	LS301	HS84-6247	( LS301 ( A79-140022 , A79-140011 ) , HS84-6247 )	PI 584469, HS90-3508	PVP 9500038
+Otootan	PI_548479	-	( PI_548479 , - )	-	no previous name; Selection from an introduction, Released 1918
+Ottawa	Chippewa	-	( Chippewa , - )	PI 548673	Rogue selection from Chippewa

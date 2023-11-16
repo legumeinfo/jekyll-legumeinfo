@@ -1,0 +1,264 @@
+Individual	Parent1	Parent2	Pedigree	Synonyms	Comment
+02JR310007	Pioneer_P93B82	Pioneer_P93B82	( CM4035N , Pioneer_P93B82 )	-	Syngenta
+02JR310007BC2	02JR310007	02JR310007BC1	( 02JR310007 ( CM4035N , Pioneer_P93B82 ) , 02JR310007BC1 )	-	Syngenta
+02JR310007BC3	02JR310007	02JR310007BC2	( 02JR310007 ( CM4035N , Pioneer_P93B82 ) ( CM4035N , Pioneer_P93B82 ) , 02JR310007BC2 ( 02JR310007 ( CM4035N , Pioneer_P93B82 ) , 02JR310007BC1 ) )	-	Syngenta
+02JR310061	CM4035N	Pioneer_P93B82	( CM4035N , Pioneer_P93B82 )	-	Syngenta
+02JR318004	Syngenta_S32-Z3	CM4035N	( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , CM4035N )	-	Syngenta
+02JR318004BC2	02JR318004	02JR318004BC1	( 02JR318004 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , CM4035N ) , 02JR318004BC1 )	-	Syngenta
+02JR318004BC3	02JR318004	02JR318004BC2	( 02JR318004 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , CM4035N ) ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) , CM4035N ) , 02JR318004BC2 ( 02JR318004 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , CM4035N ) , 02JR318004BC1 ) )	-	Syngenta
+02JR423003	Syngenta_S25-J5	Syngenta_S37-N4	( Syngenta_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , Syngenta_S37-N4 )	-	Syngenta
+02JR423003BC2	02JR423003	02JR423003BC1	( 02JR423003 ( Syngenta_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , Syngenta_S37-N4 ) , 02JR423003BC1 )	-	Syngenta
+02JR423003BC3	02JR423003	02JR423003BC2	( 02JR423003 ( Syngenta_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , Syngenta_S37-N4 ) ( Syngenta_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) , Syngenta_S37-N4 ) , 02JR423003BC2 ( 02JR423003 ( Syngenta_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , Syngenta_S37-N4 ) , 02JR423003BC1 ) )	-	Syngenta
+02KG219016	Pioneer_P95B33	B511152	( Pioneer_P95B33 , B511152 )	-	Syngenta
+02RM018047	SJ833009	WX1964	( SJ833009 ( Syngenta_S38-L5 , Pioneer_P9281 ) , WX1964 )	-	Syngenta
+03DL090957	Pioneer_P90B43	Syngenta_S00-Z1	( Pioneer_P90B43 , Syngenta_S00-Z1 )	-	Syngenta
+03JR102982	WW710273	Syngenta_S42-H1	( WW710273 ( MO02052 , Asgrow_A2506 ) , Syngenta_S42-H1 )	-	Syngenta
+03JR103829	CM4035N	Syngneta_S43-B1	( CM4035N , Syngneta_S43-B1 )	-	Syngenta
+03JR321086	M815869	M813957	( M815869 ( 13404BB2 , Asgrow_A2722 ) , M813957 ( 3276 , Pioneer_P9281 ) )	-	Syngenta
+03JR321088	M815869	M813957	( M815869 ( 13404BB2 , Asgrow_A2722 ) , M813957 ( 3276 , Pioneer_P9281 ) )	-	Syngenta
+03KG212010	B640235	J634773	( B640235 ( Asgrow_A4715 , CM428 ) , J634773 ( MP02052-11 ( CM293 , Syngenta_S24-92 ) , Asgrow_A3431 ) )	-	Syngenta
+03KL015366	Syngenta_S18-N5	MT803006	( Syngenta_S18-N5 ( Asgrow_A3431 , Syngenta_S18-11 ) , MT803006 ( ST2621 , Pioneer_P9172 ) )	-	Syngenta
+03KL015644	Syngenta_S18-N5	Pioneer_P92B12	( Syngenta_S18-N5 ( Asgrow_A3431 , Syngenta_S18-11 ) , Pioneer_P92B12 )	-	Syngenta
+03KL015751	M815869	Pioneer_P92B12	( M815869 ( 13404BB2 , Asgrow_A2722 ) , Pioneer_P92B12 )	-	Syngenta
+03KL015826	Syngenta_S10-F2	Pioneer_P91B92	( Syngenta_S10-F2 ( Exp_91133 , Exp_C319428 ( McCall , S19-90 ) ) , Pioneer_P91B92 )	-	Syngenta
+03RM893031	Pioneer_P93B87	M816626	( Pioneer_P93B87 , M816626 ( ST2621 , Asgrow_A3313 ) )	-	Syngenta
+03RM893092	Pioneer_P93B87	M816626	( Pioneer_P93B87 , M816626 ( ST2621 , Asgrow_A3313 ) )	-	Syngenta
+03RM893902	Pioneer_P93B87	M816626	( Pioneer_P93B87 , M816626 ( ST2621 , Asgrow_A3313 ) )	-	Syngenta
+04DL106306	MT802867	Syngenta_S18-N5	( MT802867 ( Syngenta_S22-C3 , Asgrow_A1900 ) , Syngenta_S18-N5 ( Asgrow_A3431 , Syngenta_S18-11 ) )	-	Syngenta
+04KG128222	BA743303	BA847094	( BA743303 ( Asgrow_A5885 ( Asgrow_X5512 , Asgrow_X5803 ) , B217809 ( X9054 ( Coker_156 ( Dare , D64-3937 ( Hill , D59-1619 ) ) , Nathan ) , Asgrow_A5403 ) ) , BA847094 ( DPL_3519s , Syngenta_S59-V6 ) )	-	Syngenta
+04KL108370	Syngenta_S21-A1	M815869	( Syngenta_S21-A1 , M815869 ( 13404BB2 , Asgrow_A2722 ) )	-	Syngenta
+04KL108888	M815869	CL575743	( M815869 ( 13404BB2 , Asgrow_A2722 ) , CL575743 ( Syngenta_S08-80 , Asgrow_A1900 ) )	-	Syngenta
+04KL109914	M709710	MT802867	( M709710 , MT802867 ( Syngenta_S22-C3 , Asgrow_A1900 ) )	-	Syngenta
+04KL109914BC2	04KL109914	04KL109914BC1	( 04KL109914 ( M709710 , MT802867 ( Syngenta_S22-C3 , Asgrow_A1900 ) ) , 04KL109914BC1 )	-	Syngenta
+04KL109914BC3	04KL109914	04KL109914BC2	( 04KL109914 ( M709710 , MT802867 ( Syngenta_S22-C3 , Asgrow_A1900 ) ) ( M709710 , MT802867 ( Syngenta_S22-C3 , Asgrow_A1900 ) ( Syngenta_S22-C3 , Asgrow_A1900 ) ) , 04KL109914BC2 ( 04KL109914 ( M709710 , MT802867 ( Syngenta_S22-C3 , Asgrow_A1900 ) ) , 04KL109914BC1 ) )	-	Syngenta
+04RM822970	Syngenta_S30-Y8	DST3218	( Syngenta_S30-Y8 ( Pioneer_P9362 , Syngenta_S35-35 ) , DST3218 )	-	Syngenta
+05DL285328	CL605723	CL800127	( CL605723 ( WW214164 , Syngenta_S08-80 ) , CL800127 ( Syngneta_S03-W4 , L924904 ( KG41 , Syngenta_S38-83 ) ) )	-	Syngenta
+05DL345858	MT802867	98186-A01-30144	( MT802867 ( Syngenta_S22-C3 , Asgrow_A1900 ) , 98186-A01-30144 )	-	Syngenta
+05JR007045	Ina	MT012091	( Ina ( Jack , Hartwig ) , MT012091 ( X006 ( Syngenta_S19-90 , MP91133 ) , Syngenta_S24-K4 ) )	-	Syngenta
+05JR210562	Syngenta_S32-Z3	Syngenta_S49-Q9	( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , Syngenta_S49-Q9 )	-	Syngenta
+05KL119276	Syngenta_S10-F2	MT002989	( Syngenta_S10-F2 ( Exp_91133 , Exp_C319428 ( McCall , S19-90 ) ) , MT002989 ( Syngenta_S16-Y6 ( Asgrow_A2242 ( Sherman , XP1928 ) , Exp_02052-11 ) , X022 ( Pioneer_P91608 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) )	-	Syngenta
+05KL134039	Pioneer_P91M10	H-1852RR	( Pioneer_P91M10 , H-1852RR )	-	Syngenta
+05KL134976	Syngenta_S10-F2	MT013548	( Syngenta_S10-F2 ( Exp_91133 , Exp_C319428 ( McCall , S19-90 ) ) , MT013548 ( X006 ( Syngenta_S19-90 , MP91133 ) , Syngenta_S24-K4 ) )	-	Syngenta
+05KL135608	MT002989	X312R	( MT002989 ( Syngenta_S16-Y6 ( Asgrow_A2242 ( Sherman , XP1928 ) , Exp_02052-11 ) , X022 ( Pioneer_P91608 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) , X312R ( X006 ( Syngenta_S19-90 , MP91133 ) , Syngenta_S24-K4 ) )	-	Syngenta
+06BR337018	Pioneer_P93B86	Syngenta_S28-G1	( Pioneer_P93B86 , Syngenta_S28-G1 )	-	Syngenta
+06BR381007	WW115926	99702-B02-58205	( WW115926 , 99702-B02-58205 ( B3491N , AP2952N ) )	-	Syngenta
+06DL384689	DST2344	Dover	( DST2344 , Dover )	-	Syngenta
+06DL480307	Syngenta_S05-T6	OACWallace	( Syngenta_S05-T6 , OACWallace )	-	Syngenta
+06DL480732	Syngenta_S12-C2	CL984701	( Syngenta_S12-C2 , CL984701 ( X006 ( Syngenta_S19-90 , MP91133 ) , Syngenta_S00-Z1 ) )	-	Syngenta
+06DL480868	Syngenta_S05-T6	OACWallace	( Syngenta_S05-T6 , OACWallace )	-	Syngenta
+06GK614011	MT100710	MT103884	( MT100710 ( X006 ( Syngenta_S19-90 , MP91133 ) ( Syngenta_S19-90 , MP91133 ) , Pioneer_P92B22 ) , MT103884 ( X006 ( Syngenta_S19-90 , MP91133 ) , Syngenta_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) )	-	Syngenta
+06GK615309	MT100710	MT9078008	( MT100710 ( X006 ( Syngenta_S19-90 , MP91133 ) , Pioneer_P92B22 ) , MT9078008 ( PXB19J99 , X022 ( Pioneer_P91608 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) )	-	Syngenta
+06JR202581	SJ030546	WW115926	( SJ030546 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , Asgrow_A4341 ) , WW115926 )	-	Syngenta
+06JR205288	DST2344	SJ031808	( DST2344 , SJ031808 ( CX369c ( - , -_ ) , Syngenta_S38-T8 ) )	-	Syngenta
+06JR205420	WW115926	SJ031808	( WW115926 , SJ031808 ( CX369c ( - , -_ ) , Syngenta_S38-T8 ) )	-	Syngenta
+06JR207459	SJ034878	SJ934809	( SJ034878 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , Syngenta_S38-E9 ) , SJ934809 ( Syngenta_S42-H1 , Syngenta_S38-T8 ) )	-	Syngenta
+06JR208211	SJ034878	SJ934809	( SJ034878 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , Syngenta_S38-E9 ) , SJ934809 ( Syngenta_S42-H1 , Syngenta_S38-T8 ) )	-	Syngenta
+06KG218440	BA018212	BA016127	( BA018212 ( Carver , Syngenta_S80-J2 ) , BA016127 )	-	Syngenta
+06KL162149	M815869	MT103884	( M815869 ( 13404BB2 , Asgrow_A2722 ) , MT103884 ( X006 ( Syngenta_S19-90 , MP91133 ) , Syngenta_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) )	-	Syngenta
+06KL162978	MT002750	SJ833009	( MT002750 ( ST1970 , L932113 ( Syngneta_S12-49 , Syngenta_S24-92 ) ) , SJ833009 ( Syngenta_S38-L5 , Pioneer_P9281 ) )	-	Syngenta
+06KL163285	97026-N99-42648	MT103884	( 97026-N99-42648 , MT103884 ( X006 ( Syngenta_S19-90 , MP91133 ) , Syngenta_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) )	-	Syngenta
+06KL163375	WW703873	97026-N99-42648	( WW703873 ( Asgrow_A2540 , Pioneer_P9362 ) , 97026-N99-42648 )	-	Syngenta
+06KL167872	MT103884	Pioneer_P91M10	( MT103884 ( X006 ( Syngenta_S19-90 , MP91133 ) , Syngenta_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) , Pioneer_P91M10 )	-	Syngenta
+06NB199076	M815869	97824-N00-47977	( M815869 ( 13404BB2 , Asgrow_A2722 ) , 97824-N00-47977 ( 92283-A95-30338 ( AP2880 , 85336-B88-31056 ( 82266-B84-09240 ( Williams_82 , Asgrow_A3127 ( Williams , Essex ) ) , Harper ) ) , Pioneer_P9234 ) )	-	Syngenta
+06NB199520	WW815289	97284-N00-47977	( WW815289 ( 13404BB2 , Asgrow_A2722 ) , 97284-N00-47977 ( 92283-A95-30438 ( AP2880 , 85336-B88-31056 ( 82266-B84-09240 ( Williams_82 , Asgrow_A3127 ( Williams , Essex ) ) , Harper ) ) , Pioneer_P9234 ) )	-	Syngenta
+06NB204846	WW115926	98211-A01-36153	( WW115926 , 98211-A01-36153 ( Syngenta_S21-A1 , 92032-A95-58316 ( AP2880 , Asgrow_A2872 ( Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Asgrow_A3501 ( Williams_82 , Asgrow_A3127 ( Williams , Essex ) ) ) ) ) )	-	Syngenta
+06RM934415	WW115926	Pioneer_P93B15	( WW115926 , Pioneer_P93B15 )	-	Syngenta
+07DL599351	Syngenta_S03-W4	G-1549	( Syngenta_S03-W4 , G-1549 )	-	Syngenta
+07RG381326	OACPrudence	Syngenta_S03-W4	( OACPrudence , Syngenta_S03-W4 )	-	Syngenta
+103321	Asgrow_A3559	AG3502	( Asgrow_A3559 , AG3502 )	PI 632695	Monsanto Technology, LLC, PVP 200300119
+1045636	AG2107RR2YBC2	AG00901	( AG2107RR2YBC2 , AG00901 )	PI 673055	Monsanto Technology, LLC, PVP 201400424
+1045652	JW2007A6-D0YN	MK0107A1B0RN	( JW2007A6-D0YN , MK0107A1B0RN )	PI 669972	Monsanto Technology, LLC, PVP 201400013
+1045681	28-61RY	CR2-1503N	( 28-61RY , CR2-1503N )	PI 673056	Monsanto Technology, LLC, PVP 201400425
+1045692	MK0707A3-D0RN	RM2007A1-D0YN	( MK0707A3-D0RN , RM2007A1-D0YN )	PI 671841	Monsanto Technology, LLC, PVP 201400129
+1045703	JW1508E7-A0YN	RM1609B8-B0YN	( JW1508E7-A0YN , RM1609B8-B0YN )	PI 673058	Monsanto Technology, LLC, PVP 201400427
+1045742	260744-14	RM2007A1-D0YN	( 260744-14 , RM2007A1-D0YN )	PI 669985	Monsanto Technology, LLC, PVP 201400026
+1045746	JW1508E7-A0YN	RM1609B8-B0YN	( JW1508E7-A0YN , RM1609B8-B0YN )	PI 673059	Monsanto Technology, LLC, PVP 201400428
+1045748	JW1508E7-A0YN	RM1609B8-B0YN	( JW1508E7-A0YN , RM1609B8-B0YN )	PI 673060	Monsanto Technology, LLC, PVP 201400429
+1045749	JW1508E7-A0YN	RM1609BB-B0YN	( JW1508E7-A0YN , RM1609BB-B0YN )	PI 669986	Monsanto Technology, LLC, PVP 201400027
+1045798	JW1508E7-A0YN	RM1909B5-B0YN	( JW1508E7-A0YN , RM1909B5-B0YN )	PI 673061	Monsanto Technology, LLC, PVP 201400430
+1045962	AG2002	RM1909B5-D0YN	( AG2002 , RM1909B5-D0YN )	PI 673062	Monsanto Technology, LLC, PVP 201400431
+1046238	AG3132	AG3130	( AG3132 , AG3130 )	PI 673064	Monsanto Technology, LLC, PVP 201400433
+1046250	BL3409A8-D0YN	AG3130	( BL3409A8-D0YN , AG3130 )	PI 673065	Monsanto Technology, LLC, PVP 201400434
+1046251	BL3409A8-D0YN	AG3130	( BL3409A8-D0YN , AG3130 )	PI 669987	Monsanto Technology, LLC, PVP 201400028
+1046289	BL3509A9-D0YL	E93109D5-G0YV	( BL3509A9-D0YL , E93109D5-G0YV )	PI 673110	Monsanto Technology, LLC, PVP 201400497
+1046317	FN3209D2-B0YN	CS-29R212N	( FN3209D2-B0YN , CS-29R212N )	PI 673066	Monsanto Technology, LLC, PVP 201400435
+1046394	BL3409A8-D0YN	AG3130	( BL3409A8-D0YN , AG3130 )	PI 673067	Monsanto Technology, LLC, PVP 201400436
+1046642	CP3907A4-D0RN	CP3408A5-D0YN	( CP3907A4-D0RN , CP3408A5-D0YN )	PI 673068	Monsanto Technology, LLC, PVP 201400437
+1046750	CEI4606A0X-0004	CP3708D5-A0YN	( CEI4606A0X-0004 , CP3708D5-A0YN )	PI 673069	Monsanto Technology, LLC, PVP 201400438
+1046882	GL5007A1-D0RN	GL4008D9-B0YN	( GL5007A1-D0RN , GL4008D9-B0YN )	PI 669988	Monsanto Technology, LLC, PVP 201400029
+1064131	AG1832	AW1911F1-B0BAH	( AG1832 , AW1911F1-B0BAH )	-	-
+1064165	MKZ809A2-B4YN	FL0711D3-D0BAH	( MKZ809A2-B4YN , FL0711D3-D0BAH )	-	-
+10928	80053	4MP4148-32	( 80053 , 4MP4148-32 ( 82285 , G2436A ) )	-	-
+11-54-132	M10	Capital	( M10 , Capital )	-	-
+1100-07	Forrest	Tracy	( Forrest , Tracy )	-	-
+11824	ST1386-23	AG2101	( ST1386-23 , AG2101 )	PI 632702	Monsanto Technology, LLC, PVP 200300126
+1190-02	Mack	Forrest	( Mack , Forrest )	-	-
+1190-19	Mack	Forrest	( Mack , Forrest )	-	-
+12102R024	YB23E	ST1570	( YB23E ( Archer , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , ST1570 )	-	-
+12223R006	Pioneer_P9007	90733	( Pioneer_P9007 , 90733 ( Pioneer_P9172 , 90676 ( ST2250 , G40-3P9392 ) ) )	-	-
+12465	Pioneer_P9132	90733	( Pioneer_P9132 , 90733 ( Pioneer_P9172 , 90676 ( ST2250 , G40-3P9392 ) ) )	-	-
+13007	Asgrow_A3304	90733	( Asgrow_A3304 , 90733 ( Pioneer_P9172 , 90676 ( ST2250 , G40-3P9392 ) ) )	-	-
+132963	CP3678	AG4301	( CP3678 , AG4301 )	PI 636122	Monsanto Technology, LLC, PVP 200400322
+133515	133220	Pioneer_P93B82	( 133220 , Pioneer_P93B82 )	-	-
+13744	Asgrow_A5959	AGM58702	( Asgrow_A5959 , AGM58702 )	PI 636125	Monsanto Technology, LLC, PVP 200400325
+149-66	Corsoy	Magna	( Corsoy , Magna )	-	-
+151167	Asgrow_A3244	AG3201	( Asgrow_A3244 , AG3201 )	PI 632703	Monsanto Technology, LLC, PVP 200300127
+152167	Asgrow_A3469	AGH36801	( Asgrow_A3469 , AGH36801 )	PI 636118	Monsanto Technology, LLC, PVP 200400318
+17D	Williams_82	PI_283327	( Williams_82 , PI_283327 )	-	Williams 82 was mutagenized
+1CH244B	Dairyland_DSR304	W20	( Dairyland_DSR304 ( Williams , - ) , W20 )	-	-
+1M13-236029	SD06-393	M07-375020	( SD06-393 ( SDX98-74151 ( IA_2034 , C1954 ) , M96-71481 ) , M07-375020 )	-	-
+1M13-250051	M06-288190	AR09-191018	( M06-288190 , AR09-191018 )	-	-
+2-40A	Arksoy	-	( Arksoy ( PI_35335 , - ) , - )	-	-
+208463	AP1275	AG0801	( AP1275 , AG0801 )	PI 636111	Monsanto Technology, LLC, PVP 200400311
+210197	301	306	( 301 ( Crusher , Legacy ) , 306 ( Crusher , Legacy ) )	PI 672498	2331535 ONTARIO LTD, PVP 201400238
+21028	Pioneer_P9392	Pioneer_P9321	( Pioneer_P9392 ( Asgrow_A3127 ( Williams , Essex ) , Gnome ) , Pioneer_P9321 )	-	-
+21030R017	ST1590	ST2250	( ST1590 , ST2250 )	-	-
+210342	301	306	( 301 ( Crusher , Legacy ) , 306 ( Crusher , Legacy ) )	PI 672499	2331535 ONTARIO LTD, PVP 201400239
+21052	ST2250	90676A	( ST2250 , 90676A ( ST2250 , G40-3P9392 ) )	-	-
+21063	Asgrow_A3237	90683C	( Asgrow_A3237 , 90683C ( Pioneer_P9362 , G40-3P9392 ) )	-	-
+21066	MO12557	90688A	( MO12557 , 90688A ( Asgrow_A4715 , G40-3P9392 ) )	-	-
+21069	MO92117-18	90682E	( MO92117-18 , 90682E ( Pioneer_P9342 , G40-3P9341 ) )	-	-
+21070	Pioneer_P9412	90688C	( Pioneer_P9412 , 90688C ( Asgrow_A4715 , G40-3P9392 ) )	-	-
+21080	Pioneer_P9362	90682C	( Pioneer_P9362 , 90682C ( Pioneer_P9342 , G40-3P9341 ) )	-	-
+21082	Pioneer_P9381	90685A	( Pioneer_P9381 , 90685A ( Pioneer_P9381 , G40-3P9392 ) )	-	-
+21097	Asgrow_A3237	21063	( Asgrow_A3237 , 21063 ( Asgrow_A3237 , 90683C ( Pioneer_P9362 , G40-3P9392 ) ) )	-	-
+21111	Pioneer_P9362	21080	( Pioneer_P9362 , 21080 ( Pioneer_P9362 , 90682C ( Pioneer_P9342 , G40-3P9341 ) ) )	-	-
+21119	Pioneer_P9304	21070	( Pioneer_P9304 , 21070 ( Pioneer_P9412 , 90688C ( Asgrow_A4715 , G40-3P9392 ) ) )	-	-
+21132	Asgrow_A2396	21082	( Asgrow_A2396 ( CM214 , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ) , 21082 ( Pioneer_P9381 , 90685A ( Pioneer_P9381 , G40-3P9392 ) ) )	-	-
+211948	Asgrow_A3244	CPG3289C	( Asgrow_A3244 , CPG3289C )	PI 636117	Monsanto Technology, LLC, PVP 200400317
+21270LBW39	MO01718	Pioneer_P9171	( MO01718 ( MO50321 ( MO01010 ( Harcor , CM183 ) ( Harcor , CM183 ) , A8 ) , MO50226 ( ST3010 , MO01010 ( Harcor , CM183 ) ) ) , Pioneer_P9171 ( Pioneer_P9271 , Asgrow_A3127 ( Williams , Essex ) ) )	-	-
+212930	602216	APG0972	( 602216 , APG0972 )	PI 636112	Monsanto Technology, LLC, PVP 200400312
+21710	Asgrow_A3237	21097	( Asgrow_A3237 , 21097 ( Asgrow_A3237 , 21063 ( Asgrow_A3237 , 90683C ( Pioneer_P9362 , G40-3P9392 ) ) ) )	-	-
+21710N120	Asgrow_A3237	21097	( Asgrow_A3237 , 21097 ( Asgrow_A3237 , 21063 ( Asgrow_A3237 , 90683C ( Pioneer_P9362 , G40-3P9392 ) ) ) )	-	-
+21720	Pioneer_P9343	21111	( Pioneer_P9343 , 21111 ( Pioneer_P9362 , 21080 ( Pioneer_P9362 , 90682C ( Pioneer_P9342 , G40-3P9341 ) ) ) )	-	-
+21721	Asgrow_A1900	21119	( Asgrow_A1900 , 21119 ( Pioneer_P9304 , 21070 ( Pioneer_P9412 , 90688C ( Asgrow_A4715 , G40-3P9392 ) ) ) )	-	-
+21726	Asgrow_A2396	21132	( Asgrow_A2396 ( CM214 , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ) ( CM214 , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) , 21132 ( Asgrow_A2396 ( CM214 , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ) , 21082 ( Pioneer_P9381 , 90685A ( Pioneer_P9381 , G40-3P9392 ) ) ) )	-	-
+221524	DKB26-52	AG2703	( DKB26-52 , AG2703 )	PI 636115	Monsanto Technology, LLC, PVP 200400315
+22302S025	ST2660	Syngenta_S30-06	( ST2660 , Syngenta_S30-06 )	-	-
+236101	CI3478	AG3702	( CI3478 , AG3702 )	PI 636116	Monsanto Technology, LLC, PVP 200400316
+25340	ST0280	AG0801	( ST0280 , AG0801 )	PI 632696	Monsanto Technology, LLC, PVP 200300120
+275934	CI43980	AG4702	( CI43980 , AG4702 )	PI 636123	Monsanto Technology, LLC, PVP 200400323
+2S11	059-903	Hardome	( 059-903 , Hardome )	-	-
+30094	5961	Asgrow_A3733	( 5961 ( Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Resnik ) , Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) )	-	-
+301	Crusher	Legacy	( Crusher , Legacy )	-	-
+30107	XB33B	5961	( XB33B ( CM304BR , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , 5961 ( Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) , Resnik ) )	-	-
+30124	Pioneer_P9303	30094	( Pioneer_P9303 , 30094 ( 5961 ( Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Resnik ) , Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) )	-	-
+30129	XB33B	30107	( XB33B ( CM304BR , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ( CM304BR , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ( Williams , Essex ) ) , 30107 ( XB33B ( CM304BR , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , 5961 ( Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) , Resnik ) ) )	-	-
+30199	Pioneer_P9303	30124	( Pioneer_P9303 , 30124 ( Pioneer_P9303 , 30094 ( 5961 ( Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Resnik ) , Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) ) )	-	-
+30214	Pioneer_P9341	30129	( Pioneer_P9341 , 30129 ( XB33B ( CM304BR , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ( CM304BR , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ( Williams , Essex ) ) , 30107 ( XB33B ( CM304BR , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , 5961 ( Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) , Resnik ) ) ) )	-	-
+30289F2	Pioneer_P9162	30214	( Pioneer_P9162 ( Pioneer_P2981 , Asgrow_A1937 ( Hodgson , D3003 ( Wayne , - ) ) ) , 30214 ( Pioneer_P9341 , 30129 ( XB33B ( CM304BR , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ( CM304BR , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ( Williams , Essex ) ) , 30107 ( XB33B ( CM304BR , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , 5961 ( Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) , Resnik ) ) ) ) )	-	-
+30294	Pioneer_P9303	30199	( Pioneer_P9303 , 30199 ( Pioneer_P9303 , 30124 ( Pioneer_P9303 , 30094 ( 5961 ( Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Resnik ) , Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) ) ) )	-	-
+30310	Pioneer_P9303	30294	( Pioneer_P9303 , 30294 ( Pioneer_P9303 , 30199 ( Pioneer_P9303 , 30124 ( Pioneer_P9303 , 30094 ( 5961 ( Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Resnik ) , Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) ) ) ) )	-	-
+30337R089	Pioneer_P9162	30289F2	( Pioneer_P9162 ( Pioneer_P2981 , Asgrow_A1937 ( Hodgson , D3003 ( Wayne , - ) ) ) ( Pioneer_P2981 , Asgrow_A1937 ( Hodgson , D3003 ( Wayne , - ) ) ( Hodgson , D3003 ( Wayne , - ) ( Wayne , - ) ) ) , 30289F2 ( Pioneer_P9162 ( Pioneer_P2981 , Asgrow_A1937 ( Hodgson , D3003 ( Wayne , - ) ) ) , 30214 ( Pioneer_P9341 , 30129 ( XB33B ( CM304BR , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ( CM304BR , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ( Williams , Essex ) ) , 30107 ( XB33B ( CM304BR , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , 5961 ( Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) , Resnik ) ) ) ) ) )	-	-
+3034	Amsoy	303S11	( Amsoy , 303S11 )	PI 556483	The Lubrizol Corporation, PVP 7400097
+3035	Ax50F58-2	PI_31122	( Ax50F58-2 , PI_31122 )	PI 556544	The Lubrizol Corporation, PVP 7700075
+30388	Pioneer_P9303	30310	( Pioneer_P9303 , 30310 ( Pioneer_P9303 , 30294 ( Pioneer_P9303 , 30199 ( Pioneer_P9303 , 30124 ( Pioneer_P9303 , 30094 ( 5961 ( Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Resnik ) , Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) ) ) ) ) )	-	-
+306	Crusher	Legacy	( Crusher , Legacy )	-	-
+31438	Pioneer_P9254	Pioneer_P9281	( Pioneer_P9254 , Pioneer_P9281 )	-	-
+3171	L77-994	Pioneer_P1677	( L77-994 , Pioneer_P1677 )	-	-
+31713H013	Asgrow_A3431	Pioneer_P9352	( Asgrow_A3431 , Pioneer_P9352 )	-	-
+3172	HP20-20	HW79149	( HP20-20 , HW79149 )	PI 561211	Novartis Seeds, Inc., PVP 9200174
+31910	31438	Pioneer_P9254	( 31438 ( Pioneer_P9254 , Pioneer_P9281 ) , Pioneer_P9254 )	-	-
+3202	V295	Asgrow_A3127	( V295 , Asgrow_A3127 ( Williams , Essex ) )	PI 561212	Novartis Seeds, Inc., PVP 9200175
+32127	Pioneer_P9352	31910	( Pioneer_P9352 , 31910 ( 31438 ( Pioneer_P9254 , Pioneer_P9281 ) , Pioneer_P9254 ) )	-	-
+32745	Pioneer_P9352	32127	( Pioneer_P9352 , 32127 ( Pioneer_P9352 , 31910 ( 31438 ( Pioneer_P9254 , Pioneer_P9281 ) , Pioneer_P9254 ) ) )	-	-
+32870F2	Pioneer_P9352	21111	( Pioneer_P9352 , 21111 ( Pioneer_P9362 , 21080 ( Pioneer_P9362 , 90682C ( Pioneer_P9342 , G40-3P9341 ) ) ) )	-	-
+330738	Asgrow_A5427	AG5001	( Asgrow_A5427 ( Asgrow_A2843 , Asgrow_A3431 ) , AG5001 )	PI 647985	Monsanto Technology, LLC, PVP 200700133
+3311	Asgrow_A3127	SL1646	( Asgrow_A3127 ( Williams , Essex ) , SL1646 )	PI 559379	Novartis Seeds, Inc., PVP 9200036
+33405	ST2870	AG2601	( ST2870 , AG2601 )	PI 632697	Monsanto Technology, LLC, PVP 200300121
+34870	BSR201	Asgrow_A3127	( BSR201 , Asgrow_A3127 ( Williams , Essex ) )	PI 556892	Latham Seed Company, PVP 8800223
+358232	AG4402	AG4403	( AG4402 , AG4403 )	PI 647986	Monsanto Technology, LLC, PVP 200700134
+361380	Asgrow_A4604	AGQ48803	( Asgrow_A4604 , AGQ48803 )	PI 636124	Monsanto Technology, LLC, PVP 200400324
+3615	DPX_403	DPL_345	( DPX_403 , DPL_345 ( Bragg , Mack ) )	PI 548835	Novartis Seeds, Inc., PVP 9100131
+384279	Jim	AGA06801	( Jim , AGA06801 )	PI 636110	Monsanto Technology, LLC, PVP 200400310
+385457	ST0280	AG0801	( ST0280 , AG0801 )	PI 647987	Monsanto Technology, LLC, PVP 200700135
+387907	Asgrow_A2824	AG3201	( Asgrow_A2824 , AG3201 )	PI 647988	Monsanto Technology, LLC, PVP 200700136
+40305-117	Pioneer_P9312	Pioneer_P9392	( Pioneer_P9312 , Pioneer_P9392 ( Asgrow_A3127 ( Williams , Essex ) , Gnome ) )	-	-
+40656	Olympus	MON_RR	( Olympus , MON_RR )	-	-
+40887	ST2788	AG3302	( ST2788 , AG3302 )	PI 632700	Monsanto Technology, LLC, PVP 200300124
+41914S135	Asgrow_A4138	21111	( Asgrow_A4138 , 21111 ( Pioneer_P9362 , 21080 ( Pioneer_P9362 , 90682C ( Pioneer_P9342 , G40-3P9341 ) ) ) )	-	-
+437973	DGL4700A0R	AG4403	( DGL4700A0R , AG4403 )	PI 647989	Monsanto Technology, LLC, PVP 200700137
+44483	MP15733-72	AG4301	( MP15733-72 , AG4301 )	PI 636120	Monsanto Technology, LLC, PVP 200400320
+45217N901	S2911	21066	( S2911 , 21066 ( MO12557 , 90688A ( Asgrow_A4715 , G40-3P9392 ) ) )	-	-
+45233R043	Asgrow_A1900	21069	( Asgrow_A1900 , 21069 ( MO92117-18 , 90682E ( Pioneer_P9342 , G40-3P9341 ) ) )	-	-
+45270	ST2250	21721	( ST2250 , 21721 ( Asgrow_A1900 , 21119 ( Pioneer_P9304 , 21070 ( Pioneer_P9412 , 90688C ( Asgrow_A4715 , G40-3P9392 ) ) ) ) )	-	-
+45282	3660	21726	( 3660 , 21726 ( Asgrow_A2396 ( CM214 , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ) ( CM214 , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) , 21132 ( Asgrow_A2396 ( CM214 , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ) , 21082 ( Pioneer_P9381 , 90685A ( Pioneer_P9381 , G40-3P9392 ) ) ) ) )	-	-
+45487L002	Pioneer_P92B52	45270	( Pioneer_P92B52 , 45270 ( ST2250 , 21721 ( Asgrow_A1900 , 21119 ( Pioneer_P9304 , 21070 ( Pioneer_P9412 , 90688C ( Asgrow_A4715 , G40-3P9392 ) ) ) ) ) )	-	-
+457028	DGL4500A0X	DGL4700A0R	( DGL4500A0X , DGL4700A0R )	PI 647990	Monsanto Technology, LLC, PVP 200700138
+49431	Asgrow_A3559	AG3302	( Asgrow_A3559 , AG3302 )	PI 632706	Monsanto Technology, LLC, PVP 200300130
+4J105-3-4	CLOJ173-6-2	WW115926	( CLOJ173-6-2 ( Kottman , Dwight ) , WW115926 )	-	NAM Strain
+4MP4148-32	82285	G2436A	( 82285 , G2436A )	-	-
+53381	Asgrow_A4604	AG4902	( Asgrow_A4604 , AG4902 )	PI 632698	Monsanto Technology, LLC, PVP 200300122
+5601T	Hutcheson	TN89-39	( Hutcheson , TN89-39 ( TN81-2 ( Lee_74 , Mitchell ( Amsoy , Wayne ) ) , TN80-69 ( Essex , J74-40 ) ) )	PI 630984	PVP 200400045
+5961	Asgrow_A3733	Resnik	( Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) , Resnik )	-	-
+6245	ST0280	AG2401	( ST0280 , AG2401 )	PI 632699	Monsanto Technology, LLC, PVP 200300123
+629-22-27	D49-2491	-	( D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , - )	-	Second cycle selection from D49-24-91 crossed with nine plant introduction strains backcrossed to D49-2491
+6347	Cartter	Asgrow_A3307	( Cartter , Asgrow_A3307 )	-	-
+6363	Cartter	Pioneer_P9272	( Cartter , Pioneer_P9272 )	-	-
+66764	BSR101	Elgin	( BSR101 , Elgin )	-	-
+6738	F71-1180	CN281	( F71-1180 , CN281 )	PI 556848	Novartis Seeds, Inc., PVP 8700158
+6847	F71-1180	CN281	( F71-1180 , CN281 )	PI 556862	Novartis Seeds, Inc., PVP 8800127
+6925	Essex	Forrest	( Essex , Forrest )	PI 556902	Novartis Seeds, Inc., PVP 8900284
+6955	Coker_237	D74-7741	( Coker_237 ( Hutton , N63-858 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , D74-7741 ( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) ) )	PI 556903	Novartis Seeds, Inc., PVP 8900291
+6995	Bedford	Coker_156	( Bedford , Coker_156 ( Dare , D64-3937 ( Hill , D59-1619 ) ) )	PI 556904	Novartis Seeds, Inc., PVP 8900292
+70286G002	8397-11	W8248-02	( 8397-11 ( Pioneer_P9593 ( 2177-57 , Pioneer_P9561 ( Mack , Forrest ) ) , Pioneer_P9582 ) , W8248-02 ( Pioneer_P9592 , H5164 ) )	-	-
+70543	Hutcheson	90773	( Hutcheson , 90773 ( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) ) )	-	-
+70653G003	Pioneer_P9594	Syngenta_S59-60	( Pioneer_P9594 , Syngenta_S59-60 )	-	-
+70887	Hutcheson	90773	( Hutcheson , 90773 ( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) ) )	-	-
+70961	W8520-044	70543	( W8520-044 ( Pioneer_P9592 , Asgrow_A5979 ) , 70543 ( Hutcheson , 90773 ( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) ) ) )	-	-
+71022G016	Pioneer_P97B61	90768G025	( Pioneer_P97B61 , 90768G025 ( Pioneer_P9584 , 90687 ( Pioneer_P9444 , G40-3P9341 ) ) )	-	-
+71026G005	Pioneer_P9594	ST3470	( Pioneer_P9594 , ST3470 )	-	-
+71128G100	Pioneer_P9594	H5545	( Pioneer_P9594 , H5545 )	-	-
+71165G032	YB58G	XB59E	( YB58G ( Pioneer_P9592 , Asgrow_A5979 ) , XB59E ( Hutcheson , Pioneer_P9591 ) )	-	-
+71288G134	XB59E	Pioneer_P9594	( XB59E ( Hutcheson , Pioneer_P9591 ) , Pioneer_P9594 )	-	-
+71495	Pioneer_P9594	70887	( Pioneer_P9594 , 70887 ( Hutcheson , 90773 ( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) ) ) )	-	-
+71557T001	Pioneer_P95B33	Graham	( Pioneer_P95B33 , Graham )	-	-
+71865T001	Pioneer_P9552	70961	( Pioneer_P9552 , 70961 ( W8520-044 ( Pioneer_P9592 , Asgrow_A5979 ) , 70543 ( Hutcheson , 90773 ( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) ) ) ) )	-	-
+7499	Pioneer_P9391	KY84-1616	( Pioneer_P9391 , KY84-1616 ( K1044 ( Tracy , Williams ) , Williams ) )	PI 611112	Kentucky Agricultural Experiment Station, PVP 9900351
+751-8-1-15	Pagoda_2	Fiskeby_III	( Pagoda_2 , Fiskeby_III )	-	-
+76599	CM266	Dairyland_DSR304	( CM266 , Dairyland_DSR304 ( Williams , - ) )	-	-
+82266-B84-09240	Williams_82	Asgrow_A3127	( Williams_82 , Asgrow_A3127 ( Williams , Essex ) )	-	-
+8377-16	Pioneer_P9582	W2707-23	( Pioneer_P9582 , W2707-23 ( Y2011Z2 ( 1190-02 ( Mack , Forrest ) , J74-45 ) , Epps ) )	-	-
+8397-11	Pioneer_P9593	Pioneer_P9582	( Pioneer_P9593 ( 2177-57 , Pioneer_P9561 ( Mack , Forrest ) ) , Pioneer_P9582 )	-	-
+85336-B88-31056	82266-B84-09240	Harper	( 82266-B84-09240 ( Williams_82 , Asgrow_A3127 ( Williams , Essex ) ) , Harper )	-	-
+881-57	Williams	Maple_Presto	( Williams , Maple_Presto )	-	-
+88401	Asgrow_A1923	2702R	( Asgrow_A1923 , 2702R )	PI 632303	Monsanto Technology, LLC, PVP 200300016
+9004	Maple_Ridge	Lakota	( Maple_Ridge , Lakota )	PI 592534	Agriculture Canada, PVP 9600050
+90505	AP1275	AG2201	( AP1275 , AG2201 )	PI 636114	Monsanto Technology, LLC, PVP 200400314
+90675	Pioneer_P9281	G40-3P9273	( Pioneer_P9281 , G40-3P9273 )	-	-
+90676	ST2250	G40-3P9392	( ST2250 , G40-3P9392 )	-	-
+90676A	ST2250	G40-3P9392	( ST2250 , G40-3P9392 )	-	-
+90682	Pioneer_P9342	G40-3P9341	( Pioneer_P9342 , G40-3P9341 )	-	-
+90682C	Pioneer_P9342	G40-3P9341	( Pioneer_P9342 , G40-3P9341 )	-	-
+90682E	Pioneer_P9342	G40-3P9341	( Pioneer_P9342 , G40-3P9341 )	-	-
+90683	Pioneer_P9362	G40-3P9392	( Pioneer_P9362 , G40-3P9392 )	-	-
+90683C	Pioneer_P9362	G40-3P9392	( Pioneer_P9362 , G40-3P9392 )	-	-
+90685A	Pioneer_P9381	G40-3P9392	( Pioneer_P9381 , G40-3P9392 )	-	-
+90686	Pioneer_P9392	G40-3P9392	( Pioneer_P9392 ( Asgrow_A3127 ( Williams , Essex ) , Gnome ) , G40-3P9392 )	-	-
+90687	Pioneer_P9444	G40-3P9341	( Pioneer_P9444 , G40-3P9341 )	-	-
+90688	Asgrow_A4715	G40-3P9392	( Asgrow_A4715 , G40-3P9392 )	-	-
+90688A	Asgrow_A4715	G40-3P9392	( Asgrow_A4715 , G40-3P9392 )	-	-
+90688C	Asgrow_A4715	G40-3P9392	( Asgrow_A4715 , G40-3P9392 )	-	-
+90731S043	Pioneer_P9204	90675	( Pioneer_P9204 , 90675 ( Pioneer_P9281 , G40-3P9273 ) )	-	-
+90732-150	Pioneer_P9281	90675	( Pioneer_P9281 , 90675 ( Pioneer_P9281 , G40-3P9273 ) )	-	-
+90733	Pioneer_P9172	90676	( Pioneer_P9172 , 90676 ( ST2250 , G40-3P9392 ) )	-	-
+90736-085	Pioneer_P9244	90676	( Pioneer_P9244 , 90676 ( ST2250 , G40-3P9392 ) )	-	-
+90753	ST2250	90682	( ST2250 , 90682 ( Pioneer_P9342 , G40-3P9341 ) )	-	-
+90755	Pioneer_P9362	90683	( Pioneer_P9362 , 90683 ( Pioneer_P9362 , G40-3P9392 ) )	-	-
+90765T003	Asgrow_A4715	90686	( Asgrow_A4715 , 90686 ( Pioneer_P9392 ( Asgrow_A3127 ( Williams , Essex ) , Gnome ) , G40-3P9392 ) )	-	-
+90768G025	Pioneer_P9584	90687	( Pioneer_P9584 , 90687 ( Pioneer_P9444 , G40-3P9341 ) )	-	-
+90773	Pioneer_P9584	90688	( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) )	-	-
+91013F2	W30132-004	90753	( W30132-004 , 90753 ( ST2250 , 90682 ( Pioneer_P9342 , G40-3P9341 ) ) )	-	-
+91183	Pioneer_P9343	21720	( Pioneer_P9343 , 21720 ( Pioneer_P9343 , 21111 ( Pioneer_P9362 , 21080 ( Pioneer_P9362 , 90682C ( Pioneer_P9342 , G40-3P9341 ) ) ) ) )	-	-
+92032-A95-58316	AP2880	Asgrow_A2872	( AP2880 , Asgrow_A2872 ( Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Asgrow_A3501 ( Williams_82 , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	-
+92283-A95-30338	AP2880	85336-B88-31056	( AP2880 , 85336-B88-31056 ( 82266-B84-09240 ( Williams_82 , Asgrow_A3127 ( Williams , Essex ) ) , Harper ) )	-	-
+92283-A95-30438	AP2880	85336-B88-31056	( AP2880 , 85336-B88-31056 ( 82266-B84-09240 ( Williams_82 , Asgrow_A3127 ( Williams , Essex ) ) , Harper ) )	-	-
+92546-01td	Tall	OAC88-09	( Tall , OAC88-09 )	-	E. Cobers PhD Thesis
+96004	Asgrow_A5959	AG4501	( Asgrow_A5959 , AG4501 )	PI 632704	Monsanto Technology, LLC, PVP 200300128
+96008	AG2101	Pioneer_P9163	( AG2101 , Pioneer_P9163 )	PI 632309	Monsanto Technology, LLC, PVP 200300022
+96838	Asgrow_A2553	AG2903	( Asgrow_A2553 , AG2903 )	PI 632705	Monsanto Technology, LLC, PVP 200300129
+97284-N00-47977	92283-A95-30438	Pioneer_P9234	( 92283-A95-30438 ( AP2880 , 85336-B88-31056 ( 82266-B84-09240 ( Williams_82 , Asgrow_A3127 ( Williams , Essex ) ) , Harper ) ) , Pioneer_P9234 )	-	-
+97824-N00-47977	92283-A95-30338	Pioneer_P9234	( 92283-A95-30338 ( AP2880 , 85336-B88-31056 ( 82266-B84-09240 ( Williams_82 , Asgrow_A3127 ( Williams , Essex ) ) , Harper ) ) , Pioneer_P9234 )	-	-
+98211-A01-36153	Syngenta_S21-A1	92032-A95-58316	( Syngenta_S21-A1 , 92032-A95-58316 ( AP2880 , Asgrow_A2872 ( Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Asgrow_A3501 ( Williams_82 , Asgrow_A3127 ( Williams , Essex ) ) ) ) )	-	-
+98601	Asgrow_A5403	Hutcheson	( Asgrow_A5403 , Hutcheson )	-	Backcrossed line from R93-171
+99702-B02-58205	B3491N	AP2952N	( B3491N , AP2952N )	-	-

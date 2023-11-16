@@ -1,0 +1,271 @@
+Individual	Parent1	Parent2	Pedigree	Synonyms	Comment
+G00-3209	N7001	Boggs	( N7001 , Boggs )	-	-
+G00-3213	N7001	Boggs	( N7001 , Boggs )	-	-
+G00-3234	N7001	Boggs	( N7001 , Boggs )	-	-
+G00-3322	N7001	Boggs	( N7001 , Boggs )	-	-
+G00-3364	N7001	Boggs	( N7001 , Boggs )	-	-
+G00-3880	G3-9201	Cook	( G3-9201 , Cook )	-	-
+G00-4071	G3-9201	Cook	( G3-9201 , Cook )	-	-
+G00167G017	Wicomico	Pioneer_P95B32	( Wicomico , Pioneer_P95B32 )	-	-
+G00450T009	70286G002	Pioneer_P95B33	( 70286G002 ( 8397-11 ( Pioneer_P9593 ( 2177-57 , Pioneer_P9561 ( Mack , Forrest ) ) , Pioneer_P9582 ) , W8248-02 ( Pioneer_P9592 , H5164 ) ) , Pioneer_P95B33 )	-	-
+G01-PR16	Dillon	Hyuuga	( Dillon , Hyuuga ( Akasaya ( Landrace , - ) , Ako_Musume ( Tamanishike ( Landrace , - ) , Iyo ( Landrace , - ) ) ) )	PI 659503	F6, GP-371
+G01-PR33	Dillon	Hyuuga	( Dillon , Hyuuga ( Akasaya ( Landrace , - ) , Ako_Musume ( Tamanishike ( Landrace , - ) , Iyo ( Landrace , - ) ) ) )	-	doi: 10.3198/jpr2012.11.0052crg
+G03-1187_RR	G95-346	Hartz_H7242_RR	( G95-346 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , G87-1968 ( Thomas , Gordon ) ) , Hartz_H7242_RR )	-	-
+G03-1364_RR	G94-3117	Hartz_H7242_RR	( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Hartz_H7242_RR )	-	-
+G03-1569_RR	G95-346	Hartz_H7242_RR	( G95-346 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , G87-1968 ( Thomas , Gordon ) ) , Hartz_H7242_RR )	-	-
+G03-1668_RR	Hartz_H7242_RR	K1423	( Hartz_H7242_RR , K1423 ( Manokin , LS86-1922 ( Pyramid , LS78-5169 ) ) )	-	-
+G03-2014_RR	G94-3117	Boggs_RR	( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Boggs_RR ( Boggs , MON_RR ) )	-	-
+G03-2018_RR	G94-3117	Boggs_RR	( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Boggs_RR ( Boggs , MON_RR ) )	-	-
+G03-2148_RR	G94-3117	Boggs_RR	( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Boggs_RR ( Boggs , MON_RR ) )	-	-
+G03-2282_RR	G94-3117	Boggs_RR	( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Boggs_RR ( Boggs , MON_RR ) )	-	-
+G03-2388_RR	G94-3117	Boggs_RR	( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Boggs_RR ( Boggs , MON_RR ) )	-	-
+G03-2394_RR	G94-3117	Hartz_H7242_RR	( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Hartz_H7242_RR )	-	-
+G03-2461_RR	G94-3117	Boggs_RR	( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Boggs_RR ( Boggs , MON_RR ) )	-	-
+G03-3101	Benning	Danbaekkong	( Benning , Danbaekkong )	-	https://doi.org/10.1002/aocs.12261
+G03-3385	Benning	PI_619083	( Benning , PI_619083 )	-	-
+G03-364_RR	RR_G95-346	Hartz_H7242_RR	( RR_G95-346 , Hartz_H7242_RR )	-	-
+G03-680_RR	G94-3117	Hartz_H7242_RR	( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Hartz_H7242_RR )	-	-
+G03-695_RR	G94-3117	Hartz_H7242_RR	( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Hartz_H7242_RR )	-	-
+G03-821	G94-3117_RR	Hartz_H7242_RR	( G94-3117_RR , Hartz_H7242_RR )	-	-
+G03-825_RR	G94-3117	Hartz_H7242_RR	( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Hartz_H7242_RR )	-	-
+G03-889_RR	G94-3117	Hartz_H7242_RR	( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Hartz_H7242_RR )	-	-
+G03-899_RR	G94-3117	Hartz_H7242_RR	( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Hartz_H7242_RR )	-	-
+G03-926_RR	G94-3117	Hartz_H7242_RR	( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Hartz_H7242_RR )	-	-
+G03-952_RR	G94-3117	Hartz_H7242_RR	( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Hartz_H7242_RR )	-	-
+G04-163_RR	SC94-1075	Hartz_H7242_RR	( SC94-1075 ( Coker_6847 , G83-198 ( D74-7741 ( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) ) , Young ) ) , Hartz_H7242_RR )	-	-
+G04-2215_RR	G96-2272	Hartz_H7242_RR	( G96-2272 ( DPL_3776 ( Asgrow_A7986 , Asgrow_A5980 ) , G86-1267 ( D76-9665 ( Forrest , Centennial ) , Braxton ) ) , Hartz_H7242_RR )	-	-
+G04-236_RR	SC94-1075	Hartz_H7242_RR	( SC94-1075 ( Coker_6847 , G83-198 ( D74-7741 ( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) ) , Young ) ) , Hartz_H7242_RR )	-	-
+G04-2414_RR	G96-2272	Benning-RR	( G96-2272 ( DPL_3776 ( Asgrow_A7986 , Asgrow_A5980 ) , G86-1267 ( D76-9665 ( Forrest , Centennial ) , Braxton ) ) , Benning-RR )	-	-
+G04-2656_RR	G96-2272	Benning-RR	( G96-2272 ( DPL_3776 ( Asgrow_A7986 , Asgrow_A5980 ) , G86-1267 ( D76-9665 ( Forrest , Centennial ) , Braxton ) ) , Benning-RR )	-	-
+G04-2913_RR	Boggs_RR	G93-2225	( Boggs_RR ( Boggs , MON_RR ) , G93-2225 ( Cook , Coker_6727 ) )	-	-
+G04-2947_RR	Boggs_RR	G93-2225	( Boggs_RR ( Boggs , MON_RR ) , G93-2225 ( Cook , Coker_6727 ) )	-	-
+G04-3248_RR	Boggs_RR	G93-2225	( Boggs_RR ( Boggs , MON_RR ) , G93-2225 ( Cook , Coker_6727 ) )	-	-
+G05-1102_RR	G98-1420	Hartz_H7242_RR	( G98-1420 ( Boggs , Doles ) , Hartz_H7242_RR )	-	-
+G05-1200_RR	G98-1420	Hartz_H7242_RR	( G98-1420 ( Boggs , Doles ) , Hartz_H7242_RR )	-	-
+G05-1209_RR	G98-1420	Hartz_H7242_RR	( G98-1420 ( Boggs , Doles ) , Hartz_H7242_RR )	-	-
+G05-1481_RR	G98-1053	Hartz_H7242_RR	( G98-1053 ( Boggs , Doles ) , Hartz_H7242_RR )	-	-
+G05-2324_RR	G98-2641	Hartz_H7242_RR	( G98-2641 ( G89-375 , D87-4429 ( Sharkey , LeFlore ) ) , Hartz_H7242_RR )	-	-
+G05-2468_RR	G98-2641	Hartz_H7242_RR	( G98-2641 ( G89-375 , D87-4429 ( Sharkey , LeFlore ) ) , Hartz_H7242_RR )	-	-
+G05-2505_RR	G98-2641	Hartz_H7242_RR	( G98-2641 ( G89-375 , D87-4429 ( Sharkey , LeFlore ) ) , Hartz_H7242_RR )	-	-
+G05-3758_RR	Prichard_RR	G94-3117	( Prichard_RR ( Prichard , MON_RR ) , G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) )	-	-
+G05-4237_RR	Prichard_RR	G94-3117	( Prichard_RR ( Prichard , MON_RR ) , G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) )	-	-
+G06-2460_RR	G98-1420	Hartz_H7242_RR	( G98-1420 ( Boggs , Doles ) , Hartz_H7242_RR )	-	-
+G06-2507_RR	G98-1420	Hartz_H7242_RR	( G98-1420 ( Boggs , Doles ) , Hartz_H7242_RR )	-	-
+G06-2957_RR	G99-4158	Pioneer_P97M50	( G99-4158 ( S91-1381 ( Hartz_H5370 , Hartwig ) , Benning ) , Pioneer_P97M50 )	-	-
+G06-3182RR	G99-4158	Pioneer_P97M50	( G99-4158 ( S91-1381 ( Hartz_H5370 , Hartwig ) , Benning ) , Pioneer_P97M50 )	-	-
+G06-3182_RR	G99-4158	Pioneer_P97M50	( G99-4158 ( S91-1381 ( Hartz_H5370 , Hartwig ) , Benning ) , Pioneer_P97M50 )	-	-
+G06-5287_RR	G98-2866	Hartz_H7242_RR	( G98-2866 ( Brim , Doles ) , Hartz_H7242_RR )	-	-
+G07-2879_RR	G00-3083	AgSouth_AGS758RR	( G00-3083 , AgSouth_AGS758RR )	-	-
+G07-3192_RR	G98-1053	Boggs_RR	( G98-1053 ( Boggs , Doles ) , Boggs_RR ( Boggs , MON_RR ) )	-	-
+G07-3496_RR	G00-3213	Pioneer_P97M50	( G00-3213 ( N7001 , Boggs ) , Pioneer_P97M50 )	-	-
+G07-3557_RR	G00-3213	Pioneer_P97M50	( G00-3213 ( N7001 , Boggs ) , Pioneer_P97M50 )	-	-
+G07-3651_RR	G00-3213	Pioneer_P97M50	( G00-3213 ( N7001 , Boggs ) , Pioneer_P97M50 )	-	-
+G07-3674_RR	G01-2633	Pioneer_P97M50	( G01-2633 , Pioneer_P97M50 )	-	-
+G07-3691_RR	G01-2633	Pioneer_P97M50	( G01-2633 , Pioneer_P97M50 )	-	-
+G07-3772_RR	G01-2633	Pioneer_P97M50	( G01-2633 , Pioneer_P97M50 )	-	-
+G07-3774_RR	G01-2633	Pioneer_P97M50	( G01-2633 , Pioneer_P97M50 )	-	-
+G07-3796_RR	G01-2633	Pioneer_P97M50	( G01-2633 , Pioneer_P97M50 )	-	-
+G07-3839_RR	G01-2633	Pioneer_P97M50	( G01-2633 , Pioneer_P97M50 )	-	-
+G07-6012	N7103	PI_366122	( N7103 ( NTCPR90-143 ( GaSoy17 , Vance ) , Pearl ( G80-1515 ( Pickett_71 , Bedford ) , Vance ) ) , PI_366122 )	PI 672992	GP-394
+G07-6029	N7103	PI_366122	( N7103 ( NTCPR90-143 ( GaSoy17 , Vance ) , Pearl ( G80-1515 ( Pickett_71 , Bedford ) , Vance ) ) , PI_366122 )	PI 672993	GP-395
+G08-1166_RR	S99-1171	Hartz_H7242_RR	( S99-1171 ( Delsoy_5500 , Anand ) , Hartz_H7242_RR )	-	-
+G08-1212_RR	S99-1171	Hartz_H7242_RR	( S99-1171 ( Delsoy_5500 , Anand ) , Hartz_H7242_RR )	-	-
+G08-1253_RR	S99-1171	Hartz_H7242_RR	( S99-1171 ( Delsoy_5500 , Anand ) , Hartz_H7242_RR )	-	-
+G08-1799_RR	Pioneer_P97M50	L00-3372	( Pioneer_P97M50 , L00-3372 )	-	-
+G08-2864_RR	G00-3209	G03-364_RR	( G00-3209 ( N7001 , Boggs ) , G03-364_RR ( RR_G95-346 , Hartz_H7242_RR ) )	-	-
+G08-2869_RR	G00-3209	G03-364_RR	( G00-3209 ( N7001 , Boggs ) , G03-364_RR ( RR_G95-346 , Hartz_H7242_RR ) )	-	-
+G08-3279RR	G00-3209	G03-952-RR	( G00-3209 ( N7001 , Boggs ) , G03-952-RR )	-	-
+G08-3279_RR	G00-3209	G03-952_RR	( G00-3209 ( N7001 , Boggs ) , G03-952_RR ( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Hartz_H7242_RR ) )	-	-
+G08-3282_RR	G00-3209	G03-952_RR	( G00-3209 ( N7001 , Boggs ) , G03-952_RR ( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Hartz_H7242_RR ) )	-	-
+G08-3795_RR	G99-2678	Pioneer_P97M50	( G99-2678 ( Prichard , Northrup_King_S75-55 ) , Pioneer_P97M50 )	-	-
+G08-3808_RR	G99-2678	Pioneer_P97M50	( G99-2678 ( Prichard , Northrup_King_S75-55 ) , Pioneer_P97M50 )	-	-
+G08-3848_RR	G99-2678	Pioneer_P97M50	( G99-2678 ( Prichard , Northrup_King_S75-55 ) , Pioneer_P97M50 )	-	-
+G08-4171_RR	N97-9658	Boggs_RR	( N97-9658 ( N90-7199 , Cook ) , Boggs_RR ( Boggs , MON_RR ) )	-	-
+G08-4200RR	N97-9658	Boggs_RR	( N97-9658 ( N90-7199 , Cook ) , Boggs_RR ( Boggs , MON_RR ) )	-	-
+G08-4200_RR	N97-9658	Boggs_RR	( N97-9658 ( N90-7199 , Cook ) , Boggs_RR ( Boggs , MON_RR ) )	-	-
+G08-5122_RR	N97-9658	G02-G176376	( N97-9658 ( N90-7199 , Cook ) , G02-G176376 )	-	-
+G08-5212_RR	N97-9658	G02-G176376	( N97-9658 ( N90-7199 , Cook ) , G02-G176376 )	-	-
+G08PR-394_	5601T	R01-3637F	( 5601T ( Hutcheson , TN89-39 ( TN81-2 ( Lee_74 , Mitchell ( Amsoy , Wayne ) ) , TN80-69 ( Essex , J74-40 ) ) ) , R01-3637F ( Caviness , Misuzu_Daizu ) )	PI 667741	GP-380, F5
+G09-3202R2	G00-3880	NC7308A1-COYN	( G00-3880 ( G3-9201 , Cook ) , NC7308A1-COYN )	-	-
+G09PR-80	5601T	PI_157440	( 5601T ( Hutcheson , TN89-39 ( TN81-2 ( Lee_74 , Mitchell ( Amsoy , Wayne ) ) , TN80-69 ( Essex , J74-40 ) ) ) , PI_157440 )	PI 667742	GP-381, F5
+G10-2479_RR	Boggs_RR	R01-3637F	( Boggs_RR ( Boggs , MON_RR ) , R01-3637F ( Caviness , Misuzu_Daizu ) )	-	-
+G10-3429RR	N02-219	G03-1668_RR	( N02-219 ( SC91-2007 , Holladay ) , G03-1668_RR ( Hartz_H7242_RR , K1423 ( Manokin , LS86-1922 ( Pyramid , LS78-5169 ) ) ) )	-	-
+G10-3429_RR	N02-219	G03-1668_RR	( N02-219 ( SC91-2007 , Holladay ) , G03-1668_RR ( Hartz_H7242_RR , K1423 ( Manokin , LS86-1922 ( Pyramid , LS78-5169 ) ) ) )	-	-
+G10-3833RR	N02-219	G00-3213	( N02-219 ( SC91-2007 , Holladay ) , G00-3213 ( N7001 , Boggs ) )	-	-
+G10-3833_RR	G03-825_RR	G00-3213	( G03-825_RR ( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Hartz_H7242_RR ) , G00-3213 ( N7001 , Boggs ) )	-	-
+G10-3896_RR	G03-825_RR	G00-3213	( G03-825_RR ( G94-3117 ( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood ) , Hartz_H7242_RR ) , G00-3213 ( N7001 , Boggs ) )	-	-
+G10-3913R2	G00-3213	NC7308A1-COYN	( G00-3213 ( N7001 , Boggs ) , NC7308A1-COYN )	-	-
+G10-3954R2	G00-3213	NC7308A1-COYN	( G00-3213 ( N7001 , Boggs ) , NC7308A1-COYN )	-	-
+G10-3968R2	G00-3213	NC7308A1-COYN	( G00-3213 ( N7001 , Boggs ) , NC7308A1-COYN )	-	-
+G10PR-224R2	G00-3213	NC7308A1-COYN	( G00-3213 ( N7001 , Boggs ) , NC7308A1-COYN )	-	-
+G10PR-56330R2	G93-2225	G00-3213	( G93-2225 ( Cook , Coker_6727 ) , G00-3213 ( N7001 , Boggs ) )	-	-
+G10PR-86R2	G00-3880	NC7308A1-COYN	( G00-3880 ( G3-9201 , Cook ) , NC7308A1-COYN )	-	-
+G13-6241	G00-3213	LG04-6000	( G00-3213 ( N7001 , Boggs ) , LG04-6000 ( HS93-4118 ( IA2007 ( Pride_B152 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Dairyland_DSR304 ( Williams , - ) ) , LG97-9912 ( LG90-4181 ( PI_436682 , Lawrence ) , Asgrow_A3322 ) ) )	-	F5d, Conv., 19% exotic
+G14-1408R2	G10PR-56248	G10PR-56389	( G10PR-56248 , G10PR-56389 )	-	F5d, RR2
+G14-1632R2	G10PR-10	G10PR-56389	( G10PR-10 , G10PR-56389 )	-	F5d, RR2
+G14-1665R2	G10PR-10	G10PR-56389	( G10PR-10 , G10PR-56389 )	-	F5d, RR2
+G14-1755R2	G10PR-10	G10PR-56389_R2Y	( G10PR-10 , G10PR-56389_R2Y )	-	F5d, RR2
+G14-6063	G08PR-394	G09PR-25	( G08PR-394 , G09PR-25 )	-	F5d, Conv., 25% exotic
+G15-1038R2	G10PR-56248R2	G10PR-56466R2	( G10PR-56248R2 , G10PR-56466R2 )	-	-
+G15-1465R2	G10PR-56248R2	G10PR-10R2	( G10PR-56248R2 , G10PR-10R2 )	-	-
+G15-1811R2	R04-342	G09PR-54457R2	( R04-342 ( R97-1650 ( Pioneer_P9592 , Holladay ) , 98601 ( Asgrow_A5403 , Hutcheson ) ) , G09PR-54457R2 )	-	-
+G15-2017R2	R04-342	G09PR-54457R2	( R04-342 ( R97-1650 ( Pioneer_P9592 , Holladay ) , 98601 ( Asgrow_A5403 , Hutcheson ) ) , G09PR-54457R2 )	-	-
+G15-2330R2	NCC04-619	G09PR-54457R2	( NCC04-619 ( N97-61 ( N90-541 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , N90-1101 ( Brim , N80-777 ) ) , TN96-64 ( N85-578 , Manokin ) ) , G09PR-54457R2 )	-	-
+G15-2379R2	NCC04-619	G09PR-54457R2	( NCC04-619 ( N97-61 ( N90-541 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , N90-1101 ( Brim , N80-777 ) ) , TN96-64 ( N85-578 , Manokin ) ) , G09PR-54457R2 )	-	-
+G15-3361R2	N05-7432	G09PR-54329R2	( N05-7432 ( N7002 ( N7001 , Cook ) , N98-7265_ ) , G09PR-54329R2 )	-	-
+G15-3606R2	G08PR-394	G09PR-54329R2	( G08PR-394 , G09PR-54329R2 )	-	-
+G16-1216R2	G00-3880R2	Benning-EMGH	( G00-3880R2 , Benning-EMGH )	-	-
+G16-4162R2	G06-3182RR	G10PR-86R2	( G06-3182RR ( G99-4158 ( S91-1381 ( Hartz_H5370 , Hartwig ) , Benning ) , Pioneer_P97M50 ) , G10PR-86R2 ( G00-3880 ( G3-9201 , Cook ) , NC7308A1-COYN ) )	-	RR2
+G16-4418R2	G06-3182RR	G10PR-224R2	( G06-3182RR ( G99-4158 ( S91-1381 ( Hartz_H5370 , Hartwig ) , Benning ) , Pioneer_P97M50 ) , G10PR-224R2 ( G00-3213 ( N7001 , Boggs ) , NC7308A1-COYN ) )	-	-
+G16-4995R2	G10PR-56444R2	G11PR-407R2	( G10PR-56444R2 , G11PR-407R2 )	-	-
+G16-5022R2	G10PR-56444R2	G11PR-407R2	( G10PR-56444R2 , G11PR-407R2 )	-	-
+G16-5129R2	G10PR-86R2	G11-418R2	( G10PR-86R2 ( G00-3880 ( G3-9201 , Cook ) , NC7308A1-COYN ) , G11-418R2 )	-	-
+G16-5923R2	NCC04-619	G09PR-54457R2	( NCC04-619 ( N97-61 ( N90-541 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , N90-1101 ( Brim , N80-777 ) ) , TN96-64 ( N85-578 , Manokin ) ) , G09PR-54457R2 )	-	-
+G16-5967R2	G16-5923R2	-	( G16-5923R2 ( NCC04-619 ( N97-61 ( N90-541 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , N90-1101 ( Brim , N80-777 ) ) , TN96-64 ( N85-578 , Manokin ) ) , G09PR-54457R2 ) , - )	-	Selection
+G16-8779	LG06-5920	G00-3880	( LG06-5920 ( LG00-3372 ( PI_561319 , PI_574477 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , G00-3880 ( G3-9201 , Cook ) )	-	-
+G17-11274	G08PR-394	G00-3213	( G08PR-394 , G00-3213 ( N7001 , Boggs ) )	-	-
+G17-11315	G08PR-394	G00-3213	( G08PR-394 , G00-3213 ( N7001 , Boggs ) )	-	-
+G17-3336R2	N08-391	G10PR-56248R2	( N08-391 ( S99-1171 ( Delsoy_5500 , Anand ) , N00-370 ( AU92-916 ( N85-574 ( N77-179 ( N70-1549 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , N72-3213 ( D67-B5 ( D62-7816 , Lee ) , N64-2451 ) ) , Johnston ) , Haskell ) , N90-845 ( Brim , N80-777 ) ) ) , G10PR-56248R2 )	-	-
+G17-3878R2	N08-521	G10PR-56466R2	( N08-521 ( G96-2272 ( DPL_3776 ( Asgrow_A7986 , Asgrow_A5980 ) , G86-1267 ( D76-9665 ( Forrest , Centennial ) , Braxton ) ) , N00-377 ( AU92-916 ( N85-574 ( N77-179 ( N70-1549 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , N72-3213 ( D67-B5 ( D62-7816 , Lee ) , N64-2451 ) ) , Johnston ) , Haskell ) , N90-845 ( Brim , N80-777 ) ) ) , G10PR-56466R2 )	-	-
+G17-4801R2	N07-14182	G10PR-56248R2	( N07-14182 ( N7002 ( N7001 , Cook ) , Clifford ) , G10PR-56248R2 )	-	-
+G17-6512R2	G10PR-224R2	G11-1162R2	( G10PR-224R2 ( G00-3213 ( N7001 , Boggs ) , NC7308A1-COYN ) , G11-1162R2 )	-	-
+G17-7222HOLNR2	G10PR-56264R2-HOLL	-	( G10PR-56264R2-HOLL , - )	-	Selection
+G17-7329HOLNR2	G10PR-56444R2-HOLL-A	-	( G10PR-56444R2-HOLL-A , - )	-	Selection
+G17-7384HOLNR2	G10PR-56444R2-HOLL-B	-	( G10PR-56444R2-HOLL-B , - )	-	Selection
+G17PR-1039HOLNR1	G06-3182RR-HOLL-B1	-	( G06-3182RR-HOLL-B1 , - )	-	Selection
+G17PR-1071HOLNR1	G06-3182RR-HOLL-B4	-	( G06-3182RR-HOLL-B4 , - )	-	-
+G18-11267	Boggs	N09-12854	( Boggs , N09-12854 ( N7103 ( NTCPR90-143 ( GaSoy17 , Vance ) , Pearl ( G80-1515 ( Pickett_71 , Bedford ) , Vance ) ) , PI_408337 ) )	-	-
+G18-11901	Woodruff	N09-13128	( Woodruff , N09-13128 ( N7002 ( N7001 , Cook ) , Tamahakari ) )	-	-
+G18-12061	C-Raleigh	JTN-4307	( C-Raleigh , JTN-4307 ( S97-1688 ( S91-1381 ( Hartz_H5370 , Hartwig ) , Hartz_H5810 ) , V94-0198 ( DPL_415 ( Essex , DPX_436 ( Pickett_71 , York ) ) , Manokin ) ) )	-	-
+G18-12231	Woodruff	A5980	( Woodruff , A5980 )	-	-
+G18-12382	Woodruff	G12-7199	( Woodruff , G12-7199 )	-	-
+G18-12647	G00-3880	G12-7199	( G00-3880 ( G3-9201 , Cook ) , G12-7199 )	-	-
+G18-3051R2	G10PR-224R2	NCC07-8138	( G10PR-224R2 ( G00-3213 ( N7001 , Boggs ) , NC7308A1-COYN ) , NCC07-8138 ( MD99-6226 ( V91-2935 , MD92-5769 ) , N97-9677 ( M90-7199 , Cook ) ) )	-	-
+G18-3118R2	G10PR-224R2	NCC06-1090	( G10PR-224R2 ( G00-3213 ( N7001 , Boggs ) , NC7308A1-COYN ) , NCC06-1090 ( N99-8137 ( N7001 , Graham ) , TN99-117 ( N92-189 ( AU82-211 ( N73-693 ( D68-216 ( Dyer , Bragg ) , Ransom ) , F76-8757 ) , N85-578 ) , V90-1012 ) ) )	-	-
+G18-3311R2	G10PR-224R2	NCC06-899	( G10PR-224R2 ( G00-3213 ( N7001 , Boggs ) , NC7308A1-COYN ) , NCC06-899 ( R97-1634 ( Pioneer_P9592 , Holladay ) , N97-9693 ( N90-7199 , Cook ) ) )	-	-
+G18-3336R2	G10PR-56248R2	TN08-100	( G10PR-56248R2 , TN08-100 ( 5601T ( Hutcheson , TN89-39 ( TN81-2 ( Lee_74 , Mitchell ( Amsoy , Wayne ) ) , TN80-69 ( Essex , J74-40 ) ) ) , PI_417088 ) )	-	-
+G18-3558R2	G10PR-56248R2	TN09-44420	( G10PR-56248R2 , TN09-44420 )	-	-
+G18-4195R2	G10PR-224R2	UA5612	( G10PR-224R2 ( G00-3213 ( N7001 , Boggs ) , NC7308A1-COYN ) , UA5612 )	-	-
+G18-6302R2	G12-3698R2	G12-6543	( G12-3698R2 , G12-6543 )	-	-
+G18-8097LL	G12PR-214	G13LL-44	( G12PR-214 , G13LL-44 )	-	-
+G18-8335LL	Henderson	G13LL-7	( Henderson , G13LL-7 )	-	-
+G18-8480LL	TN08-100	G13LL-7	( TN08-100 ( 5601T ( Hutcheson , TN89-39 ( TN81-2 ( Lee_74 , Mitchell ( Amsoy , Wayne ) ) , TN80-69 ( Essex , J74-40 ) ) ) , PI_417088 ) , G13LL-7 )	-	-
+G18-8508LL	TN08-100	G13LL-7	( TN08-100 ( 5601T ( Hutcheson , TN89-39 ( TN81-2 ( Lee_74 , Mitchell ( Amsoy , Wayne ) ) , TN80-69 ( Essex , J74-40 ) ) ) , PI_417088 ) , G13LL-7 )	-	-
+G18F3D-415	NC-Raleigh	JTN-4307	( NC-Raleigh , JTN-4307 ( S97-1688 ( S91-1381 ( Hartz_H5370 , Hartwig ) , Hartz_H5810 ) , V94-0198 ( DPL_415 ( Essex , DPX_436 ( Pickett_71 , York ) ) , Manokin ) ) )	-	-
+G79-945	Tracy	Ransom	( Tracy , Ransom )	-	-
+G80-1011	Wright	Braxton	( Wright , Braxton )	-	-
+G80-1515	Pickett_71	Bedford	( Pickett_71 , Bedford )	-	-
+G81-152	D74-7741	Coker_237	( D74-7741 ( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) ) , Coker_237 ( Hutton , N63-858 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) )	-	-
+G81-1949	D74-7741	Braxton	( D74-7741 ( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) ) , Braxton )	-	-
+G81-2949	D74-7741	Braxton	( D74-7741 ( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) ) , Braxton )	-	-
+G82-2820	D74-7741	F76-8757	( D74-7741 ( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) ) , F76-8757 )	-	-
+G82-2933	D74-7741	F76-8757	( D74-7741 ( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) ) , F76-8757 )	-	-
+G82-3458	Braxton	Dowling	( Braxton , Dowling )	-	-
+G82-481	D74-7741	F76-8846	( D74-7741 ( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) ) , F76-8846 )	-	-
+G83-1243	D77-6103	F77-6790	( D77-6103 ( Centennial , J74-47 ) , F77-6790 )	-	-
+G83-198	D74-7741	Young	( D74-7741 ( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) ) , Young )	-	-
+G83-559	D77-6103	F77-6903	( D77-6103 ( Centennial , J74-47 ) , F77-6903 )	-	-
+G83-644	D77-6103	F77-6903	( D77-6103 ( Centennial , J74-47 ) , F77-6903 )	-	-
+G83-969	Young	F77-6903	( Young , F77-6903 )	-	-
+G84-234	Kirby	Wright	( Kirby , Wright )	-	-
+G85-373	Gordon	Braxton	( Gordon , Braxton )	-	-
+G86-1195	D76-9665	Braxton	( D76-9665 ( Forrest , Centennial ) , Braxton )	-	-
+G86-1267	D76-9665	Braxton	( D76-9665 ( Forrest , Centennial ) , Braxton )	-	-
+G86-1434	D79-6058	Twiggs	( D79-6058 ( Tracy , Centennial ) , Twiggs )	-	-
+G87-1968	Thomas	Gordon	( Thomas , Gordon )	-	-
+G87-3533	Coker_368	Gorden	( Coker_368 ( Corker_71-211 , Centennial ) , Gorden )	-	-
+G88-3129	Hutcheson	Coker_6738	( Hutcheson , Coker_6738 ( Braxton , Coker_368 ( Corker_71-211 , Centennial ) ) )	-	-
+G89-1053	G80-1515	Thomas	( G80-1515 ( Pickett_71 , Bedford ) , Thomas )	-	-
+G89-2272	G81-152	Coker_6738	( G81-152 ( D74-7741 ( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) ) , Coker_237 ( Hutton , N63-858 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) ) , Coker_6738 ( Braxton , Coker_368 ( Corker_71-211 , Centennial ) ) )	-	-
+G89-2328	G81-152	Coker_6738	( G81-152 ( D74-7741 ( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) ) , Coker_237 ( Hutton , N63-858 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) ) , Coker_6738 ( Braxton , Coker_368 ( Corker_71-211 , Centennial ) ) )	-	-
+G89-300	Hutcheson	Colquitt	( Hutcheson , Colquitt ( Wright , Braxton ) )	-	-
+G89-9111	Hutcheson	Coker_6738	( Hutcheson , Coker_6738 ( Braxton , Coker_368 ( Corker_71-211 , Centennial ) ) )	-	-
+G90-1669	Coker_82-622	Howard	( Coker_82-622 ( Braxton , Coker_368 ( Corker_71-211 , Centennial ) ) , Howard )	-	-
+G90-3258	Stonewall	Bryan	( Stonewall , Bryan )	-	-
+G90-R1151E	Coker_82-622	Howard	( Coker_82-622 ( Braxton , Coker_368 ( Corker_71-211 , Centennial ) ) , Howard )	-	-
+G91-151	Coker_82-622	Bryan	( Coker_82-622 ( Braxton , Coker_368 ( Corker_71-211 , Centennial ) ) , Bryan )	-	-
+G91-221	Coker_82-622	Bryan	( Coker_82-622 ( Braxton , Coker_368 ( Corker_71-211 , Centennial ) ) , Bryan )	-	-
+G91-2244	F81-2815	Colquitt	( F81-2815 , Colquitt ( Wright , Braxton ) )	-	-
+G91-270	Coker_82-622	Bryan	( Coker_82-622 ( Braxton , Coker_368 ( Corker_71-211 , Centennial ) ) , Bryan )	-	-
+G91-291	Coker_82-622	Bryan	( Coker_82-622 ( Braxton , Coker_368 ( Corker_71-211 , Centennial ) ) , Bryan )	-	-
+G92-1110	Bryan	Coker_6727	( Bryan , Coker_6727 )	-	-
+G92-1306	Doles	Coker_6727	( Doles , Coker_6727 )	-	-
+G92-1557	Doles	Coker_6727	( Doles , Coker_6727 )	-	-
+G92-2167	Coker_82-622	Brim	( Coker_82-622 ( Braxton , Coker_368 ( Corker_71-211 , Centennial ) ) , Brim )	-	-
+G92-2219	Coker_82-622	Brim	( Coker_82-622 ( Braxton , Coker_368 ( Corker_71-211 , Centennial ) ) , Brim )	-	-
+G92-2381	Coker_82-622	G83-12	( Coker_82-622 ( Braxton , Coker_368 ( Corker_71-211 , Centennial ) ) , G83-12 )	-	-
+G92-2388	Coker_82-622	G83-12	( Coker_82-622 ( Braxton , Coker_368 ( Corker_71-211 , Centennial ) ) , G83-12 )	-	-
+G93-1749	G85-373	Coker_6727	( G85-373 ( Gordon , Braxton ) , Coker_6727 )	-	-
+G93-1914	S84-1876	D84-7174	( S84-1876 ( Bedford , Essex ) , D84-7174 ( D77-12 , D77-6057 ( Centennial , J74-47 ) ) )	-	-
+G93-2225	Cook	Coker_6727	( Cook , Coker_6727 )	-	-
+G93-3034	G83-559	Bryan	( G83-559 ( D77-6103 ( Centennial , J74-47 ) , F77-6903 ) , Bryan )	-	-
+G94-1223	G86-1434	Doles	( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Doles )	-	-
+G94-1448	G86-1434	Doles	( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Doles )	-	-
+G94-1559	G86-1434	G85-373	( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , G85-373 ( Gordon , Braxton ) )	-	-
+G94-1572	G86-1434	G85-373	( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , G85-373 ( Gordon , Braxton ) )	-	-
+G94-1917	G86-1434	G85-373	( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , G85-373 ( Gordon , Braxton ) )	-	-
+G94-3117	G86-1434	Hagood	( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Hagood )	-	-
+G95-179	G86-1434	G86-1267	( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , G86-1267 ( D76-9665 ( Forrest , Centennial ) , Braxton ) )	-	-
+G95-2484	G86-1434	HY798	( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , HY798 )	-	-
+G95-2567	G86-1434	HY798	( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , HY798 )	-	-
+G95-2853	G87-1968	G86-1267	( G87-1968 ( Thomas , Gordon ) , G86-1267 ( D76-9665 ( Forrest , Centennial ) , Braxton ) )	-	-
+G95-2935	G87-1968	G86-1267	( G87-1968 ( Thomas , Gordon ) , G86-1267 ( D76-9665 ( Forrest , Centennial ) , Braxton ) )	-	-
+G95-346	G86-1434	G87-1968	( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , G87-1968 ( Thomas , Gordon ) )	-	-
+G96-1170	G86-1434	D87-4429	( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , D87-4429 ( Sharkey , LeFlore ) )	-	-
+G96-1797	G86-1434	Cook	( G86-1434 ( D79-6058 ( Tracy , Centennial ) , Twiggs ) , Cook )	-	-
+G96-2272	DPL_3776	G86-1267	( DPL_3776 ( Asgrow_A7986 , Asgrow_A5980 ) , G86-1267 ( D76-9665 ( Forrest , Centennial ) , Braxton ) )	-	-
+G97-1387	Doles	D87-4429	( Doles , D87-4429 ( Sharkey , LeFlore ) )	-	-
+G97-1417	Doles	D87-4429	( Doles , D87-4429 ( Sharkey , LeFlore ) )	-	-
+G97-1419	Doles	D87-4429	( Doles , D87-4429 ( Sharkey , LeFlore ) )	-	-
+G97-1486	Doles	D87-4429	( Doles , D87-4429 ( Sharkey , LeFlore ) )	-	-
+G97-2449	G89-375	Haskell	( G89-375 , Haskell )	-	-
+G97-3149	DPL_3776	Hartwig	( DPL_3776 ( Asgrow_A7986 , Asgrow_A5980 ) , Hartwig )	-	-
+G98-1053	Boggs	Doles	( Boggs , Doles )	-	-
+G98-1420	Boggs	Doles	( Boggs , Doles )	-	-
+G98-2641	G89-375	D87-4429	( G89-375 , D87-4429 ( Sharkey , LeFlore ) )	-	-
+G98-2866	Brim	Doles	( Brim , Doles )	-	-
+G98-3157	Brim	D87-4429	( Brim , D87-4429 ( Sharkey , LeFlore ) )	-	-
+G98-3520	Doles	Haskell	( Doles , Haskell )	-	-
+G98-465	Boggs	Benning	( Boggs , Benning )	-	-
+G98-5393	G89-146	Cook	( G89-146 , Cook )	-	-
+G99-1166	G91-2244	Benning	( G91-2244 ( F81-2815 , Colquitt ( Wright , Braxton ) ) , Benning )	-	-
+G99-1308	G91-2244	Benning	( G91-2244 ( F81-2815 , Colquitt ( Wright , Braxton ) ) , Benning )	-	-
+G99-2172	V91-3036	Doles	( V91-3036 ( Hutcheson , V84-1790 ( Epps , L77-994 ) ) , Doles )	-	-
+G99-2604	Prichard	Northrup_King_S75-55	( Prichard , Northrup_King_S75-55 )	-	-
+G99-2678	Prichard	Northrup_King_S75-55	( Prichard , Northrup_King_S75-55 )	-	-
+G99-2721	Prichard	Northrup_King_S75-55	( Prichard , Northrup_King_S75-55 )	-	-
+G99-2982	Prichard	Northrup_King_S75-55	( Prichard , Northrup_King_S75-55 )	-	-
+G99-3211	G91-2244	Doles	( G91-2244 ( F81-2815 , Colquitt ( Wright , Braxton ) ) , Doles )	-	-
+G99-4158	S91-1381	Benning	( S91-1381 ( Hartz_H5370 , Hartwig ) , Benning )	-	-
+GASF98-114	Benning	Danbaekkong	( Benning , Danbaekkong )	-	-
+GH03-1	Golden_Harvest_24040	-	( Golden_Harvest_24040 , - )	-	Selection from Golden Harvest 24040
+GH03-3	Golden_Harvest_2285	-	( Golden_Harvest_2285 , - )	-	Selection from Golden Harvest 2285
+GL_2250	Corsoy	Amsoy	( Corsoy , Amsoy )	PI 556672	Soybean Research Foundation, Inc., PVP 8100114
+GR8836	Asgrow_A3127	Williams_82	( Asgrow_A3127 ( Williams , Essex ) , Williams_82 )	PI 534647	-
+GR8936	Asgrow_A3127	Williams_82	( Asgrow_A3127 ( Williams , Essex ) , Williams_82 )	PI 534648, OX79104, HM8486	Ohio Agricultural Research and Development Center, Ohio State University, PVP 8700128
+GT_1200	Hark	Calland	( Hark , Calland )	PI 556555	Agripro Seeds, Inc., PVP 7900019
+GT_1310	L66L-140	Cutler	( L66L-140 ( Wayne , L57-0034 ( Clark , Adams ) ) , Cutler )	PI 556556	Agripro Seeds, Inc., PVP 7900021
+GT_1380	L66L-140	Adams	( L66L-140 ( Wayne , L57-0034 ( Clark , Adams ) ) , Adams )	PI 556609	Agripro Seeds, Inc., PVP 8100088
+GT_1440	Mitchell	Exp_40306	( Mitchell ( Amsoy , Wayne ) , Exp_40306 )	PI 556616	Agripro Seeds, Inc., PVP 8100016
+Ga58-33	D49-588	N51-1956	( D49-588 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , N51-1956 )	-	-
+Ga59-895	Jackson	D49-2491	( Jackson , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+Ga70-163	Davis	Lee	( Davis , Lee )	-	-
+Ga72-666	Bragg	Lee	( Bragg , Lee )	-	-
+Ga76-316	Bragg	Ransom	( Bragg , Ransom )	-	-
+Ga78-1011	Forrest	Hutton	( Forrest , Hutton )	-	-
+Ga78-2488	Hutton	Ga70-276	( Hutton , Ga70-276 )	-	-
+Ga79-945	Tracy	Ransom	( Tracy , Ransom )	-	-
+Ga80-1413	Centennial	F71-1138	( Centennial , F71-1138 )	-	-
+GaSoy_17	Bragg	Hood	( Bragg , Hood )	GaT71-1088,PI 553046	-
+GaT72-555	Jackson	Hood	( Jackson , Hood )	-	-
+GaT73-24	Davis	D68-180	( Davis , D68-180 ( Dyer , Bragg ) )	-	-
+GaT74-10	Hale_3	Delmar	( Hale_3 ( D51-4969 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , - ) , Delmar )	-	-
+GaT74-25	Bragg	F66-242	( Bragg , F66-242 )	-	-
+GaT75-731	Dare	Hampton_266A	( Dare , Hampton_266A )	-	-
+Gatan	Otootan	-	( Otootan ( PI_548479 , - ) , - )	PI 548454	Selected from Otootan
+Georgia_731	PI_95719-1	-	( PI_95719-1 , - )	-	Selection from PI 95719
+Goldsoy_	OAC_211	-	( OAC_211 ( Habaro ( PI_20405 , - ) , - ) , - )	PI 548332	Selection from OAC 211 ca. 1940  
+Gutwein_180	Harosoy_63	PI_248406	( Harosoy_63 , PI_248406 )	PI 556520	Soybean Research Foundation, Inc., PVP 7700036
+Gutwein_221	Corsoy	Amsoy	( Corsoy , Amsoy )	PI 556570	Soybean Research Foundation, Inc., PVP 7900108
+Gutwein_225	SRF_150	SRF_200	( SRF_150 , SRF_200 ( X68-136 , Amsoy_71 ) )	PI 556674	Soybean Research Foundation, Inc., PVP 8300093
+Gutwein_421	Clark_63	D61-6141	( Clark_63 , D61-6141 )	PI 556541	Soybean Research Foundation, Inc., PVP 7800051

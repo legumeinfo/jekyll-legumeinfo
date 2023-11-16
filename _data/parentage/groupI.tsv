@@ -1,0 +1,34 @@
+Individual	Parent1	Parent2	Pedigree	Synonyms	Comment
+IA1006	IA2008	Kenwood	( IA2008 ( BSR_101 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Kenwood )	-	-
+IA1022	Dairyland_98822	A00-711024	( Dairyland_98822 , A00-711024 ( A95-485020 , IA2036 ( Jack , A86-301024 ( A81-356022 ( Century , A76-304020 ) , Hack ) ) ) )	-	-
+IA1026HO	IA1026	-	( IA1026 , - )	-	-
+IA1028HO	IA1026	-	( IA1026 , - )	-	-
+IA2007	Pride_B152	A80-244003	( Pride_B152 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) )	-	-
+IA2008	BSR_101	A80-244003	( BSR_101 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) )	-	-
+IA2036	Jack	A86-301024	( Jack , A86-301024 ( A81-356022 ( Century , A76-304020 ) , Hack ) )	-	-
+IA2068	Jack	A86-301024	( Jack , A86-301024 ( A81-356022 ( Century , A76-304020 ) , Hack ) )	-	-
+IA2076LF	IA2076_	IA1010LF	( IA2076_ , IA1010LF )	-	-
+IA2102	A04-545045	AgriPro_AP98180-A01-0613	( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 )	-	-
+IA2103_	IA3027_	Soygenetics_F40412C	( IA3027_ , Soygenetics_F40412C )	A09-760043	-
+IA2104	IA3027	Soygenetics_F40412C	( IA3027 , Soygenetics_F40412C )	A09-760044	-
+IA2104HS	IA2104	-	( IA2104 ( IA3027 , Soygenetics_F40412C ) , - )	-	-
+IA3023	Dairyland_DSR365	Pioneer_P9381	( Dairyland_DSR365 , Pioneer_P9381 )	-	-
+IA3024	A97-553017	Pioneer_YB33A99	( A97-553017 , Pioneer_YB33A99 )	-	-
+IA3042	T-3211	A15025B011	( T-3211 , A15025B011 )	A05-213034	-
+IA3045	IA3027	IA2053	( IA3027 , IA2053 )	A07-425058	-
+IA3048	Dairyland_99540	IA2068	( Dairyland_99540 , IA2068 ( Jack , A86-301024 ( A81-356022 ( Century , A76-304020 ) , Hack ) ) )	-	-
+IA3050	Dairyland_98820-33	IA3024	( Dairyland_98820-33 , IA3024 ( A97-553017 , Pioneer_YB33A99 ) )	A07-523044	-
+IA4005	IA3023	IA3025	( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , IA3025 )	-	-
+IRV_Ex4731	Amsoy	Wayne	( Amsoy , Wayne )	-	-
+IVR_4311	Hack	Wayne	( Hack , Wayne )	-	-
+IVR_4731	Amsoy	Wayne	( Amsoy , Wayne )	-	-
+IVR_Ex4426	Amsoy	Wayne	( Amsoy , Wayne )	-	-
+IVR_Ex4428	Corsoy	Wayne	( Corsoy , Wayne )	-	-
+IVR_Ex4731	Amsoy	Wayne	( Amsoy , Wayne )	-	-
+IX93	A71-555-8-1	L61-344	( A71-555-8-1 , L61-344 )	-	-
+IX93-100	A71-555-8-1	L61-344	( A71-555-8-1 , L61-344 )	-	-
+Ike	Wayne	PI_54608-1	( Wayne , PI_54608-1 )	PI 556524	V. R. Seeds, Inc., PVP 7700081
+Illini	A.K.	-	( A.K. , - )	PI 548348, A.K. 3	Selection from A.K. ca. 1920
+Illini_sel.	Illini	-	( Illini ( A.K. , - ) , - )	-	Selection from Illini
+Ina	Jack	Hartwig	( Jack , Hartwig )	-	-
+Iyo	Landrace	-	( Landrace , - )	-	-

@@ -1,0 +1,132 @@
+Individual	Parent1	Parent2	Pedigree	Synonyms	Comment
+E00003	AgriPro_AP1995	Pioneer_P9281	( AgriPro_AP1995 ( AgriPro_AP1989 ( AgriPro_AP26 ( Beeson , Calland ) , Vickery ) , Asgrow_A3427 ( Asgrow_X3836 , Asgrow_A3127 ( Williams , Essex ) ) ) , Pioneer_P9281 )	-	-
+E05181-T	Loda	IA2053	( Loda , IA2053 )	-	-
+E06167	OAC_98-12	E99035	( OAC_98-12 ( 92546-01td ( Tall , OAC88-09 ) , OAC_Bayfield ( KG_60 , Bicentennial ) ) , E99035 ( IA2021 , Apollo ( Northrup_King_S23-12 , Elgin_87 ) ) )	-	-
+E06240	Loda	AxN-1-55	( Loda , AxN-1-55 ( Asgrow_A2506 , Syngenta_S19-90 ) )	-	-
+E06380	K1459_	LG97-8984	( K1459_ , LG97-8984 ( LG89-6661 ( Sherman , LG84-1096 ( PI_90566-1 , L74-3897 ( Williams , Beeson ) ) ) , HS89-3261 ( LG82-8379 ( PI_68508 , FC_04007B ) , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ) ) )	-	-
+E06936	PI_494182	Skylla	( PI_494182 , Skylla ( Dairyland_DSR217 ( Dairyland_Experimental , Asgrow_A3127 ( Williams , Essex ) ) , Northrup_King_S19-90 ) )	-	-
+E07051	IA3023	Loda	( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda )	-	-
+E09090	Skylla	LD01-7323	( Skylla ( Dairyland_DSR217 ( Dairyland_Experimental , Asgrow_A3127 ( Williams , Essex ) ) , Northrup_King_S19-90 ) , LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) )	-	-
+E09107	Skylla	PI_507471	( Skylla ( Dairyland_DSR217 ( Dairyland_Experimental , Asgrow_A3127 ( Williams , Essex ) ) , Northrup_King_S19-90 ) , PI_507471 )	-	-
+E10174	U01-390489	LD01-5907	( U01-390489 ( IA1008 , NE3001 ( Colfax , A91-701035 ( A86-301024 ( A81-356022 ( Century , A76-304020 ) , Hack ) , DeKalb_226 ) ) ) , LD01-5907 ( Ina ( Jack , Hartwig ) , IA3010 ) )	-	-
+E10265LL	IA2065	IA2078	( IA2065 , IA2078 )	-	-
+E11128T	E05276-T	LD01-7323	( E05276-T , LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) )	-	-
+E11431	Skylla	PI_567537	( Skylla ( Dairyland_DSR217 ( Dairyland_Experimental , Asgrow_A3127 ( Williams , Essex ) ) , Northrup_King_S19-90 ) , PI_567537 )	-	-
+E12042	IA3023	E00003	( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , E00003 ( AgriPro_AP1995 ( AgriPro_AP1989 ( AgriPro_AP26 ( Beeson , Calland ) , Vickery ) , Asgrow_A3427 ( Asgrow_X3836 , Asgrow_A3127 ( Williams , Essex ) ) ) , Pioneer_P9281 ) )	-	-
+E13100	LD01-7323	U01-390489	( LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) , U01-390489 ( IA1008 , NE3001 ( Colfax , A91-701035 ( A86-301024 ( A81-356022 ( Century , A76-304020 ) , Hack ) , DeKalb_226 ) ) ) )	-	-
+E13268	U03-300134	E07051	( U03-300134 ( NE32022 , NE2802 ) , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) )	-	-
+E13364	E07051	E10928	( E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) , E10928 )	-	-
+E13370	E07051	E10928	( E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) , E10928 )	-	-
+E13902	E11955	E07051	( E11955 , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) )	-	-
+E14077	U03-300134	E07051	( U03-300134 ( NE32022 , NE2802 ) , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) )	-	-
+E14141	LG04-4468	U02-242055	( LG04-4468 ( LG97-8856 ( LG90-13144 , LG88-3146 ( PI_427099 , PI_445830 ) ) , IA3010 ) , U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) )	-	-
+E14148	LG05-2359	U03-100612	( LG05-2359 ( LG97-7012 ( LG89-1525 ( PI_90566 , L74-3897 ( Williams , Beeson ) ) , Asgrow_A3322 ) , Loda ) , U03-100612 ( MSPB6S4 , Pioneer_P93B82 ) )	-	-
+E14309	E07051	E11358	( E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) , E11358 )	-	-
+E14314	E07051	E11358	( E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) , E11358 )	-	-
+E15079T	E07158-T	LD01-7323	( E07158-T , LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) )	-	-
+E15165T	E07158-T	E07051	( E07158-T , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) )	-	-
+E15338	E09088	E12901	( E09088 , E12901 )	-	-
+E15339	IA2102	LD02-4485	( IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) )	-	-
+E15345	IA2102	LD02-4485	( IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) )	-	-
+E15346T	IA2102	E07051	( IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) )	-	-
+E15347	IA2102	E07051	( IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) )	-	-
+E15349	IA2102	E07051	( IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) )	-	-
+E15351	IA2102	E07051	( IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) )	-	-
+E15390	E07048	E06186	( E07048 , E06186 )	-	-
+E15901	E11955-4	E07051	( E11955-4 , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) )	-	-
+E16030	06NB204846	LG08-3009	( 06NB204846 ( WW115926 , 98211-A01-36153 ( Syngenta_S21-A1 , 92032-A95-58316 ( AP2880 , Asgrow_A2872 ( Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Asgrow_A3501 ( Williams_82 , Asgrow_A3127 ( Williams , Essex ) ) ) ) ) ) , LG08-3009 ( Golden_Harvest_H2885 , LG00-8301 ( PI_574477 , PI_561377 ) ) )	-	-
+E16031	06NB204846	LG08-3009	( 06NB204846 ( WW115926 , 98211-A01-36153 ( Syngenta_S21-A1 , 92032-A95-58316 ( AP2880 , Asgrow_A2872 ( Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Asgrow_A3501 ( Williams_82 , Asgrow_A3127 ( Williams , Essex ) ) ) ) ) ) , LG08-3009 ( Golden_Harvest_H2885 , LG00-8301 ( PI_574477 , PI_561377 ) ) )	-	-
+E16099	PI_550729	IA2102	( PI_550729 , IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) )	-	-
+E16184	S20-20	E07051	( S20-20 , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) )	-	-
+E16186	S20-20	E07051	( S20-20 , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) )	-	-
+E16189	S20-20	IA2102	( S20-20 , IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) )	-	-
+E16265	E13902	E07051	( E13902 ( E11955 , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) ) , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) )	-	-
+E16266	E13902	E07051	( E13902 ( E11955 , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) ) , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) )	-	-
+E16267	E13902	E07051	( E13902 ( E11955 , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) ) , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) )	-	-
+E16346	PI_540453	LD02-4485	( PI_540453 , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) )	-	-
+E16380	E07051	E10174	( E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) , E10174 ( U01-390489 ( IA1008 , NE3001 ( Colfax , A91-701035 ( A86-301024 ( A81-356022 ( Century , A76-304020 ) , Hack ) , DeKalb_226 ) ) ) , LD01-5907 ( Ina ( Jack , Hartwig ) , IA3010 ) ) )	-	-
+E16387	E07051	E10175	( E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) , E10175 )	-	-
+E16398	E10175	E07051	( E10175 , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) )	-	-
+E16410	E06240	E10174	( E06240 ( Loda , AxN-1-55 ( Asgrow_A2506 , Syngenta_S19-90 ) ) , E10174 ( U01-390489 ( IA1008 , NE3001 ( Colfax , A91-701035 ( A86-301024 ( A81-356022 ( Century , A76-304020 ) , Hack ) , DeKalb_226 ) ) ) , LD01-5907 ( Ina ( Jack , Hartwig ) , IA3010 ) ) )	-	-
+E16411	E06240	E11291	( E06240 ( Loda , AxN-1-55 ( Asgrow_A2506 , Syngenta_S19-90 ) ) , E11291 )	-	-
+E16915	E13902	E13367	( E13902 ( E11955 , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) ) , E13367 )	-	-
+E17004	PI_540453	IA2102	( PI_540453 , IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) )	-	-
+E17040	E07051	IA2102	( E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) , IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) )	-	-
+E17054	IA2102	E07051	( IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) )	-	-
+E17062	IA2102	E06240	( IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) , E06240 ( Loda , AxN-1-55 ( Asgrow_A2506 , Syngenta_S19-90 ) ) )	-	-
+E17069	IA2102	E06240	( IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) , E06240 ( Loda , AxN-1-55 ( Asgrow_A2506 , Syngenta_S19-90 ) ) )	-	-
+E17137	E07158-T	E07051	( E07158-T , E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) )	-	-
+E17167	Jilin_20-2	AR09-191018	( Jilin_20-2 , AR09-191018 )	-	-
+E17184	Jilin_20-2	LD01-7323	( Jilin_20-2 , LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) )	-	-
+E17203	E11128T	LD02-4485	( E11128T ( E05276-T , LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) ) , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) )	-	-
+E17269	E13367	AR09-191018	( E13367 , AR09-191018 )	-	-
+E17274	E13367	IA2102	( E13367 , IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) )	-	-
+E17275	E13367	IA2102	( E13367 , IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) )	-	-
+E17283	E13367	E05181-T	( E13367 , E05181-T ( Loda , IA2053 ) )	-	-
+E17801-07	E07051	E13802	( E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) , E13802 )	-	-
+E17801-08	E07051	E13802	( E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) , E13802 )	-	-
+E17804-01	E07051	E15805	( E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) , E15805 )	-	-
+E18012	E07051	E13364	( E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) , E13364 ( E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) , E10928 ) )	-	-
+E18015	IA2102	E11128T	( IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) , E11128T ( E05276-T , LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) ) )	-	-
+E18024T	LD01-7323	E11128T	( LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) ( LN95-5454 ( Jack , IA3003 ) ( Jack , IA3003 ) , Dwight ) , E11128T ( E05276-T , LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) ) )	-	-
+E18074	E09107	E11431	( E09107 ( Skylla ( Dairyland_DSR217 ( Dairyland_Experimental , Asgrow_A3127 ( Williams , Essex ) ) , Northrup_King_S19-90 ) ( Dairyland_DSR217 ( Dairyland_Experimental , Asgrow_A3127 ( Williams , Essex ) ) ( Dairyland_Experimental , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Northrup_King_S19-90 ) , PI_507471 ) , E11431 ( Skylla ( Dairyland_DSR217 ( Dairyland_Experimental , Asgrow_A3127 ( Williams , Essex ) ) , Northrup_King_S19-90 ) , PI_567537 ) )	-	-
+E18433	E13364	U06-814223R	( E13364 ( E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) , E10928 ) , U06-814223R )	-	-
+E18450GT	E13367	U06-814223R	( E13367 , U06-814223R )	-	-
+E18610T	IA2102	E11128T	( IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) , E11128T ( E05276-T , LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) ) )	-	-
+E18638T	E11128T	IA2102	( E11128T ( E05276-T , LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) ) , IA2102 ( A04-545045 ( Pioneer_93B86 , A00-711022 ) , AgriPro_AP98180-A01-0613 ) )	-	-
+E18834	E16830-1	E12076T	( E16830-1 , E12076T )	-	-
+E19005	E07051	LG10-12468	( E07051 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , Loda ) , LG10-12468 )	-	-
+E19194	E16200	E11431	( E16200 , E11431 ( Skylla ( Dairyland_DSR217 ( Dairyland_Experimental , Asgrow_A3127 ( Williams , Essex ) ) , Northrup_King_S19-90 ) , PI_567537 ) )	-	-
+E19288T	E16901	E11128T	( E16901 , E11128T ( E05276-T , LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) ) )	-	-
+E19314T	E16902	E11128T	( E16902 , E11128T ( E05276-T , LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) ) )	-	-
+E19319	E16902	E11128T	( E16902 , E11128T ( E05276-T , LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) ) )	-	-
+E19412	E13390	E13100	( E13390 , E13100 ( LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) , U01-390489 ( IA1008 , NE3001 ( Colfax , A91-701035 ( A86-301024 ( A81-356022 ( Century , A76-304020 ) , Hack ) , DeKalb_226 ) ) ) ) )	-	-
+E19413	E13390	E13100	( E13390 , E13100 ( LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) , U01-390489 ( IA1008 , NE3001 ( Colfax , A91-701035 ( A86-301024 ( A81-356022 ( Century , A76-304020 ) , Hack ) , DeKalb_226 ) ) ) ) )	-	-
+E84108	Sprite	Hardin	( Sprite , Hardin )	-	-
+E84159	Sprite	Altona	( Sprite , Altona ( Flambeau , 052-903 ) )	-	-
+E84165	Sprite	Altona	( Sprite , Altona ( Flambeau , 052-903 ) )	-	-
+E85110	A80-244003	U76168	( A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) , U76168 ( Williams , PI_89075 ) )	-	-
+E85171	A80-244003	Miami	( A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) , Miami )	-	-
+E86067	A80-145015	A79-135010	( A80-145015 , A79-135010 ( Pride_B216 ( Corsoy , Wayne ) , Cumberland ) )	-	-
+E86237	ProSoy_PS104	HW8028	( ProSoy_PS104 , HW8028 ( A75-10521 , Century ) )	-	Maybe Felix?
+E86315	HW8039	Pella	( HW8039 , Pella )	-	-
+E86339	HW8039	Elgin	( HW8039 , Elgin )	-	-
+E86348	HW8039	A80-244035	( HW8039 , A80-244035 )	-	-
+E87202	Corsoy_79	HW8123	( Corsoy_79 , HW8123 ( A76-202015 ( AP6 , - ) , A76-304005 ) )	-	-
+E87223	HW8123	LN80-10508	( HW8123 ( A76-202015 ( AP6 , - ) , A76-304005 ) , LN80-10508 ( Century , Land_O_Lakes_Max ) )	-	-
+E91031	E84108	Conrad	( E84108 ( Sprite , Hardin ) , Conrad )	-	-
+E93424	Asgrow_A2943	Northrup_King_S23-12	( Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) , Northrup_King_S23-12 )	-	-
+E93433	Asgrow_A2943	Northrup_King_S23-12	( Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) , Northrup_King_S23-12 )	-	-
+E94172	Hack	AgriPro_AP1989	( Hack , AgriPro_AP1989 ( AgriPro_AP26 ( Beeson , Calland ) , Vickery ) )	-	-
+E95562	Asgrow_A2396	Northrup_King_S19-90	( Asgrow_A2396 ( CM214 , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ) , Northrup_King_S19-90 )	-	-
+E95882	Felix	Northrup_King_S19-90	( Felix , Northrup_King_S19-90 )	-	-
+E99035	IA2021	Apollo	( IA2021 , Apollo ( Northrup_King_S23-12 , Elgin_87 ) )	-	-
+E99248	Pioneer_P9281	Northrup_King_S19-90	( Pioneer_P9281 , Northrup_King_S19-90 )	-	-
+EF59	Essex	Forrest	( Essex , Forrest )	-	-
+EX01F04	D02279	OAC9501	( D02279 ( Dairyland_DSR195 , YB18H ( Pioneer_P9172 , 90676 ( ST2250 , G40-3P9392 ) ) ) , OAC9501 )	-	-
+EX13Q01	ST1570	ST1073	( ST1570 , ST1073 )	-	-
+EX14M05	Pioneer_P91B53	Pioneer_P92B63	( Pioneer_P91B53 , Pioneer_P92B63 )	-	-
+EX15N01	30337R089	Pioneer_P92B52	( 30337R089 ( Pioneer_P9162 ( Pioneer_P2981 , Asgrow_A1937 ( Hodgson , D3003 ( Wayne , - ) ) ) ( Pioneer_P2981 , Asgrow_A1937 ( Hodgson , D3003 ( Wayne , - ) ) ( Hodgson , D3003 ( Wayne , - ) ( Wayne , - ) ) ) , 30289F2 ( Pioneer_P9162 ( Pioneer_P2981 , Asgrow_A1937 ( Hodgson , D3003 ( Wayne , - ) ) ) , 30214 ( Pioneer_P9341 , 30129 ( XB33B ( CM304BR , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ( CM304BR , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ( Williams , Essex ) ) , 30107 ( XB33B ( CM304BR , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , 5961 ( Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) , Resnik ) ) ) ) ) ) , Pioneer_P92B52 )	-	-
+EX21Q04	YB22N	Pioneer_P92B63	( YB22N ( MO01718 ( MO50321 ( MO01010 ( Harcor , CM183 ) ( Harcor , CM183 ) , A8 ) , MO50226 ( ST3010 , MO01010 ( Harcor , CM183 ) ) ) , Pioneer_P9171 ( Pioneer_P9271 , Asgrow_A3127 ( Williams , Essex ) ) ) , Pioneer_P92B63 )	-	-
+EX24P05	Pioneer_P92B38	EX28Q01	( Pioneer_P92B38 , EX28Q01 ( MO25731 , Pioneer_P9306 ) )	-	-
+EX26C03	Pioneer_P92B52	ST3870	( Pioneer_P92B52 , ST3870 )	-	-
+EX28Q01	MO25731	Pioneer_P9306	( MO25731 , Pioneer_P9306 )	-	-
+EX29E04	ST3643	XB29V99	( ST3643 , XB29V99 ( Pioneer_P93B82 , 91013F2 ( W30132-004 , 90753 ( ST2250 , 90682 ( Pioneer_P9342 , G40-3P9341 ) ) ) ) )	-	-
+EX29F04	ST3643	XB29V99	( ST3643 , XB29V99 ( Pioneer_P93B82 , 91013F2 ( W30132-004 , 90753 ( ST2250 , 90682 ( Pioneer_P9342 , G40-3P9341 ) ) ) ) )	-	-
+EX32K06	Pioneer_P93B15	Pioneer_P93B82	( Pioneer_P93B15 , Pioneer_P93B82 )	-	-
+EX32M02	ST3883	Pioneer_P93B51	( ST3883 , Pioneer_P93B51 )	-	-
+EX32S02	ST3171	Pioneer_P93B82	( ST3171 , Pioneer_P93B82 )	-	-
+EX33M07	Pioneer_P93B15	IA3018	( Pioneer_P93B15 , IA3018 )	-	-
+EX35B06	Pioneer_P93B66	EX36Y01	( Pioneer_P93B66 , EX36Y01 ( CM428 , ST3380 ) )	-	-
+EX36Y01	CM428	ST3380	( CM428 , ST3380 )	-	-
+EX39E00	MO14426	Pioneer_P93B82	( MO14426 , Pioneer_P93B82 )	-	-
+EX40U03	YB42D	Pioneer_P94B22	( YB42D ( XB43B ( Pioneer_P9391 , Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ) , W6471M010 ( 6347 ( Cartter , Asgrow_A3307 ) , 6363 ( Cartter , Pioneer_P9272 ) ) ) , Pioneer_P94B22 )	-	-
+EX48Q02	ST3883	CM428	( ST3883 , CM428 )	-	-
+EX53F03	Pioneer_P9482	Pioneer_P9481	( Pioneer_P9482 , Pioneer_P9481 )	-	-
+EX53P06	YB55H00	YB52J00	( YB55H00 ( Pioneer_P9594 , S6423 ) , YB52J00 ( Wicomico , Pioneer_P95B32 ) )	-	-
+EX55N04	YB52H	ST3680	( YB52H ( W4850-011 ( J81-116 , Y186402 ( 1190-19 ( Mack , Forrest ) , Asgrow_A3127 ( Williams , Essex ) ) ) , Pioneer_P9521 ( Pioneer_P9531 , Pioneer_P9561 ( Mack , Forrest ) ) ) , ST3680 )	-	-
+EX55Q05	W8692-462	Pioneer_P9552	( W8692-462 ( Asgrow_A5979 , Hutcheson ) , Pioneer_P9552 )	-	-
+EX56N05	Pioneer_P95B34	Pioneer_P95B95	( Pioneer_P95B34 , Pioneer_P95B95 )	-	-
+Eglin	AP6	-	( AP6 , - )	-	-
+Erie	A78-123018	Century_84	( A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) , Century_84 )	PI 561700	-
+Exp_C319428	McCall	S19-90	( McCall , S19-90 )	Exp. C319428, C319428	-

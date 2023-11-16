@@ -1,0 +1,48 @@
+Individual	Parent1	Parent2	Pedigree	Synonyms	Comment
+B._H._Manchu	Manchu	-	( Manchu ( PI_30593 , - ) , - )	-	Black hilum selection from Manchu
+B04-7820	LG92-4208	LG94-1128	( LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) , LG94-1128 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG87-1991 ( PI_189930 , PI_68600 ) ) )	-	-
+B05-8046	Loda	LG93-7054	( Loda , LG93-7054 ( LG85-3343 ( PI_361064 , PI_407710 ) , Northrup_King_S42-30 ) )	-	ASR
+B186	Corsoy	Wayne	( Corsoy , Wayne )	PI 556503	Novartis Seeds, Inc., PVP 7500088
+B217809	X9054	Asgrow_A5403	( X9054 ( Coker_156 ( Dare , D64-3937 ( Hill , D59-1619 ) ) , Nathan ) , Asgrow_A5403 )	-	-
+B242	Hampton_266	Wells	( Hampton_266 ( Majos ( Tokyo ( PI_8424 , - ) , Yelredo ( Mammoth_Yellow , Laredo ) ) , Lee ) , Wells )	PI 556646	Novartis Seeds, Inc., PVP 8200091
+B51152	Pioneer_P9584	Syngenta_S59-60	( Pioneer_P9584 , Syngenta_S59-60 )	-	-
+B640235	Asgrow_A4715	CM428	( Asgrow_A4715 , CM428 )	-	-
+BA017536	X9855	Pioneer_P9552	( X9855 , Pioneer_P9552 )	-	-
+BA018212	Carver	Syngenta_S80-J2	( Carver , Syngenta_S80-J2 )	-	-
+BA743303	Asgrow_A5885	B217809	( Asgrow_A5885 ( Asgrow_X5512 , Asgrow_X5803 ) , B217809 ( X9054 ( Coker_156 ( Dare , D64-3937 ( Hill , D59-1619 ) ) , Nathan ) , Asgrow_A5403 ) )	-	-
+BA847094	DPL_3519s	Syngenta_S59-V6	( DPL_3519s , Syngenta_S59-V6 )	-	-
+BA914285	B821241	Pioneer_P9662	( B821241 , Pioneer_P9662 )	-	-
+BARC-6	CX797-21	D76-8070	( CX797-21 , D76-8070 )	-	-
+BARC-7	CX797-21	D80-6931	( CX797-21 , D80-6931 )	PI 555397	-
+BC3467878	Pioneer_P95Y10	W4-4	( Pioneer_P95Y10 , W4-4 )	-	-
+BC38467881	Pioneer_P94Y61	W4-4	( Pioneer_P94Y61 , W4-4 )	-	-
+BC41267383	Pioneer_P95Y10	BC38467878	( Pioneer_P95Y10 , BC38467878 )	-	-
+BC41267385	Pioneer_P94Y61	BC38467881	( Pioneer_P94Y61 , BC38467881 ( Pioneer_P94Y61 , W4-4 ) )	-	-
+BC45036483	Pioneer_P95Y10	BC41267383	( Pioneer_P95Y10 , BC41267383 ( Pioneer_P95Y10 , BC38467878 ) )	-	-
+BC45036488	Pioneer_P94Y61	BC41267385	( Pioneer_P94Y61 , BC41267385 ( Pioneer_P94Y61 , BC38467881 ( Pioneer_P94Y61 , W4-4 ) ) )	-	-
+BN0800007	WW115926	99702-B02-58205	( WW115926 , 99702-B02-58205 ( B3491N , AP2952N ) )	-	-
+BSR_201	Pride_B216	AX901-40-2	( Pride_B216 ( Corsoy , Wayne ) , AX901-40-2 ( Beeson , AP68-1022 ) )	-	-
+BT_2585	CM137	CM304-21	( CM137 , CM304-21 )	PI 542399	Ziller Seed Company, Inc., PVP 9000213
+BT_2877	Beeson	Williams_79	( Beeson , Williams_79 )	PI 555464	Ziller Seed Company, Inc., PVP 9100250
+BV-4	T135	PI_83945-4	( T135 ( Illini ( A.K. , - ) , - ) , PI_83945-4 )	-	-
+BY0800071	BA914285	N97-9658	( BA914285 ( B821241 , Pioneer_P9662 ) , N97-9658 ( N90-7199 , Cook ) )	-	-
+BY0800148	BA017536	Ozark	( BA017536 ( X9855 , Pioneer_P9552 ) , Ozark )	-	-
+BY0800231	Lonoke	BA914285	( Lonoke , BA914285 ( B821241 , Pioneer_P9662 ) )	-	-
+Bass	BSR_301	Essex	( BSR_301 , Essex )	PI 548652	-
+Bavender_Special	Mukden	-	( Mukden ( PI_50523 , - ) , - )	-	Mukden x a North Carolina variety
+Bavender_Special-2	Bavender_Special	-	( Bavender_Special ( Mukden ( PI_50523 , - ) , - ) , - )	-	Selection from Bavender Special
+Beechwood	S58-544	Merit	( S58-544 , Merit )	PI 556517	Funk Seeds International, Inc., PVP 7600074
+Beeson_80	Beeson	Arksoy	( Beeson , Arksoy ( PI_35335 , - ) )	-	-
+Bellatti_L-263	Bavender_Special	-	( Bavender_Special ( Mukden ( PI_50523 , - ) , - ) , - )	-	from Bavender Special
+Bienville	Pelican_#2	Ogden	( Pelican_#2 , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+Bilomi_No._3	PI_240664	-	( PI_240664 , - )	-	Selection from PI 240664
+Biloxi	PI_23211	-	( PI_23211 , - )	PI 548444	Selected from PI 23211 Tangsi, Cn 1908
+Boggs_RR	Boggs	MON_RR	( Boggs , MON_RR )	-	-
+Boone	PI_54563-3	-	( PI_54563-3 , - )	PI 548309, Missouri Selection	Selection from PI 54563, CV-1
+Brookings	A00-711063	SD98-595	( A00-711063 ( Pioneer_P9233 , A95-485020 ) , SD98-595 ( Kato , Asgrow_A1929 ) )	PI 667735	CV-512, F4:F5
+Brooks	Bragg	Hood	( Bragg , Hood )	PI 556545	Gold Kist, Inc., PVP 7700025
+Burdette_#12	Ogden	-	( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , - )	-	Selection from Ogden
+Burdette_#13	Arksoy	-	( Arksoy ( PI_35335 , - ) , - )	-	Selection from Arksoy
+Burdette_#19	Arksoy	-	( Arksoy ( PI_35335 , - ) , - )	-	Selection from Arksoy
+Burdette_#20	Arksoy	-	( Arksoy ( PI_35335 , - ) , - )	-	Selection from Arksoy
+Burlison	K74-113-76-486	Century	( K74-113-76-486 , Century )	PI 533655	PVP 8900194

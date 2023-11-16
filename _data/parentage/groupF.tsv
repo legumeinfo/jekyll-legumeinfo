@@ -1,0 +1,108 @@
+Individual	Parent1	Parent2	Pedigree	Synonyms	Comment
+F55-1766	Jackson	D49-2491	( Jackson , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+F55-217	D49-772	Improved_Pelican	( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican )	-	-
+F55-255	D49-772	Improved_Pelican	( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican )	-	-
+F55-310	D49-772	Improved_Pelican	( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican )	-	-
+F55-375	D49-772	Improved_Pelican	( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican )	-	-
+F55-377	D49-772	Improved_Pelican	( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican )	-	-
+F55-822	Jackson	D49-2491	( Jackson , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+F55-822A	F55-822	-	( F55-822 ( Jackson , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , - )	-	Selection from F55-822
+F55-861	Jackson	D49-2491	( Jackson , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+F55-941	D49-772	D50-1633	( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D50-1633 )	-	-
+F55-978	D49-772	D50-1633	( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D50-1633 )	-	-
+F56-3460	Jackson	D49-2491	( Jackson , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+F56-3492	Jackson	D49-2491	( Jackson , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+F57-1471	D49-2491	Majos	( D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , Majos ( Tokyo ( PI_8424 , - ) , Yelredo ( Mammoth_Yellow , Laredo ) ) )	-	Parentage conflict, may be D49-772 x Majos
+F57-467	Jackson	D49-2491	( Jackson , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+F57-481	Jackson	D49-2491	( Jackson , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+F57-6279	Jackson	D49-2491	( Jackson , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+F57-734	D49-772	Improved_Pelican	( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican )	-	-
+F57-735	D49-772	Improved_Pelican	( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican )	-	-
+F57-784	D49-772	Improved_Pelican	( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican )	-	-
+F57-868	D49-2491	Biloxi	( D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , Biloxi ( PI_23211 , - ) )	-	Cultivar derived from F3 generation seed line
+F57-873	D49-2491	Biloxi	( D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , Biloxi ( PI_23211 , - ) )	-	Cultivar derived from F3 generation seed line
+F58-3726	D49-772	Improved_Pelican	( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican )	-	-
+F58-6217	D49-772	Improved_Pelican	( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican )	-	-
+F58-6421	D49-772	Improved_Pelican	( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican )	-	-
+F59-1362	Jackson	D49-2491	( Jackson , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+F59-1505	Jackson	D49-2491	( Jackson , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+F59-1851	D51-5091	Jackson	( D51-5091 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Jackson )	-	-
+F59-2496	D55-4090	D55-4159	( D55-4090 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , D55-4159 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) )	-	-
+F59-693	Hill	D52-810	( Hill , D52-810 ( Roanoke , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ) )	-	-
+F60-2252	D51-4877	D51-5091	( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) ) , D51-5091 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+F61-1864	Palmetto	D49-2491	( Palmetto ( PI_71587 , - ) , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+F61-3118	D51-5091	Jackson	( D51-5091 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Jackson )	-	-
+F61-3132	D51-5091	Jackson	( D51-5091 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Jackson )	-	-
+F62-1058	F57-871	F57-879	( F57-871 , F57-879 )	-	-
+F62-1080	F57-871	F57-879	( F57-871 , F57-879 )	-	-
+F62-1091	F57-871	F57-879	( F57-871 , F57-879 )	-	-
+F62-1770	F57-871	F57-873	( F57-871 , F57-873 ( D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , Biloxi ( PI_23211 , - ) ) )	-	-
+F62-2184	F57-873	F57-868	( F57-873 ( D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , Biloxi ( PI_23211 , - ) ( PI_23211 , - ) ) , F57-868 ( D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , Biloxi ( PI_23211 , - ) ) )	-	-
+F62-2953	D51-5091	N50-2542	( D51-5091 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , N50-2542 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) )	-	-
+F62-3180	La59-1-4	D51-4877	( La59-1-4 , D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+F62-3193	La59-1-4	D51-4877	( La59-1-4 , D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+F62-3414	Seminole	D49-2491	( Seminole ( PI_93058 , - ) , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+F62-3461	D51-5091	N50-2542	( D51-5091 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , N50-2542 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) )	-	-
+F63-3938	Seminole	F55-822	( Seminole ( PI_93058 , - ) , F55-822 ( Jackson , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+F64-1683	Hardee	D53-1301	( Hardee , D53-1301 ( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+F64-1881	F57-1471	D53-1301	( F57-1471 ( D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , Majos ( Tokyo ( PI_8424 , - ) , Yelredo ( Mammoth_Yellow , Laredo ) ) ) , D53-1301 ( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+F64-1917	F57-1471	D53-1301	( F57-1471 ( D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , Majos ( Tokyo ( PI_8424 , - ) , Yelredo ( Mammoth_Yellow , Laredo ) ) ) , D53-1301 ( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+F64-1928	F57-1471	D53-1301	( F57-1471 ( D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , Majos ( Tokyo ( PI_8424 , - ) , Yelredo ( Mammoth_Yellow , Laredo ) ) ) , D53-1301 ( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+F64-2505	F57-1471	F58-3726	( F57-1471 ( D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , Majos ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , Yelredo ( Mammoth_Yellow , Laredo ) ) ) , F58-3726 ( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican ) )	-	-
+F64-2570	F57-1471	F58-3726	( F57-1471 ( D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , Majos ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , Yelredo ( Mammoth_Yellow , Laredo ) ) ) , F58-3726 ( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican ) )	-	-
+F64-2571	F57-1471	F58-3726	( F57-1471 ( D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , Majos ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , Yelredo ( Mammoth_Yellow , Laredo ) ) ) , F58-3726 ( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican ) )	-	-
+F64-2597	F57-1471	F58-3726	( F57-1471 ( D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , Majos ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , Yelredo ( Mammoth_Yellow , Laredo ) ) ) , F58-3726 ( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican ) )	-	-
+F64-2778	PI_171445	D51-5091	( PI_171445 , D51-5091 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+F65-1753	Bragg	D60-8107	( Bragg , D60-8107 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) )	-	-
+F66-1016	Hardee	D58-3358	( Hardee , D58-3358 )	-	-
+F66-1062	F57-735	D58-3358	( F57-735 ( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican ) , D58-3358 )	-	-
+F66-1080	F57-735	D58-3358	( F57-735 ( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican ) , D58-3358 )	-	-
+F66-1109	F57-735	D58-3358	( F57-735 ( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican ) , D58-3358 )	-	-
+F66-1303	Hardee	D53-1301	( Hardee , D53-1301 ( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+F66-1689	Hardee	D58-3358	( Hardee , D58-3358 )	-	-
+F66-550	Ogden	D53-1301	( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , D53-1301 ( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+F67-1749	F57-1471	F58-3726	( F57-1471 ( D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , Majos ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , Yelredo ( Mammoth_Yellow , Laredo ) ) ) , F58-3726 ( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican ) )	-	-
+F67-1806	F57-1471	F58-3726	( F57-1471 ( D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , Majos ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , Yelredo ( Mammoth_Yellow , Laredo ) ) ) , F58-3726 ( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Improved_Pelican ) )	-	-
+F67-3673	Bragg	D60-8107	( Bragg , D60-8107 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) )	-	-
+F70-2060	F62-2953	D62-3286	( F62-2953 ( D51-5091 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , N50-2542 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) , D62-3286 )	-	-
+F70-2061	F62-2953	D62-3286	( F62-2953 ( D51-5091 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , N50-2542 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) , D62-3286 )	-	-
+F70-2207	D60-9240	Hardee	( D60-9240 , Hardee )	-	-
+F70-3374	F63-3999	Hutton	( F63-3999 , Hutton )	-	-
+F70-3380	F63-3999	Hutton	( F63-3999 , Hutton )	-	-
+F70-3390	F63-3999	Hutton	( F63-3999 , Hutton )	-	-
+F79-6429	Davis	Cobb	( Davis , Cobb )	-	-
+F8-291	Mandarin	Manitoba_Brown	( Mandarin ( PI_36653 , - ) , Manitoba_Brown )	-	Presumably Mandarin (Ottawa)
+F82-1739	Bedford	Kirby	( Bedford , Kirby )	-	-
+F82-1820	Bedford	Kirby	( Bedford , Kirby )	-	-
+F82-1851	Bedford	Kirby	( Bedford , Kirby )	-	-
+F83-1648	Bedford	Kirby	( Bedford , Kirby )	-	-
+F83-1960	Bedford	Kirby	( Bedford , Kirby )	-	-
+F83-1969	Bedford	Kirby	( Bedford , Kirby )	-	-
+F83-2048	Bedford	Kirby	( Bedford , Kirby )	-	-
+F83-2184	Bedford	Kirby	( Bedford , Kirby )	-	-
+F88-8626	F83-1969	F79-6429	( F83-1969 ( Bedford , Kirby ) , F79-6429 ( Davis , Cobb ) )	-	-
+F88-8662	F83-1969	F79-6429	( F83-1969 ( Bedford , Kirby ) , F79-6429 ( Davis , Cobb ) )	-	-
+F88-8692	Kirby	F84-1569	( Kirby , F84-1569 )	-	-
+F88-8723	Kirby	Coker_6738	( Kirby , Coker_6738 ( Braxton , Coker_368 ( Corker_71-211 , Centennial ) ) )	-	-
+F88-9160	F77-2000	Braxton	( F77-2000 , Braxton )	-	-
+F89-4067	Kirby	F84-1569	( Kirby , F84-1569 )	-	-
+F90-3126	F77-2000	F84-1569	( F77-2000 , F84-1569 )	-	-
+F91-1419	PI_417479	F87-4017	( PI_417479 , F87-4017 )	-	-
+F92-1792	PI_417479	F87-4017	( PI_417479 , F87-4017 )	-	-
+FC_31596	Manchu	-	( Manchu ( PI_30593 , - ) , - )	-	Selection from Manchu
+FFR_111	Adelphia	Harosoy_63	( Adelphia , Harosoy_63 )	PI 556519	FFR Cooperative, PVP 7600007
+FFR_224	L65-4059	T117	( L65-4059 , T117 ( AK114 ( Illini ( A.K. , - ) , - ) , PI_65394 ) )	PI 556577	FFR Cooperative, PVP 8000090
+FFR_335	Wayne	Kent	( Wayne , Kent )	PI 556576	FFR Cooperative, PVP 7900070
+FFR_444	Wayne	Kent	( Wayne , Kent )	PI 556546	FFR Cooperative, PVP 7600006
+FFR_464	Mitchell	Essex	( Mitchell ( Amsoy , Wayne ) , Essex )	PI 540877	FFR Cooperative, PVP 9000160
+FFR_493	FFR_561	Asgrow_A2943	( FFR_561 ( Essex , V68-920 ( York , Dare ) ) , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) )	19853, PI 590232, FFR493	PVP 9500148, Southern States Seed Co.
+FFR_561	Essex	V68-920	( Essex , V68-920 ( York , Dare ) )	FFR561, PI 556826, TJS 329	Southern States Seed Co., PVP 008700012, FFR Cooperative
+FFR_646	Bedford	Bay	( Bedford , Bay )	PI 542067	FFR Cooperative, PVP 9000192
+FH31-3	Fiskeby_V	Harosoy_63	( Fiskeby_V , Harosoy_63 )	-	-
+FH_22-815	Harosoy_63	Fiskeby_V	( Harosoy_63 , Fiskeby_V )	-	-
+FH_31-3	Fiskeby_V	Harosoy_63	( Fiskeby_V , Harosoy_63 )	-	-
+FR51_IV	Amsoy_71	Chippewa_64	( Amsoy_71 , Chippewa_64 )	-	-
+FWH57-1	Jackson	Lee	( Jackson , Lee )	-	-
+Fabulin	Lincoln	-	( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , - )	PI 548671	Rogue selection from Lincoln
+Faribault	M75-2	L77-906	( M75-2 , L77-906 )	-	-
+Fukuyutaka	Oka_Daizu	Shiro_Daizu_3	( Oka_Daizu , Shiro_Daizu_3 )	-	-

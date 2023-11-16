@@ -1,0 +1,39 @@
+---
+title: Strain Prefix Codes
+sitemap: parentage-prefix-codes 
+layout: default
+---
+
+<h2>Strain Prefixes, Locations, and Affiliations</h2>
+
+<p> 
+Experimental (i.e., unreleased) strains are identified by a number with a state or province code letter prefix. Additional code letters may be used to designate the individuals within a state or province that developed the strain. These codes are a compilation of codes used in the Northern and Southern Uniform Soybean Tests since 1943.
+</p>
+
+<p>
+Strains originating from Pioneer Hybrid generally begin with the letter "P" followed by 4 digits ie P2345.
+Some Pioneer strains have names of the form P followed by two digits followed by one letter followed by two digits ie P49M23.
+</p>
+
+<p> 
+<i>Below, A.E.S. = Agricultural Experiment Station</i>
+</p>
+
+<table border="1" cellspacing="1" cellpadding="1" >
+  <thead>
+    <tr>
+      <th style="text-align: center"><b>Prefix</b></th>
+      <th style="text-align: center"><b>Location and Affiliation</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in site.data.parentage_prefixes %}
+      <tr>
+        <td>{{ item.Prefix }}</td>
+        <td>{{ item.Affiliation }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+

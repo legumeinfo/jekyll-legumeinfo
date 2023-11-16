@@ -1,0 +1,89 @@
+Individual	Parent1	Parent2	Pedigree	Synonyms	Comment
+X006	Syngenta_S19-90	MP91133	( Syngenta_S19-90 , MP91133 )	-	-
+X022	Pioneer_P91608	Pioneer_P9273	( Pioneer_P91608 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) )	-	-
+X029	Pioneer_P9362	Syngenta_S29-11	( Pioneer_P9362 , Syngenta_S29-11 )	-	-
+X312R	X006	Syngenta_S24-K4	( X006 ( Syngenta_S19-90 , MP91133 ) , Syngenta_S24-K4 )	-	-
+X3836	Williams	Mack	( Williams , Mack )	-	-
+X4521	Williams	Columbus	( Williams , Columbus )	-	-
+X5421	Essex	K1017	( Essex , K1017 ( L66L-140 ( Wayne , L57-0034 ( Clark , Adams ) ) , Columbus ) )	-	-
+X5512	D74-7741	N73-693	( D74-7741 ( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) ) , N73-693 ( D68-216 ( Dyer , Bragg ) , Ransom ) )	-	-
+X5803	J74-35	D74-7741	( J74-35 , D74-7741 ( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) ) )	-	-
+X9054	Coker_156	Nathan	( Coker_156 ( Dare , D64-3937 ( Hill , D59-1619 ) ) , Nathan )	-	-
+XB00448R003	Pioneer_P9071	MO30179	( Pioneer_P9071 , MO30179 )	-	-
+XB01C03	Pioneer_P90B43	OT94-13	( Pioneer_P90B43 , OT94-13 )	-	-
+XB02E02	Pioneer_P90B43	R00302	( Pioneer_P90B43 , R00302 ( XB22D ( Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ( Williams , Essex ) ) , 30388 ( Pioneer_P9303 , 30310 ( Pioneer_P9303 , 30294 ( Pioneer_P9303 , 30199 ( Pioneer_P9303 , 30124 ( Pioneer_P9303 , 30094 ( 5961 ( Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Resnik ) , Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) ) ) ) ) ) ) , 13007 ( Asgrow_A3304 , 90733 ( Pioneer_P9172 , 90676 ( ST2250 , G40-3P9392 ) ) ) ) )	-	-
+XB02F04	Titan	D01306	( Titan ( E86067 ( A80-145015 , A79-135010 ( Pride_B216 ( Corsoy , Wayne ) , Cumberland ) ) , Kenwood ) , D01306 ( Pioneer_P9063 , Pioneer_P92B05 ) )	-	-
+XB06B02	Pioneer_P90B43	12465	( Pioneer_P90B43 , 12465 ( Pioneer_P9132 , 90733 ( Pioneer_P9172 , 90676 ( ST2250 , G40-3P9392 ) ) ) )	-	-
+XB06K06	12102R024	Pioneer_P91B33	( 12102R024 ( YB23E ( Archer , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , ST1570 ) , Pioneer_P91B33 )	-	-
+XB06M07	Pioneer_P90B43	D00782	( Pioneer_P90B43 , D00782 ( RCAT_9404 , 90732-150 ( Pioneer_P9281 , 90675 ( Pioneer_P9281 , G40-3P9273 ) ) ) )	-	-
+XB08P05	YB14D	K10005	( YB14D ( W30047R012 ( Pioneer_P9161 , Pioneer_P9111 ) , YB23E ( Archer , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) , K10005 ( ST1970 , Pioneer_P92B05 ) )	-	-
+XB12K05	Syngenta_S03-W4	D89003	( Syngenta_S03-W4 , D89003 ( ST0470 , Pioneer_P90B73 ) )	-	-
+XB16H	Syngenta_S19-90	MO30732-51	( Syngenta_S19-90 , MO30732-51 )	-	-
+XB17S05	ST1970	K10005	( ST1970 , K10005 ( ST1970 , Pioneer_P92B05 ) )	-	-
+XB19M01	Pioneer_P9132	21721	( Pioneer_P9132 , 21721 ( Asgrow_A1900 , 21119 ( Pioneer_P9304 , 21070 ( Pioneer_P9412 , 90688C ( Asgrow_A4715 , G40-3P9392 ) ) ) ) )	-	-
+XB19V06	YB18J00	Pioneer_P92B38	( YB18J00 ( Pioneer_P9362 , MO21584 ) , Pioneer_P92B38 )	-	-
+XB20L00	W30271R014	Pioneer_P9234	( W30271R014 ( Pioneer_P9241 ( 0624-32 , Pioneer_P2981 ) , Resnik ) , Pioneer_P9234 )	-	-
+XB21R05	YB22T00	Pioneer_P92B38	( YB22T00 ( Pioneer_P9362 , MO21584 ) , Pioneer_P92B38 )	-	-
+XB22C04	Pioneer_P92B35	Pioneer_P92B05	( Pioneer_P92B35 , Pioneer_P92B05 )	-	-
+XB22D	Pioneer_P9273	30388	( Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ( Williams , Essex ) ) , 30388 ( Pioneer_P9303 , 30310 ( Pioneer_P9303 , 30294 ( Pioneer_P9303 , 30199 ( Pioneer_P9303 , 30124 ( Pioneer_P9303 , 30094 ( 5961 ( Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Resnik ) , Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) ) ) ) ) ) )	-	-
+XB22G06	Pioneer_P93B82	Pioneer_P91B53	( Pioneer_P93B82 , Pioneer_P91B53 )	-	-
+XB23W03	Pioneer_P92B63	C04065	( Pioneer_P92B63 , C04065 ( Pioneer_P92B63 , XB36L ( Pioneer_P9362 , 90683 ( Pioneer_P9362 , G40-3P9392 ) ) ) )	-	-
+XB23Y02	Pioneer_P92B52	Pioneer_P93B82	( Pioneer_P92B52 , Pioneer_P93B82 )	-	-
+XB25E02	Pioneer_P9301	Pioneer_P93B82	( Pioneer_P9301 , Pioneer_P93B82 )	-	-
+XB25P05	Pioneer_P92B86	CX235c	( Pioneer_P92B86 , CX235c )	-	-
+XB25P99	Pioneer_P93B82	91013F2	( Pioneer_P93B82 , 91013F2 ( W30132-004 , 90753 ( ST2250 , 90682 ( Pioneer_P9342 , G40-3P9341 ) ) ) )	-	-
+XB25S05	YB18J00	Pioneer_P92B84	( YB18J00 ( Pioneer_P9362 , MO21584 ) , Pioneer_P92B84 )	-	-
+XB27B05	Pioneer_P93B86	Pioneer_P93B09	( Pioneer_P93B86 , Pioneer_P93B09 )	-	-
+XB27P04	YB23M	Pioneer_P92B74	( YB23M ( Pioneer_P9362 , MO21584 ) , Pioneer_P92B74 )	-	-
+XB29D01	ST2660	Pioneer_P93B82	( ST2660 , Pioneer_P93B82 )	-	-
+XB29K04	45217N901	XB25P99	( 45217N901 ( S2911 , 21066 ( MO12557 , 90688A ( Asgrow_A4715 , G40-3P9392 ) ) ) , XB25P99 ( Pioneer_P93B82 , 91013F2 ( W30132-004 , 90753 ( ST2250 , 90682 ( Pioneer_P9342 , G40-3P9341 ) ) ) ) )	-	-
+XB29V99	Pioneer_P93B82	91013F2	( Pioneer_P93B82 , 91013F2 ( W30132-004 , 90753 ( ST2250 , 90682 ( Pioneer_P9342 , G40-3P9341 ) ) ) )	-	-
+XB29X00	Pioneer_P9305	21069	( Pioneer_P9305 , 21069 ( MO92117-18 , 90682E ( Pioneer_P9342 , G40-3P9341 ) ) )	-	-
+XB30E07	Pioneer_P93B86	XB23W03	( Pioneer_P93B86 , XB23W03 ( Pioneer_P92B63 , C04065 ( Pioneer_P92B63 , XB36L ( Pioneer_P9362 , 90683 ( Pioneer_P9362 , G40-3P9392 ) ) ) ) )	-	-
+XB30N08	Pioneer_P93B86	Pioneer_P93M11	( Pioneer_P93B86 , Pioneer_P93M11 )	-	-
+XB31Q	ST2660	21710	( ST2660 , 21710 ( Asgrow_A3237 , 21097 ( Asgrow_A3237 , 21063 ( Asgrow_A3237 , 90683C ( Pioneer_P9362 , G40-3P9392 ) ) ) ) )	-	-
+XB31R04	Pioneer_P93B86	45487L002	( Pioneer_P93B86 , 45487L002 ( Pioneer_P92B52 , 45270 ( ST2250 , 21721 ( Asgrow_A1900 , 21119 ( Pioneer_P9304 , 21070 ( Pioneer_P9412 , 90688C ( Asgrow_A4715 , G40-3P9392 ) ) ) ) ) ) )	-	-
+XB31Z01	Pioneer_P9306	MO0708-31	( Pioneer_P9306 , MO0708-31 )	-	-
+XB32C05	Pioneer_P93B86	Pioneer_P93B09	( Pioneer_P93B86 , Pioneer_P93B09 )	-	-
+XB32L06	Pioneer_P93B15	L04178	( Pioneer_P93B15 , L04178 )	-	-
+XB33B	CM304BR	Asgrow_A3127	( CM304BR , Asgrow_A3127 ( Williams , Essex ) )	-	-
+XB33N06	Pioneer_P93B86	YB34Y99	( Pioneer_P93B86 , YB34Y99 ( Pioneer_P93B82 , 45282 ( 3660 , 21726 ( Asgrow_A2396 ( CM214 , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ) ( CM214 , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) , 21132 ( Asgrow_A2396 ( CM214 , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ) , 21082 ( Pioneer_P9381 , 90685A ( Pioneer_P9381 , G40-3P9392 ) ) ) ) ) ) )	-	-
+XB35D	Pioneer_P9352	32745	( Pioneer_P9352 , 32745 ( Pioneer_P9352 , 32127 ( Pioneer_P9352 , 31910 ( 31438 ( Pioneer_P9254 , Pioneer_P9281 ) , Pioneer_P9254 ) ) ) )	-	-
+XB35Q04	ST2870	XB43J	( ST2870 , XB43J ( Pioneer_P9362 , 90755 ( Pioneer_P9362 , 90683 ( Pioneer_P9362 , G40-3P9392 ) ) ) )	-	-
+XB36L	Pioneer_P9362	90683	( Pioneer_P9362 , 90683 ( Pioneer_P9362 , G40-3P9392 ) )	-	-
+XB37C02	Pioneer_P93B82	P00048	( Pioneer_P93B82 , P00048 ( Asgrow_A3431 , Pioneer_P94B01 ) )	-	-
+XB37L03	Pioneer_P93B86	S85085	( Pioneer_P93B86 , S85085 ( Pioneer_P93B86 , S85074 ( Pioneer_P93B86 , Pioneer_P93B67 ) ) )	-	-
+XB38E06	Pioneer_P93B86	Pioneer_P94B73	( Pioneer_P93B86 , Pioneer_P94B73 )	-	-
+XB38Y01	Pioneer_P93B82	91183	( Pioneer_P93B82 , 91183 ( Pioneer_P9343 , 21720 ( Pioneer_P9343 , 21111 ( Pioneer_P9362 , 21080 ( Pioneer_P9362 , 90682C ( Pioneer_P9342 , G40-3P9341 ) ) ) ) ) )	-	-
+XB39U99	Asgrow_A4138	40305-117	( Asgrow_A4138 , 40305-117 ( Pioneer_P9312 , Pioneer_P9392 ( Asgrow_A3127 ( Williams , Essex ) , Gnome ) ) )	-	-
+XB39W06	EX39E00	Pioneer_P94B23	( EX39E00 ( MO14426 , Pioneer_P93B82 ) , Pioneer_P94B23 )	-	-
+XB40H09	Pioneer_P93M91	Pioneer_P94B54	( Pioneer_P93M91 , Pioneer_P94B54 )	-	-
+XB41B05	Pioneer_P93B82	90765T003	( Pioneer_P93B82 , 90765T003 ( Asgrow_A4715 , 90686 ( Pioneer_P9392 ( Asgrow_A3127 ( Williams , Essex ) , Gnome ) , G40-3P9392 ) ) )	-	-
+XB41M01	MO06347-68	CX469c	( MO06347-68 , CX469c )	-	-
+XB42J00	Asgrow_A3431	Pioneer_P9472	( Asgrow_A3431 , Pioneer_P9472 )	-	-
+XB43B	Pioneer_P9391	Asgrow_A3733	( Pioneer_P9391 , Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) )	-	-
+XB43J	Pioneer_P9362	90755	( Pioneer_P9362 , 90755 ( Pioneer_P9362 , 90683 ( Pioneer_P9362 , G40-3P9392 ) ) )	-	-
+XB43W04	Pioneer_P93B82	90765T003	( Pioneer_P93B82 , 90765T003 ( Asgrow_A4715 , 90686 ( Pioneer_P9392 ( Asgrow_A3127 ( Williams , Essex ) , Gnome ) , G40-3P9392 ) ) )	-	-
+XB44W04	Pioneer_P93B82	41914S135	( Pioneer_P93B82 , 41914S135 ( Asgrow_A4138 , 21111 ( Pioneer_P9362 , 21080 ( Pioneer_P9362 , 90682C ( Pioneer_P9342 , G40-3P9341 ) ) ) ) )	-	-
+XB46L99	CX469c	Pioneer_P9451	( CX469c , Pioneer_P9451 )	-	-
+XB48B	Y4667-09	Asgrow_A4715	( Y4667-09 ( Pioneer_P4280 ( Williams , Woodworth ) , Fayette ) , Asgrow_A4715 )	-	-
+XB48W07	Pioneer_P94B53	H02353	( Pioneer_P94B53 , H02353 ( YB46K ( Pioneer_P9362 , Pioneer_P9444 ) , T00593H117 ) )	-	-
+XB49K04	CM428	H00180	( CM428 , H00180 ( Pioneer_P9481 , Pioneer_P94B81 ) )	-	-
+XB52G	Hutcheson	Asgrow_A5403	( Hutcheson , Asgrow_A5403 )	-	-
+XB53E02	XB52G	YB54D	( XB52G ( Hutcheson , Asgrow_A5403 ) , YB54D ( Asgrow_A5979 , 90773 ( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) ) ) )	-	-
+XB57M04	Pioneer_P9631	Pioneer_P95B95	( Pioneer_P9631 , Pioneer_P95B95 )	-	-
+XB59E	Hutcheson	Pioneer_P9591	( Hutcheson , Pioneer_P9591 )	-	-
+XB59U04	Pioneer_P95B33	Pioneer_P95B53	( Pioneer_P95B33 , Pioneer_P95B53 )	-	-
+XB67A00	W8566-005	YB57G	( W8566-005 , YB57G ( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) ) )	-	-
+XB74A09	MT95-124604	Pioneer_P97B52	( MT95-124604 , Pioneer_P97B52 )	-	-
+XB79A05	FT52700	BR90-5719	( FT52700 , BR90-5719 )	-	-
+XB85C04	DM339	XB67A00	( DM339 , XB67A00 ( W8566-005 , YB57G ( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) ) ) )	-	-
+XI59739	Asgrow_A6401RG	Asgrow_A5780	( Asgrow_A6401RG , Asgrow_A5780 ( Forrest , Asgrow_A3127 ( Williams , Essex ) ) )	-	-
+XK-505	C1253	Kent	( C1253 ( Blackhawk , Harosoy ) , Kent )	PI 548688	Teweles Seed Company, PVP 7100037
+XK-515	Wayne	Habaro_95	( Wayne , Habaro_95 )	PI 556470	Teweles Seed Company, PVP 7100060
+XK-535	Cayuga	Chippewa_64	( Cayuga ( PI_65393 , - ) , Chippewa_64 )	PI 556472	Teweles Seed Company, PVP 7100062
+XK-585	Wayne	T93A	( Wayne , T93A )	PI 556471	Teweles Seed Company, PVP 7100074
+XK505	Calland	-	( Calland , - )	-	Selection from Calland
+XK88K06	MT95-121268	Pioneer_P96B32	( MT95-121268 , Pioneer_P96B32 )	-	-
+XR31C09	YB27Z06	SP11513497	( YB27Z06 ( Pioneer_P93B66 , YB22T00 ( Pioneer_P9362 , MO21584 ) ) , SP11513497 ( Pioneer_P93M20 , JH10032580 ( Pioneer_P92M91 , JH8069431 ( Pioneer_P92B38 , JH7380284 ( Pioneer_P92B38 , JH6676568 ( Pioneer_P92B38 , JX5789894 ) ) ) ) ) )	-	-
+XR33W20	YB30K06	SP11513497	( YB30K06 ( Pioneer_P93B86 , YB22T00 ( Pioneer_P9362 , MO21584 ) ) , SP11513497 ( Pioneer_P93M20 , JH10032580 ( Pioneer_P92M91 , JH8069431 ( Pioneer_P92B38 , JH7380284 ( Pioneer_P92B38 , JH6676568 ( Pioneer_P92B38 , JX5789894 ) ) ) ) ) )	-	-

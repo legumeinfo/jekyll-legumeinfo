@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+{% assign group = page.title %}
+{% assign group_details = site.data.parentage[group] %}
+
+<h2>Soy Parentage and Pedigrees</h2>
+
+<p> 
+The soybean parentage information below was partially gleaned from the Uniform Soybean Tests for the 
+<a href="https://www.ars.usda.gov/southeast-area/stoneville-ms/crop-genetics-research/docs/uniform-soybean-tests/"><b>Southern</b></a>
+and 
+<a href="https://www.ars.usda.gov/midwest-area/west-lafayette-in/crop-production-and-pest-control-research/docs/uniform-soybean-tests-northern-region/"><b>Northern</b></a> 
+regions as well as other sources such as USDA technical bulletins, variety registrations and PVP applications. 
+The strains that appear here were part of the uniform trials and not the preliminary trials. The pedigree of 
+individual strains was followed back to named strains in both maternal and paternal lineages where possible. 
+An unknown parent is indicated with "-". When available, PVP registration numbers are noted, 
+as are synonyms for the strains - including the PI number for lines deposited at GRIN. 
+Check for additional information about PI lines at the <a href="https://npgsweb.ars-grin.gov/gringlobal/search"><b>GRIN search page</b></a>.
+</p>
+
+<p>
+Strain names are prefixed with a code that identifies the program that produced them. The code is usually the first two
+letters in the strain name followed by the year it was released as a two digit number. 
+See <a href="/tools/parentage/prefix_codes"><b>code prefixes and descriptions here</b></a>. 
+</p>
+
+<p>
+Pedigrees are represented in column 4. To give an example: 
+<a href="/tools/parentage/groupc/"><u><b>CS31</b></u></a> has parents <u>S10</u> (maternal) and <u>Mitchell</u> (paternal). 
+The pedigree string <u>( S10 , Mitchell ( Amsoy , Wayne ) )</u> 
+can be read as: <u>CS31</u> is progeny of <u>S10</u> and <u>Mitchell</u>; 
+and <u>Mitchell</u> is progeny of <u>Amsoy</u> and <u>Wayne</u>.
+</p>
+<p>
+The information below is also available for 
+<a href="https://soybase.org/data/annex/Glycine/max/pedigrees/glyma.mixed.ped.2023-11-08.tsv.gz"><b>download</b>
+</a> - for example, 
+if you wish to filter on pedigrees that contain an accession of interest.<br>
+We welcome submissions by the community of new or updated pedigree information. 
+Please use this 
+<a href="https://soybase.org/data/annex/Glycine/max/pedigrees/SoyBaseParentageWorksheetV3.xls"><b>data submission spreadsheet</b></a>.
+</p>
+
+<p><b>Browse or search accessions beginning with ...</b><p>
+<table class="uk-table uk-width-1-2 uk-text-center uk-table-condensed">
+  <tbody>
+    {% for item in site.data.parentage_groups %}
+      {% assign display_name = item.group | remove:"group" %}
+      <tr>&nbsp;<a href="/tools/parentage/{{item.group | downcase}}">{{ display_name }}</a>&nbsp;</tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<table border="1" cellspacing="1" cellpadding="1" >
+  <thead>
+    <tr>
+      <th style="text-align: center"><b>Individual</b></th>
+      <th style="text-align: center"><b>Female Parent</b></th>
+      <th style="text-align: center"><b>Male Parent</b></th>
+      <th style="text-align: center"><b>Pedigree</b></th>
+      <th style="text-align: center"><b>Synonyms</b></th>
+      <th style="text-align: center"><b>Notes</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in group_details %}
+      <tr>
+        <td>{{ item.Individual }}</td>
+        <td>{{ item.Parent1 }}</td>
+        <td>{{ item.Parent2 }}</td>
+        <td>{{ item.Pedigree }}</td>
+        <td>{{ item.Synonyms}}</td>
+        <td>{{ item.Comment }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+

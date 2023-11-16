@@ -1,0 +1,78 @@
+Individual	Parent1	Parent2	Pedigree	Synonyms	Comment
+J-112	Wells	Williams	( Wells , Williams )	PI 556632	The Lubrizol Corporation, PVP 8100092
+J00-1	Manokin	Fowler	( Manokin , Fowler )	-	-
+J00-2	Manokin	Fowler	( Manokin , Fowler )	-	-
+J22	L37-1355	Arksoy_2913	( L37-1355 ( PI_81041 , - ) , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) )	-	?? Questionable
+J420649	91608	Pioneer_P9273	( 91608 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) )	-	-
+J558002	Pioneer_P9362	Syngenta_S29-11	( Pioneer_P9362 , Syngenta_S29-11 )	-	-
+J634773	MP02052-11	Asgrow_A3431	( MP02052-11 ( CM293 , Syngenta_S24-92 ) , Asgrow_A3431 )	-	-
+J74-116	Centennial	J74-47	( Centennial , J74-47 )	-	-
+J74-90	D68-18	PI_88788	( D68-18 ( Dyer , Bragg ) , PI_88788 )	-	Developed by E.E. Hartwig
+J77-255	D74-7631	F74-57	( D74-7631 ( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) ) , F74-57 )	-	-
+J80-293	J74-39	Centennial	( J74-39 , Centennial )	-	-
+JA42	Kogane-Jiro	-	( Kogane-Jiro , - )	-	Japanese, probably PI 317335
+JA53-7-6	PI_358323	-	( PI_358323 , - )	-	Selection from PI 358323
+JH10032580	Pioneer_P92M91	JH8069431	( Pioneer_P92M91 , JH8069431 ( Pioneer_P92B38 , JH7380284 ( Pioneer_P92B38 , JH6676568 ( Pioneer_P92B38 , JX5789894 ) ) ) )	-	-
+JH10032629	XB29K04	JH8069435	( XB29K04 ( 45217N901 ( S2911 , 21066 ( MO12557 , 90688A ( Asgrow_A4715 , G40-3P9392 ) ) ) , XB25P99 ( Pioneer_P93B82 , 91013F2 ( W30132-004 , 90753 ( ST2250 , 90682 ( Pioneer_P9342 , G40-3P9341 ) ) ) ) ) , JH8069435 ( Pioneer_P92B38 , JH7380284 ( Pioneer_P92B38 , JH6676568 ( Pioneer_P92B38 , JX5789894 ) ) ) )	-	-
+JH10955518	JH9638246	YB38Q05	( JH9638246 , YB38Q05 ( Pioneer_P93B87 , Pioneer_P93B82 ) )	-	-
+JH10955520	JH9638246	XB22G06	( JH9638246 , XB22G06 ( Pioneer_P93B82 , Pioneer_P91B53 ) )	-	-
+JH10955521	JH9638246	ZB27U04	( JH9638246 , ZB27U04 ( Pioneer_P93B87 , Pioneer_P92B61 ) )	-	-
+JH11944941	XB22G06	JH10955520	( XB22G06 ( Pioneer_P93B82 , Pioneer_P91B53 ) ( Pioneer_P93B82 , Pioneer_P91B53 ) , JH10955520 ( JH9638246 , XB22G06 ( Pioneer_P93B82 , Pioneer_P91B53 ) ) )	-	-
+JH11944958	YB38Q05	JH10955518	( YB38Q05 ( Pioneer_P93B87 , Pioneer_P93B82 ) ( Pioneer_P93B87 , Pioneer_P93B82 ) , JH10955518 ( JH9638246 , YB38Q05 ( Pioneer_P93B87 , Pioneer_P93B82 ) ) )	-	-
+JH11944981	ZB27U04	JH10955521	( ZB27U04 ( Pioneer_P93B87 , Pioneer_P92B61 ) ( Pioneer_P93B87 , Pioneer_P92B61 ) , JH10955521 ( JH9638246 , ZB27U04 ( Pioneer_P93B87 , Pioneer_P92B61 ) ) )	-	-
+JH12376999	YB38Q05	JH11944958	( YB38Q05 ( Pioneer_P93B87 , Pioneer_P93B82 ) ( Pioneer_P93B87 , Pioneer_P93B82 ) ( Pioneer_P93B87 , Pioneer_P93B82 ) , JH11944958 ( YB38Q05 ( Pioneer_P93B87 , Pioneer_P93B82 ) ( Pioneer_P93B87 , Pioneer_P93B82 ) , JH10955518 ( JH9638246 , YB38Q05 ( Pioneer_P93B87 , Pioneer_P93B82 ) ) ) )	-	-
+JH12377007	ZB27U04	JH11944981	( ZB27U04 ( Pioneer_P93B87 , Pioneer_P92B61 ) ( Pioneer_P93B87 , Pioneer_P92B61 ) ( Pioneer_P93B87 , Pioneer_P92B61 ) , JH11944981 ( ZB27U04 ( Pioneer_P93B87 , Pioneer_P92B61 ) ( Pioneer_P93B87 , Pioneer_P92B61 ) , JH10955521 ( JH9638246 , ZB27U04 ( Pioneer_P93B87 , Pioneer_P92B61 ) ) ) )	-	-
+JH12377267	Pioneer_P90M60	JH11944941	( Pioneer_P90M60 , JH11944941 ( XB22G06 ( Pioneer_P93B82 , Pioneer_P91B53 ) ( Pioneer_P93B82 , Pioneer_P91B53 ) , JH10955520 ( JH9638246 , XB22G06 ( Pioneer_P93B82 , Pioneer_P91B53 ) ) ) )	-	-
+JH12377292	Pioneer_P91B42	JH11944941	( Pioneer_P91B42 , JH11944941 ( XB22G06 ( Pioneer_P93B82 , Pioneer_P91B53 ) ( Pioneer_P93B82 , Pioneer_P91B53 ) , JH10955520 ( JH9638246 , XB22G06 ( Pioneer_P93B82 , Pioneer_P91B53 ) ) ) )	-	-
+JH13336927	ZB37P05	JH12376999	( ZB37P05 ( Pioneer_P93B86 , XB39U99 ( Asgrow_A4138 , 40305-117 ( Pioneer_P9312 , Pioneer_P9392 ( Asgrow_A3127 ( Williams , Essex ) , Gnome ) ) ) ) , JH12376999 ( YB38Q05 ( Pioneer_P93B87 , Pioneer_P93B82 ) ( Pioneer_P93B87 , Pioneer_P93B82 ) ( Pioneer_P93B87 , Pioneer_P93B82 ) , JH11944958 ( YB38Q05 ( Pioneer_P93B87 , Pioneer_P93B82 ) ( Pioneer_P93B87 , Pioneer_P93B82 ) , JH10955518 ( JH9638246 , YB38Q05 ( Pioneer_P93B87 , Pioneer_P93B82 ) ) ) ) )	-	-
+JH13337911	Pioneer_P90M60	JH12377267	( Pioneer_P90M60 , JH12377267 ( Pioneer_P90M60 , JH11944941 ( XB22G06 ( Pioneer_P93B82 , Pioneer_P91B53 ) ( Pioneer_P93B82 , Pioneer_P91B53 ) , JH10955520 ( JH9638246 , XB22G06 ( Pioneer_P93B82 , Pioneer_P91B53 ) ) ) ) )	-	-
+JH13337915	Pioneer_P91B42	JH12377292	( Pioneer_P91B42 , JH12377292 ( Pioneer_P91B42 , JH11944941 ( XB22G06 ( Pioneer_P93B82 , Pioneer_P91B53 ) ( Pioneer_P93B82 , Pioneer_P91B53 ) , JH10955520 ( JH9638246 , XB22G06 ( Pioneer_P93B82 , Pioneer_P91B53 ) ) ) ) )	-	-
+JH13884372	ZB27U04	JH12377007	( ZB27U04 ( Pioneer_P93B87 , Pioneer_P92B61 ) ( Pioneer_P93B87 , Pioneer_P92B61 ) ( Pioneer_P93B87 , Pioneer_P92B61 ) ( Pioneer_P93B87 , Pioneer_P92B61 ) , JH12377007 ( ZB27U04 ( Pioneer_P93B87 , Pioneer_P92B61 ) ( Pioneer_P93B87 , Pioneer_P92B61 ) ( Pioneer_P93B87 , Pioneer_P92B61 ) , JH11944981 ( ZB27U04 ( Pioneer_P93B87 , Pioneer_P92B61 ) ( Pioneer_P93B87 , Pioneer_P92B61 ) , JH10955521 ( JH9638246 , ZB27U04 ( Pioneer_P93B87 , Pioneer_P92B61 ) ) ) ) )	-	-
+JH13885038	Pioneer_P91B42	JH13337911	( Pioneer_P91B42 , JH13337911 ( Pioneer_P90M60 , JH12377267 ( Pioneer_P90M60 , JH11944941 ( XB22G06 ( Pioneer_P93B82 , Pioneer_P91B53 ) ( Pioneer_P93B82 , Pioneer_P91B53 ) , JH10955520 ( JH9638246 , XB22G06 ( Pioneer_P93B82 , Pioneer_P91B53 ) ) ) ) ) )	-	-
+JH13885045	Pioneer_P91M51	JH13337915	( Pioneer_P91M51 , JH13337915 ( Pioneer_P91B42 , JH12377292 ( Pioneer_P91B42 , JH11944941 ( XB22G06 ( Pioneer_P93B82 , Pioneer_P91B53 ) ( Pioneer_P93B82 , Pioneer_P91B53 ) , JH10955520 ( JH9638246 , XB22G06 ( Pioneer_P93B82 , Pioneer_P91B53 ) ) ) ) ) )	-	-
+JH13895102	Pioneer_P93M61	JH13336927	( Pioneer_P93M61 , JH13336927 ( ZB37P05 ( Pioneer_P93B86 , XB39U99 ( Asgrow_A4138 , 40305-117 ( Pioneer_P9312 , Pioneer_P9392 ( Asgrow_A3127 ( Williams , Essex ) , Gnome ) ) ) ) , JH12376999 ( YB38Q05 ( Pioneer_P93B87 , Pioneer_P93B82 ) ( Pioneer_P93B87 , Pioneer_P93B82 ) ( Pioneer_P93B87 , Pioneer_P93B82 ) , JH11944958 ( YB38Q05 ( Pioneer_P93B87 , Pioneer_P93B82 ) ( Pioneer_P93B87 , Pioneer_P93B82 ) , JH10955518 ( JH9638246 , YB38Q05 ( Pioneer_P93B87 , Pioneer_P93B82 ) ) ) ) ) )	-	-
+JH14820720	Pioneer_P93M42	JH13895102	( Pioneer_P93M42 , JH13895102 ( Pioneer_P93M61 , JH13336927 ( ZB37P05 ( Pioneer_P93B86 , XB39U99 ( Asgrow_A4138 , 40305-117 ( Pioneer_P9312 , Pioneer_P9392 ( Asgrow_A3127 ( Williams , Essex ) , Gnome ) ) ) ) , JH12376999 ( YB38Q05 ( Pioneer_P93B87 , Pioneer_P93B82 ) ( Pioneer_P93B87 , Pioneer_P93B82 ) ( Pioneer_P93B87 , Pioneer_P93B82 ) , JH11944958 ( YB38Q05 ( Pioneer_P93B87 , Pioneer_P93B82 ) ( Pioneer_P93B87 , Pioneer_P93B82 ) , JH10955518 ( JH9638246 , YB38Q05 ( Pioneer_P93B87 , Pioneer_P93B82 ) ) ) ) ) ) )	-	-
+JH14820789	Pioneer_P91B42	JH13885045	( Pioneer_P91B42 , JH13885045 ( Pioneer_P91M51 , JH13337915 ( Pioneer_P91B42 , JH12377292 ( Pioneer_P91B42 , JH11944941 ( XB22G06 ( Pioneer_P93B82 , Pioneer_P91B53 ) ( Pioneer_P93B82 , Pioneer_P91B53 ) , JH10955520 ( JH9638246 , XB22G06 ( Pioneer_P93B82 , Pioneer_P91B53 ) ) ) ) ) ) )	-	-
+JH4267591	YB36V00	HL3356756	( YB36V00 ( Pioneer_P9362 , Pioneer_P93B82 ) ( Pioneer_P9362 , Pioneer_P93B82 ) , HL3356756 ( YB36V00 ( Pioneer_P9362 , Pioneer_P93B82 ) , Pioneer_P93B67 ) )	-	-
+JH4268392	Pioneer_P92M70	Pioneer_P93B09	( Pioneer_P92M70 , Pioneer_P93B09 )	-	-
+JH4282852	Pioneer_P92M70	JH4268392	( Pioneer_P92M70 , JH4268392 ( Pioneer_P92M70 , Pioneer_P93B09 ) )	-	-
+JH4603324	Pioneer_P92M70	JH4282852	( Pioneer_P92M70 , JH4282852 ( Pioneer_P92M70 , JH4268392 ( Pioneer_P92M70 , Pioneer_P93B09 ) ) )	-	-
+JH6676568	Pioneer_P92B38	JX5789894	( Pioneer_P92B38 , JX5789894 )	-	-
+JH7380284	Pioneer_P92B38	JH6676568	( Pioneer_P92B38 , JH6676568 ( Pioneer_P92B38 , JX5789894 ) )	-	-
+JH8069431	Pioneer_P92B38	JH7380284	( Pioneer_P92B38 , JH7380284 ( Pioneer_P92B38 , JH6676568 ( Pioneer_P92B38 , JX5789894 ) ) )	-	-
+JH8069435	Pioneer_P92B38	JH7380284	( Pioneer_P92B38 , JH7380284 ( Pioneer_P92B38 , JH6676568 ( Pioneer_P92B38 , JX5789894 ) ) )	-	-
+JTN-033	S94-1956	MD94-5396	( S94-1956 , MD94-5396 ( Ripley , Clifford ) )	-	-
+JTN-4119	5601T	PI_437655	( 5601T ( Hutcheson , TN89-39 ( TN81-2 ( Lee_74 , Mitchell ( Amsoy , Wayne ) ) , TN80-69 ( Essex , J74-40 ) ) ) , PI_437655 )	-	new SCN resistance source
+JTN-4207	LS93-0375	LS96-0735	( LS93-0375 ( Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) , Pioneer_P9402 ) , LS96-0735 ( Flyer , Asgrow_A4715 ) )	-	-
+JTN-4219	5601T	PI_437655	( 5601T ( Hutcheson , TN89-39 ( TN81-2 ( Lee_74 , Mitchell ( Amsoy , Wayne ) ) , TN80-69 ( Essex , J74-40 ) ) ) , PI_437655 )	-	-
+JTN-4307	S97-1688	V94-0198	( S97-1688 ( S91-1381 ( Hartz_H5370 , Hartwig ) , Hartz_H5810 ) , V94-0198 ( DPL_415 ( Essex , DPX_436 ( Pickett_71 , York ) ) , Manokin ) )	PI 670017	GP-407, SCN, F4
+JTN-4308	S96-2641	S97-1688-12-LOAM02	( S96-2641 ( Pioneer_P9591 , S91-1839 ( Hartwig , Coker_485 ) ) , S97-1688-12-LOAM02 )	-	SCN
+JTN-4407	SS94-7546	HS93-4118	( SS94-7546 ( Pioneer_P9341 , S86-4499 ( L77-443 ( Union , L75-8020 ( Corsoy , - ) ) , L77-906 ) ) , HS93-4118 ( IA2007 ( Pride_B152 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Dairyland_DSR304 ( Williams , - ) ) )	-	-
+JTN-4408	S97-1753	V94-0198-9-LOAM02	( S97-1753 ( Hartz_H5545 , S91-1381 ( Hartz_H5370 , Hartwig ) ) , V94-0198-9-LOAM02 )	-	SCN
+JTN-4507	S97-1688	V94-0198-13-LOAM02	( S97-1688 ( S91-1381 ( Hartz_H5370 , Hartwig ) , Hartz_H5810 ) , V94-0198-13-LOAM02 )	-	SCN
+JTN-4508	SS94-7546	LS96-0735	( SS94-7546 ( Pioneer_P9341 , S86-4499 ( L77-443 ( Union , L75-8020 ( Corsoy , - ) ) , L77-906 ) ) , LS96-0735 ( Flyer , Asgrow_A4715 ) )	-	SCN
+JTN-4607	LS94-3207	S95-1908-3-LOAM02	( LS94-3207 ( Pharaoh ( Forrest , V71-480 ( V63-76 ( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ( PI_30593 , - ) ) , Richland ) ) ) , V66-318 ( D53-184 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , J22 ( L37-1355 ( PI_81041 , - ) , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) ) ) ) ) , Hartwig ) , S95-1908-3-LOAM02 )	-	SCN
+JTN-4619	5002T	PI_494182	( 5002T , PI_494182 )	-	new SCN resistance source
+JTN-5104	Fowler	S95-1908	( Fowler , S95-1908 ( S92-1495 ( AT550 , Hartwig ) , Northrup_King_S59-60 ) )	-	-
+JTN-5106	DPL_5960RR	Anand-4-CYST02	( DPL_5960RR , Anand-4-CYST02 )	-	-
+JTN-5107	S97-1753	S96-2641-2-LOAM02	( S97-1753 ( Hartz_H5545 , S91-1381 ( Hartz_H5370 , Hartwig ) ) , S96-2641-2-LOAM02 )	-	SCN
+JTN-5108	S95-1908	BOLIVAR-2-LOAM02	( S95-1908 ( S92-1495 ( AT550 , Hartwig ) , Northrup_King_S59-60 ) , BOLIVAR-2-LOAM02 )	-	SCN
+JTN-5110	J98-32	Anand	( J98-32 , Anand )	-	SCN
+JTN-5111	PI_437655	5601T	( PI_437655 , 5601T ( Hutcheson , TN89-39 ( TN81-2 ( Lee_74 , Mitchell ( Amsoy , Wayne ) ) , TN80-69 ( Essex , J74-40 ) ) ) )	-	unique SCN
+JTN-5203	R93-171	Anand	( R93-171 , Anand )	-	SCN; >25 % exotic, F17, Conv., FLS
+JTN-5204	Fowler	S95-1908	( Fowler , S95-1908 ( S92-1495 ( AT550 , Hartwig ) , Northrup_King_S59-60 ) )	-	-
+JTN-5207	J98-32	DT96-6840	( J98-32 , DT96-6840 ( Hutcheson , Pioneer_P9641 ) )	-	-
+JTN-5208	S96-2641	S97-1688-8-LOAM02	( S96-2641 ( Pioneer_P9591 , S91-1839 ( Hartwig , Coker_485 ) ) , S97-1688-8-LOAM02 )	-	SCN
+JTN-5209	PI_567516C	5601T	( PI_567516C , 5601T ( Hutcheson , TN89-39 ( TN81-2 ( Lee_74 , Mitchell ( Amsoy , Wayne ) ) , TN80-69 ( Essex , J74-40 ) ) ) )	-	unique SCN
+JTN-5211	PI_507471	Hutcheson	( PI_507471 , Hutcheson )	-	SCN
+JTN-5303	R93-171	Anand	( R93-171 , Anand )	PI 641937	-
+JTN-5308	J98-32	DT95-17556	( J98-32 , DT95-17556 ( Pioneer_P9592 , DPL_415 ( Essex , DPX_436 ( Pickett_71 , York ) ) ) )	-	SCN
+JTN-5503	Fowler	Manokin	( Fowler , Manokin )	PI 641938	-
+JTN_5303	Caviness	Anand	( Caviness , Anand )	-	-
+JTN_5503	Fowler	Manokin	( Fowler , Manokin )	PI 641938	-
+JW-45	Mixed_seed_lot	-	( Mixed_seed_lot , - )	-	-
+Jacques_88	Corsoy	Hodgson	( Corsoy , Hodgson )	-	-
+Jacques_J102A	Corsoy	PI_88029	( Corsoy , PI_88029 )	-	-
+Jake	S94-1867	Anand	( S94-1867 ( Pioneer_P9592 , S91-1693 ) , Anand )	-	-
+Jewel	Corsoy	Wells	( Corsoy , Wells )	-	-
+Jupiter	D49-2491	Bilomi_No._3	( D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , Bilomi_No._3 ( PI_240664 , - ) )	-	-

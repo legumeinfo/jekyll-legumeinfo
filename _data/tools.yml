@@ -59,6 +59,10 @@
   description: "SoyBase Soybean growth, development and structural ontology."
   name: "Ontology"
   url: "/tools/ontology"
+- category: "Visualize / Browse"
+  description: "Soybean parentage and pedigrees"
+  name: "Parentage"
+  url: "/tools/parentage"
 #   category: "FIXME"
 #   description: Description
 #   name: Maps

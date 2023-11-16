@@ -1,0 +1,84 @@
+Individual	Parent1	Parent2	Pedigree	Synonyms	Comment
+W1	Dunfield	Illini	( Dunfield ( PI_36846 , - ) , Illini ( A.K. , - ) )	-	-
+W10186	Salut_216	Amurskaja_41	( Salut_216 , Amurskaja_41 ( - , PI_524993 ) )	-	-
+W10381-022	Pioneer_P9091	Asgrow_A2234	( Pioneer_P9091 , Asgrow_A2234 )	-	-
+W214164	M060249	Syngenta_S20-26	( M060249 , Syngenta_S20-26 )	-	-
+W2707-23	Y2011Z2	Epps	( Y2011Z2 ( 1190-02 ( Mack , Forrest ) , J74-45 ) , Epps )	-	-
+W30047R012	Pioneer_P9161	Pioneer_P9111	( Pioneer_P9161 , Pioneer_P9111 )	-	-
+W30271R014	Pioneer_P9241	Resnik	( Pioneer_P9241 ( 0624-32 , Pioneer_P2981 ) , Resnik )	-	-
+W44-61O	Richland	Kabott	( Richland , Kabott )	-	-
+W44-623	Richland	Kabott	( Richland , Kabott )	-	-
+W44-631	Richland	Kabott	( Richland , Kabott )	-	-
+W45-2175	Mandarin	L36-12	( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , L36-12 ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) )	-	-
+W45-2260	Ontario	Richland	( Ontario , Richland )	-	-
+W45-2307	Lincoln	Richland	( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland )	-	-
+W45-3638	Lincoln	Richland	( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland )	-	-
+W45S-4142	Kabbot	Goldsoy	( Kabbot , Goldsoy )	-	-
+W45S-4143	Mukden	Pagoda	( Mukden ( PI_50523 , - ) , Pagoda ( Manitoba_Brown , Mandarin ( PI_36653 , - ) ) )	-	-
+W46S-246	Lincoln	Pagoda	( Lincoln ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Pagoda ( Manitoba_Brown , Mandarin ( PI_36653 , - ) ) )	-	-
+W46S-326	Lincoln	Pagoda	( Lincoln ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Pagoda ( Manitoba_Brown , Mandarin ( PI_36653 , - ) ) )	-	-
+W46S-338	Lincoln	Pagoda	( Lincoln ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Pagoda ( Manitoba_Brown , Mandarin ( PI_36653 , - ) ) )	-	-
+W46S-339	Cayuga	Kabbot	( Cayuga ( PI_65393 , - ) , Kabbot )	-	-
+W46S-341	Cayuga	Kabbot	( Cayuga ( PI_65393 , - ) , Kabbot )	-	-
+W48-1028	Lincoln	Manchu_606	( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Manchu_606 )	-	-
+W4850-011	J81-116	Y186402	( J81-116 , Y186402 ( 1190-19 ( Mack , Forrest ) , Asgrow_A3127 ( Williams , Essex ) ) )	-	-
+W48S-1019	Kabbot	Chief	( Kabbot , Chief )	-	-
+W48S-1025	Lincoln	Pagoda	( Lincoln ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Pagoda ( Manitoba_Brown , Mandarin ( PI_36653 , - ) ) )	-	-
+W48S-1035	Lincoln	Pagoda	( Lincoln ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Pagoda ( Manitoba_Brown , Mandarin ( PI_36653 , - ) ) )	-	-
+W48S-1200	Richland	Flambeau	( Richland , Flambeau )	-	-
+W49-1982	A43-108	Manchu_3	( A43-108 , Manchu_3 ( Manchu ( PI_30593 , - ) , - ) )	-	-
+W49-1982-32	A43-108	Manchu_3	( A43-108 , Manchu_3 ( Manchu ( PI_30593 , - ) , - ) )	-	-
+W49S-2703	Lincoln	Flambeau	( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Flambeau )	-	-
+W50S-3138	Hawkeye	Flambeau	( Hawkeye , Flambeau )	-	-
+W50S-3147	Mukden	Flambeau	( Mukden ( PI_50523 , - ) , Flambeau )	-	-
+W50S-3180	Mukden	Flambeau	( Mukden ( PI_50523 , - ) , Flambeau )	-	-
+W50S-3257	Mukden	Flambeau	( Mukden ( PI_50523 , - ) , Flambeau )	-	-
+W50S-3334	Lincoln	Flambeau	( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Flambeau )	-	-
+W50S-3386	Lincoln	Flambeau	( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Flambeau )	-	-
+W53-1069	Lincoln	Capital	( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Capital )	-	-
+W57-2334	Seneca	Chippewa	( Seneca ( FC_03654 , - ) , Chippewa )	-	-
+W61S-191	Norchief	Clark	( Norchief , Clark )	-	-
+W61S-294	Norchief	Harosoy	( Norchief , Harosoy )	-	-
+W63-1010-3	Seneca	Chippewa	( Seneca ( FC_03654 , - ) , Chippewa )	-	-
+W63-4445	Chippewa	Seneca	( Chippewa , Seneca ( FC_03654 , - ) )	-	-
+W63-4731	Seneca	Norchief	( Seneca ( FC_03654 , - ) , Norchief )	-	-
+W63S-177	W50S-3386	Clark	( W50S-3386 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Flambeau ) , Clark )	-	-
+W63S-179	W50S-3386	Clark	( W50S-3386 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Flambeau ) , Clark )	-	-
+W63S-184	W50S-3386	Clark	( W50S-3386 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Flambeau ) , Clark )	-	-
+W63S-236	W50S-3386	Clark	( W50S-3386 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Flambeau ) , Clark )	-	-
+W64-3351	W49-1982-32	Chippewa	( W49-1982-32 ( A43-108 , Manchu_3 ( Manchu ( PI_30593 , - ) , - ) ) , Chippewa )	-	-
+W64-3656	C1128	Hardome	( C1128 ( Wabash , Hawkeye ) , Hardome )	-	-
+W6471M010	6347	6363	( 6347 ( Cartter , Asgrow_A3307 ) , 6363 ( Cartter , Pioneer_P9272 ) )	-	-
+W64S-190	Hardome	Chippewa	( Hardome , Chippewa )	-	-
+W64S-209	Seneca	W50S-3386	( Seneca ( FC_03654 , - ) , W50S-3386 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Flambeau ) )	-	-
+W66-3445	C1128	M319	( C1128 ( Wabash , Hawkeye ) , M319 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Hawkeye ) )	-	-
+W66-4108	Merit	W49-1982-32	( Merit , W49-1982-32 ( A43-108 , Manchu_3 ( Manchu ( PI_30593 , - ) , - ) ) )	-	-
+W67-186	W57-2334	Chippewa_64	( W57-2334 ( Seneca ( FC_03654 , - ) , Chippewa ) , Chippewa_64 )	-	-
+W68-37	W57-2334	Chippewa_64	( W57-2334 ( Seneca ( FC_03654 , - ) , Chippewa ) , Chippewa_64 )	-	-
+W8238-02	Pioneer_P9591	Y277402	( Pioneer_P9591 , Y277402 ( 1100-07 ( Forrest , Tracy ) , 1190-19 ( Mack , Forrest ) ) )	-	-
+W8248-02	Pioneer_P9592	H5164	( Pioneer_P9592 , H5164 )	-	-
+W8520-044	Pioneer_P9592	Asgrow_A5979	( Pioneer_P9592 , Asgrow_A5979 )	-	-
+W8692-462	Asgrow_A5979	Hutcheson	( Asgrow_A5979 , Hutcheson )	-	-
+W87-11	Hodgson_78	Wells_II	( Hodgson_78 , Wells_II )	-	-
+W87-15	Hodgson_78	Wells_II	( Hodgson_78 , Wells_II )	-	-
+WN0800099	DST2343	XB23Y02	( DST2343 , XB23Y02 ( Pioneer_P92B52 , Pioneer_P93B82 ) )	-	-
+WN0800104	DS99055NSTS	WW115926	( DS99055NSTS ( X029 ( Pioneer_P9362 , Syngenta_S29-11 ) , Syngenta_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) , WW115926 )	-	-
+WN0800506	Dairyland_DSR3100	WW115926	( Dairyland_DSR3100 , WW115926 )	-	-
+WN0800545	WW236435	Syngenta_S32-Z3	( WW236435 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) , Pioneer_P92B63 ) , Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) )	-	-
+WW115335	Pioneer_P93B45	Syngenta_S25-J5	( Pioneer_P93B45 , Syngenta_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	-
+WW221162	Syngenta_S32-Z3	X022	( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) , X022 ( Pioneer_P91608 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	-
+WW221162BC2	WW221162	WW221162BC1	( WW221162 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) , X022 ( Pioneer_P91608 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) , WW221162BC1 )	-	-
+WW236435	Syngenta_S32-Z3	Pioneer_P92B63	( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , Pioneer_P92B63 )	-	-
+WW703873	Asgrow_A2540	Pioneer_P9362	( Asgrow_A2540 , Pioneer_P9362 )	-	-
+WW710273	MO02052	Asgrow_A2506	( MO02052 , Asgrow_A2506 )	-	-
+WW815289	13404BB2	Asgrow_A2722	( 13404BB2 , Asgrow_A2722 )	-	-
+Wamloxi	Mammoth_Yellow	Biloxi	( Mammoth_Yellow , Biloxi ( PI_23211 , - ) )	-	-
+Wamotan_6640	Mammoth_Yellow	Otootan	( Mammoth_Yellow , Otootan ( PI_548479 , - ) )	-	-
+Washington	Mitchell	Cutler_71	( Mitchell ( Amsoy , Wayne ) , Cutler_71 )	-	-
+Westag_97	RCAT_8703	S26-06	( RCAT_8703 ( FH_22-815 ( Harosoy_63 , Fiskeby_V ) , Hodgson ) , S26-06 )	-	-
+White_Biloxi	Biloxi	-	( Biloxi ( PI_23211 , - ) , - )	Txze Pi Tou, PI  548495	Selected from Biloxi from natural hybrid
+Wilstar_790	Bragg	Ransom	( Bragg , Ransom )	PI 556571	Helena Chemical Company, PVP 7900058
+Wis._Manchu_3_sel.	Manchu_3	-	( Manchu_3 ( Manchu ( PI_30593 , - ) , - ) , - )	-	Selection from Manchu 3
+Wonetta	PI_71608	-	( PI_71608 , - )	-	Nanking, Cn 1927
+Woods_Yellow	Mammoth_Yellow	-	( Mammoth_Yellow , - )	PI 548496	Selection from Mammoth Yellow
+Woods_Yellow_#1	Woods_Yellow	-	( Woods_Yellow ( Mammoth_Yellow , - ) , - )	-	Farmer selection from Wood's Yellow

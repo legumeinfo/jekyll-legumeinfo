@@ -1,0 +1,417 @@
+Individual	Parent1	Parent2	Pedigree	Synonyms	Comment
+D00782	RCAT_9404	90732-150	( RCAT_9404 , 90732-150 ( Pioneer_P9281 , 90675 ( Pioneer_P9281 , G40-3P9273 ) ) )	-	-
+D01306	Pioneer_P9063	Pioneer_P92B05	( Pioneer_P9063 , Pioneer_P92B05 )	-	-
+D02279	Dairyland_DSR195	YB18H	( Dairyland_DSR195 , YB18H ( Pioneer_P9172 , 90676 ( ST2250 , G40-3P9392 ) ) )	-	-
+D08006	Pioneer_P91B53	D98116	( Pioneer_P91B53 , D98116 ( Syngenta_S19-T9 , XB29X00 ( Pioneer_P9305 , 21069 ( MO92117-18 , 90682E ( Pioneer_P9342 , G40-3P9341 ) ) ) ) )	-	-
+D09233	RCAT_Wildcat	XB19M01	( RCAT_Wildcat ( Syngenta_S24-92 , OAC_Bayfield ( KG_60 , Bicentennial ) ) , XB19M01 ( Pioneer_P9132 , 21721 ( Asgrow_A1900 , 21119 ( Pioneer_P9304 , 21070 ( Pioneer_P9412 , 90688C ( Asgrow_A4715 , G40-3P9392 ) ) ) ) ) )	-	-
+D10-10226	LD05-3230	LD00-3309	( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) )	-	-
+D3003	Wayne	-	( Wayne , - )	-	Rps, Rpm selection of Wayne; PVP  8100082 
+D414-714	Chief	Arksoy	( Chief , Arksoy ( PI_35335 , - ) )	-	-
+D417-721	Arksoy	Patoka	( Arksoy ( PI_35335 , - ) , Patoka )	-	-
+D418-177	Dunfield	Arksoy	( Dunfield ( PI_36846 , - ) , Arksoy ( PI_35335 , - ) )	-	Parentage conflict, may be Patoka x Arksoy
+D421-737	L7-1355	Magnolia	( L7-1355 ( PI_81041 , - ) , Magnolia ( PI_85537 , - ) )	-	-
+D49-247	Dunfield	Tennessee_Non_pop	( Dunfield ( PI_36846 , - ) , Tennessee_Non_pop ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+D49-2477	S-100	C.N.S.	( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) )	-	-
+D49-2491	S-100	C.N.S.	( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) )	-	C.N.S. = sister line of Lee
+D49-2510	S-100	C.N.S.	( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) )	-	-
+D49-2525	S-100	C.N.S.	( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) )	-	Sister line to Lee
+D49-2573	Roanoke	N45-745	( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D49-507	Roanoke	Rose_Non_pop	( Roanoke , Rose_Non_pop )	-	-
+D49-533	Roanoke	N45-745	( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D49-588	Roanoke	N45-745	( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D49-757	Roanoke	N45-745	( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D49-772	Roanoke	N45-745	( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D49-854	Roanoke	N45-745	( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D49-977	Macoupin	Arksoy	( Macoupin ( Mammoth_Yellow , - ) , Arksoy ( PI_35335 , - ) )	-	-
+D51-4839	Roanoke	N45-745	( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D51-4863	Roanoke	N45-745	( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D51-4871	Roanoke	N45-745	( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D51-4877	Roanoke	N45-745	( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D51-4891	Roanoke	N45-745	( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D51-4969	Roanoke	N45-745	( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D51-4977	Roanoke	N45-745	( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D51-5052	Roanoke	N45-745	( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	Sub-line of N48-1867
+D51-5091	Roanoke	N45-745	( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D51-5100	Roanoke	N45-745	( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D51-5427	Ralsoy	Ogden	( Ralsoy ( Arksoy ( PI_35335 , - ) , - ) , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	Sub-line of N45-1497
+D512-3	C171	Arksoy_2913	( C171 ( Midwest ( PI_6556 , - ) , Dunfield ( PI_36846 , - ) ) , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) )	-	-
+D514-13	Chief	Arksoy_2913	( Chief , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) )	-	-
+D514-20	Chief	Arksoy_2913	( Chief , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) )	-	-
+D517-14	Arksoy	Patoka	( Arksoy ( PI_35335 , - ) , Patoka )	-	-
+D517-3	Arksoy	Patoka	( Arksoy ( PI_35335 , - ) , Patoka )	-	Parentage conflict, may be Patoka x Arksoy 2913
+D517-4	Arksoy	Patoka	( Arksoy ( PI_35335 , - ) , Patoka )	-	-
+D52-108	N48-12-48	Perry	( N48-12-48 , Perry )	-	-
+D52-131	N48-1248	Perry	( N48-1248 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Perry )	-	-
+D52-137	N48-1248	Perry	( N48-1248 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Perry )	-	-
+D52-14	N48-12-48	Adams	( N48-12-48 , Adams )	-	-
+D52-16	N48-1248	Adams	( N48-1248 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Adams )	-	-
+D52-1776	D632-15	D49-2525	( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D52-18	N48-1248	Adams	( N48-1248 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Adams )	-	-
+D52-187	N48-12-48	Perry	( N48-12-48 , Perry )	-	-
+D52-1951	D632-15	D49-2525	( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D52-203	N48-1248	Perry	( N48-1248 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Perry )	-	-
+D52-212	N48-12-48	Perry	( N48-12-48 , Perry )	-	-
+D52-217	N48-1248	Perry	( N48-1248 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Perry )	-	-
+D52-23	N48-12-48	Adams	( N48-12-48 , Adams )	-	-
+D52-52	N48-12-48	Adams	( N48-12-48 , Adams )	-	-
+D52-78	N48-1248	Adams	( N48-1248 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Adams )	-	-
+D52-810	Roanoke	Ogden	( Roanoke , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+D52-834	Roanoke	N45-745	( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D523-25	Dunfield	Arksoy	( Dunfield ( PI_36846 , - ) , Arksoy ( PI_35335 , - ) )	-	-
+D523-30	Dunfield	Arksoy	( Dunfield ( PI_36846 , - ) , Arksoy ( PI_35335 , - ) )	-	-
+D523-41	Dunfield	Arksoy	( Dunfield ( PI_36846 , - ) , Arksoy ( PI_35335 , - ) )	-	-
+D53-1254	D49-2525	L6-5679	( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) )	-	-
+D53-1301	D632-15	D49-2525	( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D53-138	D48-1248	Perry	( D48-1248 , Perry )	-	-
+D53-142	D49-2525	L6-5679	( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) )	-	-
+D53-1569	N46-1703	D49-2525	( N46-1703 ( Volstate ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D53-163	D49-2525	L6-5679	( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) )	-	-
+D53-1664	N46-1703	D49-2525	( N46-1703 ( Volstate ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D53-184	D49-2525	L46-5679	( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) )	-	-
+D53-190	D49-2525	L46-5679	( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) )	-	-
+D53-206	D49-2525	L46-5679	( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) )	-	-
+D53-229	D49-2525	L46-5679	( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) )	-	-
+D53-233	D49-2525	L46-5679	( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) )	-	-
+D53-354	D49-2525	L46-5679	( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) )	-	-
+D53-375	D49-2525	L46-5679	( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) )	-	-
+D53-441	D49-2525	L46-5679	( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) )	-	-
+D53-481	D632-15	D49-2525	( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D53-492	D632-15	D49-2525	( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D53-500	D632-15	D49-2525	( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D53-518	D632-15	D49-2525	( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D53-526	D632-15	D49-2525	( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D53-542	D632-15	D49-2525	( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D53-640	D49-2570	L3-2010	( D49-2570 , L3-2010 ( C167 ( Midwest ( PI_6556 , - ) , Dunfield ( PI_36846 , - ) ) , L7-1353 ) )	-	-
+D53-697	L7-163	D49-2573	( L7-163 , D49-2573 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+D532-25	Dunfield	Arksoy	( Dunfield ( PI_36846 , - ) , Arksoy ( PI_35335 , - ) )	-	-
+D54-2213	Wabash	D49-2573	( Wabash , D49-2573 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+D54-2437	N48-1394	L6-5679	( N48-1394 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) )	-	-
+D54-3281	N49-2525	L6-5679	( N49-2525 , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) )	-	-
+D54-3310	D49-2525	L6-5679	( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) )	-	-
+D54-3340	D632-15	D49-2525	( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D54-3350	D632-15	D49-2525	( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D54-3362	D632-15	D49-2525	( D632-15 ( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D54-3416	Wabash	D49-2573	( Wabash , D49-2573 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+D540-1	Ogden	Arksoy	( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Arksoy ( PI_35335 , - ) )	-	-
+D55-4060	D50-203	D49-757	( D50-203 , D49-757 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+D55-4073	Volstate	Biloxi	( Volstate ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) )	-	-
+D55-4090	Ogden	C.N.S.	( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) )	-	-
+D55-4110	Ogden	C.N.S.	( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) )	-	-
+D55-4159	Ogden	Biloxi	( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) )	-	-
+D55-4168	Ogden	Biloxi	( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) )	-	-
+D55-8144	Dorman	N48-1515	( Dorman , N48-1515 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+D56-1087	D51-5108	Dorman	( D51-5108 , Dorman )	-	-
+D56-1102	D51-5108	Dorman	( D51-5108 , Dorman )	-	-
+D56-1131	D51-5108	Dorman	( D51-5108 , Dorman )	-	-
+D56-1185	Perry	Lee	( Perry , Lee )	-	-
+D56-1192	Perry	Lee	( Perry , Lee )	-	-
+D56-1231	Perry	Lee	( Perry , Lee )	-	-
+D56-1241	Hawkeye	Lee	( Hawkeye , Lee )	-	-
+D56-1247	Perry	Lee	( Perry , Lee )	-	-
+D56-1404	PI_179826	D49-2510	( PI_179826 , D49-2510 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D57-1299	Roanoke	D49-2491	( Roanoke , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D57-1501	Jackson	D49-2491	( Jackson , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D58-4300	D51-5052	D49-2491	( D51-5052 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) ) , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D58-4384	D51-5052	D49-2491	( D51-5052 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) ) , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D58-5111	Ogden	D49-2491	( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D59-2205	D55-4168	Hill	( D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) , Hill )	-	-
+D59-268	Hill	D52-810	( Hill , D52-810 ( Roanoke , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ) )	-	-
+D59-377	Hill	D52-810	( Hill , D52-810 ( Roanoke , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ) )	-	-
+D59-415	Hill	D52-810	( Hill , D52-810 ( Roanoke , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ) )	-	-
+D59-428	Hill	D52-810	( Hill , D52-810 ( Roanoke , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ) )	-	-
+D59-630	Hill	D52-810	( Hill , D52-810 ( Roanoke , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ) )	-	-
+D59-693	Hill	D52-810	( Hill , D52-810 ( Roanoke , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ) )	-	-
+D59-706	Hill	D52-810	( Hill , D52-810 ( Roanoke , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ) )	-	-
+D59-9289	D51-4877	D55-4168	( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) )	-	-
+D60-11,082	D49-2573	Nansemond	( D49-2573 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Nansemond )	-	-
+D60-11,215	D49-2573	Nansemond	( D49-2573 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Nansemond )	-	-
+D60-5234	D55-4110	N56-4071	( D55-4110 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , N56-4071 ( N46-1703 ( Volstate ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+D60-5702	Hill	D53-354	( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) )	-	-
+D60-5818	Hill	D53-354	( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) )	-	-
+D60-5847	Hill	D53-354	( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) )	-	-
+D60-6458	Hill	D51-4877	( Hill , D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+D60-7965	D55-4090	D55-4159	( D55-4090 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , D55-4159 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) )	-	-
+D60-8107	D51-4877	D55-4168	( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) )	-	-
+D60-9647	FC_31745	D49-2510	( FC_31745 , D49-2510 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D61-214	D54-3270	D54-2437	( D54-3270 , D54-2437 ( N48-1394 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) )	-	-
+D61-238	D54-3270	D54-2437	( D54-3270 , D54-2437 ( N48-1394 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) )	-	-
+D61-5264	Lee	PI_200532	( Lee , PI_200532 )	-	-
+D62-6225	Hill	Sioux	( Hill , Sioux ( PI_81021 , - ) )	-	-
+D62-6289	Hill	Sioux	( Hill , Sioux ( PI_81021 , - ) )	-	-
+D62-6913	Arksoy	D49-2491	( Arksoy ( PI_35335 , - ) , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D62-6959	Arksoy	D49-2491	( Arksoy ( PI_35335 , - ) , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	-
+D62-7562	Laredo	D49-2491	( Laredo , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) )	-	Root-knot resistant selection
+D623-33	Dunfield	Arksoy	( Dunfield ( PI_36846 , - ) , Arksoy ( PI_35335 , - ) )	-	-
+D63-215	Haberlandt	Dunfield	( Haberlandt ( PI_6396 , - ) , Dunfield ( PI_36846 , - ) )	-	-
+D63-76	Hill	D53-354	( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) )	-	-
+D632-15	Dunfield	Haberlandt	( Dunfield ( PI_36846 , - ) , Haberlandt ( PI_6396 , - ) )	-	-
+D64-3937	Hill	D59-1619	( Hill , D59-1619 )	-	-
+D64-4485	Hill	D58-3311	( Hill , D58-3311 )	-	-
+D64-4573	Hill	D58-3311	( Hill , D58-3311 )	-	-
+D64-4636	Hill	D58-3311	( Hill , D58-3311 )	-	-
+D64-4716	Lee	-	( Lee , - )	-	Non-nodulating selection of Lee
+D65-2262	D54-2437	PI_261467	( D54-2437 ( N48-1394 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , PI_261467 )	-	-
+D65-2276	D54-2437	PI_261467	( D54-2437 ( N48-1394 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , PI_261467 )	-	-
+D65-2284	D54-2437	PI_261467	( D54-2437 ( N48-1394 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , PI_261467 )	-	-
+D65-2291	D54-2437	PI_261467	( D54-2437 ( N48-1394 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , PI_261467 )	-	-
+D65-2304	D54-2437	PI_171450	( D54-2437 ( N48-1394 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , PI_171450 )	-	-
+D65-2367	D54-2437	PI_171450	( D54-2437 ( N48-1394 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , PI_171450 )	-	-
+D65-2385	D54-2437	PI_171450	( D54-2437 ( N48-1394 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , PI_171450 )	-	-
+D65-3168	Hill	PI_96989	( Hill , PI_96989 )	-	-
+D65-3622	Hill	PI_187155	( Hill , PI_187155 )	-	-
+D65-4206	Hill	PI_227557	( Hill , PI_227557 )	-	-
+D65-6555	D61-475	D61-2624	( D61-475 , D61-2624 )	-	-
+D65-6765	D58-3358	D59-9289	( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) )	-	-
+D66-12392	D63-6100	Dyer	( D63-6100 , Dyer )	-	-
+D66-4582	D53-354	D54-2437	( D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ( PI_30593 , - ) ) , Richland ) ) , D54-2437 ( N48-1394 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) )	-	-
+D66-4587	D53-354	D54-2437	( D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ( PI_30593 , - ) ) , Richland ) ) , D54-2437 ( N48-1394 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) )	-	-
+D66-4608	D53-354	D45-2437	( D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , D45-2437 )	-	-
+D66-5634	DA60-13-1	PI_171450	( DA60-13-1 , PI_171450 )	-	-
+D66-7965	D55-4090	D55-4159	( D55-4090 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , D55-4159 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) )	-	-
+D66-8556	Bragg	Semmes	( Bragg , Semmes )	-	-
+D67-10507	Dyer	Bragg	( Dyer , Bragg )	-	SCN race 3 resistant selection
+D67-3951	D63-6107	D60-9647	( D63-6107 , D60-9647 ( FC_31745 , D49-2510 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+D67-4106	D63-6107	D60-9647	( D63-6107 , D60-9647 ( FC_31745 , D49-2510 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+D67-5940	Semmes	D60-8107	( Semmes , D60-8107 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) )	-	-
+D67-6021	Semmes	D60-8107	( Semmes , D60-8107 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) )	-	-
+D67-6117	Semmes	D60-8107	( Semmes , D60-8107 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) )	-	-
+D67-6215	Semmes	D60-7965	( Semmes , D60-7965 ( D55-4090 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , D55-4159 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) )	-	-
+D67-B5	D62-7816	Lee	( D62-7816 , Lee )	-	-
+D68-127	Dyer	Bragg	( Dyer , Bragg )	-	-
+D68-18	Dyer	Bragg	( Dyer , Bragg )	-	-
+D68-180	Dyer	Bragg	( Dyer , Bragg )	-	Resistant to CN race 3
+D68-201	Dyer	Bragg	( Dyer , Bragg )	-	-
+D68-216	Dyer	Bragg	( Dyer , Bragg )	-	later maturing, CN race 3 resistant selection
+D68-4641	D62-6289	D60-9647	( D62-6289 ( Hill , Sioux ( PI_81021 , - ) ) , D60-9647 ( FC_31745 , D49-2510 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+D68-78	Dyer	Bragg	( Dyer , Bragg )	-	-
+D69-17	D67-24	D65-2262	( D67-24 , D65-2262 ( D54-2437 ( N48-1394 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , PI_261467 ) )	-	-
+D69-3871	D63-6094	D62-6289	( D63-6094 , D62-6289 ( Hill , Sioux ( PI_81021 , - ) ) )	-	-
+D69-3955	D63-6094	D62-6289	( D63-6094 , D62-6289 ( Hill , Sioux ( PI_81021 , - ) ) )	-	-
+D69-4073	D63-6094	D62-6289	( D63-6094 , D62-6289 ( Hill , Sioux ( PI_81021 , - ) ) )	-	-
+D69-6344	D63-6094	D62-7562	( D63-6094 , D62-7562 ( Laredo , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) )	-	-
+D69-8178	Hood	Semmes	( Hood , Semmes )	-	-
+D69-8201	Hood	Semmes	( Hood , Semmes )	-	-
+D69-8205	Hood	Semmes	( Hood , Semmes )	-	-
+D70-2650	D65-3075	Hood	( D65-3075 , Hood )	-	-
+D70-3001	D64-4636	Pickett_71	( D64-4636 ( Hill , D58-3311 ) , Pickett_71 )	-	-
+D70-3045	D64-4636	Pickett_71	( D64-4636 ( Hill , D58-3311 ) , Pickett_71 )	-	-
+D70-3115	D64-4636	Pickett_71	( D64-4636 ( Hill , D58-3311 ) , Pickett_71 )	-	-
+D70-3186	Centennial	-	( Centennial , - )	-	Early subline  of Centennial
+D70-5101	D63-6075	D64-4636	( D63-6075 , D64-4636 ( Hill , D58-3311 ) )	-	-
+D70-5107	D65-3075	D64-4636	( D65-3075 , D64-4636 ( Hill , D58-3311 ) )	-	-
+D70-5154	D65-3075	D64-4636	( D65-3075 , D64-4636 ( Hill , D58-3311 ) )	-	-
+D70-8347	Semmes	Hardee	( Semmes , Hardee )	-	-
+D70-8444	D64-4716	Hardee	( D64-4716 ( Lee , - ) , Hardee )	-	-
+D71-6234	D66-7398	PI_95560	( D66-7398 , PI_95560 )	-	-
+D71-6841	D64-4636	D64-3937	( D64-4636 ( Hill , D58-3311 ) , D64-3937 ( Hill , D59-1619 ) )	-	-
+D71-6860	D64-4636	D64-3937	( D64-4636 ( Hill , D58-3311 ) , D64-3937 ( Hill , D59-1619 ) )	-	-
+D71-6879	D64-4636	D64-3937	( D64-4636 ( Hill , D58-3311 ) , D64-3937 ( Hill , D59-1619 ) )	-	-
+D71-8928	D49-772	D55-4102	( D49-772 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4102 )	-	-
+D71-9203	Semmes	D67-10539	( Semmes , D67-10539 )	-	-
+D72-7959	D61-4269	D61-5264	( D61-4269 , D61-5264 ( Lee , PI_200532 ) )	-	-
+D72-8489	Hood	Lee_68	( Hood , Lee_68 )	-	-
+D72-8579	Hood	Lee_68	( Hood , Lee_68 )	-	-
+D72-8707	Forrest	D65-3168	( Forrest , D65-3168 ( Hill , PI_96989 ) )	-	-
+D72-C57	D68-18	PI_88788	( D68-18 ( Dyer , Bragg ) , PI_88788 )	-	-
+D73-10204	D62-7562	Semmes	( D62-7562 ( Laredo , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Semmes )	-	-
+D73-3867	D65-6555	York	( D65-6555 ( D61-475 , D61-2624 ) , York )	-	-
+D73-4118	D64-3253	D65-3168	( D64-3253 , D65-3168 ( Hill , PI_96989 ) )	-	-
+D73-4124	D64-3253	D65-3168	( D64-3253 , D65-3168 ( Hill , PI_96989 ) )	-	-
+D73-8105	D67-4823	Pickett_71	( D67-4823 , Pickett_71 )	-	-
+D74-7445	D65-3426	D67-8423	( D65-3426 , D67-8423 )	-	-
+D74-7631	Forrest	D70-3001	( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) )	-	-
+D74-7633	Forrest	D70-3001	( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) )	-	-
+D74-7636	Forrest	D70-3001	( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) )	-	-
+D74-7711	Forrest	D70-3001	( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) )	-	-
+D74-7741	Forrest	D70-3001	( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) )	-	-
+D74-7824	Forrest	D70-3001	( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) )	-	-
+D74-8819	D64-4636	D67-4694	( D64-4636 ( Hill , D58-3311 ) , D67-4694 )	-	-
+D75-16	D64-4636	Pickett_71	( D64-4636 ( Hill , D58-3311 ) , Pickett_71 )	-	-
+D75-7527	Forrest	Mack	( Forrest , Mack )	-	-
+D75-7685	Forrest	D69-4227	( Forrest , D69-4227 )	-	-
+D75-7778	Forrest	D69-4227	( Forrest , D69-4227 )	-	-
+D75-7987	Forrest	D69-6344	( Forrest , D69-6344 ( D63-6094 , D62-7562 ( Laredo , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) ) )	-	-
+D75-9925	Semmes	Hood	( Semmes , Hood )	-	-
+D76-9375	Forrest	Centennial	( Forrest , Centennial )	-	-
+D76-9454	Forrest	Centennial	( Forrest , Centennial )	-	-
+D76-9665	Forrest	Centennial	( Forrest , Centennial )	-	-
+D77-18	Tracy	Forrest	( Tracy , Forrest )	-	-
+D77-4874	D74-7631	J74-57	( D74-7631 ( Forrest , D70-3001 ( D64-4636 ( Hill , D58-3311 ) , Pickett_71 ) ) , J74-57 )	-	-
+D77-5169	Centennial	J74-47	( Centennial , J74-47 )	-	-
+D77-6056	Centennial	J74-47	( Centennial , J74-47 )	-	-
+D77-6057	Centennial	J74-47	( Centennial , J74-47 )	-	-
+D77-6103	Centennial	J74-47	( Centennial , J74-47 )	-	-
+D77-7926	Centennial	D73-10204	( Centennial , D73-10204 ( D62-7562 ( Laredo , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Semmes ) )	-	-
+D77-7969	Centennial	D73-10204	( Centennial , D73-10204 ( D62-7562 ( Laredo , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , Semmes ) )	-	-
+D79-10458	J74-39	D75-10169	( J74-39 , D75-10169 )	-	-
+D79-10494	J74-39	D75-10169	( J74-39 , D75-10169 )	-	-
+D79-10496	J74-39	D75-10169	( J74-39 , D75-10169 )	-	-
+D79-6058	Tracy	Centennial	( Tracy , Centennial )	-	-
+D81-8875	Centennial	D75-10172	( Centennial , D75-10172 )	-	-
+D81-8912	Centennial	D75-10172	( Centennial , D75-10172 )	-	-
+D82-2218	Bradford	Tracy-M	( Bradford , Tracy-M )	-	-
+D82-2228	Bedford	Tracy-M	( Bedford , Tracy-M )	-	-
+D82-2896	Forrest	D78-5089	( Forrest , D78-5089 )	-	-
+D82-9973	J74-39	D75-10169	( J74-39 , D75-10169 )	-	-
+D83-2886	D65-2262	Forrest	( D65-2262 ( D54-2437 ( N48-1394 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , PI_261467 ) , Forrest )	-	-
+D84-7174	D77-12	D77-6057	( D77-12 , D77-6057 ( Centennial , J74-47 ) )	-	-
+D85-7985	Epps	D77-5169	( Epps , D77-5169 ( Centennial , J74-47 ) )	-	-
+D86-8870	Sharkey	LeFlore	( Sharkey , LeFlore )	-	-
+D86-9845	Kirby	D82-9973	( Kirby , D82-9973 ( J74-39 , D75-10169 ) )	-	-
+D87-3125	D65-2262	Forrest	( D65-2262 ( D54-2437 ( N48-1394 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , PI_261467 ) , Forrest )	-	-
+D87-4389	Sharkey	LeFlore	( Sharkey , LeFlore )	-	-
+D87-4429	Sharkey	LeFlore	( Sharkey , LeFlore )	-	-
+D87-5870	D82-2218	Lamar	( D82-2218 ( Bradford , Tracy-M ) , Lamar )	-	-
+D87-5951	Epps	D65-2262	( Epps , D65-2262 ( D54-2437 ( N48-1394 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , PI_261467 ) )	-	-
+D87-5967	Epps	D65-2262	( Epps , D65-2262 ( D54-2437 ( N48-1394 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , PI_261467 ) )	-	-
+D88-4380	D82-2218	Sharkey	( D82-2218 ( Bradford , Tracy-M ) , Sharkey )	-	-
+D88-552	D82-3298	D77-6056	( D82-3298 , D77-6056 ( Centennial , J74-47 ) )	-	-
+D88-5547	D82-3298	D77-6056	( D82-3298 , D77-6056 ( Centennial , J74-47 ) )	-	-
+D89-7077	Cordell	D77-6056	( Cordell ( Bedford , D72-8927 ) , D77-6056 ( Centennial , J74-47 ) )	-	-
+D89003	ST0470	Pioneer_P90B73	( ST0470 , Pioneer_P90B73 )	-	-
+D90-7256	Forrest	D76-8070	( Forrest , D76-8070 )	PI 590579	-
+D91-4619	Epps	Sharkey	( Epps , Sharkey )	-	-
+D91-4657	Epps	Sharkey	( Epps , Sharkey )	-	-
+D91-4759	Epps	Sharkey	( Epps , Sharkey )	-	-
+D92-4216	Lyon	D86-3429	( Lyon ( D82-2218 ( Bradford , Tracy-M ) , Lamar ) , D86-3429 )	-	-
+D92-9779	D88-3333	Hartwig	( D88-3333 , Hartwig )	-	-
+D98116	Syngenta_S19-T9	XB29X00	( Syngenta_S19-T9 , XB29X00 ( Pioneer_P9305 , 21069 ( MO92117-18 , 90682E ( Pioneer_P9342 , G40-3P9341 ) ) ) )	-	-
+DA07x22-23	Asgrow_A4714	PI_587880A	( Asgrow_A4714 , PI_587880A )	-	-
+DA08X27	DB01-5289	10-73#5	( DB01-5289 , 10-73#5 )	-	-
+DA08x41-193F	DB04-10997	DB00-087	( DB04-10997 ( DT99-17445 , J00-2_ ) , DB00-087 )	-	-
+DA0912-07F	DT99-17483	PI_340023	( DT99-17483 ( UARK-5798 ( Hutcheson , Waters ) , Bolivar ) , PI_340023 )	-	-
+DA0912-10F	DT99-17483	PI_340023	( DT99-17483 ( UARK-5798 ( Hutcheson , Waters ) , Bolivar ) , PI_340023 )	-	Conv.
+DA09X003-27-76	DB01-5289	DA08X27	( DB01-5289 , DA08X27 ( DB01-5289 , 10-73#5 ) )	-	Low Linolenic Acid
+DA09X003-45-182	DB01-5289	DA08X27	( DB01-5289 , DA08X27 ( DB01-5289 , 10-73#5 ) )	-	Low Linolenic Acid
+DA09X004-30-136	JTN-4307	DA08X28	( JTN-4307 ( S97-1688 ( S91-1381 ( Hartz_H5370 , Hartwig ) , Hartz_H5810 ) , V94-0198 ( DPL_415 ( Essex , DPX_436 ( Pickett_71 , York ) ) , Manokin ) ) , DA08X28 )	-	Low Linolenic Acid
+DA09x39-17F	R01-976	DB00-087	( R01-976 ( Hartz_H4994 , R95-1470 ) , DB00-087 )	-	-
+DA09x39-26F	R01-976	DB00-087	( R01-976 ( Hartz_H4994 , R95-1470 ) , DB00-087 )	-	F5, Conv.
+DA1037-25F	DB03-1381	DB03-8416	( DB03-1381 ( N94-546 ( Cook , Clifford ) , DT96-16809 ( Northrup_King_S59-60 , DPL_3589 ( DPL_415 ( Essex , DPX_436 ( Pickett_71 , York ) ) ( Essex , DPX_436 ( Pickett_71 , York ) ( Pickett_71 , York ) ) , Asgrow_A5980 ) ) ) , DB03-8416 ( DT96-6840 ( Hutcheson , Pioneer_P9641 ) , R95-798 ( DPL_415 ( Essex , DPX_436 ( Pickett_71 , York ) ) , Asgrow_A9641 ) ) )	-	Conv.
+DA10x05-17F	DB06-1225	DB06-2257	( DB06-1225 , DB06-2257 ( S99-2281 ( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , S92-1069 ( Manokin , Hartwig ) ) , LN97-15076 ( Macon , Stressland ) ) )	-	Conv., F5
+DA10x05-20F	DB06-1225	DB06-2257	( DB06-1225 , DB06-2257 ( S99-2281 ( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , S92-1069 ( Manokin , Hartwig ) ) , LN97-15076 ( Macon , Stressland ) ) )	-	Conv., F5
+DA10x30-09F	Jake	DB04-10997	( Jake ( S94-1867 ( Pioneer_P9592 , S91-1693 ) , Anand ) , DB04-10997 ( DT99-17445 , J00-2_ ) )	-	Conv., F5
+DA10x30-48F	Jake	DB04-10997	( Jake ( S94-1867 ( Pioneer_P9592 , S91-1693 ) , Anand ) , DB04-10997 ( DT99-17445 , J00-2_ ) )	-	Conv., F5
+DA1133-038F	DB06-3442	N02-417	( DB06-3442 ( DT98-9102 ( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , Pioneer_P9592 ) , PARKER ) , N02-417 )	-	Conv.
+DA1134-015F	DB03-1381	S05-11482	( DB03-1381 ( N94-546 ( Cook , Clifford ) , DT96-16809 ( Northrup_King_S59-60 , DPL_3589 ( DPL_415 ( Essex , DPX_436 ( Pickett_71 , York ) ) , Asgrow_A5980 ) ) ) , S05-11482 ( S99-2281 ( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , S92-1069 ( Manokin , Hartwig ) ) , S00-9985-03 ( HY_574 , Anand ) ) )	-	Conv.
+DA1137-007F	DB04-10836	S05-11482	( DB04-10836 ( DT99-16788 ( S59-60 , Bolivar ) , J00-2 ( Manokin , Fowler ) ) , S05-11482 ( S99-2281 ( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , S92-1069 ( Manokin , Hartwig ) ) , S00-9985-03 ( HY_574 , Anand ) ) )	-	Conv.
+DA1137-026F	DB04-10836	S05-11482	( DB04-10836 ( DT99-16788 ( S59-60 , Bolivar ) , J00-2 ( Manokin , Fowler ) ) , S05-11482 ( S99-2281 ( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , S92-1069 ( Manokin , Hartwig ) ) , S00-9985-03 ( HY_574 , Anand ) ) )	-	Conv.
+DA1139-031F	R04-357	DB04-10836	( R04-357 ( R97-1650 ( Pioneer_P9592 , Holladay ) , 98601 ( Asgrow_A5403 , Hutcheson ) ) , DB04-10836 ( DT99-16788 ( S59-60 , Bolivar ) , J00-2 ( Manokin , Fowler ) ) )	-	Conv.
+DA13062-001F	DA09x20-2-22-B4-B5	DA09x002-30-24-B4-B5	( DA09x20-2-22-B4-B5 , DA09x002-30-24-B4-B5 )	-	-
+DA13076-042F	DB05c023-26F	JTN-5203	( DB05c023-26F ( Freedom , DS-880 ) , JTN-5203 ( R93-171 , Anand ) )	-	-
+DA13086-011F	Osage	S09-10871	( Osage , S09-10871 ( S04-10364 ( - , AgriPro_AP4882 ) , S04-12412 ) )	-	-
+DA13092-015F	DB04-10836	JTN-5203	( DB04-10836 ( DT99-16788 ( S59-60 , Bolivar ) , J00-2 ( Manokin , Fowler ) ) , JTN-5203 ( R93-171 , Anand ) )	-	-
+DA13092-039F	DB04-10836	JTN-5203	( DB04-10836 ( DT99-16788 ( S59-60 , Bolivar ) , J00-2 ( Manokin , Fowler ) ) , JTN-5203 ( R93-171 , Anand ) )	-	-
+DA13099-008F	DA07c22-23	5002T	( DA07c22-23 , 5002T )	-	-
+DA1405-212-3F	DA09c003-45-182F	KB12-1#70-152	( DA09c003-45-182F , KB12-1#70-152 )	-	-
+DA1405-221-1F	DA09c003-45-182F	B12-1#70-152	( DA09c003-45-182F , B12-1#70-152 )	-	-
+DA1490-523F	S11-17025	K12-1348	( S11-17025 ( S05-11268 ( S00-9925-10 ( K1393 ( KS5292 , Hutcheson ) , Anand ) , U98-311442 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) , S05-11482 ( S99-2281 ( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , S92-1069 ( Manokin , Hartwig ) ) , S00-9985-03 ( HY_574 , Anand ) ) ) , K12-1348 ( R04-357 ( R97-1650 ( Pioneer_P9592 , Holladay ) , 98601 ( Asgrow_A5403 , Hutcheson ) ) , JTN-5503 ( Fowler , Manokin ) ) )	-	-
+DA1539-1010F	DB04-10836	R10-5086	( DB04-10836 ( DT99-16788 ( S59-60 , Bolivar ) , J00-2 ( Manokin , Fowler ) ) , R10-5086 ( Osage , R99-1613F ( NKRA_452 , PI_290126B ) ) )	-	-
+DA1539-109F	DB04-10836	R10-5086	( DB04-10836 ( DT99-16788 ( S59-60 , Bolivar ) , J00-2 ( Manokin , Fowler ) ) , R10-5086 ( Osage , R99-1613F ( NKRA_452 , PI_290126B ) ) )	-	-
+DA1585-564F	DS25-1	DA14c034-03-14	( DS25-1 ( DT98-9102 ( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , Pioneer_P9592 ) , PI_587982A ) , DA14c034-03-14 )	-	-
+DB00-087-08	DT96-6840	S59-60	( DT96-6840 ( Hutcheson , Pioneer_P9641 ) , S59-60 )	-	-
+DB03-10440	DT96-7918	DT96-16809	( DT96-7918 ( Asgrow_A5979 , RA452 ) , DT96-16809 ( Northrup_King_S59-60 , DPL_3589 ( DPL_415 ( Essex , DPX_436 ( Pickett_71 , York ) ) , Asgrow_A5980 ) ) )	-	-
+DB03-1381	N94-546	DT96-16809	( N94-546 ( Cook , Clifford ) , DT96-16809 ( Northrup_King_S59-60 , DPL_3589 ( DPL_415 ( Essex , DPX_436 ( Pickett_71 , York ) ) , Asgrow_A5980 ) ) )	-	-
+DB03-8416	DT96-6840	R95-798	( DT96-6840 ( Hutcheson , Pioneer_P9641 ) , R95-798 ( DPL_415 ( Essex , DPX_436 ( Pickett_71 , York ) ) , Asgrow_A9641 ) )	-	-
+DB03-_2811	DT96-16809_	DT97-4290	( DT96-16809_ , DT97-4290 ( Asgrow_A5979 , DPL_3478 ) )	-	-
+DB04-10836	DT99-16788	J00-2	( DT99-16788 ( S59-60 , Bolivar ) , J00-2 ( Manokin , Fowler ) )	PI 674010	F5, GP-398
+DB04-10997	DT99-17445	J00-2_	( DT99-17445 , J00-2_ )	-	-
+DB04-290	DT98-9102	DT98-7278	( DT98-9102 ( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , Pioneer_P9592 ) , DT98-7278 )	-	-
+DB05X023-26	Freedom	DS95-217-1-880	( Freedom , DS95-217-1-880 )	-	-
+DB05X039-22	DB00-087	MD02-5634	( DB00-087 , MD02-5634 )	-	-
+DB05X039-36	DB00-087	MD02-5634	( DB00-087 , MD02-5634 )	-	-
+DB05X039-5	DB00-087	MD02-5634	( DB00-087 , MD02-5634 )	-	-
+DB05c023-26F	Freedom	DS-880	( Freedom , DS-880 )	-	-
+DB06-2257	S99-2281	LN97-15076	( S99-2281 ( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , S92-1069 ( Manokin , Hartwig ) ) , LN97-15076 ( Macon , Stressland ) )	-	-
+DB06-3442	DT98-9102	PARKER	( DT98-9102 ( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , Pioneer_P9592 ) , PARKER )	-	-
+DB0638-70	DT98-9102	PI_594172_A	( DT98-9102 ( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , Pioneer_P9592 ) , PI_594172_A )	PI 686969, DB06x38-70	GP-416
+DB06x038-70	DT98-9102	PI_594172	( DT98-9102 ( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , Pioneer_P9592 ) , PI_594172 )	-	-
+DB2004X45-391	DB00-141	Macon	( DB00-141 , Macon )	-	-
+DH530	OAC_Clinton	PH9718	( OAC_Clinton , PH9718 )	OAC 05-30	-
+DP17145891	Pioneer_P93Y70	Pioneer_P93M61	( Pioneer_P93Y70 , Pioneer_P93M61 )	-	-
+DP3927359	Pioneer_P93B87	EX32M02	( Pioneer_P93B87 , EX32M02 ( ST3883 , Pioneer_P93B51 ) )	-	-
+DP7748344	EX29F04	YB31C04	( EX29F04 ( ST3643 , XB29V99 ( Pioneer_P93B82 , 91013F2 ( W30132-004 , 90753 ( ST2250 , 90682 ( Pioneer_P9342 , G40-3P9341 ) ) ) ) ) , YB31C04 ( Pioneer_P93B15 , Pioneer_P93B68 ) )	-	-
+DP9422453	Pioneer_P92M01	Pioneer_P90M60	( Pioneer_P92M01 , Pioneer_P90M60 )	-	-
+DPL_105	Dare	Essex	( Dare , Essex )	PI 556635	Monsanto Technology, LLC, PVP 8100151
+DPL_246	Lee_68	D62-7816	( Lee_68 , D62-7816 )	PI 556663	Monsanto Technology, LLC, PVP 8200102
+DPL_345	Bragg	Mack	( Bragg , Mack )	PI 556582	Monsanto Technology, LLC, PVP 8000045
+DPL_3589	DPL_415	Asgrow_A5980	( DPL_415 ( Essex , DPX_436 ( Pickett_71 , York ) ) , Asgrow_A5980 )	DPX 3589, PI 566930	PVP 9300178, Delta and Pine Land Co.
+DPL_3776	Asgrow_A7986	Asgrow_A5980	( Asgrow_A7986 , Asgrow_A5980 )	DPX 3776, PI 564529	PVP 9300022, Delta and Pine Land Co.
+DPL_415	Essex	DPX_436	( Essex , DPX_436 ( Pickett_71 , York ) )	PI 556906, Deltapine 415, DPX 1091	Delta and Pine Land Co., PVP 8900087
+DPL_417	Davis	N66-1136	( Davis , N66-1136 ( N56-4202 ( N46-1703 ( Volstate ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) ) , N57-6801 ( Jackson , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) ) )	PI 556661	Monsanto Technology, LLC, PVP 8300014
+DPL_497	Davis	N66-1136	( Davis , N66-1136 ( N56-4202 ( N46-1703 ( Volstate ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ) , D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) ) , N57-6801 ( Jackson , D49-2491 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) ) )	PI 556662	Monsanto Technology, LLC, PVP 8300013
+DPL_506	Bragg	Lee_68	( Bragg , Lee_68 )	PI 556636	Monsanto Technology, LLC, PVP 8100149
+DPL_878	Davis	Pickett_71	( Davis , Pickett_71 )	PI 538781	Monsanto Technology, LLC, PVP 9000118
+DPX_436	Pickett_71	York	( Pickett_71 , York )	-	Delta and Pine Land Co.
+DS03-14	LG99-5106	LG97-9226	( LG99-5106 ( LG91-7320 ( BSR_101 , LG82-8379 ( PI_68508 , FC_04007B ) ) , Kenwood ) , LG97-9226 ( LG89-7629 ( Ripley , PI_445837 ) , Asgrow_A9303 ) )	-	ESPS III
+DS1061-25	R99-1613F	JTN5203	( R99-1613F ( NKRA_452 , PI_290126B ) , JTN5203 )	-	-
+DS1062-11	R99-1613F	JTN5203	( R99-1613F ( NKRA_452 , PI_290126B ) , JTN5203 )	-	-
+DS1169-323	DB04-10836	JTN-5203	( DB04-10836 ( DT99-16788 ( S59-60 , Bolivar ) , J00-2 ( Manokin , Fowler ) ) , JTN-5203 ( R93-171 , Anand ) )	-	-
+DS126-2	Bolivar	PI_567516C	( Bolivar , PI_567516C )	-	SCN
+DS126-5	Bolivar	PI_567516C	( Bolivar , PI_567516C )	-	SCN
+DS13-141	PI_547878	GC00138-29	( PI_547878 , GC00138-29 )	-	Rust Res.
+DS19-1	PI_547879	GC00138-29	( PI_547879 , GC00138-29 )	-	Rust resistance
+DS24-2	DT98-9102	PI_603756	( DT98-9102 ( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , Pioneer_P9592 ) , PI_603756 )	-	Hi Germ  (50% exotic pedigree)
+DS25-1	DT98-9102	PI_587982A	( DT98-9102 ( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , Pioneer_P9592 ) , PI_587982A )	-	Hi Germ
+DS25-4	DT98-9102	PI_587982A	( DT98-9102 ( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , Pioneer_P9592 ) , PI_587982A )	-	Exotic
+DS25-41	DT98-9102	PI_587982A	( DT98-9102 ( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , Pioneer_P9592 ) , PI_587982A )	-	Hi Germ  (50% exotic pedigree)
+DS3H-211	LG04-1459-6	S07-5049	( LG04-1459-6 , S07-5049 ( S03-4152 , HC99-2763 ( DPL_3478 , Stressland ) ) )	-	Hi Yield, 12.5% exotic, F4, Conv
+DS4-SCN05	Uspecified	-	( Uspecified , - )	-	-
+DS4290	Asgrow_A5979	DPL_3478	( Asgrow_A5979 , DPL_3478 )	-	CR Res.
+DS46-1	LG01-5087	DT97-4290	( LG01-5087 ( LN93-11632 , LG96-1713 ) , DT97-4290 ( Asgrow_A5979 , DPL_3478 ) )	-	-
+DS46-3141	LG01-5087	DT97-4290	( LG01-5087 ( LN93-11632 , LG96-1713 ) , DT97-4290 ( Asgrow_A5979 , DPL_3478 ) )	-	CR Res.
+DS5-2675	Williams_82	Ankur	( Williams_82 , Ankur )	-	Rust (50% exotic pedigree)
+DS5-67	Williams_82	Ankur	( Williams_82 , Ankur )	-	Rust resistance
+DS99-522-11	LG01-5087-5	Osage	( LG01-5087-5 ( LN93-11632 , LG96-1713 ) , Osage )	-	F5, Conv., 19% exotic
+DS99055NSTS	X029	Syngenta_S25-J5	( X029 ( Pioneer_P9362 , Syngenta_S29-11 ) , Syngenta_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	-
+DSN11-03004	IA3023	4J105-3-4	( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , 4J105-3-4 ( CLOJ173-6-2 ( Kottman , Dwight ) , WW115926 ) )	-	-
+DSN11-03174	IA3023	4J105-3-4	( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , 4J105-3-4 ( CLOJ173-6-2 ( Kottman , Dwight ) , WW115926 ) )	-	-
+DSN11-06152	IA3023	CL0J173-6-8	( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , CL0J173-6-8 ( Kottman , Dwight ) )	-	-
+DSN11-10057	IA3023	LD00-3309	( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) )	-	-
+DSN11-12073	IA3023	LD02-4485	( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) )	-	-
+DSN11-12119	IA3023	LD02-4485	( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) )	-	-
+DSN11-27183	IA3023	LG05-4292	( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LG05-4292 ( LG94-4667 ( PI_458511 , Flyer ) , LG97-9226 ( LG89-7629 ( Ripley , PI_445837 ) , Asgrow_A9303 ) ) )	-	-
+DS_160	Harosoy_63	PI_248406	( Harosoy_63 , PI_248406 )	PI 556522	Soybean Research Foundation, Inc., PVP 7700035
+DT95-15550	Hutcheson	DPL_3589	( Hutcheson , DPL_3589 ( DPL_415 ( Essex , DPX_436 ( Pickett_71 , York ) ) , Asgrow_A5980 ) )	-	-
+DT95-17556	Pioneer_P9592	DPL_415	( Pioneer_P9592 , DPL_415 ( Essex , DPX_436 ( Pickett_71 , York ) ) )	-	-
+DT96-15556	H5350	DPL_3589	( H5350 , DPL_3589 ( DPL_415 ( Essex , DPX_436 ( Pickett_71 , York ) ) , Asgrow_A5980 ) )	-	-
+DT96-16809	Northrup_King_S59-60	DPL_3589	( Northrup_King_S59-60 , DPL_3589 ( DPL_415 ( Essex , DPX_436 ( Pickett_71 , York ) ) , Asgrow_A5980 ) )	-	-
+DT96-6840	Hutcheson	Pioneer_P9641	( Hutcheson , Pioneer_P9641 )	-	-
+DT96-7918	Asgrow_A5979	RA452	( Asgrow_A5979 , RA452 )	-	-
+DT97-4290	Asgrow_A5979	DPL_3478	( Asgrow_A5979 , DPL_3478 )	PI 642055	-
+DT98-11850	Asgrow_A5979	La88-25723	( Asgrow_A5979 , La88-25723 )	-	-
+DT98-9102	N90-516	Pioneer_P9592	( N90-516 ( Hutcheson , N83-1014 ( GaSoy_17 ( Bragg , Hood ) , N77-940 ( N70-1540 ( Dare , D65-6765 ( D58-3358 , D59-9289 ( D51-4877 ( Roanoke , N45-745 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ( Tokyo ( PI_8424 , - ) ( PI_8424 , - ) , PI_54610 ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ) , D55-4168 ( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Biloxi ( PI_23211 , - ) ) ) ) ) , Centennial ) ) ) , Pioneer_P9592 )	-	-
+DT99-13005	UARK-5798	HYP_574	( UARK-5798 ( Hutcheson , Waters ) , HYP_574 )	-	-
+DT99-16788	S59-60	Bolivar	( S59-60 , Bolivar )	-	-
+DT99-16864	S59-60	Bolivar	( S59-60 , Bolivar )	-	-
+DT99-17018	DT96-6840	Bolivar	( DT96-6840 ( Hutcheson , Pioneer_P9641 ) , Bolivar )	-	-
+DT99-17400	UARK-5798	Bolivar	( UARK-5798 ( Hutcheson , Waters ) , Bolivar )	-	-
+DT99-17483	UARK-5798	Bolivar	( UARK-5798 ( Hutcheson , Waters ) , Bolivar )	-	-
+Dairyland_75213-72	98820-33	Asgrow_A3237	( 98820-33 , Asgrow_A3237 )	-	-
+Dairyland_75221	Dairyland_98820-33	Asgrow_A3237	( Dairyland_98820-33 , Asgrow_A3237 )	-	-
+Dairyland_DSR120	Harosoy_63	T34	( Harosoy_63 , T34 )	PI 556602	Dairyland Seed Company, Inc., PVP 8100096
+Dairyland_DSR141	Chippewa_64	Amsoy	( Chippewa_64 , Amsoy )	PI 556598	Dairyland Seed Company, Inc., PVP 8100020
+Dairyland_DSR171	Wayne	Hark	( Wayne , Hark )	PI 556599	Dairyland Seed Company, Inc., PVP 8100021
+Dairyland_DSR207	Wayne	Hark	( Wayne , Hark )	PI 556600	Dairyland Seed Company, Inc., PVP 8100022
+Dairyland_DSR217	Dairyland_Experimental	Asgrow_A3127	( Dairyland_Experimental , Asgrow_A3127 ( Williams , Essex ) )	DSR-217, DSR217, Dairyland DSR-217	-
+Dairyland_DSR232	Wayne	Hark	( Wayne , Hark )	PI 556601	Dairyland Seed Company, Inc., PVP 8100023
+Dairyland_DSR262	BSR201	Asgrow_A3127	( BSR201 , Asgrow_A3127 ( Williams , Essex ) )	PI 542055	Dairyland Seed Company, Inc., PVP 9000180
+Dairyland_DSR304	Williams	-	( Williams , - )	DSR304, DSR-304, Dairyland DSR-304	-
+Dairyland_DSR373	Asgrow_A3127	Fayette	( Asgrow_A3127 ( Williams , Essex ) , Fayette )	DSR373, DSR-373, Dairyland DSR-373, PI 54071	PVP 9000196
+Dairyland_DSR_304	Williams	-	( Williams , - )	-	-
+Dairyland_DST3305	Asgrow_A3127	Fayette	( Asgrow_A3127 ( Williams , Essex ) , Fayette )	DST-3305, DST3305, Dairyland DST-3305	-
+Delsoy	PI_85355	-	( PI_85355 , - )	-	Selection from PI 85355
+Delsoy_4210	L77-1233	Douglas	( L77-1233 , Douglas )	PI 560206, S84-1084	PVP 9200215
+Delsoy_4710	L77-443	L77-906	( L77-443 ( Union , L75-8020 ( Corsoy , - ) ) , L77-906 )	PI 560207, S84-1163	-
+Delsoy_4900	Asgrow_A5424	Mack	( Asgrow_A5424 ( Williams , Essex ) , Mack )	PI 543794	Curators of the University of Missouri, PVP 9100062
+Delsoy_5710	Hartz_H5164	Hartwig	( Hartz_H5164 , Hartwig )	-	-
+Delta	Wayne	Harosoy_63	( Wayne , Harosoy_63 )	PI 556581	V. R. Seeds, Inc., PVP 7900107
+Deuel	Surge	Pioneer_P9151	( Surge , Pioneer_P9151 )	-	South Dakota Agricultural Experiment Station, PVP 201000318
+Dixie	PI_37330	-	( PI_37330 , - )	-	Selection from PI 37330
+Dortchsoy_#2	Ogden	-	( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , - )	-	-
+Dortchsoy_#31	Ogden	-	( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , - )	PI 548695, Dortchsoy 31	Selection from Ogden by Dortch Seed Farms
+Dortchsoy_#7	Arksoy	-	( Arksoy ( PI_35335 , - ) , - )	-	Selection from Arksoy
+Dortchsoy_110	Ogden	Wabash	( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Wabash )	-	Short erect selection
+Dortchsoy_67	Macoupin	Ogden	( Macoupin ( Mammoth_Yellow , - ) , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	PI 548696	-
+Dotson	Harosoy_63	PI_248406	( Harosoy_63 , PI_248406 )	PI 556543	Soybean Research Foundation, Inc., PVP 7800050
+Duke	Chippewa_64	Cutler_71	( Chippewa_64 , Cutler_71 )	PI 556580	V. R. Seeds, Inc., PVP 7900105
+Dunfield	PI_36846	-	( PI_36846 , - )	PI 548318, T9	1954  From Bernard, Collected in Jilin, CN, Selected from PI 36846

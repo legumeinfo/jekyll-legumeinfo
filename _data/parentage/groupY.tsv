@@ -1,0 +1,91 @@
+Individual	Parent1	Parent2	Pedigree	Synonyms	Comment
+Y186402	1190-19	Asgrow_A3127	( 1190-19 ( Mack , Forrest ) , Asgrow_A3127 ( Williams , Essex ) )	-	-
+Y2011Z2	1190-02	J74-45	( 1190-02 ( Mack , Forrest ) , J74-45 )	-	-
+Y277402	1100-07	1190-19	( 1100-07 ( Forrest , Tracy ) , 1190-19 ( Mack , Forrest ) )	-	-
+Y4667-09	Pioneer_P4280	Fayette	( Pioneer_P4280 ( Williams , Woodworth ) , Fayette )	-	-
+YB007D03	Pioneer_P90A07	R02322	( Pioneer_P90A07 , R02322 ( Pioneer_P90B43 , 12223R006 ( Pioneer_P9007 , 90733 ( Pioneer_P9172 , 90676 ( ST2250 , G40-3P9392 ) ) ) ) )	-	-
+YB009A99	J009	W10381-022	( J009 , W10381-022 ( Pioneer_P9091 , Asgrow_A2234 ) )	-	-
+YB01D05	Pioneer_P9008	XB16H	( Pioneer_P9008 , XB16H ( Syngenta_S19-90 , MO30732-51 ) )	-	-
+YB07M04	Syngenta_S03-W4	D89003	( Syngenta_S03-W4 , D89003 ( ST0470 , Pioneer_P90B73 ) )	-	-
+YB08K04	Pioneer_P9071	Pioneer_P91B52	( Pioneer_P9071 , Pioneer_P91B52 )	-	-
+YB08N05	XB20L00	Pioneer_P91B33	( XB20L00 ( W30271R014 ( Pioneer_P9241 ( 0624-32 , Pioneer_P2981 ) , Resnik ) , Pioneer_P9234 ) , Pioneer_P91B33 )	-	-
+YB09P05	Syngenta_S10-F2	Pioneer_P91B92	( Syngenta_S10-F2 ( Exp_91133 , Exp_C319428 ( McCall , S19-90 ) ) , Pioneer_P91B92 )	-	-
+YB09Q05	Syngenta_S10-F2	XB25P99	( Syngenta_S10-F2 ( Exp_91133 , Exp_C319428 ( McCall , S19-90 ) ) , XB25P99 ( Pioneer_P93B82 , 91013F2 ( W30132-004 , 90753 ( ST2250 , 90682 ( Pioneer_P9342 , G40-3P9341 ) ) ) ) )	-	-
+YB12M06	Pioneer_P91B53	R03210RE	( Pioneer_P91B53 , R03210RE ( 21030R017 ( ST1590 , ST2250 ) , R02416 ( Pioneer_P9091 , Pioneer_P91B02 ) ) )	-	-
+YB14D	W30047R012	YB23E	( W30047R012 ( Pioneer_P9161 , Pioneer_P9111 ) , YB23E ( Archer , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	-
+YB15K99	MO1718	Pioneer_P9204	( MO1718 , Pioneer_P9204 )	-	-
+YB17K99	ST1590	ST2250	( ST1590 , ST2250 )	-	-
+YB18H	Pioneer_P9172	90676	( Pioneer_P9172 , 90676 ( ST2250 , G40-3P9392 ) )	-	-
+YB18J00	Pioneer_P9362	MO21584	( Pioneer_P9362 , MO21584 )	-	-
+YB20G05	Pioneer_P9182	45233R043	( Pioneer_P9182 , 45233R043 ( Asgrow_A1900 , 21069 ( MO92117-18 , 90682E ( Pioneer_P9342 , G40-3P9341 ) ) ) )	-	-
+YB20S02	CX173	90736-085	( CX173 , 90736-085 ( Pioneer_P9244 , 90676 ( ST2250 , G40-3P9392 ) ) )	-	-
+YB21D06	YB22S00	Pioneer_P92B13	( YB22S00 ( CX232 , ST1570 ) , Pioneer_P92B13 )	-	-
+YB21F01	Pioneer_P9182	Pioneer_P9254	( Pioneer_P9182 , Pioneer_P9254 )	-	-
+YB21G01	XB22D	Pioneer_P92B52	( XB22D ( Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ( Williams , Essex ) ) , 30388 ( Pioneer_P9303 , 30310 ( Pioneer_P9303 , 30294 ( Pioneer_P9303 , 30199 ( Pioneer_P9303 , 30124 ( Pioneer_P9303 , 30094 ( 5961 ( Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Resnik ) , Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ( Elf , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) ) ) ) ) ) ) , Pioneer_P92B52 )	-	-
+YB22N	MO01718	Pioneer_P9171	( MO01718 ( MO50321 ( MO01010 ( Harcor , CM183 ) ( Harcor , CM183 ) , A8 ) , MO50226 ( ST3010 , MO01010 ( Harcor , CM183 ) ) ) , Pioneer_P9171 ( Pioneer_P9271 , Asgrow_A3127 ( Williams , Essex ) ) )	-	-
+YB22R06	Pioneer_P92B12	Pioneer_P92B38	( Pioneer_P92B12 , Pioneer_P92B38 )	-	-
+YB22S00	CX232	ST1570	( CX232 , ST1570 )	-	-
+YB22T00	Pioneer_P9362	MO21584	( Pioneer_P9362 , MO21584 )	-	-
+YB23E	Archer	Pioneer_P9273	( Archer , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) )	-	-
+YB23M	Pioneer_P9362	MO21584	( Pioneer_P9362 , MO21584 )	-	-
+YB24X06	Ina	K10467	( Ina ( Jack , Hartwig ) , K10467 ( XB16H ( Syngenta_S19-90 , MO30732-51 ) ( Syngenta_S19-90 , MO30732-51 ) ( Syngenta_S19-90 , MO30732-51 ) , K10292 ( XB16H ( Syngenta_S19-90 , MO30732-51 ) ( Syngenta_S19-90 , MO30732-51 ) , K10147 ( XB16H ( Syngenta_S19-90 , MO30732-51 ) , Pioneer_P91B52 ) ) ) )	-	-
+YB26V01	Pioneer_P9281	XB31Q	( Pioneer_P9281 , XB31Q ( ST2660 , 21710 ( Asgrow_A3237 , 21097 ( Asgrow_A3237 , 21063 ( Asgrow_A3237 , 90683C ( Pioneer_P9362 , G40-3P9392 ) ) ) ) ) )	-	-
+YB26Y06	XB23W03	Pioneer_P92M91	( XB23W03 ( Pioneer_P92B63 , C04065 ( Pioneer_P92B63 , XB36L ( Pioneer_P9362 , 90683 ( Pioneer_P9362 , G40-3P9392 ) ) ) ) , Pioneer_P92M91 )	-	-
+YB27F	Pioneer_P9281	90675	( Pioneer_P9281 , 90675 ( Pioneer_P9281 , G40-3P9273 ) )	-	-
+YB27Z06	Pioneer_P93B66	YB22T00	( Pioneer_P93B66 , YB22T00 ( Pioneer_P9362 , MO21584 ) )	-	-
+YB28C99	Pioneer_P9322	21052	( Pioneer_P9322 , 21052 ( ST2250 , 90676A ( ST2250 , G40-3P9392 ) ) )	-	-
+YB28E09	XB23W03	Pioneer_P92M91	( XB23W03 ( Pioneer_P92B63 , C04065 ( Pioneer_P92B63 , XB36L ( Pioneer_P9362 , 90683 ( Pioneer_P9362 , G40-3P9392 ) ) ) ) , Pioneer_P92M91 )	-	-
+YB29S	ST2250	21028	( ST2250 , 21028 ( Pioneer_P9392 ( Asgrow_A3127 ( Williams , Essex ) , Gnome ) , Pioneer_P9321 ) )	-	-
+YB30A05	ST2870	ST3380	( ST2870 , ST3380 )	-	-
+YB30G05	Pioneer_P93B15	Pioneer_P93B09	( Pioneer_P93B15 , Pioneer_P93B09 )	-	-
+YB30K06	Pioneer_P93B86	YB22T00	( Pioneer_P93B86 , YB22T00 ( Pioneer_P9362 , MO21584 ) )	-	-
+YB31C04	Pioneer_P93B15	Pioneer_P93B68	( Pioneer_P93B15 , Pioneer_P93B68 )	-	-
+YB31J06	Pioneer_P93B87	Pioneer_P93B09	( Pioneer_P93B87 , Pioneer_P93B09 )	-	-
+YB32E00	Asgrow_A4138	MO15733	( Asgrow_A4138 , MO15733 )	-	-
+YB32E06	Pioneer_P93Y70	Pioneer_P92M91	( Pioneer_P93Y70 , Pioneer_P92M91 )	-	-
+YB32J01	Pioneer_P93B82	N00376	( Pioneer_P93B82 , N00376 ( MO02301-99 , Pioneer_P9344 ) )	-	-
+YB32K01	Pioneer_P93B82	P00115	( Pioneer_P93B82 , P00115 ( ST3630 , Pioneer_P9314 ) )	-	-
+YB32X	Pioneer_P9281	21097	( Pioneer_P9281 , 21097 ( Asgrow_A3237 , 21063 ( Asgrow_A3237 , 90683C ( Pioneer_P9362 , G40-3P9392 ) ) ) )	-	-
+YB34R03	Pioneer_P93B82	N03287	( Pioneer_P93B82 , N03287 ( Pioneer_P92B61 , YB32X ( Pioneer_P9281 , 21097 ( Asgrow_A3237 , 21063 ( Asgrow_A3237 , 90683C ( Pioneer_P9362 , G40-3P9392 ) ) ) ) ) )	-	-
+YB34Y99	Pioneer_P93B82	45282	( Pioneer_P93B82 , 45282 ( 3660 , 21726 ( Asgrow_A2396 ( CM214 , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ) ( CM214 , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) , 21132 ( Asgrow_A2396 ( CM214 , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ) , 21082 ( Pioneer_P9381 , 90685A ( Pioneer_P9381 , G40-3P9392 ) ) ) ) ) )	-	-
+YB35N04	N02783	N02992	( N02783 ( YB38 , General ) , N02992 ( Pioneer_P93B82 , Pioneer_P93B53 ) )	-	-
+YB35R05	Pioneer_P93B87	Pioneer_P93B68	( Pioneer_P93B87 , Pioneer_P93B68 )	-	-
+YB36V00	Pioneer_P9362	Pioneer_P93B82	( Pioneer_P9362 , Pioneer_P93B82 )	-	-
+YB36X00	Pioneer_P9352	32870F2	( Pioneer_P9352 , 32870F2 ( Pioneer_P9352 , 21111 ( Pioneer_P9362 , 21080 ( Pioneer_P9362 , 90682C ( Pioneer_P9342 , G40-3P9341 ) ) ) ) )	-	-
+YB37F02	XB35D	XB31Q	( XB35D ( Pioneer_P9352 , 32745 ( Pioneer_P9352 , 32127 ( Pioneer_P9352 , 31910 ( 31438 ( Pioneer_P9254 , Pioneer_P9281 ) , Pioneer_P9254 ) ) ) ) , XB31Q ( ST2660 , 21710 ( Asgrow_A3237 , 21097 ( Asgrow_A3237 , 21063 ( Asgrow_A3237 , 90683C ( Pioneer_P9362 , G40-3P9392 ) ) ) ) ) )	-	-
+YB37Y00	Pioneer_P93B65	S02339	( Pioneer_P93B65 , S02339 ( Pioneer_P93B65 , S01555 ( Pioneer_P93B65 , 90731S043 ( Pioneer_P9204 , 90675 ( Pioneer_P9281 , G40-3P9273 ) ) ) ) )	-	-
+YB38B08	Pioneer_P93M42	Pioneer_P93M50	( Pioneer_P93M42 , Pioneer_P93M50 )	-	-
+YB38F03	ST3883	21710N120	( ST3883 , 21710N120 ( Asgrow_A3237 , 21097 ( Asgrow_A3237 , 21063 ( Asgrow_A3237 , 90683C ( Pioneer_P9362 , G40-3P9392 ) ) ) ) )	-	-
+YB38K	Pioneer_P9273	30107	( Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ( Williams , Essex ) ) , 30107 ( XB33B ( CM304BR , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , 5961 ( Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) , Resnik ) ) )	-	-
+YB38Q05	Pioneer_P93B87	Pioneer_P93B82	( Pioneer_P93B87 , Pioneer_P93B82 )	-	-
+YB39X03	22302S025	XB43J	( 22302S025 ( ST2660 , Syngenta_S30-06 ) , XB43J ( Pioneer_P9362 , 90755 ( Pioneer_P9362 , 90683 ( Pioneer_P9362 , G40-3P9392 ) ) ) )	-	-
+YB42D	XB43B	W6471M010	( XB43B ( Pioneer_P9391 , Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ) , W6471M010 ( 6347 ( Cartter , Asgrow_A3307 ) , 6363 ( Cartter , Pioneer_P9272 ) ) )	-	-
+YB42G	Pioneer_P9362	ST3660	( Pioneer_P9362 , ST3660 )	-	-
+YB42V04	Pioneer_P93B72	Pioneer_P94B45	( Pioneer_P93B72 , Pioneer_P94B45 )	-	-
+YB43U05	ST3480	YB23M	( ST3480 , YB23M ( Pioneer_P9362 , MO21584 ) )	-	-
+YB44F06	Pioneer_P93B86	Pioneer_P94M70	( Pioneer_P93B86 , Pioneer_P94M70 )	-	-
+YB46K	Pioneer_P9362	Pioneer_P9444	( Pioneer_P9362 , Pioneer_P9444 )	-	-
+YB48M01	XB48B	Asgrow_A3431	( XB48B ( Y4667-09 ( Pioneer_P4280 ( Williams , Woodworth ) , Fayette ) , Asgrow_A4715 ) , Asgrow_A3431 )	-	-
+YB48U05	XB46L99	H02173	( XB46L99 ( CX469c , Pioneer_P9451 ) , H02173 ( Pioneer_P93B82 , Pioneer_P94B45 ) )	-	-
+YB52H	W4850-011	Pioneer_P9521	( W4850-011 ( J81-116 , Y186402 ( 1190-19 ( Mack , Forrest ) , Asgrow_A3127 ( Williams , Essex ) ) ) , Pioneer_P9521 ( Pioneer_P9531 , Pioneer_P9561 ( Mack , Forrest ) ) )	-	-
+YB52J00	Wicomico	Pioneer_P95B32	( Wicomico , Pioneer_P95B32 )	-	-
+YB53Q06	YB54H00	G00167G017	( YB54H00 ( Asgrow_A5979 , KS5292 ) , G00167G017 ( Wicomico , Pioneer_P95B32 ) )	-	-
+YB54D	Asgrow_A5979	90773	( Asgrow_A5979 , 90773 ( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) ) )	-	-
+YB54H00	Asgrow_A5979	KS5292	( Asgrow_A5979 , KS5292 )	-	-
+YB54M02	Pioneer_P95B33	YB54D	( Pioneer_P95B33 , YB54D ( Asgrow_A5979 , 90773 ( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) ) ) )	-	-
+YB54N02	Pioneer_P95B33	Pioneer_P95B53	( Pioneer_P95B33 , Pioneer_P95B53 )	-	-
+YB55H00	Pioneer_P9594	S6423	( Pioneer_P9594 , S6423 )	-	-
+YB56G03	Pioneer_P9594	71495	( Pioneer_P9594 , 71495 ( Pioneer_P9594 , 70887 ( Hutcheson , 90773 ( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) ) ) ) )	-	-
+YB57G	Pioneer_P9584	90688	( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) )	-	-
+YB57H	8377-16	W8238-02	( 8377-16 ( Pioneer_P9582 , W2707-23 ( Y2011Z2 ( 1190-02 ( Mack , Forrest ) , J74-45 ) , Epps ) ) , W8238-02 ( Pioneer_P9591 , Y277402 ( 1100-07 ( Forrest , Tracy ) , 1190-19 ( Mack , Forrest ) ) ) )	-	-
+YB58G	Pioneer_P9592	Asgrow_A5979	( Pioneer_P9592 , Asgrow_A5979 )	-	-
+YB58L04	YB57H	Pioneer_P96B21	( YB57H ( 8377-16 ( Pioneer_P9582 , W2707-23 ( Y2011Z2 ( 1190-02 ( Mack , Forrest ) , J74-45 ) , Epps ) ) , W8238-02 ( Pioneer_P9591 , Y277402 ( 1100-07 ( Forrest , Tracy ) , 1190-19 ( Mack , Forrest ) ) ) ) , Pioneer_P96B21 )	-	-
+YB82D05	DM339	XB67A00	( DM339 , XB67A00 ( W8566-005 , YB57G ( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) ) ) )	-	-
+YB83L06	FTH2893	XB67A00	( FTH2893 , XB67A00 ( W8566-005 , YB57G ( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) ) ) )	-	-
+YR34C09	YB30K06	SP11513497	( YB30K06 ( Pioneer_P93B86 , YB22T00 ( Pioneer_P9362 , MO21584 ) ) , SP11513497 ( Pioneer_P93M20 , JH10032580 ( Pioneer_P92M91 , JH8069431 ( Pioneer_P92B38 , JH7380284 ( Pioneer_P92B38 , JH6676568 ( Pioneer_P92B38 , JX5789894 ) ) ) ) ) )	-	-
+Yellow_Gatan	Gatan	-	( Gatan ( Otootan ( PI_548479 , - ) , - ) , - )	-	Selection from Gatan
+Yelnanda	Nanda	Yelredo	( Nanda ( PI_95727 , - ) , Yelredo ( Mammoth_Yellow , Laredo ) )	PI 548698	May also be Coker 433?
+Yelnanda_52-135	Nanda	Yelredo	( Nanda ( PI_95727 , - ) , Yelredo ( Mammoth_Yellow , Laredo ) )	-	-
+Yelnanda_53-116	Nanda	Yelredo	( Nanda ( PI_95727 , - ) , Yelredo ( Mammoth_Yellow , Laredo ) )	-	-
+Yelredo	Mammoth_Yellow	Laredo	( Mammoth_Yellow , Laredo )	PI 548497	May also be Coker 319?
+YoungBC4LX	Young	-	( Young , - )	-	Unspecified parent in backcross

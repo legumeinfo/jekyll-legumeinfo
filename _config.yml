@@ -96,6 +96,12 @@ page_gen:
     name: accession
     index_files: true
     debug: true
+  - data: parentage_groups
+    template: parentage
+    dir: tools/parentage
+    name: group
+    index_files: true
+    debug: true
 
 # the default number of items shown in card widgets
 card_item_limit: 3

@@ -1,0 +1,29 @@
+Individual	Parent1	Parent2	Pedigree	Synonyms	Comment
+Z00103	DM339	XB67A00	( DM339 , XB67A00 ( W8566-005 , YB57G ( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) ) ) )	-	-
+Z00107	DM339	Z00103	( DM339 , Z00103 ( DM339 , XB67A00 ( W8566-005 , YB57G ( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) ) ) ) )	-	-
+Z00154Z065	MT95-122795	71022G016	( MT95-122795 , 71022G016 ( Pioneer_P97B61 , 90768G025 ( Pioneer_P9584 , 90687 ( Pioneer_P9444 , G40-3P9341 ) ) ) )	-	-
+Z01103Z265	MT95-123720	Z00107	( MT95-123720 , Z00107 ( DM339 , Z00103 ( DM339 , XB67A00 ( W8566-005 , YB57G ( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) ) ) ) ) )	-	-
+Z01174	Z98136Z015	Z00103	( Z98136Z015 ( MT95-120438 , MT95-122655 ) , Z00103 ( DM339 , XB67A00 ( W8566-005 , YB57G ( Pioneer_P9584 , 90688 ( Asgrow_A4715 , G40-3P9392 ) ) ) ) )	-	-
+Z98117Z003	MT95-120438	MTBR95-122474	( MT95-120438 , MTBR95-122474 )	-	-
+Z98136Z015	MT95-120438	MT95-122655	( MT95-120438 , MT95-122655 )	-	-
+ZB01Q08	ZB09H02	CA4135092	( ZB09H02 ( Pioneer_P90B43 , Pioneer_P9234 ) , CA4135092 ( Syngenta_S03-W4 , Pioneer_P90M60 ) )	-	-
+ZB06C02	Pioneer_P90B43	Asgrow_A1900	( Pioneer_P90B43 , Asgrow_A1900 )	-	-
+ZB08Q06	Pioneer_P91M10	Syngenta_S10-F2	( Pioneer_P91M10 , Syngenta_S10-F2 ( Exp_91133 , Exp_C319428 ( McCall , S19-90 ) ) )	-	-
+ZB09H02	Pioneer_P90B43	Pioneer_P9234	( Pioneer_P90B43 , Pioneer_P9234 )	-	-
+ZB10J03	ST1970	Pioneer_P91B01	( ST1970 , Pioneer_P91B01 )	-	-
+ZB16V06	Pioneer_P91B53	K10282	( Pioneer_P91B53 , K10282 ( Pioneer_P90A07 , Pioneer_P90B72 ) )	-	-
+ZB19S04	ST1970	Pioneer_P91B53	( ST1970 , Pioneer_P91B53 )	-	-
+ZB22F04	Pioneer_P93B82	Pioneer_P91B53	( Pioneer_P93B82 , Pioneer_P91B53 )	-	-
+ZB23G05	Pioneer_P92B12	R03893	( Pioneer_P92B12 , R03893 ( YB17K99 ( ST1590 , ST2250 ) , XB16H ( Syngenta_S19-90 , MO30732-51 ) ) )	-	-
+ZB24J03	Pioneer_P92B63	CX235c	( Pioneer_P92B63 , CX235c )	-	-
+ZB25F02	XB35D	21270LBW39	( XB35D ( Pioneer_P9352 , 32745 ( Pioneer_P9352 , 32127 ( Pioneer_P9352 , 31910 ( 31438 ( Pioneer_P9254 , Pioneer_P9281 ) , Pioneer_P9254 ) ) ) ) , 21270LBW39 ( MO01718 ( MO50321 ( MO01010 ( Harcor , CM183 ) ( Harcor , CM183 ) , A8 ) , MO50226 ( ST3010 , MO01010 ( Harcor , CM183 ) ) ) , Pioneer_P9171 ( Pioneer_P9271 , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	-
+ZB27U04	Pioneer_P93B87	Pioneer_P92B61	( Pioneer_P93B87 , Pioneer_P92B61 )	-	-
+ZB28S05	Pioneer_P93B66	YB22T00	( Pioneer_P93B66 , YB22T00 ( Pioneer_P9362 , MO21584 ) )	-	-
+ZB30L05	Pioneer_P93B87	XB29D01	( Pioneer_P93B87 , XB29D01 ( ST2660 , Pioneer_P93B82 ) )	-	-
+ZB31B07	Pioneer_P92M91	Pioneer_P93M11	( Pioneer_P92M91 , Pioneer_P93M11 )	-	-
+ZB31M02	3171	Pioneer_P93B65	( 3171 ( L77-994 , Pioneer_P1677 ) , Pioneer_P93B65 )	-	-
+ZB36A02	Pioneer_P93B45	Pioneer_P93B65	( Pioneer_P93B45 , Pioneer_P93B65 )	-	-
+ZB36H04	Pioneer_P93B86	YB29S	( Pioneer_P93B86 , YB29S ( ST2250 , 21028 ( Pioneer_P9392 ( Asgrow_A3127 ( Williams , Essex ) , Gnome ) , Pioneer_P9321 ) ) )	-	-
+ZB37P05	Pioneer_P93B86	XB39U99	( Pioneer_P93B86 , XB39U99 ( Asgrow_A4138 , 40305-117 ( Pioneer_P9312 , Pioneer_P9392 ( Asgrow_A3127 ( Williams , Essex ) , Gnome ) ) ) )	-	-
+ZB42L06	Pioneer_P93B72	Pioneer_P94B45	( Pioneer_P93B72 , Pioneer_P94B45 )	-	-
+ZB58A03	Pioneer_P9594	Dillon	( Pioneer_P9594 , Dillon )	-	-

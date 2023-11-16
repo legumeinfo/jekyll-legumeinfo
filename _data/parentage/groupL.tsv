@@ -1,0 +1,835 @@
+Individual	Parent1	Parent2	Pedigree	Synonyms	Comment
+L.Z.	La40-400	-	( La40-400 , - )	-	Re-named
+L03610	Pioneer_P92B12	Pioneer_P92B38	( Pioneer_P92B12 , Pioneer_P92B38 )	-	-
+L04177	Pioneer_P92B12	Pioneer_P92B38	( Pioneer_P92B12 , Pioneer_P92B38 )	-	-
+L04210	YB22T00	Pioneer_P93B09	( YB22T00 ( Pioneer_P9362 , MO21584 ) , Pioneer_P93B09 )	-	-
+L04549	Pioneer_P91B42	Pioneer_P93B68	( Pioneer_P91B42 , Pioneer_P93B68 )	-	-
+L12	L6	L11	( L6 ( L8 , L7 ) , L11 )	-	-
+L12A	L12	-	( L12 ( L6 ( L8 , L7 ) , L11 ) , - )	-	Selection for yield from L12
+L2	Harosoy_63	L3	( Harosoy_63 , L3 )	-	-
+L2A	L2	-	( L2 ( Harosoy_63 , L3 ) , - )	-	Selection for yield from L2
+L3-2010	C167	L7-1353	( C167 ( Midwest ( PI_6556 , - ) , Dunfield ( PI_36846 , - ) ) , L7-1353 )	-	-
+L3-3392	Dunfield	Manchuria_13-177	( Dunfield ( PI_36846 , - ) , Manchuria_13-177 )	-	-
+L3-3427	Scioto	Mukden	( Scioto ( Manchu ( PI_30593 , - ) , - ) , Mukden ( PI_50523 , - ) )	-	-
+L36-12	Mandarin	Manchu	( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) )	-	-
+L36-5	Mandarin	Manchu	( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) )	-	-
+L36-553	Mandarin	Manchu	( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) )	-	-
+L36-690	Mandarin	Manchu	( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) )	-	-
+L36-700	Mandarin	Manchu	( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) )	-	-
+L36-720	Mandarin	Manchu	( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) )	-	-
+L37-1087	Illini	T48	( Illini ( A.K. , - ) , T48 ( Manchu ( PI_30593 , - ) , Ebony ) )	LX157	-
+L37-1111	Illini	T48	( Illini ( A.K. , - ) , T48 ( Manchu ( PI_30593 , - ) , Ebony ) )	-	-
+L37-1160	Illini	T48	( Illini ( A.K. , - ) , T48 ( Manchu ( PI_30593 , - ) , Ebony ) )	-	-
+L37-1355	PI_81041	-	( PI_81041 , - )	-	Rogue selection from PI 81041
+L43-1927	Mukden	Richland	( Mukden ( PI_50523 , - ) , Richland )	-	-
+L43-2010	C167	L37-1355	( C167 ( Midwest ( PI_6556 , - ) , Dunfield ( PI_36846 , - ) ) , L37-1355 ( PI_81041 , - ) )	-	-
+L43-2140	Chief	L37-1355	( Chief , L37-1355 ( PI_81041 , - ) )	-	-
+L43-2926	Dunfield	T117	( Dunfield ( PI_36846 , - ) , T117 ( AK114 ( Illini ( A.K. , - ) , - ) , PI_65394 ) )	-	-
+L43-3392	Dunfield	Manchuria_13177	( Dunfield ( PI_36846 , - ) , Manchuria_13177 ( Manchuria ( PI_28050 , - ) , - ) )	-	-
+L43-3427	Scioto	Mukden	( Scioto ( Manchu ( PI_30593 , - ) , - ) , Mukden ( PI_50523 , - ) )	-	-
+L43-7494	Seneca	Richland	( Seneca ( FC_03654 , - ) , Richland )	-	-
+L43-8417	Chief	Richland	( Chief , Richland )	-	-
+L43-8642	Richland	Scioto	( Richland , Scioto ( Manchu ( PI_30593 , - ) , - ) )	-	-
+L44-8066	Seneca	L37-1355	( Seneca ( FC_03654 , - ) , L37-1355 ( PI_81041 , - ) )	-	-
+L44-8090	Seneca	Hudson_Manchu	( Seneca ( FC_03654 , - ) , Hudson_Manchu )	-	-
+L46-5679	Lincoln	Richland	( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland )	-	-
+L46-8144	Lincoln	Richland	( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland )	-	-
+L48-7289	Seneca	Richland	( Seneca ( FC_03654 , - ) , Richland )	-	-
+L54-1055	Blackhawk	Capital	( Blackhawk , Capital )	-	-
+L57-0034	Clark	Adams	( Clark , Adams )	-	-
+L57-0035	Clark	Adams	( Clark , Adams )	-	-
+L57-2276	L49-4091	Clark	( L49-4091 , Clark )	-	-
+L57-2322	L49-4091	Clark	( L49-4091 , Clark )	-	-
+L57-2324	L49-4091	Clark	( L49-4091 , Clark )	-	-
+L57-2396	L49-4091	Clark	( L49-4091 , Clark )	-	-
+L57-3033	Adams	L46-1503	( Adams , L46-1503 )	-	-
+L57-3104	C985	Perry	( C985 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ) , Perry )	-	-
+L57-9775	Hawkeye	Lee	( Hawkeye , Lee )	-	-
+L57-9777	Hawkeye	Lee	( Hawkeye , Lee )	-	-
+L57-9809	Hawkeye	Lee	( Hawkeye , Lee )	-	-
+L57-9819	Hawkeye	Lee	( Hawkeye , Lee )	-	-
+L58-2080	Hawkeye	Lee	( Hawkeye , Lee )	-	-
+L6	L8	L7	( L8 , L7 )	-	-
+L6-5679	Lincoln	Richland	( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland )	-	-
+L6-685	Mandarin	Manchu	( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) )	-	-
+L60-1385	L46-1503	C985	( L46-1503 , C985 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ) )	-	-
+L60-347-1-60-28	Harosoy	Higan	( Harosoy , Higan ( PI_80475 , - ) )	-	-
+L60-347-4-4G-2-B	Harosoy	Higan	( Harosoy , Higan ( PI_80475 , - ) )	-	-
+L61-2193	Sioux	Harosoy	( Sioux ( PI_81021 , - ) , Harosoy )	-	-
+L61-2196	Sioux	Harosoy	( Sioux ( PI_81021 , - ) , Harosoy )	-	-
+L63-1212	Harosoy	T204	( Harosoy , T204 ( T136 , T122 ) )	-	-
+L66-1359	Wayne	L57-0034	( Wayne , L57-0034 ( Clark , Adams ) )	-	-
+L66L-137	Wayne	L57-0034	( Wayne , L57-0034 ( Clark , Adams ) )	-	-
+L66L-140	Wayne	L57-0034	( Wayne , L57-0034 ( Clark , Adams ) )	-	-
+L66L-144	Wayne	L57-0034	( Wayne , L57-0034 ( Clark , Adams ) )	-	-
+L66L-154	Wayne	L57-0034	( Wayne , L57-0034 ( Clark , Adams ) )	-	-
+L66L-177	Wayne	L57-9819	( Wayne , L57-9819 ( Hawkeye , Lee ) )	-	-
+L66L-191	Wayne	L57-9819	( Wayne , L57-9819 ( Hawkeye , Lee ) )	-	-
+L66L-310	Clark_63	L57-9819	( Clark_63 , L57-9819 ( Hawkeye , Lee ) )	-	-
+L66L-333	Clark_63	L57-9819	( Clark_63 , L57-9819 ( Hawkeye , Lee ) )	-	-
+L67U-1842	Provar	Disoy	( Provar , Disoy )	-	-
+L67U-440	Chippewa_64	Corsoy	( Chippewa_64 , Corsoy )	-	-
+L68-0376	Clark	PI_84946-2	( Clark , PI_84946-2 )	-	-
+L68-4241	L10	S62X30	( L10 , S62X30 )	-	-
+L69-20	Hark	Wayne	( Hark , Wayne )	-	-
+L69-202	L61-2193	L61-2196	( L61-2193 ( Sioux ( PI_81021 , - ) ( PI_81021 , - ) , Harosoy ) , L61-2196 ( Sioux ( PI_81021 , - ) , Harosoy ) )	-	-
+L69D-133	Chippewa_64	Corsoy	( Chippewa_64 , Corsoy )	-	-
+L69D-227	Hark	Disoy	( Hark , Disoy )	-	-
+L69L-3	L66-531	L62-535	( L66-531 , L62-535 )	-	-
+L69U37-17-5	Calland	Corsoy	( Calland , Corsoy )	-	-
+L69U40-16-4	Calland	Amsoy	( Calland , Amsoy )	-	-
+L69U40-19-1	Calland	Amsoy	( Calland , Amsoy )	-	-
+L69U72-3-4	Cutler	A100	( Cutler , A100 )	-	-
+L69U84-19-1	Cutler	Beeson	( Cutler , Beeson )	-	-
+L69UI9-16-2	L15	Beeson	( L15 , Beeson )	-	-
+L7-1355	PI_81041	-	( PI_81041 , - )	-	Rogue selection from PI 81041
+L70-2283	Custer	Chippewa	( Custer , Chippewa )	-	-
+L70D6-11-5	L63-1212	C1426	( L63-1212 ( Harosoy , T204 ( T136 , T122 ) ) , C1426 ( C1253 ( Blackhawk , Harosoy ) , Kent ) )	-	-
+L70D6-16	L63-1212	C1426	( L63-1212 ( Harosoy , T204 ( T136 , T122 ) ) , C1426 ( C1253 ( Blackhawk , Harosoy ) , Kent ) )	-	-
+L70L-2912	L15	D64-3077	( L15 , D64-3077 )	-	-
+L70L-2947	L12	D64-3077	( L12 ( L6 ( L8 , L7 ) , L11 ) , D64-3077 )	-	-
+L70L-3048	L15	D64-3146	( L15 , D64-3146 )	-	-
+L70T-453G_	L15	Amsoy_71	( L15 , Amsoy_71 )	-	-
+L70T-543	L15	Amsoy_71	( L15 , Amsoy_71 )	-	-
+L70T-543G	L15	Amsoy_71	( L15 , Amsoy_71 )	-	Selection from L70T-543
+L70T543G	L15	Amsoy_71	( L15 , Amsoy_71 )	-	doi:10.2135/cropsci2004.6990
+L71-2071	Merit	SL12	( Merit , SL12 )	-	-
+L71-2322	Beeson	SL12	( Beeson , SL12 )	-	-
+L71-2855	Beeson	SL12	( Beeson , SL12 )	-	-
+L71-3628	L66-1322	L62-535	( L66-1322 , L62-535 )	-	-
+L71L-06-4	Hawkeye	Lee	( Hawkeye , Lee )	-	-
+L71L-554	Cutler	SL12	( Cutler , SL12 )	-	-
+L71L-556	Cutler	Wayne	( Cutler , Wayne )	-	Wayne-Ir Rpm Rps
+L71L-57	L15	Custer	( L15 , Custer )	-	L15 = Wayne Rps
+L71L-77	L15	Custer	( L15 , Custer )	-	L15 = Wayne Rps
+L72A-14	Calland	Amsoy	( Calland , Amsoy )	-	-
+L72A-89	Cutler	Beeson	( Cutler , Beeson )	-	-
+L72U-2567	Williams	Ransom	( Williams , Ransom )	-	-
+L73-4124	D66-12392	L69L-3	( D66-12392 ( D63-6100 , Dyer ) , L69L-3 ( L66-531 , L62-535 ) )	-	-
+L73-4673	Corsoy	L66L-154	( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) )	-	L66L-154 (Williams sib)
+L73-5038	L69-5347	L66L-154	( L69-5347 , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) )	-	-
+L73-6084	L15	Amsoy_71	( L15 , Amsoy_71 )	-	-
+L73-6536	Franklin	-	( Franklin , - )	-	Subline of Franklin
+L73-6626	R62-659	L66-531	( R62-659 , L66-531 )	-	-
+L73-811	Corsoy	-	( Corsoy , - )	-	Parentage uncertain, maybe a selection from Clark
+L73U-332	L67-533	L66L-154	( L67-533 , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) )	-	-
+L73U-632	Miller_67	L66L-140	( Miller_67 , L66L-140 ( Wayne , L57-0034 ( Clark , Adams ) ) )	-	-
+L73U632	Miller_67	Williams	( Miller_67 , Williams )	-	-
+L74-1960	L12	D64-3077	( L12 ( L6 ( L8 , L7 ) , L11 ) , D64-3077 )	-	-
+L74-3897	Williams	Beeson	( Williams , Beeson )	-	-
+L74-4261	Williams	Beeson	( Williams , Beeson )	-	-
+L74-4372	Williams	Beeson	( Williams , Beeson )	-	-
+L74-8356	Williams	Beeson	( Williams , Beeson )	-	-
+L74D-200	Miller_67	L66L-140	( Miller_67 , L66L-140 ( Wayne , L57-0034 ( Clark , Adams ) ) )	-	-
+L74D-615	Williams	Ransom	( Williams , Ransom )	-	-
+L74D-619	Williams	Ransom	( Williams , Ransom )	-	doi:10.2135/cropsci2004.6990
+L74D-634	Williams	Ransom	( Williams , Ransom )	-	-
+L74D-674	Amsoy_71	Ransom	( Amsoy_71 , Ransom )	-	-
+L74L-228	L68-4096	Williams	( L68-4096 , Williams )	-	-
+L74L-358	L68-4096	L66L-177	( L68-4096 , L66L-177 ( Wayne , L57-9819 ( Hawkeye , Lee ) ) )	-	-
+L74L-497	L66-945	Coker_Hampton_266A	( L66-945 , Coker_Hampton_266A ( Majos ( Tokyo ( PI_8424 , - ) , Yelredo ( Mammoth_Yellow , Laredo ) ) , Lee ) )	-	-
+L74L-71	Calland	Williams	( Calland , Williams )	-	-
+L74U-3242	Wells	York	( Wells , York )	-	-
+L75-8016	Williams	L70-2283	( Williams , L70-2283 ( Custer , Chippewa ) )	-	-
+L75-8020	Corsoy	-	( Corsoy , - )	-	Phytophthora rot resistant selection
+L75-8064	Williams	Custer	( Williams , Custer )	-	??
+L75-8121	Williams	L70-2283	( Williams , L70-2283 ( Custer , Chippewa ) )	-	-
+L75-8381	Williams	L70-2450	( Williams , L70-2450 )	-	-
+L75-8388	Williams	L70-2450	( Williams , L70-2450 )	-	-
+L76-0132	Beeson	PI_171451	( Beeson , PI_171451 )	-	-
+L76-0253	Williams	PI_229358	( Williams , PI_229358 )	-	-
+L76-129B	Beeson	L70-2283	( Beeson , L70-2283 ( Custer , Chippewa ) )	CN 290	-
+L76-141B	Beeson	L70-2283	( Beeson , L70-2283 ( Custer , Chippewa ) )	CN 210	-
+L77-443	Union	L75-8020	( Union , L75-8020 ( Corsoy , - ) )	-	-
+L77-515	Union	L75-8020	( Union , L75-8020 ( Corsoy , - ) )	-	-
+L77-756	Beeson	Cloud	( Beeson , Cloud )	-	-
+L77-8039	Williams	Mitchell	( Williams , Mitchell ( Amsoy , Wayne ) )	-	-
+L77-8043	Williams	Mitchell	( Williams , Mitchell ( Amsoy , Wayne ) )	-	-
+L77-8290	Williams	Mitchell	( Williams , Mitchell ( Amsoy , Wayne ) )	-	-
+L78-189	Corsoy	Kingwa	( Corsoy , Kingwa )	-	-
+L78-379	Williams	PI_96983	( Williams , PI_96983 )	-	-
+L78-4094	Beeson	L68-0376	( Beeson , L68-0376 ( Clark , PI_84946-2 ) )	-	-
+L78-4245	L68-4106	L68-0376	( L68-4106 , L68-0376 ( Clark , PI_84946-2 ) )	-	-
+L78-8138	L73-4124	Essex	( L73-4124 ( D66-12392 ( D63-6100 , Dyer ) , L69L-3 ( L66-531 , L62-535 ) ) , Essex )	-	-
+L78-8716	L71-3628	Elf	( L71-3628 ( L66-1322 , L62-535 ) , Elf )	-	-
+L78L-688	L73-6626	Essex	( L73-6626 ( R62-659 , L66-531 ) , Essex )	-	-
+L79-391O	Union	L75-8020	( Union , L75-8020 ( Corsoy , - ) )	-	-
+L8-6797	L6-5679	-	( L6-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) , - )	-	-
+L8-6852	Lincoln	Richland	( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland )	-	-
+L82-4050	L71-3628	Elf	( L71-3628 ( L66-1322 , L62-535 ) , Elf )	-	-
+L83-3819	L78-8694	L78L-449	( L78-8694 , L78L-449 )	-	-
+L83-3942	L78-8694	L78L-688	( L78-8694 , L78L-688 ( L73-6626 ( R62-659 , L66-531 ) , Essex ) )	-	-
+L83-7573	L73-4673	L78-4094	( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , L78-4094 ( Beeson , L68-0376 ( Clark , PI_84946-2 ) ) )	-	-
+L84-6189	Williams_82	L78-4245	( Williams_82 , L78-4245 ( L68-4106 , L68-0376 ( Clark , PI_84946-2 ) ) )	-	-
+L85P-558	L73-4673	Fayette	( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette )	-	-
+L924904	KG41	Syngenta_S38-83	( KG41 , Syngenta_S38-83 )	-	-
+L932113	Syngneta_S12-49	Syngenta_S24-92	( Syngneta_S12-49 , Syngenta_S24-92 )	-	-
+L97-26569	Yale	Macon	( Yale , Macon )	-	-
+LD00-1938	Pana	Savoy	( Pana , Savoy )	-	-
+LD00-2807	IA3005	Pana	( IA3005 , Pana )	-	-
+LD00-3296	LN95-5724	Pana	( LN95-5724 ( Jack , IA3003 ) , Pana )	-	-
+LD00-3309	Maverick	Dwight	( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight )	-	NAM strain
+LD00-4970	Maverick	Dwight	( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight )	-	-
+LD00-4976	Maverick	Dwight	( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight )	-	-
+LD00-5038	Macon	Maverick	( Macon , Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) )	-	-
+LD01-5907	Ina	IA3010	( Ina ( Jack , Hartwig ) , IA3010 )	-	NAM Strain
+LD01-7323	LN95-5454	Dwight	( LN95-5454 ( Jack , IA3003 ) , Dwight )	-	-
+LD02-4485	M90-184111	IA3010	( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 )	-	NAM Strain
+LD02-5124	A97-973002	Dwight	( A97-973002 ( LN90-4366 ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , IA3005 ) , Dwight )	-	-
+LD02-5124W	A97-973002	Loda	( A97-973002 ( LN90-4366 ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , IA3005 ) , Loda )	-	-
+LD02-5320	A96-591046	Dwight	( A96-591046 , Dwight )	-	-
+LD02-5868	Macon	LN93-13684	( Macon , LN93-13684 ( Jack , Chapman ) )	-	-
+LD02-7222P	Macon	LS93-0375	( Macon , LS93-0375 ( Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) , Pioneer_P9402 ) )	-	-
+LD02-9050	Macon	LS93-0375	( Macon , LS93-0375 ( Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) , Pioneer_P9402 ) )	-	NAM Strain
+LD03-10487	LN97-26569	A98-781041	( LN97-26569 ( Yale , Macon ) , A98-781041 ( Pioneer_P9204 , Pioneer_P9281 ) )	-	-
+LD03-7607	LN95-5817	IA3010	( LN95-5817 ( Jack , C1842 ) , IA3010 )	-	-
+LD03-7610	LN95-5817	IA3010	( LN95-5817 ( Jack , C1842 ) , IA3010 )	-	-
+LD03-8073	LN95-6415	IA2050	( LN95-6415 ( Jack , Iroquois ) , IA2050 )	-	-
+LD04-13265	Syngenta_S32-Z3	U98-205355	( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) )	-	-
+LD04-13296	Syngenta_S32-Z3	U98-311442	( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-311442 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) )	-	-
+LD04-8782	Syngenta_S32-Z3	Dwight	( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , Dwight )	-	-
+LD05-3230	S25-J5	LD00-3296	( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) )	-	-
+LD06-14187R	Syngenta_S25-J5	LD00-3296	( Syngenta_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) )	-	-
+LD06-2009	U97-201128	U98-307162	( U97-201128 , U98-307162 ( U94-3412 , IA3010 ) )	-	-
+LD06-7620	IA3023	LD00-3309_	( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD00-3309_ )	-	Conv.
+LD06-7648	IA3023	LD00-3309	( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) )	-	-
+LD07-3395	Syngenta_WW115926	LD00-2817	( Syngenta_WW115926 , LD00-2817 )	-	F5
+LD07-3395bf	LD07-3395	-	( LD07-3395 ( Syngenta_WW115926 , LD00-2817 ) , - )	-	LD07-3395 Reselection, SCN
+LD07-3419	WW115926	LD00-2817	( WW115926 , LD00-2817 )	-	-
+LD07-4477	IA3023	LD00-3309	( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) )	-	-
+LD08-1592	LD03-7607	LD00-3309	( LD03-7607 ( LN95-5817 ( Jack , C1842 ) , IA3010 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) )	-	-
+LD08-2355	LD02-5320	Dairyland_99805	( LD02-5320 ( A96-591046 , Dwight ) , Dairyland_99805 )	-	-
+LD08-3936	LD02-5868	LD00-4970	( LD02-5868 ( Macon , LN93-13684 ( Jack , Chapman ) ) , LD00-4970 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) )	-	-
+LD08-6972	LD03-10487	LD02-4485	( LD03-10487 ( LN97-26569 ( Yale , Macon ) , A98-781041 ( Pioneer_P9204 , Pioneer_P9281 ) ) , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) )	-	-
+LD08-6982	LD03-10487	LD02-4485	( LD03-10487 ( LN97-26569 ( Yale , Macon ) , A98-781041 ( Pioneer_P9204 , Pioneer_P9281 ) ) , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) )	-	-
+LD08-8622	M30121	IA3024	( M30121 , IA3024 ( A97-553017 , Pioneer_YB33A99 ) )	-	-
+LD09-10220	CL0J173-6-8	Dairyland_99846-74	( CL0J173-6-8 ( Kottman , Dwight ) , Dairyland_99846-74 )	-	-
+LD09-10911	LD00-2817	LD02-4485	( LD00-2817 , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) )	-	-
+LD09-17071R2	LD00-3309	Monsanto_RR2	( LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) , Monsanto_RR2 )	-	-
+LD09-17123R2	LD00-3309	Monsanto_RR2	( LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) , Monsanto_RR2 )	-	-
+LD09-17140R2	LD00-3309	Monsanto_RR2	( LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) , Monsanto_RR2 )	-	-
+LD09-17170_R2	LD00-3309	Mon_RR2Y	( LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) , Mon_RR2Y )	-	-
+LD09-17213R2	LD00-3309	Monsanto_RR2	( LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) , Monsanto_RR2 )	-	-
+LD09-17220R2	LD00-3309	Monsanto_RR2	( LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) , Monsanto_RR2 )	-	-
+LD09-17254R2	LD00-3309	Mon_RR2Y	( LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) , Mon_RR2Y )	LD09-17254 R2	-
+LD09-30224	LD05-3230	LDX07-178a-1-7	( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 )	-	-
+LD10-10198	LD05-3230	LD00-3309	( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) )	-	-
+LD10-10219	LD05-3230	LD00-3309	( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) )	-	-
+LD10-10226	LD05-3230	LD00-3309	( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) )	-	-
+LD10-2477	LD04-13296	LD05-3230	( LD04-13296 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-311442 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) , LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) )	-	-
+LD10-5903a	M99-286047	LD05-16638	( M99-286047 ( IA1008 , Pioneer_P9234 ) , LD05-16638 )	-	-
+LD10-9423	LD05-8517	Syngenta_03JR101916	( LD05-8517 , Syngenta_03JR101916 )	-	-
+LD10-9434	LD05-8517	Syngenta_03JR101916	( LD05-8517 , Syngenta_03JR101916 )	-	-
+LD10-9483	LD05-8517	Syngenta_03JR101916	( LD05-8517 , Syngenta_03JR101916 )	-	-
+LD11-10069	LD06-2009	LG04-6000	( LD06-2009 ( U97-201128 , U98-307162 ( U94-3412 , IA3010 ) ) , LG04-6000 ( HS93-4118 ( IA2007 ( Pride_B152 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Dairyland_DSR304 ( Williams , - ) ) , LG97-9912 ( LG90-4181 ( PI_436682 , Lawrence ) , Asgrow_A3322 ) ) )	-	-
+LD11-10310	LD06-7620	LD04-13265	( LD06-7620 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD00-3309_ ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) )	-	-
+LD11-10927	CL04-132315	LD06-7620	( CL04-132315 ( CL0J173-6-2 ( Kottman , Dwight ) , Syngenta_S18-N5 ( Asgrow_A3431 , Syngenta_S18-11 ) ) , LD06-7620 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD00-3309_ ) )	-	-
+LD11-11299	LG04-6000	Syngenta_03RM893031	( LG04-6000 ( HS93-4118 ( IA2007 ( Pride_B152 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Dairyland_DSR304 ( Williams , - ) ) , LG97-9912 ( LG90-4181 ( PI_436682 , Lawrence ) , Asgrow_A3322 ) ) , Syngenta_03RM893031 )	-	-
+LD11-2170	Syngenta_03JR313108	LD05-3171_	( Syngenta_03JR313108 , LD05-3171_ )	-	-
+LD11-304	LD04-8782	Dairyland_75221	( LD04-8782 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , Dwight ) , Dairyland_75221 ( Dairyland_98820-33 , Asgrow_A3237 ) )	-	-
+LD11-7311	Syngenta_03JR313108	LD02-4485	( Syngenta_03JR313108 , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) )	-	-
+LD12-12701a	LD08-12446a	LD05-30588a	( LD08-12446a , LD05-30588a )	-	-
+LD12-15156R1a	LD06-30505Ra	LD04-13265	( LD06-30505Ra , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) )	-	-
+LD12-15246_R2a	LD09-17170_R2	LD08-12459a	( LD09-17170_R2 ( LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) , Mon_RR2Y ) , LD08-12459a )	-	-
+LD12-300	LD06-2009	LD06-7620	( LD06-2009 ( U97-201128 , U98-307162 ( U94-3412 , IA3010 ) ) , LD06-7620 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD00-3309_ ) )	-	-
+LD12-3866	LG04-5372	Dairyland_75213-72	( LG04-5372 ( Rend , LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) ) , Dairyland_75213-72 ( 98820-33 , Asgrow_A3237 ) )	-	-
+LD12-459	LD02-4485	LD06-7620	( LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) , LD06-7620 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD00-3309_ ) )	-	-
+LD12-6010a	Syngenta_06NB204846	LD09-15464	( Syngenta_06NB204846 , LD09-15464 )	-	-
+LD12-6623	LD08-12430a	LD05-30588a	( LD08-12430a , LD05-30588a )	-	-
+LD13-13228R1a	LD08-12430a	LD06-30505Ra	( LD08-12430a , LD06-30505Ra )	-	-
+LD13-13334R1a	LD05-1540	LD06-30505Ra	( LD05-1540 , LD06-30505Ra )	-	-
+LD13-13478R1a	LD08-12446a	LD06-14187R	( LD08-12446a , LD06-14187R ( Syngenta_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) )	-	-
+LD13-14071R2	LD02-4485	LD09-17170R2	( LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) , LD09-17170R2 )	-	-
+LD13-1429	LD07-3395	NE0900094	( LD07-3395 ( Syngenta_WW115926 , LD00-2817 ) , NE0900094 )	-	-
+LD13-14525R2	LD09-17254R2	LD06-7596	( LD09-17254R2 ( LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) , Mon_RR2Y ) , LD06-7596 )	-	-
+LD13-3483	LD07-3395	CL06-121119	( LD07-3395 ( Syngenta_WW115926 , LD00-2817 ) , CL06-121119 )	-	-
+LD13-4902a	LD08-12446a	Dairyland_DSR75467	( LD08-12446a , Dairyland_DSR75467 )	-	-
+LD13-5131a	LD08-3936	LD09-13023a	( LD08-3936 ( LD02-5868 ( Macon , LN93-13684 ( Jack , Chapman ) ) , LD00-4970 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , LD09-13023a )	-	-
+LD13-5290a	LD09-30224	LD08-12438a	( LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) , LD08-12438a )	-	-
+LD13-5775a	AR09-291001	LD08-4767a	( AR09-291001 ( 97284-N00-47977 ( 92283-A95-30438 ( AP2880 , 85336-B88-31056 ( 82266-B84-09240 ( Williams_82 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Harper ) ) , Pioneer_P9234 ) , AR02-101001 ( Pioneer_P9233 , A96-591033 ( IA3003 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) ) , LD08-4767a )	-	-
+LD13-6678	LD07-3395	NE0900094	( LD07-3395 ( Syngenta_WW115926 , LD00-2817 ) , NE0900094 )	-	-
+LD13-8769	LD06-7596	09SCNPOP_11-9	( LD06-7596 , 09SCNPOP_11-9 )	-	-
+LD14-13590R2a	LD09-17213R2	LD08-12446a	( LD09-17213R2 ( LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) , Monsanto_RR2 ) , LD08-12446a )	-	-
+LD14-14172R2	LD09-17213R2	WN0800527	( LD09-17213R2 ( LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) , Monsanto_RR2 ) , WN0800527 )	-	-
+LD14-14308R2	LD07-4477	LD09-17071R2	( LD07-4477 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) ( LN86-4668 ( Fayette , Hardin ) ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , LD09-17071R2 ( LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) , Monsanto_RR2 ) )	-	-
+LD14-2880	LD07-3395	LD07-2192	( LD07-3395 ( Syngenta_WW115926 , LD00-2817 ) , LD07-2192 )	-	-
+LD14-4098a	LD08-4202	LDX10-277-1-30	( LD08-4202 , LDX10-277-1-30 )	-	-
+LD14-6766	HI0800685	LD09-30463	( HI0800685 , LD09-30463 )	-	-
+LD15-1477	WN0902577	LD07-4477	( WN0902577 , LD07-4477 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD15-1628	AR10-305003	AR09-192019	( AR10-305003 , AR09-192019 ( LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) , AR02-101001 ( Pioneer_P9233 , A96-591033 ( IA3003 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) ) )	-	-
+LD15-3174	LD07-4477	LD10-9434	( LD07-4477 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , LD10-9434 ( LD05-8517 , Syngenta_03JR101916 ) )	-	-
+LD15-3818	LD09-3913	BN09002129	( LD09-3913 , BN09002129 )	Illini 4218N	-
+LD15-443	HM09-W084	LD10-10226	( HM09-W084 ( Dennison , HF03-546 ( A95-581028 ( Marcus , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , PI_592926 ) ) , LD10-10226 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD15-5170a	LD09-10220	LD12-6623	( LD09-10220 ( CL0J173-6-8 ( Kottman , Dwight ) , Dairyland_99846-74 ) , LD12-6623 ( LD08-12430a , LD05-30588a ) )	-	-
+LD15-526	HM09-W084	LD10-10226	( HM09-W084 ( Dennison , HF03-546 ( A95-581028 ( Marcus , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , PI_592926 ) ) , LD10-10226 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD15-531	HM09-W084	LD10-10226	( HM09-W084 ( Dennison , HF03-546 ( A95-581028 ( Marcus , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , PI_592926 ) ) , LD10-10226 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD15-5372a	WN0902577	LD10-30023	( WN0902577 , LD10-30023 )	-	-
+LD15-544	HM09-W084	LD10-10226	( HM09-W084 ( Dennison , HF03-546 ( A95-581028 ( Marcus , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , PI_592926 ) ) , LD10-10226 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD15-5789800	LD06-7620	Syngenta_05BR006009	( LD06-7620 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD00-3309_ ) , Syngenta_05BR006009 )	-	-
+LD15-6268	AR10-205011	LD10-10226	( AR10-205011 ( SS02-12014 , AR02-101001 ( Pioneer_P9233 , A96-591033 ( IA3003 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) ) , LD10-10226 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD15-6275	AR10-205011	LD10-10226	( AR10-205011 ( SS02-12014 , AR02-101001 ( Pioneer_P9233 , A96-591033 ( IA3003 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) ) , LD10-10226 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD15-6280	AR10-205011	LD10-10226	( AR10-205011 ( SS02-12014 , AR02-101001 ( Pioneer_P9233 , A96-591033 ( IA3003 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) ) , LD10-10226 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD15-6762	WN0902577	SD08CV-2102	( WN0902577 , SD08CV-2102 ( M97-136016 ( M90-162034 ( Burlison ( K74-113-76-486 , Century ) , M84-93 ( M71-148 ( Clay , Evans ) , Ozzie ) ) , IA2021 ) , SD96-135-3 ) )	-	-
+LD16-10150	LD10-10198	KB13-15F314-224	( LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , KB13-15F314-224 )	-	-
+LD16-10157	LD10-10198	KB13-15F314-224	( LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , KB13-15F314-224 )	-	-
+LD16-10159	LD10-10198	KB13-15F314-224	( LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , KB13-15F314-224 )	-	-
+LD16-10165	LD10-10198	KB13-15F314-224	( LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , KB13-15F314-224 )	-	-
+LD16-10183	LD10-10198	KB13-15F314-224	( LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , KB13-15F314-224 )	-	-
+LD16-10287	LD09-30224	KB13-15F314-224	( LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) , KB13-15F314-224 )	-	-
+LD16-10289	LD09-30224	KB13-15F314-224	( LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) , KB13-15F314-224 )	-	-
+LD16-10310	U11-614093	KB13-15F314-224	( U11-614093 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , KB13-15F314-224 )	-	-
+LD16-10319	U11-614093	KB13-15F314-224	( U11-614093 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , KB13-15F314-224 )	-	-
+LD16-10351	U11-614093	KB13-15F314-224	( U11-614093 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , KB13-15F314-224 )	-	-
+LD16-10614	LG11-6210	KB13-15F314-224	( LG11-6210 ( LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) , LG03-3780 ) , KB13-15F314-224 )	-	-
+LD16-2636	LS09-2655	LD10-9409	( LS09-2655 ( Syngenta_98620-b1-51163 , LS02-0425 ) , LD10-9409 )	-	-
+LD16-2751	LD08-1592	LD10-9434	( LD08-1592 ( LD03-7607 ( LN95-5817 ( Jack , C1842 ) , IA3010 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , LD10-9434 ( LD05-8517 , Syngenta_03JR101916 ) )	-	-
+LD16-2794	LD08-_1592	LD10-9434	( LD08-_1592 , LD10-9434 ( LD05-8517 , Syngenta_03JR101916 ) )	-	-
+LD16-2923	LD07-3395	LD10-10219	( LD07-3395 ( Syngenta_WW115926 , LD00-2817 ) , LD10-10219 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD16-2955	LD07-3395bf	LD10-10219	( LD07-3395bf ( LD07-3395 ( Syngenta_WW115926 , LD00-2817 ) , - ) , LD10-10219 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD16-2983	LD07-3395	LD10-10219	( LD07-3395 ( Syngenta_WW115926 , LD00-2817 ) , LD10-10219 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD16-3589	LD09-30015	LD10-9434	( LD09-30015 , LD10-9434 ( LD05-8517 , Syngenta_03JR101916 ) )	-	-
+LD16-4306a	HM09-W084	LD09-30224	( HM09-W084 ( Dennison , HF03-546 ( A95-581028 ( Marcus , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , PI_592926 ) ) , LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) )	-	-
+LD16-4350	HM09-W084	LD09-30224	( HM09-W084 ( Dennison , HF03-546 ( A95-581028 ( Marcus , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , PI_592926 ) ) , LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) )	-	-
+LD16-4385a	HM09-W084	LD09-30224	( HM09-W084 ( Dennison , HF03-546 ( A95-581028 ( Marcus , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , PI_592926 ) ) , LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) )	-	-
+LD16-4386a	HM09-W084	LD09-30224	( HM09-W084 ( Dennison , HF03-546 ( A95-581028 ( Marcus , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , PI_592926 ) ) , LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) )	-	-
+LD16-4462a	AR10-205011	LDX11050a	( AR10-205011 ( SS02-12014 , AR02-101001 ( Pioneer_P9233 , A96-591033 ( IA3003 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) ) , LDX11050a ( LD08-12438a , LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) ) )	-	-
+LD16-4471a	AR10-205011	LDX11050a	( AR10-205011 ( SS02-12014 , AR02-101001 ( Pioneer_P9233 , A96-591033 ( IA3003 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) ) , LDX11050a ( LD08-12438a , LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) ) )	-	-
+LD16-4587a	HM09-W084	LD08-12441a	( HM09-W084 ( Dennison , HF03-546 ( A95-581028 ( Marcus , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , PI_592926 ) ) , LD08-12441a )	-	-
+LD16-4766a	AR10-205011	LD09-30224	( AR10-205011 ( SS02-12014 , AR02-101001 ( Pioneer_P9233 , A96-591033 ( IA3003 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) ) , LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) )	-	-
+LD16-4852	LD09-30015	LD09-30224	( LD09-30015 , LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) )	-	-
+LD16-5075a	LD09-30224	AR11-113050	( LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) , AR11-113050 )	-	-
+LD16-6557	LD07-3419	AR10-205011	( LD07-3419 ( WW115926 , LD00-2817 ) , AR10-205011 ( SS02-12014 , AR02-101001 ( Pioneer_P9233 , A96-591033 ( IA3003 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) ) )	-	-
+LD16-6787	LD07-3419	LD10-10226	( LD07-3419 ( WW115926 , LD00-2817 ) , LD10-10226 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD16-6886	LD07-3419	LD10-10226	( LD07-3419 ( WW115926 , LD00-2817 ) , LD10-10226 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD16-7669	LD07-3395bf	U09-133021	( LD07-3395bf ( LD07-3395 ( Syngenta_WW115926 , LD00-2817 ) , - ) , U09-133021 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , U03-200317 ( U99-009019 , Pioneer_P92B12 ) ) )	-	-
+LD16-_759	LD09-30015	AR11-214015	( LD09-30015 , AR11-214015 ( AR3 , PI_398697 ) )	-	-
+LD17-10157	LD11-7311	LG09-7163	( LD11-7311 ( Syngenta_03JR313108 , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) ) , LG09-7163 ( LG00-3372 ( PI_561319 , PI_574477 ) , HC99-2763 ( DPL_3478 , Stressland ) ) )	-	-
+LD17-10174	LD11-7311	LG09-7163	( LD11-7311 ( Syngenta_03JR313108 , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) ) , LG09-7163 ( LG00-3372 ( PI_561319 , PI_574477 ) , HC99-2763 ( DPL_3478 , Stressland ) ) )	-	-
+LD17-10199	LD11-7311	LG09-7163	( LD11-7311 ( Syngenta_03JR313108 , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) ) , LG09-7163 ( LG00-3372 ( PI_561319 , PI_574477 ) , HC99-2763 ( DPL_3478 , Stressland ) ) )	-	-
+LD17-12668	U11-614093	KB13-15F314-224	( U11-614093 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , KB13-15F314-224 )	-	-
+LD17-1884	U11-614119	LD10-10198	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD17-1887	U11-614119	LD10-10198	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD17-1900	U11-614119	LD10-10198	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD17-1902	U11-614119	LD10-10198	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD17-247	U11-932025	U09-105007	( U11-932025 ( U06-300952 ( U98-307917 ( U94-2306 ( Holt ( Sherman , Harper ) , Dairyland_DSR304 ( Williams , - ) ) , A92-525014 ( IA2008 ( BSR_101 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Kenwood ) ( IA2008 ( BSR_101 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) ( BSR_101 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ( Northrup_King_S1492 ( Corsoy , Wayne ) ( Corsoy , Wayne ) , Pella ) ) , Kenwood ) ) , U01-310156 ( UP3YC1S3 , - ) ) , U03-100612 ( MSPB6S4 , Pioneer_P93B82 ) ) , U09-105007 ( OAC_05-21 ( OT99-2 , OAC00-17 ( A92-525014 ( IA2008 ( BSR_101 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Kenwood ) , OAC_Vision ) ) , U03-300134 ( NE32022 , NE2802 ) ) )	-	-
+LD17-2522	LD12-300	LD09-30224	( LD12-300 ( LD06-2009 ( U97-201128 , U98-307162 ( U94-3412 , IA3010 ) ) , LD06-7620 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD00-3309_ ) ) , LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) )	-	-
+LD17-2558	U11-614119	LD09-30224	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) )	-	-
+LD17-2903	U11-614119	LD09-30224	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) )	-	-
+LD17-2946a	U11-614119	LD09-30224	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) )	-	-
+LD17-2967a	U11-614119	LD09-30224	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) )	-	-
+LD17-3855	LD10-10198	LG11-6210	( LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , LG11-6210 ( LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) , LG03-3780 ) )	-	-
+LD17-4947a	E11128T	LD14-8030	( E11128T ( E05276-T , LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) ) , LD14-8030 )	-	-
+LD17-4967a	E11128T	LD14-8030	( E11128T ( E05276-T , LD01-7323 ( LN95-5454 ( Jack , IA3003 ) , Dwight ) ) , LD14-8030 )	-	-
+LD17-5169a	LD10-10198	LD14-8035	( LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , LD14-8035 )	-	-
+LD17-5399a	LD10-10198_	LD14-8035	( LD10-10198_ , LD14-8035 )	-	-
+LD17-5713a	LD12-300	LD14-8047	( LD12-300 ( LD06-2009 ( U97-201128 , U98-307162 ( U94-3412 , IA3010 ) ) , LD06-7620 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD00-3309_ ) ) , LD14-8047 )	-	-
+LD17-5908a	LD12-300	LD14-8047	( LD12-300 ( LD06-2009 ( U97-201128 , U98-307162 ( U94-3412 , IA3010 ) ) , LD06-7620 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD00-3309_ ) ) , LD14-8047 )	-	-
+LD17-5963a	LD12-300	LD14-8047	( LD12-300 ( LD06-2009 ( U97-201128 , U98-307162 ( U94-3412 , IA3010 ) ) , LD06-7620 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD00-3309_ ) ) , LD14-8047 )	-	-
+LD17-6036a	U11-614119	LD14-8003	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , LD14-8003 )	-	-
+LD17-7152a	LD12-268	LD12-12701a	( LD12-268 , LD12-12701a ( LD08-12446a , LD05-30588a ) )	-	-
+LD17-822	U11-614119	U11-610107	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , U11-610107 ( LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) , U03-100612 ( MSPB6S4 , Pioneer_P93B82 ) ) )	-	-
+LD17-833	U11-614119	U11-610107	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , U11-610107 ( LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) , U03-100612 ( MSPB6S4 , Pioneer_P93B82 ) ) )	-	-
+LD17-872	U11-614119	U11-920017	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , U11-920017 ( HS5-3417 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , HS99-4045 ) , LD02-_4485 ) )	-	-
+LD17-894	U11-614119	U11-920017	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , U11-920017 ( HS5-3417 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , HS99-4045 ) , LD02-_4485 ) )	-	-
+LD18-0012	M08-365100	U11-917032	( M08-365100 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ( Wayne , L57-0034 ( Clark , Adams ) ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ( M60-406 ( Blackhawk , Harosoy ) ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , U03-100612 ( MSPB6S4 , Pioneer_P93B82 ) ( MSPB6S4 , Pioneer_P93B82 ) ) , U11-917032 ( LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) , U03-100612 ( MSPB6S4 , Pioneer_P93B82 ) ) )	-	-
+LD18-01855	LD11-7311	LD10-10198	( LD11-7311 ( Syngenta_03JR313108 , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) ) , LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD18-01867	LD11-7311	LD10-10198	( LD11-7311 ( Syngenta_03JR313108 , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) ) , LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD18-0986	LD12-3866	U11-911079	( LD12-3866 ( LG04-5372 ( Rend , LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) ) , Dairyland_75213-72 ( 98820-33 , Asgrow_A3237 ) ) , U11-911079 ( LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) , U03-300134 ( NE32022 , NE2802 ) ) )	-	-
+LD18-1058	LG11-6210	U11-911079	( LG11-6210 ( LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) , LG03-3780 ) , U11-911079 ( LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) , U03-300134 ( NE32022 , NE2802 ) ) )	-	-
+LD18-12212	LD12-6010a	LDXGL15-025-1	( LD12-6010a ( Syngenta_06NB204846 , LD09-15464 ) , LDXGL15-025-1 )	-	-
+LD18-12216	LD12-6010a	LDXGL15-025-1	( LD12-6010a ( Syngenta_06NB204846 , LD09-15464 ) , LDXGL15-025-1 )	-	-
+LD18-12217	LD12-6010a	LDXGL15-025-1	( LD12-6010a ( Syngenta_06NB204846 , LD09-15464 ) , LDXGL15-025-1 )	-	-
+LD18-12218	LD12-6010a	LDXGL15-025-1	( LD12-6010a ( Syngenta_06NB204846 , LD09-15464 ) , LDXGL15-025-1 )	-	-
+LD18-12335	LD16-10111	LD10-10198	( LD16-10111 , LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD18-12370	LD16-10111	LD10-10198	( LD16-10111 , LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD18-12395	LD16-10111	LD10-10198	( LD16-10111 , LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD18-12596	LD16-10099	LD11-2170	( LD16-10099 , LD11-2170 ( Syngenta_03JR313108 , LD05-3171_ ) )	-	-
+LD18-12605	LD16-10099	LD11-2170	( LD16-10099 , LD11-2170 ( Syngenta_03JR313108 , LD05-3171_ ) )	-	-
+LD18-12609	LD16-10099	LD11-2170	( LD16-10099 , LD11-2170 ( Syngenta_03JR313108 , LD05-3171_ ) )	-	-
+LD18-12659	LD13-3483	LDXGL15-012-1	( LD13-3483 ( LD07-3395 ( Syngenta_WW115926 , LD00-2817 ) , CL06-121119 ) , LDXGL15-012-1 )	-	-
+LD18-12663	LD13-3483	LDXGL15-012-1	( LD13-3483 ( LD07-3395 ( Syngenta_WW115926 , LD00-2817 ) , CL06-121119 ) , LDXGL15-012-1 )	-	-
+LD18-12674	LD13-3483	LDXGL15-012-1	( LD13-3483 ( LD07-3395 ( Syngenta_WW115926 , LD00-2817 ) , CL06-121119 ) , LDXGL15-012-1 )	-	-
+LD18-12776	LDXGL15-008-1	LD12-3903	( LDXGL15-008-1 , LD12-3903 )	-	-
+LD18-12779	LDXGL15-008-1	LD12-3903	( LDXGL15-008-1 , LD12-3903 )	-	-
+LD18-14065	LDX16-206-1-4	LDX16-234-1-5	( LDX16-206-1-4 , LDX16-234-1-5 )	-	-
+LD18-14296	LDX16-223-1-2	LDX16-237-1-2	( LDX16-223-1-2 , LDX16-237-1-2 )	-	-
+LD18-14537	LDX16-236-1-2	LDX16-230-1-2	( LDX16-236-1-2 , LDX16-230-1-2 )	-	-
+LD18-15377R1a	LD11-2170	LD12-15156R1a	( LD11-2170 ( Syngenta_03JR313108 , LD05-3171_ ) , LD12-15156R1a ( LD06-30505Ra , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) )	-	-
+LD18-15869R1a	LD12-3903	LD12-15156R1a	( LD12-3903 , LD12-15156R1a ( LD06-30505Ra , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) )	-	-
+LD18-15909R1a	LD12-3903	LD12-15156R1a	( LD12-3903 , LD12-15156R1a ( LD06-30505Ra , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) )	-	-
+LD18-1827	LD11-7311	LD10-10198	( LD11-7311 ( Syngenta_03JR313108 , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) ) , LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD18-1866	LD11-7311	LD10-10198	( LD11-7311 ( Syngenta_03JR313108 , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) ) , LD10-10198 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LD18-4490	U11-616086	M08-362051	( U11-616086 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) ) , M08-362051 )	-	-
+LD18-6594	U11-616086	LD11-2170	( U11-616086 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) ) , LD11-2170 ( Syngenta_03JR313108 , LD05-3171_ ) )	-	-
+LD18-7287	U11-932025	LD11-7311	( U11-932025 ( U06-300952 ( U98-307917 ( U94-2306 ( Holt ( Sherman , Harper ) , Dairyland_DSR304 ( Williams , - ) ) , A92-525014 ( IA2008 ( BSR_101 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Kenwood ) ) , U01-310156 ( UP3YC1S3 , - ) ) , U03-100612 ( MSPB6S4 , Pioneer_P93B82 ) ) , LD11-7311 ( Syngenta_03JR313108 , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) ) )	-	-
+LD18-7488	U11-614119	LD12-3866	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , LD12-3866 ( LG04-5372 ( Rend , LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) ) , Dairyland_75213-72 ( 98820-33 , Asgrow_A3237 ) ) )	-	-
+LD18-7491	U11-614119	LD12-3866	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , LD12-3866 ( LG04-5372 ( Rend , LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) ) , Dairyland_75213-72 ( 98820-33 , Asgrow_A3237 ) ) )	-	-
+LD18-7509	U11-614119	LD12-3866	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , LD12-3866 ( LG04-5372 ( Rend , LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) ) , Dairyland_75213-72 ( 98820-33 , Asgrow_A3237 ) ) )	-	-
+LD18-7512	U11-614119	LD12-3866	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , LD12-3866 ( LG04-5372 ( Rend , LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) ) , Dairyland_75213-72 ( 98820-33 , Asgrow_A3237 ) ) )	-	-
+LD18-7584	U11-614119	LD12-3866	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , LD12-3866 ( LG04-5372 ( Rend , LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) ) , Dairyland_75213-72 ( 98820-33 , Asgrow_A3237 ) ) )	-	-
+LD18-7606	LG11-6208	LD11-2170	( LG11-6208 ( LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) , LG03-3780 ) , LD11-2170 ( Syngenta_03JR313108 , LD05-3171_ ) )	-	-
+LD18-7628	LG11-6208	LD11-2170	( LG11-6208 ( LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) , LG03-3780 ) , LD11-2170 ( Syngenta_03JR313108 , LD05-3171_ ) )	-	-
+LD18-7633	LG11-6208	LD11-2170	( LG11-6208 ( LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) , LG03-3780 ) , LD11-2170 ( Syngenta_03JR313108 , LD05-3171_ ) )	-	-
+LD18-7864	LG11-6210	LD11-2170	( LG11-6210 ( LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) , LG03-3780 ) , LD11-2170 ( Syngenta_03JR313108 , LD05-3171_ ) )	-	-
+LD18-7868	LG11-6210	LD11-2170	( LG11-6210 ( LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) , LG03-3780 ) , LD11-2170 ( Syngenta_03JR313108 , LD05-3171_ ) )	-	-
+LD18-7976	LG11-6210	LD11-2170	( LG11-6210 ( LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) , LG03-3780 ) , LD11-2170 ( Syngenta_03JR313108 , LD05-3171_ ) )	-	-
+LD18-8418	U11-614119	LG11-6210	( U11-614119 ( U02-242055 ( NE1900 ( MSBP1 , MSBP1 ) , Pioneer_P93B82 ) , LD04-13265 ( Syngenta_S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , U98-205355 ( A94-773014 ( Pioneer_P9303 , A87-395012 ( Fayette , Asgrow_A3659 ( Williams , Essex ) ) ) , Bell ) ) ) , LG11-6210 ( LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) , LG03-3780 ) )	-	-
+LD18-9222	LD11-10069	LD11-7311	( LD11-10069 ( LD06-2009 ( U97-201128 , U98-307162 ( U94-3412 , IA3010 ) ) , LG04-6000 ( HS93-4118 ( IA2007 ( Pride_B152 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Dairyland_DSR304 ( Williams , - ) ) , LG97-9912 ( LG90-4181 ( PI_436682 , Lawrence ) , Asgrow_A3322 ) ) ) , LD11-7311 ( Syngenta_03JR313108 , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) ) )	-	-
+LDX11050a	LD08-12438a	LD09-30224	( LD08-12438a , LD09-30224 ( LD05-3230 ( S25-J5 , LD00-3296 ( LN95-5724 ( Jack , IA3003 ) , Pana ) ) , LDX07-178a-1-7 ) )	-	-
+LG00-2455	LG95-441-4	IA2022	( LG95-441-4 ( PI_68508 , FC_04007B ) , IA2022 )	-	-
+LG00-3056	LG94-1128	Savoy	( LG94-1128 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG87-1991 ( PI_189930 , PI_68600 ) ) , Savoy )	-	-
+LG00-3372	PI_561319	PI_574477	( PI_561319 , PI_574477 )	PI 660989	NAM Strain; GP-376
+LG00-6182	PI_561319_A	PI_574477	( PI_561319_A , PI_574477 )	-	-
+LG00-6293	PI_574480	PI_574477	( PI_574480 , PI_574477 )	-	-
+LG00-6313	PI_574480B	PI_574477	( PI_574480B , PI_574477 )	GP-375, PI 660990	-
+LG00-6715	LG92-1350	Macon	( LG92-1350 ( LG85-3343 ( PI_361064 , PI_407710 ) , Ripley ) , Macon )	-	-
+LG00-6925	IA2022	LG91-6859	( IA2022 , LG91-6859 ( LG87-429 ( PI_297544 , PI_290126_B ) , Zane ) )	-	-
+LG00-7196	LG93-7780	Macon	( LG93-7780 ( LG86-6989 ( PI_253665_D , PI_283331 ) , Asgrow_A3205 ( Northrup_King_S1474 , Asgrow_A3127 ( Williams , Essex ) ) ) , Macon )	-	-
+LG00-8298	PI_574477	PI_561377	( PI_574477 , PI_561377 )	-	-
+LG00-8301	PI_574477	PI_561377	( PI_574477 , PI_561377 )	-	-
+LG01-3733	Rend	LG97-9301	( Rend , LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) )	-	-
+LG01-4168	LG94-1098	Cisne	( LG94-1098 ( LG85-2534 ( PI_227333 , PI_290126B ) , LG85-3343 ( PI_361064 , PI_407710 ) ) , Cisne ( Burlison ( K74-113-76-486 , Century ) , Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	-
+LG01-4654	LG93-7780	Macon	( LG93-7780 ( LG86-6989 ( PI_253665_D , PI_283331 ) , Asgrow_A3205 ( Northrup_King_S1474 , Asgrow_A3127 ( Williams , Essex ) ) ) , Macon )	-	-
+LG01-4918	Macon	PI_507295	( Macon , PI_507295 )	-	-
+LG01-5087	LN93-11632	LG96-1713	( LN93-11632 , LG96-1713 )	-	-
+LG01-5087-5	LN93-11632	LG96-1713	( LN93-11632 , LG96-1713 )	PI 667734	-
+LG01-5087-9	LN93-11632	LG96-1713	( LN93-11632 , LG96-1713 )	-	-
+LG02-2412	PI_091730_-1	PI_227333	( PI_091730_-1 , PI_227333 )	-	-
+LG02-3733	LG94-1133	LG92-1255	( LG94-1133 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG87-1991 ( PI_189930 , PI_68600 ) ) , LG92-1255 ( LG84-1291 ( PI_68522 , Hobbit ) , Asgrow_A3127 ( Williams , Essex ) ) )	-	-
+LG02-3922	LG95-5737	Pana	( LG95-5737 ( PI_427099 , PI_445830 ) , Pana )	-	-
+LG02-3969	LG91-7350R	LG94-1133	( LG91-7350R ( PI_68508 , FC_04007B ) , LG94-1133 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG87-1991 ( PI_189930 , PI_68600 ) ) )	-	-
+LG02-3971	LG91-7350R	LG94-1133	( LG91-7350R ( PI_68508 , FC_04007B ) , LG94-1133 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG87-1991 ( PI_189930 , PI_68600 ) ) )	-	-
+LG02-4042	Macon	PI_91091	( Macon , PI_91091 )	-	-
+LG02-4198	LG94-1133	LG93-7654	( LG94-1133 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG87-1991 ( PI_189930 , PI_68600 ) ) , LG93-7654 ( LG86-2734 ( PI_424195B , PI_361066A ) , Asgrow_A3205 ( Northrup_King_S1474 , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	-
+LG03-1534	LG96-3089	LG94-1713	( LG96-3089 ( LG88-2044 ( A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) , PI_438205_B ) , LG89-7629 ( Ripley , PI_445837 ) ) , LG94-1713 ( LG87-1606 ( PI_297544 , PI_391583 ) , Kenwood ) )	-	-
+LG03-1614	LG96-1488	LG97-7363	( LG96-1488 ( LG89-8665 ( PI_436682 , Ripley ) , LG88-2696 ( Ripley , PI_370059 ) ) , LG97-7363 ( LG90-2179 ( PI_437851_A , Ripley ) , LG88-3146 ( PI_427099 , PI_445830 ) ) )	-	-
+LG03-1672	LG97-5474	IA3010	( LG97-5474 ( Pioneer_P6906-16 , Pioneer_P5096-03D ) , IA3010 )	-	-
+LG03-2866	LG96-1971	Rend	( LG96-1971 ( LG89-7619 ( Ripley , PI_445837 ) , Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) ) , Rend )	-	-
+LG03-2979	Rend	LG95-258	( Rend , LG95-258 ( LG86-3574 ( PI_424159_B , PI_407710 ) , LG88-2694 ( Ripley , PI_370059 ) ) )	-	NAM Strain
+LG03-3020	LG96-1711	LG92-4208	( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) )	-	-
+LG03-3191	LG96-1854	LG96-3159	( LG96-1854 ( LG89-8665 ( PI_436682 , Ripley ) , LG89-7657 ( Ripley , PI_438206 ) ) , LG96-3159 ( LG89-7619 ( Ripley , PI_445837 ) , Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	NAM Strain
+LG03-6296	PI_592934	LG94-1133	( PI_592934 , LG94-1133 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG87-1991 ( PI_189930 , PI_68600 ) ) )	-	-
+LG04-1459-8	S32-Z3	LG00-3056	( S32-Z3 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) , LG00-3056 ( LG94-1128 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG87-1991 ( PI_189930 , PI_68600 ) ) , Savoy ) )	-	Diversity
+LG04-3765	HS93-4118	LG97-9912	( HS93-4118 ( IA2007 ( Pride_B152 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Dairyland_DSR304 ( Williams , - ) ) , LG97-9912 ( LG90-4181 ( PI_436682 , Lawrence ) , Asgrow_A3322 ) )	-	-
+LG04-4468	LG97-8856	IA3010	( LG97-8856 ( LG90-13144 , LG88-3146 ( PI_427099 , PI_445830 ) ) , IA3010 )	-	-
+LG04-4717	LG98-5579	A98-980047	( LG98-5579 ( LG89-773 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG85-2846 ( PI_404157 , PI_384469A ) ) , LG91-7323 ( BSR_101 , LG82-8379 ( PI_68508 , FC_04007B ) ) ) , A98-980047 ( HS93-4118 ( IA2007 ( Pride_B152 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Dairyland_DSR304 ( Williams , - ) ) , Northrup_King_S24-92 ) )	-	NAM Strain
+LG04-5187	LG97-9384	LG97-9301	( LG97-9384 ( LG90-2179 ( PI_437851_A , Ripley ) , Asgrow_A3322 ) , LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) )	-	-
+LG04-5190	LG97-9384	LG97-9301	( LG97-9384 ( LG90-2179 ( PI_437851_A , Ripley ) , Asgrow_A3322 ) , LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) )	-	-
+LG04-5372	Rend	LG97-9301	( Rend , LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) )	-	-
+LG04-5993	HS93-4118	LG97-9912	( HS93-4118 ( IA2007 ( Pride_B152 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Dairyland_DSR304 ( Williams , - ) ) , LG97-9912 ( LG90-4181 ( PI_436682 , Lawrence ) , Asgrow_A3322 ) )	-	-
+LG04-6000	HS93-4118	LG97-9912	( HS93-4118 ( IA2007 ( Pride_B152 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Dairyland_DSR304 ( Williams , - ) ) , LG97-9912 ( LG90-4181 ( PI_436682 , Lawrence ) , Asgrow_A3322 ) )	PI 664025	GP-379, NAM Strain
+LG04-6400	HS93-4118	LG97-9912	( HS93-4118 ( IA2007 ( Pride_B152 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Dairyland_DSR304 ( Williams , - ) ) , LG97-9912 ( LG90-4181 ( PI_436682 , Lawrence ) , Asgrow_A3322 ) )	-	-
+LG05-1311	IA2052	LG01-5201	( IA2052 , LG01-5201 )	-	-
+LG05-2359	LG97-7012	Loda	( LG97-7012 ( LG89-1525 ( PI_90566 , L74-3897 ( Williams , Beeson ) ) , Asgrow_A3322 ) , Loda )	-	-
+LG05-2887	Golden_Harvest_H2885	LG00-8301	( Golden_Harvest_H2885 , LG00-8301 ( PI_574477 , PI_561377 ) )	-	-
+LG05-3685	LG00-7196	Northrup_King_S42-H1	( LG00-7196 ( LG93-7780 ( LG86-6989 ( PI_253665_D , PI_283331 ) , Asgrow_A3205 ( Northrup_King_S1474 , Asgrow_A3127 ( Williams , Essex ) ) ) , Macon ) , Northrup_King_S42-H1 )	-	-
+LG05-4092	C1979	LG98-1445	( C1979 ( IA3003 , Stressland ) , LG98-1445 ( LG91-7431 ( LG84-1272 ( PI_227333 , PI_91730-1 ) , Elgin ) , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	-
+LG05-4229	LG94-1128	LG98-5629	( LG94-1128 ( LG85-3343 ( PI_361064 , PI_407710 ) ( PI_361064 , PI_407710 ) , LG87-1991 ( PI_189930 , PI_68600 ) ) , LG98-5629 ( LG89-1501 ( PI_68508 , PI_384471 ) , LG89-773 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG85-2846 ( PI_404157 , PI_384469A ) ) ) )	-	-
+LG05-4292	LG94-4667	LG97-9226	( LG94-4667 ( PI_458511 , Flyer ) , LG97-9226 ( LG89-7629 ( Ripley , PI_445837 ) , Asgrow_A9303 ) )	-	NAM Strain
+LG05-4317	LG94-4667	LG98-1445	( LG94-4667 ( PI_458511 , Flyer ) , LG98-1445 ( LG91-7431 ( LG84-1272 ( PI_227333 , PI_91730-1 ) , Elgin ) , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	NAM Strain
+LG05-4464	LG97-8984	A98-884037	( LG97-8984 ( LG89-6661 ( Sherman , LG84-1096 ( PI_90566-1 , L74-3897 ( Williams , Beeson ) ) ) , HS89-3261 ( LG82-8379 ( PI_68508 , FC_04007B ) , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ) ) , A98-884037 ( IA2036 ( Jack , A86-301024 ( A81-356022 ( Century , A76-304020 ) , Hack ) ) , Pioneer_P9281 ) )	-	NAM Strain
+LG05-4832	LG98-5579	A98-980047	( LG98-5579 ( LG89-773 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG85-2846 ( PI_404157 , PI_384469A ) ) , LG91-7323 ( BSR_101 , LG82-8379 ( PI_68508 , FC_04007B ) ) ) , A98-980047 ( HS93-4118 ( IA2007 ( Pride_B152 , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) ) , Dairyland_DSR304 ( Williams , - ) ) , Northrup_King_S24-92 ) )	-	NAM Strain
+LG06-2354	LG97-9301	Northrup_King_S25-J5	( LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) , Northrup_King_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	-
+LG06-5798	LG00-3372	LD00-3309	( LG00-3372 ( PI_561319 , PI_574477 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) )	PI 665996, SY 1203001	GP-382, F3
+LG06-5920	LG00-3372	LD00-3309	( LG00-3372 ( PI_561319 , PI_574477 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) )	-	-
+LG07-2309	IA3023	LG01-7728	( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LG01-7728 )	-	-
+LG07-4722	PI_507807	Williams_82	( PI_507807 , Williams_82 )	-	-
+LG07-8109	Selection	-	( Selection , - )	-	Reselection from LG07-8109
+LG08-3009	Golden_Harvest_H2885	LG00-8301	( Golden_Harvest_H2885 , LG00-8301 ( PI_574477 , PI_561377 ) )	-	-
+LG08-4955	LG00-7196	Northrup_King_S42-H1	( LG00-7196 ( LG93-7780 ( LG86-6989 ( PI_253665_D , PI_283331 ) , Asgrow_A3205 ( Northrup_King_S1474 , Asgrow_A3127 ( Williams , Essex ) ) ) , Macon ) , Northrup_King_S42-H1 )	-	-
+LG09-7163	LG00-3372	HC99-2763	( LG00-3372 ( PI_561319 , PI_574477 ) , HC99-2763 ( DPL_3478 , Stressland ) )	-	-
+LG09-7167	LG00-3372	HC99-2763	( LG00-3372 ( PI_561319 , PI_574477 ) , HC99-2763 ( DPL_3478 , Stressland ) )	-	-
+LG09-7250	LG00-3372	LG02-4042	( LG00-3372 ( PI_561319 , PI_574477 ) , LG02-4042 ( Macon , PI_91091 ) )	-	-
+LG09-7431	LG00-8298	Golden_Harvest_H2885	( LG00-8298 ( PI_574477 , PI_561377 ) , Golden_Harvest_H2885 )	-	-
+LG09-7739	LG02-2412	LG00-6182	( LG02-2412 ( PI_091730_-1 , PI_227333 ) , LG00-6182 ( PI_561319_A , PI_574477 ) )	-	-
+LG09-8165	PI_603571_A	LG00-6182	( PI_603571_A , LG00-6182 ( PI_561319_A , PI_574477 ) )	-	-
+LG09-8519	K1599	LG02-3733	( K1599 ( DeKalb_CX445 , Northrup_King_S46-44 ) , LG02-3733 ( LG94-1133 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG87-1991 ( PI_189930 , PI_68600 ) ) , LG92-1255 ( LG84-1291 ( PI_68522 , Hobbit ) , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	-
+LG09-8545	K1599	LG02-3733	( K1599 ( DeKalb_CX445 , Northrup_King_S46-44 ) , LG02-3733 ( LG94-1133 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG87-1991 ( PI_189930 , PI_68600 ) ) , LG92-1255 ( LG84-1291 ( PI_68522 , Hobbit ) , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	-
+LG09-8595	LG00-8301	LN97-15076	( LG00-8301 ( PI_574477 , PI_561377 ) , LN97-15076 ( Macon , Stressland ) )	-	-
+LG10-1562	LG00-6925	LG03-1614	( LG00-6925 ( IA2022 , LG91-6859 ( LG87-429 ( PI_297544 , PI_290126_B ) , Zane ) ) , LG03-1614 ( LG96-1488 ( LG89-8665 ( PI_436682 , Ripley ) , LG88-2696 ( Ripley , PI_370059 ) ) , LG97-7363 ( LG90-2179 ( PI_437851_A , Ripley ) , LG88-3146 ( PI_427099 , PI_445830 ) ) ) )	-	-
+LG10-2695	IA3023	LG03-3020	( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) )	-	-
+LG10-2699	IA3023	LG03-3020	( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) )	-	-
+LG10-3045	LG03-11572	IA3023	( LG03-11572 , IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) )	-	-
+LG10-3250	LG03-1672	LD00-3309	( LG03-1672 ( LG97-5474 ( Pioneer_P6906-16 , Pioneer_P5096-03D ) , IA3010 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) )	-	-
+LG10-3987	LG03-1614	LG03-6296	( LG03-1614 ( LG96-1488 ( LG89-8665 ( PI_436682 , Ripley ) , LG88-2696 ( Ripley , PI_370059 ) ) , LG97-7363 ( LG90-2179 ( PI_437851_A , Ripley ) , LG88-3146 ( PI_427099 , PI_445830 ) ) ) , LG03-6296 ( PI_592934 , LG94-1133 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG87-1991 ( PI_189930 , PI_68600 ) ) ) )	-	-
+LG11-6190	LG03-3020	LG03-3780	( LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) , LG03-3780 )	-	-
+LG11-6205	LG03-3020	LG03-3780	( LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) , LG03-3780 )	-	-
+LG11-6208	LG03-3020	LG03-3780	( LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) , LG03-3780 )	-	-
+LG11-6210	LG03-3020	LG03-3780	( LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) , LG03-3780 )	-	-
+LG11-6214	LG03-3020	LG03-3780	( LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) , LG03-3780 )	-	-
+LG11-6760	LG00-3372	LD00-3309	( LG00-3372 ( PI_561319 , PI_574477 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) )	-	-
+LG11-7662	LG03-2866	LG98-1605	( LG03-2866 ( LG96-1971 ( LG89-7619 ( Ripley , PI_445837 ) , Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) ) , Rend ) , LG98-1605 )	-	-
+LG11-7722	LG03-2979	LG04-4866	( LG03-2979 ( Rend , LG95-258 ( LG86-3574 ( PI_424159_B , PI_407710 ) , LG88-2694 ( Ripley , PI_370059 ) ) ) , LG04-4866 )	-	-
+LG11-7727	LG03-2979	LG04-4866	( LG03-2979 ( Rend , LG95-258 ( LG86-3574 ( PI_424159_B , PI_407710 ) , LG88-2694 ( Ripley , PI_370059 ) ) ) , LG04-4866 )	-	-
+LG11-7880	LG04-4866	LG03-3780	( LG04-4866 , LG03-3780 )	-	-
+LG11-8169-007F	LG06-2354	LG05-4354	( LG06-2354 ( LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) , Northrup_King_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) , LG05-4354 )	-	Conv
+LG11-8169-091F	LG06-2354	LG05-4354	( LG06-2354 ( LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) , Northrup_King_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) ) ) , LG05-4354 )	-	Conv
+LG13-1006	LG05-4229	LG04-5187	( LG05-4229 ( LG94-1128 ( LG85-3343 ( PI_361064 , PI_407710 ) ( PI_361064 , PI_407710 ) , LG87-1991 ( PI_189930 , PI_68600 ) ) , LG98-5629 ( LG89-1501 ( PI_68508 , PI_384471 ) , LG89-773 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG85-2846 ( PI_404157 , PI_384469A ) ) ) ) , LG04-5187 ( LG97-9384 ( LG90-2179 ( PI_437851_A , Ripley ) , Asgrow_A3322 ) , LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) ) )	-	-
+LG13-3993	LG04-5196	LG06-5920	( LG04-5196 , LG06-5920 ( LG00-3372 ( PI_561319 , PI_574477 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) )	-	-
+LG13144	PI_427099	PI_445830	( PI_427099 , PI_445830 )	-	-
+LG14-6165	06NB204846	LG04-5190	( 06NB204846 ( WW115926 , 98211-A01-36153 ( Syngenta_S21-A1 , 92032-A95-58316 ( AP2880 , Asgrow_A2872 ( Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Asgrow_A3501 ( Williams_82 , Asgrow_A3127 ( Williams , Essex ) ) ) ) ) ) , LG04-5190 ( LG97-9384 ( LG90-2179 ( PI_437851_A , Ripley ) , Asgrow_A3322 ) , LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) ) )	-	-
+LG14-7959	06JR205000	LG07-6911	( 06JR205000 , LG07-6911 )	-	-
+LG14-8024	LG04-5190	03JR309156	( LG04-5190 ( LG97-9384 ( LG90-2179 ( PI_437851_A , Ripley ) , Asgrow_A3322 ) , LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) ) , 03JR309156 )	-	-
+LG15-2779	LG08-5093	06NB204846	( LG08-5093 , 06NB204846 ( WW115926 , 98211-A01-36153 ( Syngenta_S21-A1 , 92032-A95-58316 ( AP2880 , Asgrow_A2872 ( Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) , Asgrow_A3501 ( Williams_82 , Asgrow_A3127 ( Williams , Essex ) ) ) ) ) ) )	-	-
+LG15-4348	LG06-2284	LG07-2309	( LG06-2284 , LG07-2309 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LG01-7728 ) )	-	-
+LG15-4491	LG06-2354	LG08-4955	( LG06-2354 ( LG97-9301 ( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) ) , Northrup_King_S25-J5 ( Exp_13404 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) ) , LG08-4955 ( LG00-7196 ( LG93-7780 ( LG86-6989 ( PI_253665_D , PI_283331 ) , Asgrow_A3205 ( Northrup_King_S1474 , Asgrow_A3127 ( Williams , Essex ) ) ) , Macon ) , Northrup_King_S42-H1 ) )	-	-
+LG15-4648	LG08-3277	LG06-2866	( LG08-3277 , LG06-2866 )	-	-
+LG15-8010	LD00-2817P	LG11-402	( LD00-2817P , LG11-402 )	-	-
+LG16-2547	LD02-4485	LG07-2309	( LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) , LG07-2309 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LG01-7728 ) )	-	-
+LG16-3733	LG09-8165	HI0800685	( LG09-8165 ( PI_603571_A , LG00-6182 ( PI_561319_A , PI_574477 ) ) , HI0800685 )	-	-
+LG16-4634	LG06-5798	WN0800527	( LG06-5798 ( LG00-3372 ( PI_561319 , PI_574477 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , WN0800527 )	-	-
+LG16-4639	LG06-5798	WN0800527	( LG06-5798 ( LG00-3372 ( PI_561319 , PI_574477 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , WN0800527 )	-	-
+LG16-4642	LG06-5798	WN0800527	( LG06-5798 ( LG00-3372 ( PI_561319 , PI_574477 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , WN0800527 )	-	-
+LG16-4644	LG06-5798	WN0800527	( LG06-5798 ( LG00-3372 ( PI_561319 , PI_574477 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , WN0800527 )	-	-
+LG16-4652	LG06-5798	WN0800527	( LG06-5798 ( LG00-3372 ( PI_561319 , PI_574477 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , WN0800527 )	-	-
+LG16-4655	LG06-5798	WN0800527	( LG06-5798 ( LG00-3372 ( PI_561319 , PI_574477 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , WN0800527 )	-	-
+LG16-4808	LG09-7256	WN0800527	( LG09-7256 , WN0800527 )	-	-
+LG17-5436	LG08-1691	LG08-3030	( LG08-1691 , LG08-3030 )	-	-
+LG17-5670	LG09-8165	WN0800527	( LG09-8165 ( PI_603571_A , LG00-6182 ( PI_561319_A , PI_574477 ) ) , WN0800527 )	-	-
+LG17-5672	LG09-8165	WN0800527	( LG09-8165 ( PI_603571_A , LG00-6182 ( PI_561319_A , PI_574477 ) ) , WN0800527 )	-	-
+LG17-5674	LG09-8165	WN0800527	( LG09-8165 ( PI_603571_A , LG00-6182 ( PI_561319_A , PI_574477 ) ) , WN0800527 )	-	-
+LG17-5677	LG09-8165	WN0800527	( LG09-8165 ( PI_603571_A , LG00-6182 ( PI_561319_A , PI_574477 ) ) , WN0800527 )	-	-
+LG17-5693	LG10-2688	LG10-1594	( LG10-2688 , LG10-1594 )	-	-
+LG17-5763	LG10-2699	LG09-7167	( LG10-2699 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) ) , LG09-7167 ( LG00-3372 ( PI_561319 , PI_574477 ) , HC99-2763 ( DPL_3478 , Stressland ) ) )	-	-
+LG17-5869	SD08-CV2102	LG10-12179	( SD08-CV2102 , LG10-12179 )	-	-
+LG17-7150	LG08-3465	LG10-12179	( LG08-3465 , LG10-12179 )	-	-
+LG17-7290	LG09-7163	LG10-4028	( LG09-7163 ( LG00-3372 ( PI_561319 , PI_574477 ) , HC99-2763 ( DPL_3478 , Stressland ) ) , LG10-4028 )	-	-
+LG17-7434	LG09-8165	WN0800527	( LG09-8165 ( PI_603571_A , LG00-6182 ( PI_561319_A , PI_574477 ) ) , WN0800527 )	-	-
+LG17-8693	LD07-4477	LG09-8166	( LD07-4477 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) ) , LG09-8166 )	-	-
+LG17-8856	LG09-8165	WN0800527	( LG09-8165 ( PI_603571_A , LG00-6182 ( PI_561319_A , PI_574477 ) ) , WN0800527 )	-	-
+LG17-8858	LG09-8165	WN0800527	( LG09-8165 ( PI_603571_A , LG00-6182 ( PI_561319_A , PI_574477 ) ) , WN0800527 )	-	-
+LG17-8880	LG09-8165	WN0800527	( LG09-8165 ( PI_603571_A , LG00-6182 ( PI_561319_A , PI_574477 ) ) , WN0800527 )	-	-
+LG17-8882	LG09-8165	WN0800527	( LG09-8165 ( PI_603571_A , LG00-6182 ( PI_561319_A , PI_574477 ) ) , WN0800527 )	-	-
+LG17-8885	LG09-8165	WN0800527	( LG09-8165 ( PI_603571_A , LG00-6182 ( PI_561319_A , PI_574477 ) ) , WN0800527 )	-	-
+LG17-8888	LG09-8165	WN0800527	( LG09-8165 ( PI_603571_A , LG00-6182 ( PI_561319_A , PI_574477 ) ) , WN0800527 )	-	-
+LG17-8898	LG09-8166	LG10-4028	( LG09-8166 , LG10-4028 )	-	-
+LG17-8900	LG09-8166	LG10-4028	( LG09-8166 , LG10-4028 )	-	-
+LG18-2636	LG10-2695	LS07-3131	( LG10-2695 ( IA3023 ( Dairyland_DSR365 , Pioneer_P9381 ) , LG03-3020 ( LG96-1711 ( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) ) , LG92-4208 ( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain ) ) ) , LS07-3131 )	-	-
+LG82-3002	PI_253665D	PI_283331	( PI_253665D , PI_283331 )	-	-
+LG82-8195	PI_68658	Lawrence	( PI_68658 , Lawrence )	-	-
+LG82-8224	PI_68658	Lawrence	( PI_68658 , Lawrence )	-	-
+LG82-8379	PI_68508	FC_04007B	( PI_68508 , FC_04007B )	-	-
+LG84-1096	PI_90566-1	L74-3897	( PI_90566-1 , L74-3897 ( Williams , Beeson ) )	-	-
+LG84-1269	PI_227333	PI_91730_-1	( PI_227333 , PI_91730_-1 )	-	-
+LG84-1272	PI_227333	PI_91730-1	( PI_227333 , PI_91730-1 )	-	-
+LG84-1291	PI_68522	Hobbit	( PI_68522 , Hobbit )	-	-
+LG85-2534	PI_227333	PI_290126B	( PI_227333 , PI_290126B )	-	-
+LG85-2846	PI_404157	PI_384469A	( PI_404157 , PI_384469A )	-	-
+LG85-3343	PI_361064	PI_407710	( PI_361064 , PI_407710 )	-	-
+LG86-2734	PI_424195B	PI_361066A	( PI_424195B , PI_361066A )	-	-
+LG86-3574	PI_424159_B	PI_407710	( PI_424159_B , PI_407710 )	-	-
+LG86-6989	PI_253665_D	PI_283331	( PI_253665_D , PI_283331 )	-	-
+LG86-7754	PI_407720	PI_407710	( PI_407720 , PI_407710 )	-	-
+LG87-1454	PI_290126B	PI_407710	( PI_290126B , PI_407710 )	-	-
+LG87-1606	PI_297544	PI_391583	( PI_297544 , PI_391583 )	-	-
+LG87-1782	PI_297515	PI_290126B	( PI_297515 , PI_290126B )	-	-
+LG87-1991	PI_189930	PI_68600	( PI_189930 , PI_68600 )	-	-
+LG87-2504	PI_168508	FC_04007B	( PI_168508 , FC_04007B )	-	-
+LG87-429	PI_297544	PI_290126_B	( PI_297544 , PI_290126_B )	-	-
+LG87-430	PI_297544	PI_290126B	( PI_297544 , PI_290126B )	-	-
+LG88-2044	A78-123018	PI_438205_B	( A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) , PI_438205_B )	-	-
+LG88-2227	A78-123018	PI_438205B	( A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) , PI_438205B )	-	-
+LG88-2248	PI_438151	A78-123018	( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) )	-	-
+LG88-2694	Ripley	PI_370059	( Ripley , PI_370059 )	-	-
+LG88-2695	Ripley	PI_370059	( Ripley , PI_370059 )	-	-
+LG88-2696	Ripley	PI_370059	( Ripley , PI_370059 )	-	-
+LG88-3146	PI_427099	PI_445830	( PI_427099 , PI_445830 )	-	-
+LG88-8958	PI_253665D	PI_283331	( PI_253665D , PI_283331 )	-	-
+LG89-1501	PI_68508	PI_384471	( PI_68508 , PI_384471 )	-	-
+LG89-1525	PI_90566	L74-3897	( PI_90566 , L74-3897 ( Williams , Beeson ) )	-	-
+LG89-6607	LG82-8224	Hobbit	( LG82-8224 ( PI_68658 , Lawrence ) , Hobbit )	-	-
+LG89-6661	Sherman	LG84-1096	( Sherman , LG84-1096 ( PI_90566-1 , L74-3897 ( Williams , Beeson ) ) )	-	-
+LG89-7619	Ripley	PI_445837	( Ripley , PI_445837 )	-	-
+LG89-7629	Ripley	PI_445837	( Ripley , PI_445837 )	-	-
+LG89-7657	Ripley	PI_438206	( Ripley , PI_438206 )	-	-
+LG89-771	LG85-3343	LG85-2846	( LG85-3343 ( PI_361064 , PI_407710 ) , LG85-2846 ( PI_404157 , PI_384469A ) )	-	-
+LG89-773	LG85-3343	LG85-2846	( LG85-3343 ( PI_361064 , PI_407710 ) , LG85-2846 ( PI_404157 , PI_384469A ) )	-	-
+LG89-7793	PI_391594	Century	( PI_391594 , Century )	-	-
+LG89-8286	LG82-3002	Elgin	( LG82-3002 ( PI_253665D , PI_283331 ) , Elgin )	-	-
+LG89-8665	PI_436682	Ripley	( PI_436682 , Ripley )	-	-
+LG90-2179	PI_437851_A	Ripley	( PI_437851_A , Ripley )	-	-
+LG90-2550	LG82-8224	LG82-8195	( LG82-8224 ( PI_68658 , Lawrence ) , LG82-8195 ( PI_68658 , Lawrence ) )	-	NAM Strain
+LG90-4181	PI_436682	Lawrence	( PI_436682 , Lawrence )	-	-
+LG91-5681	LG87-430	Asgrow_A3127	( LG87-430 ( PI_297544 , PI_290126B ) , Asgrow_A3127 ( Williams , Essex ) )	-	-
+LG91-6859	LG87-429	Zane	( LG87-429 ( PI_297544 , PI_290126_B ) , Zane )	-	-
+LG91-7320	BSR_101	LG82-8379	( BSR_101 , LG82-8379 ( PI_68508 , FC_04007B ) )	-	-
+LG91-7323	BSR_101	LG82-8379	( BSR_101 , LG82-8379 ( PI_68508 , FC_04007B ) )	-	-
+LG91-7350R	PI_68508	FC_04007B	( PI_68508 , FC_04007B )	-	Parentage conflict. NUST 2012 Crop Sci 1999 39:302
+LG91-7431	LG84-1272	Elgin	( LG84-1272 ( PI_227333 , PI_91730-1 ) , Elgin )	-	-
+LG92-1255	LG84-1291	Asgrow_A3127	( LG84-1291 ( PI_68522 , Hobbit ) , Asgrow_A3127 ( Williams , Essex ) )	-	NAM Strain
+LG92-1350	LG85-3343	Ripley	( LG85-3343 ( PI_361064 , PI_407710 ) , Ripley )	-	-
+LG92-4208	LG84-1269	Chamberlain	( LG84-1269 ( PI_227333 , PI_91730_-1 ) , Chamberlain )	PI 633729, SY313001	GP-302
+LG93-7054	LG85-3343	Northrup_King_S42-30	( LG85-3343 ( PI_361064 , PI_407710 ) , Northrup_King_S42-30 )	-	-
+LG93-7604	LG85-3343	Northrup_King_S42-30	( LG85-3343 ( PI_361064 , PI_407710 ) , Northrup_King_S42-30 )	-	-
+LG93-7654	LG86-2734	Asgrow_A3205	( LG86-2734 ( PI_424195B , PI_361066A ) , Asgrow_A3205 ( Northrup_King_S1474 , Asgrow_A3127 ( Williams , Essex ) ) )	-	-
+LG93-7780	LG86-6989	Asgrow_A3205	( LG86-6989 ( PI_253665_D , PI_283331 ) , Asgrow_A3205 ( Northrup_King_S1474 , Asgrow_A3127 ( Williams , Essex ) ) )	-	-
+LG94-1098	LG85-2534	LG85-3343	( LG85-2534 ( PI_227333 , PI_290126B ) , LG85-3343 ( PI_361064 , PI_407710 ) )	-	-
+LG94-1128	LG85-3343	LG87-1991	( LG85-3343 ( PI_361064 , PI_407710 ) , LG87-1991 ( PI_189930 , PI_68600 ) )	PI 633730, SY 313002	NAM Strain; GP-303
+LG94-1133	LG85-3343	LG87-1991	( LG85-3343 ( PI_361064 , PI_407710 ) , LG87-1991 ( PI_189930 , PI_68600 ) )	-	NAM Strain
+LG94-1713	LG87-1606	Kenwood	( LG87-1606 ( PI_297544 , PI_391583 ) , Kenwood )	-	-
+LG94-1906	PI_468377	Asgrow_A3205	( PI_468377 , Asgrow_A3205 ( Northrup_King_S1474 , Asgrow_A3127 ( Williams , Essex ) ) )	-	NAM Strain
+LG94-4667	PI_458511	Flyer	( PI_458511 , Flyer )	-	-
+LG95-258	LG86-3574	LG88-2694	( LG86-3574 ( PI_424159_B , PI_407710 ) , LG88-2694 ( Ripley , PI_370059 ) )	-	-
+LG95-441-4	PI_68508	FC_04007B	( PI_68508 , FC_04007B )	-	-
+LG95-5737	PI_427099	PI_445830	( PI_427099 , PI_445830 )	-	-
+LG95-8036	Asgrow_A3205	LG87-14554	( Asgrow_A3205 ( Northrup_King_S1474 , Asgrow_A3127 ( Williams , Essex ) ) , LG87-14554 )	-	-
+LG96-1488	LG89-8665	LG88-2696	( LG89-8665 ( PI_436682 , Ripley ) , LG88-2696 ( Ripley , PI_370059 ) )	-	-
+LG96-1711	LG88-3146	LG88-2248	( LG88-3146 ( PI_427099 , PI_445830 ) , LG88-2248 ( PI_438151 , A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) )	-	-
+LG96-1797	LG89-8665	LG89-7657	( LG89-8665 ( PI_436682 , Ripley ) , LG89-7657 ( Ripley , PI_438206 ) )	-	-
+LG96-1854	LG89-8665	LG89-7657	( LG89-8665 ( PI_436682 , Ripley ) , LG89-7657 ( Ripley , PI_438206 ) )	-	-
+LG96-1971	LG89-7619	Asgrow_A3935	( LG89-7619 ( Ripley , PI_445837 ) , Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) )	-	-
+LG96-3089	LG88-2044	LG89-7629	( LG88-2044 ( A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) , PI_438205_B ) , LG89-7629 ( Ripley , PI_445837 ) )	-	-
+LG96-3159	LG89-7619	Asgrow_A3935	( LG89-7619 ( Ripley , PI_445837 ) , Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) )	-	-
+LG97-5474	Pioneer_P6906-16	Pioneer_P5096-03D	( Pioneer_P6906-16 , Pioneer_P5096-03D )	-	-
+LG97-7012	LG89-1525	Asgrow_A3322	( LG89-1525 ( PI_90566 , L74-3897 ( Williams , Beeson ) ) , Asgrow_A3322 )	PI 639283, SY 512002	NAM Strain; GP-317 
+LG97-7363	LG90-2179	LG88-3146	( LG90-2179 ( PI_437851_A , Ripley ) , LG88-3146 ( PI_427099 , PI_445830 ) )	-	-
+LG97-8789	LG88-3146	P5096-03D	( LG88-3146 ( PI_427099 , PI_445830 ) , P5096-03D ( Asgrow_A3127 ( Williams , Essex ) , PI_273483 ) )	-	-
+LG97-8856	LG90-13144	LG88-3146	( LG90-13144 , LG88-3146 ( PI_427099 , PI_445830 ) )	-	-
+LG97-8905	LG89-6607	LG88-2227	( LG89-6607 ( LG82-8224 ( PI_68658 , Lawrence ) , Hobbit ) , LG88-2227 ( A78-123018 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) , PI_438205B ) )	-	-
+LG97-8984	LG89-6661	HS89-3261	( LG89-6661 ( Sherman , LG84-1096 ( PI_90566-1 , L74-3897 ( Williams , Beeson ) ) ) , HS89-3261 ( LG82-8379 ( PI_68508 , FC_04007B ) , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	-
+LG97-9015	LG89-8286	LG89-6661	( LG89-8286 ( LG82-3002 ( PI_253665D , PI_283331 ) , Elgin ) , LG89-6661 ( Sherman , LG84-1096 ( PI_90566-1 , L74-3897 ( Williams , Beeson ) ) ) )	-	-
+LG97-9226	LG89-7629	Asgrow_A9303	( LG89-7629 ( Ripley , PI_445837 ) , Asgrow_A9303 )	-	-
+LG97-9301	LG89-7793	LG88-8958	( LG89-7793 ( PI_391594 , Century ) , LG88-8958 ( PI_253665D , PI_283331 ) )	-	-
+LG97-9384	LG90-2179	Asgrow_A3322	( LG90-2179 ( PI_437851_A , Ripley ) , Asgrow_A3322 )	-	-
+LG97-9486	LG88-3146	HS89-3261	( LG88-3146 ( PI_427099 , PI_445830 ) , HS89-3261 ( LG82-8379 ( PI_68508 , FC_04007B ) , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	-
+LG97-9685	LG89-1525	Asgrow_A3322	( LG89-1525 ( PI_90566 , L74-3897 ( Williams , Beeson ) ) , Asgrow_A3322 )	-	-
+LG97-9692	LG89-1525	Asgrow_A3322	( LG89-1525 ( PI_90566 , L74-3897 ( Williams , Beeson ) ) , Asgrow_A3322 )	-	-
+LG97-9912	LG90-4181	Asgrow_A3322	( LG90-4181 ( PI_436682 , Lawrence ) , Asgrow_A3322 )	-	-
+LG98-1445	LG91-7431	Pioneer_P9273	( LG91-7431 ( LG84-1272 ( PI_227333 , PI_91730-1 ) , Elgin ) , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) )	PI 639284, SY 512003	GP-318
+LG98-1454	LG91-7431	Pioneer_P9273	( LG91-7431 ( LG84-1272 ( PI_227333 , PI_91730-1 ) , Elgin ) , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) )	-	-
+LG98-1605_	LG88-8958	LG89-771	( LG88-8958 ( PI_253665D , PI_283331 ) , LG89-771 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG85-2846 ( PI_404157 , PI_384469A ) ) )	-	NAM Strain
+LG98-5579	LG89-773	LG91-7323	( LG89-773 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG85-2846 ( PI_404157 , PI_384469A ) ) , LG91-7323 ( BSR_101 , LG82-8379 ( PI_68508 , FC_04007B ) ) )	-	-
+LG98-5629	LG89-1501	LG89-773	( LG89-1501 ( PI_68508 , PI_384471 ) , LG89-773 ( LG85-3343 ( PI_361064 , PI_407710 ) , LG85-2846 ( PI_404157 , PI_384469A ) ) )	-	-
+LG99-11620	LG86-7754	LG88-3146	( LG86-7754 ( PI_407720 , PI_407710 ) , LG88-3146 ( PI_427099 , PI_445830 ) )	-	-
+LG99-11986	LG87-1782	LG88-3146	( LG87-1782 ( PI_297515 , PI_290126B ) , LG88-3146 ( PI_427099 , PI_445830 ) )	-	-
+LG99-5106	LG91-7320	Kenwood	( LG91-7320 ( BSR_101 , LG82-8379 ( PI_68508 , FC_04007B ) ) , Kenwood )	-	-
+LG99-5219	LG91-5681	Probst	( LG91-5681 ( LG87-430 ( PI_297544 , PI_290126B ) , Asgrow_A3127 ( Williams , Essex ) ) , Probst ( Spencer , Resnik ) )	-	-
+LG99-8929	LG89-6607	Probst	( LG89-6607 ( LG82-8224 ( PI_68658 , Lawrence ) , Hobbit ) , Probst ( Spencer , Resnik ) )	-	-
+LL05-14	FAM94-41-3	N98-4445A	( FAM94-41-3 , N98-4445A )	-	-
+LLL05-14	FAM94-41-3	-	( FAM94-41-3 , - )	-	-
+LN1053	Tracy	Pomona	( Tracy , Pomona )	-	-
+LN1067	Tracy	Williams	( Tracy , Williams )	-	-
+LN78-2714	Evans	K1028	( Evans , K1028 ( Williams , Calland ) )	-	-
+LN78-575	Union	K1028	( Union , K1028 ( Williams , Calland ) )	-	-
+LN78-896	L70T-543G	C1528	( L70T-543G ( L15 , Amsoy_71 ) , C1528 ( Calland , L63-1397 ) )	-	-
+LN80-10398	Century	Land_O_Lakes_Max	( Century , Land_O_Lakes_Max )	-	-
+LN80-10508	Century	Land_O_Lakes_Max	( Century , Land_O_Lakes_Max )	-	-
+LN80-16017	Tracy	Williams	( Tracy , Williams )	-	-
+LN80-6797	A76-202015	Land_O_Lakes_Max	( A76-202015 ( AP6 , - ) , Land_O_Lakes_Max )	-	-
+LN80-7532	Century	A76-304020	( Century , A76-304020 )	-	-
+LN80-8184	A76-304020	Century	( A76-304020 , Century )	-	-
+LN80-8259	A76-304020	Land_O_Lakes_Max	( A76-304020 , Land_O_Lakes_Max )	-	-
+LN80-8653	Schechinger_S48	A76-304020	( Schechinger_S48 ( IVR_1120 , SL12 ) , A76-304020 )	-	-
+LN80-8659	Schechinger_S48	A76-304020	( Schechinger_S48 ( IVR_1120 , SL12 ) , A76-304020 )	-	-
+LN80-9359	Weber	A76-202015	( Weber , A76-202015 ( AP6 , - ) )	-	-
+LN80-9419	Weber	A76-202015	( Weber , A76-202015 ( AP6 , - ) )	-	-
+LN80-9447	Weber	A76-202015	( Weber , A76-202015 ( AP6 , - ) )	-	-
+LN80-9452	Weber	A76-202015	( Weber , A76-202015 ( AP6 , - ) )	-	-
+LN80-9479	Weber	A76-202015	( Weber , A76-202015 ( AP6 , - ) )	-	-
+LN81-1029	K74-114-75-00	Pella	( K74-114-75-00 ( Tracy , Bonus ) , Pella )	-	-
+LN81-1044	K74-114-75-000	Pella	( K74-114-75-000 , Pella )	-	-
+LN82-3254	Williams_82	Hardin	( Williams_82 , Hardin )	-	-
+LN82-4433	Williams_82	Century	( Williams_82 , Century )	-	-
+LN83-1709	Hobbit	L27	( Hobbit , L27 )	-	-
+LN83-2356	LN78-2714	HC76-4030	( LN78-2714 ( Evans , K1028 ( Williams , Calland ) ) , HC76-4030 )	-	-
+LN84-1304	A78-227015	Asgrow_A3127	( A78-227015 ( Pride_B216 ( Corsoy , Wayne ) , AX901-40-2 ( Beeson , AP68-1022 ) ) , Asgrow_A3127 ( Williams , Essex ) )	-	-
+LN84-15336	LN80-9447	Asgrow_A3127	( LN80-9447 ( Weber , A76-202015 ( AP6 , - ) ) , Asgrow_A3127 ( Williams , Essex ) )	-	-
+LN84-15496	LN80-9447	Asgrow_A3127	( LN80-9447 ( Weber , A76-202015 ( AP6 , - ) ) , Asgrow_A3127 ( Williams , Essex ) )	-	-
+LN84-15574	LN80-9447	Asgrow_A3127	( LN80-9447 ( Weber , A76-202015 ( AP6 , - ) ) , Asgrow_A3127 ( Williams , Essex ) )	-	-
+LN84-18266	LN80-9452	Asgrow_A3127	( LN80-9452 ( Weber , A76-202015 ( AP6 , - ) ) , Asgrow_A3127 ( Williams , Essex ) )	-	-
+LN84-19560	LN80-9479	Asgrow_A3127	( LN80-9479 ( Weber , A76-202015 ( AP6 , - ) ) , Asgrow_A3127 ( Williams , Essex ) )	-	-
+LN84-2418	A78-227015	Asgrow_A3127	( A78-227015 ( Pride_B216 ( Corsoy , Wayne ) , AX901-40-2 ( Beeson , AP68-1022 ) ) , Asgrow_A3127 ( Williams , Essex ) )	-	-
+LN84-3321	HW79149	HW79015	( HW79149 , HW79015 ( A72-512 ( Amsoy , Wayne ) , Oakland ( L66L-137 ( Wayne , L57-0034 ( Clark , Adams ) ) , Calland ) ) )	-	-
+LN84-4037	HW79149	Harper	( HW79149 , Harper )	-	-
+LN84-4082	HW79149	Harper	( HW79149 , Harper )	-	-
+LN84-4332	HW79149	Harper	( HW79149 , Harper )	-	-
+LN84-452	A78-227015	Asgrow_A3127	( A78-227015 ( Pride_B216 ( Corsoy , Wayne ) , AX901-40-2 ( Beeson , AP68-1022 ) ) , Asgrow_A3127 ( Williams , Essex ) )	-	-
+LN84-7577	Hack	HW79015	( Hack , HW79015 ( A72-512 ( Amsoy , Wayne ) , Oakland ( L66L-137 ( Wayne , L57-0034 ( Clark , Adams ) ) , Calland ) ) )	-	-
+LN84-8147	Hack	Harper	( Hack , Harper )	-	-
+LN84-8527	Hack	Harper	( Hack , Harper )	-	-
+LN84-8588	Hack	Harper	( Hack , Harper )	-	-
+LN84-9583	Hack	Cumberland	( Hack , Cumberland )	-	-
+LN84-978	A78-227015	Asgrow_A3127	( A78-227015 ( Pride_B216 ( Corsoy , Wayne ) , AX901-40-2 ( Beeson , AP68-1022 ) ) , Asgrow_A3127 ( Williams , Essex ) )	-	-
+LN85-10234	LNX8179	A80-244003	( LNX8179 ( Northrup_King_S1492 ( Corsoy , Wayne ) ( Corsoy , Wayne ) , PI_92718-2 ) , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) )	-	-
+LN85-10524	LNX8179	A80-244003	( LNX8179 ( Northrup_King_S1492 ( Corsoy , Wayne ) ( Corsoy , Wayne ) , PI_92718-2 ) , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) )	-	-
+LN85-3036	A8	LN80-7532	( A8 , LN80-7532 ( Century , A76-304020 ) )	-	-
+LN85-3402	A8	LN80-10398	( A8 , LN80-10398 ( Century , Land_O_Lakes_Max ) )	-	-
+LN85-6253	LNX8132	A80-244003	( LNX8132 ( Hack , A78-121014 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) )	-	-
+LN85-6377	LNX8132	A80-244003	( LNX8132 ( Hack , A78-121014 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) , A80-244003 ( Northrup_King_S1492 ( Corsoy , Wayne ) , Pella ) )	-	-
+LN85-6800	LNX8132	LN80-7532	( LNX8132 ( Hack , A78-121014 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) ) , LN80-7532 ( Century , A76-304020 ) )	-	-
+LN86-1088	Hack	A80-244036	( Hack , A80-244036 ( A74-204034 ( M62-263 ( Grant , M319W ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Hawkeye ) ) , Amsoy_71 ) , A80-344003 ( A75-332035 , Century ) ) )	-	-
+LN86-1947	PI_437883	Elgin	( PI_437883 , Elgin )	PI 533657	GP-120
+LN86-19747	PI_437833	Elgin	( PI_437833 , Elgin )	-	-
+LN86-4668	Fayette	Hardin	( Fayette , Hardin )	-	-
+LN86-983	Hack	BSR_101	( Hack , BSR_101 )	-	-
+LN88-10534	LN81-1029	Asgrow_A2943	( LN81-1029 ( K74-114-75-00 ( Tracy , Bonus ) , Pella ) , Asgrow_A2943 ( Asgrow_A1564 , Asgrow_A3127 ( Williams , Essex ) ) )	PI 593259, Iroqouis	PVP 9600137
+LN89-3615	Hobbit_87	Asgrow_A3205	( Hobbit_87 , Asgrow_A3205 ( Northrup_King_S1474 , Asgrow_A3127 ( Williams , Essex ) ) )	PI 597384	CV-383
+LN90-4366	LN86-4668	Resnik	( LN86-4668 ( Fayette , Hardin ) , Resnik )	-	-
+LN90-4524	LN86-4668	Asgrow_A3733	( LN86-4668 ( Fayette , Hardin ) , Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) )	-	-
+LN92-7369	Burlison	C1732	( Burlison ( K74-113-76-486 , Century ) , C1732 ( Century_84 , Harper ) )	-	-
+LN93-13684	Jack	Chapman	( Jack , Chapman )	-	-
+LN94-10470	Jack	Hartwig	( Jack , Hartwig )	-	-
+LN94-14862-97-2	Jack	Hartwig	( Jack , Hartwig )	-	-
+LN94-15200-97	Jack	Hartwig	( Jack , Hartwig )	-	-
+LN94-480-97	Jack	Pioneer_P9273	( Jack , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ) )	-	-
+LN95-15740	Jack	Hartwig	( Jack , Hartwig )	-	-
+LN95-5454	Jack	IA3003	( Jack , IA3003 )	-	-
+LN95-5724	Jack	IA3003	( Jack , IA3003 )	-	-
+LN95-5817	Jack	C1842	( Jack , C1842 )	-	-
+LN95-6415	Jack	Iroquois	( Jack , Iroquois )	-	-
+LN95-872	HS88-4906	Resnik	( HS88-4906 ( Conrad , Hayes ) , Resnik )	-	-
+LN97-11505	Thorne	Cisne	( Thorne , Cisne ( Burlison ( K74-113-76-486 , Century ) , Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	-
+LN97-14727	LN90-4366	Cisne	( LN90-4366 ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Cisne ( Burlison ( K74-113-76-486 , Century ) , Asgrow_A3733 ( Elf , Asgrow_A3127 ( Williams , Essex ) ) ) )	-	-
+LN97-15076	Macon	Stressland	( Macon , Stressland )	PI 633983, SY 319001	CV-465
+LN97-24270	Jack	Macon	( Jack , Macon )	-	-
+LN97-26569	Yale	Macon	( Yale , Macon )	-	-
+LN97-26597	Yale	Macon	( Yale , Macon )	-	-
+LN98-1243	PI_56740A	Savoy	( PI_56740A , Savoy )	-	-
+LN98-4909	Yale	Savoy	( Yale , Savoy )	-	-
+LNX8132	Hack	A78-121014	( Hack , A78-121014 ( Pride_B216 ( Corsoy , Wayne ) , Hodgson ) )	-	F1
+LNX8179	Northrup_King_S1492	PI_92718-2	( Northrup_King_S1492 ( Corsoy , Wayne ) , PI_92718-2 )	-	-
+LNX96017	Jack	Resnik_RR	( Jack , Resnik_RR )	-	-
+LNX97164-35	LN95-15740	Pana	( LN95-15740 ( Jack , Hartwig ) , Pana )	-	-
+LP11865821	Pioneer_P92M61	Pioneer_P92M91	( Pioneer_P92M61 , Pioneer_P92M91 )	-	-
+LP11969710	YB22T00	Pioneer_P92B74	( YB22T00 ( Pioneer_P9362 , MO21584 ) , Pioneer_P92B74 )	-	-
+LP15796828	LP6293368	JH13884372	( LP6293368 ( Pioneer_P93B86 , Pioneer_P93B15 ) , JH13884372 ( ZB27U04 ( Pioneer_P93B87 , Pioneer_P92B61 ) ( Pioneer_P93B87 , Pioneer_P92B61 ) ( Pioneer_P93B87 , Pioneer_P92B61 ) ( Pioneer_P93B87 , Pioneer_P92B61 ) , JH12377007 ( ZB27U04 ( Pioneer_P93B87 , Pioneer_P92B61 ) ( Pioneer_P93B87 , Pioneer_P92B61 ) ( Pioneer_P93B87 , Pioneer_P92B61 ) , JH11944981 ( ZB27U04 ( Pioneer_P93B87 , Pioneer_P92B61 ) ( Pioneer_P93B87 , Pioneer_P92B61 ) , JH10955521 ( JH9638246 , ZB27U04 ( Pioneer_P93B87 , Pioneer_P92B61 ) ) ) ) ) )	-	-
+LP24380127	Pioneer_P93Y11	SP16410155	( Pioneer_P93Y11 , SP16410155 ( YB30K06 ( Pioneer_P93B86 , YB22T00 ( Pioneer_P9362 , MO21584 ) ) , SP11513497 ( Pioneer_P93M20 , JH10032580 ( Pioneer_P92M91 , JH8069431 ( Pioneer_P92B38 , JH7380284 ( Pioneer_P92B38 , JH6676568 ( Pioneer_P92B38 , JX5789894 ) ) ) ) ) ) )	-	-
+LP3442228	Pioneer_P93B86	45487L002	( Pioneer_P93B86 , 45487L002 ( Pioneer_P92B52 , 45270 ( ST2250 , 21721 ( Asgrow_A1900 , 21119 ( Pioneer_P9304 , 21070 ( Pioneer_P9412 , 90688C ( Asgrow_A4715 , G40-3P9392 ) ) ) ) ) ) )	-	-
+LP6083726	Pioneer_P93B86	Pioneer_P93M11	( Pioneer_P93B86 , Pioneer_P93M11 )	-	-
+LP6293368	Pioneer_P93B86	Pioneer_P93B15	( Pioneer_P93B86 , Pioneer_P93B15 )	-	-
+LS00-1755	K1307	LS92-4357	( K1307 ( K1133 ( V75-345 ( Essex , Shore ) , S76-2120 ( D67-3297 , Essex ) ) , R85-3309 ) , LS92-4357 ( Ripley , Asgrow_A5474 ) )	-	-
+LS00-4221	LS92-3660	Asgrow_A4138	( LS92-3660 ( Resnik , Asgrow_A5474 ) , Asgrow_A4138 )	-	-
+LS00-6996	TN91-55	DeKalb_411	( TN91-55 ( TN4-86 , TN83-67 ( J74-45 , Mitchell ( Amsoy , Wayne ) ) ) , DeKalb_411 )	-	-
+LS01-0971	LS92-4173	DeKalb_339c	( LS92-4173 ( Flyer , Pyramid ) , DeKalb_339c )	-	-
+LS01-1158	LS92-4173	DeKalb_339c	( LS92-4173 ( Flyer , Pyramid ) , DeKalb_339c )	-	-
+LS01-1734	LS93-0375	IA3005	( LS93-0375 ( Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) , Pioneer_P9402 ) , IA3005 )	-	-
+LS01-1804	LS93-0375	IA3005	( LS93-0375 ( Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) , Pioneer_P9402 ) , IA3005 )	-	-
+LS01-3450	LS93-0375	Delta_King_DK420c	( LS93-0375 ( Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) , Pioneer_P9402 ) , Delta_King_DK420c )	-	-
+LS01-3615	LS93-0375	Mustang	( LS93-0375 ( Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) , Pioneer_P9402 ) , Mustang )	-	-
+LS02-4045	K1370	LS94-3207	( K1370 ( Delsoy_4210 ( L77-1233 , Douglas ) , Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) ) , LS94-3207 ( Pharaoh ( Forrest , V71-480 ( V63-76 ( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ( PI_30593 , - ) ) , Richland ) ) ) , V66-318 ( D53-184 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , J22 ( L37-1355 ( PI_81041 , - ) , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) ) ) ) ) , Hartwig ) )	-	-
+LS03-4303	Pana	TN96-58	( Pana , TN96-58 )	-	-
+LS07-1343	LN97-15076	LD02-4485	( LN97-15076 ( Macon , Stressland ) , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) )	-	-
+LS07-1348	LN97-15076	LD02-4485	( LN97-15076 ( Macon , Stressland ) , LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) )	-	-
+LS07-1934	SS98-7851	LD01-5907	( SS98-7851 ( Pioneer_P9362 , Magellan ( Sherman , Harper ) ) , LD01-5907 ( Ina ( Jack , Hartwig ) , IA3010 ) )	-	-
+LS07-2935	SS98-7851	LD00-3309	( SS98-7851 ( Pioneer_P9362 , Magellan ( Sherman , Harper ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) )	-	-
+LS07-3070	SS98-7851	LD00-3309	( SS98-7851 ( Pioneer_P9362 , Magellan ( Sherman , Harper ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) )	-	-
+LS07-3125	SS98-7851	LD00-3309	( SS98-7851 ( Pioneer_P9362 , Magellan ( Sherman , Harper ) ) , LD00-3309 ( Maverick ( LN86-4668 ( Fayette , Hardin ) , Resnik ) , Dwight ) )	-	-
+LS07-3843	LS99-3619	LS99-3630	( LS99-3619 ( LS79-238 , KY88-4080 ( K1099 ( K1022 ( Williams , Columbus ) , Essex ) , Hutcheson ) ( K1099 ( K1022 ( Williams , Columbus ) , Essex ) ( K1022 ( Williams , Columbus ) ( Williams , Columbus ) , Essex ) , Hutcheson ) ) , LS99-3630 ( LS79-238 , KY88-4080 ( K1099 ( K1022 ( Williams , Columbus ) , Essex ) , Hutcheson ) ) )	-	-
+LS07-3935	LS99-3619	LS99-3630	( LS99-3619 ( LS79-238 , KY88-4080 ( K1099 ( K1022 ( Williams , Columbus ) , Essex ) , Hutcheson ) ( K1099 ( K1022 ( Williams , Columbus ) , Essex ) ( K1022 ( Williams , Columbus ) ( Williams , Columbus ) , Essex ) , Hutcheson ) ) , LS99-3630 ( LS79-238 , KY88-4080 ( K1099 ( K1022 ( Williams , Columbus ) , Essex ) , Hutcheson ) ) )	-	-
+LS07-4020	LS99-3619	LS99-3630	( LS99-3619 ( LS79-238 , KY88-4080 ( K1099 ( K1022 ( Williams , Columbus ) , Essex ) , Hutcheson ) ( K1099 ( K1022 ( Williams , Columbus ) , Essex ) ( K1022 ( Williams , Columbus ) ( Williams , Columbus ) , Essex ) , Hutcheson ) ) , LS99-3630 ( LS79-238 , KY88-4080 ( K1099 ( K1022 ( Williams , Columbus ) , Essex ) , Hutcheson ) ) )	-	-
+LS07-4035	LS99-3619	LS99-3630	( LS99-3619 ( LS79-238 , KY88-4080 ( K1099 ( K1022 ( Williams , Columbus ) , Essex ) , Hutcheson ) ( K1099 ( K1022 ( Williams , Columbus ) , Essex ) ( K1022 ( Williams , Columbus ) ( Williams , Columbus ) , Essex ) , Hutcheson ) ) , LS99-3630 ( LS79-238 , KY88-4080 ( K1099 ( K1022 ( Williams , Columbus ) , Essex ) , Hutcheson ) ) )	-	-
+LS07-4536	N7001	LS93-3630	( N7001 , LS93-3630 )	-	-
+LS08-4934	LS00-4221	LS01-1158	( LS00-4221 ( LS92-3660 ( Resnik , Asgrow_A5474 ) , Asgrow_A4138 ) , LS01-1158 ( LS92-4173 ( Flyer , Pyramid ) , DeKalb_339c ) )	-	-
+LS08-5552	LS97-3617	LS98-0582	( LS97-3617 ( Flyer , Asgrow_A4138 ) , LS98-0582 ( Northrup_King_S46-44 , Asgrow_A4138 ) )	-	-
+LS08-5837	LS93-0375	LS98-0582	( LS93-0375 ( Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) , Pioneer_P9402 ) , LS98-0582 ( Northrup_King_S46-44 , Asgrow_A4138 ) )	-	-
+LS08-5852	LS93-0375	LS98-0582	( LS93-0375 ( Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) , Pioneer_P9402 ) , LS98-0582 ( Northrup_King_S46-44 , Asgrow_A4138 ) )	-	-
+LS08-6003	MD96-5722	LS01-0971	( MD96-5722 ( KS4694 ( Sherman , Toano ( Ware , Essex ) ) , Corsica ) , LS01-0971 ( LS92-4173 ( Flyer , Pyramid ) , DeKalb_339c ) )	-	-
+LS08-6034	MD96-5722	LS01-0971	( MD96-5722 ( KS4694 ( Sherman , Toano ( Ware , Essex ) ) , Corsica ) , LS01-0971 ( LS92-4173 ( Flyer , Pyramid ) , DeKalb_339c ) )	-	-
+LS08-6332	LS00-1755	5002T	( LS00-1755 ( K1307 ( K1133 ( V75-345 ( Essex , Shore ) , S76-2120 ( D67-3297 , Essex ) ) , R85-3309 ) , LS92-4357 ( Ripley , Asgrow_A5474 ) ) , 5002T )	-	-
+LS09-0333	LS00-1755	U01-290401	( LS00-1755 ( K1307 ( K1133 ( V75-345 ( Essex , Shore ) , S76-2120 ( D67-3297 , Essex ) ) , R85-3309 ) , LS92-4357 ( Ripley , Asgrow_A5474 ) ) , U01-290401 )	-	-
+LS09-0340	LS00-1755	U01-290401	( LS00-1755 ( K1307 ( K1133 ( V75-345 ( Essex , Shore ) , S76-2120 ( D67-3297 , Essex ) ) , R85-3309 ) , LS92-4357 ( Ripley , Asgrow_A5474 ) ) , U01-290401 )	-	-
+LS09-1021	AR02-101001	LS02-4045	( AR02-101001 ( Pioneer_P9233 , A96-591033 ( IA3003 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) ) , LS02-4045 ( K1370 ( Delsoy_4210 ( L77-1233 , Douglas ) , Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) ) , LS94-3207 ( Pharaoh ( Forrest , V71-480 ( V63-76 ( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ( PI_30593 , - ) ) , Richland ) ) ) , V66-318 ( D53-184 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , J22 ( L37-1355 ( PI_81041 , - ) , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) ) ) ) ) , Hartwig ) ) )	-	-
+LS09-1303	AR02-101001	LS02-4045	( AR02-101001 ( Pioneer_P9233 , A96-591033 ( IA3003 , Pioneer_P9273 ( Pioneer_P2981 , Asgrow_A3127 ( Williams , Essex ) ( Williams , Essex ) ) ) ) , LS02-4045 ( K1370 ( Delsoy_4210 ( L77-1233 , Douglas ) , Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) ) , LS94-3207 ( Pharaoh ( Forrest , V71-480 ( V63-76 ( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ( PI_30593 , - ) ) , Richland ) ) ) , V66-318 ( D53-184 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , J22 ( L37-1355 ( PI_81041 , - ) , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) ) ) ) ) , Hartwig ) ) )	-	-
+LS09-1527	Syngenta_30257-b02-07197	LS01-3615	( Syngenta_30257-b02-07197 , LS01-3615 ( LS93-0375 ( Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) , Pioneer_P9402 ) , Mustang ) )	-	-
+LS09-1803	LD00-1938	LS02-2213	( LD00-1938 ( Pana , Savoy ) , LS02-2213 )	-	-
+LS09-2342	Syngenta_98620-b1-51163	LS01-1734	( Syngenta_98620-b1-51163 , LS01-1734 ( LS93-0375 ( Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) , Pioneer_P9402 ) , IA3005 ) )	-	-
+LS09-2655	Syngenta_98620-b1-51163	LS02-0425	( Syngenta_98620-b1-51163 , LS02-0425 )	-	-
+LS09-2659	Syngenta_98620-b1-51163	LS02-0425	( Syngenta_98620-b1-51163 , LS02-0425 )	-	-
+LS09-5806	LS00-4221	LS02-2213	( LS00-4221 ( LS92-3660 ( Resnik , Asgrow_A5474 ) , Asgrow_A4138 ) , LS02-2213 )	-	-
+LS09-8104	LS00-1755	LS01-1158	( LS00-1755 ( K1307 ( K1133 ( V75-345 ( Essex , Shore ) , S76-2120 ( D67-3297 , Essex ) ) , R85-3309 ) , LS92-4357 ( Ripley , Asgrow_A5474 ) ) , LS01-1158 ( LS92-4173 ( Flyer , Pyramid ) , DeKalb_339c ) )	-	-
+LS301	A79-140022	A79-140011	( A79-140022 , A79-140011 )	-	PVP 008800018
+LS77-952	Essex	Clark_63	( Essex , Clark_63 )	-	-
+LS77-952-124-1	L71L-436	J74-5	( L71L-436 , J74-5 )	-	-
+LS78-124-1	L71L-436	J74-5	( L71L-436 , J74-5 )	-	-
+LS78-248	L71L-436	J74-5	( L71L-436 , J74-5 )	-	-
+LS78-N245	L71L-436	574-5	( L71L-436 , 574-5 )	-	-
+LS78-W245	Franklin	J74-5	( Franklin , J74-5 )	-	-
+LS79-1914	Franklin	J74-5	( Franklin , J74-5 )	-	-
+LS79-220	Forrest	V71-480	( Forrest , V71-480 ( V63-76 ( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ( PI_30593 , - ) ) , Richland ) ) ) , V66-318 ( D53-184 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , J22 ( L37-1355 ( PI_81041 , - ) , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) ) ) ) )	-	-
+LS79-330	Forrest	V71-480	( Forrest , V71-480 ( V63-76 ( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ( PI_30593 , - ) ) , Richland ) ) ) , V66-318 ( D53-184 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , J22 ( L37-1355 ( PI_81041 , - ) , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) ) ) ) )	-	-
+LS79-338	Forrest	V71-480	( Forrest , V71-480 ( V63-76 ( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ( PI_30593 , - ) ) , Richland ) ) ) , V66-318 ( D53-184 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , J22 ( L37-1355 ( PI_81041 , - ) , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) ) ) ) )	-	-
+LS79-503	Forrest	V71-480	( Forrest , V71-480 ( V63-76 ( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ( PI_30593 , - ) ) , Richland ) ) ) , V66-318 ( D53-184 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , J22 ( L37-1355 ( PI_81041 , - ) , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) ) ) ) )	-	-
+LS82-W1206	Forrest	V71-480	( Forrest , V71-480 ( V63-76 ( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ( PI_30593 , - ) ) , Richland ) ) ) , V66-318 ( D53-184 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , J22 ( L37-1355 ( PI_81041 , - ) , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) ) ) ) )	-	-
+LS83-3800	Franklin	J74-5	( Franklin , J74-5 )	-	-
+LS84-0920	LS78-N245	Fayette	( LS78-N245 ( L71L-436 , 574-5 ) , Fayette )	-	-
+LS84-0929	LS78-N245	Fayette	( LS78-N245 ( L71L-436 , 574-5 ) , Fayette )	-	-
+LS84-920	LS78-W245	Fayette	( LS78-W245 ( Franklin , J74-5 ) , Fayette )	-	-
+LS86-1922	Pyramid	LS78-5169	( Pyramid , LS78-5169 )	-	-
+LS87-1922	Fayette	Pyramid	( Fayette , Pyramid )	-	-
+LS88-1517	Pyramid	Douglas	( Pyramid , Douglas )	-	-
+LS89-2820	LS77-952	LS77-952-124-1	( LS77-952 ( Essex , Clark_63 ) , LS77-952-124-1 ( L71L-436 , J74-5 ) )	-	-
+LS90-1920	Essex	Fayette	( Essex , Fayette )	PI 6044100	CV-394
+LS92-0185	Pharaoh	Avery	( Pharaoh ( Forrest , V71-480 ( V63-76 ( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ( PI_30593 , - ) ) , Richland ) ) ) , V66-318 ( D53-184 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , J22 ( L37-1355 ( PI_81041 , - ) , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) ) ) ) ) , Avery )	-	-
+LS92-0964	S82-1443	Asgrow_A5474	( S82-1443 ( Asgrow_A5424 ( Williams , Essex ) , Mack ) , Asgrow_A5474 )	-	-
+LS92-1088	S82-1443	Asgrow_A5474	( S82-1443 ( Asgrow_A5424 ( Williams , Essex ) , Mack ) , Asgrow_A5474 )	-	-
+LS92-1178	Pharaoh	Avery	( Pharaoh ( Forrest , V71-480 ( V63-76 ( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ( PI_30593 , - ) ) , Richland ) ) ) , V66-318 ( D53-184 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , J22 ( L37-1355 ( PI_81041 , - ) , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) ) ) ) ) , Avery )	-	-
+LS92-3660	Resnik	Asgrow_A5474	( Resnik , Asgrow_A5474 )	-	-
+LS92-4173	Flyer	Pyramid	( Flyer , Pyramid )	-	-
+LS92-4357	Ripley	Asgrow_A5474	( Ripley , Asgrow_A5474 )	-	-
+LS93-0232	Asgrow_A3935	Pioneer_P9402	( Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) , Pioneer_P9402 )	-	-
+LS93-0375	Asgrow_A3935	Pioneer_P9402	( Asgrow_A3935 ( M0474C ( Mitchell ( Amsoy , Wayne ) , - ) , Asgrow_A3127 ( Williams , Essex ) ) , Pioneer_P9402 )	PI 620883	CV-436
+LS94-3207	Pharaoh	Hartwig	( Pharaoh ( Forrest , V71-480 ( V63-76 ( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ( PI_30593 , - ) ) , Richland ) ) ) , V66-318 ( D53-184 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , J22 ( L37-1355 ( PI_81041 , - ) , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) ) ) ) ) , Hartwig )	-	-
+LS95-0709	Delta_King_DK469c	L87-1922	( Delta_King_DK469c , L87-1922 )	-	-
+LS95-1454	Asgrow_A5403	LS87-1922	( Asgrow_A5403 , LS87-1922 ( Fayette , Pyramid ) )	-	-
+LS96-0735	Flyer	Asgrow_A4715	( Flyer , Asgrow_A4715 )	-	-
+LS96-1631	LS79-238	Hutcheson	( LS79-238 , Hutcheson )	-	-
+LS97-1610	S90-1435	Manokin	( S90-1435 , Manokin )	-	-
+LS97-3004	Pharaoh	K1191	( Pharaoh ( Forrest , V71-480 ( V63-76 ( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ( PI_30593 , - ) ) , Richland ) ) ) , V66-318 ( D53-184 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , J22 ( L37-1355 ( PI_81041 , - ) , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) ) ) ) ) , K1191 )	-	-
+LS97-3617	Flyer	Asgrow_A4138	( Flyer , Asgrow_A4138 )	-	-
+LS97-3718	Flyer	Asgrow_A4138	( Flyer , Asgrow_A4138 )	-	-
+LS98-0160	Northrup_King_S46-44	Pioneer_P9362	( Northrup_King_S46-44 , Pioneer_P9362 )	-	-
+LS98-0466	LS90-1920	Pioneer_P9394	( LS90-1920 ( Essex , Fayette ) , Pioneer_P9394 )	-	-
+LS98-0484	Pharaoh	Dairyland_Seeds_373	( Pharaoh ( Forrest , V71-480 ( V63-76 ( Hill , D53-354 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) ( S-100 ( Illini ( A.K. , - ) , - ) ( Illini ( A.K. , - ) ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ( Clemson ( PI_71659 , - ) ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) ( Mandarin ( PI_36653 , - ) ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ( PI_30593 , - ) ) , Richland ) ) ) , V66-318 ( D53-184 ( D49-2525 ( S-100 ( Illini ( A.K. , - ) , - ) , C.N.S. ( Clemson ( PI_71659 , - ) , - ) ) , L46-5679 ( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Richland ) ) , J22 ( L37-1355 ( PI_81041 , - ) , Arksoy_2913 ( Arksoy ( PI_35335 , - ) , - ) ) ) ) ) , Dairyland_Seeds_373 )	-	-
+LS98-0582	Northrup_King_S46-44	Asgrow_A4138	( Northrup_King_S46-44 , Asgrow_A4138 )	-	-
+LS98-3032	Northrup_King_S46-44	Pioneer_P9451	( Northrup_King_S46-44 , Pioneer_P9451 )	-	-
+LS98-3645	Northrup_King_S46-44	Manokin	( Northrup_King_S46-44 , Manokin )	-	-
+LS98-3854	LS90-1920	Asgrow_A5112	( LS90-1920 ( Essex , Fayette ) , Asgrow_A5112 )	-	-
+LS98-3966	LS90-1920	Hutcheson	( LS90-1920 ( Essex , Fayette ) , Hutcheson )	-	-
+LS98-9582	Northrup_King_S46-44	Asgrow_A4138	( Northrup_King_S46-44 , Asgrow_A4138 )	-	-
+LS99-3619	LS79-238	KY88-4080	( LS79-238 , KY88-4080 ( K1099 ( K1022 ( Williams , Columbus ) , Essex ) , Hutcheson ) )	-	-
+LS99-3630	LS79-238	KY88-4080	( LS79-238 , KY88-4080 ( K1099 ( K1022 ( Williams , Columbus ) , Essex ) , Hutcheson ) )	-	-
+LW13-2096	LD02-4485	PI_506764	( LD02-4485 ( M90-184111 ( L85P-558 ( L73-4673 ( Corsoy , L66L-154 ( Wayne , L57-0034 ( Clark , Adams ) ) ) , Fayette ) , M86-1973 ( M75-89 ( Corsoy , M68-303 ( M60-406 ( Blackhawk , Harosoy ) , Beeson ) ) , L77-906 ) ) , IA3010 ) , PI_506764 )	-	Conv.
+LW13-4302	LD00-2817	PI_567189A	( LD00-2817 , PI_567189A )	-	Conv.
+LX1061-9-15	Lincoln	Ogden	( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+LX1061-9-9	Lincoln	Ogden	( Lincoln ( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) ) , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+LX579-93	Chief	Dunfield	( Chief , Dunfield ( PI_36846 , - ) )	-	-
+La41-1219	Tanloxi	PI_60406	( Tanloxi , PI_60406 )	-	-
+La48-268	PI_104881	-	( PI_104881 , - )	-	Nanking, Cn
+La48-275	PI_85897	-	( PI_85897 , - )	-	-
+La48-277	PI_85897	-	( PI_85897 , - )	-	-
+La48-300-B	Tanloxi	PI_60406	( Tanloxi , PI_60406 )	-	-
+La49-1-4	Pelican_#2	Ogden	( Pelican_#2 , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+La49-11-6	Pelican_#2	Volstate	( Pelican_#2 , Volstate ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+La49-2-4	Creole	Ogden	( Creole , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+La49-89-6	La40-242	-	( La40-242 , - )	-	Selection from La40-242
+La51-34-5	FC_31592	Acadian	( FC_31592 , Acadian )	-	-
+La51-7-4	Roanoke	FC_31592	( Roanoke , FC_31592 )	-	-
+La53-50-9	Pelican_#2	Ogden	( Pelican_#2 , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+La53-97-1	Pelican_#2	Ogden	( Pelican_#2 , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+La53-99	Pelican_#2	Ogden	( Pelican_#2 , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+La56-13-4	Pelican_#2	Ogden	( Pelican_#2 , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+La56-8-4	Pelican_#2	Ogden	( Pelican_#2 , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+La58-26-2	Ogden	Creole	( Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Creole )	-	-
+La58-54-6	Pelican_#2	Ogden	( Pelican_#2 , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+La59-34-7	Pelican_#2	Ogden	( Pelican_#2 , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+La59-7-21	Pelican_#2	Ogden	( Pelican_#2 , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+La59-72-11	Pelican_#2	Ogden	( Pelican_#2 , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+La60-97-A	Pelican_#2	Ogden	( Pelican_#2 , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+La61-55-3	Pelican_#2	Ogden	( Pelican_#2 , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+La63-15-6	Pelican_#2	Ogden	( Pelican_#2 , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) )	-	-
+La63-72-2	Volstate	Creole	( Volstate ( Tokyo ( PI_8424 , - ) , PI_54610 ) , Creole )	-	-
+La73-1148	Pickett_71	Ransom	( Pickett_71 , Ransom )	-	-
+La74-3850	Forrest	Mack	( Forrest , Mack )	-	-
+LaMoure-1	SD92-1323	M90-370	( SD92-1323 ( Kasota , Kato ) , M90-370 ( M81-27 ( M68-49-26 ( Evans , M59-120 ( M54-240 ( Korean , M42-37 ) , M54-139 ( Renville , Capital ) ) ) , M70-294 ( PI_358323 , M63-217Y ) ) , M83-16 ( A2 , Hodgson_78 ) ) )	-	Selection from LaMoure
+Lan	PI_597397_B	-	( PI_597397_B , - )	-	Selection from PI 597397 B
+Lancer	N59-6800	Coker_Hampton_266	( N59-6800 ( Hill , D52-810 ( Roanoke , Ogden ( Tokyo ( PI_8424 , - ) , PI_54610 ) ) ) , Coker_Hampton_266 )	PI 556504	Novartis Seeds, Inc., PVP 7600044
+Land_O_Lakes_L2333	Land_O_Lakes_Max	Land_O_Lakes_L4404	( Land_O_Lakes_Max , Land_O_Lakes_L4404 )	PI 540451	Land O Lakes, Inc., PVP 9000143
+Land_O_Lakes_L4106	Evans	Ransom	( Evans , Ransom )	PI 556691	Land O Lakes, Inc., PVP 8200136
+Land_O_Lakes_L4204	Amsoy	Wayne	( Amsoy , Wayne )	PI 556693	Land O Lakes, Inc., PVP 8200133
+Land_O_Lakes_L4503	Amsoy_71	Pike	( Amsoy_71 , Pike )	PI 556695	Land O Lakes, Inc., PVP 8000126
+Land_O_Lakes_L4504	Amsoy_71	Pike	( Amsoy_71 , Pike )	PI 556694	Land O Lakes, Inc., PVP 8000127
+Leslie	Hodgson_78	Pella	( Hodgson_78 , Pella )	PI 557011	PVP 9200019
+Lincoln	Mandarin	Manchu	( Mandarin ( PI_36653 , - ) , Manchu ( PI_30593 , - ) )	PI 548362, L36-685 	CV-5
+Linman_533	Manchu	-	( Manchu ( PI_30593 , - ) , - )	-	Selection from Manchu
+Lorain	HS1-3641	HS1-7116	( HS1-3641 ( HS94-9053 ( Pioneer_P9268-03 , Vertex ( Conrad , Hayes ) ) , Kottman ) , HS1-7116 )	HS7W-82	-
+Lyon	D82-2218	Lamar	( D82-2218 ( Bradford , Tracy-M ) , Lamar )	PI 576857	CV-323
