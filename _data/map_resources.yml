@@ -9,7 +9,7 @@ resources:
     description: "Association viewers (QTL, GWAS)"
     name: ZZBrowse
   -
-    URL: "https://soybase.org/gcvit"
+    URL: "/tools/gcvit"
     description: "Genotype comparison visualization tool"
     name: GCViT
   -
