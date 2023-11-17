@@ -53,8 +53,8 @@ liquid:
   # note incompatibility with "default" filter: https://github.com/Shopify/liquid/issues/1404
   strict_variables: true
 
-# Set the GraphQL URI for tools that use it
-graphqluri: https://graphql.lis.ncgr.org/
+# the GraphQL Server URI; LIS by default
+graphql_uri: https://graphql.lis.ncgr.org/
 
 # Build settings
 theme: jekyll-theme-legumeinfo
@@ -68,6 +68,9 @@ plugins:
   # FIXME: jekyll-sitemap doesn't work with liquid.strict_variables: true
   # https://github.com/jekyll/jekyll-sitemap/issues/272
   # - jekyll-sitemap
+
+# LIS Web Components
+web_components_version: 1.1.0
 
 #### jekyll-datapage-generator config
 page_gen:

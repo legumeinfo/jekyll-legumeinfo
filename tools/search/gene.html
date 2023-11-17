@@ -1,44 +1,34 @@
 ---
 layout: search
 title: Gene Search
+web_components: true
 ---
-
-<script type="module" src="/assets/js/web-components/web-components.min.js"></script>
-
-<script type="text/javascript" src="/assets/js/graphql/graphql.js"></script>
-<script type="text/javascript" src="/assets/js/graphql/linkout-function.js"></script>
-<script type="text/javascript" src="/assets/js/graphql/get-gene-form-data.js"></script>
-<script type="text/javascript" src="/assets/js/graphql/get-genes.js"></script>
-
 <!-- the custom gene search element -->
-<lis-gene-search-element id="gene-search"></lis-gene-search-element>
+<lis-gene-search-element id="gene-search" genus="Glycine"></lis-gene-search-element>
 <lis-modal-element modalId="modal">
   <lis-linkout-element id="linkouts"></lis-linkout-element>
 </lis-modal-element>
 
-<!-- set the search function by property because functions can't be set as attributes -->
-<script type="text/javascript">
-  // get the web components elements and set their function properties
+<script type="module">
+  import {getOrganismsFormDataFunction, geneSearchFunctionFactory, allLinkoutsFunction, geneLinkoutsFunction, geneIdentifierModalLinkFactory, locationModalLinkFactory} from "lis-graphql";
   const geneSearchElement = document.getElementById('gene-search');
-          geneSearchElement.formDataFunction = getGeneFormData;
-          geneSearchElement.searchFunction = getGenes;
-          const linkoutElement = document.getElementById('linkouts');
-          linkoutElement.linkoutFunction = linkoutFunction;
-          // wait for the modal slot to load before adding an event listener
-          window.onload = (event) => {
-            const modal = document.getElementById('modal');
-            modal.addEventListener('toggle', (event) => {
-              const [{$el: link}, ...uikitComponents] = event.detail;
-              const {gene, location, start, end} = link.dataset;
-              let type = '';
-              let variables = {};
-              if (gene !== undefined) {
-                type = 'gene';
-                variables = {identifier: gene};
-              } else if (location !== undefined && start !== undefined && end !== undefined) {
-                type = 'location';
-                variables = {identifier: location, start: parseInt(start), end: parseInt(end)};
-              }
-              linkoutElement.getLinkouts({type, variables});
-            });
-          };</script>
+  geneSearchElement.formDataFunction = getOrganismsFormDataFunction;
+  geneSearchElement.searchFunction = geneSearchFunctionFactory(geneIdentifierModalLinkFactory('modal'), locationModalLinkFactory('modal'));
+  const linkoutElement = document.getElementById('linkouts');
+  const modal = document.getElementById('modal');
+  modal.addEventListener('toggle', (event) => {
+    const [{$el: link}, ...uikitComponents] = event.detail;
+    const {identifier, type, start, end} = link.dataset;
+    let linkoutData = {};
+    
+    if( start !== undefined && end !== undefined) {
+      linkoutData = {identifier, start: parseInt(start), end: parseInt(end)};
+    } else {
+      linkoutData = {identifier};
+    }
+
+    linkoutElement.linkoutFunction=allLinkoutsFunction;
+    linkoutElement.getLinkouts({type, linkoutData});
+    
+  });
+</script>
