@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/asperduti/jekyll_file_exists.git
-  revision: 6dac357f02a56cc4ebd611e6d59d632dc866ebfb
-  specs:
-    jekyll_file_exists (0.1.0)
-
 PATH
   remote: _themes/jekyll-theme-legumeinfo
   specs:
@@ -85,7 +79,6 @@ DEPENDENCIES
   jekyll-datapage-generator (~> 1.4.0)
   jekyll-feed (~> 0.12)
   jekyll-theme-legumeinfo!
-  jekyll_file_exists!
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)

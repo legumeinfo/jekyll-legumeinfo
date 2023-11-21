@@ -15,8 +15,6 @@ gem "webrick", "~> 1.7"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  ## handy way to see if an image exists on the site
-  gem 'jekyll_file_exists', :git => 'https://github.com/asperduti/jekyll_file_exists.git'
   ## generates pages based on files under _data
   gem "jekyll-datapage-generator", "~> 1.4.0"
 end
