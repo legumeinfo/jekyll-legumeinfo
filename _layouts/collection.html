@@ -1,0 +1,107 @@
+---
+layout: default
+collections_menu: true
+---
+{% assign genus = page.title %}
+{% assign species_collections = site.data.taxa[genus].species_collections %}
+
+<h1><i>{{ genus }}</i> data collections</h1>
+
+{% for species in species_collections.species %}
+
+<h3><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/"><i>{{genus}} {{ species.name }}</i></a></h3>
+
+{% if species.genomes.size > 0 %}
+<h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/genomes/">Genomes</a></h4>
+<dl>
+  {% for item in species.genomes %}
+  <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/genomes/{{ item.collection }}/">{{ item.collection }}</a></dt>
+  <dd>{{ item.synopsis }}</dd>
+  {% endfor %}
+</dl>
+{% endif %}
+
+{% if species.annotations.size > 0 %}
+<h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/annotations/">Annotations</a></h4>
+<dl>
+  {% for item in species.annotations %}
+  <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/annotations/{{ item.collection }}/">{{ item.collection }}</a></dt>
+  <dd>{{ item.synopsis }}</dd>
+  {% endfor %}
+</dl>
+{% endif %}
+
+{% if species.expression.size > 0 %}
+<h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/expression/">Expression</a></h4>
+<dl>
+  {% for item in species.expression %}
+  <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/expression/{{ item.collection }}/">{{ item.collection }}</a></dt>
+  <dd>{{ item.synopsis }}</dd>
+  {% endfor %}
+</dl>
+{% endif %}
+
+{% if species.gwas.size > 0 %}
+<h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/gwas/">GWAS</a></h4>
+<dl>
+  {% for item in species.gwas %}
+  <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/gwas/{{ item.collection }}/">{{ item.collection }}</a></dt>
+  <dd>{{ item.synopsis }}</dd>
+  {% endfor %}
+</dl>
+{% endif %}
+
+{% if species.qtl.size > 0 %}
+<h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/qtl/">QTL Studies</a></h4>
+<dl>
+  {% for item in species.qtl %}
+  <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/qtl/{{ item.collection }}/">{{ item.collection }}</a></dt>
+  <dd>{{ item.synopsis }}</dd>
+  {% endfor %}
+</dl>
+{% endif %}
+
+{% if species.maps.size > 0 %}
+<h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/maps/">Genetic Maps</a></h4>
+<dl>
+  {% for item in species.maps %}
+  <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/maps/{{ item.collection }}/">{{ item.collection }}</a></dt>
+  <dd>{{ item.synopsis }}</dd>
+  {% endfor %}
+</dl>
+{% endif %}
+
+{% if species.markers.size > 0 %}
+<h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/markers/">Markers</a></h4>
+<dl>
+  {% for item in species.markers %}
+  <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/markers/{{ item.collection }}/">{{ item.collection }}</a></dt>
+  <dd>{{ item.synopsis }}</dd>
+  {% endfor %}
+</dl>
+{% endif %}
+
+{% if species.synteny.size > 0 %}
+<h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/synteny/">Synteny</a></h4>
+<dl>
+  {% for item in species.synteny %}
+  <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/synteny/{{ item.collection }}/">{{ item.collection }}</a></dt>
+  <dd>{{ item.synopsis }}</dd>
+  {% endfor %}
+</dl>
+{% endif %}
+
+{% if species.diversity.size > 0 %}
+<h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/diversity/">Diversity</a></h4>
+<dl>
+  {% for item in species.diversity %}
+  <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species.name }}/diversity/{{ item.collection }}/">{{ item.collection }}</a></dt>
+  <dd>{{ item.synopsis }}</dd>
+  {% endfor %}
+</dl>
+{% endif %}
+
+<hr/>
+
+{% endfor %}
+
