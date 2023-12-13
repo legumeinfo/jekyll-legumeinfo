@@ -155,10 +155,10 @@
   accession: PI_574486
   display_name: PI 574486
   nam_id: NAM64
- #- category: High yield in drought
- #  accession: PI_507681B
- #  display_name: PI 507681B
- #  nam_id: NAM46
+  # - category: High yield in drought
+  #   accession: PI_507681B
+  #   display_name: PI 507681B
+  #   nam_id: NAM46
 - category: Hub parent
   accession: IA3023
   display_name: IA3023
