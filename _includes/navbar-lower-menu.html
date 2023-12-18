@@ -5,7 +5,7 @@
     {% if site.data.taxon_list %}
     {% assign genera = site.data.taxon_list | group_by: "genus"  %}
     <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
-      <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
       {% for genus in genera %}
         {% for organism in genus.items %}
           {% if organism.category == "main" %}
@@ -23,7 +23,7 @@
     {% if site.data.tools %}
     {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
     <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
-      <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
       {% for group in groups %}
         {% for item in group.items %}
           <li><a href="{{ item.url }}">{{ item.name }}</a></li>
