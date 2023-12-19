@@ -16,3 +16,7 @@ resources:
     URL: "https://gcv.soybase.org/instructions"
     description: "Browser for dynamically discovering and viewing genomic synteny across selected species"
     name: "Genome Context Viewer"
+  - 
+    URL: "/tools/browsers"
+    description: "Genome Browsers for soybean and related species"
+    name: "Genome Browsers"
