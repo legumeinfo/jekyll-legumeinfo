@@ -41,7 +41,7 @@ lang: en
 host: 0.0.0.0
 
 # our Google Analytics ID. XX CHANGE THIS for SoyBase
-google_analytics: "UA-49655154-1"
+google_analytics_id: "UA-49655154-1"
 
 # Set the SoyBase/LIS Datastore base URL here
 datastoreurl: https://data.legumeinfo.org
@@ -51,7 +51,10 @@ liquid:
   error_mode: strict
   strict_filters: true
   # note incompatibility with "default" filter: https://github.com/Shopify/liquid/issues/1404
-  strict_variables: true
+  # strict_variables: true
+
+# https://jekyllrb.com/docs/configuration/options/#build-command-options
+strict_front_matter: true
 
 # the GraphQL Server URI; LIS by default
 graphql_uri: https://graphql.lis.ncgr.org/
@@ -62,7 +65,6 @@ theme: jekyll-theme-legumeinfo
 future: true
 
 plugins:
-  - jekyll-feed
   - jekyll-datapage-generator
   # generate /sitemap.xml
   # FIXME: jekyll-sitemap doesn't work with liquid.strict_variables: true
@@ -130,6 +132,11 @@ defaults:
       path: ""
     values:
       layout: "default"
+  -
+    scope:
+      path: "assets"
+    values:
+      layout: "none"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

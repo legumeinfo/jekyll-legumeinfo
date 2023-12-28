@@ -17,7 +17,7 @@ else # assume dev container
   PYTHON_VENV_ACTIVATE = true # no-op
 endif
 
-JBROWSE_VERSION = 2.6.3
+JBROWSE_VERSION = 2.10.0
 
 serve: mostlyclean setup
 	bundle exec jekyll serve --profile --trace --incremental $(JEKYLL_SERVE_ARGS)
@@ -25,6 +25,8 @@ serve: mostlyclean setup
 check: mostlyclean setup yamllint htmlproofer
 
 yamllint:
+	if ! ( $(PYTHON_VENV_ACTIVATE) ); then python3 -mvenv ./vendor/python-venv; fi
+	$(PYTHON_VENV_ACTIVATE) && pip3 install --no-cache-dir -r requirements.txt
 	$(PYTHON_VENV_ACTIVATE) && yamllint .
 
 htmlproofer:
@@ -33,17 +35,14 @@ htmlproofer:
 
 # JBrowse CLI will already be installed globally if using a dev container
 jbrowse: setup
+	if ! { command -v jbrowse || npm ls @jbrowse/cli ; } >/dev/null 2>&1; then npm install $(NPM_INSTALL_OPTIONS) @jbrowse/cli@${JBROWSE_VERSION}; fi
+	if ! [ -d ./assets/js/jbrowse ]; then npx jbrowse create assets/js/jbrowse --tag=v${JBROWSE_VERSION}; fi
 	rm -f assets/js/jbrowse/config.json
 	npm exec -c '_scripts/jbrowse-tracks.sh'
 
 setup:
-	git submodule update --init --recursive
+	git submodule status | grep -q '^-' && git submodule update --init --recursive || true
 	if ! bundle check; then bundle install; fi
-	if ! { command -v jbrowse || npm ls @jbrowse/cli ; } >/dev/null 2>&1; then npm install $(NPM_INSTALL_OPTIONS) @jbrowse/cli@${JBROWSE_VERSION}; fi
-	if ! npm exec -c 'command -v jq' >/dev/null 2>&1; then curl -Lo ./node_modules/.bin/jq https://github.com/jqlang/jq/releases/download/jq-1.6/jq-osx-amd64 && chmod +x ./node_modules/.bin/jq; fi
-	if ! [ -d ./assets/js/jbrowse ]; then npx jbrowse create assets/js/jbrowse --tag=v${JBROWSE_VERSION}; fi
-	if ! ( $(PYTHON_VENV_ACTIVATE) ); then python3 -mvenv ./vendor/python-venv; fi
-	$(PYTHON_VENV_ACTIVATE) && pip3 install --no-cache-dir -r requirements.txt
 
 mostlyclean:
 	rm -rf .jekyll-cache/ .jekyll-metadata _site/ tmp/

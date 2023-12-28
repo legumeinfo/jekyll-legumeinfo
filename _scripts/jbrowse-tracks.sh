@@ -35,10 +35,11 @@ do
       --refNameAliases="${refNameAliases}"
 
     # https://github.com/GMOD/jbrowse-components/discussions/3570
-    jq --arg name "${identifier%.*}" \
-       --arg uri "${datastore_dir_url}/${readme##*/}" \
-       '(.assemblies[] | select(.name == $name).sequence.adapter.metadataLocation)={uri: $uri, locationType: "UriLocation"}' < config.json > config.json.jq
-    mv config.json.jq config.json
+    node -e '
+    let j = JSON.parse(fs.readFileSync("config.json"), {encoding: "utf-8"})
+    j.assemblies.find((assembly) => assembly.name == process.argv[1]).sequence.adapter.metadataLocation = {"uri": process.argv[2], "locationType": "UriLocation"}
+    fs.writeFileSync("config.json", JSON.stringify(j))' \
+    "${identifier%.*}" "${datastore_dir_url}/${readme##*/}"
   )
 done
 
@@ -73,7 +74,10 @@ done
 
 # Specify JSON until @jbrowse/cli has native support for MultiQuantitativeTrack
 # https://github.com/GMOD/jbrowse-components/issues/3430
-echo '{
+jbrowse add-track-json \
+  --out=assets/js/jbrowse \
+  /dev/stdin <<'END'
+{
   "type": "MultiQuantitativeTrack",
   "trackId": "soybean_gene_expression_atlas_severin_et_al",
   "name": "MultiWig",
@@ -99,10 +103,8 @@ echo '{
     ]
   },
   "description": "Transcript density of Glycine max tissues mapped onto the Glyma.Wm82.a2 assembly."
-}' |
-  jbrowse add-track-json \
-    --out=assets/js/jbrowse \
-    /dev/stdin
+}
+END
 
 # FIXME: too big & slow to generate for testing
 # https://github.com/GMOD/jbrowse-components/issues/3019
