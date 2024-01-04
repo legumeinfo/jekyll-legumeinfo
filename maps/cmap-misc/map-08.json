@@ -88,7 +88,87 @@
     },
       {
         "source" : "gm_gwas",
-        "map" : "A2"
+        "map" : "A2",
+        "tracks" : [
+          {
+             "type" : "qtl",
+             "title": "QTL_inorganic",
+             "type_acc": "QTL_inorganic",
+             "filters":["QTL_inorganic"],
+             "default_rank":2,
+             "drawing_lane":3,
+             "drawing_priority":1,
+             "fillColor": ["black"],
+             "shape": ["dumbbell"],
+             "position":-1
+           }, {
+             "type" : "qtl",
+             "title": "QTL_leaf-stem",
+             "type_acc": "QTL_leaf-stem",
+             "filters":["QTL_leaf-stem"],
+             "default_rank":2,
+             "drawing_lane":4,
+             "drawing_priority":1,
+             "fillColor": ["mediumseagreen"],
+             "shape": ["dumbbell"],
+             "position":-1
+           }, {
+             "type" : "qtl",
+             "title": "QTL_misc",
+             "type_acc": "QTL_misc",
+             "filters":["QTL_misc"],
+             "default_rank":2,
+             "drawing_lane":5,
+             "drawing_priority":1,
+             "fillColor": ["blueviolet"],
+             "shape": ["dumbbell"],
+             "position":-1
+           }, {
+             "type" : "qtl",
+             "title": "QTL_reprod-period",
+             "type_acc": "QTL_reprod-period",
+             "filters":["QTL_reprod-period"],
+             "default_rank":2,
+             "drawing_lane":2,
+             "drawing_priority":1,
+             "fillColor": ["red"],
+             "shape": ["dumbbell"],
+             "position":-1
+           }, {
+             "type" : "qtl",
+             "title": "QTL_root",
+             "type_acc": "QTL_root",
+             "filters":["QTL_root"],
+             "default_rank":2,
+             "drawing_lane":4,
+             "drawing_priority":1,
+             "fillColor": ["purple"],
+             "shape": ["dumbbell"],
+             "position":-1
+           }, {
+             "type" : "qtl",
+             "title": "QTL_whole-plant",
+             "type_acc": "QTL_whole-plant",
+             "filters":["QTL_whole-plant"],
+             "default_rank":2,
+             "drawing_lane":4,
+             "drawing_priority":1,
+             "fillColor": ["indigo"],
+             "shape": ["dumbbell"],
+             "position":-1
+           }, {
+             "type" : "qtl",
+             "title": "QTL_yield",
+             "type_acc": "QTL_yield",
+             "filters":["QTL_yield"],
+             "default_rank":2,
+             "drawing_lane":2,
+             "drawing_priority":1,
+             "fillColor": ["blue"],
+             "shape": ["dumbbell"],
+             "position":-1
+           }
+         ]
       }
   ],
   "sources" : [ {

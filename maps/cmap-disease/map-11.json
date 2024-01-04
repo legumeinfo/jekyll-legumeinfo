@@ -55,7 +55,54 @@
     },
     {
       "source" : "gm_gwas",
-      "map" : "B1"
+      "map" : "B1",
+      "tracks" : [
+        {
+          "type" : "qtl",
+          "title": "QTL_insect",
+          "type_acc": "QTL_insect",
+          "filters":["QTL_insect"],
+          "default_rank":2,
+          "drawing_lane":3,
+          "drawing_priority":1,
+          "fillColor": ["orangered"],
+          "shape": ["dumbbell"],
+          "position":-1
+        }, {
+          "type" : "qtl",
+          "title": "QTL_nematode",
+          "type_acc": "QTL_nematode",
+          "filters":["QTL_nematode"],
+          "default_rank":2,
+          "drawing_lane":3,
+          "drawing_priority":1,
+          "fillColor": ["fuschia"],
+          "shape": ["dumbbell"],
+          "position":-1
+        }, {
+          "type" : "qtl",
+          "title": "QTL_viral",
+          "type_acc": "QTL_viral",
+          "filters":["QTL_viral"],
+          "default_rank":2,
+          "drawing_lane":3,
+          "drawing_priority":1,
+          "fillColor": ["darkolivegreen"],
+          "shape": ["dumbbell"],
+          "position":-1
+        }, {
+          "type" : "qtl",
+          "title": "QTL_bacterial",
+          "type_acc": "QTL_bacterial",
+          "filters":["QTL_bacterial"],
+          "default_rank":2,
+          "drawing_lane":3,
+          "drawing_priority":1,
+          "fillColor": ["green"],
+          "shape": ["dumbbell"],
+          "position":-1
+          }
+        ]
         
     }
   ],
