@@ -16,7 +16,7 @@ group :jekyll_plugins do
   gem "jekyll-datapage-generator", "~> 1.4.0"
   # FIXME: jekyll-sitemap doesn't work with liquid.strict_variables: true
   # https://github.com/jekyll/jekyll-sitemap/issues/272
-# gem "jekyll-sitemap"
+  gem "jekyll-sitemap", "~> 1.4.0"
 end
 
 group :test do

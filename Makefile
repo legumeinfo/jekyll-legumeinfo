@@ -18,11 +18,12 @@ else # assume dev container
 endif
 
 JBROWSE_VERSION = 2.10.0
+PA11YCI_VERSION = 3.1.X
 
 serve: mostlyclean setup
 	bundle exec jekyll serve --profile --trace --incremental $(JEKYLL_SERVE_ARGS)
 
-check: mostlyclean setup yamllint htmlproofer
+check: mostlyclean setup yamllint htmlproofer pa11y
 
 yamllint:
 	if ! ( $(PYTHON_VENV_ACTIVATE) ); then python3 -mvenv ./vendor/python-venv; fi
@@ -32,6 +33,12 @@ yamllint:
 htmlproofer:
 	bundle exec jekyll build --profile --trace
 	bundle exec htmlproofer $(HTMLPROOFER_ARGS) --ignore-status-codes 503 --ignore-files '/\/uikit\/tests\//' --log-level debug ./_site
+
+pa11y: setup
+	if ! { command -v pa11y-ci || npm ls pa11y-ci ; } >/dev/null 2>&1; then npm install $(NPM_INSTALL_OPTIONS) pa11y-ci@${PA11YCI_VERSION}; fi
+	bundle exec jekyll serve --quiet --detach >/dev/null 2>&1
+	npx pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude '/cmap-*'; pkill jekyll
+	
 
 # JBrowse CLI will already be installed globally if using a dev container
 jbrowse: setup

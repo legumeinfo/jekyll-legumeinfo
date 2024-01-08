@@ -54,7 +54,7 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
-      - run: bundle exec jekyll build --profile --trace --baseurl "${{ steps.pages.outputs.base_path }}" # defaults output to '/_site'
+      - run: bundle exec jekyll build --profile --trace # --baseurl "${{ steps.pages.outputs.base_path }}" # sub-uri currently not supported by site
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -108,6 +108,23 @@ jobs:
         with:
           path: tmp/.htmlproofer
           key: ${{ runner.os }}-html-proofer
+
+  pa11y:
+    # https://github.com/GSA/notifications-admin/pull/475
+    runs-on: ubuntu-20.04
+    needs: build
+    steps:
+      # need repository for .pa11yci
+      - uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+      - run: tar -xf artifact.tar && rm artifact.tar
+      - run: npm install -g pa11y-ci@3.X http-server
+      - run: http-server . -c-1 -p 4000 &
+      # FIXME: patty-ci concurrency > 1 results in errors in this GA workflow
+      - run: |
+          printf '{"defaults": {"runners": ["axe"]}}\n' > .pa11yci
+      - run: pa11y-ci --sitemap http://0.0.0.0:4000/sitemap.xml --sitemap-exclude '/cmap-*' --sitemap-find '^/' --sitemap-replace http://0.0.0.0:4000/
 
   # Deployment job
   deploy:

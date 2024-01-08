@@ -66,10 +66,10 @@ future: true
 
 plugins:
   - jekyll-datapage-generator
-  # generate /sitemap.xml
+  # generate /sitemap.xml (needed for pa11y)
   # FIXME: jekyll-sitemap doesn't work with liquid.strict_variables: true
   # https://github.com/jekyll/jekyll-sitemap/issues/272
-  # - jekyll-sitemap
+  - jekyll-sitemap
 
 # LIS Web Components
 web_components_version: 1.3.0

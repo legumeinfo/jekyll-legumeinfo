@@ -39,7 +39,8 @@ make jbrowse # (optional) install JBrowse dependencies if needed
              # & run _scripts/jbrowse-tracks.sh to generate JBrowse config.json
 make         # install dependencies if needed & start jekyll server listening on localhost:4000
 ... CTRL-C ...
-make check   # build site & check for broken links
+make check   # build site & check for broken links, accessibility issues, and YAML lint errors
+             # or "make htmlproofer", "make pa11y", and "make yamllint" separately
 
 # make clean : remove everything installed/created by `make jbrowse` and `make`
 ```
