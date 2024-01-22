@@ -29,6 +29,9 @@ species:
     description: Geographic information system viewer, showing collection locations
       for Arachis data held by the U.S. National Plant Germplasm System.
     name: Germplasm GIS
+  - URL: https://data.legumeinfo.org/Arachis/hypogaea/
+    description: DataStore dir for Arachis hypogaea.
+    name: Dowload at DS
   species: hypogaea
   strains:
   - accession: CV-93, PI 644011
@@ -39,10 +42,19 @@ species:
     name: Tifrunner
     origin: Southeastern United States
     resources:
-    - URL: /assets/js/jbrowse/?assembly=Tifrunner.gnm1.KYV3&tracks=Tifrunner.gnm2.ann1.4K0L&loc=arahy.Tifrunner.chr01:1-1000000
+    - URL: https://legacy.peanutbase.org/gbrowse_peanut1.0
+      description: GBrowse for Tifrunner assembly 1.0
+      name: Peanutbase Genome Browser (GBrowse)
+    - URL: https://legacy.peanutbase.org/genomes/jbrowse?data=arahy.Tifrunner.gnm1
       description: JBrowse for Tifrunner assembly 1.0
       name: Peanutbase Genome Browser (JBrowse)
-    - URL: https://sequenceserver.legumeinfo.org/
+    - URL: https://legacy.peanutbase.org/gb2/gbrowse/arahy.Tifrunner.gnm2/
+      description: GBrowse for Tifrunner assembly 2.0
+      name: PeanutBase Genome Browser (GBrowse)
+    - URL: https://www.ncbi.nlm.nih.gov/nuccore/PIVG00000000
+      description: Tifrunner gnm2.ann2 (assembly 2.0 annotation 2.0) at NCBI
+      name: NCBI Tifrunner assembly 2.0
+    - URL: https://www.peanutbase.org/tools/sequenceserver/
       description: SequenceServer BLAST against the Tifrunner v2 assembly
       name: LIS SequenceServer
   - accession: GH00910
@@ -87,6 +99,10 @@ species:
     by domestication in South America from where it appeared in most part of the world
     by 1600. Arachis duranensis is described further in Bertioli et al., 2016 (doi:10.1038/ng.3517)'
   genus: Arachis
+  resources:
+  - URL: https://data.legumeinfo.org/Arachis/duranensis/
+    description: DataStore dir for Arachis duranensis.
+    name: Dowload at DS
   species: duranensis
   strains:
   - accession: V14167
@@ -99,6 +115,16 @@ species:
     identifier: V14167
     name: V14167
     origin: Argentina, via USDA National Plant Germplasm Repository
+    resources:
+    - URL: https://legacy.peanutbase.org/gb2/gbrowse/Aradu1.0
+      description: GBrowse for V14167 assembly 1.0
+      name: Peanutbase Genome Browser (GBrowse)
+    - URL: https://legacy.peanutbase.org/genomes/jbrowse?data=Aradu1.0
+      description: JBrowse for V14167 assembly 1.0
+      name: Peanutbase Genome Browser (JBrowse)
+    - URL: http://www.ncbi.nlm.nih.gov/assembly/GCA_000817695.1/
+      description: Genome assembly at NCBI, V14167
+      name: Genome assembly at NCBI
   taxid: 130453
 - abbrev: araip
   commonName: diploid wild peanut - B genome
@@ -113,6 +139,10 @@ species:
     ultimate goal: the complete genomic sequence for cultivated peanut. Arachis ipaensis
     is described further in Bertioli et al., 2016 (doi:10.1038/ng.3517)'
   genus: Arachis
+  resources:
+  - URL: https://data.legumeinfo.org/Arachis/ipaensis/
+    description: DataStore dir for Arachis ipaensis.
+    name: Dowload at DS
   species: ipaensis
   strains:
   - accession: K30076
@@ -123,6 +153,16 @@ species:
     identifier: K30076
     name: K30076
     origin: Southern Bolivia
+    resources:
+    - URL: https://legacy.peanutbase.org/gb2/gbrowse/Araip1.0
+      description: GBrowse for K30076 assembly 1.0
+      name: Peanutbase Genome Browser (GBrowse)
+    - URL: https://legacy.peanutbase.org/genomes/jbrowse?data=Araip1.0
+      description: JBrowse for K30076 assembly 1.0
+      name: Peanutbase Genome Browser (JBrowse)
+    - URL: http://www.ncbi.nlm.nih.gov/assembly/GCA_000816755.1/
+      description: Genome assembly at NCBI, K30076
+      name: Genome assembly at NCBI
   taxid: 130454
 - abbrev: araca
   commonName: Mani silvestre (wild peanut)
@@ -133,6 +173,10 @@ species:
     to A. duranensis, which contributed one of the two subgenomes to tetraploid cultivated
     peanut.
   genus: Arachis
+  resources:
+  - URL: https://data.legumeinfo.org/Arachis/cardenasii/
+    description: DataStore dir for Arachis cardenasii.
+    name: Dowload at DS
   species: cardenasii
   strains:
   - accession: PI 262141
@@ -152,6 +196,10 @@ species:
     is diploid species in the A-genome group of Arachis, which has similarity to the
     A genome of tetraploid cultivated peanut (A. hypogaea).
   genus: Arachis
+  resources:
+  - URL: https://data.legumeinfo.org/Arachis/stenosperma/
+    description: DataStore dir for Arachis stenosperma.
+    name: Dowload at DS
   species: stenosperma
   strains:
   - accession: PI 666100

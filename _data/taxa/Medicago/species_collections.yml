@@ -59,6 +59,8 @@ species:
       synopsis: "Genome assembly for Medicago truncatula (HM058)"
     - collection: HM060.gnm1.V7B2
       synopsis: "Genome assembly for Medicago truncatula (HM060)"
+    - collection: HM078.gnm1.Q3TM
+      synopsis: "Genome assembly for Medicago truncatula (HM078)"
     - collection: HM095.gnm1.FBQK
       synopsis: "Genome assembly for Medicago truncatula (HM095)"
     - collection: HM125.gnm1.GFN2
@@ -96,6 +98,8 @@ species:
       synopsis: "Genome annotation for Medicago truncatula (HM058)."
     - collection: HM060.gnm1.ann1.H41P
       synopsis: "Genome annotation for Medicago truncatula (HM060)"
+    - collection: HM078.gnm1.ann1.3RNP
+      synopsis: "Genome annotation for Medicago truncatula (HM078)."
     - collection: HM095.gnm1.ann1.55W4
       synopsis: "Genome annotation for Medicago truncatula (HM095)"
     - collection: HM125.gnm1.ann1.KY5W

@@ -1,9 +1,3 @@
 ---
 species:
 - name: fasciculata
-  genomes:
-    - collection: MN87.gnm1.JXFN
-      synopsis: "Draft genome assembly for Chamaecrista fasciculata"
-  annotations:
-    - collection: MN87.gnm1.ann1.LWFM
-      synopsis: "Draft genome assembly for Chamaecrista fasciculata"

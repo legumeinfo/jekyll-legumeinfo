@@ -28,3 +28,31 @@ species:
     name: Milvus B
     origin: Swiss Federal Research Station of Reckenholz
   taxid: 57577
+- abbrev: trisu
+  commonName: Subterranean clover
+  description: Trifolium subterraneum, the subterranean clover, is a species of clover
+    native to Europe, Southwest Asia, Northwest Africa and Macaronesia. The plant's
+    name comes from its underground seed development (geocarpy), a characteristic
+    not possessed by other clovers. It can thrive in poor-quality soil where other
+    clovers cannot survive, and is grown commercially for animal fodder. There are
+    three distinct subspecies used in agriculture, each with its own ideal climate
+    and soil type, allowing for wide distribution of the plant over varied environments.
+  genus: Trifolium
+  resources:
+  - URL: https://sequenceserver.legumeinfo.org/
+    description: SequenceServer BLAST against Trifolium subterraneum Daliak v2
+    name: LIS SequenceServer
+  species: subterraneum
+  strains:
+  - accession: Daliak
+    description: Daliak is a semi-erect, plain-leafed variety that produces well,
+      and seeds prolifically throughout the sub clover belt of Australia. Due to its
+      mid-season maturity it is more productive than the early-maturing Northam, Nungarin
+      or Dalkeith, but less productive than later maturing varieties. Daliak is resistant
+      to the eastern Australian strain of clover scorch and is tolerant of the sub
+      clover root disease complex, but it is more susceptible than other varieties
+      to attack by bluegreen aphid.
+    identifier: Daliak
+    name: Daliak
+    origin: Australia
+  taxid: 3900

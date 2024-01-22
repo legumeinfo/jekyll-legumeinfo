@@ -115,6 +115,13 @@ species:
     identifier: LaborOvalle
     name: Labor Ovalle
     origin: Institute of Agricultural Science and Technology (ICTA)
+  - accession: OACRex
+    description: OAC Rex is a white-seeded, high-yielding cultivar intended for production
+      in Canada, and is the first common bean cultivar resistant to common bacterial
+      blight.
+    identifier: OACRex
+    name: OAC Rex
+    origin: Department of Plant Agriculture, University of Guelph, Guelph, Ontario.
   - accession: PI 608674
     description: 5-593 has been used by Dr. Mark Bassett at the University of Florida
       as the recipient parent to introgress many genes for seed coat color and pattern,

@@ -22,6 +22,8 @@ species:
       synopsis: "Genome assembly files for cultivar Huaxia3 (Huaxia3_IGA1007 in publication; WHFS_GmHX3_1.0 in the GenBank assembly record), Chu et al. (2021)"
     - collection: Hwangkeum.gnm1.4S83
       synopsis: "Glycine max genotype Hwangkeum genome assembly v1.0"
+    - collection: JD17.gnm1.TW7L
+      synopsis: "Glycine max accession Jidou 17 (JD17), genome assembly 1"
     - collection: JiDouNo_17.gnm1.MRYM
       synopsis: "Genome assembly for Glycine max accession JiDouNo_17 (SoyC11) from Liu, Du et al. 2020."
     - collection: JinDouNo_23.gnm1.GBYD
@@ -36,6 +38,8 @@ species:
       synopsis: "Genome assembly"
     - collection: Lee.gnm2.K7BV
       synopsis: "Glycine max genotype Lee genome assembly v2.0"
+    - collection: Lee.gnm3.VG1C
+      synopsis: "Glycine max accession Lee, genome assembly 3"
     - collection: PI_398296.gnm1.D07C
       synopsis: "Genome assembly for Glycine max accession PI_398296 (SoyL05) from Liu, Du et al. 2020."
     - collection: PI_548362.gnm1.V9S7
@@ -60,10 +64,14 @@ species:
       synopsis: "Glycine max accession Williams 82 genome assembly v2.0"
     - collection: Wm82.gnm4.4PTR
       synopsis: "Glycine max accession Williams 82 genome assembly v4.0"
+    - collection: Wm82.gnm5.NRKG
+      synopsis: "Glycine max accession Williams 82 (Wm82), genome assembly 5"
     - collection: Wm82_IGA1008.gnm1.5CQQ
       synopsis: "Genome assembly files for cultivar Williams 82 (Wm82_IGA1008 in publication; WHFS_GmW82_1.0 in the GenBank assembly record), Chu et al. (2021)"
     - collection: Wm82_ISU01.gnm2.JFPQ
       synopsis: "Glycine max accession Williams 82 ISU01, genome assembly v2"
+    - collection: Wm82_NJAU.gnm1.N4GV
+      synopsis: "Glycine max accession Williams 82 from Nanjing Agricultural University (Wm82-NJAU), genome assebly v1"
     - collection: XuDouNo_1.gnm1.0GWH
       synopsis: "Genome assembly for Glycine max accession XuDouNo_1 (SoyC01) from Liu, Du et al. 2020."
     - collection: YuDouNo_22.gnm1.T2VD
@@ -103,6 +111,8 @@ species:
       synopsis: "Genome annotation files for cultivar Huaxia3, Chu et al. (2021)"
     - collection: Hwangkeum.gnm1.ann1.1G4F
       synopsis: "Genome annotation files for Glycine max genotype Hwangkeum, Kim et al. (2021)"
+    - collection: JD17.gnm1.ann1.CLFP
+      synopsis: "Annotation 1 for Glycine max accession Jidou 17 (JD17), genome assembly 1"
     - collection: JiDouNo_17.gnm1.ann1.X5PX
       synopsis: "Gene annotations for Glycine max accession JiDouNo_17 (SoyC11) from Liu, Du et al. 2020."
     - collection: JinDouNo_23.gnm1.ann1.SGJW
@@ -117,6 +127,8 @@ species:
       synopsis: "Glycine max accession Lee genome annotation files; JGI annotation version 1 on assembly version 1"
     - collection: Lee.gnm2.ann1.1FNT
       synopsis: "genome annotation of Glycine max Lee"
+    - collection: Lee.gnm3.ann1.ZYY3
+      synopsis: "Annotation 1 for Glycine max accession Lee, genome assembly 3"
     - collection: PI_398296.gnm1.ann1.B0XR
       synopsis: "Gene annotations for Glycine max accession PI_398296 (SoyL05) from Liu, Du et al. 2020."
     - collection: PI_548362.gnm1.ann1.LL84
@@ -141,10 +153,14 @@ species:
       synopsis: "Glycine max accession Williams genome annotation files; JGI annotation version 1 on assembly 2"
     - collection: Wm82.gnm4.ann1.T8TQ
       synopsis: "Glycine max accession Williams genome annotation files; JGI annotation version 1 on assembly 4"
+    - collection: Wm82.gnm5.ann1.J7HW
+      synopsis: "Annotation 1 for Glycine max accession Williams 82 (Wm82), genome assembly 5"
     - collection: Wm82_IGA1008.gnm1.ann1.FGN6
       synopsis: "Genome annotation files for cultivar William 82, Chu et al. (2021)"
     - collection: Wm82_ISU01.gnm2.ann1.FGFB
       synopsis: "Annotation 1 for Glycine max accession Williams 82 ISU01, genome assembly v2"
+    - collection: Wm82_NJAU.gnm1.ann1.KM71
+      synopsis: "Annotation 1 for Glycine max accession Williams 82 from Nanjing Agricultural University (Wm82-NJAU), genome assembly v1"
     - collection: XuDouNo_1.gnm1.ann1.G2T7
       synopsis: "Gene annotations for Glycine max accession XuDouNo_1 (SoyC01) from Liu, Du et al. 2020."
     - collection: YuDouNo_22.gnm1.ann1.HCQ1
@@ -206,6 +222,8 @@ species:
       synopsis: "Variant information for 1,556 resequenced soybean accessions Glycine max and Glycine soja, provided by Yong-Qiang (Charles) An and Rick Meyers, relative to Wm82 assembly 2."
     - collection: Wm82.gnm2.div.dosSantos_Valliyodan_2016
       synopsis: "VCF and HapMap file containing genotype information for 28 Brazilian soybean accessions."
+    - collection: Wm82.gnm4.div.Song_Hyten_2015
+      synopsis: "VCF and HapMap files containing genotype information of the whole U.S. soybean germplasm collection using the SoySNP50K BeadChip."
   expression:
     - collection: Wm82.gnm2.ann1.expr.Wm82.Libault_Farmer_2010
       synopsis: "Soybean gene expression atlas from 14 conditions (Libault et al., 2010)."
