@@ -18,9 +18,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-## not sure what this is for
-# exclude_paths: ["news/index.html", "announcements/index.html"]
-
 title: "LIS: Legume Information System"
 subtitle: Information about legume traits for crop improvement
 logo: /assets/img/logo.png
@@ -38,7 +35,7 @@ github_username: legumeinfo
 host: 0.0.0.0
 
 # our Google Analytics ID
-google_analytics: "UA-49655154-1"
+google_analytics_id: "UA-49655154-1"
 
 # Set the LIS Datastore base URL here
 datastoreurl: https://data.legumeinfo.org
@@ -47,7 +44,7 @@ datastoreurl: https://data.legumeinfo.org
 graphqluri: https://graphql.lis.ncgr.org/
 
 # Build settings
-#theme: jekyll-theme-legumeinfo
+theme: jekyll-theme-legumeinfo
 plugins:
   - jekyll-feed
   - jekyll-datapage-generator
@@ -73,6 +70,14 @@ future: true
 # the default number of items shown in card widgets
 card_item_limit: 3
 
+# blog on home page with 3-card draw
+blog_card: true
+blog_card_item_limit: 3
+
+# news on home page with 3-card draw
+news_card: true
+news_card_item_limit: 3
+
 # SASS compilation
 sass:
     sass_dir: _sass
@@ -93,12 +98,6 @@ defaults:
       path: ""
     values:
       layout: "default"
-  -
-    scope:
-      path: "announcements/"
-      type: "posts"
-    values:
-      layout: "announcement-item"
   -
     scope:
       path: "blog/"

@@ -28,6 +28,9 @@ species:
       synopsis: "Diversity data for the U.S. peanut core collection, genotyped relative to the diploid A. duranensis and A. ipaensis genome assemblies."
     - collection: aradu1_araip1.gnm1.div.Otyama_Wilkey_2019
       synopsis: "Genotype data for US Peanut Mini Core collection."
+  expression:
+    - collection: Tifrunner.gnm2.ann2.expr.Tifrunner.Clevenger_2016
+      synopsis: "A Developmental Transcriptome Map for Allotetraploid Arachis hypogaea"
   gwas:
     - collection: NAMFlor7.gwas.Gangurde_Wang_2020
       synopsis: "Gangurde, Wang, et al. (2020) GWAS study of pod and seed weight on the NAM Florida-7 mapping population"
@@ -125,3 +128,6 @@ species:
   genomes:
     - collection: V10309.gnm1.PFL2
       synopsis: "Genome assembly 1 for Arachis stenosperma, accession V10309"
+  annotations:
+    - collection: V10309.gnm1.ann1.CZRZ
+      synopsis: "GenBank RefSeq annotation for Genome assembly 1 for Arachis stenosperma, genotype V10309"

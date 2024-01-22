@@ -23,6 +23,9 @@ resources:
 - URL: https://soybase.org/grindata/
   description: Tool to facilitate searches of GRIN Descriptor Data
   name: Grin Data Explorer
+- URL: /projects/zhuang_wang_2022
+  description: SoyMap II project to sequence perennial relatives of soybean.
+  name: SoyMapII project
 species:
 - max
 - soja

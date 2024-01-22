@@ -84,6 +84,14 @@ species:
     identifier: Hwangkeum
     name: Hwangkeum
     origin: South Korea
+  - accession: GCA_021733175.1
+    accession_group: Reference - Jidou 17
+    description: Jidou 17 is an Chinese elite cultivar, widely grown in central China
+      (in maturity group III). This variety is recognized for high yields and tolerance
+      for high planting densities.
+    identifier: JD17
+    name: Jidou 17
+    origin: China
   - accession: IGA1002
     accession_group: Chu, Peng et al., 2021
     description: Glycine max Hefeng 25 (IGA1002) was sequenced and annotated by Chu,
@@ -296,6 +304,12 @@ species:
     identifier: ZiHuaNo_4
     name: Zi Hua No.4
     origin: China, Hei Long Jiang
+  - accession: Wm82_NJAU
+    accession_group: null
+    description: Williams 82 sequenced for T2T assembly of Wang, Zhang et al. 2023
+    identifier: Wm82_NJAU
+    name: Williams 82 Nanjing Agricultural University
+    origin: Nanjing Agricultural University
   taxid: 3847
 - abbrev: glyso
   commonName: wild soybean
@@ -382,12 +396,17 @@ species:
     2011 ; Gonzalez-Orozco et al., 2012).
   genus: Glycine
   resources:
+  - URL: /projects/zhuang_wang_2022
+    description: SoyMap II project to sequence perennial relatives of soybean.
+    name: SoyMap II project
   - URL: https://soybase.org/gb2/gbrowse/gmax1.01/?label=diversity_cyrtoloba_BES_alignments_relaxed_filtering
-    description: GBrowse for G. cyrtoloba Bac End Sequence alignments on Gmax1.01
-    name: SoyMap2 Diversity Browser on Gmax1.01
+    description: GBrowse for G. cyrtoloba Bac End Sequence alignments on Glyma.Wm82.a1
+      (Gmax1.01)
+    name: SoyMap2 Diversity Browser on Glyma.Wm82.a1 (Gmax1.01)
   - URL: https://soybase.org/gb2/gbrowse/gmax2.0/?label=diversity_cyrtoloba_bes_alignments_relaxed_filtering
-    description: GBrowse for G. cyrtoloba Bac End Sequence alignments on Gmax2.0
-    name: SoyMap2 Diversity Browser on Gmax2.0
+    description: GBrowse for G. cyrtoloba Bac End Sequence alignments on Glyma.Wm82.a2
+      (Gmax2.0)
+    name: SoyMap2 Diversity Browser on Glyma.Wm82.a2 (Gmax2.0)
   species: cyrtoloba
   strains:
   - accession: G1267
@@ -412,11 +431,16 @@ species:
   genus: Glycine
   resources:
   - URL: https://soybase.org/gb2/gbrowse/gmax1.01/?label=diversity_dolichocarpa_alignments_relaxed_filtering
-    description: GBrowse for G. dolichocarpa Bac End Sequence alignments on Gmax1.01
-    name: SoyMap2 Diversity Browser on Gmax1.01
+    description: GBrowse for G. dolichocarpa Bac End Sequence alignments on Glyma.Wm82.a1
+      (Gmax1.01)
+    name: SoyMap2 Diversity Browser on Glyma.Wm82.a1 (Gmax1.01)
   - URL: https://soybase.org/gb2/gbrowse/gmax2.0/?label=diversity_dolichocarpa_alignments_relaxed_filtering
-    description: GBrowse for G. dolichocarpa Bac End Sequence alignments on Gmax2.0
-    name: SoyMap2 Diversity Browser on Gmax2.0
+    description: GBrowse for G. dolichocarpa Bac End Sequence alignments on Glyma.Wm82.a2
+      (Gmax2.0)
+    name: SoyMap2 Diversity Browser on Glyma.Wm82.a2 (Gmax2.0)
+  - URL: /projects/zhuang_wang_2022
+    description: SoyMap II project to sequence perennial relatives of soybean.
+    name: SoyMap II project
   species: dolichocarpa
   strains:
   - accession: G1134
@@ -441,11 +465,16 @@ species:
   genus: Glycine
   resources:
   - URL: https://soybase.org/gb2/gbrowse/gmax1.01/?label=diversity_falcata_BES_alignments
-    description: GBrowse for G. falcata Bac End Sequence alignments on Gmax1.01
-    name: SoyMap2 Diversity Browser on Gmax1.01
+    description: GBrowse for G. falcata Bac End Sequence alignments on Glyma.Wm82.a1
+      (Gmax1.01)
+    name: SoyMap2 Diversity Browser on Glyma.Wm82.a1 (Gmax1.01)
   - URL: https://soybase.org/gb2/gbrowse/gmax2.0/?label=diversity_falcata_bes_alignments_relaxed_filtering
-    description: GBrowse for G. falcata Bac End Sequence alignments on Gmax2.0
-    name: SoyMap2 Diversity Browser on Gmax2.0
+    description: GBrowse for G. falcata Bac End Sequence alignments on Glyma.Wm82.a2
+      (Gmax2.0)
+    name: SoyMap2 Diversity Browser on Glyma.Wm82.a2 (Gmax2.0)
+  - URL: /projects/zhuang_wang_2022
+    description: SoyMap II project to sequence perennial relatives of soybean.
+    name: SoyMap II project
   species: falcata
   strains:
   - accession: G1718
@@ -468,11 +497,16 @@ species:
   genus: Glycine
   resources:
   - URL: https://soybase.org/gb2/gbrowse/gmax1.01/?label=diversity_stenophita_BES_alignments
-    description: GBrowse for G. stenophita Bac End Sequence alignments on Gmax1.01
-    name: SoyMap2 Diversity Browser on Gmax1.01
+    description: GBrowse for G. stenophita Bac End Sequence alignments on Glyma.Wm82.a1
+      (Gmax1.01)
+    name: SoyMap2 Diversity Browser on Glyma.Wm82.a1 (Gmax1.01)
   - URL: https://soybase.org/gb2/gbrowse/gmax2.0/?label=diversity_stenophita_bes_alignments_relaxed_filtering
-    description: GBrowse for G. stenophita Bac End Sequence alignments on Gmax2.0
-    name: SoyMap2 Diversity Browser on Gmax2.0
+    description: GBrowse for G. stenophita Bac End Sequence alignments on Glyma.Wm82.a2
+      (Gmax2.0)
+    name: SoyMap2 Diversity Browser on Glyma.Wm82.a2 (Gmax2.0)
+  - URL: /projects/zhuang_wang_2022
+    description: SoyMap II project to sequence perennial relatives of soybean.
+    name: SoyMap II project
   species: stenophita
   strains:
   - accession: G1974
@@ -497,11 +531,16 @@ species:
   genus: Glycine
   resources:
   - URL: https://soybase.org/gb2/gbrowse/gmax1.01/?label=diversity_syndetika_BES_alignments
-    description: GBrowse for G. syndetika Bac End Sequence alignments on Gmax1.01
-    name: SoyMap2 Diversity Browser on Gmax1.01
+    description: GBrowse for G. syndetika Bac End Sequence alignments on Glyma.Wm82.a1
+      (Gmax1.01)
+    name: SoyMap2 Diversity Browser on Glyma.Wm82.a1 (Gmax1.01)
   - URL: https://soybase.org/gb2/gbrowse/gmax2.0/?label=diversity_syndetika_bes_alignments_relaxed_filtering
-    description: GBrowse for G. syndetika Bac End Sequence alignments on Gmax2.0
-    name: SoyMap2 Diversity Browser on Gmax2.0
+    description: GBrowse for G. syndetika Bac End Sequence alignments on Glyma.Wm82.a2
+      (Gmax2.0)
+    name: SoyMap2 Diversity Browser on Glyma.Wm82.a2 (Gmax2.0)
+  - URL: /projects/zhuang_wang_2022
+    description: SoyMap II project to sequence perennial relatives of soybean.
+    name: SoyMap II project
   species: syndetika
   strains:
   - accession: G1300
@@ -521,11 +560,16 @@ species:
   genus: Glycine
   resources:
   - URL: https://soybase.org/gb2/gbrowse/gmax1.01/?label=diversity_tomentella_BES_alignments_relaxed_filtering
-    description: GBrowse for G. tomentella Bac End Sequence alignments on Gmax1.01
-    name: SoyMap2 Diversity Browser on Gmax1.01
+    description: GBrowse for G. tomentella Bac End Sequence alignments on Glyma.Wm82.a1
+      (Gmax1.01)
+    name: SoyMap2 Diversity Browser on Glyma.Wm82.a1 (Gmax1.01)
   - URL: https://soybase.org/gb2/gbrowse/gmax2.0/?label=diversity_tomentella_bes_alignments_relaxed_filtering
-    description: GBrowse for G. tomentella Bac End Sequence alignments on Gmax2.0
-    name: SoyMap2 Diversity Browser on Gmax2.0
+    description: GBrowse for G. tomentella Bac End Sequence alignments on Glyma.Wm82.a2
+      (Gmax2.0)
+    name: SoyMap2 Diversity Browser on Glyma.Wm82.a2 (Gmax2.0)
+  - URL: /projects/zhuang_wang_2022
+    description: SoyMap II project to sequence perennial relatives of soybean.
+    name: SoyMap II
   species: D3-tomentella
   strains:
   - accession: G1403

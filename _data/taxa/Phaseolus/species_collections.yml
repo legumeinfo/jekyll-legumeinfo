@@ -17,6 +17,8 @@ species:
       synopsis: "Phaseolus vulgaris accession G19833 genome assembly v2.1"
     - collection: LaborOvalle.gnm1.VZZS
       synopsis: "Phaseolus vulgaris accession Labor Ovalle (race Guatemala) genome assembly v1."
+    - collection: OACRex.gnm2.NXJW
+      synopsis: "Phaseolus vulgaris accession OACRex, genome assembly 2"
     - collection: UI111.gnm1.3VTM
       synopsis: "Phaseolus vulgaris accession UI111 genome assembly v1"
   annotations:
