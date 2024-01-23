@@ -1,6 +1,36 @@
 ---
-layout: default
 title: Download
+collections_menu: true
 ---
+{% assign genera = site.data.taxon_list | group_by: "genus"  %}
 
 <h1>Download</h1>
+
+<p>
+  All of the files housed by the Legume Information System are available at the <a target="_blank" href="{{ site.datastoreurl }}"><b>LIS Datastore</b></a>.
+</p>
+
+<p>
+  The LIS Datastore is organized by Genus and species, with individual <i>data collections</i> under species directories for: genomes, annotations, expression,
+  GWAS, QTL studies, genetic markers, synteny, diversity, and others.
+  Each collection contains a README file which describes that collection.
+</p>
+
+<ul>
+  {% for genus in genera %}
+  {% for item in genus.items %}
+  {% if item.category == "main" %}
+  <li><a href="/collections{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+</ul>
+<ul>
+  {% for genus in genera %}
+  {% for item in genus.items %}
+  {% if item.category == "special" %}
+  <li><a href="/collections{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+</ul>
