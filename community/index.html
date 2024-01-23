@@ -299,7 +299,6 @@
   <li><a href="/download">Download</a></li>
   <li><a href="/community">Community</a></li>
   <li><a href="/contact">Contact</a></li>
-  <li><a href="/help">Help</a></li>
 </ul>
 
 <a href="#off-screen-menu" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle></a>
@@ -471,7 +470,6 @@
   <li><a href="/download">Download</a></li>
   <li><a href="/community">Community</a></li>
   <li><a href="/contact">Contact</a></li>
-  <li><a href="/help">Help</a></li>
 </ul>
 
 
@@ -627,7 +625,6 @@
   <li><a href="/download">Download</a></li>
   <li><a href="/community">Community</a></li>
   <li><a href="/contact">Contact</a></li>
-  <li><a href="/help">Help</a></li>
 </ul>
 
 
@@ -649,10 +646,232 @@
 
 
 
+  <div id="left-menu" class="tm-sidebar-left uk-visible@m">
+
+  
+    <h3>Tools</h3>
+
+
+
+<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+  <li class="uk-nav-header">Download / Query</li>
+  
+  <li uk-tooltip="title: Browser interface to all of the files in the Legume Information System."><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+  
+  <li uk-tooltip="title: LIS InterMines: one mine per genus including genetic data, and an overall LegumeMine with genome annotations. Tools include a powerful query engine."><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+  
+  <li uk-tooltip="title: Overviews of data characteristics at LIS: genome assembly sizes, gene counts, BUSCO coverage, etc."><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+  
+</ul>
+
+<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+  <li class="uk-nav-header">Search</li>
+  
+  <li uk-tooltip="title: Search for genes"><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+  
+</ul>
+
+<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+  <li class="uk-nav-header">Sequence search</li>
+  
+  <li uk-tooltip="title: Run BLASTs against LIS genomes, CDSes, and proteins"><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+  
+  <li uk-tooltip="title: Functional annotation of protein or nucleotide sequences, and placement into gene trees"><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+  
+</ul>
+
+<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+  <li class="uk-nav-header">Visualize / Browse</li>
+  
+  <li uk-tooltip="title: Browser for dynamically discovering and viewing genomic synteny across selected species."><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+  
+  <li uk-tooltip="title: Interactive visualization of multiple GWAS and QTL data sets, using synteny to identify potentially conserved association regions between species."><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+  
+  <li uk-tooltip="title: View genetic and comparative maps."><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+  
+  <li uk-tooltip="title: View GIS location information for legume accessions."><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+  
+  <li uk-tooltip="title: Conekt is a tool for comparative gene expression analysis."><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+  
+  <li uk-tooltip="title: Functional keyword search for gene families"><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+  
+  <li uk-tooltip="title: A multiple chromosome visualisation tool for visualizing resequencing or SNP array data"><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+  
+</ul>
+
+
+
+  
+  
+  
+
+  <!-- dynamically set the top style property of the left menu when the height of the navbar changes -->
+  <!-- NOTE: the script tag is nested so it doesn't break a CSS selector -->
+  <script type="text/javascript">
+
+    const navbar = document.getElementById("navbar");
+    const left = document.getElementById("left-menu");
+
+    const leftTopObserver = new ResizeObserver(entries => {
+      for (let entry of entries) {
+        // use the newer contentBoxSize property if the browser supports it
+        if (entry.contentBoxSize) {
+          left.style.top = entry.contentBoxSize[0].blockSize + "px";
+        // fallback to the older contentRect property
+        } else {
+          left.style.top = entry.contentRect.height + "px";
+        }
+      }
+    });
+
+    leftTopObserver.observe(navbar);
+
+  </script>
+</div>
+
+
 <!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
 <div class="tm-main uk-section uk-section-default uk-flex">
   <div class="uk-container uk-width-1-1">
     <h1>Community</h1>
+
+
+
+
+  <h2>Some plant genome and gene family tools</h2>
+  
+    <dl>
+      
+        <dt><a href="https://phytozome-next.jgi.doe.gov">Phytozome</a></dt>
+        <dd>Plant genomes and gene families </dd>
+      
+        <dt><a href="https://bioinformatics.psb.ugent.be/plaza">Plaza</a></dt>
+        <dd>A resource for plant comparative genomics</dd>
+      
+        <dt><a href="https://www.araport.org">The Arabidopsis Information Portal (AraPort)</a></dt>
+        <dd>Arabidopsis genomic resources, including tools such as ThaleMine, JBrowse etc.</dd>
+      
+        <dt><a href="https://www.arabidopsis.org">The Arabidopsis Information Resource (TAIR)</a></dt>
+        <dd>Curated information about <i>Arabidopsis</i> gene function</dd>
+      
+        <dt><a href="http://ccdb.tau.ac.il/">Chromosome Counts Database</a></dt>
+        <dd>Comprehensive resource for plant chromosome numbers.</dd>
+      
+        <dt><a href="http://www.phylomedb.org">PhylomeDB</a></dt>
+        <dd>A database of phylogenetic trees and alignments for plants and other taxa</dd>
+      
+    </dl>
+  
+
+  <h2>Legume resources</h2>
+  
+    <dl>
+      
+        <dt><a href="https://www.legumesociety.org/">International Legume Society</a></dt>
+        <dd>Site for exchange of legume research, and host of the society's journals <a href="https://www.legumesociety.org/2019/12/02/legume-perspectives/" target="_blank">Legume Perspectives</a> and <a href="https://www.legumesociety.org/2019/12/02/grain-legumes/" target="_blank">Grain Legumes</i></dd>
+      
+        <dt><a href="http://bic.css.msu.edu">Bean Improvement Cooperative</a></dt>
+        <dd>Voluntary and informal organization to effect the exchange of information and materials for the improvement of bean production worldwide.</dd>
+      
+        <dt><a href="https://www.clima.uwa.edu.au">Center for Legumes in Mediterranean Agriculture</a></dt>
+        <dd>Publications and newsletters from this center at the UWA</dd>
+      
+        <dt><a href="https://www.pulsedb.org/main">Cool Season Food Legume Database</a></dt>
+        <dd>Database for pea, lentil, and chickpea</dd>
+      
+        <dt><a href="https://en.wikipedia.org/wiki/Legume">Wikipedia: Legume</a></dt>
+        <dd>Descriptive information about the family</dd>
+      
+        <dt><a href="https://lipm-browsers.toulouse.inra.fr/k/legoo">Legoo.org</a></dt>
+        <dd>A bioinformatics gateway towards integrative legume biology</dd>
+      
+        <dt><a href="https://knowpulse.usask.ca">KnowPulse</a></dt>
+        <dd>Pulse crop breeding and genetics, from University of Saskatchewan</dd>
+      
+        <dt><a href="https://lupinexpress.org">Lupin Genome Portal</a></dt>
+        <dd>International collaborative project to sequence the genome of narrow-leafed lupin</dd>
+      
+        <dt><a href="http://www.ildon.org">Interactive Legume Database of Nodulation</a></dt>
+        <dd>Database of legumes and their nodulation status</dd>
+      
+        <dt><a href="http://www.legumes-online.net/ildis/aweb/database.htm">ILDIS World Database of Legumes</a></dt>
+        <dd>Website for legume taxonomy</dd>
+      
+        <dt><a href="https://www.tropicalforages.info">Tropical Forages</a></dt>
+        <dd>Database of tropical forages, with extensive list of legume forage crops and information</dd>
+      
+        <dt><a href="https://medicago.toulouse.inra.fr">Medicago @ INRAE/CNRS</a></dt>
+        <dd>Medicago truncatula resources at INRAE/CNRS</dd>
+      
+        <dt><a href="https://www.jic.ac.uk/research-impact/technology-research-platforms/reverse-genetics">RevGenUK</a></dt>
+        <dd>Reverse genetics (TILLING) resources for Medicago and Lotus; from the John Innes Centre</dd>
+      
+        <dt><a href="https://www.peamust-project.fr/peamust_eng">PeaMUST</a></dt>
+        <dd>Pea Multi-Stress adaptation and biological regulations for yield improvement and stability</dd>
+      
+        <dt><a href="https://soybase.org">SoyBase</a></dt>
+        <dd>Soybean genetic and genomic data: genome browser, maps, trait and QTL data, pathways, ...</dd>
+      
+        <dt><a href="https://plantreactome.gramene.org">Gramene Plant Reactome</a></dt>
+        <dd>database of plant metabolic and regulatory pathways</dd>
+      
+    </dl>
+  
+
+  <h2>Recipes and nutrition</h2>
+  
+    <dl>
+      
+        <dt><a href="https://legumechef.com">Legume Chef</a></dt>
+        <dd>Extensive collection of recipes. Also resources from the U.S. Dry Bean Council and the USA Dry Pea &amp; Lentil Council.</dd>
+      
+        <dt><a href="https://www.usdrybeans.com">U.S. Dry Bean Council</a></dt>
+        <dd>Recipes, varieties, industry resources, nutrition</dd>
+      
+    </dl>
+  
+
+  <h2>Information for growers</h2>
+  
+    <dl>
+      
+        <dt><a href="https://saskpulse.com">Saskatchewan Pulse Growers</a></dt>
+        <dd>Information for consumers and producers, on pulses grown in Canada (chickpeas, lentils, peas, beans) </dd>
+      
+    </dl>
+  
+
+  <h2>Germplasm for Research</h2>
+  
+    <dl>
+      
+        <dt><a href="https://npgsweb.ars-grin.gov/gringlobal/search">NPGS/GRIN</a></dt>
+        <dd>National Plant Germplasm System / Germplasm Resources Information Network</dd>
+      
+    </dl>
+  
+
+  <h2>About the Legume Information System (LIS)</h2>
+  
+    <dl>
+      
+        <dt><a href=""></a></dt>
+        <dd><p>The mission of LIS is to enable productive applied and basic research in the legumes by relating data from multiple crop and model species, and by helping researchers traverse among various data types.</p><p> The Legume Information System, a component of the Model Plant Initiative (MPI), is developed by the National Center for Genome Resources in cooperation with the USDA Agricultural Research Service under a Specific Cooperative Agreement.</p></dd>
+      
+    </dl>
+  
+
+  <h2>The LIS team</h2>
+  
+    <dl>
+      
+        <dt><a href=""></a></dt>
+        <dd><strong>NCGR team:</strong> Andrew Farmer, Sam Hokin, Sven Redsun, Alan Cleary, Connor Cameron, Sudhansu Dash</br><strong>NCGR alums:</strong> Hrishikesh Lokhande, Pooja Umale, Alex Rice, John Crow, Ken Seal, Arvind Bharti, Selene Virk, Michael Gonzales, Kamal Gajendran, Eric Archuleta, Mark Waugh, Illiana Toneva</br><strong>USDA LIS team:</strong> Steven Cannon, Nathan Weeks, Wei Huang, Scott Kalberer, Rex Nelson, Jacqueline Campbell<br><strong>USDA LIS alums:</strong> David Grant, Andrew Wilkey, Prateek Gupta, Shivan Gunda, Deepak Bitragunta, Vijay Karingula, Benjamin Mulaosmanovic, Randy Shoemaker</dd>
+      
+    </dl>
+  
+
+
 
   </div>
 

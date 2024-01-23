@@ -299,7 +299,6 @@
   <li><a href="/download">Download</a></li>
   <li><a href="/community">Community</a></li>
   <li><a href="/contact">Contact</a></li>
-  <li><a href="/help">Help</a></li>
 </ul>
 
 <a href="#off-screen-menu" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle></a>
@@ -471,7 +470,6 @@
   <li><a href="/download">Download</a></li>
   <li><a href="/community">Community</a></li>
   <li><a href="/contact">Contact</a></li>
-  <li><a href="/help">Help</a></li>
 </ul>
 
 
@@ -627,7 +625,6 @@
   <li><a href="/download">Download</a></li>
   <li><a href="/community">Community</a></li>
   <li><a href="/contact">Contact</a></li>
-  <li><a href="/help">Help</a></li>
 </ul>
 
 

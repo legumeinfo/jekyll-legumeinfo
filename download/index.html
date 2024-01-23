@@ -299,7 +299,6 @@
   <li><a href="/download">Download</a></li>
   <li><a href="/community">Community</a></li>
   <li><a href="/contact">Contact</a></li>
-  <li><a href="/help">Help</a></li>
 </ul>
 
 <a href="#off-screen-menu" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle></a>
@@ -471,7 +470,6 @@
   <li><a href="/download">Download</a></li>
   <li><a href="/community">Community</a></li>
   <li><a href="/contact">Contact</a></li>
-  <li><a href="/help">Help</a></li>
 </ul>
 
 
@@ -627,7 +625,6 @@
   <li><a href="/download">Download</a></li>
   <li><a href="/community">Community</a></li>
   <li><a href="/contact">Contact</a></li>
-  <li><a href="/help">Help</a></li>
 </ul>
 
 
@@ -649,10 +646,313 @@
 
 
 
+  <div id="left-menu" class="tm-sidebar-left uk-visible@m">
+
+  
+  
+  
+    <h3>Data Collections</h3>
+
+<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+  
+  
+  
+  <li><a href="/collections/arachis">Arachis</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/cajanus">Cajanus</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/cicer">Cicer</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/glycine">Glycine</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/lotus">Lotus</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/lupinus">Lupinus</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/medicago">Medicago</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/phaseolus">Phaseolus</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/pisum">Pisum</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/trifolium">Trifolium</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/vigna">Vigna</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</ul>
+
+  
+
+  <!-- dynamically set the top style property of the left menu when the height of the navbar changes -->
+  <!-- NOTE: the script tag is nested so it doesn't break a CSS selector -->
+  <script type="text/javascript">
+
+    const navbar = document.getElementById("navbar");
+    const left = document.getElementById("left-menu");
+
+    const leftTopObserver = new ResizeObserver(entries => {
+      for (let entry of entries) {
+        // use the newer contentBoxSize property if the browser supports it
+        if (entry.contentBoxSize) {
+          left.style.top = entry.contentBoxSize[0].blockSize + "px";
+        // fallback to the older contentRect property
+        } else {
+          left.style.top = entry.contentRect.height + "px";
+        }
+      }
+    });
+
+    leftTopObserver.observe(navbar);
+
+  </script>
+</div>
+
+
 <!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
 <div class="tm-main uk-section uk-section-default uk-flex">
   <div class="uk-container uk-width-1-1">
-    <h1>Download</h1>
+    
+
+<h1>Download</h1>
+
+<p>
+  All of the files housed by the Legume Information System are available at the <a target="_blank" href="https://data.legumeinfo.org"><b>LIS Datastore</b></a>.
+</p>
+
+<p>
+  The LIS Datastore is organized by Genus and species, with individual <i>data collections</i> under species directories for: genomes, annotations, expression,
+  GWAS, QTL studies, genetic markers, synteny, diversity, and others.
+  Each collection contains a README file which describes that collection.
+</p>
+
+<ul>
+  
+  
+  
+  <li><a href="/collections/arachis"><i>Arachis</i></a> (Peanut)</li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/cajanus"><i>Cajanus</i></a> (Pigeonpea)</li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/cicer"><i>Cicer</i></a> (Chickpea)</li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/glycine"><i>Glycine</i></a> (Soybean)</li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/lotus"><i>Lotus</i></a> (Bird's-foot trefoil)</li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/lupinus"><i>Lupinus</i></a> (Lupin grain legumes)</li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/medicago"><i>Medicago</i></a> (Alfalfa/Lucerne, Barrel Medic)</li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/phaseolus"><i>Phaseolus</i></a> (Common Bean, Lima Bean, Tepary Bean, etc.)</li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/pisum"><i>Pisum</i></a> (Pea)</li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/trifolium"><i>Trifolium</i></a> (Clover)</li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/vigna"><i>Vigna</i></a> (Cowpea)</li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</ul>
+<ul>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li><a href="/collections/aeschynomene"><i>Aeschynomene</i></a> (Jointvetch)</li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/apios"><i>Apios</i></a> (Potato bean)</li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/cercis"><i>Cercis</i></a> (Redbud tree)</li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/chamaecrista"><i>Chamaecrista</i></a> (Partridge pea)</li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/faidherbia"><i>Faidherbia</i></a> (Apple-ring acacia)</li>
+  
+  
+  
+</ul>
 
   </div>
 
