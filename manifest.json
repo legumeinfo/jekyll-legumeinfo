@@ -1,0 +1,22 @@
+{
+  "short_name": "LIS: Legume Information System",
+  "name": "LIS: Legume Information System",
+  "description": "A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species.",
+  "icons": [
+    {
+      "src": "/splash-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/favicon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ffffff"
+}

@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Medicago &#8211; LIS: Legume Information System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species.">
+  <meta name="robots" content="all">
+  <meta name="author" content="">
+  
+  
+  <link rel="canonical" href="/collections/medicago/">
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-49655154-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-49655154-1');
+</script>
+
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/uikit/dist/css/uikit.min.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/css/uikit-theme.css" type="text/css" />
+
+  <!-- place globally-included stylesheet content here -->
+<style>
+  .species-image {
+      float: right;
+      margin: 10px;
+  }
+  .species-image img {
+      border: 1px solid darkgreen;
+  }
+  .species-image .attribution {
+      text-align: center; 
+      font-style: italic;
+      font-size: 80%;
+  }
+  .blog-image {
+      float: right;
+      margin: 10px;
+  }
+  .blog-image img {
+      border: 1px solid gray;
+  }
+  .blog-image .attribution {
+      text-align: center; 
+      font-style: italic;
+      font-size: 80%;
+  }
+  .temp {
+      color: darkred;
+      font-family: serif;
+      font-weight: bold;
+  }
+</style>
+
+
+
+  <!-- Custom JS -->
+  <script src="/assets/uikit/dist/js/uikit.min.js"></script>
+  <script src="/assets/uikit/dist/js/uikit-icons.min.js"></script>
+
+  <!-- place globally-included scripts here -->
+
+
+  <!-- opt-in code for integrating GraphQL with LIS Web Components -->
+  <script type="importmap">
+    {
+      "imports": {
+        "lis-graphql": "/assets/js/graphql/index.js"
+      }
+    }
+  </script>
+
+  
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192x192.png">
+      <link rel="icon" href="/assets/icons/favicon.ico">
+      </head>
+
+
+<body>
+
+
+
+
+<div id="navbar" class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed uk-light" uk-sticky>
+
+  <div id="alerts">
+    
+    
+      
+
+    
+  </div>
+
+  <script type="text/javascript">
+
+    // define the cookie key
+    const alertsKey = "lis-navbar-alerts";
+
+    // get the alerts element
+    const alerts = document.getElementById("alerts");
+
+    // define a callback that saves the toggle state
+    function toggleCallback(event) {
+      document.cookie = `${alertsKey}=${event.type};SameSite=Lax;path=/`;
+    }
+
+    // use the callback every time the element is toggled
+    alerts.addEventListener("show", toggleCallback);
+    alerts.addEventListener("hide", toggleCallback);
+
+    // load the element's state
+    const alertsCookie = document.cookie
+      .split('; ')
+      .find(row => row.startsWith(`${alertsKey}=`));
+
+    // hide the alerts if they're supposed to be hidden
+    if (alertsCookie && alertsCookie.split('=')[1].toLowerCase() === "hide") {
+      UIkit.toggle(alerts).toggle();
+    }
+
+  </script>
+
+  <div class="uk-container uk-container-expand">
+    <nav class="uk-navbar">
+      <div class="uk-navbar-left uk-text-truncate">
+        <a class="uk-navbar-item uk-logo uk-text-truncate" href="/">
+          
+          <img class="uk-margin-small-right" src="/assets/img/logo.png" width="47" height="47" />
+          
+          <div class="uk-text-truncate">
+            LIS: Legume Information System
+            
+            <div class="uk-navbar-subtitle uk-text-truncate">Information about legume traits for crop improvement</div>
+            
+          </div>
+        </a>
+      </div>
+      <div class="uk-navbar-right uk-flex-none">
+
+        <ul class="uk-navbar-nav uk-visible@l">
+  <li><a href="/">Home</a></li>
+  <li>
+    <a href="/taxa">Taxa</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          
+            <li> <a href="/taxa//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+      </ul>
+    </div>
+    
+  </li>
+  <li>
+    <a href="/tools">Tools</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+      </ul>
+    </div>
+    
+  </li>
+  <li><a href="/download">Download</a></li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help">Help</a></li>
+</ul>
+
+<a href="#off-screen-menu" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle></a>
+
+
+        <ul class="uk-navbar-nav uk-visible@s">
+
+        
+          <li><a class="tm-no-underline" href="https://twitter.com/legumeinfo" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span></a></li>
+        
+        
+        
+          <li><a class="tm-no-underline" href="https://github.com/legumeinfo" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span></a></li>
+        
+
+        </ul>
+        
+        
+      </div>
+    </nav>
+    <nav class="uk-navbar tm-lower-navbar">
+      <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav uk-hidden@l uk-visible@s">
+  <li><a href="/">Home</a></li>
+  <li>
+    <a href="/taxa">Taxa</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          
+            <li> <a href="/taxa//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+      </ul>
+    </div>
+    
+  </li>
+  <li>
+    <a href="/tools">Tools</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+      </ul>
+    </div>
+    
+  </li>
+  <li><a href="/download">Download</a></li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help">Help</a></li>
+</ul>
+
+
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div id="off-screen-menu" uk-offcanvas="overlay: true">
+  <div class="uk-offcanvas-bar uk-dark  uk-background-secondary">
+
+    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+  <li><a href="/">Home</a></li>
+  
+  <li class="uk-parent">
+    <a href="#">Taxa</a>
+    
+    <ul class="uk-nav-sub">
+      
+        
+          
+            <li><a href="/taxa//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+    </ul>
+  </li>
+  
+  
+  <li class="uk-parent">
+    <a href="/tools">Tools</a>
+    
+    <ul class="uk-nav-sub">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+    </ul>
+  </li>
+  
+  <li><a href="/download">Download</a></li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help">Help</a></li>
+</ul>
+
+
+    
+    <ul class="uk-nav uk-nav-default">
+      <li class="uk-nav-divider"></li>
+      
+      <li><a href="https://twitter.com/legumeinfo" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span> Twitter</a></li>
+      
+      
+      
+      <li><a href="https://github.com/legumeinfo" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span> GitHub</a></li>
+      
+    </ul>
+    
+
+  </div>
+</div>
+
+
+
+  <div id="left-menu" class="tm-sidebar-left uk-visible@m">
+
+  
+  
+  
+    <h3>Data Collections</h3>
+
+<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+  
+  
+  
+  <li><a href="/collections/arachis">Arachis</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/cajanus">Cajanus</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/cicer">Cicer</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/glycine">Glycine</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/lotus">Lotus</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/lupinus">Lupinus</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/medicago">Medicago</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/phaseolus">Phaseolus</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/pisum">Pisum</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/trifolium">Trifolium</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/collections/vigna">Vigna</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</ul>
+
+  
+
+  <!-- dynamically set the top style property of the left menu when the height of the navbar changes -->
+  <!-- NOTE: the script tag is nested so it doesn't break a CSS selector -->
+  <script type="text/javascript">
+
+    const navbar = document.getElementById("navbar");
+    const left = document.getElementById("left-menu");
+
+    const leftTopObserver = new ResizeObserver(entries => {
+      for (let entry of entries) {
+        // use the newer contentBoxSize property if the browser supports it
+        if (entry.contentBoxSize) {
+          left.style.top = entry.contentBoxSize[0].blockSize + "px";
+        // fallback to the older contentRect property
+        } else {
+          left.style.top = entry.contentRect.height + "px";
+        }
+      }
+    });
+
+    leftTopObserver.observe(navbar);
+
+  </script>
+</div>
+
+
+<!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
+<div class="tm-main uk-section uk-section-default uk-flex">
+  <div class="uk-container uk-width-1-1">
+    
+
+
+<h1><i>Medicago</i> data collections</h1>
+
+
+
+<h3><a target="_blank" href="https://data.legumeinfo.org/Medicago/sativa/"><i>Medicago sativa</i></a></h3>
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Medicago/sativa/genomes/">Genomes</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/sativa/genomes/CADL_HM342.gnm1.rVNY/">CADL_HM342.gnm1.rVNY</a></dt>
+  <dd>Genome assembly of Medicago sativa CADL (HM342)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/sativa/genomes/PI464715.gnm1.8GK6/">PI464715.gnm1.8GK6</a></dt>
+  <dd>Pseudomolecule assemblies and unanchored contigs representing 1 haplotype per chromosome for diploid progenitor Medicago sativa spp. caerulea PI464715</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/sativa/genomes/RegenSY27x.gnm0_9.2VSM/">RegenSY27x.gnm0_9.2VSM</a></dt>
+  <dd>Genome assembly of Medicago sativa RegenSY27x</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/sativa/genomes/XinJiangDaYe.gnm1.12MR/">XinJiangDaYe.gnm1.12MR</a></dt>
+  <dd>Pseudomolecule assemblies and scaffolds representing 4 haplotypes per chromosome for Medicago sativa XinJiangDaYe</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/sativa/genomes/Zhongmu_No_1.gnm1.TRQW/">Zhongmu_No_1.gnm1.TRQW</a></dt>
+  <dd>Pseudomolecule assemblies and unanchored contigs representing 1 haplotype per chromosome for Medicago sativa Zhongmu No. 1</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Medicago/sativa/annotations/">Annotations</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/sativa/annotations/XinJiangDaYe.gnm1.ann1.RKB9/">XinJiangDaYe.gnm1.ann1.RKB9</a></dt>
+  <dd>Gene annotations for pseudomolecule assemblies and scaffolds representing 4 haplotypes per chromosome for Medicago sativa XinJiangDaYe</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Medicago/sativa/expression/">Expression</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/sativa/expression/XinJiangDaYe.gnm1.ann1.expr.B47_F56.ORourke_Fu_2015/">XinJiangDaYe.gnm1.ann1.expr.B47_F56.ORourke_Fu_2015</a></dt>
+  <dd>Alfalfa expression atlas for M. sativa ssp. sativa (B47) and M. sativa ssp. falcata (F56) roots, root nodules, leaves, flowers, and elongating and post-elongation stem internodes.</dd>
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Medicago/sativa/diversity/">Diversity</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/sativa/diversity/mixed.tcp.div.Li_Acharya_2012/">mixed.tcp.div.Li_Acharya_2012</a></dt>
+  <dd>genotype variants called with respect to a transcriptome assembly, from 27 alfalfa genotypes, from Li, Acharya et al., 2012</dd>
+  
+</dl>
+
+
+<hr/>
+
+
+
+<h3><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/"><i>Medicago truncatula</i></a></h3>
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/">Genomes</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/A17.gnm5.MVZ2/">A17.gnm5.MVZ2</a></dt>
+  <dd>Scaffold assemblies and pseudomolecule assemblies for Medicago truncatula A17</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/A17_HM341.gnm4.2GZ9/">A17_HM341.gnm4.2GZ9</a></dt>
+  <dd>Scaffold assemblies and pseudomolecule assemblies for Medicago truncatula A17 (HM341)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM002.gnm1.TWKJ/">HM002.gnm1.TWKJ</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM002)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM004.gnm1.L7PM/">HM004.gnm1.L7PM</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM004)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM005.gnm1.BQQH/">HM005.gnm1.BQQH</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM005)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM006.gnm1.XKYH/">HM006.gnm1.XKYH</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM006)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM010.gnm1.YDPY/">HM010.gnm1.YDPY</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM010)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM017.gnm1.HSRX/">HM017.gnm1.HSRX</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM017)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM018.gnm1.3NVM/">HM018.gnm1.3NVM</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM018)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM020.gnm1.PNGN/">HM020.gnm1.PNGN</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM020)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM022.gnm1.B190/">HM022.gnm1.B190</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM022)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM023.gnm1.FFHH/">HM023.gnm1.FFHH</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM023)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM026.gnm1.PH3S/">HM026.gnm1.PH3S</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM026)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM034.gnm1.6VW9/">HM034.gnm1.6VW9</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM034)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM050.gnm1.9JPP/">HM050.gnm1.9JPP</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM050)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM056.gnm1.JBKN/">HM056.gnm1.JBKN</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM056)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM058.gnm1.JVBP/">HM058.gnm1.JVBP</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM058)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM060.gnm1.V7B2/">HM060.gnm1.V7B2</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM060)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM078.gnm1.Q3TM/">HM078.gnm1.Q3TM</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM078)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM095.gnm1.FBQK/">HM095.gnm1.FBQK</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM095)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM125.gnm1.GFN2/">HM125.gnm1.GFN2</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM125)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM129.gnm1.9HG9/">HM129.gnm1.9HG9</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM129)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM185.gnm1.1G05/">HM185.gnm1.1G05</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM185)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/HM324.gnm1.SJSJ/">HM324.gnm1.SJSJ</a></dt>
+  <dd>Genome assembly for Medicago truncatula (HM324)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/R108.gnmHiC_1.7RWS/">R108.gnmHiC_1.7RWS</a></dt>
+  <dd>An assembly based on the earlier PacBio-based genome (R108_HM340.gnm1.XT6J), put into pseudomolecules using HiC scaffolding.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/genomes/R108_HM340.gnm1.XT6J/">R108_HM340.gnm1.XT6J</a></dt>
+  <dd>Genome assembly for Medicago truncatula R108 (HM340)</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/">Annotations</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/A17.gnm5.ann1_6.L2RX/">A17.gnm5.ann1_6.L2RX</a></dt>
+  <dd>Genome annotation for Medicago truncatula (A17)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/A17_HM341.gnm4.ann2.G3ZY/">A17_HM341.gnm4.ann2.G3ZY</a></dt>
+  <dd>Genome annotation for Medicago truncatula (A17 HM341)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM004.gnm1.ann1.2XTB/">HM004.gnm1.ann1.2XTB</a></dt>
+  <dd>Genome annotation for Medicago truncatula (HM004)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM010.gnm1.ann1.WV9J/">HM010.gnm1.ann1.WV9J</a></dt>
+  <dd>Genome annotation for Medicago truncatula (HM010)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM022.gnm1.ann1.6C8N/">HM022.gnm1.ann1.6C8N</a></dt>
+  <dd>Genome annotation for Medicago truncatula (HM022)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM023.gnm1.ann1.WZN8/">HM023.gnm1.ann1.WZN8</a></dt>
+  <dd>Genome annotation for Medicago truncatula (HM023)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM034.gnm1.ann1.YR6S/">HM034.gnm1.ann1.YR6S</a></dt>
+  <dd>Genome annotation for Medicago truncatula (HM034)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM050.gnm1.ann1.GWRX/">HM050.gnm1.ann1.GWRX</a></dt>
+  <dd>Genome annotation for Medicago truncatula (HM050)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM056.gnm1.ann1.CHP6/">HM056.gnm1.ann1.CHP6</a></dt>
+  <dd>Genome annotation for Medicago truncatula (HM056)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM058.gnm1.ann1.LXPZ/">HM058.gnm1.ann1.LXPZ</a></dt>
+  <dd>Genome annotation for Medicago truncatula (HM058).</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM060.gnm1.ann1.H41P/">HM060.gnm1.ann1.H41P</a></dt>
+  <dd>Genome annotation for Medicago truncatula (HM060)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM078.gnm1.ann1.3RNP/">HM078.gnm1.ann1.3RNP</a></dt>
+  <dd>Genome annotation for Medicago truncatula (HM078).</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM095.gnm1.ann1.55W4/">HM095.gnm1.ann1.55W4</a></dt>
+  <dd>Genome annotation for Medicago truncatula (HM095)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM125.gnm1.ann1.KY5W/">HM125.gnm1.ann1.KY5W</a></dt>
+  <dd>Genome annotation for Medicago truncatula (HM125).</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM129.gnm1.ann1.7FTD/">HM129.gnm1.ann1.7FTD</a></dt>
+  <dd>Genome annotation for Medicago truncatula (HM129)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM185.gnm1.ann1.GB3D/">HM185.gnm1.ann1.GB3D</a></dt>
+  <dd>Genome annotation for Medicago truncatula (HM185)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/HM324.gnm1.ann1.SQH2/">HM324.gnm1.ann1.SQH2</a></dt>
+  <dd>Genome annotation for Medicago truncatula (HM324)</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/R108.gnmHiC_1.ann1.Y8NH/">R108.gnmHiC_1.ann1.Y8NH</a></dt>
+  <dd>An assembly based on the earlier PacBio-based genome (R108_HM340.gnm1.XT6J), put into pseudomolecules using HiC scaffolding.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/annotations/R108_HM340.gnm1.ann1.85YW/">R108_HM340.gnm1.ann1.85YW</a></dt>
+  <dd>Genome annotation for Medicago truncatula R108 (HM340)</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/expression/">Expression</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/expression/A17_HM341.gnm4.ann2.expr.He_Vagner_2009/">A17_HM341.gnm4.ann2.expr.He_Vagner_2009</a></dt>
+  <dd>Affymetrix GeneChip expression data from the Noble Medicago truncatula Gene Expression Atlas</dd>
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/diversity/">Diversity</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/diversity/A17.gnm5.div.Epstein_Burghardt_2022/">A17.gnm5.div.Epstein_Burghardt_2022</a></dt>
+  <dd>Variant calling against Mt5.0 reference from Illumina-based whole genome resequencing across accessions from Medicago HapMap Collection.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/truncatula/diversity/A17_HM341.gnm4.div.Stanton-Geddes_Paape_2013/">A17_HM341.gnm4.div.Stanton-Geddes_Paape_2013</a></dt>
+  <dd>Variant calling from Illumina-based whole genome resequencing across accessions from Medicago HapMap Collection.</dd>
+  
+</dl>
+
+
+<hr/>
+
+
+
+<h3><a target="_blank" href="https://data.legumeinfo.org/Medicago/ruthenica/"><i>Medicago ruthenica</i></a></h3>
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Medicago/ruthenica/genomes/">Genomes</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/ruthenica/genomes/Xinghe.gnm1.KKFS/">Xinghe.gnm1.KKFS</a></dt>
+  <dd>Pseudomolecule assembly and unanchored contigs for wild diploid Medicago ruthenica Xinghe</dd>
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr/>
+
+
+
+<h3><a target="_blank" href="https://data.legumeinfo.org/Medicago/polymorpha/"><i>Medicago polymorpha</i></a></h3>
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Medicago/polymorpha/genomes/">Genomes</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Medicago/polymorpha/genomes/Huaiyang_Jinhuacai.gnm1.ZH4B/">Huaiyang_Jinhuacai.gnm1.ZH4B</a></dt>
+  <dd>Pseudomolecule assembly and unanchored contigs for diploid Medicago polymorpha Huaiyang Jinhuacai</dd>
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr/>
+
+
+
+
+  </div>
+
+  
+
+</div>
+
+
+</body>
+</html>

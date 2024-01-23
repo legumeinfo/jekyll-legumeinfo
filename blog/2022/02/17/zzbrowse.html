@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ZZBrowse &#8211; LIS: Legume Information System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ZZBrowse is an interactive R/Shiny web application for GWAS and QTL visualization. In this post, we describe our enhancements to the original ZBrowse developed by the Baxter Laboratory.">
+  <meta name="robots" content="all">
+  <meta name="author" content="">
+  
+  <meta name="keywords" content="blog">
+  <link rel="canonical" href="/blog/2022/02/17/zzbrowse.html">
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-49655154-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-49655154-1');
+</script>
+
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/uikit/dist/css/uikit.min.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/css/uikit-theme.css" type="text/css" />
+
+  <!-- place globally-included stylesheet content here -->
+<style>
+  .species-image {
+      float: right;
+      margin: 10px;
+  }
+  .species-image img {
+      border: 1px solid darkgreen;
+  }
+  .species-image .attribution {
+      text-align: center; 
+      font-style: italic;
+      font-size: 80%;
+  }
+  .blog-image {
+      float: right;
+      margin: 10px;
+  }
+  .blog-image img {
+      border: 1px solid gray;
+  }
+  .blog-image .attribution {
+      text-align: center; 
+      font-style: italic;
+      font-size: 80%;
+  }
+  .temp {
+      color: darkred;
+      font-family: serif;
+      font-weight: bold;
+  }
+</style>
+
+
+
+  <!-- Custom JS -->
+  <script src="/assets/uikit/dist/js/uikit.min.js"></script>
+  <script src="/assets/uikit/dist/js/uikit-icons.min.js"></script>
+
+  <!-- place globally-included scripts here -->
+
+
+  <!-- opt-in code for integrating GraphQL with LIS Web Components -->
+  <script type="importmap">
+    {
+      "imports": {
+        "lis-graphql": "/assets/js/graphql/index.js"
+      }
+    }
+  </script>
+
+  
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192x192.png">
+      <link rel="icon" href="/assets/icons/favicon.ico">
+      </head>
+
+
+<body>
+
+
+
+
+<div id="navbar" class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed uk-light" uk-sticky>
+
+  <div id="alerts">
+    
+    
+      
+
+    
+  </div>
+
+  <script type="text/javascript">
+
+    // define the cookie key
+    const alertsKey = "lis-navbar-alerts";
+
+    // get the alerts element
+    const alerts = document.getElementById("alerts");
+
+    // define a callback that saves the toggle state
+    function toggleCallback(event) {
+      document.cookie = `${alertsKey}=${event.type};SameSite=Lax;path=/`;
+    }
+
+    // use the callback every time the element is toggled
+    alerts.addEventListener("show", toggleCallback);
+    alerts.addEventListener("hide", toggleCallback);
+
+    // load the element's state
+    const alertsCookie = document.cookie
+      .split('; ')
+      .find(row => row.startsWith(`${alertsKey}=`));
+
+    // hide the alerts if they're supposed to be hidden
+    if (alertsCookie && alertsCookie.split('=')[1].toLowerCase() === "hide") {
+      UIkit.toggle(alerts).toggle();
+    }
+
+  </script>
+
+  <div class="uk-container uk-container-expand">
+    <nav class="uk-navbar">
+      <div class="uk-navbar-left uk-text-truncate">
+        <a class="uk-navbar-item uk-logo uk-text-truncate" href="/">
+          
+          <img class="uk-margin-small-right" src="/assets/img/logo.png" width="47" height="47" />
+          
+          <div class="uk-text-truncate">
+            LIS: Legume Information System
+            
+            <div class="uk-navbar-subtitle uk-text-truncate">Information about legume traits for crop improvement</div>
+            
+          </div>
+        </a>
+      </div>
+      <div class="uk-navbar-right uk-flex-none">
+
+        <ul class="uk-navbar-nav uk-visible@l">
+  <li><a href="/">Home</a></li>
+  <li>
+    <a href="/taxa">Taxa</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          
+            <li> <a href="/taxa//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+      </ul>
+    </div>
+    
+  </li>
+  <li>
+    <a href="/tools">Tools</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+      </ul>
+    </div>
+    
+  </li>
+  <li><a href="/download">Download</a></li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help">Help</a></li>
+</ul>
+
+<a href="#off-screen-menu" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle></a>
+
+
+        <ul class="uk-navbar-nav uk-visible@s">
+
+        
+          <li><a class="tm-no-underline" href="https://twitter.com/legumeinfo" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span></a></li>
+        
+        
+        
+          <li><a class="tm-no-underline" href="https://github.com/legumeinfo" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span></a></li>
+        
+
+        </ul>
+        
+        
+      </div>
+    </nav>
+    <nav class="uk-navbar tm-lower-navbar">
+      <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav uk-hidden@l uk-visible@s">
+  <li><a href="/">Home</a></li>
+  <li>
+    <a href="/taxa">Taxa</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          
+            <li> <a href="/taxa//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+      </ul>
+    </div>
+    
+  </li>
+  <li>
+    <a href="/tools">Tools</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+      </ul>
+    </div>
+    
+  </li>
+  <li><a href="/download">Download</a></li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help">Help</a></li>
+</ul>
+
+
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div id="off-screen-menu" uk-offcanvas="overlay: true">
+  <div class="uk-offcanvas-bar uk-dark  uk-background-secondary">
+
+    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+  <li><a href="/">Home</a></li>
+  
+  <li class="uk-parent">
+    <a href="#">Taxa</a>
+    
+    <ul class="uk-nav-sub">
+      
+        
+          
+            <li><a href="/taxa//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+    </ul>
+  </li>
+  
+  
+  <li class="uk-parent">
+    <a href="/tools">Tools</a>
+    
+    <ul class="uk-nav-sub">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+    </ul>
+  </li>
+  
+  <li><a href="/download">Download</a></li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help">Help</a></li>
+</ul>
+
+
+    
+    <ul class="uk-nav uk-nav-default">
+      <li class="uk-nav-divider"></li>
+      
+      <li><a href="https://twitter.com/legumeinfo" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span> Twitter</a></li>
+      
+      
+      
+      <li><a href="https://github.com/legumeinfo" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span> GitHub</a></li>
+      
+    </ul>
+    
+
+  </div>
+</div>
+
+
+
+<!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
+<div class="tm-main uk-section uk-section-default uk-flex">
+  <div class="uk-container uk-width-1-1">
+    <div class="uk-container uk-container-small">
+  <article class="uk-article">
+  <h1 class="uk-article-title">ZZBrowse</h1>
+  <p class="uk-article-meta">Posted by Sven Redsun on 17 February 2022.</p>
+  <p><a href="https://zzbrowse.legumeinfo.org">ZZBrowse</a> is an interactive R/Shiny web application for GWAS and QTL visualization. In this post, we describe our enhancements to the original <a href="https://github.com/baxterlabZbrowse/ZBrowse">ZBrowse</a> developed by the <a href="https://www.baxterlab.org/untitled-cqi0">Baxter Laboratory</a>. (For an overview of its basic functionality, please refer to the landing page.)</p>
+
+<h2 id="1-comparative-gwas-visualization">1. Comparative GWAS Visualization</h2>
+
+<p>Each ZZBrowse view now supports simultaneous visualization of GWAS data for two species, with Species 1 (here, cowpea) framed in blue and Species 2 (soybean) in orange.</p>
+
+<div class="blog-image">
+  <img src="/assets/img/blog_images/whgen.png" style="height: 415px; width: 680px;" />
+  <div class="attribution">&copy; 2022 NCGR</div>
+</div>
+
+<h2 id="2-macrosynteny-blocks">2. Macrosynteny blocks</h2>
+
+<p>The Whole Genome and Chromosome views now plot macrosynteny blocks v. a syntenic distance metric (Levenshtein or Jaccard). The cowpea v. soybean example below reveals distance clusters corresponding to two whole genome duplication events, an earlier one around 0.70 and a more recent one around 0.25.</p>
+<div class="blog-image">
+  <img src="/assets/img/blog_images/macrosynteny.png" style="height: 392px; width: 910px;" />
+  <div class="attribution">&copy; 2022 NCGR</div>
+</div>
+
+<h2 id="3-linkouts-and-genomic-linkages">3. Linkouts and Genomic Linkages</h2>
+
+<p>In the Chromosome view, clicking on a gene pops up a menu of linkouts. Click any of these to open its link in a new window.</p>
+
+<div class="blog-image">
+  <img src="/assets/img/blog_images/linkouts.png" style="height: 214px; width: 341px;" />
+  <div class="attribution">&copy; 2022 NCGR</div>
+</div>
+
+<p>For Species 1, the menu also has a Genomic Linkage option. Clicking this calls the Genome Context Viewer to identify similar regions in Species 2 (defined by the number of matching and non-matching neighboring genes). Matching genes are color-coded by gene family in rainbow order (relative to their Species 1 sequence), illustrating the degree of synteny between the two species. If more than one similar region exists in Species 2, the Related Regions menu lets you choose which one to view.</p>
+
+<div class="blog-image">
+  <img src="/assets/img/blog_images/chrom.png" style="height: 643px; width: 910px;" />
+  <div class="attribution">&copy; 2022 NCGR</div>
+</div>
+
+<p>In the example above, there is considerable synteny between regions of cowpea chromosome 5 (2.5-2.9 Mbp) and soybean chromosome 18 (55.0-55.3 Mbp). The GWAS data (Manhattan plots) show significant associations for seed weight in both regions.</p>
+
+<h2 id="4-using-macrosynteny-to-search-for-genomic-linkages">4. Using Macrosynteny to search for Genomic Linkages</h2>
+
+<p>The macrosynteny chart can serve as a guide for identifying likely related regions of the two genomes. To do so,</p>
+
+<p><span>1.</span> In the Whole Genome view, choose a GWAS peak for a trait of interest in Species 1, and call its location L1.</p>
+
+<p>Example: Days to flower at 8.7 Mbp of Mung bean chromosome 3.</p>
+
+<div class="blog-image">
+  <img src="/assets/img/blog_images/macrosynteny-genomic-linkage-1.png" style="height: 301px; width: 680px;" />
+  <div class="attribution">&copy; 2022 NCGR</div>
+</div>
+
+<p><span>2.</span> In the macrosynteny chart, identify regions of the Species 2 genome (L2) that are macrosyntenic to L1. There may be multiple L2 regions. You may filter on a given Species 1 chromosome to make the L1-L2 relationships more visible.</p>
+
+<p>Example: the rightmost dark blue macrosynteny block of Soybean chromosome 19, from 45.2-48.1 Mbp, is macrosyntenic to blocks 471-766 of Mung bean chromosome 3, which overlaps our selection.</p>
+
+<div class="blog-image">
+  <img src="/assets/img/blog_images/macrosynteny-genomic-linkage-2.png" style="height: 360px; width: 680px;" />
+  <div class="attribution">&copy; 2022 NCGR</div>
+</div>
+
+<p><span>3.</span> Again refer to the Whole Genome view. If any GWAS peaks for related traits exist in L2, click on the original GWAS peak in L1 to go to the Chromosome view. Then click on a gene in L1 to look for genomic linkages between L1 and L2.</p>
+
+<p>Example: In the Chromosome view, click the Mung bean gene vigra.Vradi03g07280, then the Genomic Linkage button. Either of the (adjacent) related regions in Soybean chromosome 19 overlaps the Days to flower GWAS peak there.</p>
+
+<div class="blog-image">
+  <img src="/assets/img/blog_images/macrosynteny-genomic-linkage-3.png" style="height: 586px; width: 680px;" />
+  <div class="attribution">&copy; 2022 NCGR</div>
+</div>
+<div class="blog-image">
+  <img src="/assets/img/blog_images/macrosynteny-genomic-linkage-4.png" style="height: 584px; width: 680px;" />
+  <div class="attribution">&copy; 2022 NCGR</div>
+</div>
+
+<h2 id="5-communication-with-the-genome-context-viewer">5. Communication with the Genome Context Viewer</h2>
+
+<p>The Genomic Linkages feature also enables communication between ZZBrowse and the Genome Context Viewer (GCV). For example, when Broadcast is enabled, clicking a gene family legend item like <img src="/assets/img/blog_images/phytozome_10_2.59162212.png" />highlights genes belonging to that family in the GCV.</p>
+
+<div class="blog-image">
+  <img src="/assets/img/blog_images/gcv.png" style="height: 149px; width: 910px;" />
+  <div class="attribution">&copy; 2022 NCGR</div>
+</div>
+
+<p>Similarly, when Listen is enabled, mousing over an item in the GCV highlights the corresponding item(s) in ZZBrowse.</p>
+
+<p>The Show in GCV link tells the GCV to focus on the same region of the Species 1 genome displayed in ZZBrowse.</p>
+
+<h2 id="other-new-features">Other New Features</h2>
+
+<div class="blog-image">
+  <img src="/assets/img/blog_images/load-data.png" style="float: left; height: 168px; width: 73px; margin-left: 8px; margin-right: 8px;" />
+  <div class="attribution">&copy; 2022 NCGR</div>
+</div>
+
+<p><strong>Importing local GWAS data</strong>: The original ZBrowse allowed loading your own local GWAS data files, but assigned each to a new, standalone dataset. Our implementation does not create new datasets on the fly, but instead adds user data to existing ones. We hope this feature will benefit researchers desiring to superimpose their own bleeding-edge GWAS data on previously published results.</p>
+
+<p>We provide GWAS datasets for common bean, cowpea, mung bean, peanut, pigeonpea, and soybean, while the <em>Medicago truncatula</em> and <em>Arabidopsis thaliana</em> datasets are initially empty (a few traits are available through the Remote Trait Files selector).</p>
+
+<p>To add your own local GWAS data, first prepare them as a delimited text file with a header row listing the column names. Required columns are chromosome, position, trait (= phenotype), and p-value (or other significance metric) for each SNP, but you may include others. Click the Local Trait Files/Browse button to specify which file(s) to load, then click the Load Data button to append the GWAS data. Finally, tweak any details (such as whether to take the negative logarithm of the reported p-value) through the Manage tab.</p>
+
+<p><strong>Importing local QTL data</strong>: We provide QTL datasets for common bean, cowpea, and peanut. To add your own QTL data, prepare a similar delimited text file as for GWAS data, but including columns for start and end position of the QTL interval. In the position column, put the center position of the interval.</p>
+
+<p><strong>Application state</strong>: The URL automatically reflects the current state of ZZBrowse, allowing you to easily save a result and replicate it later. For example, if you want to share an interesting genomic linkage with a colleague, just copy the current URL and paste it into an e-mail message. They can then launch ZZBrowse and recreate the same view.</p>
+
+<div class="blog-image">
+  <img src="/assets/img/blog_images/sidebar.png" style="float: left; height: 126px; width: 97px; margin-right: 8px; margin-left: 8px;" />
+  <div class="attribution">&copy; 2022 NCGR</div>
+</div>
+
+<p><strong>Tour</strong>: The Start Tour link (in the Manage tab) launches a guided tour (or tutorial) of ZZBrowse.</p>
+
+<p><strong>Connection Status</strong>: This panel (also in the Manage tab) indicates when remote data sources are unavailable, relieving user angst.</p>
+
+<p><strong>Two Species</strong>: Toggles display of Species 2, macrosynteny, and genomic linkages (for “original ZBrowse” mode).</p>
+
+<p><strong>Swap Datasets</strong>: Exchanges Species 1 and Species 2.</p>
+
+
+
+</article>
+
+</div>
+
+  </div>
+
+  
+
+</div>
+
+
+</body>
+</html>

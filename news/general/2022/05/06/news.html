@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AgBioData data management survey &#8211; LIS: Legume Information System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AgBioData survey">
+  <meta name="robots" content="all">
+  <meta name="author" content="">
+  
+  <meta name="keywords" content="news, general">
+  <link rel="canonical" href="/news/general/2022/05/06/news.html">
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-49655154-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-49655154-1');
+</script>
+
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/uikit/dist/css/uikit.min.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/css/uikit-theme.css" type="text/css" />
+
+  <!-- place globally-included stylesheet content here -->
+<style>
+  .species-image {
+      float: right;
+      margin: 10px;
+  }
+  .species-image img {
+      border: 1px solid darkgreen;
+  }
+  .species-image .attribution {
+      text-align: center; 
+      font-style: italic;
+      font-size: 80%;
+  }
+  .blog-image {
+      float: right;
+      margin: 10px;
+  }
+  .blog-image img {
+      border: 1px solid gray;
+  }
+  .blog-image .attribution {
+      text-align: center; 
+      font-style: italic;
+      font-size: 80%;
+  }
+  .temp {
+      color: darkred;
+      font-family: serif;
+      font-weight: bold;
+  }
+</style>
+
+
+
+  <!-- Custom JS -->
+  <script src="/assets/uikit/dist/js/uikit.min.js"></script>
+  <script src="/assets/uikit/dist/js/uikit-icons.min.js"></script>
+
+  <!-- place globally-included scripts here -->
+
+
+  <!-- opt-in code for integrating GraphQL with LIS Web Components -->
+  <script type="importmap">
+    {
+      "imports": {
+        "lis-graphql": "/assets/js/graphql/index.js"
+      }
+    }
+  </script>
+
+  
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192x192.png">
+      <link rel="icon" href="/assets/icons/favicon.ico">
+      </head>
+
+
+<body>
+
+
+
+
+<div id="navbar" class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed uk-light" uk-sticky>
+
+  <div id="alerts">
+    
+    
+      
+
+    
+  </div>
+
+  <script type="text/javascript">
+
+    // define the cookie key
+    const alertsKey = "lis-navbar-alerts";
+
+    // get the alerts element
+    const alerts = document.getElementById("alerts");
+
+    // define a callback that saves the toggle state
+    function toggleCallback(event) {
+      document.cookie = `${alertsKey}=${event.type};SameSite=Lax;path=/`;
+    }
+
+    // use the callback every time the element is toggled
+    alerts.addEventListener("show", toggleCallback);
+    alerts.addEventListener("hide", toggleCallback);
+
+    // load the element's state
+    const alertsCookie = document.cookie
+      .split('; ')
+      .find(row => row.startsWith(`${alertsKey}=`));
+
+    // hide the alerts if they're supposed to be hidden
+    if (alertsCookie && alertsCookie.split('=')[1].toLowerCase() === "hide") {
+      UIkit.toggle(alerts).toggle();
+    }
+
+  </script>
+
+  <div class="uk-container uk-container-expand">
+    <nav class="uk-navbar">
+      <div class="uk-navbar-left uk-text-truncate">
+        <a class="uk-navbar-item uk-logo uk-text-truncate" href="/">
+          
+          <img class="uk-margin-small-right" src="/assets/img/logo.png" width="47" height="47" />
+          
+          <div class="uk-text-truncate">
+            LIS: Legume Information System
+            
+            <div class="uk-navbar-subtitle uk-text-truncate">Information about legume traits for crop improvement</div>
+            
+          </div>
+        </a>
+      </div>
+      <div class="uk-navbar-right uk-flex-none">
+
+        <ul class="uk-navbar-nav uk-visible@l">
+  <li><a href="/">Home</a></li>
+  <li>
+    <a href="/taxa">Taxa</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          
+            <li> <a href="/taxa//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+      </ul>
+    </div>
+    
+  </li>
+  <li>
+    <a href="/tools">Tools</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+      </ul>
+    </div>
+    
+  </li>
+  <li><a href="/download">Download</a></li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help">Help</a></li>
+</ul>
+
+<a href="#off-screen-menu" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle></a>
+
+
+        <ul class="uk-navbar-nav uk-visible@s">
+
+        
+          <li><a class="tm-no-underline" href="https://twitter.com/legumeinfo" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span></a></li>
+        
+        
+        
+          <li><a class="tm-no-underline" href="https://github.com/legumeinfo" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span></a></li>
+        
+
+        </ul>
+        
+        
+      </div>
+    </nav>
+    <nav class="uk-navbar tm-lower-navbar">
+      <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav uk-hidden@l uk-visible@s">
+  <li><a href="/">Home</a></li>
+  <li>
+    <a href="/taxa">Taxa</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          
+            <li> <a href="/taxa//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+      </ul>
+    </div>
+    
+  </li>
+  <li>
+    <a href="/tools">Tools</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+      </ul>
+    </div>
+    
+  </li>
+  <li><a href="/download">Download</a></li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help">Help</a></li>
+</ul>
+
+
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div id="off-screen-menu" uk-offcanvas="overlay: true">
+  <div class="uk-offcanvas-bar uk-dark  uk-background-secondary">
+
+    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+  <li><a href="/">Home</a></li>
+  
+  <li class="uk-parent">
+    <a href="#">Taxa</a>
+    
+    <ul class="uk-nav-sub">
+      
+        
+          
+            <li><a href="/taxa//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+    </ul>
+  </li>
+  
+  
+  <li class="uk-parent">
+    <a href="/tools">Tools</a>
+    
+    <ul class="uk-nav-sub">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+    </ul>
+  </li>
+  
+  <li><a href="/download">Download</a></li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help">Help</a></li>
+</ul>
+
+
+    
+    <ul class="uk-nav uk-nav-default">
+      <li class="uk-nav-divider"></li>
+      
+      <li><a href="https://twitter.com/legumeinfo" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span> Twitter</a></li>
+      
+      
+      
+      <li><a href="https://github.com/legumeinfo" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span> GitHub</a></li>
+      
+    </ul>
+    
+
+  </div>
+</div>
+
+
+
+<!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
+<div class="tm-main uk-section uk-section-default uk-flex">
+  <div class="uk-container uk-width-1-1">
+    <div class="uk-container uk-container-small">
+  <article class="uk-article">
+  <h1 class="uk-article-title">AgBioData data management survey</h1>
+
+  <p class="uk-article-meta">Written by Jacqueline Campbell on 06 May 2022.</p>
+
+  <p class="uk-text-lead">AgBioData survey</p>
+
+  <p>We are asking you to participate in a survey about standardized data curation principles and their implementation in data repositories for agricultural research and breeding programs. This survey was developed by the <a href="https://www.agbiodata.org">AgBioData consortium</a>, in which our database is a participant.</p>
+
+<p>The survey is anonymous, and your answers will be used to shape AgBioData’s future goals and solutions for standardized data management in agriculture.</p>
+
+<p>If you are willing to participate, please submit your answers <a href="https://ncsu.qualtrics.com/jfe/form/SV_9Zv0sSXJhdz2bYO">here</a> by May 16th, 2022.</p>
+
+<p>Your opinion is valuable to us and can help AgBioData define better genomic, genetic, and breeding data curation practices.</p>
+
+
+</article>
+
+</div>
+
+  </div>
+
+  
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Arachis &#8211; LIS: Legume Information System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species.">
+  <meta name="robots" content="all">
+  <meta name="author" content="">
+  
+  
+  <link rel="canonical" href="/taxa/arachis/">
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-49655154-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-49655154-1');
+</script>
+
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/uikit/dist/css/uikit.min.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/css/uikit-theme.css" type="text/css" />
+
+  <!-- place globally-included stylesheet content here -->
+<style>
+  .species-image {
+      float: right;
+      margin: 10px;
+  }
+  .species-image img {
+      border: 1px solid darkgreen;
+  }
+  .species-image .attribution {
+      text-align: center; 
+      font-style: italic;
+      font-size: 80%;
+  }
+  .blog-image {
+      float: right;
+      margin: 10px;
+  }
+  .blog-image img {
+      border: 1px solid gray;
+  }
+  .blog-image .attribution {
+      text-align: center; 
+      font-style: italic;
+      font-size: 80%;
+  }
+  .temp {
+      color: darkred;
+      font-family: serif;
+      font-weight: bold;
+  }
+</style>
+
+
+
+  <!-- Custom JS -->
+  <script src="/assets/uikit/dist/js/uikit.min.js"></script>
+  <script src="/assets/uikit/dist/js/uikit-icons.min.js"></script>
+
+  <!-- place globally-included scripts here -->
+
+
+  <!-- opt-in code for integrating GraphQL with LIS Web Components -->
+  <script type="importmap">
+    {
+      "imports": {
+        "lis-graphql": "/assets/js/graphql/index.js"
+      }
+    }
+  </script>
+
+  
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192x192.png">
+      <link rel="icon" href="/assets/icons/favicon.ico">
+      </head>
+
+
+<body>
+
+
+
+
+<div id="navbar" class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed uk-light" uk-sticky>
+
+  <div id="alerts">
+    
+    
+      
+
+    
+  </div>
+
+  <script type="text/javascript">
+
+    // define the cookie key
+    const alertsKey = "lis-navbar-alerts";
+
+    // get the alerts element
+    const alerts = document.getElementById("alerts");
+
+    // define a callback that saves the toggle state
+    function toggleCallback(event) {
+      document.cookie = `${alertsKey}=${event.type};SameSite=Lax;path=/`;
+    }
+
+    // use the callback every time the element is toggled
+    alerts.addEventListener("show", toggleCallback);
+    alerts.addEventListener("hide", toggleCallback);
+
+    // load the element's state
+    const alertsCookie = document.cookie
+      .split('; ')
+      .find(row => row.startsWith(`${alertsKey}=`));
+
+    // hide the alerts if they're supposed to be hidden
+    if (alertsCookie && alertsCookie.split('=')[1].toLowerCase() === "hide") {
+      UIkit.toggle(alerts).toggle();
+    }
+
+  </script>
+
+  <div class="uk-container uk-container-expand">
+    <nav class="uk-navbar">
+      <div class="uk-navbar-left uk-text-truncate">
+        <a class="uk-navbar-item uk-logo uk-text-truncate" href="/">
+          
+          <img class="uk-margin-small-right" src="/assets/img/logo.png" width="47" height="47" />
+          
+          <div class="uk-text-truncate">
+            LIS: Legume Information System
+            
+            <div class="uk-navbar-subtitle uk-text-truncate">Information about legume traits for crop improvement</div>
+            
+          </div>
+        </a>
+      </div>
+      <div class="uk-navbar-right uk-flex-none">
+
+        <ul class="uk-navbar-nav uk-visible@l">
+  <li><a href="/">Home</a></li>
+  <li>
+    <a href="/taxa">Taxa</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          
+            <li> <a href="/taxa//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+      </ul>
+    </div>
+    
+  </li>
+  <li>
+    <a href="/tools">Tools</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+      </ul>
+    </div>
+    
+  </li>
+  <li><a href="/download">Download</a></li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help">Help</a></li>
+</ul>
+
+<a href="#off-screen-menu" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle></a>
+
+
+        <ul class="uk-navbar-nav uk-visible@s">
+
+        
+          <li><a class="tm-no-underline" href="https://twitter.com/legumeinfo" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span></a></li>
+        
+        
+        
+          <li><a class="tm-no-underline" href="https://github.com/legumeinfo" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span></a></li>
+        
+
+        </ul>
+        
+        
+      </div>
+    </nav>
+    <nav class="uk-navbar tm-lower-navbar">
+      <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav uk-hidden@l uk-visible@s">
+  <li><a href="/">Home</a></li>
+  <li>
+    <a href="/taxa">Taxa</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          
+            <li> <a href="/taxa//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/taxa//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+      </ul>
+    </div>
+    
+  </li>
+  <li>
+    <a href="/tools">Tools</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+      </ul>
+    </div>
+    
+  </li>
+  <li><a href="/download">Download</a></li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help">Help</a></li>
+</ul>
+
+
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div id="off-screen-menu" uk-offcanvas="overlay: true">
+  <div class="uk-offcanvas-bar uk-dark  uk-background-secondary">
+
+    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+  <li><a href="/">Home</a></li>
+  
+  <li class="uk-parent">
+    <a href="#">Taxa</a>
+    
+    <ul class="uk-nav-sub">
+      
+        
+          
+            <li><a href="/taxa//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/taxa//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+    </ul>
+  </li>
+  
+  
+  <li class="uk-parent">
+    <a href="/tools">Tools</a>
+    
+    <ul class="uk-nav-sub">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+    </ul>
+  </li>
+  
+  <li><a href="/download">Download</a></li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/help">Help</a></li>
+</ul>
+
+
+    
+    <ul class="uk-nav uk-nav-default">
+      <li class="uk-nav-divider"></li>
+      
+      <li><a href="https://twitter.com/legumeinfo" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span> Twitter</a></li>
+      
+      
+      
+      <li><a href="https://github.com/legumeinfo" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span> GitHub</a></li>
+      
+    </ul>
+    
+
+  </div>
+</div>
+
+
+
+  <div id="left-menu" class="tm-sidebar-left uk-visible@m">
+
+  
+  
+    
+<h3>Taxa</h3>
+<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+  
+  
+  
+  <li><a href="/taxa/arachis">Arachis</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/taxa/cajanus">Cajanus</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/taxa/cicer">Cicer</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/taxa/glycine">Glycine</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/taxa/lotus">Lotus</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/taxa/lupinus">Lupinus</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/taxa/medicago">Medicago</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/taxa/phaseolus">Phaseolus</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/taxa/pisum">Pisum</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/taxa/trifolium">Trifolium</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/taxa/vigna">Vigna</a></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li class="uk-nav-divider"></li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <li><a href="/taxa/aeschynomene">Aeschynomene</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/taxa/apios">Apios</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/taxa/cercis">Cercis</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/taxa/chamaecrista">Chamaecrista</a></li>
+  
+  
+  
+  
+  
+  <li><a href="/taxa/faidherbia">Faidherbia</a></li>
+  
+  
+  
+</ul>
+
+  
+  
+
+  <!-- dynamically set the top style property of the left menu when the height of the navbar changes -->
+  <!-- NOTE: the script tag is nested so it doesn't break a CSS selector -->
+  <script type="text/javascript">
+
+    const navbar = document.getElementById("navbar");
+    const left = document.getElementById("left-menu");
+
+    const leftTopObserver = new ResizeObserver(entries => {
+      for (let entry of entries) {
+        // use the newer contentBoxSize property if the browser supports it
+        if (entry.contentBoxSize) {
+          left.style.top = entry.contentBoxSize[0].blockSize + "px";
+        // fallback to the older contentRect property
+        } else {
+          left.style.top = entry.contentRect.height + "px";
+        }
+      }
+    });
+
+    leftTopObserver.observe(navbar);
+
+  </script>
+</div>
+
+
+<!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
+<div class="tm-main uk-section uk-section-default uk-flex">
+  <div class="uk-container uk-width-1-1">
+    
+
+
+
+
+
+<h1><i>Arachis</i> (Peanut)</h2>
+
+<p>The genus Arachis contains approximately 69 species, distributed in South America east of the Andes, in the regions or Argentina, Bolivia, and Brazil. Krapovickas, A. & W.C. Gregory. 2006. Taxonomy of the genus Arachis (Leguminosae). Translated by D.E. Williams & C.E. Simpson.</p>
+<p>NCBI taxonomy ID: <b>3817</b></p>
+
+
+<h2>Tools and resources for the genus as a whole</h2>
+<dl>
+  
+  <dt><a href="https://mines.legumeinfo.org/arachismine/begin.do">ArachisMine</a></dt>
+  <dd>InterMine interface for accessing genetic and genomic data for Arachis species.</dd>
+  
+  <dt><a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&datasets=Peanut%20GWAS&chr=Arahy.01&selected=100000&window=250000&datasets2=Soybean%20GWAS&chr2=Gm01&selected2=100000&window2=250000">ZZBrowse</a></dt>
+  <dd>Association viewers (QTL, GWAS)</dd>
+  
+  <dt><a href="https://peanutbase.org/gigwa">Gigwa</a></dt>
+  <dd>Genetic variation viewer </dd>
+  
+  <dt><a href="https://peanutbase.org/tools/gcvit">GCViT</a></dt>
+  <dd>Genetic variation viewer </dd>
+  
+  <dt><a href="https://peanutbase.org/tools/gcv">Genome Context Viewer</a></dt>
+  <dd>Browser for dynamically discovering and viewing genomic synteny across selected species.</dd>
+  
+  <dt><a href="https://germplasm-map.legumeinfo.org/#?zoom=5&maxRecs=200&taxonQuery=&traitOverlay=&traitScale=global&country=&geocodedOnly=false&traitExcludeUnchar=false&limitToMapExtent&lat=-11.70&lng=-59.08&mapHeight=350&baseMap=ESRI%20-%20NatGeo%20(default,%20reference%20map)&ne_lat=-4.083452772038619&ne_lng=-41.52832031250001&sw_lat=-19.103648251663632&sw_lng=-76.640625">Germplasm GIS</a></dt>
+  <dd>Geographic information system viewer, showing collection locations for Arachis data held by the U.S. National Plant Germplasm System.</dd>
+  
+</dl>
+
+
+<h2>Tools and resources for particular species</h2>
+
+
+
+<hr/>
+
+<h3 id="hypogaea"><i>Arachis hypogaea</i>: peanut</h3>
+
+
+
+
+
+
+<p>Peanut (Arachis hypogaea) was domesticated at the foot of the South American Andes within modern-day Argentina, Bolivia, or Paraguay. Cultivated peanuts are allotetraploids, with sub-genomes probably contributed by the hybridization of the diploid species Arachis duranensis and Arachis ipaensis.</p>
+
+<p>NCBI taxonomy ID: <b>3818</b></p>
+
+
+<h4><i>Arachis hypogaea</i> resources</h4>
+<dl>
+  
+  <dt><a href="https://mines.legumeinfo.org/arachismine/begin.do">ArachisMine</a></dt>
+  <dd>InterMine interface for accessing genetic and genomic data for several species in Arachis.</dd>
+  
+  <dt><a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&datasets=Peanut%20GWAS&chr=Arahy.01&selected=100000&window=250000&datasets2=Soybean%20GWAS&chr2=Gm01&selected2=100000&window2=250000">ZZBrowse</a></dt>
+  <dd>Association viewers (QTL, GWAS)</dd>
+  
+  <dt><a href="https://peanutbase.org/germplasm/gigwa">Gigwa</a></dt>
+  <dd>Genetic variation viewer </dd>
+  
+  <dt><a href="https://peanutbase.org/germplasm/gcvit">GCViT</a></dt>
+  <dd>Genetic variation viewer </dd>
+  
+  <dt><a href="https://gcv.legumeinfo.org/gene;lis=arahy.Tifrunner.gnm1.ann1.P7Z3M8?q=arahy.P7Z3M8">Genome Context Viewer</a></dt>
+  <dd>Browser for dynamically discovering and viewing genomic synteny across selected species.</dd>
+  
+  <dt><a href="https://germplasm-map.legumeinfo.org/#?zoom=6&maxRecs=200&taxonQuery=&traitOverlay=&traitScale=global&country=&geocodedOnly=false&traitExcludeUnchar=false&limitToMapExtent&lat=35.87&lng=-109.48&mapHeight=210.25&baseMap=ESRI%20-%20NatGeo%20(default,%20reference%20map)&ne_lat=37.71859032558816&ne_lng=-95.00976562500001&sw_lat=33.97980872872457&sw_lng=-123.94775390625001">Germplasm GIS</a></dt>
+  <dd>Geographic information system viewer, showing collection locations for Arachis data held by the U.S. National Plant Germplasm System.</dd>
+  
+  <dt><a href="https://data.legumeinfo.org/Arachis/hypogaea/">Dowload at DS</a></dt>
+  <dd>DataStore dir for Arachis hypogaea.</dd>
+  
+</dl>
+
+
+<h4><i>Arachis hypogaea</i> accessions</h4>
+
+<b>Tifrunner</b> (Southeastern United States) <br/>
+Cultivar Tifrunner is a runner-type peanut bred in the United States and widely planted as a variety and widely used in breeding programs. The genome of this cultivar is described in Bertioli et al., 2019 (doi:10.1038/s41588-019-0405-z).
+
+<ul>
+  
+  <li><a href="https://legacy.peanutbase.org/gbrowse_peanut1.0">Peanutbase Genome Browser (GBrowse)</a> : GBrowse for Tifrunner assembly 1.0</li>
+  
+  <li><a href="https://legacy.peanutbase.org/genomes/jbrowse?data=arahy.Tifrunner.gnm1">Peanutbase Genome Browser (JBrowse)</a> : JBrowse for Tifrunner assembly 1.0</li>
+  
+  <li><a href="https://legacy.peanutbase.org/gb2/gbrowse/arahy.Tifrunner.gnm2/">PeanutBase Genome Browser (GBrowse)</a> : GBrowse for Tifrunner assembly 2.0</li>
+  
+  <li><a href="https://www.ncbi.nlm.nih.gov/nuccore/PIVG00000000">NCBI Tifrunner assembly 2.0</a> : Tifrunner gnm2.ann2 (assembly 2.0 annotation 2.0) at NCBI</li>
+  
+  <li><a href="https://www.peanutbase.org/tools/sequenceserver/">LIS SequenceServer</a> : SequenceServer BLAST against the Tifrunner v2 assembly</li>
+  
+</ul>
+
+
+<b>Fuhuasheng</b> (North China) <br/>
+The mid-twentieth century landrace Fuhuasheng, from North China, is a widely used parent from which ∼70% of Chinese peanut cultivars released during the past half century have been derived.
+
+<br/><i>No resources are currently listed for accession <b>Fuhuasheng</b></i>.
+
+
+<b>Shitouqi</b> (China) <br/>
+Arachis hypogaea var. Shitouqi (zh.h0235), the most widely cultivated peanut ecotype in the world, is a Chinese cultivar and breeding parent belonging to subspecies fastigiata, botanical type vulgaris and agronomic type Spanish with heterozygosity only 1/6,537 nucleotides on average.
+
+<br/><i>No resources are currently listed for accession <b>Shitouqi</b></i>.
+
+
+<b>BaileyII</b> (Southeast US) <br/>
+Virginia-type peanut cultivar developed by NCSU breeding program. Bailey II is a near-isogenic line to Bailey, possessing high-oleic trait and resistance to several important pathogens, derived from A. cardenasii introgressions.
+
+<br/><i>No resources are currently listed for accession <b>BaileyII</b></i>.
+
+
+
+
+
+<hr/>
+
+<h3 id="duranensis"><i>Arachis duranensis</i>: diploid wild peanut - A-genome</h3>
+
+
+
+
+
+
+<p>Arachis duranensis, a wild herb native to Argentina, Bolivia, and Paraguay, is thought to be one of the diploid ancestors of cultivated peanut. Its genome has been sequenced as part of the Peanut Genomics Initiative, to help in the accurate assembly of the more important cultivated peanut, A. hypogaea. Cultivated peanut derived all of its genetic material from two wild ancestors, A. duranensis and A. ipaensis whose genomes merged several thousand years ago, in a rare genetic event. The wild species, therefore, have half as much genetic material as cultivated peanut. These two simpler genomes have first been sequenced toward achieving its ultimate goal: the complete genomic sequence for cultivated peanut. The cultivated peanut is an allotetraploid (2n=4x=40) that carries both the A and B genomes and A. duranensis (2n=2x=20) has likely contributed the A genome, the smaller set of chromosomes in the karyotype. These two ancestral diploids separated from each other about 3 million years ago. The genome merger, allopolyploidy event, ocurred relatively very recently, five to ten thousand years ago, followed by domestication in South America from where it appeared in most part of the world by 1600. Arachis duranensis is described further in Bertioli et al., 2016 (doi:10.1038/ng.3517)</p>
+
+<p>NCBI taxonomy ID: <b>130453</b></p>
+
+
+<h4><i>Arachis duranensis</i> resources</h4>
+<dl>
+  
+  <dt><a href="https://data.legumeinfo.org/Arachis/duranensis/">Dowload at DS</a></dt>
+  <dd>DataStore dir for Arachis duranensis.</dd>
+  
+</dl>
+
+
+<h4><i>Arachis duranensis</i> accessions</h4>
+
+<b>V14167</b> (Argentina, via USDA National Plant Germplasm Repository) <br/>
+Arachis duranensis strain V14167 originates in a region east of the Andes, in the vicinity of northern Argentina and southern Bolivia. This accession is thought to be one of the diploid ancestors of cultivated peanut. Its genome has been sequenced as part of the Peanut Genomics Initiative, to help in the accurate assembly of the more important cultivated peanut, A. hypogaea. This accession is described in Bertioli et al., 2016 (doi:10.1038/ng.3517)
+
+<ul>
+  
+  <li><a href="https://legacy.peanutbase.org/gb2/gbrowse/Aradu1.0">Peanutbase Genome Browser (GBrowse)</a> : GBrowse for V14167 assembly 1.0</li>
+  
+  <li><a href="https://legacy.peanutbase.org/genomes/jbrowse?data=Aradu1.0">Peanutbase Genome Browser (JBrowse)</a> : JBrowse for V14167 assembly 1.0</li>
+  
+  <li><a href="http://www.ncbi.nlm.nih.gov/assembly/GCA_000817695.1/">Genome assembly at NCBI</a> : Genome assembly at NCBI, V14167</li>
+  
+</ul>
+
+
+
+
+
+<hr/>
+
+<h3 id="ipaensis"><i>Arachis ipaensis</i>: diploid wild peanut - B genome</h3>
+
+
+
+
+
+
+<p>Arachis ipaensis A. ipaensis, native to Bolivia, is thought to be one of the diploid ancestors of cultivated peanut. The genome of A. ipaensis has just been sequenced as part of the Peanut Genomics Initiative, to help in the accurate assembly of the tetraploid domestic peanut, A. hypogaea. Cultivated peanut derived all of its genetic material from two wild ancestors, A. duranensis and A. ipaensis whose genomes merged several thousand years ago, in a rare genetic event. The wild species, therefore, have half as much genetic material as cultivated peanut. These two simpler genomes have first been sequenced toward achieving its ultimate goal: the complete genomic sequence for cultivated peanut. Arachis ipaensis is described further in Bertioli et al., 2016 (doi:10.1038/ng.3517)</p>
+
+<p>NCBI taxonomy ID: <b>130454</b></p>
+
+
+<h4><i>Arachis ipaensis</i> resources</h4>
+<dl>
+  
+  <dt><a href="https://data.legumeinfo.org/Arachis/ipaensis/">Dowload at DS</a></dt>
+  <dd>DataStore dir for Arachis ipaensis.</dd>
+  
+</dl>
+
+
+<h4><i>Arachis ipaensis</i> accessions</h4>
+
+<b>K30076</b> (Southern Bolivia) <br/>
+Arachis ipaensis accession K30076 is the only accession collected from what is thought to be the origin of tetraploid peanut, Villa Montes Bolivia. It was likely carried there by early agriculturalists from a larger population several hundred kilometers to the north (Bertioli et al., 2016: doi:10.1038/ng.3517)
+
+<ul>
+  
+  <li><a href="https://legacy.peanutbase.org/gb2/gbrowse/Araip1.0">Peanutbase Genome Browser (GBrowse)</a> : GBrowse for K30076 assembly 1.0</li>
+  
+  <li><a href="https://legacy.peanutbase.org/genomes/jbrowse?data=Araip1.0">Peanutbase Genome Browser (JBrowse)</a> : JBrowse for K30076 assembly 1.0</li>
+  
+  <li><a href="http://www.ncbi.nlm.nih.gov/assembly/GCA_000816755.1/">Genome assembly at NCBI</a> : Genome assembly at NCBI, K30076</li>
+  
+</ul>
+
+
+
+
+
+<hr/>
+
+<h3 id="cardenasii"><i>Arachis cardenasii</i>: Mani silvestre (wild peanut)</h3>
+
+
+
+
+
+
+<p>Arachis cardenasii Krapov. & W.C. Greg. is a wild peanut relative native to Bolivia. It has been used by peanut breeders and geneticists in interspecific hybrids with cultivated peanut (A. hypogaea) as a source of pest and disease resistance. A. cardenasii is a diploid  species in the 'A-genome' group of Arachis, similar to A. duranensis, which contributed one of the two subgenomes to tetraploid cultivated peanut.</p>
+
+<p>NCBI taxonomy ID: <b>51121</b></p>
+
+
+<h4><i>Arachis cardenasii</i> resources</h4>
+<dl>
+  
+  <dt><a href="https://data.legumeinfo.org/Arachis/cardenasii/">Dowload at DS</a></dt>
+  <dd>DataStore dir for Arachis cardenasii.</dd>
+  
+</dl>
+
+
+<h4><i>Arachis cardenasii</i> accessions</h4>
+
+<b>K10017</b> (Robore, Bolivia) <br/>
+Perennial plant. Taproot deep,  Mainstem erect, with long procumbent lateral branches growing from base. Leaves tetrafoliolate, fruit geocarpic.
+
+<br/><i>No resources are currently listed for accession <b>K10017</b></i>.
+
+
+
+
+
+<hr/>
+
+<h3 id="stenosperma"><i>Arachis stenosperma</i>: Amendoim silvestre (wild peanut)</h3>
+
+
+
+
+
+
+<p>Arachis stenosperma Krapov. & W.C. Greg. is a wild peanut relative native to central Brazil, in the past it was cultivated by native peoples of South America, and was carried to the Atlantic coast, where populations persist to the present day. It is a source of strong pest and disease resistance and has been used by peanut breeders and geneticists in interspecific hybrids. A. stenosperma is diploid species in the A-genome group of Arachis, which has similarity to the A genome of tetraploid cultivated peanut (A. hypogaea).</p>
+
+<p>NCBI taxonomy ID: <b>217475</b></p>
+
+
+<h4><i>Arachis stenosperma</i> resources</h4>
+<dl>
+  
+  <dt><a href="https://data.legumeinfo.org/Arachis/stenosperma/">Dowload at DS</a></dt>
+  <dd>DataStore dir for Arachis stenosperma.</dd>
+  
+</dl>
+
+
+<h4><i>Arachis stenosperma</i> accessions</h4>
+
+<b>V10309</b> (Brazil) <br/>
+This accession was sequenced with PacBio long reads, with contributions by USDA-ARS and researchers at Mars Inc. and the University of Georgia. Seed collected in Brazil by Jose F. Valls and Glocimar de Silva.
+
+<br/><i>No resources are currently listed for accession <b>V10309</b></i>.
+
+
+
+
+
+
+
+  </div>
+
+  
+
+</div>
+
+
+</body>
+</html>
