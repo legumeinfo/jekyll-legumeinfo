@@ -10,12 +10,6 @@ species:
     Sato et al., 2008 (doi:10.1093/dnares/dsn008).'
   genus: Lotus
   resources:
-  - URL: https://legacy.legumeinfo.org/genomes/gbrowse/Lj3.0
-    description: GBrowse for Lutus Japonicus assembly v3.0
-    name: LIS Genome Browser (GBrowse)
-  - URL: https://legacy.legumeinfo.org/genomes/jbrowse?data=Lj3.0
-    description: JBrowse for Lotus Japonicus assembly v3.0
-    name: LIS Genome Browser (JBrowse)
   - URL: https://sequenceserver.legumeinfo.org/
     description: SequenceServer BLAST against the Lotus Japonicus assembly v3.0
     name: LIS SequenceServer
@@ -30,4 +24,10 @@ species:
     identifier: MG20
     name: Miyakojima
     origin: Miyakojima, Japan
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22lotja.MG20.gnm3%22, %22loc%22: %22lotja.MG20.gnm3.Lj0:1-192322135%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 lotja.MG20.gnm3
   taxid: 34305

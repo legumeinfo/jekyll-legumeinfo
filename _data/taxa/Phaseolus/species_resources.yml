@@ -22,12 +22,11 @@ species:
     name: G27455
     origin: Colombia
     resources:
-    - URL: https://legacy.legumeinfo.org/genomes/gbrowse/phalu.G27455.gnm1
-      description: GBrowse for G27544 assembly v1.0
-      name: LIS Genome Browser (GBrowse)
-    - URL: https://legacy.legumeinfo.org/genomes/jbrowse/?data=phalu.G27455.gnm1
-      description: JBrowse for G27544 assembly v1.0
-      name: LIS Genome Browser (JBrowse)
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phalu.G27455.gnm1%22, %22loc%22: %22phalu.G27455.gnm1.Pl01:1-47615855%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 phalu.G27455.gnm1
   - accession: PI 549515
     description: "A germplasm release designated B2C (PI 549515), made jointly by\
       \ USDA-ARS and the Delaware Agricultural Experiment Station in 1976, had resistance\
@@ -86,15 +85,19 @@ species:
     name: G19833
     origin: Peru
     resources:
-    - URL: https://legacy.legumeinfo.org/genomes/gbrowse/phavu.G19833.gnm2
-      description: GBrowse for G19833 assembly v2.0
-      name: LIS Genome Browser (GBrowse)
-    - URL: https://legacy.legumeinfo.org/genomes/jbrowse/?data=phavu.G19833.gnm2
-      description: JBrowse for G19833 assembly v2.0
-      name: LIS Genome Browser (JBrowse)
     - URL: https://sequenceserver.legumeinfo.org/
       description: SequenceServer BLAST against the Phaseolus vulgaris genome v2.0
       name: LIS SequenceServer
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phavu.G19833.gnm2%22, %22loc%22: %22phavu.G19833.gnm2.Chr01:1-51433939%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 phavu.G19833.gnm2
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phavu.G19833.gnm1%22, %22loc%22: %22phavu.G19833.gnm1.Chr01:1-52205531%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 phavu.G19833.gnm1
   - accession: PI 549535, PI 599011, PI 599012, PI 599013
     description: Bean variety UI111 is a Mesomarican line that has been used in numerous
       breeding projects and trait-mapping studies.It is a pinto-type bean, with indeterminate
@@ -103,18 +106,23 @@ species:
     name: UI111
     origin: US National Plant Germplasm System
     resources:
-    - URL: https://legacy.legumeinfo.org/genomes/gbrowse/phavu.UI111.gnm1/
-      description: GBrowse for UI111 assembly v1.0
-      name: LIS Genome Browser (GBrowse)
-    - URL: https://legacy.legumeinfo.org/genomes/jbrowse/phavu.UI111.gnm1/
-      description: JBrowse for UI111 assembly v1.0
-      name: LIS Genome Browser (JBrowse)
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phavu.UI111.gnm1%22, %22loc%22: %22phavu.UI111.gnm1.Chr01:1-61842036%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 phavu.UI111.gnm1
   - accession: Labor Ovalle
     description: Guatemalan highlands landrace improved by selection; round-seeded
       Bolonilio market class bean.
     identifier: LaborOvalle
     name: Labor Ovalle
     origin: Institute of Agricultural Science and Technology (ICTA)
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phavu.LaborOvalle.gnm1%22, %22loc%22: %22phavu.LaborOvalle.gnm1.Chr01:1-57219719%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 phavu.LaborOvalle.gnm1
   - accession: OACRex
     description: OAC Rex is a white-seeded, high-yielding cultivar intended for production
       in Canada, and is the first common bean cultivar resistant to common bacterial
@@ -122,6 +130,12 @@ species:
     identifier: OACRex
     name: OAC Rex
     origin: Department of Plant Agriculture, University of Guelph, Guelph, Ontario.
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phavu.OACRex.gnm2%22, %22loc%22: %22phavu.OACRex.gnm2.Chr02:1-42958169%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 phavu.OACRex.gnm2
   - accession: PI 608674
     description: 5-593 has been used by Dr. Mark Bassett at the University of Florida
       as the recipient parent to introgress many genes for seed coat color and pattern,
@@ -130,6 +144,12 @@ species:
     identifier: 5-593
     name: 5-593
     origin: US National Plant Germplasm System
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phavu.5-593.gnm1%22, %22loc%22: %22phavu.5-593.gnm1.Chr01:1-54800730%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 phavu.5-593.gnm1
   - accession: BAT93
     description: Common bean genotype BAT 93, a representative of the Mesoamerican
       gene pool, was bred for high productivity in tropical conditions at the Centro
@@ -167,13 +187,7 @@ species:
     that region since pre-Columbian times. It is generally more drought-tolerant than
     common bean
   genus: Phaseolus
-  resources:
-  - URL: https://legacy.legumeinfo.org/genomes/gbrowse/phaac.Frijol_Bayo.gnm1
-    description: GBrowse for Frijol_Bayo assembly v1.0
-    name: LIS Genome Browser (GBrowse)
-  - URL: https://legacy.legumeinfo.org/genomes/jbrowse/?data=phaac.Frijol_Bayo.gnm1
-    description: JBrowse for Frijol_Bayo assembly v1.0
-    name: LIS Genome Browser (JBrowse)
+  resources: null
   species: acutifolius
   strains:
   - accession: PI 692269
@@ -190,6 +204,12 @@ species:
     identifier: Frijol_Bayo
     name: Frijol Bayo
     origin: Veracruz, Mexico
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phaac.Frijol_Bayo.gnm1%22, %22loc%22: %22phaac.Frijol_Bayo.gnm1.Chr01:1-56952050%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 phaac.Frijol_Bayo.gnm1
   - accession: PI 638833
     description: '[Description by Dr. Kirstin Bett] W6 15578 is a wild P. acutifolius
       accession obtained from the Western Regional Plant Introduction Station of the
@@ -204,6 +224,12 @@ species:
     identifier: W6_15578
     name: W6 (15578)
     origin: Mexico
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phaac.W6_15578.gnm2%22, %22loc%22: %22phaac.W6_15578.gnm2.Chr01:1-43880995%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 phaac.W6_15578.gnm2
   - accession: PI 698457
     description: "TARS-Tep 23 (Reg. no. GP-309, PI 698457) is an improved tepary bean\
       \ germplasm with wide-ranging adaptation to tropical and temperate regions experiencing\

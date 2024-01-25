@@ -7,6 +7,9 @@ species:
   annotations:
     - collection: MilvusB.gnm2.ann1.DFgp
       synopsis: "Genome assembly for Trifolium pratense (Milvus B)"
+  synteny:
+    - collection: MilvusB.gnm2.syn.dXVX
+      synopsis: "Synteny mappings among the genomes relative to Trifolium pratense accession MilvusB"
 - name: subterraneum
   genomes:
     - collection: Daliak.gnm2.VJZB
