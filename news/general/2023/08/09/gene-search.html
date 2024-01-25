@@ -162,67 +162,67 @@
       
         
           
-            <li> <a href="/taxa//arachis"> Arachis Peanut</a></li>
+            <li> <a href="/taxa//arachis"> Arachis (Peanut)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//cajanus"> Cajanus Pigeonpea</a></li>
+            <li> <a href="/taxa//cajanus"> Cajanus (Pigeonpea)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//cicer"> Cicer Chickpea</a></li>
+            <li> <a href="/taxa//cicer"> Cicer (Chickpea)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//glycine"> Glycine Soybean</a></li>
+            <li> <a href="/taxa//glycine"> Glycine (Soybean)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//lotus"> Lotus Bird's-foot trefoil</a></li>
+            <li> <a href="/taxa//lotus"> Lotus (Bird's-foot trefoil)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//lupinus"> Lupinus Lupin grain legumes</a></li>
+            <li> <a href="/taxa//lupinus"> Lupinus (Lupin grain legumes)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+            <li> <a href="/taxa//medicago"> Medicago (Alfalfa/Lucerne, Barrel Medic)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+            <li> <a href="/taxa//phaseolus"> Phaseolus (Common Bean, Lima Bean, Tepary Bean, etc.)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//pisum"> Pisum Pea</a></li>
+            <li> <a href="/taxa//pisum"> Pisum (Pea)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//trifolium"> Trifolium Clover</a></li>
+            <li> <a href="/taxa//trifolium"> Trifolium (Clover)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//vigna"> Vigna Cowpea</a></li>
+            <li> <a href="/taxa//vigna"> Vigna (Cowpea)</a></li>
           
         
       
@@ -333,67 +333,67 @@
       
         
           
-            <li> <a href="/taxa//arachis"> Arachis Peanut</a></li>
+            <li> <a href="/taxa//arachis"> Arachis (Peanut)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//cajanus"> Cajanus Pigeonpea</a></li>
+            <li> <a href="/taxa//cajanus"> Cajanus (Pigeonpea)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//cicer"> Cicer Chickpea</a></li>
+            <li> <a href="/taxa//cicer"> Cicer (Chickpea)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//glycine"> Glycine Soybean</a></li>
+            <li> <a href="/taxa//glycine"> Glycine (Soybean)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//lotus"> Lotus Bird's-foot trefoil</a></li>
+            <li> <a href="/taxa//lotus"> Lotus (Bird's-foot trefoil)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//lupinus"> Lupinus Lupin grain legumes</a></li>
+            <li> <a href="/taxa//lupinus"> Lupinus (Lupin grain legumes)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+            <li> <a href="/taxa//medicago"> Medicago (Alfalfa/Lucerne, Barrel Medic)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+            <li> <a href="/taxa//phaseolus"> Phaseolus (Common Bean, Lima Bean, Tepary Bean, etc.)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//pisum"> Pisum Pea</a></li>
+            <li> <a href="/taxa//pisum"> Pisum (Pea)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//trifolium"> Trifolium Clover</a></li>
+            <li> <a href="/taxa//trifolium"> Trifolium (Clover)</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//vigna"> Vigna Cowpea</a></li>
+            <li> <a href="/taxa//vigna"> Vigna (Cowpea)</a></li>
           
         
       
@@ -491,67 +491,67 @@
       
         
           
-            <li><a href="/taxa//arachis"> Arachis Peanut</a></li>
+            <li><a href="/taxa//arachis"> Arachis (Peanut)</a></li>
           
         
       
         
           
-            <li><a href="/taxa//cajanus"> Cajanus Pigeonpea</a></li>
+            <li><a href="/taxa//cajanus"> Cajanus (Pigeonpea)</a></li>
           
         
       
         
           
-            <li><a href="/taxa//cicer"> Cicer Chickpea</a></li>
+            <li><a href="/taxa//cicer"> Cicer (Chickpea)</a></li>
           
         
       
         
           
-            <li><a href="/taxa//glycine"> Glycine Soybean</a></li>
+            <li><a href="/taxa//glycine"> Glycine (Soybean)</a></li>
           
         
       
         
           
-            <li><a href="/taxa//lotus"> Lotus Bird's-foot trefoil</a></li>
+            <li><a href="/taxa//lotus"> Lotus (Bird's-foot trefoil)</a></li>
           
         
       
         
           
-            <li><a href="/taxa//lupinus"> Lupinus Lupin grain legumes</a></li>
+            <li><a href="/taxa//lupinus"> Lupinus (Lupin grain legumes)</a></li>
           
         
       
         
           
-            <li><a href="/taxa//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+            <li><a href="/taxa//medicago"> Medicago (Alfalfa/Lucerne, Barrel Medic)</a></li>
           
         
       
         
           
-            <li><a href="/taxa//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+            <li><a href="/taxa//phaseolus"> Phaseolus (Common Bean, Lima Bean, Tepary Bean, etc.)</a></li>
           
         
       
         
           
-            <li><a href="/taxa//pisum"> Pisum Pea</a></li>
+            <li><a href="/taxa//pisum"> Pisum (Pea)</a></li>
           
         
       
         
           
-            <li><a href="/taxa//trifolium"> Trifolium Clover</a></li>
+            <li><a href="/taxa//trifolium"> Trifolium (Clover)</a></li>
           
         
       
         
           
-            <li><a href="/taxa//vigna"> Vigna Cowpea</a></li>
+            <li><a href="/taxa//vigna"> Vigna (Cowpea)</a></li>
           
         
       
