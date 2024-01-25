@@ -95,6 +95,11 @@ style:
 defaults:
   -
     scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
       path: "blog/"
       type: "posts"
     values:
