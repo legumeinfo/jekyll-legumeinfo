@@ -1,2 +1,46 @@
 ---
 species:
+- abbrev: cerca
+  commonName: eastern redbud
+  description: Cercis canadensis, the eastern redbud, is a large deciduous shrub or
+    small tree, native to eastern North America from southern Michigan south to central
+    Mexico, east to New Jersey. Species thrive as far west as California and as far
+    north as southern Ontario, roughly corresponding to USDA hardiness zone 6b. It
+    is the state tree of Oklahoma.
+  genus: Cercis
+  species: canadensis
+  strains:
+  - accession: ISC 453364
+    description: 'This accession of eastern redbud was sequenced and reported in Griesmann,
+      et al. DOI: 10.1126/science.aat1743'
+    identifier: ISC453364
+    name: eastern redbud
+    origin: Ames, Iowa, USA
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22cerca.ISC453364.gnm3%22, %22loc%22: %22cerca.ISC453364.gnm3.Chr01:1-57468748%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 cerca.ISC453364.gnm3
+  taxid: 49801
+- abbrev: cerch
+  commonName: Chinese redbud
+  description: Cercis chinensis is a flowering tree endemic to China, with medicinal
+    and horticultural uses.
+  genus: Cercis
+  species: chinensis
+  strains:
+  - accession: GXIB
+    description: A plant at the campus of Guangxi Institute of Botany, Chinese Academy
+      of Sciences
+    identifier: GXIB
+    name: GXIB
+    origin: A plant at the campus of Guangxi Institute of Botany, Chinese Academy
+      of Sciences
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22cerch.GXIB.gnm1%22, %22loc%22: %22cerch.GXIB.gnm1.scaffold_10:1-2194291%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 cerch.GXIB.gnm1
+  taxid: 161750

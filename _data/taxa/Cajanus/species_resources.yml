@@ -8,12 +8,6 @@ species:
     in the semi-arid tropical regions (Asia, Africa and Central/South America).
   genus: Cajanus
   resources:
-  - URL: https://legacy.legumeinfo.org/genomes/gbrowse/Cc1.0
-    description: GBrowse for Cajanus cajan assembly v1.0
-    name: LIS Genome Browser (GBrowse)
-  - URL: https://legacy.legumeinfo.org/genomes/jbrowse/?data=Cc1.0
-    description: JBrowse for Cajanus cajan assembly v1.0
-    name: LIS Genome Browser (JBrowse)
   - URL: https://sequenceserver.legumeinfo.org/
     description: SequenceServer BLAST against the Cajanus cajan assembly v1.0
     name: LIS SequenceServer
@@ -26,4 +20,15 @@ species:
     identifier: ICPL87119
     name: ICPL 87119
     origin: International Crops Research Inst. for the Semi-Arid Tropics (ICRISAT)
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22cajca.ICPL87119.gnm2%22, %22loc%22: %22cajca.ICPL87119.gnm2.chr01:1-53916841%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 cajca.ICPL87119.gnm2
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22cajca.ICPL87119.gnm1%22, %22loc%22: %22cajca.ICPL87119.gnm1.Cc07:1-19579009%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 cajca.ICPL87119.gnm1
   taxid: 3821

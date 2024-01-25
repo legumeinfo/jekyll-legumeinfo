@@ -7,3 +7,6 @@ species:
   annotations:
     - collection: MG20.gnm3.ann1.WF9B
       synopsis: "Genome annotation of Lotus japonicus (MG20 variety)"
+  synteny:
+    - collection: MG20.gnm3.syn.0ZB0
+      synopsis: "Synteny mappings among the genomes relative to Lotus japonicus accession MG20 assembly gnm3"

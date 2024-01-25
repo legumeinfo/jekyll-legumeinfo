@@ -14,3 +14,6 @@ species:
   annotations:
     - collection: Tanjil.gnm1.ann1.nnV9
       synopsis: "genome annotation files"
+  synteny:
+    - collection: Tanjil.gnm1.syn.TwnC
+      synopsis: "Synteny mappings between Lupinus angustifolius (Tanjil) and other genomes."

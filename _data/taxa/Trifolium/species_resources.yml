@@ -10,12 +10,6 @@ species:
     role in increasing soil fertility by nitrogen fixation.
   genus: Trifolium
   resources:
-  - URL: https://legacy.legumeinfo.org/genomes/gbrowse/Tp2.0
-    description: GBrowse Trifolium pratense assembly v2.0
-    name: LIS Genome Browser (GBrowse)
-  - URL: https://legacy.legumeinfo.org/genomes/jbrowse/?data=Tp2.0
-    description: JBrowse for Trifolium pratense assembly v2.0
-    name: LIS Genome Browser (JBrowse)
   - URL: https://sequenceserver.legumeinfo.org/
     description: SequenceServer BLAST against Trifolium pratense assembly v2.0
     name: LIS SequenceServer
@@ -27,6 +21,12 @@ species:
     identifier: MilvusB
     name: Milvus B
     origin: Swiss Federal Research Station of Reckenholz
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22tripr.MilvusB.gnm2%22, %22loc%22: %22tripr.MilvusB.gnm2.scaf_34:1-853971%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 tripr.MilvusB.gnm2
   taxid: 57577
 - abbrev: trisu
   commonName: Subterranean clover
@@ -55,4 +55,10 @@ species:
     identifier: Daliak
     name: Daliak
     origin: Australia
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22trisu.Daliak.gnm2%22, %22loc%22: %22trisu.Daliak.gnm2.Chr01:1-57151827%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 trisu.Daliak.gnm2
   taxid: 3900

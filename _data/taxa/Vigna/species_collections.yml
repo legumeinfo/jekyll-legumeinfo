@@ -2,15 +2,18 @@
 species:
 - name: angularis
   genomes:
-    - collection: Gyeongwon.gnm3.JyYC
-      synopsis: "genome assembly"
     - collection: Shumari.gnm1.V0CS
       synopsis: "Vigna angularis accession Shumari genome"
+    - collection: Gyeongwon.gnm3.JyYC
+      synopsis: "genome assembly"
   annotations:
     - collection: Gyeongwon.gnm3.ann1.3Nz5
       synopsis: "Directory of gene annotations, called on an assembly of pseudomolecules and remaining scaffold sequences"
     - collection: Shumari.gnm1.ann1.8BRS
       synopsis: "Vigna angularis accession Shumari genome annotation files"
+  synteny:
+    - collection: Gyeongwon.gnm3.syn.wCFF
+      synopsis: "Synteny between Vigna angularis Gyeongwon and other species accessions calculated by LIS."
 - name: radiata
   genomes:
     - collection: VC1973A.gnm6.3nL8
@@ -18,119 +21,73 @@ species:
     - collection: VC1973A.gnm7.SB53
       synopsis: "Vigna radiata (mungbean) accession VC1973A, assembly version 7 (2021)"
   annotations:
-    - collection: VC1973A.gnm6.ann1.M1Qs
-      synopsis: "Gene annotations"
     - collection: VC1973A.gnm7.ann1.RWBG
       synopsis: "Annotation version 1 Vigna radiata (mungbean) accession VC1973A, assembly version 7 (2021)"
+    - collection: VC1973A.gnm6.ann1.M1Qs
+      synopsis: "Gene annotations"
   diversity:
     - collection: VC1973A.gnm6.div.Sandhu_Singh_2020
       synopsis: "Genetic variants for Vigna radiata, assessed across 500 accessions to create the Iowamung bean panel; genotyped relative to accession VC1973A.gnm6"
     - collection: VC1973A.gnm7.div.Sandhu_Singh_2020
       synopsis: "Genetic variants for Vigna radiata, assessed across 500 accessions to create the Iowamung bean panel; genotyped relative to accession VC1973A.gnm7"
-  gwas:
-    - collection: IA_panel.gwas.Sandhu_Singh_2020
-      synopsis: "Strategies for the utilization of the USDA mung bean germplasm collection for breeding outcomes"
   markers:
-    - collection: VC1973A.gnm6.mrk.Sandhu_Singh_2020
-      synopsis: "SNP markers from the mung bean Illumina iSelect BeadArray, with associations reported in Sandhu Singh 2020 relative to gnm6"
-    - collection: VC1973A.gnm6.mrk.microsatellites
-      synopsis: "SSR markers and genomic locations on the genome sequence of Vigna radiata, accession VC1973A"
     - collection: VC1973A.gnm7.mrk.Sandhu_Singh_2020
       synopsis: "SNP markers from the mung bean Illumina iSelect BeadArray, with associations reported in Sandhu Singh 2020 relative to gnm6, and projected into gnm7 coordinates"
+    - collection: VC1973A.gnm6.mrk.microsatellites
+      synopsis: "SSR markers and genomic locations on the genome sequence of Vigna radiata, accession VC1973A"
+    - collection: VC1973A.gnm6.mrk.Sandhu_Singh_2020
+      synopsis: "SNP markers from the mung bean Illumina iSelect BeadArray, with associations reported in Sandhu Singh 2020 relative to gnm6"
+  synteny:
+    - collection: VC1973A.gnm6.syn.mcwy
+      synopsis: "Synteny between Vigna radiata VC1973A and other species accessions calculated by LIS."
 - name: unguiculata
   genomes:
-    - collection: CB5-2.gnm1.WDTB
-      synopsis: "Vigna unguiculata genome assembly for CB5-2"
-    - collection: IT97K-499-35.gnm1.QnBW
-      synopsis: "Vigna unguiculata accession IT97K-499-35 genome assembly 1.0"
     - collection: Sanzi.gnm1.YNCM
       synopsis: "Vigna unguiculata genome assembly for Sanzi"
-    - collection: Suvita2.gnm1.5QLL
-      synopsis: "Vigna unguiculata genome assembly for Suvita2"
-    - collection: TZ30.gnm1.TX9W
-      synopsis: "Vigna unguiculata genome assembly for TZ30"
+    - collection: CB5-2.gnm1.WDTB
+      synopsis: "Vigna unguiculata genome assembly for CB5-2"
     - collection: UCR779.gnm1.M7KZ
       synopsis: "Vigna unguiculata genome assembly for UCR779"
     - collection: Xiabao_II.gnm1.WDBP
       synopsis: "Vigna unguiculata genome assembly for Xiabao_II"
+    - collection: Suvita2.gnm1.5QLL
+      synopsis: "Vigna unguiculata genome assembly for Suvita2"
     - collection: ZN016.gnm1.997F
       synopsis: "Vigna unguiculata genome assembly for ZN016"
+    - collection: IT97K-499-35.gnm1.QnBW
+      synopsis: "Vigna unguiculata accession IT97K-499-35 genome assembly 1.0"
+    - collection: TZ30.gnm1.TX9W
+      synopsis: "Vigna unguiculata genome assembly for TZ30"
   annotations:
-    - collection: CB5-2.gnm1.ann1.0GKC
-      synopsis: "Genome annotation for Vigna unguiculata CB5-2"
-    - collection: IT97K-499-35.gnm1.ann1.zb5D
-      synopsis: "Vigna unguiculata accession IT97K-499-35; JGI annotation version 1 on assembly 1"
-    - collection: IT97K-499-35.gnm1.ann2.FD7K
-      synopsis: "Genome annotation version 2 for Vigna unguiculata IT97K-499-35"
     - collection: Sanzi.gnm1.ann1.HFH8
       synopsis: "Genome annotation for Vigna unguiculata Sanzi"
-    - collection: Suvita2.gnm1.ann1.1PF6
-      synopsis: "Genome annotation for Vigna unguiculata Suvita2"
+    - collection: IT97K-499-35.gnm1.ann1.zb5D
+      synopsis: "Vigna unguiculata accession IT97K-499-35; JGI annotation version 1 on assembly 1"
     - collection: TZ30.gnm1.ann2.59NL
       synopsis: "Genome annotation for Vigna unguiculata TZ30"
-    - collection: UCR779.gnm1.ann1.VF6G
-      synopsis: "Genome annotation for Vigna unguiculata UCR779"
-    - collection: Xiabao_II.gnm1.ann1.4JFL
-      synopsis: "Genome annotation for Vigna unguiculata Xiabao_II"
     - collection: ZN016.gnm1.ann2.C7YV
       synopsis: "Genome annotation for Vigna unguiculata ZN016"
+    - collection: Xiabao_II.gnm1.ann1.4JFL
+      synopsis: "Genome annotation for Vigna unguiculata Xiabao_II"
+    - collection: Suvita2.gnm1.ann1.1PF6
+      synopsis: "Genome annotation for Vigna unguiculata Suvita2"
+    - collection: CB5-2.gnm1.ann1.0GKC
+      synopsis: "Genome annotation for Vigna unguiculata CB5-2"
+    - collection: UCR779.gnm1.ann1.VF6G
+      synopsis: "Genome annotation for Vigna unguiculata UCR779"
+    - collection: IT97K-499-35.gnm1.ann2.FD7K
+      synopsis: "Genome annotation version 2 for Vigna unguiculata IT97K-499-35"
   diversity:
     - collection: IT97K-499-35.gnm1.div.Huynh_Ehlers_2018
       synopsis: "VCF file containing genotype information for 305 F8 RILs, 98.74% homozygous on average while diverse in agronomic traits, mapped to the cowpea IT97K-499-35.gnm1 genome."
   expression:
     - collection: IT97K-499-35.gnm1.ann1.expr.Yao_Jiang_2016
       synopsis: "Black-eyed pea gene expression atlas (IT97K-499-35)"
-  gwas:
-    - collection: UCR-minicore.gwas.Herniter_Muñoz-Amatriaín_2018
-      synopsis: "Four populations were used to study black seed coat and pod tip color: two biparental RIL populations, the UC-Riverside eight-parent MAGIC population, and a diversity minicore population."
-    - collection: ZN016_x_Zhijiang282.gwas.Xu_Wu_2017
-      synopsis: "A novel genotyping assay for over 50,000 SNPs was employed to delineate genomic regions governing cowpea pod length."
-    - collection: mixed.gwas.Lo_Muñoz-Amatriaín_2019
-      synopsis: "GWAS of seed size in cowpea, conducted on 368 diverse accessions from 51 countries, genotyped using the Cowpea iSelect array."
-  qtl:
-    - collection: CB27_x_IT97K-556-6.qtl.Huynh_Ehlers_2015
-      synopsis: "Field-based assays for genetic mapping involved 92 F8 RILs derived from a cross of cowpea aphid-susceptible CB27 and aphid-resistant breeding line IT97K556-6."
-    - collection: GoldenEyeCream_x_IT98K-476-8.qtl.Angira_Zhang_2020
-      synopsis: "Quantitative Trait Loci analysis of First flower and Plant height for Cowpea (Vigna unguiculata), relative to the IT97K-499-35 v1.0 genome assembly."
-    - collection: IT99K-573-1-1_x_TVNu-1158.qtl.Lo_Muñoz-Amatriaín_2018
-      synopsis: "215 F8 RILs developed from the cultivated (IT99K-573-1-1) and wild-type (TVNu-1158) accessions were used in mapping to study domestication-related traits."
-    - collection: MAGIC-2017.qtl.Huynh_Ehlers_2018
-      synopsis: "A MAGIC population for cowpea developed from eight founder parents."
-    - collection: Sanzi_x_Vita7.qtl.Pottorff_Ehlers_2012
-      synopsis: "A segregating population of 122 RILs, advanced from Sanzi x Vita 7, reveals a QTL, a candidate gene, and a SNP marker for hastate leaf shape."
-    - collection: ZN016_x_Zhijiang282.qtl.Xu_Wu_2017
-      synopsis: "A novel genotyping assay for over 50,000 SNPs was employed to delineate genomic regions governing cowpea pod length."
-    - collection: mixed.qtl.Burridge_Schneider_2017
-      synopsis: "A 189-entry diversity panel was used to study root architecture phenes."
-    - collection: mixed.qtl.Herniter_Muñoz-Amatriaín_2018
-      synopsis: "Four populations were used to study black seed coat and pod tip color: two biparental RIL populations, the UC-Riverside eight-parent MAGIC population, and a diversity minicore population."
-    - collection: mixed.qtl.Huynh_Matthews_2016
-      synopsis: "87 RILs from CB27×24-125-B-1; 170 F2:3 families from IT84S-2049×UCR779; 132 F2:3 families from IT93K-503-1×UCR779 are used to study root-knot nematode (RKN) resistance."
   markers:
-    - collection: IT97K-499-35.gnm1.mrk.Angira_Zhang_2020
-      synopsis: "Flanking SNP markers for First flower and Plant height QTLs discovered in a population of 175 F2:8 RILs derived from a cross between the Cowpeas GoldenEyeCream and IT98K-476-8. Marker positions determined by homology vs. the Vigna unguiculata IT97K-499-35 v1.0 assembly."
     - collection: IT97K-499-35.gnm1.mrk.Cowpea1MSelectedSNPs
       synopsis: "SNP mining from 183,118 ESTs sequenced from 17 cDNA libraries yielded ≈10,000 high-confidence SNPs from which an Illumina 1,536-SNP GoldenGate genotyping array was developed."
-  maps:
-    - collection: CB27_x_IT82E-18.map.Herniter_Muñoz-Amatriaín_2018
-      synopsis: "Four populations were used to study black seed coat and pod tip color: two biparental RIL populations, the UC-Riverside eight-parent MAGIC population, and a diversity minicore population."
-    - collection: CB27_x_IT97K-556-6.map.Huynh_Ehlers_2015
-      synopsis: "Field-based assays for genetic mapping involved 92 F8 RILs derived from a cross of cowpea aphid-susceptible CB27 and aphid-resistant breeding line IT97K556-6."
-    - collection: GoldenEyeCream_x_IT98K-476-8.map.Angira_Zhang_2020
-      synopsis: "Quantitative Trait Loci analysis of First flower and Plant height for Cowpea (Vigna unguiculata), relative to the IT97K-499-35 v1.0 genome assembly."
-    - collection: IT99K-573-1-1_x_TVNu-1158.map.Lo_Muñoz-Amatriaín_2018
-      synopsis: "215 F8 RILs developed from the cultivated (IT99K-573-1-1) and wild-type (TVNu-1158) accessions were used in mapping to study domestication-related traits."
-    - collection: MAGIC-2017.map.Huynh_Ehlers_2018
-      synopsis: "A MAGIC population for cowpea developed from eight founder parents."
-    - collection: Sanzi_x_Vita7.map.Herniter_Muñoz-Amatriaín_2018
-      synopsis: "Four populations were used to study black seed coat and pod tip color: two biparental RIL populations, the UC-Riverside eight-parent MAGIC population, and a diversity minicore population."
-    - collection: Sanzi_x_Vita7.map.Pottorff_Ehlers_2012
-      synopsis: "A segregating population of 122 RILs, advanced from Sanzi x Vita 7, reveals a QTL, a candidate gene, and a SNP marker for hastate leaf shape."
-    - collection: ZN016_x_Zhijiang282.map.Xu_Wu_2017
-      synopsis: "A novel genotyping assay for over 50,000 SNPs was employed to delineate genomic regions governing cowpea pod length."
-    - collection: iSelect-consensus-2016.map.Muñoz-Amatriaín_Mirebrahim_2017
-      synopsis: "Illumina Cowpea iSelect Consortium Array, built from 37 cowpea accessions"
-    - collection: mixed.map.Burridge_Schneider_2017
-      synopsis: "A 189-entry diversity panel was used to study root architecture phenes."
-    - collection: mixed.map.Huynh_Matthews_2016
-      synopsis: "87 RILs from CB27×24-125-B-1; 170 F2:3 families from IT84S-2049×UCR779; 132 F2:3 families from IT93K-503-1×UCR779 are used to study root-knot nematode (RKN) resistance."
+    - collection: IT97K-499-35.gnm1.mrk.Angira_Zhang_2020
+      synopsis: "Flanking SNP markers for First flower and Plant height QTLs discovered in a population of 175 F2:8 RILs derived from a cross between the Cowpeas GoldenEyeCream and IT98K-476-8. Marker positions determined by homology vs. the Vigna unguiculata IT97K-499-35 v1.0 assembly."
+  synteny:
+    - collection: IT97K-499-35.gnm1.syn.W3NY
+      synopsis: "Synteny between Vigna unguiculata IT97K-499-35 and other species accessions calculated by LIS."
