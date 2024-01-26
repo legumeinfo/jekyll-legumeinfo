@@ -1,0 +1,18 @@
+services:
+  serve:
+    build: .
+    command: --incremental --livereload --profile --trace --host 0.0.0.0
+    volumes:
+      - ./:/app
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+
+  build:
+    build: .
+    entrypoint: bundle exec jekyll build --profile --trace
+    volumes:
+      - ./:/app
+    profiles:
+      - build
+
