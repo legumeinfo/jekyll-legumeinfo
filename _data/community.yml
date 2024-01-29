@@ -3,7 +3,7 @@
   - name: "Community resources at SoyBase"
     resources:
     - description: "Soybean Breeders Workshop"
-      url: "https://www.soybase.org/meeting_presentations/soybean_breeders_workshop/"
+      url: "/community/sbw"
     - description: "Biennial Conference - Molecular and Cellular Biology of the Soybean"
       url: "/community/soy_biennial"
     - description: "Soybean Genomics Executive Committee"
@@ -11,7 +11,7 @@
     - description: "Job Postings at SoyBase"
       url: "https://soybase.org/resources/jobs.php"
     - description: "Soybean Genomics Research: A Strategic Plan for 2017-2021"
-      url: "https://soybase.org/resources/SoyGEC/2017/SoyGenStratPlan_2017-2021.pdf"
+      url: "https://data.legumeinfo.org/annex/Glycine/max/plans/SoyGEC/2017/SoyGenStratPlan_2017-2021.pdf"
     - description: "Research and Goals to Control Losses from Stink Bugs and Related Pests"
       url: "/community/sbsp"
     - description: "Soybean Photographs"
