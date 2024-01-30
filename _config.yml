@@ -96,6 +96,7 @@ defaults:
   -
     scope:
       path: ""
+      type: "pages"
     values:
       layout: "default"
   -
@@ -120,7 +121,7 @@ defaults:
 # their entries' file path in the `include:` list.
 #
 exclude:
-  - docker-compose.yml
+  - compose.yml
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

@@ -4,41 +4,41 @@ title: Gene Search
 web_components: true
 ---
 
-<script type="text/javascript" src="/assets/js/graphql/graphql.js"></script>
-<script type="text/javascript" src="/assets/js/graphql/linkout-function.js"></script>
-<script type="text/javascript" src="/assets/js/graphql/get-gene-form-data.js"></script>
-<script type="text/javascript" src="/assets/js/graphql/get-genes.js"></script>
-
 <!-- the custom gene search element -->
 <lis-gene-search-element id="gene-search" identifierExample="Phvul.005G168200" descriptionExample="protein disulfide isomerase-like protein" familyExample="L_HZ6G4Z"></lis-gene-search-element>
 <lis-modal-element modalId="modal">
   <lis-linkout-element id="linkouts"></lis-linkout-element>
 </lis-modal-element>
 
-<!-- set the search function by property because functions can't be set as attributes -->
-<script type="text/javascript">
-      // get the web components elements and set their function properties
-      const geneSearchElement = document.getElementById('gene-search');
-      geneSearchElement.formDataFunction = getGeneFormData;
-      geneSearchElement.searchFunction = getGenes;
-      const linkoutElement = document.getElementById('linkouts');
-      linkoutElement.linkoutFunction = linkoutFunction;
-      // wait for the modal slot to load before adding an event listener
-      window.onload = (event) => {
-        const modal = document.getElementById('modal');
-        modal.addEventListener('toggle', (event) => {
-          const [{$el: link}, ...uikitComponents] = event.detail;
-          const {gene, location, start, end} = link.dataset;
-          let type = '';
-          let variables = {};
-          if (gene !== undefined) {
-            type = 'gene';
-            variables = {identifier: gene};
-          } else if (location !== undefined && start !== undefined && end !== undefined) {
-            type = 'location';
-            variables = {identifier: location, start: parseInt(start), end: parseInt(end)};
-          }
-          linkoutElement.getLinkouts({type, variables});
-        });
-      };
+<script type="module">
+
+  import {
+    // genes
+    getOrganismsFormDataFunction,
+    geneSearchFunctionFactory,
+    allModalLinksFactory,
+    // linkouts
+    allLinkoutsFunction,
+    // modal
+    modalEventToLinkData
+  } from "lis-graphql";
+
+  const geneSearchElement = document.getElementById('gene-search');
+  geneSearchElement.formDataFunction = getOrganismsFormDataFunction;
+  const seachDataProcessors = allModalLinksFactory('modal');
+  geneSearchElement.searchFunction =
+    geneSearchFunctionFactory(...seachDataProcessors);
+
+  const linkoutElement = document.getElementById('linkouts');
+  linkoutElement.linkoutFunction = allLinkoutsFunction;
+
+  // wait for the modal slot to load before adding an event listener
+  window.onload = (event) => {
+    const modal = document.getElementById('modal');
+    modal.addEventListener('toggle', (event) => {
+      const {type, ...linkoutData} = modalEventToLinkData(event);
+      linkoutElement.getLinkouts({type, linkoutData});
+    });
+  };
+
 </script>
