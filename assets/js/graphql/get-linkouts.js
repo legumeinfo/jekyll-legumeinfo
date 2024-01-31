@@ -109,6 +109,114 @@ export function locationLinkoutsFunction(linkoutData, options) {
 }
 
 
+/** The GraphQL query used to get linkouts for gene families. */
+export const getGeneFamilyLinkoutsQuery = `
+  query GeneFamilyLinkoutsQuery($identifier: ID!) {
+    geneFamilyLinkouts(identifier: $identifier) {
+      results {
+        href
+        text
+      }
+    }
+  }
+`;
+
+
+/**
+ * Gets linkouts for gene families from GraphQL.
+ * @param {object} queryData - An object containing zero or more variables for the GraphQL query.
+ * @param {object} options - An object containing optional parameters for the HTTP request,
+ * namely, an optional `AbortSignal` instance that can be used to cancel the request mid-flight.
+ * @returns {Promise} A `Promise` that resolves to the result of the GraphQL query.
+ */
+export function getGeneFamilyLinkouts(queryData={}, options={}) {
+  const {identifier} = queryData;
+  const variables = {identifier};
+  const {abortSignal} = options;
+  return query(getGeneFamilyLinkoutsQuery, variables, abortSignal);
+}
+
+
+/**
+ * Converts GraphQL `GeneFamilyLinkoutsResults` into the `LinkoutResults` used by the `LisLinkoutElement`
+ * (`<lis-linkout-element>`) Web Component.
+ * @param {object} data - An object containing the data portional of the GraphQL query HTTP response.
+ * @returns {object} A `LinkoutResults` object.
+ */
+export function geneFamilyLinkoutsToLinkoutResults(data) {
+  const results = data.geneFamilyLinkouts.results;
+  return {results};
+}
+
+
+/**
+ * The pangene set linkouts function to use for the `linkoutFunction` property of the `LisLinkoutElement`
+ * (`<lis-linkout-element>`) Web Component.
+ * @param {object} linkoutData - An object containing the data needed to get linkouts.
+ * @param {object} options - An object containing optional parameters to pass to the `getGeneLinkouts` function.
+ * @returns {Promise} A `Promise` that resolves to the `LinkoutResults` used by the
+ * `LisLinkoutElement` (`<lis-linkout-element>`) Web Component.
+ */
+export function geneFamilyLinkoutsFunction(linkoutData, options) {
+  return getGeneFamilyLinkouts(linkoutData, options)
+    .then(({data}) => geneFamilyLinkoutsToLinkoutResults(data));
+}
+
+
+/** The GraphQL query used to get linkouts for pangene sets. */
+export const getPanGeneSetLinkoutsQuery = `
+  query PanGeneSetLinkoutsQuery($identifier: ID!) {
+    panGeneSetLinkouts(identifier: $identifier) {
+      results {
+        href
+        text
+      }
+    }
+  }
+`;
+
+
+/**
+ * Gets linkouts for pangene sets from GraphQL.
+ * @param {object} queryData - An object containing zero or more variables for the GraphQL query.
+ * @param {object} options - An object containing optional parameters for the HTTP request,
+ * namely, an optional `AbortSignal` instance that can be used to cancel the request mid-flight.
+ * @returns {Promise} A `Promise` that resolves to the result of the GraphQL query.
+ */
+export function getPanGeneSetLinkouts(queryData={}, options={}) {
+  const {identifier} = queryData;
+  const variables = {identifier};
+  const {abortSignal} = options;
+  return query(getPanGeneSetLinkoutsQuery, variables, abortSignal);
+}
+
+
+/**
+ * Converts GraphQL `PanGeneSetLinkoutsResults` into the `LinkoutResults` used by the `LisLinkoutElement`
+ * (`<lis-linkout-element>`) Web Component.
+ * @param {object} data - An object containing the data portional of the GraphQL query HTTP response.
+ * @returns {object} A `LinkoutResults` object.
+ */
+export function panGeneSetLinkoutsToLinkoutResults(data) {
+  const results = data.panGeneSetLinkouts.results;
+  return {results};
+}
+
+
+/**
+ * The gene linkouts function to use for the `linkoutFunction` property of the `LisLinkoutElement`
+ * (`<lis-linkout-element>`) Web Component.
+ * @param {object} linkoutData - An object containing the data needed to get linkouts.
+ * @param {object} options - An object containing optional parameters to pass to the `getGeneLinkouts` function.
+ * @returns {Promise} A `Promise` that resolves to the `LinkoutResults` used by the
+ * `LisLinkoutElement` (`<lis-linkout-element>`) Web Component.
+ */
+export function panGeneSetLinkoutsFunction(linkoutData, options) {
+  return getPanGeneSetLinkouts(linkoutData, options)
+    .then(({data}) => panGeneSetLinkoutsToLinkoutResults(data));
+}
+
+
 /**
  * A linkouts function to use for the `linkoutFunction` property of the `LisLinkoutElement`
  * (`<lis-linkout-element>`) Web Component that supports all linkout types.
@@ -123,6 +231,10 @@ export function allLinkoutsFunction({type, linkoutData}, options) {
       return geneLinkoutsFunction(linkoutData, options);
     case 'location':
       return locationLinkoutsFunction(linkoutData, options);
+    case 'geneFamily':
+      return geneFamilyLinkoutsFunction(linkoutData, options);
+    case 'panGeneSet':
+      return panGeneSetLinkoutsFunction(linkoutData, options);
   }
   return Promise.reject();
 }

@@ -3,7 +3,7 @@ import { query } from './query.js';
 
 /** The GraphQL query used to get organisms. */
 export const getOrganismsQuery = `
-  query OganismsQuery($taxonId: Int, $abbreviation: String, $name: String, $genus: String, $species: String, $page: Int, $pageSize: Int) {
+  query OrganismsQuery($taxonId: Int, $abbreviation: String, $name: String, $genus: String, $species: String, $page: Int, $pageSize: Int) {
   organisms(taxonId: $taxonId, abbreviation: $abbreviation, name: $name, genus: $genus, species: $species, page: $page, pageSize: $pageSize) {
       results {
         genus
