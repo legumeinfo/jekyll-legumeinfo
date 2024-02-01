@@ -1,0 +1,23 @@
+Term.1	GWAS.1	QTL.1	Term.2	GWAS.2	QTL.2	Term.3	GWAS.3	QTL.3
+cqSeed agglutinin	_	QTL	Seed daidzein	_	QTL	Seed oil	GWAS	QTL
+cqSeed oil	_	QTL	Seed fucose	_	QTL	Seed oil to protein ratio	GWAS	QTL
+cqSeed phytate	_	QTL	Seed galactose	_	QTL	Seed oleic	_	QTL
+cqSeed protein	_	QTL	Seed genistein	_	QTL	Seed oligosaccharide	_	QTL
+Crude fat	_	QTL	Seed Glu	_	QTL	Seed palmitic	_	QTL
+Crude protein	_	QTL	Seed glucose	_	QTL	Seed palmitic plus stearic	_	QTL
+mqSeed oil	_	QTL	Seed Gly	_	QTL	Seed pectin	_	QTL
+Seed acidic fraction	_	QTL	Seed glycinin	_	QTL	Seed Phe	_	QTL
+Seed agglutinin	_	QTL	Seed glycinin plus beta-conglycinin	_	QTL	Seed phytate	_	QTL
+Seed Ala	_	QTL	Seed glycinin to beta-conglycinin ratio	_	QTL	Seed Pro	_	QTL
+Seed alpha-linolenic acid	GWAS	_	Seed glycitein	_	QTL	Seed protein	GWAS	QTL
+Seed amino acids	GWAS	_	Seed His	_	QTL	Seed Ser	_	QTL
+Seed anthocyanin content	_	QTL	Seed Ile	_	QTL	Seed starch	_	QTL
+Seed antioxidant content	_	QTL	Seed isoflavone	GWAS	QTL	Seed stearic	GWAS	QTL
+Seed arabinose plus galactose	_	QTL	Seed Leu	_	QTL	Seed sucrose	_	QTL
+Seed Arg	_	QTL	Seed linoleic	_	QTL	Seed Thr	_	QTL
+Seed Asp	_	QTL	Seed linolenic	_	QTL	Seed tocopherol	_	QTL
+Seed basic fraction	_	QTL	Seed long-chain fatty acid	GWAS	_	Seed total isoflavone	_	QTL
+Seed cadmium	_	QTL	Seed Lys	_	QTL	Seed Trp	_	QTL
+Seed calcium	_	QTL	Seed Met	_	QTL	Seed Tyr	_	QTL
+Seed conglycinin	_	QTL	Seed Met plus Cys	_	QTL	Seed Val	_	QTL
+Seed Cys	_	QTL	Seed nickel	_	QTL			

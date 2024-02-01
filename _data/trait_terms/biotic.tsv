@@ -1,0 +1,12 @@
+Term.1	GWAS.1	QTL.1	Term.2	GWAS.2	QTL.2	Term.3	GWAS.3	QTL.3
+Asian Soybean Rust	_	QTL	Japanese beetle resistance	_	QTL	SCN	GWAS	QTL
+Bean pyralid	_	QTL	Jav root-knot nematode	_	QTL	SDS	_	QTL
+BSR	_	QTL	Necrosis	_	QTL	SDS disease incidence	_	QTL
+Common cutworm	_	QTL	Peanut root-knot nematode	_	QTL	SDS disease index	_	QTL
+Corn earworm	_	QTL	Phomopsis seed decay	_	QTL	SDS dry matter retention	GWAS	_
+cqSCN	_	QTL	Phytoph	_	QTL	SDS root retention	GWAS	_
+cqSDS	_	QTL	Pod borer	_	QTL	Southern root-knot nematode	_	QTL
+Foxglove aphid	_	QTL	Rag	_	QTL	Soybean mosaic virus	GWAS	QTL
+Fusarium lesion length	_	QTL	Rhizoc root and hypocot rota	_	QTL	Tobacco ring spot virus	_	QTL
+Fusarium root rot	_	QTL	Rhizoc root and hypocot rotb	_	QTL	Tobacco ringspot virus	GWAS	_
+Indo soy dwarf virus	_	QTL	Sclero	GWAS	QTL			

@@ -1,0 +1,6 @@
+Term.1	GWAS.1	QTL.1	Term.2	GWAS.2	QTL.2	Term.3	GWAS.3	QTL.3
+Row spacing response	_	QTL	Stem diameter	GWAS	QTL	Stem weight	_	QTL
+Shoot fresh to dry weight ratio	_	QTL	Stem length	_	QTL	Total growth duration	_	QTL
+Shoot length	_	QTL	Stem shape	GWAS	_	Trailing growth	_	QTL
+Shoot weight	_	QTL	Stem strength	_	QTL	Vegetative period	_	QTL
+Sprout yield	_	QTL	Stem termination type	GWAS	_	WUE	_	QTL

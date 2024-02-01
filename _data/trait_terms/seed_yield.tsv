@@ -1,0 +1,5 @@
+Term.1	GWAS.1	QTL.1	Term.2	GWAS.2	QTL.2	Term.3	GWAS.3	QTL.3
+cqSeed weight	_	QTL	Seed yield	GWAS	QTL	Total seed number	GWAS	_
+cqSeed yield	_	QTL	Seed yield to Plant height ratio	_	QTL			
+Seed number	_	QTL	Seed yield to weight ratio	_	QTL			
+Seed weight per plant	_	QTL	Seeds per plant	GWAS	QTL			

@@ -1,0 +1,7 @@
+Term.1	GWAS.1	QTL.1	Term.2	GWAS.2	QTL.2	Term.3	GWAS.3	QTL.3
+cqR8 Full maturity	_	QTL	Photoperiod insensitivity	_	QTL	Pods per node	_	QTL
+Days to flower	GWAS	_	Pod dehiscence	_	QTL	R8 full maturity	GWAS	_
+First flower	GWAS	QTL	Pod maturity	_	QTL	Reproductive period	GWAS	QTL
+Flower color	GWAS	QTL	Pod number	GWAS	QTL	Reproductive period photo-thermal sensitivity	_	QTL
+Flower form	_	QTL	Pod shattering	GWAS	_	Reproductive stage length	GWAS	QTL
+Flower number	_	QTL	Pod weight	_	QTL	Reproductive to vegetative period ratio	_	QTL

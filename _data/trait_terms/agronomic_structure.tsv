@@ -1,0 +1,8 @@
+Term.1	GWAS.1	QTL.1	Term.2	GWAS.2	QTL.2	Term.3	GWAS.3	QTL.3
+Branch number	GWAS	_	Internode length	GWAS	QTL	Lodging	GWAS	QTL
+Branching	_	QTL	Leaflet area	GWAS	QTL	mqPlant height	_	QTL
+Canopy height	_	QTL	Leaflet ash	_	QTL	Plant height	GWAS	QTL
+Canopy width	GWAS	QTL	Leaflet length	GWAS	QTL	Plant height to Lodging ratio	_	QTL
+Hypocotyl length	_	QTL	Leaflet shape	GWAS	QTL	Plant weight	_	QTL
+Hypocotyl weight	_	QTL	Leaflet weight	_	QTL			
+Interbranch length	GWAS	_	Leaflet width	GWAS	QTL			

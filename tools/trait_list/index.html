@@ -1,0 +1,48 @@
+---
+title: Trait List
+sitemap: trait_list 
+layout: default
+---
+{% assign qtl_base = '/tools/search/trait.html?page=1&genus=Glycine&type=QTL&traits=' %}
+{% assign gwas_base = '/tools/search/trait.html?page=1&genus=Glycine&type=GWAS&traits=' %}
+{% assign separator = " &nbsp; &nbsp; " %}
+
+<h2>Genetic trait terms and categories for soybean</h2>
+
+<p> 
+The traits below have been used in soybean GWAS and/or QTL studies.<br> 
+Click on a "GWAS" or "QTL" link to populate a query in the <a href="/tools/search/trait.html">Trait Association Search</a> page.
+</p>
+
+{% for trait_category in site.data.trait_terms.trait_categories %}
+  
+  {% assign words = trait_category | split: '_' %}
+  {% capture display_trait %}
+  {% for word in words %} {{ word | capitalize }} {% endfor %}{% endcapture %}
+  <b>{{ display_trait }}</b>
+  
+  <table>
+    {% for row in site.data.trait_terms[trait_category] %}
+      {% tablerow pair in row %}
+        {% if pair[0] contains "Term" %}
+          {{ separator }} {{ pair[1] }}
+          {% assign search_term = pair[1] | url_encode %}
+        {% elsif pair[0] contains "G" %}
+          {% if pair[1] == "GWAS" %}
+            <a href="{{- gwas_base | append: search_term -}}"> &nbsp; GWAS &nbsp; </a>
+          {% else %}
+            {{ separator }} -
+          {% endif %}
+        {% elsif pair[0] contains "Q" %}
+          {% if pair[1] == "QTL" %}
+            <a href="{{- qtl_base | append: search_term -}}"> QTL &nbsp; </a>
+          {% else %}
+            {{ separator }} -
+          {% endif %}
+        {% endif %}
+      {% endtablerow %}
+    {% endfor %}
+  </table>
+  <br>
+  
+{% endfor %}

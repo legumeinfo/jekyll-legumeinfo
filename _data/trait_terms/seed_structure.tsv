@@ -1,0 +1,8 @@
+Term.1	GWAS.1	QTL.1	Term.2	GWAS.2	QTL.2	Term.3	GWAS.3	QTL.3
+Seed coat color	GWAS	QTL	Seed height	GWAS	QTL	Seed volume	GWAS	QTL
+Seed coat cracking	_	QTL	Seed height to width ratio	_	QTL	Seed weight	GWAS	QTL
+Seed coat hardness	_	QTL	Seed length	_	QTL	Seed width	_	QTL
+Seed coat luster	GWAS	_	Seed length to height ratio	_	QTL	Seed width to height ratio	GWAS	_
+Seed fill	_	QTL	Seed length to thickness ratio	GWAS	QTL	Seed width to thickness ratio	_	QTL
+Seed fragrance	_	QTL	Seed length to width ratio	_	QTL			
+Seed hardness	_	QTL	Seed thickness	GWAS	QTL			

@@ -68,6 +68,10 @@
   name: "Trait Search Tool"
   url: "/tools/search/trait.html"
 - category: "Search"
+  description: "Trait terms used in soybean GWAS and QTL studies; links to the trait association search tool."
+  name: "Trait Terms"
+  url: "/tools/trait_list"
+- category: "Search"
   description: "Search for genes, proteins, metabolites or pathways"
   name: "SoyCyc"
   url: "/tools/soycyc"
@@ -79,28 +83,4 @@
   description: "Soybean parentage and pedigrees"
   name: "Parentage"
   url: "/tools/parentage"
-#   category: "FIXME"
-#   description: Description
-#   name: Maps
-#   url: "#"
-# -
-#   category: "FIXME"
-#   description: Description
-#   name: "QTL Search"
-#   url: "#"
-# -
-#   category: "FIXME"
-#   description: Description
-#   name: "Gene Search"
-#   url: "#"
-# -
-#   category: "FIXME"
-#   description: Description
-#   name: "Protein Domains"
-#   url: "#"
-# -
-#   category: "Search sequences and features against sequence databases"
-#   description: Description
-#   name: "Keyword Search"
-#   url: "#"
 
