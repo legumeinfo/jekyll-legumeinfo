@@ -59,7 +59,7 @@ page_gen:
     debug: true
   - data: taxon_list
     template: collection
-    dir: collections
+    dir: download
     name: genus
     index_files: true
     debug: true
