@@ -41,7 +41,7 @@ lang: en
 host: 0.0.0.0
 
 # our Google Analytics ID. XX CHANGE THIS for SoyBase
-google_analytics_id: "UA-49655154-1"
+google_analytics_id: "GA4-354046633"
 
 # Set the SoyBase/LIS Datastore base URL here
 datastoreurl: https://data.legumeinfo.org
