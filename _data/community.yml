@@ -31,9 +31,9 @@
     - description: "Soybean Genetics Newsletter"
       url: "/community/sgn"
     - description: "2000 Soybean Genomics White Paper"
-      url: "https://soybase.org/archive/Genomics/Soybean_Genomics.html"
+      url: "https://data.legumeinfo.org/annex/Glycine/max/whitepapers/2000/soybean_genomics_whitepaper_2000.pdf"
     - description: "2000 Soybean Genetic Resources White Paper"
-      url: "https://soybase.org/archive/Genetic_Resources/Soybean_Genetic_Resources.html"
+      url: "https://data.legumeinfo.org/annex/Glycine/max/whitepapers/2000/soybean_genetic_resources_2000.pdf"
   - name: "USDA Crop and Climatic Resources"
     resources:
     - description: "Calendar of NASS reports"
