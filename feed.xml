@@ -7,6 +7,20 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>ICLGG(2024) Brisbane/Meanjin, AUSTRALIA</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.iclgg2024.org/program/&quot; target=&quot;_blank&quot;&gt;ICLGG(2024), Brisbane/Meanjin, AUSTRALIA&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;11th International Conference on Legume Genetics and Genomics (ICLGG)&lt;br /&gt;
+30 September - 3 October 2024&lt;br /&gt;
+Brisbane Convention &amp;amp; Exhibition Centre&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
+        <link>/news/jekyll/pixyll/2024/09/30/ICLGG-2024.html</link>
+        <guid isPermaLink="true">/news/jekyll/pixyll/2024/09/30/ICLGG-2024.html</guid>
+      </item>
+    
+      <item>
         <title>BIC &amp; NAPIA Biennial meeting, South Carolina</title>
         <description>&lt;p&gt;6 - 8 November 2023&lt;/p&gt;
 
@@ -112,21 +126,6 @@
         <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
         <link>/news/announcements/2022/05/25/plantbio-22.html</link>
         <guid isPermaLink="true">/news/announcements/2022/05/25/plantbio-22.html</guid>
-      </item>
-    
-      <item>
-        <title>AgBioData data management survey</title>
-        <description>&lt;p&gt;We are asking you to participate in a survey about standardized data curation principles and their implementation in data repositories for agricultural research and breeding programs. This survey was developed by the &lt;a href=&quot;https://www.agbiodata.org&quot;&gt;AgBioData consortium&lt;/a&gt;, in which our database is a participant.&lt;/p&gt;
-
-&lt;p&gt;The survey is anonymous, and your answers will be used to shape AgBioData’s future goals and solutions for standardized data management in agriculture.&lt;/p&gt;
-
-&lt;p&gt;If you are willing to participate, please submit your answers &lt;a href=&quot;https://ncsu.qualtrics.com/jfe/form/SV_9Zv0sSXJhdz2bYO&quot;&gt;here&lt;/a&gt; by May 16th, 2022.&lt;/p&gt;
-
-&lt;p&gt;Your opinion is valuable to us and can help AgBioData define better genomic, genetic, and breeding data curation practices.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 06 May 2022 00:00:00 +0000</pubDate>
-        <link>/news/general/2022/05/06/news.html</link>
-        <guid isPermaLink="true">/news/general/2022/05/06/news.html</guid>
       </item>
     
   </channel>
