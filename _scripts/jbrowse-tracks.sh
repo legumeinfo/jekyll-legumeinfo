@@ -72,6 +72,27 @@ do
   )
 done
 
+for synteny_md5 in _data/datastore-metadata/Glycine/*/synteny/*/CHECKSUM.*.md5
+do
+  assembly_name=${synteny_md5##*/CHECKSUM.}
+  assembly_name=${assembly_name%.syn.*}
+
+  while read -r checksum file
+  do
+    [ ${file%.gff3.gz} = ${file} ] && continue # skip if not a GFF3 file
+    name=${file##*.x.}
+    name=${name%.*.gff3.gz}
+    jbrowse add-track \
+      ${DATASTORE_URL}/$(dirname ${synteny_md5#_data/datastore-metadata/})/${file#*/} \
+      --assemblyNames=${assembly_name} \
+      --category='Synteny' \
+      --name=${name} \
+      --trackId=${name} \
+      --description="Synteny with ${name}" \
+      --out=assets/js/jbrowse/
+  done < ${synteny_md5}
+done
+
 # Specify JSON until @jbrowse/cli has native support for MultiQuantitativeTrack
 # https://github.com/GMOD/jbrowse-components/issues/3430
 jbrowse add-track-json \
