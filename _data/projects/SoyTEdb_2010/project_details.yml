@@ -1,0 +1,23 @@
+---
+- DataStoreID: SoyTEdb_2010
+  short_title: Soybean Transposable Elements / SoyTEdb
+  title: Soybean transposable element database / SoyTEdb
+  description: "The Soybean Transposable Elements database, SoyTEdb, described in
+    <i>SoyTEdb: a comprehensive database of transposable elements in the soybean genome</i> (Du, Grant et al., 2010),
+    contains transposable elements identified in the Williams 82 genome assembly 1, including
+    32,552 retrotransposons (Class I) and 6,029 DNA transposons (Class II). Linked files
+    provide the named and classified sequences, as well as a reduced set clustered at 60% identity and
+    represented by centroid sequences from each cluster."
+  publications:
+    - citation: "Du J, Grant D, Tian Z, Nelson RT, Zhu L, Shoemaker RC, Ma J. SoyTEdb: a comprehensive database of transposable elements in the soybean genome. BMC Genomics. 2010 Feb 17;11:113. doi: 10.1186/1471-2164-11-113. PMID: 20163715; PMCID: PMC2830986."
+      doi: 10.1186/1471-2164-11-113
+  data_links:
+    - category:
+        - name: <a href="https://soybase.org/data/v2/Glycine/max/repeats/Wm82.rpt.C1JW/">Data collection</a>. The main files:</a>
+          instances:
+            - description: "Repetitive elements described in Du, Grant et al. (2010); definition lines with seven space-separated fields"
+              url: https://soybase.org/data/v2/Glycine/max/repeats/Wm82.rpt.C1JW/glyma.Wm82.rpt.C1JW.SOY_TEdb.fna.gz
+            - description: "Repetitive elements described in Du, Grant et al. (2010); definition lines formated for RepeatMasker"
+              url: https://soybase.org/data/v2/Glycine/max/repeats/Wm82.rpt.C1JW/glyma.Wm82.rpt.C1JW.SOY_TE_LIB.fna.gz
+            - description: "Repetitive elements from SOY_TE_LIB.fna, represented by centroids at 60% identity clustering"
+              url: https://soybase.org/data/v2/Glycine/max/repeats/Wm82.rpt.C1JW/glyma.Wm82.rpt.C1JW.SOY_TE_LIB_id60.fna.gz

@@ -1,0 +1,33 @@
+---
+- table: insertion_event
+  description: Insertion IDs, names, vectors
+- table: insertion_mutant
+  description: Insertion line and responsible lab
+- table: insertion_mutant_props
+  description: Phenotypic effects in mutant lines
+- table: insertion_mutant_synonym
+  description: Mutant line name synonyms
+- table: insertion_position
+  description: Insertion positions, Wm82.a2.v1
+- table: mutant_cgh_experiment_genes_table
+  description: Genes affected by mutations (Wm82.a1.v1)
+- table: mutant_cgh_experiment_indel_table
+  description: Mutant indel locations (Wm82.a1)
+- table: mutant_cgh_experiment_indel_table_v2
+  description: Mutant indel locations; new identifiers
+- table: mutant_cgh_experiment_locus_table
+  description: SSR markers in indel regions
+- table: mutant_descriptor_xref_table
+  description: SoyBase trait names and IDs
+- table: mutant_descriptors_table
+  description: Mutant phenotype descriptions
+- table: mutant_experiment_table
+  description: Mutation experiments
+- table: mutant_files_table
+  description: Mutants and image names
+- table: mutant_name_translation_table
+  description: Mutant name correspondences (Soybase ID, sample ID, truncated sample ID)
+- table: mutant_samples_table
+  description: Experiment sample IDs, seed availability, cultivar names
+- table: mutant_trait_values_table
+  description: Mutation IDs and traits

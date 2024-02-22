@@ -1,0 +1,4 @@
+cgh_id	indel_id	gene_name	copy_number	relation_to_indel
+EM01	1	Glyma09g07230	0	within
+EM01	1	Glyma09g07240	0	within
+EM01	1	Glyma09g07250	0	within

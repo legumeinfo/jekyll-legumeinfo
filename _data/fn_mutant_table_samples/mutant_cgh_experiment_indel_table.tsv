@@ -1,0 +1,4 @@
+cgh_id	indel_id	indel_type	chromosome_name	chromosome_start_bp	chromosome_end_bp	sample_id	chip_name
+EM01	1	deletion	Gm09	6094155	6183855	R09C04DSCW08YB...1	Nimblegen Soy 700K CGH
+EM01	2	deletion	Gm10	22383377	22393142	R09C04DSCW08YB...1	Nimblegen Soy 700K CGH
+EM01	3	deletion	Gm16	31403512	32350348	R09C04DSCW08YB...1	Nimblegen Soy 700K CGH

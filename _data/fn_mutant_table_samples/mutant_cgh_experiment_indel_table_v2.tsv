@@ -1,0 +1,4 @@
+cgh_id	indel_id	indel_type	chromosome_name	chromosome_start_bp	chromosome_end_bp	sample_id	chip_name
+FN0110332.03.M3	1	Homozygous deletion	Gm02	22519674	22555063	FN0110332	091113_Gmax_RS_CGH_HX3 (700k);Cy5ref=M92-220
+FN0110332.01.M3	1	Homozygous deletion	Gm02	27809420	27966363	FN0110332	091113_Gmax_RS_CGH_HX3 (700k);Cy5ref=M92-220 pool
+FN0110332.02.02.M4	1	Duplication	Gm03	14037899	14040619	FN0110332	110921_Gmax_RS_CGH_UX3(1.4M)DEVA;Cy5ref=M92-220

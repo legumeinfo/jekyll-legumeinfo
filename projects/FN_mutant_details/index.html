@@ -1,0 +1,49 @@
+---
+layout: default
+title: Fast Neutron mutants project - file details
+sitemap: projects/FN_mutant_details
+---
+{% assign url_base = 'https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/' %}
+{% assign fasta_file = 'fn_indels.nt.20140304.fasta' %}
+
+<h2>Soybean Fast Neutron Mutants; file details</h2>
+
+<p>
+  Data for this ~2011 Soybean Fast Neutron project are available at the 
+  <strong><a href="https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/">SoyBase Data Store</a></strong>
+  in the form of tabular and fasta sequence data.
+  Samples from each files are shown first below.
+  Individual files are also linked from the <strong><a href="/projects/fn_mutants_2011">main Fast Neutron project page</a></strong>.
+</p>
+
+<a href="{{- url_base | append: fasta_file -}}.gz"><b>{{ fasta_file }}.gz</b></a> <br>
+Genomic sequence from FN mutation deletions, from the Wm82.a1.v1 / Wm82.gnm1.ann1 assembly
+<pre>
+>EM01.1 Gm09:6094155-6183855    R09C04DSCW08YB_1
+GGAAAAGTCCATCCCACAGTGATAGATTTCTACGTACTTCCACTAATGGGGTTGCTGGTAAATTAGAATGCCTCCAAAAT
+TACCCACACACAGTTGGATAATATTTATTCCCTTAATCACATCGCAAGACACCAAAAGTCCAATACTTTGAACAAGAACA
+ATTTAGATGTACGTGTAACTTCATGGAAAGGACATGTAACTAAGTCGTGCATTTAAGGGAGGAGTCTTCACATTGGGTGT
+</pre>
+<hr>
+
+{% for item in site.data.fn_mutant_table_samples.__mutant_tables %}
+  <a href="{{- url_base | append: item.table -}}.tsv.gz"><b>{{ item.table }}.tsv.gz</b></a> -- 
+    {{ item.description }}
+  {% assign table_name = item.table %}
+  <table>
+    {% for row in site.data.fn_mutant_table_samples[table_name] %}
+      {% if forloop.first %}
+      <tr> 
+        {% for pair in row %} 
+          <th> {{ pair[0] }} | </th> 
+        {% endfor %} 
+      </tr>
+      {% endif %}
+      {% tablerow pair in row %} {{ pair[1] }} {% endtablerow %}
+    {% endfor %}
+  </table>
+  <hr>
+{% endfor %}
+
+Back to the <a href="/projects/fn_mutants_2011"><b>main Fast Neutron project page</b></a>.
+
