@@ -10,10 +10,22 @@ web_components: true
 </lis-modal-element>
 
 <script type="module">
-  import {getOrganismsFormDataFunction, geneSearchFunctionFactory, allLinkoutsFunction, geneLinkoutsFunction, geneIdentifierModalLinkFactory, locationModalLinkFactory} from "lis-graphql";
+    import {
+    // genes
+    getOrganismsFormDataFunction,
+    geneSearchFunctionFactory,
+    allModalLinksFactory,
+    // linkouts
+    allLinkoutsFunction,
+    // modal
+    modalEventToLinkData
+  } from "lis-graphql";
   const geneSearchElement = document.getElementById('gene-search');
   geneSearchElement.formDataFunction = getOrganismsFormDataFunction;
-  geneSearchElement.searchFunction = geneSearchFunctionFactory(geneIdentifierModalLinkFactory('modal'), locationModalLinkFactory('modal'));
+  const searchDataProcessors = allModalLinksFactory('modal');
+  geneSearchElement.searchFunction =
+    geneSearchFunctionFactory(...searchDataProcessors);
+
   const linkoutElement = document.getElementById('linkouts');
   const modal = document.getElementById('modal');
   modal.addEventListener('toggle', (event) => {
