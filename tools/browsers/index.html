@@ -86,7 +86,7 @@ tools_menu: true
                   {% endif %}
                 {% endfor %}
                 <dt>
-                  <a target="_blank" href="{{ jbrowse_base_url }}/?assembly={{ assembly }}&tracks={{ annotation }}&loc={{ readme.scientific_name_abbrev }}.{{ assembly }}.{{ chromosome_prefix }}01:1-1000000">{{ assembly }}</a>
+                  <a target="_blank" href="{{ jbrowse_base_url }}/?assembly={{ assembly }}&tracks={{ annotation }}&loc={{ readme.scientific_name_abbrev }}.{{ assembly }}.{{ chromosome_prefix }}01:1-1000000&tracklist=true">{{ assembly }}</a>
                 </dt>
                 <dd>{{ synopsis }}
                   {% assign doiCheck = doi | slice: 0, 2 %}
