@@ -14,7 +14,7 @@ web_components: true
     // genes
     getOrganismsFormDataFunction,
     geneSearchFunctionFactory,
-    allModalLinksFactory,
+    geneAllModalLinksFactory,
     // linkouts
     allLinkoutsFunction,
     // modal
@@ -22,7 +22,7 @@ web_components: true
   } from "lis-graphql";
   const geneSearchElement = document.getElementById('gene-search');
   geneSearchElement.formDataFunction = getOrganismsFormDataFunction;
-  const searchDataProcessors = allModalLinksFactory('modal');
+  const searchDataProcessors = geneAllModalLinksFactory('modal');
   geneSearchElement.searchFunction =
     geneSearchFunctionFactory(...searchDataProcessors);
 

@@ -12,10 +12,24 @@ web_components: true
 
 
 <script type="module">
-    import {getOrganismsFormDataFunction, traitSearchFunctionFactory} from "lis-graphql";
+    import {
+      getOrganismsFormDataFunction, 
+      traitSearchFunctionFactory,
+      traitAllModalLinksFactory,
+      allLinkoutsFunction,
+      modalEventToLinkData
+    } from "lis-graphql";
     const traitSearchElement = document.getElementById('trait-search');
     traitSearchElement.formDataFunction = getOrganismsFormDataFunction;
-    traitSearchElement.searchFunction = traitSearchFunctionFactory();
+    const searchDataProcessors = traitAllModalLinksFactory('modal');
+    traitSearchElement.searchFunction = traitSearchFunctionFactory(...searchDataProcessors);
     const linkoutElement = document.getElementById('linkouts');
     const modal = document.getElementById('modal'); 
+    modal.addEventListener('toggle', (event) => {
+      const [{$el: link}, ...uikitComponents] = event.detail;
+      const {identifier, type} = link.dataset;
+      let linkoutData = {identifier};
+      linkoutElement.linkoutFunction=allLinkoutsFunction;
+      linkoutElement.getLinkouts({type, linkoutData});
+    });
 </script>
