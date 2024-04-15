@@ -105,14 +105,14 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent&amp;playsinline=1" width="1920" height="1080" allowfullscreen uk-cover></iframe>
+                                    <iframe src="https://www.youtube-nocookie.com/embed/c2pz2mlSfXA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;wmode=transparent&amp;playsinline=1" width="1920" height="1080" allowfullscreen loading="lazy" uk-cover></iframe>
                                     <div class="uk-position-center uk-position-small uk-text-center">
                                         <h2 uk-slideshow-parallax="x: 100,-100">YouTube</h2>
                                         <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <iframe src="https://player.vimeo.com/video/1084537?title=0&amp;background=1&amp;keyboard=0" width="500" height="281" allowfullscreen uk-cover></iframe>
+                                    <iframe src="https://player.vimeo.com/video/1084537?title=0&amp;background=1&amp;keyboard=0" width="500" height="281" allowfullscreen loading="lazy" uk-cover></iframe>
                                     <div class="uk-position-center uk-position-small uk-text-center">
                                         <h2 uk-slideshow-parallax="x: 100,-100">Vimeo</h2>
                                         <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
@@ -239,6 +239,72 @@
                             <div class="uk-overlay uk-overlay-primary uk-position-left uk-text-center uk-transition-slide-left uk-width-medium">
                                 <h3 class="uk-margin-remove">Left</h3>
                                 <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+
+                </div>
+
+                <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+            </div>
+
+            <h2>Parallax Control</h2>
+
+            <div uk-slideshow="parallax: true; parallax-start: 100%; parallax-end: 100%; animation: push">
+
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                    <ul class="uk-slideshow-items">
+                        <li>
+                            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                                <img src="images/photo.jpg" alt="" uk-cover>
+                            </div>
+                            <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; background-color: #000,#000"></div>
+                            <div class="uk-position-center uk-position-medium uk-text-center">
+                                <div uk-slideshow-parallax="scale: 1,1,0.8">
+                                    <h1 class="uk-heading-medium" uk-slideshow-parallax="x: 200,0,0">Heading</h1>
+                                    <p class="uk-text-lead" uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                                <img src="images/dark.jpg" alt="" uk-cover>
+                            </div>
+                            <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; background-color: #000,#000"></div>
+                            <div class="uk-position-center uk-position-medium uk-text-center">
+                                <div uk-slideshow-parallax="scale: 1,1,0.8">
+                                    <h1 class="uk-heading-medium" uk-slideshow-parallax="x: 200,0,0">Heading</h1>
+                                    <p class="uk-text-lead" uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                                <img src="images/light.jpg" alt="" uk-cover>
+                            </div>
+                            <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; background-color: #000,#000"></div>
+                            <div class="uk-position-center uk-position-medium uk-text-center">
+                                <div uk-slideshow-parallax="scale: 1,1,0.8">
+                                    <h1 class="uk-heading-medium" uk-slideshow-parallax="x: 200,0,0">Heading</h1>
+                                    <p class="uk-text-lead" uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                                <img src="images/photo2.jpg" alt="" uk-cover>
+                            </div>
+                            <div class="uk-position-cover" uk-slideshow-parallax="opacity: 0,0,0.2; background-color: #000,#000"></div>
+                            <div class="uk-position-center uk-position-medium uk-text-center">
+                                <div uk-slideshow-parallax="scale: 1,1,0.8">
+                                    <h1 class="uk-heading-medium" uk-slideshow-parallax="x: 200,0,0">Heading</h1>
+                                    <p class="uk-text-lead" uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
+                                </div>
                             </div>
                         </li>
                     </ul>

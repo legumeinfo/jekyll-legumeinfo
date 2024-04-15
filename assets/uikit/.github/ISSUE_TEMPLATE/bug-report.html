@@ -72,11 +72,14 @@
   <!-- place globally-included scripts here -->
 
 
+  
+
   <!-- opt-in code for integrating GraphQL with LIS Web Components -->
   <script type="importmap">
     {
       "imports": {
-        "lis-graphql": "/assets/js/graphql/index.js"
+        "lis-graphql": "/assets/js/graphql/index.js",
+        "lis-events": "/assets/js/events.js"
       }
     }
   </script>
@@ -647,9 +650,10 @@
 
 
 <!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
-<div class="tm-main uk-section uk-section-default uk-flex">
-  <div class="uk-container uk-width-1-1">
-    <!--
+<div class="tm-main uk-section uk-section-default">
+  <div class="uk-container uk-flex">
+    <div class="uk-width-1-1">
+      <!--
 
 👋 Hi, thank you for using UIKit!
 
@@ -664,7 +668,7 @@ Please open an issues only for a bug report or feature request. Make sure no one
 <h3 id="uikit-version">UIkit Version</h3>
 
 <p><em>Check if the issue is reproducible with the latest stable version.</em>
-3.17.11</p>
+3.19.2</p>
 
 <h3 id="actual-behavior">Actual Behavior</h3>
 
@@ -684,10 +688,9 @@ Please open an issues only for a bug report or feature request. Make sure no one
 2.
 3.</p>
 
+    </div>
+    
   </div>
-
-  
-
 </div>
 
 

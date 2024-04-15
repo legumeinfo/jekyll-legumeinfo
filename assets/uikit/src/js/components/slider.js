@@ -22,16 +22,18 @@ import {
 import { resize } from '../api/observables';
 import Class from '../mixin/class';
 import Slider, { speedUp } from '../mixin/slider';
+import SliderParallax from '../mixin/slider-parallax';
 import SliderReactive from '../mixin/slider-reactive';
 import SliderPreload from './internal/slider-preload';
 import Transitioner, { getMax, getWidth } from './internal/slider-transitioner';
 
 export default {
-    mixins: [Class, Slider, SliderReactive, SliderPreload],
+    mixins: [Class, Slider, SliderReactive, SliderParallax, SliderPreload],
 
     props: {
         center: Boolean,
         sets: Boolean,
+        active: String,
     },
 
     data: {
@@ -41,14 +43,11 @@ export default {
         selList: '.uk-slider-items',
         selNav: '.uk-slider-nav',
         clsContainer: 'uk-slider-container',
+        active: 'all',
         Transitioner,
     },
 
     computed: {
-        avgWidth() {
-            return getWidth(this.list) / this.length;
-        },
-
         finite({ finite }) {
             return finite || isFinite(this.list, this.center);
         },
@@ -76,7 +75,7 @@ export default {
         },
 
         sets({ sets: enabled }) {
-            if (!enabled) {
+            if (!enabled || this.parallax) {
                 return;
             }
 
@@ -93,7 +92,9 @@ export default {
                 if (this.center) {
                     if (
                         left < width / 2 &&
-                        left + slideWidth + dimensions(getIndex(+i + 1, this.slides)).width / 2 >
+                        left +
+                            slideWidth +
+                            dimensions(this.slides[getIndex(+i + 1, this.slides)]).width / 2 >
                             width / 2
                     ) {
                         sets.push(+i);
@@ -143,11 +144,7 @@ export default {
                 }
             }
 
-            if (this.length && !this.dragging && !this.stack.length) {
-                this.reorder();
-                this._translate(1);
-            }
-
+            this.reorder();
             this.updateActiveClasses();
         },
 
@@ -185,9 +182,10 @@ export default {
 
             const index =
                 this.dir < 0 || !this.slides[this.prevIndex] ? this.index : this.prevIndex;
+            const avgWidth = getWidth(this.list) / this.length;
             this.duration =
-                speedUp(this.avgWidth / this.velocity) *
-                (dimensions(this.slides[index]).width / this.avgWidth);
+                speedUp(avgWidth / this.velocity) *
+                (dimensions(this.slides[index]).width / avgWidth);
 
             this.reorder();
         },
@@ -196,6 +194,7 @@ export default {
             if (~this.prevIndex) {
                 addClass(this._getTransitioner().getItemIn(), this.clsActive);
             }
+            this.updateActiveClasses(this.prevIndex);
         },
 
         itemshown() {
@@ -237,12 +236,16 @@ export default {
             }
         },
 
-        updateActiveClasses() {
-            const actives = this._getTransitioner(this.index).getActives();
+        updateActiveClasses(currentIndex = this.index) {
+            let actives = this._getTransitioner(currentIndex).getActives();
+
+            if (this.active !== 'all') {
+                actives = [this.slides[this.getValidIndex(currentIndex)]];
+            }
+
             const activeClasses = [
                 this.clsActive,
-                ((!this.sets || includes(this.sets, toFloat(this.index))) && this.clsActivated) ||
-                    '',
+                !this.sets || includes(this.sets, toFloat(this.index)) ? this.clsActivated : '',
             ];
             for (const slide of this.slides) {
                 const active = includes(actives, slide);
@@ -296,6 +299,28 @@ export default {
             }
             return Array.from(slides);
         },
+
+        getIndexAt(percent) {
+            let index = -1;
+            const scrollDist = this.center
+                ? getWidth(this.list) -
+                  (dimensions(this.slides[0]).width / 2 + dimensions(last(this.slides)).width / 2)
+                : getWidth(this.list, this.maxIndex);
+
+            let dist = percent * scrollDist;
+            let slidePercent = 0;
+
+            do {
+                const slideWidth = dimensions(this.slides[++index]).width;
+                const slideDist = this.center
+                    ? slideWidth / 2 + dimensions(this.slides[index + 1]).width / 2
+                    : slideWidth;
+                slidePercent = (dist / slideDist) % 1;
+                dist -= slideDist;
+            } while (dist >= 0 && index < this.maxIndex);
+
+            return [index, slidePercent];
+        },
     },
 };
 
@@ -341,7 +366,7 @@ function isFinite(list, center) {
         }
 
         if (
-            diff >
+            Math.trunc(diff) >
             sumBy(
                 slides.filter((slide) => !slidesInView.has(slide)),
                 (slide) => dimensions(slide).width,

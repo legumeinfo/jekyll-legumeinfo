@@ -72,11 +72,14 @@
   <!-- place globally-included scripts here -->
 
 
+  
+
   <!-- opt-in code for integrating GraphQL with LIS Web Components -->
   <script type="importmap">
     {
       "imports": {
-        "lis-graphql": "/assets/js/graphql/index.js"
+        "lis-graphql": "/assets/js/graphql/index.js",
+        "lis-events": "/assets/js/events.js"
       }
     }
   </script>
@@ -647,9 +650,10 @@
 
 
 <!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
-<div class="tm-main uk-section uk-section-default uk-flex">
-  <div class="uk-container uk-width-1-1">
-    <h2>Submitting Data to LIS</h2>
+<div class="tm-main uk-section uk-section-default">
+  <div class="uk-container uk-flex">
+    <div class="uk-width-1-1">
+      <h2>Submitting Data to LIS</h2>
 
 LIS is a community resource dedicated to making research results broadly available as soon after publication as possible. Researchers can help us meet this objective by submitting their data directly. Our curators can also help to clean up and properly present data at LIS prior to publication. It will be helpful if you contact us before submitting your data so that we can help you through the process.
 
@@ -660,10 +664,9 @@ QTL template(link is external) (including map and marker worksheets)
 Please contact us if you have a different type of data you would like LIS to host and we will work with you to make that happen.
 
 
+    </div>
+    
   </div>
-
-  
-
 </div>
 
 

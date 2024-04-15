@@ -72,11 +72,14 @@
   <!-- place globally-included scripts here -->
 
 
+  
+
   <!-- opt-in code for integrating GraphQL with LIS Web Components -->
   <script type="importmap">
     {
       "imports": {
-        "lis-graphql": "/assets/js/graphql/index.js"
+        "lis-graphql": "/assets/js/graphql/index.js",
+        "lis-events": "/assets/js/events.js"
       }
     }
   </script>
@@ -731,10 +734,10 @@
 
 
 <!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
-<div class="tm-main uk-section uk-section-default uk-flex">
-  <div class="uk-container uk-width-1-1">
-    <div>
-  <h1>LIS - the Legume Information System</h1>
+<div class="tm-main uk-section uk-section-default">
+  <div class="uk-container uk-flex">
+    <div class="uk-width-1-1">
+      <h1>LIS - the Legume Information System</h1>
 
 <p>
   LIS integrates genetic and genomic information across many legume species, with tools for research. LIS has been restructured for improved scalability and function. As of April, 2023, the previous incarnation has been decommissioned. Additional functionality will be added through 2023. Please <a href="/about">contact us</a> if you have questions, suggestions, or contributions.
@@ -773,12 +776,10 @@
   </a>
 </div>
 
-</div>
 
-  </div>
-
-  
-    <div class="tm-sidebar-right uk-flex-none uk-visible@l">
+    </div>
+    
+      <div class="tm-sidebar-right uk-flex-none uk-visible@l">
 
   
     
@@ -795,13 +796,16 @@
   </div>
   
   <div class="uk-card-body">
+    
     <ul class="uk-list uk-list-disc">
       
       
       
-      <li><b>17 Feb 2022:</b> <a href="/blog/2022/02/17/zzbrowse.html">ZZBrowse</a></li>
+        <li><a href="/blog/2022/02/17/zzbrowse.html"><b>ZZBrowse</b></a></li>
+
       
     </ul>
+    
   </div>
 
   <div class="uk-card-footer">
@@ -829,17 +833,25 @@
   </div>
   
   <div class="uk-card-body">
+    
     <ul class="uk-list uk-list-disc">
       
       
       
-      <li><a href="/news/general/2023/08/09/gene-search.html"><b>Gene search</b></a></li>
+        
+        <li><a href="/news/general/2023/08/09/gene-search.html"><b>Gene search</b></a> 09 August 2023</li>
+
       
-      <li><a href="/news/general/2023/04/15/site-updates.html"><b>Site updates</b></a></li>
+        
+        <li><a href="/news/general/2023/04/15/site-updates.html"><b>Site updates</b></a> 15 April 2023</li>
+
       
-      <li><a href="/news/general/2022/05/06/news.html"><b>AgBioData data management survey</b></a></li>
+        
+        <li><a href="/news/general/2022/05/06/news.html"><b>AgBioData data management survey</b></a> 06 May 2022</li>
+
       
     </ul>
+    
   </div>
 
   <div class="uk-card-footer">
@@ -866,9 +878,7 @@
     </div>
   </div>
   
-  <div class="uk-card-body">
-    <ul id="upcoming-events" class="uk-list uk-list-disc"></ul>
-  </div>
+  <div id="events-card" class="uk-card-body"></div>
 
   <div class="uk-card-footer">
     
@@ -879,153 +889,38 @@
 
 
 
-<script type="text/javascript">
-  /* all events */
-  const events = [
-    
-      {
-        url: "/events/announcements/2021/10/05/pag-xxix-21.html",
-        title: "Plant and Animal Genome Conference XXIX, San Diego",
-        date: "05 Oct 2021",
-        unixDate: 1633392000,
-        
-        endDate: null,
-        unixEndDate: null,
-        
-      },
-    
-      {
-        url: "/events/announcements/2021/11/02/bic-napia-21.html",
-        title: "BIC & NAPIA Biennial meeting, virtual",
-        date: "02 Nov 2021",
-        unixDate: 1635811200,
-        
-        endDate: null,
-        unixEndDate: null,
-        
-      },
-    
-      {
-        url: "/events/announcements/2022/05/25/plantbio-22.html",
-        title: "ASPB Annual Meeting, Portland, Oregon",
-        date: "25 May 2022",
-        unixDate: 1653436800,
-        
-        endDate: null,
-        unixEndDate: null,
-        
-      },
-    
-      {
-        url: "/events/announcements/2022/06/03/Soy2022.html",
-        title: "Molecular and Cellular Biology of the Soybean (Soy2022), virtual",
-        date: "03 Jun 2022",
-        unixDate: 1654214400,
-        
-        endDate: null,
-        unixEndDate: null,
-        
-      },
-    
-      {
-        url: "/events/announcements/2023/06/18/WSRC11-23.html",
-        title: "World Soybean Research Conference (WSRC11), Vienna Austria",
-        date: "18 Jun 2023",
-        unixDate: 1687046400,
-        
-        endDate: null,
-        unixEndDate: null,
-        
-      },
-    
-      {
-        url: "/events/announcements/2023/08/06/8ilc-23.html",
-        title: "8th International Legume Conference, Brazil",
-        date: "06 Aug 2023",
-        unixDate: 1691280000,
-        
-        endDate: null,
-        unixEndDate: null,
-        
-      },
-    
-      {
-        url: "/events/announcements/2023/09/19/4ils-23.html",
-        title: "Fourth International Legume Society Conference, Spain",
-        date: "19 Sep 2023",
-        unixDate: 1695081600,
-        
-        endDate: null,
-        unixEndDate: null,
-        
-      },
-    
-      {
-        url: "/events/announcements/2023/10/16/19-aagb-23.html",
-        title: "Advances in Arachis through Genomics and Biotechnology (AAGB), Huntsville, Alabama",
-        date: "16 Oct 2023",
-        unixDate: 1697414400,
-        
-        endDate: "26 Oct 2023",
-        unixEndDate: 1698278400,
-        
-      },
-    
-      {
-        url: "/events/announcements/2023/11/06/bic-napia-23.html",
-        title: "BIC & NAPIA Biennial meeting, South Carolina",
-        date: "06 Nov 2023",
-        unixDate: 1699228800,
-        
-        endDate: "15 Nov 2023",
-        unixEndDate: 1700006400,
-        
-      },
-    
-      {
-        url: "/events/jekyll/pixyll/2024/06/03/CropsConf24.html",
-        title: "Crops Conference 2024, Huntsville, AL",
-        date: "03 Jun 2024",
-        unixDate: 1717372800,
-        
-        endDate: "13 Jun 2024",
-        unixEndDate: 1718236800,
-        
-      },
-    
-      {
-        url: "/events/jekyll/pixyll/2024/09/30/ICLGG-2024.html",
-        title: "ICLGG(2024) Brisbane/Meanjin, AUSTRALIA",
-        date: "30 Sep 2024",
-        unixDate: 1727654400,
-        
-        endDate: null,
-        unixEndDate: null,
-        
-      },
-    
-    ];
-  /* only keep soonest eventsLimit events that are currently happening or upcoming */
+<script type="module">
+
+  import { upcomingEvents } from "lis-events";
+
   const eventsLimit = 
     3
   ;
-  const currentUnixDate = Math.floor(Date.now() / 1000);
-  const upcomingEvents = events
-    .filter((event) => event.unixDate >= currentUnixDate || event.unixEndDate >= currentUnixDate)
-    .slice(0, eventsLimit);
+
+  const cardUpcomingEvents = upcomingEvents.slice(0, eventsLimit);
+
   /* generate HTML for each event */
-  const listItems = upcomingEvents
-    .map((event) => {
-      const titleLink = `<a href="${ event.url }"><b>${ event.title }</b></a>`;
-      let dates = event.date;
-      if (event.endDate) {
-        dates += ` - ${ event.endDate }`;
-      }
-      return `<li>${ titleLink } ${ dates }</li>`;
-    });
+
   /* add the upcoming events to the upcoming events element */
-  const eventList = document.getElementById("upcoming-events");
-  eventList.innerHTML = listItems.join("");
+  const cardEventList = document.getElementById("events-card");
+  let innerHTML = "<p>There are no current or upcoming events.</p>";
+  if (upcomingEvents.length > 0) {
+    const cardListItems = upcomingEvents
+      .map((event) => {
+        let dates = event.date;
+        if (event.endDate) {
+          dates += ` - ${ event.endDate }`;
+        }
+        return `<li><a href="${ event.url }"><b>${ event.title }</b></a> ${ dates }</li>
+`;
+      });
+    innerHTML = `
+      <ul id="card-upcoming-events" class="uk-list uk-list-disc">
+        ${ cardListItems.join("") }
+      </ul>
+    `;
+  }
+  cardEventList.innerHTML = innerHTML;
 </script>
 
   
@@ -1034,8 +929,8 @@
 
 </div>
 
-  
-
+    
+  </div>
 </div>
 
 

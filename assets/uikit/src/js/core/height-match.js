@@ -24,6 +24,19 @@ export default {
             elements.reduce((elements, el) => elements.concat(el, ...el.children), [$el]),
     }),
 
+    events: {
+        // Hidden elements may change height when fonts load
+        name: 'loadingdone',
+
+        el() {
+            return document.fonts;
+        },
+
+        handler() {
+            this.$emit('resize');
+        },
+    },
+
     update: {
         read() {
             return {

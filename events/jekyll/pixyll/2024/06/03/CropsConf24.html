@@ -72,11 +72,14 @@
   <!-- place globally-included scripts here -->
 
 
+  
+
   <!-- opt-in code for integrating GraphQL with LIS Web Components -->
   <script type="importmap">
     {
       "imports": {
-        "lis-graphql": "/assets/js/graphql/index.js"
+        "lis-graphql": "/assets/js/graphql/index.js",
+        "lis-events": "/assets/js/events.js"
       }
     }
   </script>
@@ -647,15 +650,15 @@
 
 
 <!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
-<div class="tm-main uk-section uk-section-default uk-flex">
-  <div class="uk-container uk-width-1-1">
-    <article class="uk-article">
+<div class="tm-main uk-section uk-section-default">
+  <div class="uk-container uk-flex">
+    <div class="uk-width-1-1">
+      <div class="uk-container uk-container-small">
+  
+<article class="uk-article">
   <h1 class="uk-article-title">Crops Conference 2024, Huntsville, AL</h1>
-
-  <p class="uk-article-meta">03 Jun 2024 - 13 Jun 2024</p>
-
+  <p class="uk-article-meta">When: 03 June 2024 - 13 June 2024</p>
   <p class="uk-text-lead">Crops Conference 2024. Improving Agriculture Through Genomics</p>
-
   <p><a href="https://www.hudsonalpha.org/crops/" target="_blank">Crops Conference 2024, Huntsville, AL</a></p>
 
 <p>CROPS 2024. Improving Agriculture Through Genomics.<br />
@@ -664,13 +667,14 @@ By HudsonAlpha Institute for Biotechnology, Huntsville, AL.<br />
 <a href="https://www.hudsonalpha.org/crops/agenda/" target="_blank">Agenda</a></p>
 
 
-
 </article>
 
+
+</div>
+
+    </div>
+    
   </div>
-
-  
-
 </div>
 
 

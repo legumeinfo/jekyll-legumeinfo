@@ -1,4 +1,5 @@
 import { query } from './query.js';
+import { modalLink } from './modal.js';
 
 
 /** The GraphQL query used to get traits. */
@@ -140,4 +141,67 @@ export function traitSearchFunctionFactory(...callbacks) {
         });
         return promise;
     };
+}
+
+/**
+ * Creates a callback function that can be used with the `traitSearchFunctionFactory` function
+ * to convert `GWAS` in the `PaginatedSearchResults<TraitSearchResult[]>` into links that
+ * open a modal with the given `modalId`.
+ * @param {string} modalId - The HTML `id` of the target modal element.
+ * @returns {Function} The created callback function.
+ */
+export function gwasIdentifierModalLinkFactory(modalId) {
+  return ({results: oldResults, ...pageInfo}) => {
+    const results = oldResults.map(({identifier: oldIdentifier, type, ...traitInfo}) => {
+      let identifier = oldIdentifier;
+      if (type === "GWAS") {
+        const data = {identifier, type: 'GWAS'};
+        identifier = modalLink(modalId, identifier, data);
+      }
+      return {
+        ...traitInfo,
+        identifier,
+        type,
+      }
+    });
+    return {...pageInfo, results};
+  }
+}
+
+/**
+ * Creates a callback function that can be used with the `traitSearchFunctionFactory` function
+ * to convert `QTLStudies` in the `PaginatedSearchResults<TraitSearchResult[]>` into links that
+ * open a modal with the given `modalId`.
+ * @param {string} modalId - The HTML `id` of the target modal element.
+ * @returns {Function} The created callback function.
+ */
+export function qtlStudyIdentifierModalLinkFactory(modalId) {
+  return ({results: oldResults, ...pageInfo}) => {
+    const results = oldResults.map(({identifier: oldIdentifier, type, ...traitInfo}) => {
+      let identifier = oldIdentifier;
+      if (type === "QTL") {
+        const data = {identifier, type: 'QTLStudy'};
+        identifier = modalLink(modalId, identifier, data);
+      }
+      return {
+        ...traitInfo,
+        identifier,
+        type,
+      }
+    });
+    return {...pageInfo, results};
+  }
+}
+
+/**
+ * Creates all callback functions that can be used with the `traitSearchFunctionFactory` function
+ * to add modal links to the `PaginatedSearchResults<TraitSearchResult[]>`.
+ * @param {string} modalId - The HTML `id` of the target modal element.
+ * @returns {Function[]} The created callback functions.
+ */
+export function traitAllModalLinksFactory(modalId) {
+  return [
+    gwasIdentifierModalLinkFactory(modalId),
+    qtlStudyIdentifierModalLinkFactory(modalId),
+  ];
 }

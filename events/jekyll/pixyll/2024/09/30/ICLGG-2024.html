@@ -72,11 +72,14 @@
   <!-- place globally-included scripts here -->
 
 
+  
+
   <!-- opt-in code for integrating GraphQL with LIS Web Components -->
   <script type="importmap">
     {
       "imports": {
-        "lis-graphql": "/assets/js/graphql/index.js"
+        "lis-graphql": "/assets/js/graphql/index.js",
+        "lis-events": "/assets/js/events.js"
       }
     }
   </script>
@@ -647,15 +650,15 @@
 
 
 <!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
-<div class="tm-main uk-section uk-section-default uk-flex">
-  <div class="uk-container uk-width-1-1">
-    <article class="uk-article">
+<div class="tm-main uk-section uk-section-default">
+  <div class="uk-container uk-flex">
+    <div class="uk-width-1-1">
+      <div class="uk-container uk-container-small">
+  
+<article class="uk-article">
   <h1 class="uk-article-title">ICLGG(2024) Brisbane/Meanjin, AUSTRALIA</h1>
-
-  <p class="uk-article-meta">30 Sep 2024</p>
-
+  <p class="uk-article-meta">When: 30 September 2024</p>
   <p class="uk-text-lead">ICLGG 2024</p>
-
   <p><a href="https://www.iclgg2024.org/program/" target="_blank">ICLGG(2024), Brisbane/Meanjin, AUSTRALIA</a></p>
 
 <p>11th International Conference on Legume Genetics and Genomics (ICLGG)<br />
@@ -663,13 +666,14 @@
 Brisbane Convention &amp; Exhibition Centre</p>
 
 
-
 </article>
 
+
+</div>
+
+    </div>
+    
   </div>
-
-  
-
 </div>
 
 

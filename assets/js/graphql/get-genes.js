@@ -224,7 +224,7 @@ export function panGeneSetsModalLinkFactory(modalId) {
  * @param {string} modalId - The HTML `id` of the target modal element.
  * @returns {Function[]} The created callback functions.
  */
-export function allModalLinksFactory(modalId) {
+export function geneAllModalLinksFactory(modalId) {
   return [
     geneIdentifierModalLinkFactory(modalId),
     locationModalLinkFactory(modalId),
@@ -232,3 +232,9 @@ export function allModalLinksFactory(modalId) {
     panGeneSetsModalLinkFactory(modalId),
   ];
 }
+
+/**
+ * Deprecated alias for geneAllModalLinksFactory, for backward compatibility until
+ * we have enough significant breaking changes to warrant a major revision update
+ */
+export const allModalLinksFactory = geneAllModalLinksFactory;

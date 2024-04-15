@@ -72,11 +72,14 @@
   <!-- place globally-included scripts here -->
 
 
+  
+
   <!-- opt-in code for integrating GraphQL with LIS Web Components -->
   <script type="importmap">
     {
       "imports": {
-        "lis-graphql": "/assets/js/graphql/index.js"
+        "lis-graphql": "/assets/js/graphql/index.js",
+        "lis-events": "/assets/js/events.js"
       }
     }
   </script>
@@ -647,16 +650,15 @@
 
 
 <!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
-<div class="tm-main uk-section uk-section-default uk-flex">
-  <div class="uk-container uk-width-1-1">
-    <div class="uk-container uk-container-small">
-  <article class="uk-article">
+<div class="tm-main uk-section uk-section-default">
+  <div class="uk-container uk-flex">
+    <div class="uk-width-1-1">
+      <div class="uk-container uk-container-small">
+  
+<article class="uk-article">
   <h1 class="uk-article-title">Welcome to the new LIS site!</h1>
-
-  <p class="uk-article-meta">Written by Steven Cannon and Andrew Farmer on 29 Mar 2022.</p>
-
+  <p class="uk-article-meta">Posted on 29 March 2022</p>
   <p class="uk-text-lead">Announcing the new LIS</p>
-
   <p>The LIS team has re-designed and reengineered the site from the ground up, in order to better accommodate and make use of the dramatic influx of new, high-quality genomic data being generated for all legume crops. Here are some of the main changes:</p>
 <ul>
   <li>All data sets are now held in the LIS <a href="https://data.legumeinfo.org/">Data Store</a>, with standardized naming patterns and metadata. The data are organized by genus and species, and then by data type. Data quality metrics are summarized in the <a href="https://dscensor.legumeinfo.org">DSCensor tool</a>. You are welcome to browse the Data Store and download file collections, if those serve your needs. This change helps us accommodate the high volumes of incoming data, requiring streamlined and regularized approaches to data curation. We hope the Data Store organization helps you to efficiently explore and find what you want.</li>
@@ -675,15 +677,14 @@
 
 <p>With such a large site overhaul, we expect that LIS users will have questions about features that may have moved or may be handled differently in this new version. We very much welcome your questions! You are also welcome to use the <a href="https://legacy.legumeinfo.org">previous site</a>, which will remain available through most of 2022.</p>
 
-
 </article>
+
 
 </div>
 
+    </div>
+    
   </div>
-
-  
-
 </div>
 
 

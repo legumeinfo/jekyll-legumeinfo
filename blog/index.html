@@ -72,11 +72,14 @@
   <!-- place globally-included scripts here -->
 
 
+  
+
   <!-- opt-in code for integrating GraphQL with LIS Web Components -->
   <script type="importmap">
     {
       "imports": {
-        "lis-graphql": "/assets/js/graphql/index.js"
+        "lis-graphql": "/assets/js/graphql/index.js",
+        "lis-events": "/assets/js/events.js"
       }
     }
   </script>
@@ -731,21 +734,28 @@
 
 
 <!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
-<div class="tm-main uk-section uk-section-default uk-flex">
-  <div class="uk-container uk-width-1-1">
-    <h1>Blog</h1>
+<div class="tm-main uk-section uk-section-default">
+  <div class="uk-container uk-flex">
+    <div class="uk-width-1-1">
+      <h1>Blog</h1>
+
+
+
+<h2 class="uk-heading-divider">Posts</h2>
 
 <dl class="uk-description-list uk-description-list-divider">
 
-<dt><a href="/blog/2022/02/17/zzbrowse.html">ZZBrowse</a></dt>
-  <dd>ZZBrowse is an interactive R/Shiny web application for GWAS and QTL visualization. In this post, we describe our enhancements to the original ZBrowse developed by the Baxter Laboratory.</dd>
+  
+  <dt><a href="/blog/2022/02/17/zzbrowse.html"><b>ZZBrowse</b></a> | <span class="uk-text-muted">Sven Redsun, 17 February 2022</span></dt>
+<dd>ZZBrowse is an interactive R/Shiny web application for GWAS and QTL visualization. In this post, we describe our enhancements to the original ZBrowse developed by the Baxter Laboratory.</dd>
+
 
 </dl>
 
+
+    </div>
+    
   </div>
-
-  
-
 </div>
 
 

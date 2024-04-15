@@ -49,24 +49,21 @@ $navbar-nav-gap:                                 0px !default; // Must have a un
 
 
 
-
 /* ========================================================================
    Component: Navbar
  ========================================================================== */
 
 /*
  * 1. Create position context to center navbar group
- * 2. Pass dropbar behind color to JS
  */
 
 .uk-navbar {
     display: flex;
     /* 1 */
     position: relative;
-    /* 2 */
-    --uk-navbar-dropbar-behind-color: #{$navbar-dropbar-behind-color-mode};
     @if(mixin-exists(hook-navbar)) {@include hook-navbar();}
 }
+
 
 /* Container
  ========================================================================== */
@@ -90,7 +87,7 @@ $navbar-nav-gap:                                 0px !default; // Must have a un
 
 .uk-navbar-left,
 .uk-navbar-right,
-[class*='uk-navbar-center'] {
+[class*="uk-navbar-center"] {
     display: flex;
     gap: $navbar-gap;
     /* 1 */
@@ -119,7 +116,7 @@ $navbar-nav-gap:                                 0px !default; // Must have a un
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     /* 2 */
     width: max-content;
     box-sizing: border-box;
@@ -134,10 +131,10 @@ $navbar-nav-gap:                                 0px !default; // Must have a un
    top: 0;
 }
 
-.uk-navbar-center-left { right:  unquote('calc(100% + #{$navbar-gap})'); }
+.uk-navbar-center-left { right: unquote('calc(100% + #{$navbar-gap})'); }
 .uk-navbar-center-right { left: unquote('calc(100% + #{$navbar-gap})'); }
 
-[class*='uk-navbar-center-'] {
+[class*="uk-navbar-center-"] {
     width: max-content;
     box-sizing: border-box;
 }

@@ -72,11 +72,14 @@
   <!-- place globally-included scripts here -->
 
 
+  
+
   <!-- opt-in code for integrating GraphQL with LIS Web Components -->
   <script type="importmap">
     {
       "imports": {
-        "lis-graphql": "/assets/js/graphql/index.js"
+        "lis-graphql": "/assets/js/graphql/index.js",
+        "lis-events": "/assets/js/events.js"
       }
     }
   </script>
@@ -647,9 +650,10 @@
 
 
 <!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
-<div class="tm-main uk-section uk-section-default uk-flex">
-  <div class="uk-container uk-width-1-1">
-    <h1>Contact</h1>
+<div class="tm-main uk-section uk-section-default">
+  <div class="uk-container uk-flex">
+    <div class="uk-width-1-1">
+      <h1>Contact</h1>
 
 
 <h2>About LIS</h2>
@@ -676,10 +680,9 @@
   <a href="mailto:lis@ncgr.org">Contact us</a> via email if you have questions, requests, or anything else we should hear about!
 </p>
 
+    </div>
+    
   </div>
-
-  
-
 </div>
 
 

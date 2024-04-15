@@ -1,5 +1,103 @@
 # Changelog
 
+## 3.19.2 (March 12, 2024)
+
+### Added
+
+- Add center vertical and horizontal classes to Position component
+
+### Fixed
+
+- Fix `scrollIntoView()` when target is covered by another element
+
+## 3.19.1 (March 1, 2024)
+
+### Added
+
+- Add Bluesky icon
+
+### Fixed
+
+- Fix Video component handles fullscreen mode correctly
+
+## 3.19.0 (February 29, 2024)
+
+### Added
+
+- Add breakpoint classes for flex direction, dimension and alignment
+- Add `active` option to Slider component
+
+### Changed
+
+- Remove obsolete fix for rounding issues in Width component in IE11/Edge
+
+### Fixed
+
+- Fix width expand classes mixed with other width classes of higher breakpoints in Width component
+- Fix combination of width auto and expand breakpoint classes
+- Fix logo inverse selector to work with different types of images
+- Fix Tooltips not showing in iOS
+- Fix parallax scrolling for Slideshow/Slider component with finite mode
+- Fix Slider component disables infinite scrolling prematurely
+- Fix Sass sources by renaming spin() (LESS) to adjust-hue() (Sass)
+- Fix Height Match component recalculates its heights, when a font has loaded
+
+## 3.18.3 (February 13, 2024)
+
+### Fixed
+
+- Fix dropbar offset in Navbar component
+- Fix autoplay option in Lightbox component
+- Fix height in Height Placeholder component
+- Fix Height Match component to use viewport dimensions as base again
+
+## 3.18.2 (February 9, 2024)
+
+### Fixed
+
+- Fix wrong dropbar offset in Navbar component
+- Fix conflict if multiple Dropnav components share the same container
+
+## 3.18.1 (February 7, 2024)
+
+### Changed
+
+- Close modal if contained video leaves fullscreen mode
+
+### Fixed
+
+- Fix Video component does not pause video if it enters fullscreen mode
+- Fix page scrolls while sorting in Sortable component
+- Fix horizontally overflowing elements are not scrollable in Modal component
+- Fix Height Match component applied to SVG elements
+
+### Removed
+
+- Remove Pagekit CMS icon
+
+## 3.18.0 (January 30, 2024)
+
+### Added
+
+- Add parallax options to Slider and Slideshow components
+- Add Inverse component to color content with no background depending on intersecting elements beneath
+- Add color mode for default and muted style modifiers in Section, Tile, Card and Overlay components
+- Add Height Placeholder component
+- Add size modifier to Nav component
+- Add link external and arrow up right icons
+- Add X, Mastodon, Telegram, Threads, Signal and YOOtheme icons
+
+### Changed
+
+- Replace `none` with `dark` as default for navbar, dropdown and dropbar color modes
+- Twitter icon will show X icon
+- Responsive component uses `aspect-ratio` if available
+
+### Fixed
+
+- Fix icons task on Windows
+- Fix Height Match component uses offsetHeight as base
+
 ## 3.17.11 (November 21, 2023)
 
 ### Fixed

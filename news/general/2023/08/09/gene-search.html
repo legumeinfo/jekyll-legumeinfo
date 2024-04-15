@@ -72,11 +72,14 @@
   <!-- place globally-included scripts here -->
 
 
+  
+
   <!-- opt-in code for integrating GraphQL with LIS Web Components -->
   <script type="importmap">
     {
       "imports": {
-        "lis-graphql": "/assets/js/graphql/index.js"
+        "lis-graphql": "/assets/js/graphql/index.js",
+        "lis-events": "/assets/js/events.js"
       }
     }
   </script>
@@ -647,27 +650,25 @@
 
 
 <!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
-<div class="tm-main uk-section uk-section-default uk-flex">
-  <div class="uk-container uk-width-1-1">
-    <div class="uk-container uk-container-small">
-  <article class="uk-article">
+<div class="tm-main uk-section uk-section-default">
+  <div class="uk-container uk-flex">
+    <div class="uk-width-1-1">
+      <div class="uk-container uk-container-small">
+  
+<article class="uk-article">
   <h1 class="uk-article-title">Gene search</h1>
-
-  <p class="uk-article-meta">Written by Andrew Farmer on 09 Aug 2023.</p>
-
+  <p class="uk-article-meta">Posted on 09 August 2023</p>
   <p class="uk-text-lead">New interface for gene search</p>
-
   <p>We’ve just released a new <a href="/tools/search/gene.html">gene search</a> interface that we hope will provide users with an easy-to-use entry point to many functions of the site, as an alternative to more complex search capabilities available through our InterMine instances. We’ve started with a few of the most relevant fields that we think will be generally useful for query and display, but would love to have your feedback. Note that the results display includes two fields (identifier and location) that support “linkouts” to other pages on the site (report pages, genome browsers, synteny views) where more information about the genes can be obtained; if you’d like to see other links to your favorite locations within the site or on other sites, please let us know. The underlying implementation of this search functionality is quite generic, so it should be relatively easy to provide similar searches for other types of data stored at the site. If you have ideas for similar searches that would be immediately useful for your work, please let us know.</p>
-
 
 </article>
 
+
 </div>
 
+    </div>
+    
   </div>
-
-  
-
 </div>
 
 

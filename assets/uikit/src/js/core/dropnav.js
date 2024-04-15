@@ -75,10 +75,6 @@ export default {
             return dropbar ? dropbar : (this._dropbar = $('<div></div>'));
         },
 
-        dropbarOffset() {
-            return 0;
-        },
-
         dropContainer(_, $el) {
             return this.container || $el;
         },
@@ -287,22 +283,18 @@ export default {
 
                 const drop = this.getDropdown(target);
                 const adjustHeight = () => {
-                    const targetOffsets = parents(target, `.${this.clsDrop}`)
-                        .concat(target)
-                        .map((el) => offset(el));
-                    const minTop = Math.min(...targetOffsets.map(({ top }) => top));
-                    const maxBottom = Math.max(...targetOffsets.map(({ bottom }) => bottom));
-                    const dropbarOffset = offset(this.dropbar);
-                    css(
-                        this.dropbar,
-                        'top',
-                        this.dropbar.offsetTop - (dropbarOffset.top - minTop) - this.dropbarOffset,
+                    const maxBottom = Math.max(
+                        ...parents(target, `.${this.clsDrop}`)
+                            .concat(target)
+                            .map((el) => offset(el).bottom),
                     );
+
+                    offset(this.dropbar, {
+                        left: offset(this.dropbar).left,
+                        top: this.getDropbarOffset(drop.getPositionOffset()),
+                    });
                     this.transitionTo(
-                        maxBottom -
-                            minTop +
-                            toFloat(css(target, 'marginBottom')) +
-                            this.dropbarOffset,
+                        maxBottom - offset(this.dropbar).top + toFloat(css(target, 'marginBottom')),
                         target,
                     );
                 };
@@ -328,6 +320,7 @@ export default {
                 if (
                     matches(this.dropbar, ':hover') &&
                     active.$el === e.target &&
+                    this.isDropbarDrop(active.$el) &&
                     includes(active.mode, 'hover') &&
                     active.isDelayedHide &&
                     !this.items.some((el) => active.targetEl !== el && matches(el, ':focus'))
@@ -377,6 +370,13 @@ export default {
 
             await Transition.cancel([el, dropbar]);
 
+            if (el) {
+                const diff = offset(el).top - offset(dropbar).top - oldHeight;
+                if (diff > 0) {
+                    css(el, 'transitionDelay', `${(diff / newHeight) * this.duration}ms`);
+                }
+            }
+
             css(el, 'clipPath', `polygon(0 0,100% 0,100% ${oldHeight}px,0 ${oldHeight}px)`);
             height(dropbar, oldHeight);
 
@@ -384,11 +384,9 @@ export default {
                 Transition.start(dropbar, { height: newHeight }, this.duration),
                 Transition.start(
                     el,
-                    {
-                        clipPath: `polygon(0 0,100% 0,100% ${newHeight}px,0 ${newHeight}px)`,
-                    },
+                    { clipPath: `polygon(0 0,100% 0,100% ${newHeight}px,0 ${newHeight}px)` },
                     this.duration,
-                ).finally(() => css(el, { clipPath: '' })),
+                ).finally(() => css(el, { clipPath: '', transitionDelay: '' })),
             ]).catch(noop);
         },
 
@@ -397,7 +395,13 @@ export default {
         },
 
         isDropbarDrop(el) {
-            return this.getDropdown(el) && hasClass(el, this.clsDrop);
+            return includes(this.dropdowns, el) && hasClass(el, this.clsDrop);
+        },
+
+        getDropbarOffset(offsetTop) {
+            const { $el, target, targetY } = this;
+            const { top, height } = offset(query(targetY || target || $el, $el));
+            return top + height + offsetTop;
         },
 
         initializeDropdowns() {

@@ -72,11 +72,14 @@
   <!-- place globally-included scripts here -->
 
 
+  
+
   <!-- opt-in code for integrating GraphQL with LIS Web Components -->
   <script type="importmap">
     {
       "imports": {
-        "lis-graphql": "/assets/js/graphql/index.js"
+        "lis-graphql": "/assets/js/graphql/index.js",
+        "lis-events": "/assets/js/events.js"
       }
     }
   </script>
@@ -647,16 +650,15 @@
 
 
 <!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
-<div class="tm-main uk-section uk-section-default uk-flex">
-  <div class="uk-container uk-width-1-1">
-    <div class="uk-container uk-container-small">
-  <article class="uk-article">
+<div class="tm-main uk-section uk-section-default">
+  <div class="uk-container uk-flex">
+    <div class="uk-width-1-1">
+      <div class="uk-container uk-container-small">
+  
+<article class="uk-article">
   <h1 class="uk-article-title">Site updates</h1>
-
-  <p class="uk-article-meta">Written by Steven Cannon on 15 Apr 2023.</p>
-
+  <p class="uk-article-meta">Posted on 15 April 2023</p>
   <p class="uk-text-lead">Legacy site decommissioned; many updates.</p>
-
   <p>The LIS team has decommissioned the previous site (formerly housed at https://legacy.legumeinfo.org), as most site components have either been reimplemented or replaced by new functionality. Additional search features will be added in 2023, but rich options for queries, reports, visualization, and analysis exist now via the <a href="https://mines.legumeinfo.org">LIS InterMines</a> and other <a href="/tools">Tools</a> at the site.</p>
 
 <p>Many new datasets have been added to the Data Store and the Mines in the last six months, including genome assemblies and annotation sets:</p>
@@ -672,15 +674,14 @@
 <p>There have also been many updates to the <a href="https://mines.legumeinfo.org">Legume InterMines</a>, which now span 10 legume genera.</p>
 
 
-
 </article>
+
 
 </div>
 
+    </div>
+    
   </div>
-
-  
-
 </div>
 
 

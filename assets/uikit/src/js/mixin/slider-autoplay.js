@@ -30,9 +30,7 @@ export default {
         {
             name: 'visibilitychange',
 
-            el() {
-                return document;
-            },
+            el: () => document,
 
             filter() {
                 return this.autoplay;
@@ -56,7 +54,9 @@ export default {
                 if (
                     !(
                         this.stack.length ||
-                        (this.draggable && matches(this.$el, ':focus-within')) ||
+                        (this.draggable &&
+                            matches(this.$el, ':focus-within') &&
+                            !matches(this.$el, ':focus')) ||
                         (this.pauseOnHover && matches(this.$el, ':hover'))
                     )
                 ) {

@@ -136,7 +136,7 @@ export default {
         // Clicking a button does not give it focus on all browsers and platforms
         // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#clicking_and_focus
         [`focus ${pointerEnter} ${pointerDown}`](e) {
-            if (!isTouch(e)) {
+            if (!isTouch(e) || e.type === pointerDown) {
                 this.show();
             }
         },
@@ -169,13 +169,7 @@ function getAlignment(el, target, [dir, align]) {
     }
 
     const props = includes(properties[0], dir) ? properties[1] : properties[0];
-    if (elOffset[props[0]] === targetOffset[props[0]]) {
-        align = props[0];
-    } else if (elOffset[props[1]] === targetOffset[props[1]]) {
-        align = props[1];
-    } else {
-        align = 'center';
-    }
+    align = props.find((prop) => elOffset[prop] === targetOffset[prop]) || 'center';
 
     return [dir, align];
 }

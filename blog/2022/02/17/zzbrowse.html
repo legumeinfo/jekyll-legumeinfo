@@ -72,11 +72,14 @@
   <!-- place globally-included scripts here -->
 
 
+  
+
   <!-- opt-in code for integrating GraphQL with LIS Web Components -->
   <script type="importmap">
     {
       "imports": {
-        "lis-graphql": "/assets/js/graphql/index.js"
+        "lis-graphql": "/assets/js/graphql/index.js",
+        "lis-events": "/assets/js/events.js"
       }
     }
   </script>
@@ -647,12 +650,15 @@
 
 
 <!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
-<div class="tm-main uk-section uk-section-default uk-flex">
-  <div class="uk-container uk-width-1-1">
-    <div class="uk-container uk-container-small">
-  <article class="uk-article">
+<div class="tm-main uk-section uk-section-default">
+  <div class="uk-container uk-flex">
+    <div class="uk-width-1-1">
+      <div class="uk-container uk-container-small">
+  
+<article class="uk-article">
   <h1 class="uk-article-title">ZZBrowse</h1>
-  <p class="uk-article-meta">Posted by Sven Redsun on 17 February 2022.</p>
+  <p class="uk-article-meta">Posted by Sven Redsun on 17 February 2022</p>
+  <p class="uk-text-lead">ZZBrowse is an interactive R/Shiny web application for GWAS and QTL visualization. In this post, we describe our enhancements to the original ZBrowse developed by the Baxter Laboratory.</p>
   <p><a href="https://zzbrowse.legumeinfo.org">ZZBrowse</a> is an interactive R/Shiny web application for GWAS and QTL visualization. In this post, we describe our enhancements to the original <a href="https://github.com/baxterlabZbrowse/ZBrowse">ZBrowse</a> developed by the <a href="https://www.baxterlab.org/untitled-cqi0">Baxter Laboratory</a>. (For an overview of its basic functionality, please refer to the landing page.)</p>
 
 <h2 id="1-comparative-gwas-visualization">1. Comparative GWAS Visualization</h2>
@@ -772,12 +778,12 @@
 
 </article>
 
+
 </div>
 
+    </div>
+    
   </div>
-
-  
-
 </div>
 
 
