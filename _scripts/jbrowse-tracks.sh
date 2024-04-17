@@ -52,6 +52,7 @@ do
       --assemblyNames=${identifier%.ann[0-9].*} \
       --category='Genes' \
       --trackId=${identifier%.*} \
+      --config='{"maxHeight": 2000}' \
       --description="${synopsis}" \
       --out=assets/js/jbrowse
   )
@@ -67,6 +68,7 @@ do
       --category='Markers' \
       --name=${identifier##*.} \
       --trackId=${identifier} \
+      --config='{"maxHeight": 2000}' \
       --description="${synopsis}" \
       --out=assets/js/jbrowse
   )
@@ -88,6 +90,7 @@ do
       --category='Synteny' \
       --name=${name} \
       --trackId=${name} \
+      --config='{"maxHeight": 2000}' \
       --description="Synteny with ${name}" \
       --out=assets/js/jbrowse/
   done < ${synteny_md5}
@@ -104,6 +107,7 @@ jbrowse add-track-json \
   "name": "MultiWig",
   "category": ["Gene Expression"],
   "assemblyNames": ["Wm82.gnm2"],
+  "maxHeight": 2000,
   "adapter": {
     "type": "MultiWiggleAdapter",
     "bigWigs": [
