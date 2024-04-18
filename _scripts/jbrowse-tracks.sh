@@ -53,6 +53,7 @@ do
       --category='Genes' \
       --trackId=${identifier%.*} \
       --description="${synopsis}" \
+      --config=$(printf '{"displays":[{"displayId":"%s","renderer":{"maxHeight":3000}}]}' "${identifier%.*}") \
       --out=assets/js/jbrowse
   )
 done
@@ -104,6 +105,7 @@ jbrowse add-track-json \
   "name": "MultiWig",
   "category": ["Gene Expression"],
   "assemblyNames": ["Wm82.gnm2"],
+  "maxHeight": 3000,
   "adapter": {
     "type": "MultiWiggleAdapter",
     "bigWigs": [
