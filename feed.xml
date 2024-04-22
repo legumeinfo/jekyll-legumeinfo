@@ -46,6 +46,24 @@ By HudsonAlpha Institute for Biotechnology, Huntsville, AL.&lt;br /&gt;
       </item>
     
       <item>
+        <title>Site updates</title>
+        <description>&lt;p&gt;The LIS, SoyBase, and PeanutBase teams have added nine new genome assemblies and annotation sets in Q4 2023 and Q1 2024:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://data.legumeinfo.org/Arachis/stenosperma/&quot;&gt;&lt;strong&gt;&lt;em&gt;Arachis stenosperma&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; (a wild relative of peanut, with resistance to several important peanut diseases)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://data.legumeinfo.org/Cercis/chinensis/&quot;&gt;&lt;strong&gt;&lt;em&gt;Cercis chinensis&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; (ornamental tree, also used as a model for evolutionary studies in the legume family)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://data.legumeinfo.org/Glycine/&quot;&gt;&lt;strong&gt;&lt;em&gt;Soybean&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; (four new reference-quality assemblies and annotation sets)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://data.legumeinfo.org/Medicago/truncatula/&quot;&gt;&lt;strong&gt;&lt;em&gt;Medicago truncatula&lt;/em&gt;, HM078&lt;/strong&gt;&lt;/a&gt;(an accession resistant to fungal agent of spring black stem and leaf spot)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://data.legumeinfo.org/Phaseolus/coccineus/&quot;&gt;&lt;strong&gt;Scarlet runner bean&lt;/strong&gt;&lt;/a&gt; (&lt;em&gt;Phaseolus coccineus&lt;/em&gt;, one of five domesticated Phaseolus species)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/OACRex.gnm2.NXJW/&quot;&gt;&lt;strong&gt;Common bean, accession OAC Rex&lt;/strong&gt;&lt;/a&gt; (developed in Canada)&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sat, 30 Mar 2024 00:00:00 +0000</pubDate>
+        <link>/news/general/2024/03/30/site-updates.html</link>
+        <guid isPermaLink="true">/news/general/2024/03/30/site-updates.html</guid>
+      </item>
+    
+      <item>
         <title>BIC &amp; NAPIA Biennial meeting, South Carolina</title>
         <description>&lt;p&gt;6 - 8 November 2023&lt;/p&gt;
 
@@ -107,28 +125,6 @@ By HudsonAlpha Institute for Biotechnology, Huntsville, AL.&lt;br /&gt;
         <pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate>
         <link>/events/announcements/2023/06/18/WSRC11-23.html</link>
         <guid isPermaLink="true">/events/announcements/2023/06/18/WSRC11-23.html</guid>
-      </item>
-    
-      <item>
-        <title>Site updates</title>
-        <description>&lt;p&gt;The LIS team has decommissioned the previous site (formerly housed at https://legacy.legumeinfo.org), as most site components have either been reimplemented or replaced by new functionality. Additional search features will be added in 2023, but rich options for queries, reports, visualization, and analysis exist now via the &lt;a href=&quot;https://mines.legumeinfo.org&quot;&gt;LIS InterMines&lt;/a&gt; and other &lt;a href=&quot;/tools&quot;&gt;Tools&lt;/a&gt; at the site.&lt;/p&gt;
-
-&lt;p&gt;Many new datasets have been added to the Data Store and the Mines in the last six months, including genome assemblies and annotation sets:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;i&gt;Arachis&lt;/i&gt; (peanut; 3)&lt;/li&gt;
-  &lt;li&gt;&lt;i&gt;Cercis&lt;/i&gt; (redbud; 1)&lt;/li&gt;
-  &lt;li&gt;&lt;i&gt;Cicer&lt;/i&gt; (chickpea; 2)&lt;/li&gt;
-  &lt;li&gt;&lt;i&gt;Glycine&lt;/i&gt; (soybean; 29)&lt;/li&gt;
-  &lt;li&gt;&lt;i&gt;Medicago&lt;/i&gt; (medics; 4)&lt;/li&gt;
-  &lt;li&gt;&lt;i&gt;Vigna&lt;/i&gt; (mung bean; 1)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There have also been many updates to the &lt;a href=&quot;https://mines.legumeinfo.org&quot;&gt;Legume InterMines&lt;/a&gt;, which now span 10 legume genera.&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 15 Apr 2023 08:00:00 +0000</pubDate>
-        <link>/news/general/2023/04/15/site-updates.html</link>
-        <guid isPermaLink="true">/news/general/2023/04/15/site-updates.html</guid>
       </item>
     
   </channel>

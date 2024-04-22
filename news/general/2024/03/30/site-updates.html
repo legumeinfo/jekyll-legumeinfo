@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Home &#8211; LIS: Legume Information System</title>
+  <title>Site updates &#8211; LIS: Legume Information System</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species.">
+  <meta name="description" content="Assemblies and annotations added in 2023-24.">
   <meta name="robots" content="all">
   <meta name="author" content="">
   
-  
-  <link rel="canonical" href="/">
+  <meta name="keywords" content="news, general">
+  <link rel="canonical" href="/news/general/2024/03/30/site-updates.html">
 
   
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -649,286 +649,33 @@
 
 
 
-  <div id="left-menu" class="tm-sidebar-left uk-visible@m">
-
-  
-    <h3>Tools</h3>
-
-
-
-<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-  <li class="uk-nav-header">Download / Query</li>
-  
-  <li uk-tooltip="title: Browser interface to all of the files in the Legume Information System."><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
-  
-  <li uk-tooltip="title: LIS InterMines: one mine per genus including genetic data, and an overall LegumeMine with genome annotations. Tools include a powerful query engine."><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
-  
-  <li uk-tooltip="title: Overviews of data characteristics at LIS: genome assembly sizes, gene counts, BUSCO coverage, etc."><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
-  
-</ul>
-
-<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-  <li class="uk-nav-header">Search</li>
-  
-  <li uk-tooltip="title: Search for genes"><a href="/tools/search/gene.html">Gene Search Tool</a></li>
-  
-</ul>
-
-<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-  <li class="uk-nav-header">Sequence search</li>
-  
-  <li uk-tooltip="title: Run BLASTs against LIS genomes, CDSes, and proteins"><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
-  
-  <li uk-tooltip="title: Functional annotation of protein or nucleotide sequences, and placement into gene trees"><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
-  
-</ul>
-
-<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-  <li class="uk-nav-header">Visualize / Browse</li>
-  
-  <li uk-tooltip="title: Browser for dynamically discovering and viewing genomic synteny across selected species."><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
-  
-  <li uk-tooltip="title: Interactive visualization of multiple GWAS and QTL data sets, using synteny to identify potentially conserved association regions between species."><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
-  
-  <li uk-tooltip="title: View genetic and comparative maps."><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
-  
-  <li uk-tooltip="title: View GIS location information for legume accessions."><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
-  
-  <li uk-tooltip="title: Conekt is a tool for comparative gene expression analysis."><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
-  
-  <li uk-tooltip="title: Functional keyword search for gene families"><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
-  
-  <li uk-tooltip="title: A multiple chromosome visualisation tool for visualizing resequencing or SNP array data"><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
-  
-</ul>
-
-
-
-  
-  
-  
-
-  <!-- dynamically set the top style property of the left menu when the height of the navbar changes -->
-  <!-- NOTE: the script tag is nested so it doesn't break a CSS selector -->
-  <script type="text/javascript">
-
-    const navbar = document.getElementById("navbar");
-    const left = document.getElementById("left-menu");
-
-    const leftTopObserver = new ResizeObserver(entries => {
-      for (let entry of entries) {
-        // use the newer contentBoxSize property if the browser supports it
-        if (entry.contentBoxSize) {
-          left.style.top = entry.contentBoxSize[0].blockSize + "px";
-        // fallback to the older contentRect property
-        } else {
-          left.style.top = entry.contentRect.height + "px";
-        }
-      }
-    });
-
-    leftTopObserver.observe(navbar);
-
-  </script>
-</div>
-
-
 <!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
 <div class="tm-main uk-section uk-section-default">
   <div class="uk-container uk-flex">
     <div class="uk-width-1-1">
-      <h1>LIS - the Legume Information System</h1>
+      <div class="uk-container uk-container-small">
+  
+<article class="uk-article">
+  <h1 class="uk-article-title">Site updates</h1>
+  <p class="uk-article-meta">Posted on 30 March 2024</p>
+  <p class="uk-text-lead">Assemblies and annotations added in 2023-24.</p>
+  <p>The LIS, SoyBase, and PeanutBase teams have added nine new genome assemblies and annotation sets in Q4 2023 and Q1 2024:</p>
+<ul>
+  <li><a href="https://data.legumeinfo.org/Arachis/stenosperma/"><strong><em>Arachis stenosperma</em></strong></a> (a wild relative of peanut, with resistance to several important peanut diseases)</li>
+  <li><a href="https://data.legumeinfo.org/Cercis/chinensis/"><strong><em>Cercis chinensis</em></strong></a> (ornamental tree, also used as a model for evolutionary studies in the legume family)</li>
+  <li><a href="https://data.legumeinfo.org/Glycine/"><strong><em>Soybean</em></strong></a> (four new reference-quality assemblies and annotation sets)</li>
+  <li><a href="https://data.legumeinfo.org/Medicago/truncatula/"><strong><em>Medicago truncatula</em>, HM078</strong></a>(an accession resistant to fungal agent of spring black stem and leaf spot)</li>
+  <li><a href="https://data.legumeinfo.org/Phaseolus/coccineus/"><strong>Scarlet runner bean</strong></a> (<em>Phaseolus coccineus</em>, one of five domesticated Phaseolus species)</li>
+  <li><a href="https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/OACRex.gnm2.NXJW/"><strong>Common bean, accession OAC Rex</strong></a> (developed in Canada)</li>
+</ul>
 
-<p>
-  LIS integrates genetic and genomic information across many legume species, with tools for research. LIS has been restructured for improved scalability and function. As of April, 2023, the previous incarnation has been decommissioned. Additional functionality will be added through 2023. Please <a href="/about">contact us</a> if you have questions, suggestions, or contributions.
-</p>
-<p>
-  The site is organized as follows. 
-  See <a href="/taxa">TAXA</a> to access resources and tools such as browsers, InterMine instances, organized primarily by genus. 
-  See <a href="/collections">COLLECTIONS</a> to access data sets for download. 
-  See <a href="/tools">TOOLS</a> if you have particular tasks in mind.
-</p>
 
-<dl>
-  <dt><a href="/taxa">Taxa</a></dt>
-  <dd>Resources for legumes at various taxonomic levels (species, genera, and the family as a whole):
-    data sets, genome browsers, pan-gene sets, synteny visualizations, sequence and keyword search, etc.</dd>
-  <dt><a href="/collections">Collections</a></dt>
-  <dd>View synopses of and links to individual LIS Datastore collections.</dd>
-  <dt><a href="/tools">Tools</a></dt>
-  <dd>Pan-legume tools: sequence and keyword search, gene families and phylogenies, synteny visualization, etc. search, etc.</dd>
-  <dt><a href="/blog">Blog</a></dt>
-  <dd>Learn about new data and tools available from LIS.</dd>
-  <dt><a href="/community">Community</a></dt>
-  <dd>Other community resources for legume research.</dd>
-  <dt><a href="/about">Contact</a></dt>
-  <dd>Please contact us with questions or suggestions.</dd>
-</dl>
+</article>
 
-<h2>Funding and Development</h2>
-<p>LIS is funded by the USDA-ARS. LIS is developed and hosted by the National Center for Genome Resources (NCGR) and the USDA-ARS SoyBase and Legume Clade Database group at Ames, IA, with the help of many other researchers.</p>
-<div class="uk-child-width-expand@s uk-flex uk-flex-middle" uk-grid>
-  <a href="https://www.ars.usda.gov/main/main.htm" target="_blank" title="USDA ARS website">
-    <img src="/assets/img/usda.svg" width="150" height="auto" alt="USDA logo"/>
-  </a>
-  <a href="http://www.ncgr.org/" target="_blank" title="NCGR website">
-    <img src="/assets/img/ncgr.png" width="200" height="auto" alt="NCGR logo"/>
-  </a>
+
 </div>
-
 
     </div>
-    
-      <div class="tm-sidebar-right uk-flex-none uk-visible@l">
-
-  
-    
-
-
-
-<div class="uk-card uk-card-small uk-card-default uk-margin-bottom">
-  <div class="uk-card-header">
-    <div class="uk-grid-small uk-flex-middle" uk-grid>
-      <div class="uk-width-expand">
-        <h3 class="uk-card-title uk-margin-remove-bottom">BLOG POSTS</h3>
-      </div>
-    </div>
-  </div>
-  
-  <div class="uk-card-body">
-    
-    <ul class="uk-list uk-list-disc">
-      
-      
-      
-        <li><a href="/blog/2022/02/17/zzbrowse.html"><b>ZZBrowse</b></a></li>
-
-      
-    </ul>
-    
-  </div>
-
-  <div class="uk-card-footer">
-    
-    <a href="/blog" class="uk-button uk-button-text">More Blog Posts</a>
-
-  </div>
-</div>
-
-
-  
-
-  
-    
-
-
-
-<div class="uk-card uk-card-small uk-card-default uk-margin-bottom">
-  <div class="uk-card-header">
-    <div class="uk-grid-small uk-flex-middle" uk-grid>
-      <div class="uk-width-expand">
-        <h3 class="uk-card-title uk-margin-remove-bottom">NEWS</h3>
-      </div>
-    </div>
-  </div>
-  
-  <div class="uk-card-body">
-    
-    <ul class="uk-list uk-list-disc">
-      
-      
-      
-        
-        <li><a href="/news/general/2024/04/18/AprilNews.html"><b>USDA-NPGS Natl. Prog. Leader Job</b></a> 18 April 2024</li>
-
-      
-        
-        <li><a href="/news/general/2024/03/30/site-updates.html"><b>Site updates</b></a> 30 March 2024</li>
-
-      
-        
-        <li><a href="/news/general/2023/08/09/gene-search.html"><b>Gene search</b></a> 09 August 2023</li>
-
-      
-    </ul>
-    
-  </div>
-
-  <div class="uk-card-footer">
-    
-    <a href="/news" class="uk-button uk-button-text">More News</a>
-
-  </div>
-</div>
-
-
-  
-
-  
-    
-
-
-
-<div class="uk-card uk-card-small uk-card-default uk-margin-bottom">
-  <div class="uk-card-header">
-    <div class="uk-grid-small uk-flex-middle" uk-grid>
-      <div class="uk-width-expand">
-        <h3 class="uk-card-title uk-margin-remove-bottom">EVENTS</h3>
-      </div>
-    </div>
-  </div>
-  
-  <div id="events-card" class="uk-card-body"></div>
-
-  <div class="uk-card-footer">
-    
-    <a href="/events" class="uk-button uk-button-text">More Events</a>
-
-  </div>
-</div>
-
-
-
-<script type="module">
-
-  import { upcomingEvents } from "lis-events";
-
-  const eventsLimit = 
-    3
-  ;
-
-  const cardUpcomingEvents = upcomingEvents.slice(0, eventsLimit);
-
-  /* generate HTML for each event */
-
-  /* add the upcoming events to the upcoming events element */
-  const cardEventList = document.getElementById("events-card");
-  let innerHTML = "<p>There are no current or upcoming events.</p>";
-  if (upcomingEvents.length > 0) {
-    const cardListItems = upcomingEvents
-      .map((event) => {
-        let dates = event.date;
-        if (event.endDate) {
-          dates += ` - ${ event.endDate }`;
-        }
-        return `<li><a href="${ event.url }"><b>${ event.title }</b></a> ${ dates }</li>
-`;
-      });
-    innerHTML = `
-      <ul id="card-upcoming-events" class="uk-list uk-list-disc">
-        ${ cardListItems.join("") }
-      </ul>
-    `;
-  }
-  cardEventList.innerHTML = innerHTML;
-</script>
-
-  
-
-  
-
-</div>
-
     
   </div>
 </div>
