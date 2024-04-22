@@ -83,4 +83,8 @@
   description: "Soybean parentage and pedigrees"
   name: "Parentage"
   url: "/tools/parentage"
+- category: "Analysis"
+  description: "GO term enrichment analysis tool"
+  name: "GO Enrichment Analysis"
+  url: "/tools/analysis/go.html"
 

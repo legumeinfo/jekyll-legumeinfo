@@ -1,0 +1,42 @@
+---
+title: GO term enrichment analysis
+sitemap: search
+tools_menu: true
+---
+
+<p>GO term enrichment analysis using Wm82.a4.v1 gene model names.</p>
+<p>The underlying algorithms for this tool come from <a href="https://dx.doi.org/10.1071/FP12296" target="_blank">Morales et al. (2013)</a></p>
+<p>Either enter a list of gene model names into this box, one name per line:</p>
+
+<form method="post">
+  <fieldset style="display: inline-block;">
+    <legend>
+      Insert Gene List:<br />
+      (One per line)
+    </legend>
+    <textarea id="glyma.list" name="glyma.list" rows=20 cols=20>
+Glyma.09G044100
+Glyma.09G048500
+Glyma.09G048600
+Glyma.09G051100
+    </textarea>
+    <br />
+    <button type="submit" formaction="https://soybase-go-api.app.cloud.gov/annotation.txt">GO Annotation</button><br />
+    <button type="submit" formaction="https://soybase-go-api.app.cloud.gov/enrichment.txt">GO Term Enrichment Analysis</button>
+  </fieldset>
+</form>
+
+Or upload a text file containing one gene model name per line:<br /><br />
+
+<form method="post" enctype="multipart/form-data">
+  <fieldset style="display: inline-block;">
+  <legend>Upload a text file</legend>
+  <ol>
+    <li><input type="file" id="glyma.list" name="glyma.list" /></li>
+    <li>Choose analysis type:<br />
+      <button type="submit" formaction="https://soybase-go-api.app.cloud.gov/annotation.txt">GO Annotation</button><br />
+      <button type="submit" formaction="https://soybase-go-api.app.cloud.gov/enrichment.txt">GO Term Enrichment Analysis</button>
+    </li>
+  </ol>
+  </fieldset>
+</form>
