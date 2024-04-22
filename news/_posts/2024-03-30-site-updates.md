@@ -9,8 +9,8 @@ categories: general
 * [**_Arachis stenosperma_**](https://data.legumeinfo.org/Arachis/stenosperma/) (a wild relative of peanut, with resistance to several important peanut diseases)
 * [**_Cercis chinensis_**](https://data.legumeinfo.org/Cercis/chinensis/) (ornamental tree, also used as a model for evolutionary studies in the legume family)
 * [**_Soybean_**](https://data.legumeinfo.org/Glycine/) (four new reference-quality assemblies and annotation sets)
-* [**_Medicago truncatula_**](https://data.legumeinfo.org/Medicago/truncatula/)
-* [**Scarlet runner bean**](https://data.legumeinfo.org/Phaseolus/coccineus/) (_Phaseolus coccineus_, one of four domesticated Phaseolus species)
+* [**_Medicago truncatula_, HM078**](https://data.legumeinfo.org/Medicago/truncatula/)(an accession resistant to fungal agent of spring black stem and leaf spot)  
+* [**Scarlet runner bean**](https://data.legumeinfo.org/Phaseolus/coccineus/) (_Phaseolus coccineus_, one of five domesticated Phaseolus species)
 * [**Common bean, accession OAC Rex**](https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/OACRex.gnm2.NXJW/) (developed in Canada)
 
 
