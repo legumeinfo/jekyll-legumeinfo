@@ -20,8 +20,8 @@
       url: "/community/soygermplasm"
   - name: "Soybean resources provided by the community"
     resources:
-    - description: "American Soybean Associataion"
-      url: "https://www.soygrowers.com/"
+    - description: "American Soybean Association"
+      url: "https://soygrowers.com"
     - description: "United Soybean Board"
       url: "https://www.unitedsoybean.org/"
     - description: "North Central Soybean Research Program"
@@ -52,6 +52,4 @@
       url: "https://www.ars.usda.gov/Main/docs.htm?docid=23815"
     - description: "Northern states uniform soybean tests"
       url: "https://www.ars.usda.gov/midwest-area/west-lafayette-in/crop-production-and-pest-control-research/docs/uniform-soybean-tests-northern-region/"
-    - description: "2016 Soybean Sudden Death Syndrome Variety Trails"
-      url: "https://farmdoc.illinois.edu/field-crop-production/weeds/2016-university-of-illinois-plant-clinic-herbicide-resistance-report.html"
 

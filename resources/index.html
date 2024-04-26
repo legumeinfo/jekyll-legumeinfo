@@ -163,7 +163,7 @@ tools_menu: true
                             {% if readme_genome contains "publication_doi" %}
                               {% assign doi = readme_genome.publication_doi %}
                             {% else %}
-                              {% assign doi = "DOI" %}
+                              {% assign doi = "" %}
                             {% endif %}
                           {% endif %}
                         {% endif %}
