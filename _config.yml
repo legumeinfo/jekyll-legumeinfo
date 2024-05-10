@@ -135,6 +135,7 @@ defaults:
       path: "assets"
     values:
       layout: "none"
+      sitemap: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.

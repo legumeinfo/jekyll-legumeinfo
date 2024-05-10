@@ -119,8 +119,8 @@ jobs:
         with:
           name: github-pages
       - run: tar -xf artifact.tar && rm artifact.tar
-      - run: npm install -g pa11y-ci@3.X http-server
-      - run: http-server . -c-1 -p 4000 &
+      - run: npm install -g pa11y-ci@3.X
+      - run: busybox httpd -p 4000
       # FIXME: patty-ci concurrency > 1 results in errors in this GA workflow
       - run: |
           printf '{"defaults": {"runners": ["axe"]}}\n' > .pa11yci
