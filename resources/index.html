@@ -78,7 +78,7 @@ tools_menu: true
     {% endif %}
   {% endfor %}
 
-  <hr/>
+  <hr>
 
   <h3>
     <i>{{ species_resources.genus }} {{ species_resources.species }}</i>: {{ genus_resources.commonName }}
@@ -133,10 +133,71 @@ tools_menu: true
     {% if datatype == "annotations" %}
       {% assign existing_headers = '' | split: ',' %}
       {% for strain in about.strains %}
+        
         {% unless existing_headers contains strain.accession_group %}
           <h4 class="uk-margin-small-bottom">
-            {{ strain.accession_group }}
+            <b>{{ strain.accession_group }}</b>
           </h4>
+          {% if strain.accession_group contains "et al" %} 
+            {% assign accession_group_type = "citation" %}
+
+            {% comment %} 
+              The following code at this level is just to assign a doi string for a citation-type accession_group_type 
+            {% endcomment %}
+            {% for collection_dir in datatype_dir[1] %}
+              {% assign collection_name = collection_dir[0] | split: 'gnm' %}
+              {% if collection_name[0] == strain.identifier %}
+                {% assign collection = collection_dir[0] %}
+                {% for metadata_file in collection_dir[1] %}
+                  {% if metadata_file[0] contains "README" %}
+                    {% assign readme = metadata_file[1] %}
+                    {% assign assembly = readme.identifier | split: '.' | slice: 0, 2 | join: '.' %}
+                    {% assign annotation = readme.identifier | split: '.' | slice: 0, 3 | join: '.' %}
+                    {% for datatype_dir in site.data.datastore-metadata[genus][species] %}
+                      {% assign datatype = datatype_dir[0] %}
+                      {% if datatype == "genomes" %}
+                        {% for collection_dir in datatype_dir[1] %}
+                          {% assign collection = collection_dir[0] %}
+                          {% for metadata_file in collection_dir[1] %}
+                            {% if metadata_file[0] contains "README" %}
+                              {% assign readme_genome = metadata_file[1] %}
+                              {% assign assembly_genome = readme_genome.identifier | split: '.' | slice: 0, 2 | join: '.' %}
+                              {% if assembly_genome == assembly %}
+                                {% assign chromosome_prefix = readme_genome.chromosome_prefix %}
+                                {% assign synopsis = readme_genome.synopsis %}
+                                {% if readme_genome contains "publication_doi" %}
+                                  {% assign doi = readme_genome.publication_doi %}
+                                {% else %}
+                                  {% assign doi = "DOI" %}
+                                {% endif %}
+                                {% break %}
+                              {% endif %}
+                            {% endif %}
+                          {% endfor %}
+                        {% endfor %}
+                      {% endif %}
+                    {% endfor %}
+                    
+                    <dd>
+                      Citation (DOI) for this accession group: 
+                      {% assign doiCheck = doi | slice: 0, 2 %}
+                      <i>
+                        {% if doiCheck == "10" %}
+                          <a href="https://doi.org/{{ doi }}">doi.org/{{ doi }}</a>
+                        {% else %}
+                          {{ doi }}
+                        {% endif %}
+                      </i>
+                    </dd>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+            {% comment %} End code for assigning a doi string {% endcomment %}
+
+          {% else %}
+            {% assign accession_group_type = "reference" %}
+          {% endif %}
           {% assign existing_headers = existing_headers | push: strain.accession_group %}
         {% endunless %}
         {% for collection_dir in datatype_dir[1] reversed %}
@@ -173,15 +234,24 @@ tools_menu: true
                 {% endfor %}
                 <span>
                   <b>{{ assembly }}</b>
-                  - {{ synopsis }}
-                  {% assign doiCheck = doi | slice: 0, 2 %}
-                  <i>
-                    {% if doiCheck == "10" %}
-                      <a href="https://doi.org/{{ doi }}">doi.org/{{ doi }}</a>
-                    {% else %}
-                      {{ doi }}
-                    {% endif %}
-                  </i>
+
+                {% comment %} 
+                  Print DOI only when accession_group is of type reference, not for type citation (handled previously) 
+                {% endcomment %} 
+                {% if accession_group_type == "reference" %}
+                  <dd>{{ synopsis }}
+                    {% assign doiCheck = doi | slice: 0, 2 %}
+                    <i>
+                      {% if doiCheck == "10" %}
+                        <a href="https://doi.org/{{ doi }}">doi.org/{{ doi }}</a>
+                      {% else %}
+                        {{ doi }}
+                      {% endif %}
+                    </i>
+                  </dd>
+                {% else %}
+                  <dd>{{ synopsis }}</dd>
+                {% endif %}
                 </span>
                 <div class="uk-margin-left">
                   <dd>
