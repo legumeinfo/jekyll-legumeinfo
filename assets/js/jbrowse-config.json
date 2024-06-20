@@ -1,0 +1,235 @@
+{
+  "tracks": [
+    {
+      "type": "MultiQuantitativeTrack",
+      "trackId": "strippedroot",
+      "name": "Stripped Root",
+      "category": ["Methylation","Stripped Root"],
+      "assemblyNames": ["Wm82.gnm2"],
+      "adapter": {
+        "type": "MultiWiggleAdapter",
+        "bigWigs": [
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/strippedroot/B43.CG.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/strippedroot/B43.CHG.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/strippedroot/B43.CHH.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/strippedroot/B44.CG.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/strippedroot/B44.CHG.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/strippedroot/B44.CHH.bw"
+        ]
+      },
+      "description": "These tracks represent genome-wide DNA methylation by whole genome bisulfate sequencing of Williams 82 as described by Kim et al.[1] Methylation states for three tissues are presented. Whole leaf tissue (Leaf), root hairs (roothair), and stripped roots (strippedroot) were examined in two biological replicates (BR43, BR44). Each methylation type (CG, CHG, CHH) for each tissue is presented in individual sub-tracks. Lines above the centerline are on the positive strand and those below the centerline are on the negative strand.<p /> The height of the lines represent the ratio of the number of reads with methylation to the total number of reads for each methylation site. Thus the values range from -1 to 1 with -1 being all reads were methylated on the negative strand and 1 being all reads on the positive strand were methylated. <p>References: <ol> <li> Kim KD, El Baidouri M, Abernathy B, Iwata-Otsubo A, Chavarro C, Gonzales M, Libault M, Grimwood J, Jackson SA.  A Comparative Epigenomic Analysis of Polyploidy-Derived Genes in Soybean and Common Bean.  <i>Plant Physiol</i>. Plant Physiol. 2015 Aug;168(4):1433-47. doi: 10.1104/pp.15.00408. Epub 2015 Jul 6.(<a href='http://www.ncbi.nlm.nih.gov/pubmed/26149573' target='_blank'>PubMed</a>) </li> </ol>"
+    },
+    {
+      "type": "MultiQuantitativeTrack",
+      "trackId": "strippedroot_RD",
+      "name": "Stripped Root Read Depth",
+      "category": ["Methylation","Stripped Root"],
+      "assemblyNames": ["Wm82.gnm2"],
+      "maxHeight": 2000,
+      "adapter": {
+        "type": "MultiWiggleAdapter",
+        "bigWigs": [
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/strippedroot_RD/B43.RD.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/strippedroot_RD/B44.RD.bw"
+        ]
+      },
+      "description": "These tracks represent read depth by whole genome bisulfate sequencing of Williams 82 as described by Kim et al.[1] Read Depth is represented from roots stripped of root hair tissue (Stripped Root) in two biological replication (B43, B44). Read counts were log2 transformed. <p>References: <ol> <li> Kim KD, El Baidouri M, Abernathy B, Iwata-Otsubo A, Chavarro C, Gonzales M, Libault M, Grimwood J, Jackson SA.  A Comparative Epigenomic Analysis of Polyploidy-Derived Genes in Soybean and Common Bean.  <i>Plant Physiol</i>. Plant Physiol. 2015 Aug;168(4):1433-47. doi: 10.1104/pp.15.00408. Epub 2015 Jul 6.(<a href='http://www.ncbi.nlm.nih.gov/pubmed/26149573' target='_blank'>PubMed</a>) </li> </ol>"
+    },
+    {
+      "type": "MultiQuantitativeTrack",
+      "trackId": "leaf",
+      "name": "Leaf",
+      "category": ["Methylation","Leaf"],
+      "assemblyNames": ["Wm82.gnm2"],
+      "adapter": {
+        "type": "MultiWiggleAdapter",
+        "bigWigs": [
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/Leaf/B39.CG.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/Leaf/B39.CHG.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/Leaf/B39.CHH.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/Leaf/B40.CG.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/Leaf/B40.CHG.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/Leaf/B40.CHH.bw"
+        ]
+      },
+      "description": "These tracks represent genome-wide DNA methylation by whole genome bisulfate sequencing of Williams 82 as described by Kim et al.[1] Methylation states for three tissues are presented. Root hairs (roothair), stripped roots (strippedroot) and whole leaf tissue (Leaf) were examined in two biological replicates (BR39, BR40). Each methylation type (CG, CHG, CHH) for each tissue is presented in individual sub-tracks. Lines above the centerline are on the positive strand and those below the centerline are on the negative strand.<p /> The height of the lines represent the ratio of the number of reads with methylation to the total number of reads for each methylation site. Thus the values range from -1 to 1 with -1 being all reads were methylated on the negative strand and 1 being all reads on the positive strand were methylated. <p>References: <ol> <li> Kim KD, El Baidouri M, Abernathy B, Iwata-Otsubo A, Chavarro C, Gonzales M, Libault M, Grimwood J, Jackson SA.  A Comparative Epigenomic Analysis of Polyploidy-Derived Genes in Soybean and Common Bean.  <i>Plant Physiol</i>. Plant Physiol. 2015 Aug;168(4):1433-47. doi: 10.1104/pp.15.00408. Epub 2015 Jul 6.(<a href='http://www.ncbi.nlm.nih.gov/pubmed/26149573' target='_blank'>PubMed</a>) </li> </ol>"
+    },
+    {
+      "type": "MultiQuantitativeTrack",
+      "trackId": "leaf_RD",
+      "name": "Leaf Read Depth",
+      "category": ["Methylation","Leaf"],
+      "assemblyNames": ["Wm82.gnm2"],
+      "maxHeight": 2000,
+      "adapter": {
+        "type": "MultiWiggleAdapter",
+        "bigWigs": [
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/leaf_RD/B39.RD.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/leaf_RD/B40.RD.bw"
+        ]
+      },
+      "description": "These tracks represent read depth by whole genome bisulfate sequencing of Williams 82 as described by Kim et al.[1] Read Depth is represented from leaf tissues in two biological replication (B39, B40). Read counts were log2 transformed. <p>References: <ol> <li> Kim KD, El Baidouri M, Abernathy B, Iwata-Otsubo A, Chavarro C, Gonzales M, Libault M, Grimwood J, Jackson SA.  A Comparative Epigenomic Analysis of Polyploidy-Derived Genes in Soybean and Common Bean.  <i>Plant Physiol</i>. Plant Physiol. 2015 Aug;168(4):1433-47. doi: 10.1104/pp.15.00408. Epub 2015 Jul 6.(<a href='http://www.ncbi.nlm.nih.gov/pubmed/26149573' target='_blank'>PubMed</a>) </li> </ol>"
+    },
+    {
+      "type": "MultiQuantitativeTrack",
+      "trackId": "roothair",
+      "name": "Root Hair",
+      "category": ["Methylation","Root Hair"],
+      "assemblyNames": ["Wm82.gnm2"],
+      "adapter": {
+        "type": "MultiWiggleAdapter",
+        "bigWigs": [
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/roothair/B41.CG.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/roothair/B41.CHG.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/roothair/B41.CHH.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/roothair/B42.CG.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/roothair/B42.CHG.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/roothair/B42.CHH.bw"
+        ]
+      },
+      "description": "These tracks represent genome-wide DNA methylation by whole genome bisulfate sequencing of Williams 82 as described by Kim et al.[1] Methylation states for three tissues are presented. Whole leaf tissue (Leaf), stripped roots (strippedroot) and root hairs (roothair) were examined in two biological replicates (BR41, BR42). Each methylation type (CG, CHG, CHH) for each tissue is presented in individual sub-tracks. Lines above the centerline are on the positive strand and those below the centerline are on the negative strand.<p /> The height of the lines represent the ratio of the number of reads with methylation to the total number of reads for each methylation site. Thus the values range from -1 to 1 with -1 being all reads were methylated on the negative strand and 1 being all reads on the positive strand were methylated. <p>References: <ol> <li> Kim KD, El Baidouri M, Abernathy B, Iwata-Otsubo A, Chavarro C, Gonzales M, Libault M, Grimwood J, Jackson SA.  A Comparative Epigenomic Analysis of Polyploidy-Derived Genes in Soybean and Common Bean.  <i>Plant Physiol</i>. Plant Physiol. 2015 Aug;168(4):1433-47. doi: 10.1104/pp.15.00408. Epub 2015 Jul 6.(<a href='http://www.ncbi.nlm.nih.gov/pubmed/26149573' target='_blank'>PubMed</a>) </li> </ol>"
+    },
+    {
+      "type": "MultiQuantitativeTrack",
+      "trackId": "roothair_RD",
+      "name": "Root Hair Read Depth",
+      "category": ["Methylation","Root Hair"],
+      "assemblyNames": ["Wm82.gnm2"],
+      "maxHeight": 2000,
+      "adapter": {
+        "type": "MultiWiggleAdapter",
+        "bigWigs": [
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/roothair_RD/B41.RD.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/kim_et_al_2015/roothair_RD/B42.RD.bw"
+        ]
+      },
+      "description": "These tracks represent read depth by whole genome bisulfate sequencing of Williams 82 as described by Kim et al.[1] Read Depth is represented from root hair tissues (roothair) in two biological replication (B41, B42). Read counts were log2 transformed. <p>References: <ol> <li> Kim KD, El Baidouri M, Abernathy B, Iwata-Otsubo A, Chavarro C, Gonzales M, Libault M, Grimwood J, Jackson SA.  A Comparative Epigenomic Analysis of Polyploidy-Derived Genes in Soybean and Common Bean.  <i>Plant Physiol</i>. Plant Physiol. 2015 Aug;168(4):1433-47. doi: 10.1104/pp.15.00408. Epub 2015 Jul 6.(<a href='http://www.ncbi.nlm.nih.gov/pubmed/26149573' target='_blank'>PubMed</a>) </li> </ol>"
+    },
+    {
+      "type": "MultiQuantitativeTrack",
+      "trackId": "methylationACRs",
+      "name": "Methylation associated with ACRs",
+      "category": ["Methylation","Leaf"],
+      "assemblyNames": ["Wm82.gnm2"],
+      "adapter": {
+        "type": "MultiWiggleAdapter",
+        "bigWigs": [
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/schmitz_et_al_2019/ATAC-seq/bw/ATAC_Gm_Input.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/schmitz_et_al_2019/ATAC-seq/bw/ATAC_Gm_rep1.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/schmitz_et_al_2019/ATAC-seq/bw/ATAC_Gm_rep2.bw"
+        ]
+      },
+      "description": "Accessible Chromain Regions (ACRs)(1) were identified by ATAC-seq sequenceing (2) replicates of 2nd and 3rd leaf tissue. Filtered reads were aligned to Wm82.a2 genomic sequence using Bowtie v.1.1.1. ATAC-seq bigwig data was generated from Schmitz group. <p>References: <ol> <li> The prevalence, evolution, and chromatin signatures of plant regulatory elements. Lu et al. 2019. <i>Nature Plants</i> 5:1250-1259. (<a href='https://doi.org/10.1038/s41477-019-0548-z' target='_blank'>DOI</a>) </li> <li> Combining ATAC with nuclei sorting for discovery of cis-regulatory regions in plant genomes. Lu et al. 2017. Nucl. Acids Res. 45(6):e41. (<a href='https://doi.org/10.1093/nar/gkw1179' target='_blank'>DOI</a>) </li> </ol>"
+    },
+    {
+      "type": "MultiQuantitativeTrack",
+      "trackId": "soybean_gene_expression_atlas_severin_et_al",
+      "name": "Soybean gene expression atlas - Severin et al. [2010]",
+      "category": ["Gene Expression"],
+      "assemblyNames": ["Wm82.gnm2"],
+      "maxHeight": 3000,
+      "adapter": {
+        "type": "MultiWiggleAdapter",
+        "bigWigs": [
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/10A_nodule.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/1A_flower.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/2A_cm_pod.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/3A_-2_seed.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/4A_-2_shell.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/5A_-1_seed.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/6A_-1_shell.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/7A_0_seed.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/8A_young_leaf.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/9A_root.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/soy_seed_A1.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/soy_seed_A2.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/soy_seed_A3.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/soy_seed_A4.bw"
+        ]
+      },
+      "description": "Transcript density of Glycine max tissues mapped onto the Glyma.Wm82.a2 assembly."
+    },
+    {
+      "type": "MultiQuantitativeTrack",
+      "trackId": "soybean_gene_expression_atlas_libault_et_al",
+      "name": "Soybean gene expression atlas - Libault et al. [2010]",
+      "category": ["Gene Expression"],
+      "assemblyNames": ["Wm82.gnm2"],
+      "maxHeight": 3000,
+      "adapter": {
+        "type": "MultiWiggleAdapter",
+        "bigWigs": [
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_libault_et_al/bw/flower.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_libault_et_al/bw/greenPods.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_libault_et_al/bw/leaves.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_libault_et_al/bw/nodule.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_libault_et_al/bw/root.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_libault_et_al/bw/rootTip.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_libault_et_al/bw/shootApicalMeristem.bw"
+        ]    
+      },
+       "description": "Transcript density of Glycine max tissues mapped onto the Glyma.Wm82.a2 assembly. Mapping was performed with Tophat v2.0.14, with options '--segment-length 16 --max-multihits 2 (up to two alignments allowed)' <p> Reference: <ol> <li> Libault M, Farmer A, Joshi T, Takahashi K, Langley Rj, Franklin LD, He J, Xu D, May G, Stacey G: An integrated transcriptome atlas of the crop model Glycine max , and its use in comparative analyses in plants. Plant J 2010, 63(10):86-99. (<a href='https://www.ncbi.nlm.nih.gov/pubmed/20408999' target='_blank'>PubMed</a>) </ol></li>"     
+    },
+    {
+      "type": "MultiQuantitativeTrack",
+      "trackId": "soybean_gene_expression_atlas_schmutz_et_al",
+      "name": "Soybean gene expression atlas - Schmutz et al. [pers comm]",
+      "category": ["Gene Expression"],
+      "assemblyNames": ["Wm82.gnm2"],
+      "maxHeight": 3000,
+      "adapter": {
+        "type": "MultiWiggleAdapter",
+        "bigWigs": [
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_schmutz_et_al/bw/pod.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_schmutz_et_al/bw/flower.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_schmutz_et_al/bw/leaves.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_schmutz_et_al/bw/nodules.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_schmutz_et_al/bw/root.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_schmutz_et_al/bw/root_hairs.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_schmutz_et_al/bw/seed.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_schmutz_et_al/bw/stem.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_schmutz_et_al/bw/SAM.bw"
+        ]
+      },
+       "description": "Transcript density of Glycine max tissues mapped onto the Glyma.Wm82.a2 assembly. Tissues were ioslated from the lab of Gary Stacey and sequenced at the Hudson-Alpha Institute. Read were provided by Jeremy Schmutz. Expression analyses were done by Wei Huang. Mapping was performed with Tophat v2.013, with options '--no-discordant --no-mixed --max-multihits=2 (up to two alignments allowed)."
+    },
+   {
+      "type": "MultiQuantitativeTrack",
+      "trackId": "histoneModificationACRs",
+      "name": "Histone modification associated with ACRs",
+      "category": ["Histone Modification","Leaf"],
+      "assemblyNames": ["Wm82.gnm2"],
+      "maxHeight": 3000,
+      "adapter": {
+        "type": "MultiWiggleAdapter",
+        "bigWigs": [
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/histone_modification/schmitz_et_al_2019/bw/ChIP_Gm_H2A.Z.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/histone_modification/schmitz_et_al_2019/bw/ChIP_Gm_H3.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/histone_modification/schmitz_et_al_2019/bw/ChIP_Gm_H3K4me1.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/histone_modification/schmitz_et_al_2019/bw/ChIP_Gm_H3K4me3.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/histone_modification/schmitz_et_al_2019/bw/ChIP_Gm_H3K27me3.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/histone_modification/schmitz_et_al_2019/bw/ChIP_Gm_H3K36me3.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/histone_modification/schmitz_et_al_2019/bw/ChIP_Gm_H3K56ac.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/histone_modification/schmitz_et_al_2019/bw/ChIP_Gm_Input.bw"
+        ]
+      },
+       "description": "Histone modifications are associated with accessible chromatin regions (ACRs) in plants(1). Histone modification (H3K4me1, H3K4me3, H3K36me3, H3k56ac, H3K27me3 and H3) were identified by Chip-Seq(2). Nuclei were extracted from flash-frozen leaf tissue. Chip-seq bigwig data was generated by Schmitz group. <p>References: <ol> <li> The prevalence, evolution, and chromatin signatures of plant regulatory elements. Lu et al. 2019. <i>Nature Plants</i> 5:1250-1259. (<a href='https://doi.org/10.1038/s41477-019-0548-z' target='_blank'>DOI</a>) </li> <li> Whole-genome analysis of histone H3 lysine 27 trimethylation in Arabidopsis. Zhang et al. 2007, PLoS Biol., 5:e129 <a href='https://doi.org/10.1371/journal.pbio.0050129' target='_blank'>DOI</a></li></ol>"
+    },
+   {
+      "type": "MultiQuantitativeTrack",
+      "trackId": "geneexpressionACRs",
+      "name": "Gene expression Associated with ACRs",
+      "category": ["Gene Expression RNASeq","Gene expression Associated with ACRs"],
+      "assemblyNames": ["Wm82.gnm2"],
+      "maxHeight": 2000,
+      "adapter": {
+        "type": "MultiWiggleAdapter",
+        "bigWigs": [
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/schmitz_et_al_2019/mRNA-seq/bw/RNA_Gm_rep1.bw",
+          "https://data.legumeinfo.org/annex/Glycine/GENUS/gbrowse_data/gmax2.0/methylation/schmitz_et_al_2019/mRNA-seq/bw/RNA_Gm_rep2.bw"
+        ]
+      },
+      "description": "RNA-seq was used to study the association of accessible chromatin regions (ACRs) and gene expression. Reads were aligned to Wm82.a2 genomic sequence using Bowtie v.1.1.1. RNA-seq bigwig data was generated by Schmitz group and FPKM read counts counts were normalized by natural log transformation for display. <p>References: <ol> <li> The prevalence, evolution and chromatin signatures of plant regulatory elements. Lu et al. 2019, Nature Plants 5:1250-1259 (<a href='https://doi.org/10.1038/s41477-019-0548-z' target='_blank'>DOI</a>) </li> <li> Combining ATAC with nuclei sorting for discovery of cis-regulatory regions in plant genomes. Lu et al. 2017. Nucl. Acids Res. 45(6):e41. (<a href='https://doi.org/10.1093/nar/gkw1179' target='_blank'>DOI</a>) </li> </ol>"
+    }
+  ]
+}   

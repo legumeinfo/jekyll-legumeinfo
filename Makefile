@@ -17,7 +17,7 @@ else # assume dev container
   PYTHON_VENV_ACTIVATE = true # no-op
 endif
 
-JBROWSE_VERSION = 2.11.0
+JBROWSE_VERSION = 2.11.1
 PA11YCI_VERSION = 3.1.X
 
 serve: mostlyclean setup
@@ -44,7 +44,7 @@ pa11y: setup
 jbrowse: setup
 	if ! { command -v jbrowse || npm ls @jbrowse/cli ; } >/dev/null 2>&1; then npm install $(NPM_INSTALL_OPTIONS) @jbrowse/cli@${JBROWSE_VERSION}; fi
 	if ! [ -d ./assets/js/jbrowse ]; then npx jbrowse create assets/js/jbrowse --tag=v${JBROWSE_VERSION}; fi
-	rm -f assets/js/jbrowse/config.json
+	cp assets/js/jbrowse-config.json assets/js/jbrowse/config.json
 	npm exec -c '_scripts/jbrowse-tracks.sh'
 
 setup:

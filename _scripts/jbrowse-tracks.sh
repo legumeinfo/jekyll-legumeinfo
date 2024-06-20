@@ -94,40 +94,31 @@ do
   done < ${synteny_md5}
 done
 
-# Specify JSON until @jbrowse/cli has native support for MultiQuantitativeTrack
-# https://github.com/GMOD/jbrowse-components/issues/3430
-jbrowse add-track-json \
-  --out=assets/js/jbrowse \
-  /dev/stdin <<'END'
-{
-  "type": "MultiQuantitativeTrack",
-  "trackId": "soybean_gene_expression_atlas_severin_et_al",
-  "name": "MultiWig",
-  "category": ["Gene Expression"],
-  "assemblyNames": ["Wm82.gnm2"],
-  "maxHeight": 3000,
-  "adapter": {
-    "type": "MultiWiggleAdapter",
-    "bigWigs": [
-      "https://www.soybase.org/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/10A_nodule.bw",
-      "https://www.soybase.org/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/1A_flower.bw",
-      "https://www.soybase.org/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/2A_cm_pod.bw",
-      "https://www.soybase.org/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/3A_-2_seed.bw",
-      "https://www.soybase.org/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/4A_-2_shell.bw",
-      "https://www.soybase.org/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/5A_-1_seed.bw",
-      "https://www.soybase.org/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/6A_-1_shell.bw",
-      "https://www.soybase.org/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/7A_0_seed.bw",
-      "https://www.soybase.org/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/8A_young_leaf.bw",
-      "https://www.soybase.org/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/9A_root.bw",
-      "https://www.soybase.org/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/soy_seed_A1.bw",
-      "https://www.soybase.org/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/soy_seed_A2.bw",
-      "https://www.soybase.org/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/soy_seed_A3.bw",
-      "https://www.soybase.org/gbrowse_data/gmax2.0/gene_expression/soybean_gene_expression_atlas_severin_et_al/bw/soy_seed_A4.bw"
-    ]
-  },
-  "description": "Transcript density of Glycine max tissues mapped onto the Glyma.Wm82.a2 assembly."
-}
-END
+for diversity_md5 in _data/datastore-metadata/Glycine/*/diversity/*/CHECKSUM.*.md5
+do
+  case ${diversity_md5##*/} in CHECKSUM.glyma.*) continue;; esac # skip collections with extra CHECKSUM files
+  readme=${diversity_md5%/*}/README.$(basename ${diversity_md5##*/CHECKSUM.} .md5).yml
+  description=$(sed -n -e 's/"//' -e 's/^description: *//p' ${readme})
+  assembly_name=${diversity_md5##*/CHECKSUM.}
+  assembly_name=${assembly_name%.div.*}
+
+  while read -r checksum file
+  do
+    case ${file} in
+    *.vcf.gz)
+      trackId=$(basename ${file} .vcf.gz)
+      name=${trackId##*.div.}
+      jbrowse add-track \
+        ${DATASTORE_URL}/$(dirname ${diversity_md5#_data/datastore-metadata/})/${file#*/} \
+        --assemblyNames=${assembly_name} \
+        --category='Diversity' \
+        --name=${name} \
+        --trackId=${trackId} \
+        --description="${description}" \
+        --out=assets/js/jbrowse/ ;;
+    esac
+  done < ${diversity_md5}
+done
 
 # FIXME: too big & slow to generate for testing
 # https://github.com/GMOD/jbrowse-components/issues/3019
