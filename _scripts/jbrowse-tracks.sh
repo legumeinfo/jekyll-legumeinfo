@@ -94,30 +94,30 @@ do
   done < ${synteny_md5}
 done
 
-for diversity_md5 in _data/datastore-metadata/Glycine/*/diversity/*/CHECKSUM.*.md5
+for diversity_manifest in _data/datastore-metadata/Glycine/*/diversity/*/MANIFEST.*.yml
 do
-  case ${diversity_md5##*/} in CHECKSUM.glyma.*) continue;; esac # skip collections with extra CHECKSUM files
-  readme=${diversity_md5%/*}/README.$(basename ${diversity_md5##*/CHECKSUM.} .md5).yml
-  description=$(sed -n -e 's/"//' -e 's/^description: *//p' ${readme})
-  assembly_name=${diversity_md5##*/CHECKSUM.}
+  assembly_name=${diversity_manifest##*/MANIFEST.}
   assembly_name=${assembly_name%.div.*}
 
-  while read -r checksum file
-  do
-    case ${file} in
-    *.vcf.gz)
+  awk -v OFS='\t' '
+  /^- / && jbrowse { print name, description; name=description=jbrowse="" }
+  /^ *- *jbrowse/ { jbrowse=1 }
+  sub(/^[^:]* name: */, "") { name=$0 }
+  sub(/^[^:]* description: */, "") { description=$0 }
+  END { if (jbrowse) print name, description }' "${diversity_manifest}" |
+    while read -r file description
+    do
       trackId=$(basename ${file} .vcf.gz)
       name=${trackId##*.div.}
       jbrowse add-track \
-        ${DATASTORE_URL}/$(dirname ${diversity_md5#_data/datastore-metadata/})/${file#*/} \
+        ${DATASTORE_URL}/$(dirname ${diversity_manifest#_data/datastore-metadata/})/${file#*/} \
         --assemblyNames=${assembly_name} \
         --category='Diversity' \
         --name=${name} \
         --trackId=${trackId} \
         --description="${description}" \
-        --out=assets/js/jbrowse/ ;;
-    esac
-  done < ${diversity_md5}
+        --out=assets/js/jbrowse/
+    done
 done
 
 # FIXME: too big & slow to generate for testing

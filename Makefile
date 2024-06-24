@@ -17,7 +17,7 @@ else # assume dev container
   PYTHON_VENV_ACTIVATE = true # no-op
 endif
 
-JBROWSE_VERSION = 2.11.1
+JBROWSE_VERSION = 2.12.2
 PA11YCI_VERSION = 3.1.X
 
 serve: mostlyclean setup

@@ -31,6 +31,8 @@ group :test do
     # install nokogiri from source for macos system/Xcode ruby (2.6.10p210) on arm64,
     # as otherwise nokogiri-1.13.10-x86_64-darwin.gem is installed
     gem "nokogiri", :git => "https://github.com/sparklemotion/nokogiri.git", :tag => "v1.13.10"
+    gem "mini_portile2", "= 2.8.6"
+    gem "ffi", "= 1.16.3"
     # pin jekyll dependency jekyll-sass-converter, as 3.0.0 won't work on macos
     # aarch64 ultimately due to dependency on google-protobuf, which isn't available
     # for aarch64 due to this issue:
