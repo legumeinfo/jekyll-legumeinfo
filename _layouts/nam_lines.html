@@ -17,7 +17,7 @@ layout: default
   {% endif %}
 {% endfor %}
 
-{% assign image_url_base = "https://soybase.org/data/annex/Glycine/max/images/SoyNAM/" %}
+{% assign image_url_base = "https://data.soybase.org/annex/Glycine/max/images/SoyNAM/" %}
 {% capture image_base %}{{ display_name }}_{{ nam_details.Population }}{% endcapture %}
 {% capture alt_mid %}Mid-season field image of NAM line {{ nam_details.Parent }}.{% endcapture %}
 {% capture alt_late %}Late-season field image of NAM line {{ nam_details.Parent }}.{% endcapture %}
@@ -38,7 +38,7 @@ layout: default
 </table>
 
 
-{% assign data_url_base = "https://soybase.org/data/annex/Glycine/max/projects/SoyNAM/" %}
+{% assign data_url_base = "https://data.soybase.org/annex/Glycine/max/projects/SoyNAM/" %}
 {% capture phenotype_data %}{{ display_name }}_{{ nam_details.Population }}_phenotype_data.tsv.gz{% endcapture %}
 {% capture genotype_Wm82a1 %}{{ display_name }}_{{ nam_details.Population }}_4312_SNP_genotype_Wm82.a1.tsv.gz{% endcapture %}
 {% capture gt_Wm82a2 %}{{ display_name }}_{{ nam_details.Population }}_4312_SNP_genotype_Wm82.a2.tsv.gz{% endcapture %}

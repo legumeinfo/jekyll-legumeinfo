@@ -15,6 +15,6 @@
         - name: data
           instances:
             - description: "Variant counts of Accessions"
-              url: "https://soybase.org/data/v2/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.div.96SR.gene_variant_counts.txt.gz"
+              url: "https://data.soybase.org/Glycine/max/pangenomes/Lee.gnm1.pan.96SR/glyma.Lee.gnm1.div.96SR.gene_variant_counts.txt.gz"
             - description: "A collection of the .csv files of phenotype and genotype data and the corresponding .txt files with R/qtl program code for each of the 48 individual populations or the three composite populations (Cmm04, Cm005, C0008)."
               url: "https://data.legumeinfo.org/annex/Glycine/max/projects/Phansak_Soonsuwon_2016/"

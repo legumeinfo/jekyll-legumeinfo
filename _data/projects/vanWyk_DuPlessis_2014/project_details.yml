@@ -15,7 +15,7 @@
         - name: browser
           instances:
             - description: SoyBase genome viewer
-              url: "https://soybase.org/gb2/gbrowse/gmax1.01/?q=Gm01;%20reset=1;l=soy_atlas_transcript_density%1Eprima_2000%1EGlyma1%1EGlyma1.1%1Ecentromere%3Aoverview%1Epericentromere%3Aoverview;"
+              url: "https://legacy.soybase.org/gb2/gbrowse/gmax1.01/?q=Gm01;%20reset=1;l=soy_atlas_transcript_density%1Eprima_2000%1EGlyma1%1EGlyma1.1%1Ecentromere%3Aoverview%1Epericentromere%3Aoverview;"
     - category:
         - name: data
           instances:

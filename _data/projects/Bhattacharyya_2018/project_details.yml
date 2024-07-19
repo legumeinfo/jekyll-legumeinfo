@@ -15,7 +15,7 @@
         - name: data
           instances:
             - description: "Excel file of soybean accessions resequenced or identified for resequencing, and information about resistance status to selected diseases."
-              url: "https://soybase.org/data/annex/Glycine/max/projects/Bhattacharyya_2018/mixed.prj.Bhattacharyya_2018.536_genotypes.xlsx"
+              url: "https://data.soybase.org/annex/Glycine/max/projects/Bhattacharyya_2018/mixed.prj.Bhattacharyya_2018.536_genotypes.xlsx"
             - description: "Soybean Science Institute (SSI) lesson plan, created by the Lincoln Public Schools (Nebraska) science curriculum team to prepare middle school science teachers."
-              url: "https://soybase.org/data/annex/Glycine/max/projects/Bhattacharyya_2018/mixed.prj.Bhattacharyya_2018.SSI_Lesson_Plan.docx"
+              url: "https://data.soybase.org/annex/Glycine/max/projects/Bhattacharyya_2018/mixed.prj.Bhattacharyya_2018.SSI_Lesson_Plan.docx"
 

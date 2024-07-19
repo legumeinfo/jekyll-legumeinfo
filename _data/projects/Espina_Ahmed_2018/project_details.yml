@@ -15,7 +15,7 @@
         - name: visualization
           instances:
             - description: "EMS Induced Mutant Phenotype Data Explorer - choose mutant by phenotype"
-              url: "https://soybase.org/mutantdata/"
+              url: "https://legacy.soybase.org/mutantdata/"
             - description: "EMS Induced Mutant Phenotype Data Summary - summary of all phenotypes for a mutant"
               url: "https://taheri.weebly.com/protein.html"
     - category:

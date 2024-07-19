@@ -13,11 +13,11 @@
       doi: 10.1186/1471-2164-11-113
   data_links:
     - category:
-        - name: <a href="https://soybase.org/data/v2/Glycine/max/repeats/Wm82.rpt.C1JW/">Data collection</a>. The main files:</a>
+        - name: <a href="https://data.soybase.org/Glycine/max/repeats/Wm82.rpt.C1JW/">Data collection</a>. The main files:</a>
           instances:
             - description: "Repetitive elements described in Du, Grant et al. (2010); definition lines with seven space-separated fields"
-              url: https://soybase.org/data/v2/Glycine/max/repeats/Wm82.rpt.C1JW/glyma.Wm82.rpt.C1JW.SOY_TEdb.fna.gz
+              url: https://data.soybase.org/Glycine/max/repeats/Wm82.rpt.C1JW/glyma.Wm82.rpt.C1JW.SOY_TEdb.fna.gz
             - description: "Repetitive elements described in Du, Grant et al. (2010); definition lines formated for RepeatMasker"
-              url: https://soybase.org/data/v2/Glycine/max/repeats/Wm82.rpt.C1JW/glyma.Wm82.rpt.C1JW.SOY_TE_LIB.fna.gz
+              url: https://data.soybase.org/Glycine/max/repeats/Wm82.rpt.C1JW/glyma.Wm82.rpt.C1JW.SOY_TE_LIB.fna.gz
             - description: "Repetitive elements from SOY_TE_LIB.fna, represented by centroids at 60% identity clustering"
-              url: https://soybase.org/data/v2/Glycine/max/repeats/Wm82.rpt.C1JW/glyma.Wm82.rpt.C1JW.SOY_TE_LIB_id60.fna.gz
+              url: https://data.soybase.org/Glycine/max/repeats/Wm82.rpt.C1JW/glyma.Wm82.rpt.C1JW.SOY_TE_LIB_id60.fna.gz

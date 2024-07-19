@@ -18,7 +18,7 @@
         - name: data
           instances:
             - description: "Genotype information for 367 soybean accessions (Data Store)"
-              url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm1.div.Wang_Jiao_2016/"
+              url: "https://data.soybase.org/Glycine/max/diversity/Wm82.gnm1.div.Wang_Jiao_2016/"
             - description: "Genotype information for 96 soybean accessions (Data Store)"
-              url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm1.div.Hu_Zhang_2020/"
+              url: "https://data.soybase.org/Glycine/max/diversity/Wm82.gnm1.div.Hu_Zhang_2020/"
 

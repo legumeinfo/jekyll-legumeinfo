@@ -27,7 +27,7 @@
             - description: "FigShare repository"
               url: "https://figshare.com/projects/Soybean_Haplotype_Map_GmHapMap_A_Universal_Resource_for_Soybean_Translational_and_Functional_Genomics/56921"
             - description: "Data Store repository"
-              url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/"
+              url: "https://data.soybase.org/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/"
             - description: "Download List of Accessions"
               url: "https://www.soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.Torkamaneh_Laroche_2019.AccessionTable.txt.gz"
             - description: "Download GmHapMap data in VCF format (1.9 GB compressed)"

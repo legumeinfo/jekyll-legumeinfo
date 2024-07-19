@@ -15,5 +15,5 @@
         - name: data
           instances:
             - description: Genotype information for 1,502 diverse soybean accessions (Data Store)
-              url: "https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Zhang_Jiang_2020/"
+              url: "https://data.soybase.org/Glycine/max/diversity/Wm82.gnm2.div.Zhang_Jiang_2020/"
 

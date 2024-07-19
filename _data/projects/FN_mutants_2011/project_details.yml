@@ -32,37 +32,37 @@
         - name: Also see examples of the <a href="/projects/FN_mutant_details">contents of each file here</a>.
           instances:
             - description: Fasta file of FN deletions from the Wm82.a1.v1 / Wm82.gnm1.ann1 assembly
-              url: https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/fn_indels.nt.20140304.fasta.gz
+              url: https://data.soybase.org/annex/Glycine/max/projects/FN_mutants/fn_indels.nt.20140304.fasta.gz
             - description: insertion_event.tsv -- Insertion IDs, names, vectors
-              url: https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/insertion_event.tsv.gz
+              url: https://data.soybase.org/annex/Glycine/max/projects/FN_mutants/insertion_event.tsv.gz
             - description: insertion_mutant.tsv -- Insertion line and responsible lab
-              url: https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/insertion_mutant.tsv.gz
+              url: https://data.soybase.org/annex/Glycine/max/projects/FN_mutants/insertion_mutant.tsv.gz
             - description: insertion_mutant_props.tsv -- Phenotypic effects in mutant lines
-              url: https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/insertion_mutant_props.tsv.gz
+              url: https://data.soybase.org/annex/Glycine/max/projects/FN_mutants/insertion_mutant_props.tsv.gz
             - description: insertion_mutant_synonym.tsv -- Mutant line name synonyms
-              url: https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/insertion_mutant_synonym.tsv.gz
+              url: https://data.soybase.org/annex/Glycine/max/projects/FN_mutants/insertion_mutant_synonym.tsv.gz
             - description: insertion_position.tsv -- Insertion positions, Wm82.a2.v1
-              url: https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/insertion_position.tsv.gz
+              url: https://data.soybase.org/annex/Glycine/max/projects/FN_mutants/insertion_position.tsv.gz
             - description: mutant_cgh_experiment_genes_table.tsv -- Genes affected by mutations (Wm82.a1.v1)
-              url: https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/mutant_cgh_experiment_genes_table.tsv.gz
+              url: https://data.soybase.org/annex/Glycine/max/projects/FN_mutants/mutant_cgh_experiment_genes_table.tsv.gz
             - description: mutant_cgh_experiment_indel_table.tsv -- Mutant indel locations (Wm82.a1)
-              url: https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/mutant_cgh_experiment_indel_table.tsv.gz
+              url: https://data.soybase.org/annex/Glycine/max/projects/FN_mutants/mutant_cgh_experiment_indel_table.tsv.gz
             - description: mutant_cgh_experiment_indel_table_v2.tsv -- Mutant indel locations; new identifiers
-              url: https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/mutant_cgh_experiment_indel_table_v2.tsv.gz
+              url: https://data.soybase.org/annex/Glycine/max/projects/FN_mutants/mutant_cgh_experiment_indel_table_v2.tsv.gz
             - description: mutant_cgh_experiment_locus_table.tsv -- SSR markers in indel regions
-              url: https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/mutant_cgh_experiment_locus_table.tsv.gz
+              url: https://data.soybase.org/annex/Glycine/max/projects/FN_mutants/mutant_cgh_experiment_locus_table.tsv.gz
             - description: mutant_descriptor_xref_table.tsv -- SoyBase trait names and IDs
-              url: https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/mutant_descriptor_xref_table.tsv.gz
+              url: https://data.soybase.org/annex/Glycine/max/projects/FN_mutants/mutant_descriptor_xref_table.tsv.gz
             - description: mutant_descriptors_table.tsv -- Mutant phenotype descriptions
-              url: https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/mutant_descriptors_table.tsv.gz
+              url: https://data.soybase.org/annex/Glycine/max/projects/FN_mutants/mutant_descriptors_table.tsv.gz
             - description: mutant_experiment_table.tsv -- Mutation experiments
-              url: https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/mutant_experiment_table.tsv.gz
+              url: https://data.soybase.org/annex/Glycine/max/projects/FN_mutants/mutant_experiment_table.tsv.gz
             - description: mutant_files_table.tsv -- Mutants and image names
-              url: https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/mutant_files_table.tsv.gz
+              url: https://data.soybase.org/annex/Glycine/max/projects/FN_mutants/mutant_files_table.tsv.gz
             - description: mutant_name_translation_table.tsv -- Mutant name correspondences (Soybase ID, sample ID, truncated sample ID)
-              url: https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/mutant_name_translation_table.tsv.gz
+              url: https://data.soybase.org/annex/Glycine/max/projects/FN_mutants/mutant_name_translation_table.tsv.gz
             - description: mutant_samples_table.tsv -- Experiment sample IDs, seed availability, cultivar names
-              url: https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/mutant_samples_table.tsv.gz
+              url: https://data.soybase.org/annex/Glycine/max/projects/FN_mutants/mutant_samples_table.tsv.gz
             - description: mutant_trait_values_table.tsv -- Mutation IDs and traits
-              url: https://soybase.org/data/annex/Glycine/max/projects/FN_mutants/mutant_trait_values_table.tsv.gz
+              url: https://data.soybase.org/annex/Glycine/max/projects/FN_mutants/mutant_trait_values_table.tsv.gz
 

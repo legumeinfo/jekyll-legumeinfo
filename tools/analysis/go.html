@@ -4,6 +4,20 @@ sitemap: search
 tools_menu: true
 ---
 
+<p>GO enrichment analysis uses statistical tests to determine if a set of provided genes are statistically 
+different than a comparison set (typically, the set of all genes in the organism), for to each of the 
+three main gene ontology "aspects": Molecular Function, Cellular Component, and Biological Process.</p>
+
+SoyBase offers two methods for calculating GO enrichment: the service at this page; and 
+the gene-list report at <a href="https://mines.legumeinfo.org/glycinemine/begin.do">GlycineMine</a>.
+
+<p>See <a href="{% post_url /blog/2024-07-01-go-enrichment %}"><b>this blog post</b></a> for details about doing 
+  GO enrichment analysis at <a href="https://mines.legumeinfo.org/glycinemine/begin.do">GlycineMine</a>.
+  One advantage of using the GlycineMine tool is that enrichment can be calculated for genes from ANY
+  <i>Glycine</i> accession and annotation in the system, rather than for Wm82.a4.v1 that is offered on the service on this page.
+  GlycineMine also reports several other analyses, including enrichments for gene families, pathways, and chromosomal location.
+</p>
+
 <p>GO term enrichment analysis using Wm82.a4.v1 gene model names.</p>
 <p>The underlying algorithms for this tool come from <a href="https://dx.doi.org/10.1071/FP12296" target="_blank">Morales et al. (2013)</a></p>
 <p>Either enter a list of gene model names into this box, one name per line:</p>

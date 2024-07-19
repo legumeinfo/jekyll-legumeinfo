@@ -47,7 +47,7 @@
           instances:
             - description: Genetic variant matrix (vcf format) and associated data for 481
                 accessions (Data Store)
-              url: https://soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Valliyodan_Brown_2021/
+              url: https://data.soybase.org/Glycine/max/diversity/Wm82.gnm2.div.Valliyodan_Brown_2021/
             - description: Genetic variant matrix (vcf format) and associated data for 481
                 accessions (National Ag Library)
               url: https://data.nal.usda.gov/dataset/data-genetic-variation-among-481-diverse-soybean-accessions

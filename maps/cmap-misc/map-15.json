@@ -199,17 +199,17 @@
       "linkouts" : [
         {
             "featuretypePattern" : "QTL",
-            "url" : "https://soybase.org/sbt/search/search_results.php?category=QTLName&search_term=${item.id}",
+            "url" : "https://legacy.soybase.org/sbt/search/search_results.php?category=QTLName&search_term=${item.id}",
             "text" : "View QTL info at SoyBase"
         },
         {
             "featuretype" : "SNP",
-            "url" : "https://soybase.org/sbt/search/search_results.php?category=SNP&search_term=${item.id}",
+            "url" : "https://legacy.soybase.org/sbt/search/search_results.php?category=SNP&search_term=${item.id}",
             "text" : "View SNP info at SoyBase"
         },
         {
             "featuretypePattern" : "^(SSR|[AR]FLP|Gene|PCR)$",
-            "url" : "https://soybase.org/sbt/search/search_results.php?category=LocusName&search_term=${item.id}",
+            "url" : "https://legacy.soybase.org/sbt/search/search_results.php?category=LocusName&search_term=${item.id}",
             "text" : "View Marker info at SoyBase"
         }
       ]

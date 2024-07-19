@@ -15,6 +15,6 @@
         - name: data
           instances:
             - description: "Reads from treatments aligned to Wm82.a1 (leaflets, root hairs, stripped roots and replicates) (Data Store repository)"
-              url: "https://soybase.org/data/v2/Glycine/max/methylation/Wm82.gnm1.met.Kim_Baidouri_2015/"
+              url: "https://data.soybase.org/Glycine/max/methylation/Wm82.gnm1.met.Kim_Baidouri_2015/"
             - description: "Reads from treatments aligned to Wm82.a2 (leaflets, root hairs, stripped roots and replicates) (Data Store repository)"
-              url: "https://soybase.org/data/v2/Glycine/max/methylation/Wm82.gnm2.met.Kim_Baidouri_2015/"
+              url: "https://data.soybase.org/Glycine/max/methylation/Wm82.gnm2.met.Kim_Baidouri_2015/"
