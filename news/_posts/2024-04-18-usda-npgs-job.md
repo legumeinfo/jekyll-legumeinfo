@@ -1,8 +1,9 @@
 ---
-title:	USDA-NPGS Natl. Prog. Leader Job   
-author:	Sudhansu Dash  
-date:	2024-04-18  
-summary:	"National Program Leader for USDA-ARS National Plant Germplasm System."    
+title:  USDA-NPGS National Program Leader Job   
+author:  Sudhansu Dash  
+date:  2024-04-18  
+end_date: 2024-05-01
+summary:  "National Program Leader for USDA-ARS National Plant Germplasm System."    
 categories: general    
 ---
 
