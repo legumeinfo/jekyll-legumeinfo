@@ -21,6 +21,121 @@ Brisbane Convention &amp;amp; Exhibition Centre&lt;/p&gt;
       </item>
     
       <item>
+        <title>USDA National Program Leader, Crop Protection</title>
+        <description>&lt;p&gt;&lt;strong&gt;29, July 2024. Job Announcement&lt;/strong&gt;: 
+The USDA-ARS Office of National Programs (ONP) is searching for a National Program Leader (NPL) in Plant Health to provide national and international leadership in coordinating agricultural research programs relating to diseases of agronomic and horticultural crops. This position is within the Crop Production and Protection (CPP) division at ONP at the George Washington Carver Center in Beltsville, MD. The CPP team includes 9 of the 22 ARS NPLs and has the largest research portfolio in ARS in terms of research funding ($618M/year) and projects (287 of the 690 research projects in ARS).
+Apply by August 9, 2024: &lt;a href=&quot;https://www.usajobs.gov/job/800897600&quot; target=&quot;_blank&quot;&gt;https://www.usajobs.gov/job/800897600&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
+        <link>/news/general/2024/07/29/usda-npl-job.html</link>
+        <guid isPermaLink="true">/news/general/2024/07/29/usda-npl-job.html</guid>
+      </item>
+    
+      <item>
+        <title>GO Enrichment</title>
+        <description>&lt;p&gt;&lt;strong&gt;GO enrichment analysis&lt;/strong&gt; uses statistical tests to determine if a set of provided genes are statistically different than a comparison set (typically, the set of all genes in the organism), for each of the three main gene ontology aspects.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://geneontology.org/docs/ontology-documentation/&quot;&gt;Gene Ontology (GO)&lt;/a&gt; is a classification system that describes three &lt;strong&gt;aspects&lt;/strong&gt; of gene function:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Molecular Function&lt;/strong&gt;, describing activities such as &lt;a href=&quot;https://amigo.geneontology.org/amigo/term/GO:0003824&quot;&gt;catalytic activity&lt;/a&gt; or finer-scale activities such as &lt;a href=&quot;https://amigo.geneontology.org/amigo/term/GO:0004465&quot;&gt;lipoprotein lipase activity&lt;/a&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cellular Component&lt;/strong&gt;, describing cellular components such as the &lt;a href=&quot;https://amigo.geneontology.org/amigo/term/GO:0005856&quot;&gt;cytoskeleton&lt;/a&gt;, or finer-scale locations such as &lt;a href=&quot;https://amigo.geneontology.org/amigo/term/GO:0005813&quot;&gt;centrosome&lt;/a&gt;;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Biological Process&lt;/strong&gt;, describing biological programs such as &lt;a href=&quot;https://amigo.geneontology.org/amigo/term/GO:0007165&quot;&gt;signal transduction&lt;/a&gt;, or finer-scale processes such as &lt;a href=&quot;https://amigo.geneontology.org/amigo/term/GO:0004674&quot;&gt;protein serine/threonine kinase activity&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To calculate GO enrichment at LIS, use the gene-list report function in any InterMine instance. 
+For example, at &lt;a href=&quot;https://mines.legumeinfo.org/glycinemine/begin.do&quot;&gt;GlycineMine&lt;/a&gt;, enrichment can be calculated for genes from ANY &lt;i&gt;Glycine&lt;/i&gt; accession and annotation in GlycineMine.&lt;/p&gt;
+
+&lt;p&gt;Here are the steps.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-enter-a-gene-list-under-analyze-a-list&quot;&gt;1. Enter a gene list under Analyze a List.&lt;/h3&gt;
+
+&lt;p&gt;Taking soybean (&lt;em&gt;Glycine&lt;/em&gt; spp.) as our example, open &lt;a href=&quot;https://mines.legumeinfo.org/glycinemine/begin.do&quot; target=&quot;_blank&quot;&gt;GlycineMine&lt;/a&gt;, and paste a list of genes in the central box (“Analyze a List”). The list can consist of un-prefixed gene IDs such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Glyma.01G022700&lt;/code&gt;, but if that gene exists in multiple assemblies or annotation sets, you will see an intermediate page in which you will be asked to select which genes you want to analyze. Therefore, it is generally best to prefix your identifiers with the following four, dot-separated fields: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Genusspecies.Accession.Assemblyversion.Annotationversion.GeneID&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;glyma.Wm82.gnm4.ann1.Glyma.01G022700&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Also note that the identifiers should be &lt;strong&gt;gene IDs&lt;/strong&gt; rather than &lt;strong&gt;mRNAs&lt;/strong&gt;; these are typically distinguished by a numeric suffix. That is: use gene &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Glyma.01G022700&lt;/code&gt; rather than mRNA &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Glyma.01G022700.1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Try one of the gene lists below:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#list1&quot;&gt;List 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#list2&quot;&gt;List 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#list3&quot;&gt;List 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-name-and-save-the-list&quot;&gt;2. Name and save the list.&lt;/h3&gt;
+&lt;p&gt;You can use the provided name if you wish (based on date and time), or you can give it a more meaningful name. Then click the green “&lt;b&gt;Save a list of 10 Genes&lt;/b&gt;” button. (Note that if you register with GlycineMine you will be able to save your gene list so that you can use the same list over and over again on the same tool or use that list on various GlycineMine tools.)&lt;/p&gt;
+
+&lt;h3 id=&quot;3-examine-the-gene-ontology-enrichment-results&quot;&gt;3. Examine the Gene Ontology Enrichment results.&lt;/h3&gt;
+&lt;p&gt;The report page will give descriptive information about each gene; and near the bottom of the page are four reports: “Gene Ontology Enrichment”, “Gene Family Enrichment”, “Pathway Enrichment”, and “Chromosome Distribution”.&lt;/p&gt;
+
+&lt;p&gt;In the “Gene Ontology Enrichment” box, be sure to check each ontology aspect that you wich to evaluate:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;biological_process&lt;/li&gt;
+  &lt;li&gt;cellular_component&lt;/li&gt;
+  &lt;li&gt;molecular_function&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It is common for a set of genes to show enrichment for one aspect and not others.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;b&gt;List 1:&lt;/b&gt;&lt;a name=&quot;list1&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+glyma.Wm82.gnm4.ann1.Glyma.01G022700, glyma.Wm82.gnm4.ann1.Glyma.01G035000, 
+glyma.Wm82.gnm4.ann1.Glyma.01G041400, glyma.Wm82.gnm4.ann1.Glyma.01G041450, 
+glyma.Wm82.gnm4.ann1.Glyma.01G042100, glyma.Wm82.gnm4.ann1.Glyma.01G081600, 
+glyma.Wm82.gnm4.ann1.Glyma.01G081700, glyma.Wm82.gnm4.ann1.Glyma.01G105000, 
+glyma.Wm82.gnm4.ann1.Glyma.01G112500, glyma.Wm82.gnm4.ann1.Glyma.01G113400
+&lt;/p&gt;
+
+&lt;details&gt;&lt;summary&gt;Results for List 1, showing `biological_process`&lt;/summary&gt;
+&lt;div class=&quot;blog-image&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog_images/GO_set1_biological.gif&quot; style=&quot;height: 483px; width: 478px;&quot; /&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;b&gt;List 2:&lt;/b&gt;&lt;a name=&quot;list2&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;
+glyma.Wm82.gnm4.ann1.Glyma.01G128700, glyma.Wm82.gnm4.ann1.Glyma.01G155300, 
+glyma.Wm82.gnm4.ann1.Glyma.03G041600, glyma.Wm82.gnm4.ann1.Glyma.03G146200, 
+glyma.Wm82.gnm4.ann1.Glyma.05G158300, glyma.Wm82.gnm4.ann1.Glyma.08G116000, 
+glyma.Wm82.gnm4.ann1.Glyma.09G194900, glyma.Wm82.gnm4.ann1.Glyma.09G279900, 
+glyma.Wm82.gnm4.ann1.Glyma.11G089400, glyma.Wm82.gnm4.ann1.Glyma.13G162500
+&lt;/p&gt;
+
+&lt;details&gt;&lt;summary&gt;Results for List 2, showing `cellular_component`&lt;/summary&gt;
+&lt;div class=&quot;blog-image&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog_images/GO_set2_cellular.gif&quot; style=&quot;height: 483px; width: 478px;&quot; /&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;b&gt;List 3:&lt;/b&gt;&lt;a name=&quot;list3&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;
+glyma.Wm82.gnm4.ann1.Glyma.01G032400, glyma.Wm82.gnm4.ann1.Glyma.01G032900, 
+glyma.Wm82.gnm4.ann1.Glyma.01G033200, glyma.Wm82.gnm4.ann1.Glyma.01G033300, 
+glyma.Wm82.gnm4.ann1.Glyma.01G039000, glyma.Wm82.gnm4.ann1.Glyma.01G046900, 
+glyma.Wm82.gnm4.ann1.Glyma.01G060300, glyma.Wm82.gnm4.ann1.Glyma.01G112200, 
+glyma.Wm82.gnm4.ann1.Glyma.01G112300, glyma.Wm82.gnm4.ann1.Glyma.01G125300
+&lt;/p&gt;
+
+&lt;details&gt;&lt;summary&gt;Results for List 3, showing `molecular_function`&lt;/summary&gt;
+&lt;div class=&quot;blog-image&quot;&gt;
+  &lt;img src=&quot;/assets/img/blog_images/GO_set3_molecular.gif&quot; style=&quot;height: 483px; width: 478px;&quot; /&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+</description>
+        <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
+        <link>/blog/2024/07/01/go-enrichment.html</link>
+        <guid isPermaLink="true">/blog/2024/07/01/go-enrichment.html</guid>
+      </item>
+    
+      <item>
         <title>Crops Conference 2024, Huntsville, AL</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://www.hudsonalpha.org/crops/&quot; target=&quot;_blank&quot;&gt;Crops Conference 2024, Huntsville, AL&lt;/a&gt;&lt;/p&gt;
 
@@ -36,13 +151,13 @@ By HudsonAlpha Institute for Biotechnology, Huntsville, AL.&lt;br /&gt;
       </item>
     
       <item>
-        <title>USDA-NPGS Natl. Prog. Leader Job</title>
+        <title>USDA-NPGS National Program Leader Job</title>
         <description>&lt;p&gt;&lt;strong&gt;16, April 2024. Job Announcement&lt;/strong&gt;:  National Program Leader for USDA-ARS National Plant Germplasm System, comprising plant genetic resource management, genetic enhancement and applied research programs related to plant genetic resource conservation and sustainable use of 200+ crops from 16,000+ species. Apply by 04/26/2024: &lt;a href=&quot;https://www.usajobs.gov/job/783750200&quot; target=&quot;_blank&quot;&gt;https://www.usajobs.gov/job/783750200&lt;/a&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate>
-        <link>/news/general/2024/04/18/AprilNews.html</link>
-        <guid isPermaLink="true">/news/general/2024/04/18/AprilNews.html</guid>
+        <link>/news/general/2024/04/18/usda-npgs-job.html</link>
+        <guid isPermaLink="true">/news/general/2024/04/18/usda-npgs-job.html</guid>
       </item>
     
       <item>
@@ -103,28 +218,6 @@ By HudsonAlpha Institute for Biotechnology, Huntsville, AL.&lt;br /&gt;
         <pubDate>Wed, 09 Aug 2023 16:00:00 +0000</pubDate>
         <link>/news/general/2023/08/09/gene-search.html</link>
         <guid isPermaLink="true">/news/general/2023/08/09/gene-search.html</guid>
-      </item>
-    
-      <item>
-        <title>8th International Legume Conference, Brazil</title>
-        <description>&lt;p&gt;6 - 11 August 2023&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.8ilc.com/program&quot;&gt;8th International Legume Conference&lt;/a&gt;, Pirenópolis, Brazil&lt;/p&gt;
-</description>
-        <pubDate>Sun, 06 Aug 2023 00:00:00 +0000</pubDate>
-        <link>/events/announcements/2023/08/06/8ilc-23.html</link>
-        <guid isPermaLink="true">/events/announcements/2023/08/06/8ilc-23.html</guid>
-      </item>
-    
-      <item>
-        <title>World Soybean Research Conference (WSRC11), Vienna Austria</title>
-        <description>&lt;p&gt;18 - 23 June 2023&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.wsrc11vienna.com&quot;&gt;World Soybean Research Conference (WSRC11)&lt;/a&gt;, Vienna Austria&lt;/p&gt;
-</description>
-        <pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate>
-        <link>/events/announcements/2023/06/18/WSRC11-23.html</link>
-        <guid isPermaLink="true">/events/announcements/2023/06/18/WSRC11-23.html</guid>
       </item>
     
   </channel>

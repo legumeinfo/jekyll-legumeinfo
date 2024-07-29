@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Blog &#8211; LIS: Legume Information System</title>
+  <title>GO Enrichment &#8211; LIS: Legume Information System</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species.">
+  <meta name="description" content="This post explains how to use LIS to calculate gene ontology (GO) enrichment.">
   <meta name="robots" content="all">
   <meta name="author" content="">
   
-  
-  <link rel="canonical" href="/blog/">
+  <meta name="keywords" content="blog">
+  <link rel="canonical" href="/blog/2024/07/01/go-enrichment.html">
 
   
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -649,114 +649,116 @@
 
 
 
-  <div id="left-menu" class="tm-sidebar-left uk-visible@m">
-
-  
-    <h3>Tools</h3>
-
-
-
-<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-  <li class="uk-nav-header">Download / Query</li>
-  
-  <li uk-tooltip="title: Browser interface to all of the files in the Legume Information System."><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
-  
-  <li uk-tooltip="title: LIS InterMines: one mine per genus including genetic data, and an overall LegumeMine with genome annotations. Tools include a powerful query engine."><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
-  
-  <li uk-tooltip="title: Overviews of data characteristics at LIS: genome assembly sizes, gene counts, BUSCO coverage, etc."><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
-  
-</ul>
-
-<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-  <li class="uk-nav-header">Search</li>
-  
-  <li uk-tooltip="title: Search for genes"><a href="/tools/search/gene.html">Gene Search Tool</a></li>
-  
-</ul>
-
-<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-  <li class="uk-nav-header">Sequence search</li>
-  
-  <li uk-tooltip="title: Run BLASTs against LIS genomes, CDSes, and proteins"><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
-  
-  <li uk-tooltip="title: Functional annotation of protein or nucleotide sequences, and placement into gene trees"><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
-  
-</ul>
-
-<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-  <li class="uk-nav-header">Visualize / Browse</li>
-  
-  <li uk-tooltip="title: Browser for dynamically discovering and viewing genomic synteny across selected species."><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
-  
-  <li uk-tooltip="title: Interactive visualization of multiple GWAS and QTL data sets, using synteny to identify potentially conserved association regions between species."><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
-  
-  <li uk-tooltip="title: View genetic and comparative maps."><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
-  
-  <li uk-tooltip="title: View GIS location information for legume accessions."><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
-  
-  <li uk-tooltip="title: Conekt is a tool for comparative gene expression analysis."><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
-  
-  <li uk-tooltip="title: Functional keyword search for gene families"><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
-  
-  <li uk-tooltip="title: A multiple chromosome visualisation tool for visualizing resequencing or SNP array data"><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
-  
-</ul>
-
-
-
-  
-  
-  
-
-  <!-- dynamically set the top style property of the left menu when the height of the navbar changes -->
-  <!-- NOTE: the script tag is nested so it doesn't break a CSS selector -->
-  <script type="text/javascript">
-
-    const navbar = document.getElementById("navbar");
-    const left = document.getElementById("left-menu");
-
-    const leftTopObserver = new ResizeObserver(entries => {
-      for (let entry of entries) {
-        // use the newer contentBoxSize property if the browser supports it
-        if (entry.contentBoxSize) {
-          left.style.top = entry.contentBoxSize[0].blockSize + "px";
-        // fallback to the older contentRect property
-        } else {
-          left.style.top = entry.contentRect.height + "px";
-        }
-      }
-    });
-
-    leftTopObserver.observe(navbar);
-
-  </script>
-</div>
-
-
 <!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
 <div class="tm-main uk-section uk-section-default">
   <div class="uk-container uk-flex">
     <div class="uk-width-1-1">
-      <h1>Blog</h1>
-
-
-
-<h2 class="uk-heading-divider">Posts</h2>
-
-<dl class="uk-description-list uk-description-list-divider">
-
+      <div class="uk-container uk-container-small">
   
-  <dt><a href="/blog/2024/07/01/go-enrichment.html"><b>GO Enrichment</b></a> | <span class="uk-text-muted">Steven Cannon, 01 July 2024</span></dt>
-<dd>This post explains how to use LIS to calculate gene ontology (GO) enrichment.</dd>
+<article class="uk-article">
+  <h1 class="uk-article-title">GO Enrichment</h1>
+  <p class="uk-article-meta">Posted by Steven Cannon on 01 July 2024</p>
+  <p class="uk-text-lead">This post explains how to use LIS to calculate gene ontology (GO) enrichment.</p>
+  <p><strong>GO enrichment analysis</strong> uses statistical tests to determine if a set of provided genes are statistically different than a comparison set (typically, the set of all genes in the organism), for each of the three main gene ontology aspects.</p>
+
+<p><a href="https://geneontology.org/docs/ontology-documentation/">Gene Ontology (GO)</a> is a classification system that describes three <strong>aspects</strong> of gene function:</p>
+<ul>
+  <li><strong>Molecular Function</strong>, describing activities such as <a href="https://amigo.geneontology.org/amigo/term/GO:0003824">catalytic activity</a> or finer-scale activities such as <a href="https://amigo.geneontology.org/amigo/term/GO:0004465">lipoprotein lipase activity</a>;</li>
+  <li><strong>Cellular Component</strong>, describing cellular components such as the <a href="https://amigo.geneontology.org/amigo/term/GO:0005856">cytoskeleton</a>, or finer-scale locations such as <a href="https://amigo.geneontology.org/amigo/term/GO:0005813">centrosome</a>;</li>
+  <li><strong>Biological Process</strong>, describing biological programs such as <a href="https://amigo.geneontology.org/amigo/term/GO:0007165">signal transduction</a>, or finer-scale processes such as <a href="https://amigo.geneontology.org/amigo/term/GO:0004674">protein serine/threonine kinase activity</a>.</li>
+</ul>
+
+<p>To calculate GO enrichment at LIS, use the gene-list report function in any InterMine instance. 
+For example, at <a href="https://mines.legumeinfo.org/glycinemine/begin.do">GlycineMine</a>, enrichment can be calculated for genes from ANY <i>Glycine</i> accession and annotation in GlycineMine.</p>
+
+<p>Here are the steps.</p>
+
+<h3 id="1-enter-a-gene-list-under-analyze-a-list">1. Enter a gene list under Analyze a List.</h3>
+
+<p>Taking soybean (<em>Glycine</em> spp.) as our example, open <a href="https://mines.legumeinfo.org/glycinemine/begin.do" target="_blank">GlycineMine</a>, and paste a list of genes in the central box (“Analyze a List”). The list can consist of un-prefixed gene IDs such as <code class="language-plaintext highlighter-rouge">Glyma.01G022700</code>, but if that gene exists in multiple assemblies or annotation sets, you will see an intermediate page in which you will be asked to select which genes you want to analyze. Therefore, it is generally best to prefix your identifiers with the following four, dot-separated fields: <code class="language-plaintext highlighter-rouge">Genusspecies.Accession.Assemblyversion.Annotationversion.GeneID</code> <code class="language-plaintext highlighter-rouge">glyma.Wm82.gnm4.ann1.Glyma.01G022700</code></p>
+
+<p>Also note that the identifiers should be <strong>gene IDs</strong> rather than <strong>mRNAs</strong>; these are typically distinguished by a numeric suffix. That is: use gene <code class="language-plaintext highlighter-rouge">Glyma.01G022700</code> rather than mRNA <code class="language-plaintext highlighter-rouge">Glyma.01G022700.1</code></p>
+
+<p>Try one of the gene lists below:</p>
+<ul>
+  <li><a href="#list1">List 1</a></li>
+  <li><a href="#list2">List 2</a></li>
+  <li><a href="#list3">List 3</a></li>
+</ul>
+
+<h3 id="2-name-and-save-the-list">2. Name and save the list.</h3>
+<p>You can use the provided name if you wish (based on date and time), or you can give it a more meaningful name. Then click the green “<b>Save a list of 10 Genes</b>” button. (Note that if you register with GlycineMine you will be able to save your gene list so that you can use the same list over and over again on the same tool or use that list on various GlycineMine tools.)</p>
+
+<h3 id="3-examine-the-gene-ontology-enrichment-results">3. Examine the Gene Ontology Enrichment results.</h3>
+<p>The report page will give descriptive information about each gene; and near the bottom of the page are four reports: “Gene Ontology Enrichment”, “Gene Family Enrichment”, “Pathway Enrichment”, and “Chromosome Distribution”.</p>
+
+<p>In the “Gene Ontology Enrichment” box, be sure to check each ontology aspect that you wich to evaluate:</p>
+<ul>
+  <li>biological_process</li>
+  <li>cellular_component</li>
+  <li>molecular_function</li>
+</ul>
+
+<p>It is common for a set of genes to show enrichment for one aspect and not others.</p>
+
+<hr />
+
+<p><b>List 1:</b><a name="list1"></a></p>
+<p>
+glyma.Wm82.gnm4.ann1.Glyma.01G022700, glyma.Wm82.gnm4.ann1.Glyma.01G035000, 
+glyma.Wm82.gnm4.ann1.Glyma.01G041400, glyma.Wm82.gnm4.ann1.Glyma.01G041450, 
+glyma.Wm82.gnm4.ann1.Glyma.01G042100, glyma.Wm82.gnm4.ann1.Glyma.01G081600, 
+glyma.Wm82.gnm4.ann1.Glyma.01G081700, glyma.Wm82.gnm4.ann1.Glyma.01G105000, 
+glyma.Wm82.gnm4.ann1.Glyma.01G112500, glyma.Wm82.gnm4.ann1.Glyma.01G113400
+</p>
+
+<details><summary>Results for List 1, showing `biological_process`</summary>
+<div class="blog-image">
+  <img src="/assets/img/blog_images/GO_set1_biological.gif" style="height: 483px; width: 478px;" />
+</div>
+</details>
+
+<hr />
+
+<p><b>List 2:</b><a name="list2"></a></p>
+
+<p>
+glyma.Wm82.gnm4.ann1.Glyma.01G128700, glyma.Wm82.gnm4.ann1.Glyma.01G155300, 
+glyma.Wm82.gnm4.ann1.Glyma.03G041600, glyma.Wm82.gnm4.ann1.Glyma.03G146200, 
+glyma.Wm82.gnm4.ann1.Glyma.05G158300, glyma.Wm82.gnm4.ann1.Glyma.08G116000, 
+glyma.Wm82.gnm4.ann1.Glyma.09G194900, glyma.Wm82.gnm4.ann1.Glyma.09G279900, 
+glyma.Wm82.gnm4.ann1.Glyma.11G089400, glyma.Wm82.gnm4.ann1.Glyma.13G162500
+</p>
+
+<details><summary>Results for List 2, showing `cellular_component`</summary>
+<div class="blog-image">
+  <img src="/assets/img/blog_images/GO_set2_cellular.gif" style="height: 483px; width: 478px;" />
+</div>
+</details>
+
+<hr />
+
+<p><b>List 3:</b><a name="list3"></a></p>
+
+<p>
+glyma.Wm82.gnm4.ann1.Glyma.01G032400, glyma.Wm82.gnm4.ann1.Glyma.01G032900, 
+glyma.Wm82.gnm4.ann1.Glyma.01G033200, glyma.Wm82.gnm4.ann1.Glyma.01G033300, 
+glyma.Wm82.gnm4.ann1.Glyma.01G039000, glyma.Wm82.gnm4.ann1.Glyma.01G046900, 
+glyma.Wm82.gnm4.ann1.Glyma.01G060300, glyma.Wm82.gnm4.ann1.Glyma.01G112200, 
+glyma.Wm82.gnm4.ann1.Glyma.01G112300, glyma.Wm82.gnm4.ann1.Glyma.01G125300
+</p>
+
+<details><summary>Results for List 3, showing `molecular_function`</summary>
+<div class="blog-image">
+  <img src="/assets/img/blog_images/GO_set3_molecular.gif" style="height: 483px; width: 478px;" />
+</div>
+</details>
 
 
-  
-  <dt><a href="/blog/2022/02/17/zzbrowse.html"><b>ZZBrowse</b></a> | <span class="uk-text-muted">Sven Redsun, 17 February 2022</span></dt>
-<dd>ZZBrowse is an interactive R/Shiny web application for GWAS and QTL visualization. In this post, we describe our enhancements to the original ZBrowse developed by the Baxter Laboratory.</dd>
+</article>
 
 
-</dl>
-
+</div>
 
     </div>
     
