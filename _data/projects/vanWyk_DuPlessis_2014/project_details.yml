@@ -19,10 +19,10 @@
     - category:
         - name: data
           instances:
-            - description: "Nodule RNA 4 Weeks Vegetative Stage (BAM File 5.4 Gigs) - FIX (put in DS collection)"
-              url: "#"
-            - description: "Nodule RNA 8 Weeks Reproductive Stage (BAM File 5.8 Gigs) - FIX (put in DS collection)"
-              url: "#"
-            - description: "Nodule RNA 14 Weeks Senescence Stage (BAM File 5.0 Gigs) - FIX (put in DS collection)"
-              url: "#"
+            - description: "Nodule RNA 8 Weeks Reproductive Stage (BAM File 5.8 Gigs)"
+              url: "https://data.soybase.org/annex/Glycine/max/projects/vanWyk_DuPlessis_2014/root_nodule_reproductive_stage.bam"
+            - description: "Nodule RNA 14 Weeks Senescence Stage (BAM File 5.0 Gigs)"
+              url: "https://data.soybase.org/annex/Glycine/max/projects/vanWyk_DuPlessis_2014/root_nodule_senescence_stage.bam"
+            - description: "Nodule RNA 4 Weeks Vegetative Stage (BAM File 5.4 Gigs)"
+              url: "https://data.soybase.org/annex/Glycine/max/projects/vanWyk_DuPlessis_2014/root_nodule_vegetative_stage.bam"
 
