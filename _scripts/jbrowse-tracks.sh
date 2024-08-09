@@ -124,7 +124,7 @@ do
     done
 done
 
-for transcription_manifest in _data/datastore-metadata/Glycine/*/transcription/*/MANIFEST.*.yml
+for transcription_manifest in _data/datastore-metadata/Glycine/*/sequence_feature/*/MANIFEST.*.yml
 do
   assembly_name=${transcription_manifest##*/MANIFEST.}
   assembly_name=${assembly_name%.trnsc.*}
