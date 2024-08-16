@@ -2,7 +2,7 @@
 - category: "Download / Query"
   description: "Browser interface to all of the files in SoyBase."
   name: "Datastore"
-  url: "https://data.legumeinfo.org/Glycine/"
+  url: "https://data.soybase.org/Glycine/"
 - category: "Download / Query"
   description: "GlycineMine: an InterMine interface for most of the data at SoyBase, including genetic data. Tools include a powerful query engine."
   name: "GlycineMine"

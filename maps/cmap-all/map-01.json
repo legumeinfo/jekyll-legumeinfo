@@ -345,7 +345,7 @@
     }, {
       "id" : "gm_composite",
       "method": "GET",
-      "url" : "https://data.legumeinfo.org/annex/Glycine/max/maps/mixed.map.GmComposite2003/Soybean-GmComposite2003.cmap.gz?display=text",
+      "url" : "https://data.soybase.org/annex/Glycine/max/maps/mixed.map.GmComposite2003/Soybean-GmComposite2003.cmap.gz?display=text",
       "filters" : [],
       "config": {
         "method" : "GET",

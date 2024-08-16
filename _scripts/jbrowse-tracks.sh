@@ -1,7 +1,7 @@
 #!/bin/sh
 set -o errexit -o nounset
 
-readonly DATASTORE_URL=https://data.legumeinfo.org
+readonly DATASTORE_URL=https://data.soybase.org
 readonly GBROWSE_DATA_URL=https://www.soybase.org/gbrowse_data
 
 # convert YAML "key: value" into shell assignments
