@@ -124,26 +124,35 @@ do
     done
 done
 
-for transcription_manifest in _data/datastore-metadata/Glycine/*/sequence_feature/*/MANIFEST.*.yml
+for sequence_feature_manifest in _data/datastore-metadata/Glycine/*/sequence_feature/*/MANIFEST.*.yml
 do
-  assembly_name=${transcription_manifest##*/MANIFEST.}
-  assembly_name=${assembly_name%.trnsc.*}
-  datastore_dir_url=${DATASTORE_URL}/$(dirname ${transcription_manifest#_data/datastore-metadata/})
+  assembly_name=${sequence_feature_manifest##*/MANIFEST.}
+  assembly_name=${assembly_name%.*.*.yml}
+  datastore_dir_url=${DATASTORE_URL}/$(dirname ${sequence_feature_manifest#_data/datastore-metadata/})
   
-  awk -v OFS='\t' '
-  /^- / && jbrowse { print name, description; name=description=jbrowse="" }
-  /^ *- *jbrowse/ { jbrowse=1 }
-  sub(/^[^:]* name: */, "") { name=$0 }
-  sub(/^[^:]* description: */, "") { description=$0 }
-  END { if (jbrowse) print name, description }' "${transcription_manifest}" |
-    while read -r file description
+  awk -v OFS='|' '
+  /^-/ && jbrowse { print name, category, description; name=category=in_category=description=jbrowse="" }
+  /^ *- *jbrowse/ { jbrowse=1; next }
+  sub(/^[^:]* name: */, "") { name=$0; next }
+  in_category {
+    if (sub(/^ +- /, ""))
+      category = category ? category "," $0 : $0
+    else
+      in_category=0
+    next
+  }
+  sub(/^[^:]* category: */, "") { in_category=1; next }
+  sub(/^[^:]* description: */, "") { description=$0; next }
+  END { if (jbrowse) print name, category, description }' "${sequence_feature_manifest}" |
+    while IFS='|' read -r file category description
     do
-      trackId=$(basename ${file} .gff3.gz)
-      name=${trackId##*.trnsc.}
+      trackId=${file%.gz} # Remove .gz suffix for some file types
+      trackId=${trackId%.*}  # Remove remaining suffix
+      name=${trackId#*.*.*.*.}
       jbrowse add-track \
         ${datastore_dir_url}/${file#*/} \
         --assemblyNames=${assembly_name} \
-        --category='Transcription' \
+        --category="${category}" \
         --name=${name} \
         --trackId=${trackId} \
         --description="${description}<br /><br /><b>more info:</b> ${datastore_dir_url}/" \
