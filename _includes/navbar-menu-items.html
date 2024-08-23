@@ -1,56 +1,57 @@
-<li><a href="{{ "/" | relative_url }}">Home</a></li>
-<li>
-  <a href="{{ "/tools" | relative_url }}">Tools</a>
-  {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
-  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
-    <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
-      {% for group in groups %}
-        {% for item in group.items %}
-          <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+<div class="uk-flex-inline" style="gap: 15px">
+  <li><a href="{{ "/" | relative_url }}">Home</a></li>
+  <li>
+    <a href="{{ "/tools" | relative_url }}">Tools</a>
+    {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+        {% for group in groups %}
+          {% for item in group.items %}
+            <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+          {% endfor %}
         {% endfor %}
+      </ul>
+    </div>
+  </li>
+
+  <li>
+    <a href="{{ "/maps" | relative_url }}">Maps</a>
+  </li>
+
+  <li>
+    <a href="{{ "/resources" | relative_url }}">Genomics</a>
+  </li>
+
+  <li>
+    <a href="{{ "/collections" | relative_url }}">Data Collections</a>
+    {% assign genus_description = site.data.datastore-metadata.Glycine.GENUS.about_this_collection.description_Glycine %}
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+        {% for species in genus_description.species %}
+          <li> <a href="/collections/#{{ genus_description.genus }}_{{ species }}"> {{ species }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </li>
+
+  <li>
+    <a class="project_list" href="{{ "/projects" | relative_url }}">Projects</a>
+    {% if site.data.project_list %}
+    {% assign groups = site.data.project_list | sort: "short_title" %}
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
+      {% for group in groups %}
+        <li><a href="{{ group.DataStoreID | downcase | prepend: '/projects/' | relative_url }}">{{ group.short_title }}</a></li>
       {% endfor %}
-    </ul>
-  </div>
-</li>
+      </ul>
+    </div>
+    {% endif %}
+  </li>
 
-<li>
-  <a href="{{ "/maps" | relative_url }}">Maps</a>
-</li>
+  <li><a href="{{ "/community" | relative_url }}">Community</a></li>
 
-<li>
-  <a href="{{ "/resources" | relative_url }}">Genomics</a>
-</li>
+  <li><a href="{{ "/about" | relative_url }}">About & Contact</a></li>
 
-<li>
-  <a href="{{ "/collections" | relative_url }}">Data Collections</a>
-  {% assign genus_description = site.data.datastore-metadata.Glycine.GENUS.about_this_collection.description_Glycine %}
-  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
-    <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
-      {% for species in genus_description.species %}
-        <li> <a href="/collections/#{{ genus_description.genus }}_{{ species }}"> {{ species }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-</li>
-
-<li>
-  <a class="project_list" href="{{ "/projects" | relative_url }}">Projects</a>
-  {% if site.data.project_list %}
-  {% assign groups = site.data.project_list | sort: "short_title" %}
-  <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
-    <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
-    {% for group in groups %}
-      <li><a href="{{ group.DataStoreID | downcase | prepend: '/projects/' | relative_url }}">{{ group.short_title }}</a></li>
-    {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
-</li>
-
-<li><a href="{{ "/community" | relative_url }}">Community</a></li>
-
-<li><a href="{{ "/about" | relative_url }}">About & Contact</a></li>
-
-<li><a href="{{ "/help" | relative_url }}">Help & Tutorials</a></li>
-
+  <li><a href="{{ "/help" | relative_url }}">Help & Tutorials</a></li>
+</div>
 
