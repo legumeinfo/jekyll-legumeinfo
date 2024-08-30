@@ -1,0 +1,12 @@
+<h3>Tools</h3>
+{% if site.data.tools %}
+{% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
+{% for group in groups %}
+<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+  <li class="uk-nav-header">{{ group.name }}</li>
+  {% for item in group.items %}
+  <li uk-tooltip="title: {{ item.description }}"><a href="{{ item.url }}" target="{{ item.target }}">{{ item.name }}</a></li>
+  {% endfor %}
+</ul>
+{% endfor %}
+{% endif %}

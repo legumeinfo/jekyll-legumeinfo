@@ -10,7 +10,7 @@ tools_menu: true
 <h2>{{ group.name }}</h2>
 <dl>
   {% for item in group.items %}
-  <dt><a href="{{ item.url }}">{{ item.name }}</a></dt>
+  <dt><a href="{{ item.url }}" target="{{item.target}}">{{ item.name }}</a></dt>
   <dd>{{ item.description }}</dd>
   {% endfor %}
 </dl>

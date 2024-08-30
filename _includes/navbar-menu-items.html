@@ -7,7 +7,7 @@
       <ul class="uk-nav uk-navbar-dropdown-nav uk-link-reset">
         {% for group in groups %}
           {% for item in group.items %}
-            <li><a href="{{ item.url }}">{{ item.name }}</a></li>
+            <li><a href="{{ item.url }}" target="{{item.target}}">{{ item.name }}</a></li>
           {% endfor %}
         {% endfor %}
       </ul>
