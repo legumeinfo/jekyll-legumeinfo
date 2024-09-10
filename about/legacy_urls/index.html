@@ -1,0 +1,47 @@
+---
+layout: default
+title: Legacy URLs
+sitemap: community/legacy_urls
+---
+
+<h2>Correspondences between legacy and current SoyBase addresses</h2>
+
+<p>
+The addresses below have all been used in publications referencing SoyBase.org from 2020-2024.
+See below for corresponding content in the new (post-2024) SoyBase -- or, where there is no correspondence, links to the legacy SoyBase site.
+</p>
+
+{% assign groups = site.data.legacy_urls | group_by: "meta_cat" | sort: "category" %}
+
+{% for group in groups %}
+  {% if group.name == "see_corresponding" %}
+    <b style="font-size:larger">Content at legacy SoyBase ==> Corresponding content at current site</b>
+    {% assign group2 = group.items | group_by: "category" %}
+    {% for cat in group2 %}
+      <dl>
+        {% for item2 in cat.items %}
+          <dt>
+            <span style="font-weight:normal">
+              <a href="https://{{ item2.legacy_url }}">{{ item2.legacy_url }}</a> &nbsp;==>&nbsp; 
+            </span>
+            <a href="{{ item2.redirect_url }}">{{ item2.redirect_url }}</a>
+          </dt>
+        {% endfor %}
+       </dl>
+    {% endfor %}
+
+  {% elsif group.name == "see_legacy" %}
+    <b style="font-size:larger">See this content at legacy.soybase.org:</b>
+    {% assign group2 = group.items | group_by: "category" | sort: "legacy_url" %}
+    {% for cat in group2 %}
+      <dl>
+        {% for item2 in cat.items %}
+          <dt>
+            <span style="font-weight:normal"><a href="https://{{ item2.legacy_url }}">{{ item2.legacy_url }}</a></span>
+          </dt>
+        {% endfor %}
+       </dl>
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+

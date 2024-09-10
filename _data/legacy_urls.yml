@@ -1,0 +1,187 @@
+---
+-
+    meta_cat: see_corresponding
+    category: collections
+    legacy_url: "legacy.soybase.org/dlpages/index.php"
+    redirect_url: /collections/
+-
+    meta_cat: see_corresponding
+    category: maps
+    legacy_url: "legacy.soybase.org/cmap/"
+    redirect_url: /maps/
+-
+    meta_cat: see_corresponding
+    category: projects
+    legacy_url: "legacy.soybase.org/projects/SoyBase.C2020.02.php"
+    redirect_url: /projects/bayer_valliyodan_2021/
+-
+    meta_cat: see_corresponding
+    category: projects
+    legacy_url: "legacy.soybase.org/projects/SoyBase.C2018.01.php"
+    redirect_url: /projects/bhattacharyya_2018
+-
+    meta_cat: see_corresponding
+    category: projects
+    legacy_url: "legacy.soybase.org/NAM"
+    redirect_url: /projects/SoyNAM/
+-
+    meta_cat: see_corresponding
+    category: projects
+    legacy_url: "legacy.soybase.org/SoyNAM/index.php"
+    redirect_url: /projects/SoyNAM/
+-
+    meta_cat: see_corresponding
+    category: projects
+    legacy_url: "legacy.soybase.org/soytedb"
+    redirect_url: /projects/soytedb_2010/
+-
+    meta_cat: see_corresponding
+    category: projects
+    legacy_url: "legacy.soybase.org/projects/SoyBase.C2020.01.php"
+    redirect_url: /projects/torkamaneh_laroche_2021/
+-
+    meta_cat: see_corresponding
+    category: projects
+    legacy_url: "legacy.soybase.org/projects/SoyBase.B2014.02.php"
+    redirect_url: /projects/valliyodan_brown_2021/
+-
+    meta_cat: see_corresponding
+    category: projects
+    legacy_url: "legacy.soybase.org/projects/SoyBase.C2021.03.php"
+    redirect_url: /projects/wang_chu_2016/
+-
+    meta_cat: see_corresponding
+    category: projects
+    legacy_url: "legacy.soybase.org/projects/SoyBase.C2021.04.php"
+    redirect_url: /projects/zhang_jiang_2020/
+-
+    meta_cat: see_corresponding
+    category: tools
+    legacy_url: "legacy.soybase.org/search/"
+    redirect_url: /tools/index.html#search
+-
+    meta_cat: see_corresponding
+    category: tools
+    legacy_url: "legacy.soybase.org/tools.php"
+    redirect_url: /tools/
+-
+    meta_cat: see_corresponding
+    category: tools
+    legacy_url: "legacy.soybase.org/goslimgraphic_v2/dashboard.php"
+    redirect_url: /tools/analysis/go.html
+-
+    meta_cat: see_corresponding
+    category: tools
+    legacy_url: "legacy.soybase.org/gb2/gbrowse/glyma.Wm82.gnm4/"
+    redirect_url: /tools/browsers/
+-
+    meta_cat: see_corresponding
+    category: tools
+    legacy_url: "legacy.soybase.org/gb2/gbrowse/gmax2.0"
+    redirect_url: /tools/browsers/
+-
+    meta_cat: see_corresponding
+    category: tools
+    legacy_url: "legacy.soybase.org/SequenceIntro.php"
+    redirect_url: /tools/browsers/
+-
+    meta_cat: see_corresponding
+    category: tools
+    legacy_url: "legacy.soybase.org/soyseq/"
+    redirect_url: /tools/expression/
+-
+    meta_cat: see_corresponding
+    category: tools
+    legacy_url: "legacy.soybase.org/uniformtrial/index.php"
+    redirect_url: /tools/nust/
+-
+    meta_cat: see_corresponding
+    category: tools
+    legacy_url: "legacy.soybase.org/ontology.php"
+    redirect_url: /tools/ontology/
+-
+    meta_cat: see_corresponding
+    category: tools
+    legacy_url: "legacy.soybase.org/snps/download.php"
+    redirect_url: /tools/snp50k
+-
+    meta_cat: see_corresponding
+    category: tools
+    legacy_url: "legacy.soybase.org/snps/index.php"
+    redirect_url: /tools/snp50k/
+-
+    meta_cat: see_corresponding
+    category: tools
+    legacy_url: "legacy.soybase.org/GWAS/"
+    redirect_url: /tools/trait_list/
+-
+    meta_cat: see_corresponding
+    category: tools
+    legacy_url: "legacy.soybase.org/resources/QTL.php"
+    redirect_url: /tools/trait_list/
+-
+    meta_cat: see_corresponding
+    category: tools
+    legacy_url: "legacy.soybase.org/search/qtllist_by_symbol.php"
+    redirect_url: /tools/trait_list/
+-
+    meta_cat: see_corresponding
+    category: data
+    legacy_url: "legacy.soybase.org/data/public/"
+    redirect_url: https://data.soybase.org/Glycine/max/
+-
+    meta_cat: see_corresponding
+    category: data
+    legacy_url: "legacy.soybase.org/data/public/Glycine_max/"
+    redirect_url: https://data.soybase.org/Glycine/max/
+-
+    meta_cat: see_corresponding
+    category: data
+    legacy_url: "legacy.soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Zhang_Jiang_2020/"
+    redirect_url: https://data.soybase.org/Glycine/max/diversity/
+-
+    meta_cat: see_corresponding
+    category: data
+    legacy_url: "legacy.soybase.org/resources/Genetic_Resources/Soybean_Genetic_Resources.html"
+    redirect_url: https://data.soybase.org/annex/Glycine/max/whitepapers/2000/soybean_genetic_resources_2000.pdf
+-
+    meta_cat: see_corresponding
+    category: data
+    legacy_url: "legacy.soybase.org/data/v2/Glycine"
+    redirect_url: https://data.soybase.org/Glycine/
+-
+    meta_cat: see_corresponding
+    category: data
+    legacy_url: "legacy.soybase.org/data/v2/Glycine/falcata/genomes/"
+    redirect_url: https://data.soybase.org/Glycine/falcata/genomes/
+-
+    meta_cat: see_corresponding
+    category: mines
+    legacy_url: "legacy.soybase.org/genomeannotation/"
+    redirect_url: https://mines.legumeinfo.org/glycinemine/bag.do?subtab=upload
+-
+    meta_cat: see_legacy
+    category: legacy
+    legacy_url: "legacy.soybase.org/experiments/"
+    redirect_url: https://soybase.org/experiments/
+-
+    meta_cat: see_legacy
+    category: legacy
+    legacy_url: "legacy.soybase.org/grindata/"
+    redirect_url: https://soybase.org/grindata/
+-
+    meta_cat: see_legacy
+    category: legacy
+    legacy_url: "legacy.soybase.org/mutants/"
+    redirect_url: https://soybase.org/mutants/
+-
+    meta_cat: see_legacy
+    category: legacy
+    legacy_url: "legacy.soybase.org/resources/ssr.php"
+    redirect_url: https://soybase.org/resources/ssr.php
+-
+    meta_cat: see_legacy
+    category: legacy
+    legacy_url: "legacy.soybase.org/soybaselist"
+    redirect_url: https://soybase.org/soybaselist/
+

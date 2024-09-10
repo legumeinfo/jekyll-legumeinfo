@@ -1,13 +1,20 @@
 ---
 title: Tools
-tools_menu: true
+tools_menu: false
 ---
 {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
 
 <h1>Informatic Tools</h1>
 
 {% for group in groups %}
-<h2>{{ group.name }}</h2>
+  <dt>
+    <dd> <a href="#{{ group.name | replace: " / ", "_"  | replace: " ", "_" | downcase }}">{{ group.name }}</a> </dd>
+  </dt>
+{% endfor %}
+<hr>
+
+{% for group in groups %}
+<h2><a id="{{ group.name | replace: " / ", "_"  | replace: " ", "_" | downcase }}">{{ group.name }}</a></h2>
 <dl>
   {% for item in group.items %}
   <dt><a href="{{ item.url }}" target="{{item.target}}">{{ item.name }}</a></dt>

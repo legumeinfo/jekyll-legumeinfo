@@ -17,6 +17,7 @@ group :jekyll_plugins do
   # FIXME: jekyll-sitemap doesn't work with liquid.strict_variables: true
   # https://github.com/jekyll/jekyll-sitemap/issues/272
   gem "jekyll-sitemap", "~> 1.4.0"
+  gem "jekyll-redirect-from", "~> 0.16.0"
 end
 
 group :test do

@@ -89,4 +89,9 @@
   description: "GO term enrichment analysis tool"
   name: "GO Enrichment Analysis"
   url: "/tools/analysis/go.html"
+  target: "_blank"
+- category: "Analysis"
+  description: "Phenotypic reports for the Northern Uniform Soybean Trials (NUST) from 1989 to present"
+  name: "Northern Uniform Soybean Trials (NUST)"
+  url: "/tools/nust/"
 

@@ -66,6 +66,7 @@ future: true
 
 plugins:
   - jekyll-datapage-generator
+  - jekyll-redirect-from
   # generate /sitemap.xml (needed for pa11y)
   # FIXME: jekyll-sitemap doesn't work with liquid.strict_variables: true
   # https://github.com/jekyll/jekyll-sitemap/issues/272
