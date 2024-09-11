@@ -52,7 +52,7 @@ blog_card: true
               var value = document.getElementById('quickSearchInput').value;
             }
           </script>
-          <form action="https://dev.soybase.org/tools/search/gene.html" name="search" method="get" style="display:inline;">
+          <form action="/tools/search/gene.html" name="search" method="get" style="display:inline;">
             <input id="identifier" style="width:180px;color:#235626;font-style:italic;font-size:0.9em" type="text" id="quickSearchInput" name="identifier"
             value="Glyma.15g026400" onFocus="clearElement(this);" />
             <input type="submit" id="quickSearchButton" name="searchSubmit" value="GO" />
@@ -159,6 +159,7 @@ blog_card: true
         </td> 
       </tr>
       
+      
       <tr>
         <td>
           <div class="uk-button uk-width-1-1 uk-margin-small-bottom" title="Soybean GWAS features from many studies, against a common framework (ZZbrowse tools).">
@@ -183,7 +184,7 @@ blog_card: true
         </td>
       </tr>
       
-
+      
       <tr>
         <td>
           <div class="uk-button uk-width-1-1 uk-margin-small-bottom" title="View geographic origins of Glycine accessions in the USDA GRIN-Global system.">
@@ -203,6 +204,31 @@ blog_card: true
           <div class="uk-button uk-width-1-1 uk-margin-small-bottom" title="View soybean varieties and accessions and their pedigrees.">
             <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap" type="button"  style="background-color:AntiqueWhite;">
               <a href="/tools/parentage/"><b>Parentage & pedigrees</b></a>
+            </button>
+          </div>
+        </td>
+      </tr>
+      
+      
+      <tr>
+        <td>
+          <div class="uk-button uk-width-1-1 uk-margin-small-bottom" title="View geographic origins of Glycine accessions in the USDA GRIN-Global system.">
+            <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap" type="button" style="background-color:#EAFAF1;">
+              <a href="https://www.legumeinfo.org" target="_blank"><b>Other legumes</b></a>
+            </button>
+          </div>
+        </td>
+        <td>
+          <div class="uk-button uk-width-1-1 uk-margin-small-bottom" title="Search and view soybean genes in their metabolic pathways.">
+            <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap" type="button"  style="background-color:#EAFAF1;">
+              <a href="/tools/expression"><b>Expression resources</b></a>
+            </button>
+          </div>
+        </td>
+        <td>
+          <div class="uk-button uk-width-1-1 uk-margin-small-bottom" title="View soybean varieties and accessions and their pedigrees.">
+            <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap" type="button"  style="background-color:#EAFAF1;">
+              <a href="/help/"><b>Help & contact</b></a>
             </button>
           </div>
         </td>
