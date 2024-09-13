@@ -1,0 +1,30 @@
+---
+-
+  DataStoreID: "Song_Cregan_2010"
+  short_title: "BARC Soybean Potential SSR"
+  SoyBaseID: "SoyBase.barcsoyssr"
+  title: "BARC Soybean potential SSR database/ BARCSOYSSR"
+  description: "The objectives of this study were to determine the abundance of SSRs in the soybean genome and to develop and test soybean SSR markers to create a database of locus-specific markers with a high likelihood of polymorphism. A total of 210,990 SSRs with di-, tri-, and tetranucleotide repeats of five or more were identified in the soybean whole genome sequence (WGS) which included 61,458 SSRs consisting of repeat units of di- (≥10), tri- (≥8), and tetranucleotide (≥7). Among the 61,458 SSRs, (AT)n, (ATT)n and (AAAT)n were the most abundant motifs among di-, tri-, and tetranucleotide SSRs, respectively. After screening for a number of factors including locus-specificity using e-PCR, a soybean SSR database (BARCSOYSSR_1.0) with the genome position and primer sequences for 33,065 SSRs was created."
+  BioProjectID: "none"
+  publications:
+    - citation: "Song, Q. et al. Abundance of SSR Motifs and Development of Candidate Polymorphic SSR Markers (BARCSOYSSR_1.0) in Soybean. Crop Science vol. 50 1950–1960 (2010)"
+      doi: "10.2135/cropsci2009.10.0607"
+      abstract: "Simple sequence repeat (SSR) genetic markers, also referred to as microsatellites, function in map-based cloning and for marker-assisted selection in plant breeding. The objectives of this study were to determine the abundance of SSRs in the soybean genome and to develop and test soybean SSR markers to create a database of locus-specific markers with a high likelihood of polymorphism. A total of 210,990 SSRs with di-, tri-, and tetranucleotide repeats of five or more were identified in the soybean whole genome sequence (WGS) which included 61,458 SSRs consisting of repeat units of di- (≥10), tri- (≥8), and tetranucleotide (≥7). Among the 61,458 SSRs, (AT)n, (ATT)n and (AAAT)n were the most abundant motifs among di-, tri-, and tetranucleotide SSRs, respectively. After screening for a number of factors including locus-specificity using e-PCR, a soybean SSR database (BARCSOYSSR_1.0) with the genome position and primer sequences for 33,065 SSRs was created. To examine the likelihood that primers in the database would function to amplify locus-specific polymorphic products, 1034 primer sets were evaluated by amplifying DNAs of seven diverse Glycine max (L.) Merr. and one wild soybean (Glycine soja Siebold & Zucc.) genotypes. A total of 978 (94.6%) of the primer sets amplified a single polymerase chain reaction (PCR) product and 798 (77.2%) amplified polymorphic amplicons as determined by 4.5% agarose gel electrophoresis. The BARCSOYSSR1.0 SSR markers can be found in Soy- Base (http://soybase.org; verified 21 June 2010) the USDA-ARS Soybean Genome Database."
+  data_links:
+    - category:
+        - name: data
+          instances:
+            - description: "GFF3 file of BARCSOYSSR on glycine max Wm82 assembly version 1"
+              url: "https://data.soybase.org/Glycine/max/markers/Wm82.gnm1.mrk.BARCSOYSSR/glyma.Wm82.gnm1.mrk.BARCSOYSSR.gff3.gz"
+            - description: "GFF3 file of BARCSOYSSR on glycine max Wm82 assembly version 2"
+              url: "https://data.soybase.org/Glycine/max/markers/Wm82.gnm2.mrk.BARCSOYSSR/glyma.Wm82.gnm2.mrk.BARCSOYSSR.gff3.gz"
+            - description: "All BARCSOYSSR sequence information in one Excel file"
+              url: "https://acsess.onlinelibrary.wiley.com/action/downloadSupplement?doi=10.2135%2Fcropsci2009.10.0607&file=csc2cropsci2009100607-sup-0001.xls"
+
+    - category:
+        - name: genome browser
+          instances:
+            - description: "Wm82 Potential SSR on assembly version 1"
+              url: "https://soybase.org/gb2/gbrowse/gmax1.01?label=Wm82_potential_SSR"
+            - description: "Wm82 Potential SSR on assembly version 2"
+              url: "https://legacy.soybase.org/gb2/gbrowse/gmax2.0?label=wm82_potential_ssr"

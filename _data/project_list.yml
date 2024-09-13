@@ -125,3 +125,9 @@
     represented by centroid sequences from each cluster."
   SoyBaseID: "SoyBase.soytedb"
   DataStoreID: "SoyTEdb_2010"
+-
+  title: "BARC Soybean potential SSR database/ BARCSOYSSR"
+  short_title: "BARC Soybean SSR / BARCSOYSSR"
+  description: "The objectives of this study were to determine the abundance of SSRs in the soybean genome and to develop and test soybean SSR markers to create a database of locus-specific markers with a high likelihood of polymorphism. A total of 210,990 SSRs with di-, tri-, and tetranucleotide repeats of five or more were identified in the soybean whole genome sequence (WGS) which included 61,458 SSRs consisting of repeat units of di- (≥10), tri- (≥8), and tetranucleotide (≥7). Among the 61,458 SSRs, (AT)n, (ATT)n and (AAAT)n were the most abundant motifs among di-, tri-, and tetranucleotide SSRs, respectively. After screening for a number of factors including locus-specificity using e-PCR, a soybean SSR database (BARCSOYSSR_1.0) with the genome position and primer sequences for 33,065 SSRs was created."
+  SoyBaseID: "SoyBase.barcsoyssr"
+  DataStoreID: "Song_Cregan_2010"
