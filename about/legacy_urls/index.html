@@ -22,7 +22,7 @@ See below for corresponding content in the new (post-2024) SoyBase -- or, where 
         {% for item2 in cat.items %}
           <dt>
             <span style="font-weight:normal">
-              <a href="https://{{ item2.legacy_url }}">{{ item2.legacy_url }}</a> &nbsp;==>&nbsp; 
+              {{ item2.legacy_url }}&nbsp;==>&nbsp; 
             </span>
             <a href="{{ item2.redirect_url }}">{{ item2.redirect_url }}</a>
           </dt>

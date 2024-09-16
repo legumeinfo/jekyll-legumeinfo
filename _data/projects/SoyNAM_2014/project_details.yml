@@ -62,7 +62,7 @@
         - name: map
           instances:
             - description: See SoyNAM QTL in SoyBase genetic maps
-              url: "https://legacy.soybase.org/cmap/cgi-bin/cmap/viewer?data_source=sbt_cmap;ref_map_set_aid=GmComposite2003&ref_map_aids=GmComposite2003_N&comparative_map_left=GmGWAS_N;highlight=%22Lodging,%20SoyNAM%204-g1%22"
+              url: "https://cmap.soybase.org/viewer?data_source=sbt_cmap;ref_map_set_aid=GmComposite2003&ref_map_aids=GmComposite2003_N&comparative_map_left=GmGWAS_N;highlight=%22GmGWAS_N_Lodging,%20SoyNAM%204-g1%22"
     - category:
         - name: browser
           instances:

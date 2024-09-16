@@ -2,6 +2,7 @@ extends: default
 ignore:
   - .*
   - _data/datastore-metadata
+  - _site
   - _themes
   - node_modules
   - vendor

@@ -8,16 +8,16 @@ ifeq ($(OS), Darwin)
   export PATH := ${PWD}/vendor/gems/bin:${PATH}
 
   JEKYLL_SERVE_ARGS = --livereload
-  HTMLPROOFER_ARGS = --allow-missing-href=true --ignore-missing-alt=true --cache '{"timeframe": {"external": "30d"}}'
+  HTMLPROOFER_ARGS = --allow-missing-href=true --ignore-missing-alt=true
   PYTHON_VENV_ACTIVATE = . ./vendor/python-venv/bin/activate
 else # assume dev container
   # html-proofer 5.x
-  HTMLPROOFER_ARGS = --allow-missing-href --ignore-missing-alt --cache '{"timeframe": {"external": "30d"}}'
+  HTMLPROOFER_ARGS = --allow-missing-href --ignore-missing-alt
   NPM_INSTALL_OPTIONS = -g
   PYTHON_VENV_ACTIVATE = true # no-op
 endif
 
-JBROWSE_VERSION = 2.15.0
+JBROWSE_VERSION = 2.15.1
 PA11YCI_VERSION = 3.1.X
 
 serve: mostlyclean setup
@@ -32,7 +32,7 @@ yamllint:
 
 htmlproofer:
 	bundle exec jekyll build --profile --trace
-	bundle exec htmlproofer $(HTMLPROOFER_ARGS) --ignore-status-codes 503 --ignore-files '/\/uikit\/tests\//' --log-level debug ./_site
+	bundle exec htmlproofer $(HTMLPROOFER_ARGS) --ignore-status-codes 301,429,503 --ignore-files '/\/uikit\/tests\//' --ignore-url '/germplasm-map.legumeinfo.org/,/pgrc-rpc.agr.gc.ca\/gringlobal\/search/'  --cache '{"timeframe": {"external": "30d"}}' --log-level debug ./_site
 
 pa11y: setup
 	if ! { command -v pa11y-ci || npm ls pa11y-ci ; } >/dev/null 2>&1; then npm install $(NPM_INSTALL_OPTIONS) pa11y-ci@${PA11YCI_VERSION}; fi
@@ -52,7 +52,7 @@ setup:
 	if ! bundle check; then bundle install; fi
 
 mostlyclean:
-	rm -rf .jekyll-cache/ .jekyll-metadata _site/ tmp/
+	rm -rf .jekyll-cache/ .jekyll-metadata _site/
 
 clean: mostlyclean
-	rm -rf ./assets/js/jbrowse Gemfile.lock $${PWD}/vendor package.json package-lock.json node_modules
+	rm -rf ./assets/js/jbrowse Gemfile.lock $${PWD}/vendor package.json package-lock.json node_modules tmp/

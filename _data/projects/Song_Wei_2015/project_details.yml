@@ -20,9 +20,9 @@
         - name: data
           instances:
             - description: "InDel coordinates for Hedou12 relative to Wm82.a1 (Text File 2.1 Mb)"
-              url: "https://www.soybase.org/data_distribution/projects/SoyBase.B2014.01/InDel_coordinates.txt"
+              url: "https://legacy.soybase.org/projects/SoyBase.B2014.01/InDel_coordinates.txt"
             - description: "SNP coordinates for Hedou12 relative to Wm82.a1 (Text File 8.2 Mb)"
-              url: "https://www.soybase.org/data_distribution/projects/SoyBase.B2014.01/SNP_coordinates.txt"
+              url: "https://legacy.soybase.org/projects/SoyBase.B2014.01/SNP_coordinates.txt"
     - category:
         - name: sequence reads
           instances:
