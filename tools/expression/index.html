@@ -3,25 +3,9 @@ title: Expression tools
 tools_menu: true
 ---
 
-<style>
-#quickSearchButton:hover {
-  cursor: pointer;
-  background-color: #235626;
-  color: white;
-}
-#go-btn:hover {
-  cursor: pointer;
-  background-color: #235626;
-  color: white;
-}
-body {
-  margin-top: -50px;
-}
-</style>
-
 <body onload="buildURLGeneSequence(), buildURLGlycineMineGene()">
   <h2><b>Gene Expression Resources for Soybean</b></h2>
-<div class="uk-card uk-card-default uk-card-body uk-width-1-1@m uk-margin">
+<div class="uk-card uk-card-default uk-card-body uk-width-1-1@m uk-margin" >
   <p>
     <b style="font-size:larger">Expression profile, phylogenetic tree, and coexpression network</b> for a single gene.<br>
     From the <b><a target="_blank" href="https://conekt.legumeinfo.org">CoNekT report</a></b>, you can ...
@@ -33,11 +17,11 @@ body {
     <form id="gotogeneform" oninput="buildURLGeneSequence()" target="_blank">
       <input id="parturl" type="hidden" value="https://conekt.legumeinfo.org/sequence/find_forLIS/">
       &nbsp;&nbsp; Prefixed gene ID: <input class="uk-input uk-form-width-large uk-form-small" style="color:#235626;font-style:italic;font-size:0.9em" type="text" id="geneid" value="glyma.Wm82.gnm2.ann1.Glyma.15g026400">
-      <input id="go-btn" type="submit" value="GO" class="uk-input uk-form-width-xsmall uk-form-small">
+      <button id="go-btn" type="submit" value="GO" class="uk-button uk-button-primary uk-button-small">Go</button>
       <br>
       &nbsp;&nbsp; Examples (include prefix; assembly 2): &nbsp;&nbsp; glyma.Wm82.gnm2.ann1.Glyma.15g026400 &nbsp;&nbsp; glyma.Wm82.gnm2.ann1.Glyma.12G040000
     </form>
-    <font style="color:#666">&nbsp;&nbsp;&nbsp;&nbsp; URL for the gene:</font> <a id="genelink" href="" target="_blank" style="word-wrap: break-word;"></a>
+    <font>&nbsp;&nbsp;&nbsp;&nbsp; URL for the gene:</font> <a id="genelink" href="" target="_blank" style="word-wrap: break-word;"></a>
   </p>
 </div>
 
@@ -67,7 +51,7 @@ body {
         <input type="hidden" id="mode" name="mode" value="Absolute">
         &nbsp;&nbsp; <input class="uk-input uk-form-width-small uk-form-small" id="primaryGene" style="width:180px;color:#235626;font-style:italic;font-size:0.9em" type="text" 
           id="quickSearchInput" name="primaryGene" value="Glyma12g04390" onFocus="clearElement(this);" />
-        <input type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-input uk-form-width-xsmall uk-form-small" />
+        <button type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-button uk-button-primary uk-button-small">GO</button>
         <span style="margin-left: 5px;">Whole-plant atlas; Severin et al. (2010)</span><br>
       </form>
     </div>
@@ -77,7 +61,7 @@ body {
           <input type="hidden" id="mode" name="mode" value="Absolute">
           &nbsp;&nbsp; <input class="uk-input uk-form-width-small uk-form-small" id="primaryGene" style="width:180px;color:#235626;font-style:italic;font-size:0.9em" type="text" 
             id="quickSearchInput" name="primaryGene" value="Glyma.12G040000" onFocus="clearElement(this);" />
-          <input type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-input uk-form-width-xsmall uk-form-small" />
+          <button type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-button uk-button-primary uk-button-small">GO</button>
           <span style="margin-left: 5px;">Whole-plant and root expression data; Libault et al. (2010)</span><br>
         </form>
     </div>
@@ -87,7 +71,7 @@ body {
           <input type="hidden" id="mode" name="mode" value="Absolute">
           &nbsp;&nbsp; <input class="uk-input uk-form-width-small uk-form-small" id="primaryGene" style="width:180px;color:#235626;font-style:italic;font-size:0.9em" type="text" 
             id="quickSearchInput" name="primaryGene" value="Glyma15g03040" onFocus="clearElement(this);" />
-          <input type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-input uk-form-width-xsmall uk-form-small" />
+          <button type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-button uk-button-primary uk-button-small">GO</button>
           <span style="margin-left: 5px;">Godberg-Harada Soybean embryonic seed; Danzer et al. (2015)</span><br>
         </form>
     </div>
@@ -97,7 +81,7 @@ body {
           <input type="hidden" id="mode" name="mode" value="Absolute">
           &nbsp;&nbsp; <input class="uk-input uk-form-width-small uk-form-small" id="primaryGene" style="width:180px;color:#235626;font-style:italic;font-size:0.9em" type="text" 
             id="quickSearchInput" name="primaryGene" value="Glyma.15g026400" onFocus="clearElement(this);" />
-          <input type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-input uk-form-width-xsmall uk-form-small" />
+          <button type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-button uk-button-primary uk-button-small">GO</button>
           <span style="margin-left: 5px;">Godberg-Harada Soybean heart / globular / cotyledon; Peltier et al. (2017)</span>
         </form>
         <br>    
@@ -113,17 +97,17 @@ body {
     <form id="gotogeneform_2" oninput="buildURLGlycineMineGene()" target="_blank">
       <input id="parturl_2" type="hidden" value="https://mines.legumeinfo.org/glycinemine/gene:">
       &nbsp;&nbsp; Prefixed gene ID: <input class="uk-input uk-form-width-large uk-form-small" style="color:#235626;font-style:italic;font-size:0.9em" type="text" id="geneid_2" value="glyma.Wm82.gnm2.ann1.Glyma.15g026400">
-      <input type="submit" id="go-btn" value="GO" class="uk-input uk-form-width-xsmall uk-form-small"><br>
+      <button type="submit" id="go-btn" value="GO" class="uk-button uk-button-primary uk-button-small">GO</button><br>
       &nbsp;&nbsp; Examples (include prefix; assembly 2): &nbsp;&nbsp; glyma.Wm82.gnm2.ann1.Glyma.15g026400 &nbsp;&nbsp; glyma.Wm82.gnm2.ann1.Glyma.12G040000
     </form>
-    <font style="color:#666">&nbsp;&nbsp;&nbsp;&nbsp; URL for the gene:</font> <a id="genelink_2" href="" target="_blank" style="word-wrap: break-word;"></a>
+    <font>&nbsp;&nbsp;&nbsp;&nbsp; URL for the gene:</font> <a id="genelink_2" href="" target="_blank" style="word-wrap: break-word;"></a>
     <br>
     <br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... or enter a gene in the Gene Search Tool, then choose the link to GlycineMine:<br>
     <form action="/tools/search/gene.html" name="search" method="get" style="display:inline;">
       &nbsp;&nbsp; <input class="uk-input uk-form-width-small uk-form-small" id="identifier" style="width:180px;color:#235626;font-style:italic;font-size:0.9em" type="text" 
         id="quickSearchInput" name="identifier" value="Glyma.15g026400" onFocus="clearElement(this);" />
-      <input type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-input uk-form-width-xsmall uk-form-small" />
+      <button type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-button uk-button-primary uk-button-small">GO</button>
     </form>
     <br>
     &nbsp;&nbsp; Examples (prefix optional; assembly 2): &nbsp;&nbsp; Glyma.15g026400 &nbsp;&nbsp; glyma.Wm82.gnm2.ann1.Glyma.12G040000
