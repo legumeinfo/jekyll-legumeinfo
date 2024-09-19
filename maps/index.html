@@ -24,23 +24,25 @@ redirect_from: /sbt/
 
 {% for cmap-set in map_cmap.cmap-sets %}
   {% if cmap-set.URL contains "cmap-classic" %}
-     <table class="uk-table">
-       <tbody>
-         <tr>
-           {% assign chr = 0 %}
-           {% for LG in cmap-set.linkage_groups %}
-             {% assign chr = chr | plus: 1 %}
-             {% capture chr_num %}{{ chr | prepend: '00' | slice: -2,2 }}{% endcapture %}
-             {% capture iframe_path %}/maps/cmap-classic/{{chr_num}}/index.html{% endcapture %}
-             <td>
-               <div  data-uk-tooltip="{pos:'bottom-left'}"; uk-tooltip="title: {{ LG }}">
-                 <a href="{{ iframe_path }}">{{ chr_num }}</a>
-               </div>
-             </td>
-           {% endfor %}
-         </tr>
-       </tbody>
-     </table>
+    <div class="uk-overflow-auto">
+      <table class="uk-table">
+        <tbody>
+          <tr>
+            {% assign chr = 0 %}
+            {% for LG in cmap-set.linkage_groups %}
+              {% assign chr = chr | plus: 1 %}
+              {% capture chr_num %}{{ chr | prepend: '00' | slice: -2,2 }}{% endcapture %}
+              {% capture iframe_path %}/maps/cmap-classic/{{chr_num}}/index.html{% endcapture %}
+              <td>
+                <div  data-uk-tooltip="{pos:'bottom-left'}"; uk-tooltip="title: {{ LG }}">
+                  <a href="{{ iframe_path }}">{{ chr_num }}</a>
+                </div>
+              </td>
+            {% endfor %}
+          </tr>
+        </tbody>
+      </table>
+    </div>
   {% endif %}
 {% endfor %}
 
@@ -63,10 +65,12 @@ redirect_from: /sbt/
     <ul uk-accordion>
       {% if idx == 0 %}
         <li class="uk-open">
+          {% else %}
+          <li>
       {% endif %}
       {% assign idx = idx | plus: 1 %}
         <a class="uk-accordion-title" href="#"><strong>&#8226;</strong> {{ cmap-set.description }}</a>
-        <div class="uk-accordion-content">
+        <div class="uk-accordion-content uk-overflow-auto">
           <table class="uk-table">
             <tbody>
               <tr>

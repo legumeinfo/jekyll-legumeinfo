@@ -20,6 +20,7 @@ redirect_from: /snps/
 			An Illumina Infinium BeadChip containing over 50,000 SNPs from soybean (Glycine max L. Merr.) has been developed (<a href='https://doi.org/10.1371/journal.pone.0054985'>Song et al. 2013</a>; <a href='https://doi.org/10.1534/g3.115.019000'>Song et al. 2015</a>).  A total of 498,921,777 reads 35-45 bp in length were obtained from DNA sequence analysis of reduced representation libraries from several soybean accessions which included six cultivated and two wild soybean (G. soja Sieb. et Zucc.) genotypes. These reads were mapped to the <a href='/resources/genome_info/'>Wm82.a1 soybean whole genome sequence </a>(<a href='/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm01:1-1000000'>Gemome Browser</a>) and 209,903 SNPs were identified. After applying several filters, a total of 146,161 SNPs were determined to be candidates for Illumina Infinium II BeadChip design. To equalize the distance between selected SNPs, increase assay success rate, and minimize the number of SNPs with low minor allele frequency, an iteration algorithm based on a selection index was developed and used to select 60,800 SNPs for Infinium BeadChip design. Of the 60,800 SNPs, 50,701 were targeted to euchromatic regions and 10,000 to heterochromatic regions of the 20 soybean chromosomes. In addition, 99 SNPs were targeted to unanchored sequence scaffolds. Of the 60,800 SNPs, a total of 52,041 passed Illumina's manufacturing phase to produce the SoySNP50K iSelect BeadChip.</br>
 
   <h2>View SoySNP50K SNPs in SoyBase Genome Browser</h2>
+  <div class="uk-overflow-auto">
   <table>
     <tr>
       <th>Assembly</th><th colspan='19'>Chromosome</th>
@@ -94,7 +95,7 @@ redirect_from: /snps/
       <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm20:1-1000000" target="_blank">Gm20</a></td>
     </tr>
   </table>
- 
+</div>
 	      <h2>Download SNP Data</h2>
 				The SoySNP50K iSelect BeadChip has been used to genotype the <a href='https://www.ars.usda.gov/main/site_main.htm?modecode=36-11-05-00'>USDA Soybean Germplasm Collection</a> 
 				(<a href='https://academic.oup.com/g3journal/article/5/10/1999/6028905' style='font-size:smaller;'><span style='font-style:italic;'>Song, Qijian, David L. Hyten, Gaofeng Jia, Charles V. Quigley, Edward W. Fickus, 
@@ -110,50 +111,58 @@ redirect_from: /snps/
 				The complete data set for 20,087 G. max and G. soja accessions genotyped with 42,509 SNPs is available for Wm82.a1 and Wm82.a2 in either vcf or HapMap format. You can extract a large list of
 				cultivars using <a href="https://github.com/samtools/bcftools" target="_blank">BCFtools</a> and a VCF file chosen below.</br></br> 
 				
-        <style>#dltable{margin-top:1em;border-collapse:collapse;border:solid;}
+        <style>
+        #dltable{margin-top:1em;border-collapse:collapse;border:solid;margin-left: auto;margin-right: auto;}
 				#dltable th{border:solid;}
-				.bytecount{font-weight:normal;font-size:8pt;}</style>
-								<a name="dltable"></a>
-				<table id='dltable'>
-				<tr><th colspan='4'>SNP50K Downloads</th></tr>
-				<tr>
-					<th>Wm82.a1</th>
-					<th><a href='https://data.soybase.org/Glycine/max/diversity/Wm82.gnm1.div.Song_Hyten_2015/glyma.Wm82.gnm1.div.Song_Hyten_2015.vcf.gz'>VCF</a><br />
-          <span class='bytecount'>113.08&nbsp;Megabytes</span>
-					</th>
-					<th><a href='https://data.soybase.org/Glycine/max/diversity/Wm82.gnm1.div.Song_Hyten_2015/glyma.Wm82.gnm1.div.Song_Hyten_2015.hmp.txt.gz'>HapMap</a><br />
-          <span class='bytecount'>114.43&nbsp;Megabytes</span>
-					</th>
-				</tr>
-				<tr>
-					<th>Wm82.a2</th>
-					<th><a href='https://data.soybase.org/Glycine/max/diversity/Wm82.gnm2.div.Song_Hyten_2015/glyma.Wm82.gnm2.div.Song_Hyten_2015.vcf.gz'>VCF</a><br />
-          <span class='bytecount'>159.54&nbsp;Megabytes</span>
-					</th>
-					<th><a href='https://data.soybase.org/Glycine/max/diversity/Wm82.gnm2.div.Song_Hyten_2015/glyma.Wm82.gnm2.div.Song_Hyten_2015.hmp.gz'>HapMap</a><br />
-          <span class='bytecount'>131.09&nbsp;Megabytes</span>
-					</th>
-				</tr>
-        <tr>
-          <th>Wm82.a4</th>
-          <th><a href='https://data.soybase.org/Glycine/max/diversity/Wm82.gnm4.div.Song_Hyten_2015/glyma.Wm82.gnm4.div.Song_Hyten_2015.vcf.gz'>VCF</a><br />
-          <span class='bytecount'>155.05&nbsp;Megabytes</span>
-          </th>
-          <th><a href='https://data.soybase.org/Glycine/max/diversity/Wm82.gnm4.div.Song_Hyten_2015/glyma.Wm82.gnm4.div.Song_Hyten_2015.hmp.gz'>HapMap</a><br />
-          <span class='bytecount'>128.22&nbsp;Megabytes</span>
-          </th>
-        </tr>
+				.bytecount{font-weight:normal;font-size:8pt;}
+        #maftable{margin-left: auto;margin-right: auto;}
+        </style>
 
-				</table>
-				<br />
-				<table id='maftable'>
-				<tr><th colspa='4'>Download file of Minor Allele<br> Frequencies (MAF) of SNPs</th></tr>
-				<tr><th><a href='https://data.soybase.org/Glycine/max/diversity/Wm82.gnm1.div.Song_Hyten_2015/glyma.Wm82.gnm1.div.Song_Hyten_2015.maf.txt.gz'>MAFs</a><br /></a>
-				<span class='bytecount'>20.24&nbsp;Megabytes<span></th></tr>
-				</table>
-				<br />
-				<a href="https://data.soybase.org/Glycine/max/diversity/Wm82.gnm2.div.Song_Hyten_2015/glyma.Wm82.gnm2.div.Song_Hyten_2015.AlleleCount.tsv.gz">Download allele counts for each accession in the dataset</a>
-		    <br />
+	<a name="dltable"></a>
+
+  <div class="uk-align-left@m">
+    <table id='dltable'>
+      <tr><th colspan='4'>SNP50K Downloads</th></tr>
+      <tr>
+        <th>Wm82.a1</th>
+        <th><a href='https://data.soybase.org/Glycine/max/diversity/Wm82.gnm1.div.Song_Hyten_2015/glyma.Wm82.gnm1.div.Song_Hyten_2015.vcf.gz'>VCF</a><br />
+        <span class='bytecount'>113.08&nbsp;Megabytes</span>
+        </th>
+        <th><a href='https://data.soybase.org/Glycine/max/diversity/Wm82.gnm1.div.Song_Hyten_2015/glyma.Wm82.gnm1.div.Song_Hyten_2015.hmp.txt.gz'>HapMap</a><br />
+        <span class='bytecount'>114.43&nbsp;Megabytes</span>
+        </th>
+      </tr>
+      <tr>
+        <th>Wm82.a2</th>
+        <th><a href='https://data.soybase.org/Glycine/max/diversity/Wm82.gnm2.div.Song_Hyten_2015/glyma.Wm82.gnm2.div.Song_Hyten_2015.vcf.gz'>VCF</a><br />
+        <span class='bytecount'>159.54&nbsp;Megabytes</span>
+        </th>
+        <th><a href='https://data.soybase.org/Glycine/max/diversity/Wm82.gnm2.div.Song_Hyten_2015/glyma.Wm82.gnm2.div.Song_Hyten_2015.hmp.gz'>HapMap</a><br />
+        <span class='bytecount'>131.09&nbsp;Megabytes</span>
+        </th>
+      </tr>
+      <tr>
+        <th>Wm82.a4</th>
+        <th><a href='https://data.soybase.org/Glycine/max/diversity/Wm82.gnm4.div.Song_Hyten_2015/glyma.Wm82.gnm4.div.Song_Hyten_2015.vcf.gz'>VCF</a><br />
+        <span class='bytecount'>155.05&nbsp;Megabytes</span>
+        </th>
+        <th><a href='https://data.soybase.org/Glycine/max/diversity/Wm82.gnm4.div.Song_Hyten_2015/glyma.Wm82.gnm4.div.Song_Hyten_2015.hmp.gz'>HapMap</a><br />
+        <span class='bytecount'>128.22&nbsp;Megabytes</span>
+        </th>
+      </tr>
+      </table>
+  
+    <br />
+
+    <table id='maftable'>
+      <tr><th colspa='4'>Download file of Minor Allele<br> Frequencies (MAF) of SNPs</th></tr>
+      <tr><th><a href='https://data.soybase.org/Glycine/max/diversity/Wm82.gnm1.div.Song_Hyten_2015/glyma.Wm82.gnm1.div.Song_Hyten_2015.maf.txt.gz'>MAFs</a><br /></a>
+      <span class='bytecount'>20.24&nbsp;Megabytes<span></th></tr>
+      </table>
+      <br />
+      <a href="https://data.soybase.org/Glycine/max/diversity/Wm82.gnm2.div.Song_Hyten_2015/glyma.Wm82.gnm2.div.Song_Hyten_2015.AlleleCount.tsv.gz">Download allele counts for each accession in the dataset</a>
+      <br />
+   </div>
   </body>
 </html>
 

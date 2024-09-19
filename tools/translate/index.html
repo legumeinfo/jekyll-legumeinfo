@@ -178,26 +178,28 @@ example:
     <b>correspondence table for the reference lines</b>:
   </a>
 </p>
-<table class="uk-width-1-2 uk-text-center uk-table-striped uk-table-condensed">
-  <tr>
-    <th class="uk-text-center uk-text-normal">Pangene ID</th>
-    <th class="uk-text-center uk-text-normal">Wm82.gnm1.ann1 / Wm82.a1.v1</th>
-    <th class="uk-text-center uk-text-normal">Wm82.gnm2.ann1 / Wm82.a2.v1</th>
-    <th class="uk-text-center uk-text-normal">Wm82.gnm4.ann1 / Wm82.a4.v1</th>
-    <th class="uk-text-center uk-text-normal">Wm82.gnm6.ann1 / Wm82.a6.v1</th>
-    <th class="uk-text-center uk-text-normal">more</th>
-  </tr>
-  {% for name in page.example %}
+<div class="uk-overflow-auto">
+  <table class="uk-width-1-2 uk-text-center uk-table-striped uk-table-condensed">
     <tr>
-      <td class="uk-text-light" >{{ name.pangene }}</td>
-      <td class="uk-text-light">{{ name.glyma_Wm82_gnm1_ann1 }}</td>
-      <td class="uk-text-light">{{ name.glyma_Wm82_gnm2_ann1 }}</td>
-      <td class="uk-text-light">{{ name.glyma_Wm82_gnm4_ann1 }}</td>
-      <td class="uk-text-light">{{ name.glyma_Wm82_gnm6_ann1 }}</td>
-      <td class="uk-text-light">{{ name.more }}</td>
+      <th class="uk-text-center uk-text-normal">Pangene ID</th>
+      <th class="uk-text-center uk-text-normal">Wm82.gnm1.ann1 / Wm82.a1.v1</th>
+      <th class="uk-text-center uk-text-normal">Wm82.gnm2.ann1 / Wm82.a2.v1</th>
+      <th class="uk-text-center uk-text-normal">Wm82.gnm4.ann1 / Wm82.a4.v1</th>
+      <th class="uk-text-center uk-text-normal">Wm82.gnm6.ann1 / Wm82.a6.v1</th>
+      <th class="uk-text-center uk-text-normal">more</th>
     </tr>
-  {% endfor %}
-</table>
+    {% for name in page.example %}
+      <tr>
+        <td class="uk-text-light" >{{ name.pangene }}</td>
+        <td class="uk-text-light">{{ name.glyma_Wm82_gnm1_ann1 }}</td>
+        <td class="uk-text-light">{{ name.glyma_Wm82_gnm2_ann1 }}</td>
+        <td class="uk-text-light">{{ name.glyma_Wm82_gnm4_ann1 }}</td>
+        <td class="uk-text-light">{{ name.glyma_Wm82_gnm6_ann1 }}</td>
+        <td class="uk-text-light">{{ name.more }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>
 
 <h3>Methods</h3>
 The gene correspondences in the lookup tables above were calculated using the 

@@ -5,122 +5,154 @@ tools_menu: true
 
 <body onload="buildURLGeneSequence(), buildURLGlycineMineGene()">
   <h2><b>Gene Expression Resources for Soybean</b></h2>
-<div class="uk-card uk-card-default uk-card-body uk-width-1-1@m uk-margin" >
-  <p>
-    <b style="font-size:larger">Expression profile, phylogenetic tree, and coexpression network</b> for a single gene.<br>
-    From the <b><a target="_blank" href="https://conekt.legumeinfo.org">CoNekT report</a></b>, you can ...
-      view the expression profile, 
-      view the <u>phylogenetic tree of orthologous genes</u> with expression values, and 
-      view <u>profile neighbors</u> (genes with similar co-expression profiles).
+
+  <div>
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m uk-margin" >
+      <p>
+        <b style="font-size:larger">Expression profile, phylogenetic tree, and coexpression network</b> for a single gene.<br>
+        From the <b><a target="_blank" href="https://conekt.legumeinfo.org">CoNekT report</a></b>, you can ...
+          view the expression profile, 
+          view the <u>phylogenetic tree of orthologous genes</u> with expression values, and 
+          view <u>profile neighbors</u> (genes with similar co-expression profiles).
+        
+        This is available for the Williams 82 assembly 2 annotation <i>(glyma.Wm82.gnm2.ann1.)</i>.
+        <form id="gotogeneform" oninput="buildURLGeneSequence()" target="_blank">
+          <div> Prefixed gene ID:</div>
+          <div class="bar-input-group">
+            <input class="uk-margin-small" id="parturl" type="hidden" value="https://conekt.legumeinfo.org/sequence/find_forLIS/">
+            <input class="uk-input uk-width-large uk-form-small" style="color:#235626;font-style:italic;font-size:0.9em" type="text" id="geneid" value="glyma.Wm82.gnm2.ann1.Glyma.15g026400">
+          <button type="submit" value="GO" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+          </div>
+          <br>
+           Examples (include prefix; assembly 2):  glyma.Wm82.gnm2.ann1.Glyma.15g026400  glyma.Wm82.gnm2.ann1.Glyma.12G040000
+        </form>
+        <font> URL for the gene:</font> <a id="genelink" href="" target="_blank" style="word-wrap: break-word;"></a>
+      </p>
+    </div>
     
-    This is available for the Williams 82 assembly 2 annotation <i>(glyma.Wm82.gnm2.ann1.)</i>.
-    <form id="gotogeneform" oninput="buildURLGeneSequence()" target="_blank">
-      <input id="parturl" type="hidden" value="https://conekt.legumeinfo.org/sequence/find_forLIS/">
-      &nbsp;&nbsp; Prefixed gene ID: <input class="uk-input uk-form-width-large uk-form-small" style="color:#235626;font-style:italic;font-size:0.9em" type="text" id="geneid" value="glyma.Wm82.gnm2.ann1.Glyma.15g026400">
-      <button id="go-btn" type="submit" value="GO" class="uk-button uk-button-primary uk-button-small">Go</button>
-      <br>
-      &nbsp;&nbsp; Examples (include prefix; assembly 2): &nbsp;&nbsp; glyma.Wm82.gnm2.ann1.Glyma.15g026400 &nbsp;&nbsp; glyma.Wm82.gnm2.ann1.Glyma.12G040000
-    </form>
-    <font>&nbsp;&nbsp;&nbsp;&nbsp; URL for the gene:</font> <a id="genelink" href="" target="_blank" style="word-wrap: break-word;"></a>
-  </p>
-</div>
-
-<div class="uk-card uk-card-default uk-card-body uk-width-1-1@m uk-margin">
-   <b style="font-size:larger">Comparing Expression profiles of multiple genes</b><br>
-  From the <b><a target="_blank" href="https://conekt.legumeinfo.org/profile_comparison/">CoNekT Compare Profiles page</a></b>, you can compare the expression of up to 50 genes on the same graph in each experimental condition or tissue. To use this tool: 
-<ul>
-  <li>Change the species to <i>Glycine max</i></li>
-  <li>Enter a list of gene identifiers, using the prefixed gene IDs, e.g. <i>glyma.Wm82.gnm2.ann1.</i>15g026400</li>
-  <li>Click "Show profiles"</li>
-</ul>
-</p>
-
-<p>
-  <b style="font-size:larger">Create a custom heatmap with multiple genes</b><br>
-  From the <b><a target="_blank" href="https://conekt.legumeinfo.org/heatmap/">CoNekT Create Custom Heatmap page</a></b>, you can 
-  generate a detailed heatmap for a single species (<i>Default</i> tab) and a cross-species comparative heatmap (<i>Comparative</i> tab).
-  To use this tool, enter a list of gene identifiers, using the prefixed gene ID, e.g. <i>glyma.Wm82.gnm2.ann1.</i>15g026400
-</p>
-</div>
-
-<div class="uk-card uk-card-default uk-card-body uk-width-1-1@m uk-margin">
-  <b style="font-size:larger">BAR eFP (electronic fluorescent pictograph) browser</b> for genes from the in the Williams 82 assemblies 1 and 2.<br><br>
-    <div class="uk-margin-small">
-      <form action="https://bar.utoronto.ca/efpsoybean/cgi-bin/efpWeb.cgi" name="search" method="get" style="display:inline;" target="_blank">
-        <input type="hidden" id="dataSource" name="dataSource" value="soybean_severin">
-        <input type="hidden" id="mode" name="mode" value="Absolute">
-        &nbsp;&nbsp; <input class="uk-input uk-form-width-small uk-form-small" id="primaryGene" style="width:180px;color:#235626;font-style:italic;font-size:0.9em" type="text" 
-          id="quickSearchInput" name="primaryGene" value="Glyma12g04390" onFocus="clearElement(this);" />
-        <button type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-button uk-button-primary uk-button-small">GO</button>
-        <span style="margin-left: 5px;">Whole-plant atlas; Severin et al. (2010)</span><br>
-      </form>
-    </div>
-    <div class="uk-margin-small">
-        <form action="https://bar.utoronto.ca/efpsoybean/cgi-bin/efpWeb.cgi" name="search" method="get" style="display:inline;" target="_blank">
-          <input type="hidden" id="dataSource" name="dataSource" value="soybean">
-          <input type="hidden" id="mode" name="mode" value="Absolute">
-          &nbsp;&nbsp; <input class="uk-input uk-form-width-small uk-form-small" id="primaryGene" style="width:180px;color:#235626;font-style:italic;font-size:0.9em" type="text" 
-            id="quickSearchInput" name="primaryGene" value="Glyma.12G040000" onFocus="clearElement(this);" />
-          <button type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-button uk-button-primary uk-button-small">GO</button>
-          <span style="margin-left: 5px;">Whole-plant and root expression data; Libault et al. (2010)</span><br>
-        </form>
-    </div>
-    <div class="uk-margin-small">
-        <form action="https://bar.utoronto.ca/efpsoybean/cgi-bin/efpWeb.cgi" name="search" method="get" style="display:inline;" target="_blank">
-          <input type="hidden" id="dataSource" name="dataSource" value="soybean_embryonic_development">
-          <input type="hidden" id="mode" name="mode" value="Absolute">
-          &nbsp;&nbsp; <input class="uk-input uk-form-width-small uk-form-small" id="primaryGene" style="width:180px;color:#235626;font-style:italic;font-size:0.9em" type="text" 
-            id="quickSearchInput" name="primaryGene" value="Glyma15g03040" onFocus="clearElement(this);" />
-          <button type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-button uk-button-primary uk-button-small">GO</button>
-          <span style="margin-left: 5px;">Godberg-Harada Soybean embryonic seed; Danzer et al. (2015)</span><br>
-        </form>
-    </div>
-    <div class="uk-margin-small">
-        <form action="https://bar.utoronto.ca/efpsoybean/cgi-bin/efpWeb.cgi" name="search" method="get" style="display:inline;" target="_blank">
-          <input type="hidden" id="dataSource" name="dataSource" value="soybean_heart_cotyledon_globular">
-          <input type="hidden" id="mode" name="mode" value="Absolute">
-          &nbsp;&nbsp; <input class="uk-input uk-form-width-small uk-form-small" id="primaryGene" style="width:180px;color:#235626;font-style:italic;font-size:0.9em" type="text" 
-            id="quickSearchInput" name="primaryGene" value="Glyma.15g026400" onFocus="clearElement(this);" />
-          <button type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-button uk-button-primary uk-button-small">GO</button>
-          <span style="margin-left: 5px;">Godberg-Harada Soybean heart / globular / cotyledon; Peltier et al. (2017)</span>
-        </form>
-        <br>    
-        &nbsp;&nbsp; Examples (no prefix; assemby 1 or 2): 
-        &nbsp;&nbsp; Glyma12g04390 &nbsp;&nbsp; Glyma.12G040000 &nbsp;&nbsp; Glyma15g03040 &nbsp;&nbsp; Glyma.15g026400  
-    </div>
-</div>
-
-<div class="uk-card uk-card-default uk-card-body uk-width-1-1@m uk-margin">
-  <p>
-    <b style="font-size:larger">Expression plot in GlycineMine</b> for genes from the in the Williams 82 assembly 2.<br>
-  
-    <form id="gotogeneform_2" oninput="buildURLGlycineMineGene()" target="_blank">
-      <input id="parturl_2" type="hidden" value="https://mines.legumeinfo.org/glycinemine/gene:">
-      &nbsp;&nbsp; Prefixed gene ID: <input class="uk-input uk-form-width-large uk-form-small" style="color:#235626;font-style:italic;font-size:0.9em" type="text" id="geneid_2" value="glyma.Wm82.gnm2.ann1.Glyma.15g026400">
-      <button type="submit" id="go-btn" value="GO" class="uk-button uk-button-primary uk-button-small">GO</button><br>
-      &nbsp;&nbsp; Examples (include prefix; assembly 2): &nbsp;&nbsp; glyma.Wm82.gnm2.ann1.Glyma.15g026400 &nbsp;&nbsp; glyma.Wm82.gnm2.ann1.Glyma.12G040000
-    </form>
-    <font>&nbsp;&nbsp;&nbsp;&nbsp; URL for the gene:</font> <a id="genelink_2" href="" target="_blank" style="word-wrap: break-word;"></a>
-    <br>
-    <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... or enter a gene in the Gene Search Tool, then choose the link to GlycineMine:<br>
-    <form action="/tools/search/gene.html" name="search" method="get" style="display:inline;">
-      &nbsp;&nbsp; <input class="uk-input uk-form-width-small uk-form-small" id="identifier" style="width:180px;color:#235626;font-style:italic;font-size:0.9em" type="text" 
-        id="quickSearchInput" name="identifier" value="Glyma.15g026400" onFocus="clearElement(this);" />
-      <button type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-button uk-button-primary uk-button-small">GO</button>
-    </form>
-    <br>
-    &nbsp;&nbsp; Examples (prefix optional; assembly 2): &nbsp;&nbsp; Glyma.15g026400 &nbsp;&nbsp; glyma.Wm82.gnm2.ann1.Glyma.12G040000
-  </p>
-  
-</div>
-
-<div class="uk-card uk-card-default uk-card-body uk-width-1-1@m uk-margin">
-    <b style="font-size:larger">Expression tracks in genome browsers</b> for the Williams 82 assembly 2 and 4.<br>
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m uk-margin">
+       <b style="font-size:larger">Comparing Expression profiles of multiple genes</b><br>
+      From the <b><a target="_blank" href="https://conekt.legumeinfo.org/profile_comparison/">CoNekT Compare Profiles page</a></b>, you can compare the expression of up to 50 genes on the same graph in each experimental condition or tissue. To use this tool: 
     <ul>
-      <li><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1&loc=glyma.Wm82.gnm2.Gm01:1-1000000&tracklist=true">Wm82.gnm2</a></li>
-      <li><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1&loc=glyma.Wm82.gnm4.Gm01:1-1000000&tracklist=true">Wm82.gnm4</a></li>
+      <li>Change the species to <i>Glycine max</i></li>
+      <li>Enter a list of gene identifiers, using the prefixed gene IDs, e.g. <i>glyma.Wm82.gnm2.ann1.</i>15g026400</li>
+      <li>Click "Show profiles"</li>
     </ul>
+    </p>
+    
+    <p>
+      <b style="font-size:larger">Create a custom heatmap with multiple genes</b><br>
+      From the <b><a target="_blank" href="https://conekt.legumeinfo.org/heatmap/">CoNekT Create Custom Heatmap page</a></b>, you can 
+      generate a detailed heatmap for a single species (<i>Default</i> tab) and a cross-species comparative heatmap (<i>Comparative</i> tab).
+      To use this tool, enter a list of gene identifiers, using the prefixed gene ID, e.g. <i>glyma.Wm82.gnm2.ann1.</i>15g026400
+    </p>
+    </div>
+    
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m uk-margin">
+      <b style="font-size:larger">BAR eFP (electronic fluorescent pictograph) browser</b> for genes from the in the Williams 82 assemblies 1 and 2.<br>
+        
+      <div>
+          <form action="https://bar.utoronto.ca/efpsoybean/cgi-bin/efpWeb.cgi" name="search" method="get" target="_blank">
+            <div class="uk-flex-inline uk-flex-row@l uk-flex-column-reverse">
+              <div class="bar-input-group">
+                <input type="hidden" id="dataSource" name="dataSource" value="soybean_severin">
+                <input type="hidden" id="mode" name="mode" value="Absolute">
+               <input class="uk-input uk-form-width-small uk-form-small" id="primaryGene" style="width:300px;color:#235626;font-style:italic;font-size:0.9em" type="text" 
+                id="quickSearchInput" name="primaryGene" value="Glyma12g04390" onFocus="clearElement(this);" />
+                <button type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+              </div>
+              <span class="uk-margin-auto-vertical uk-margin-small-left">Whole-plant atlas; Severin et al. (2010)</span>
+            </div>
+          </form>
+        </div>
+           
+        <div>
+            <form action="https://bar.utoronto.ca/efpsoybean/cgi-bin/efpWeb.cgi" name="search" method="get" target="_blank">
+              <div class="uk-flex-inline uk-flex-row@l uk-flex-column-reverse">
+                <div class="bar-input-group">
+                  <input type="hidden" id="dataSource" name="dataSource" value="soybean">
+                  <input type="hidden" id="mode" name="mode" value="Absolute">
+                  <input class="uk-input uk-form-width-small uk-form-small" id="primaryGene" style="width:300px;color:#235626;font-style:italic;font-size:0.9em" type="text" 
+                    id="quickSearchInput" name="primaryGene" value="Glyma.12G040000" onFocus="clearElement(this);" />
+                  <button type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+              </div>
+              <span class="uk-margin-auto-vertical uk-margin-small-left">Whole-plant and root expression data; Libault et al. (2010)</span>
+              </div>
+            </form>
+        </div>
+        
+        <div>
+            <form action="https://bar.utoronto.ca/efpsoybean/cgi-bin/efpWeb.cgi" name="search" method="get" target="_blank">
+            <div class="uk-flex-inline uk-flex-row@l uk-flex-column-reverse">
+              <div class="bar-input-group">
+                <input type="hidden" id="dataSource" name="dataSource" value="soybean_embryonic_development">
+                <input type="hidden" id="mode" name="mode" value="Absolute">
+                 <input class="uk-input uk-form-width-small uk-form-small" id="primaryGene" style="width:300px;color:#235626;font-style:italic;font-size:0.9em" type="text" 
+                  id="quickSearchInput" name="primaryGene" value="Glyma15g03040" onFocus="clearElement(this);" />
+                <button type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+               </div>
+                <span class="uk-margin-auto-vertical uk-margin-small-left">Godberg-Harada Soybean embryonic seed; Danzer et al. (2015)</span>
+            </div>
+            </form>
+        </div>
+        
+        <div>
+            <form action="https://bar.utoronto.ca/efpsoybean/cgi-bin/efpWeb.cgi" name="search" method="get" target="_blank">
+             <div class="uk-flex-inline uk-flex-row@l uk-flex-column-reverse">
+              <div class="bar-input-group">
+                <input type="hidden" id="dataSource" name="dataSource" value="soybean_heart_cotyledon_globular">
+                <input type="hidden" id="mode" name="mode" value="Absolute">
+                 <input class="uk-input uk-form-width-small uk-form-small" id="primaryGene" style="width:300px;color:#235626;font-style:italic;font-size:0.9em" type="text" 
+                  id="quickSearchInput" name="primaryGene" value="Glyma.15g026400" onFocus="clearElement(this);" />
+                <button type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+               </div>
+                <span class="uk-margin-auto-vertical uk-margin-small-left">Godberg-Harada Soybean heart / globular / cotyledon; Peltier et al. (2017)</span>
+             </div>
+            </form>
+            
+          </div>
+     
+             <div>
+              Examples (no prefix; assemby 1 or 2): 
+             Glyma12g04390  Glyma.12G040000  Glyma15g03040  Glyma.15g026400  
+             </div>
+    </div>
+    
+    
+    <div class="uk-card uk-card-default uk-card-body uk-width-1-1@m uk-margin">
+    
+        <b style="font-size:larger">Expression plot in GlycineMine</b> for genes from the in the Williams 82 assembly 2.<br>
+      
+        <form id="gotogeneform_2" oninput="buildURLGlycineMineGene()" target="_blank">
+          <input id="parturl_2" type="hidden" value="https://mines.legumeinfo.org/glycinemine/gene:" class="uk-margin-small">
+           <div>Prefixed gene ID:</div>
+           <div class="bar-input-group">
+           <input class="uk-input uk-width-large uk-form-small" style="color:#235626;font-style:italic;font-size:0.9em" type="text" id="geneid_2" value="glyma.Wm82.gnm2.ann1.Glyma.15g026400">
+          <button type="submit" value="GO" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button><br>
+        </div>
+           Examples (include prefix; assembly 2):  glyma.Wm82.gnm2.ann1.Glyma.15g026400  glyma.Wm82.gnm2.ann1.Glyma.12G040000
+        </form>
+        <font> URL for the gene:</font> <a id="genelink_2" href="" target="_blank" style="word-wrap: break-word;"></a>
+        <br>
+        <br>
+        <div class="uk-margin-small">... or enter a gene in the Gene Search Tool, then choose the link to GlycineMine:</div>
+        <form action="/tools/search/gene.html" name="search" method="get" style="display:inline;">
+          <div class="bar-input-group">
+           <input class="uk-input uk-width-large uk-form-small" id="identifier" style="color:#235626;font-style:italic;font-size:0.9em" type="text" 
+            id="quickSearchInput" name="identifier" value="Glyma.15g026400" onFocus="clearElement(this);" />
+          <button type="submit" id="quickSearchButton" name="searchSubmit" value="GO" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+        </form>
+        <br>
+         Examples (prefix optional; assembly 2):  Glyma.15g026400  glyma.Wm82.gnm2.ann1.Glyma.12G040000
+    </div>
+  </div>
+
+<div class="uk-card uk-card-default uk-card-body uk-width-1-1@m uk-margin">
+  <b style="font-size:larger">Expression tracks in genome browsers</b> for the Williams 82 assembly 2 and 4.<br>
+  <ul>
+    <li><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1&loc=glyma.Wm82.gnm2.Gm01:1-1000000&tracklist=true">Wm82.gnm2</a></li>
+    <li><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1&loc=glyma.Wm82.gnm4.Gm01:1-1000000&tracklist=true">Wm82.gnm4</a></li>
+  </ul>
 </div>
 
   <script>
@@ -137,9 +169,10 @@ tools_menu: true
           document.getElementById('genelink_2').href = urlgene_2; 
           document.getElementById('genelink_2').innerHTML = urlgene_2;
     }
+
   
-    function clearElement(e) {
-        var value = document.getElementById('quickSearchInput').value;
+    async function clearElement(e) {
+        var value = await document.getElementById('primaryGene').value;
       } 
   </script>
-</body>
+
