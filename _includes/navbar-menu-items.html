@@ -37,9 +37,9 @@
     </li>
   
     <li>
-      <a class="project_list uk-text-capitalize nav-title" href="{{ "/projects" | relative_url }}" style="color: white;">Projects</a>
-      {% if site.data.project_list %}
-      {% assign groups = site.data.project_list | sort: "short_title" %}
+      <a class="uk-text-capitalize nav-title" href="{{ "/projects" | relative_url }}" style="color: white;">Projects</a>
+      {% if site.data.projects %}
+      {% assign groups = site.data.projects | sort: "short_title" %}
         <div class="uk-dropdown">
           <ul class="uk-nav uk-dropdown-nav uk-link-reset">
           {% for group in groups %}

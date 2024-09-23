@@ -77,7 +77,7 @@ web_components_version: 1.4.0
 
 #### jekyll-datapage-generator config
 page_gen:
-  - data: project_list
+  - data: projects
     template: projects
     page_data_prefix: projects
     dir: projects

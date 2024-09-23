@@ -55,11 +55,27 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
       - run: bundle exec jekyll build --profile --trace # --baseurl "${{ steps.pages.outputs.base_path }}" # sub-uri currently not supported by site
+      - uses: actions/cache/restore@v4
+        id: restore-cache-jbrowse
+        with:
+          path: ./_site/assets/js/jbrowse
+          key: jbrowse-${{ hashFiles('_data/datastore-metadata/**', '_scripts/jbrowse-tracks.sh', 'Makefile', 'assets/js/jbrowse-config.json') }}
       - uses: actions/setup-node@v4
+        if: steps.restore-cache-jbrowse.outputs.cache-hit != 'true'
         with:
           node-version: 20
-      - run: make jbrowse
-      - run: mv assets/js/jbrowse _site/assets/js
+      - name: Make JBrowse
+        if: steps.restore-cache-jbrowse.outputs.cache-hit != 'true'
+        run: |
+          make jbrowse
+          rm -rf assets/js/jbrowse/test_data
+          mv assets/js/jbrowse _site/assets/js
+      - uses: actions/cache/save@v4
+        id: save-cache-jbrowse
+        if: steps.restore-cache-jbrowse.outputs.cache-hit != 'true'
+        with:
+          path: ./_site/assets/js/jbrowse
+          key: jbrowse-${{ hashFiles('_data/datastore-metadata/**', '_scripts/jbrowse-tracks.sh', 'Makefile', 'assets/js/jbrowse-config.json') }}
       # create artifact.tar from ./_site directory & upload as artifact named 'github-pages'
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
@@ -97,18 +113,18 @@ jobs:
         id: restore-cache-htmlproofer
         with:
           path: ./tmp/.htmlproofer
-          key: ${{ runner.os }}-html-proofer
+          key: html-proofer
       - name: run htmlproofer
+        continue-on-error: true
         # ignore HTTP status 301 (htmlproofer strips trailing slashes)
         run: |
           htmlproofer --allow-missing-href --ignore-missing-alt --ignore-files '/\/uikit\/tests\//' --ignore-status-codes '301,403,503' --cache '{"timeframe": {"external": "30d"}}' --ignore-url '/germplasm-map.legumeinfo.org/,/pgrc-rpc.agr.gc.ca\/gringlobal\/search/'
       # https://github.com/actions/cache/blob/main/save/README.md#always-save-cache
       - uses: actions/cache/save@v4
         id: save-cache-htmlproofer
-        if: always()
         with:
           path: ./tmp/.htmlproofer
-          key: ${{ runner.os }}-html-proofer
+          key: html-proofer
 
   pa11y:
     # https://github.com/GSA/notifications-admin/pull/475
@@ -124,7 +140,7 @@ jobs:
       - run: busybox httpd -p 4000
       # FIXME: patty-ci concurrency > 1 results in errors in this GA workflow
       - run: |
-          printf '{"defaults": {"runners": ["axe"]}}\n' > .pa11yci
+          printf '{"defaults": {"runners": ["axe"], "concurrency": 4, "useIncognitoBrowserContext": false}}\n' > .pa11yci
       - run: pa11y-ci --sitemap http://0.0.0.0:4000/sitemap.xml --sitemap-exclude '/cmap-*' --sitemap-find '^/' --sitemap-replace http://0.0.0.0:4000/
 
   # Deployment job

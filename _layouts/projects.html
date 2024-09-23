@@ -2,53 +2,48 @@
 layout: default
 ---
 
-{% assign DataStoreID = page.title %}
-{% assign proj_details = site.data.projects[DataStoreID].project_details %}
+<h2>{{ page.projects.short_title }}</h2>
 
-{% for item in proj_details %}
-  <h2>{{ item.short_title }}</h2>
+<dt>
+  <dd><h3>Description:</h3></dd> 
+  <dd>{{ page.projects.description }}</dd>
+  {% if page.projects.BioProjectID %} <dd>BioProject: {{ page.projects.BioProjectID }}</dd> {% endif %}
+  {% if page.projects.SoyBaseID %} <dd>SoyBaseID: {{ page.projects.SoyBaseID }}</dd> {% endif %}
+  <br>
+  
+  <dd><h3>Publications:</h3></dd>
+  {% for publication in page.projects.publications %}
+    <dd><strong>Citation:</strong> {{ publication.citation }}</dd>
+    {% if publication.doi %} 
+      <dd><strong>Publication link:</strong>
+        <a href="https://doi.org/{{ publication.doi }}" target="_blank"> {{ publication.doi }} </a>
+      </dd>
+    {% endif %}
+    {% if publication.abstract %} 
+      <details>
+        <summary><strong>Abstract:</strong> (click to read)</summary> 
 
-  <dt>
-    <dd><h3>Description:</h3></dd> 
-    <dd>{{ item.description }}</dd>
-    {% if item.BioProjectID %} <dd>BioProject: {{ item.BioProjectID }}</dd> {% endif %}
-    {% if item.SoyBaseID %} <dd>SoyBaseID: {{ item.SoyBaseID }}</dd> {% endif %}
-    <br>
-    
-    <dd><h3>Publications:</h3></dd>
-    {% for publication in item.publications %}
-      <dd><strong>Citation:</strong> {{ publication.citation }}</dd>
-      {% if publication.doi %} 
-        <dd><strong>Publication link:</strong>
-          <a href="https://doi.org/{{ publication.doi }}" target="_blank"> {{ publication.doi }} </a>
+        <dd> {{ publication.abstract }}</dd> 
+      </details>
+    {% endif %}
+  {% endfor %}
+  <br>
+
+  <dd><h3>Data Links:</h3></dd>
+  {% for data_link in page.projects.data_links %}
+    {% for category in data_link.category %}
+      {% for name in category.name %}
+        <dd> 
+          <strong>{{ name }}</strong>
+          <ul>
+            {% for instance in category.instances %}
+              <li><a href="{{ instance.url }}">{{ instance.description }}</a></li>
+            {% endfor %}
+          </ul>
         </dd>
-      {% endif %}
-      {% if publication.abstract %} 
-        <details>
-          <summary><strong>Abstract:</strong> (click to read)</summary> 
-
-          <dd> {{ publication.abstract }}</dd> 
-        </details>
-      {% endif %}
-    {% endfor %}
-    <br>
-
-    <dd><h3>Data Links:</h3></dd>
-    {% for data_link in item.data_links %}
-      {% for category in data_link.category %}
-        {% for name in category.name %}
-          <dd> 
-            <strong>{{ name }}</strong>
-            <ul>
-              {% for instance in category.instances %}
-                <li><a href="{{ instance.url }}">{{ instance.description }}</a></li>
-              {% endfor %}
-            </ul>
-          </dd>
-        {% endfor %}
       {% endfor %}
     {% endfor %}
-  </dt>
-{% endfor %}
+  {% endfor %}
+</dt>
 
-<h4><a href="/projects/index.html">Back to Projects index page</a></dd></h4>
+<h4><a href="/projects/">Back to Projects index page</a></dd></h4>

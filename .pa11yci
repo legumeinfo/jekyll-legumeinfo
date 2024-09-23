@@ -1,5 +1,7 @@
 {
   "defaults": {
-    "runners": ["axe"]
+    "concurrency": 4,
+    "runners": ["axe"],
+    "useIncognitoBrowserContext": false
   }
 }
