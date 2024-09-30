@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>News &#8211; LIS: Legume Information System</title>
+  <title>Data updates &#8211; LIS: Legume Information System</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species.">
+  <meta name="description" content="New datasets added in Q2/Q3 2024">
   <meta name="robots" content="all">
   <meta name="author" content="">
   
-  
-  <link rel="canonical" href="/news/">
+  <meta name="keywords" content="news, general">
+  <link rel="canonical" href="/news/general/2024/09/30/data-update.html">
 
   
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -649,154 +649,31 @@
 
 
 
-  <div id="left-menu" class="tm-sidebar-left uk-visible@m">
-
-  
-    <h3>Tools</h3>
-
-
-
-<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-  <li class="uk-nav-header">Download / Query</li>
-  
-  <li uk-tooltip="title: Browser interface to all of the files in the Legume Information System."><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
-  
-  <li uk-tooltip="title: LIS InterMines: one mine per genus including genetic data, and an overall LegumeMine with genome annotations. Tools include a powerful query engine."><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
-  
-  <li uk-tooltip="title: Overviews of data characteristics at LIS: genome assembly sizes, gene counts, BUSCO coverage, etc."><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
-  
-</ul>
-
-<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-  <li class="uk-nav-header">Search</li>
-  
-  <li uk-tooltip="title: Search for genes"><a href="/tools/search/gene.html">Gene Search Tool</a></li>
-  
-</ul>
-
-<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-  <li class="uk-nav-header">Sequence search</li>
-  
-  <li uk-tooltip="title: Run BLASTs against LIS genomes, CDSes, and proteins"><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
-  
-  <li uk-tooltip="title: Functional annotation of protein or nucleotide sequences, and placement into gene trees"><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
-  
-</ul>
-
-<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-  <li class="uk-nav-header">Visualize / Browse</li>
-  
-  <li uk-tooltip="title: Browser for dynamically discovering and viewing genomic synteny across selected species."><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
-  
-  <li uk-tooltip="title: Interactive visualization of multiple GWAS and QTL data sets, using synteny to identify potentially conserved association regions between species."><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
-  
-  <li uk-tooltip="title: View genetic and comparative maps."><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
-  
-  <li uk-tooltip="title: View GIS location information for legume accessions."><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
-  
-  <li uk-tooltip="title: Conekt is a tool for comparative gene expression analysis."><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
-  
-  <li uk-tooltip="title: Functional keyword search for gene families"><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
-  
-  <li uk-tooltip="title: A multiple chromosome visualisation tool for visualizing resequencing or SNP array data"><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
-  
-</ul>
-
-
-
-  
-  
-  
-
-  <!-- dynamically set the top style property of the left menu when the height of the navbar changes -->
-  <!-- NOTE: the script tag is nested so it doesn't break a CSS selector -->
-  <script type="text/javascript">
-
-    const navbar = document.getElementById("navbar");
-    const left = document.getElementById("left-menu");
-
-    const leftTopObserver = new ResizeObserver(entries => {
-      for (let entry of entries) {
-        // use the newer contentBoxSize property if the browser supports it
-        if (entry.contentBoxSize) {
-          left.style.top = entry.contentBoxSize[0].blockSize + "px";
-        // fallback to the older contentRect property
-        } else {
-          left.style.top = entry.contentRect.height + "px";
-        }
-      }
-    });
-
-    leftTopObserver.observe(navbar);
-
-  </script>
-</div>
-
-
 <!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
 <div class="tm-main uk-section uk-section-default">
   <div class="uk-container uk-flex">
     <div class="uk-width-1-1">
-      <h1>News</h1>
-
-
-
-<h2 class="uk-heading-divider">Items</h2>
-
-<dl class="uk-description-list uk-description-list-divider">
-
+      <div class="uk-container uk-container-small">
   
-  <dt><a href="/news/general/2024/09/30/data-update.html"><b>Data updates</b></a> | <span class="uk-text-muted">30 September 2024</span></dt>
-<dd>New datasets added in Q2/Q3 2024</dd>
+<article class="uk-article">
+  <h1 class="uk-article-title">Data updates</h1>
+  <p class="uk-article-meta">Posted on 30 September 2024</p>
+  <p class="uk-text-lead">New datasets added in Q2/Q3 2024</p>
+  <p>Several new genomes and annotations have been made available in LIS:</p>
+<ul>
+  <li>reference quality Trifolium pratense and Vicia villosa genomes from the group at USDA Dairy Forage <a href="https://www.ars.usda.gov/midwest-area/madison-wi/us-dairy-forage-research-center/cell-wall-biology-and-utilization-research/">Cell Wall Biology and Utilization Research</a>
+  -haplotype-resolved genomes for Chamaecrista fasciculata and Cercis canadensis from JGI’s <a href="https://phytozome-next.jgi.doe.gov/">Phytozome</a></li>
+</ul>
+
+<p>We have also included single-cell experiments from recent publications from the <a href="https://bondlsc.missouri.edu/person/marc-libault/">Libault lab</a>, for <a href="https://shinycell.legumeinfo.org/medtr.A17.gnm5.ann1_6.expr.Cervantes-Perez_Thibivilliers_2022/?gene1=MtRPG">Medicago truncatula</a> and <a href="https://shinycell.legumeinfo.org/glyma.expr.Cervantes-Perez_Zogli_2024/?gene1=Glyma.18G180800&amp;gene2=Glyma.10G001000&amp;tab=gene-coexpression">Glycine max</a>.</p>
+
+<p>In addition, several bulk RNA-seq experiments have been added, e.g. soybean data from <a href="https://plantgeneatlas.jgi.doe.gov/">JGI Plant Gene Atlas</a> analyzed against the latest <a href="https://mines.legumeinfo.org/legumemine/expressionsource:Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023">Wm82.gnm6.ann1 reference</a> and appearing in <a href="https://mines.legumeinfo.org/legumemine/gene:glyma.Wm82.gnm6.ann1.Glyma.18G180800">gene report pages in LegumeMine</a>.</p>
 
 
-  
-  <dt><a href="/news/general/2024/07/29/usda-npl-job.html"><b>USDA National Program Leader, Crop Protection</b></a> | <span class="uk-text-muted">29 July 2024</span></dt>
-<dd>National Program Leader for USDA-ARS Crop Production & Protection</dd>
+</article>
 
 
-  
-  <dt><a href="/news/general/2024/04/18/usda-npgs-job.html"><b>USDA-NPGS National Program Leader Job</b></a> | <span class="uk-text-muted">18 April 2024</span></dt>
-<dd>National Program Leader for USDA-ARS National Plant Germplasm System.</dd>
-
-
-  
-  <dt><a href="/news/general/2024/03/30/site-updates.html"><b>Site updates</b></a> | <span class="uk-text-muted">30 March 2024</span></dt>
-<dd>Assemblies and annotations added in 2023-24.</dd>
-
-
-  
-  <dt><a href="/news/general/2023/08/09/gene-search.html"><b>Gene search</b></a> | <span class="uk-text-muted">09 August 2023</span></dt>
-<dd>New interface for gene search</dd>
-
-
-  
-  <dt><a href="/news/general/2023/04/15/site-updates.html"><b>Site updates</b></a> | <span class="uk-text-muted">15 April 2023</span></dt>
-<dd>Legacy site decommissioned; many updates.</dd>
-
-
-  
-  <dt><a href="/news/general/2022/05/19/LIS-job.html"><b>LIS is hiring an IT Specialist</b></a> | <span class="uk-text-muted">19 May 2022</span></dt>
-<dd>USDA-ARS IT Specialist position with the Legume Information System and SoyBase Database team</dd>
-
-
-  
-  <dt><a href="/news/general/2022/05/06/news.html"><b>AgBioData data management survey</b></a> | <span class="uk-text-muted">06 May 2022</span></dt>
-<dd>AgBioData survey</dd>
-
-
-  
-  <dt><a href="/news/general/2022/03/29/new-lis-site.html"><b>Welcome to the new LIS site!</b></a> | <span class="uk-text-muted">29 March 2022</span></dt>
-<dd>Announcing the new LIS</dd>
-
-
-  
-  <dt><a href="/news/announcements/2021/10/01/tepary-bean-genomes.html"><b>Tepary bean genomes added to LIS</b></a> | <span class="uk-text-muted">01 October 2021</span></dt>
-<dd>Phaseolus acutifolius (tepary bean) added to LIS</dd>
-
-
-</dl>
-
+</div>
 
     </div>
     
