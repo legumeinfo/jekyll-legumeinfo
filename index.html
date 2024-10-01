@@ -23,7 +23,7 @@ blog_card: true
   <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
     <form action="https://mines.legumeinfo.org/glycinemine/keywordSearchResults.do" name="search" method="get" style="display:inline;" target="_blank">
       <div class="uk-text-left">
-        <label class="uk-text-bold">Keyword Search</label><br>
+        <label class="uk-text-bold" for="quickSearchInput">Keyword Search</label><br>
       <input class="uk-input uk-form-small" style="width:180px;color:#235626;font-style:italic;font-size:0.9em" type="text" id="quickSearchInput" name="searchTerm"
       value="&quot;seed weight&quot;" onFocus="clearElement(this);" />
       <button type="submit" id="quickSearchButton" name="searchSubmit" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
@@ -34,7 +34,7 @@ blog_card: true
   <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
     <form action="https://dev.soybase.org/tools/search/gene.html" name="search" method="get" style="display:inline;">
   <div class="uk-text-left">
-    <label class="uk-text-bold">Gene identifier search</label><br>
+    <label class="uk-text-bold" for="identifier">Gene identifier search</label><br>
     <input class="uk-input uk-form-small" id="identifier" style="width:180px;color:#235626;font-style:italic;font-size:0.9em" type="text" name="identifier"
     value="Glyma.15g026400" onFocus="clearElement(this);" />
     <button type="submit" id="quickSearchButton" name="searchSubmit" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
@@ -45,7 +45,7 @@ blog_card: true
   <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
     <form action="https://gcv.soybase.org/search" name="search" method="get" style="display:inline;">
       <div class="uk-text-left">
-        <label class="uk-text-bold">Synteny viewer</label><br>
+        <label class="uk-text-bold" for="q">Synteny viewer</label><br>
         <input type="hidden" id="sources" name="sources" value="soybase,liu2020">
         <input class="uk-input uk-form-small" id="q" style="width:180px;color:#235626;font-style:italic;font-size:0.9em" type="text" name="q"
         value="Glyma.20G010000" onFocus="clearElement(this);" />
