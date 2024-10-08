@@ -1,0 +1,49 @@
+---
+layout: full-width
+title: Lookup corresponding genes via Pangene sets
+web_components: true
+---
+
+<!-- the custom pangene lookup element -->
+<lis-pangene-lookup-element id="pangene-lookup" genesExample="glyma.Lee.gnm2.ann1.Gm_00017 glyma.Lee.gnm2.ann1.Gm_00018 glyma.Lee.gnm2.ann1.Gm_00025 glyma.Lee.gnm2.ann1.Gm_00043 glyma.Lee.gnm2.ann1.Gm_00049 glyma.Lee.gnm2.ann1.Gm_00205"></lis-pangene-lookup-element>
+<lis-modal-element modalId="modal">
+  <lis-linkout-element id="linkouts"></lis-linkout-element>
+</lis-modal-element>
+
+<!-- set the form data and search functions by property because functions can't be set by attribute -->
+<script type="module">
+
+  import {
+    // pangenes
+    getPangeneLookupFormDataFunction,
+    pangeneDownloadFunction,
+    pangeneLookupFunctionFactory,
+    pangeneAllModalLinksFactory,
+    // linkouts
+    allLinkoutsFunction,
+    // modal
+    modalEventToLinkData
+  } from "lis-graphql";
+
+  // setup the pangene lookup component
+  const pangeneLookupElement = document.getElementById('pangene-lookup');
+  pangeneLookupElement.formDataFunction = getPangeneLookupFormDataFunction;
+  const lookupDataProcessors = pangeneAllModalLinksFactory('modal');
+  pangeneLookupElement.searchFunction =
+    pangeneLookupFunctionFactory(...lookupDataProcessors);
+  pangeneLookupElement.downloadFunction = pangeneDownloadFunction;
+
+  // setup the linkout component
+  const linkoutElement = document.getElementById('linkouts');
+  linkoutElement.linkoutFunction = allLinkoutsFunction;
+
+  // wait for the modal slot to load before adding an event listener
+  window.onload = (event) => {
+    const modal = document.getElementById('modal');
+    modal.addEventListener('toggle', (event) => {
+      const {type, ...linkoutData} = modalEventToLinkData(event);
+      linkoutElement.getLinkouts({type, linkoutData});
+    });
+  };
+
+</script>
