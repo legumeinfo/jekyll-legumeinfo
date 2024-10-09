@@ -34,14 +34,12 @@ export const getQTLsQuery = `
 /**
  * Gets QTLs from GraphQL.
  * @param {object} queryData - An object containing zero or more variables for the GraphQL query.
- * @param {object} pageData - An object containing pagination data for the GraphQL query, if any.
  * @param {object} options - An object containing optional parameters for the HTTP request,
  * namely, an optional `AbortSignal` instance that can be used to cancel the request mid-flight.
  * @returns {Promise} A `Promise` that resolves to the result of the GraphQL query.
  */
-export function getQTLs(queryData={}, pageData={}, options={}) {
-  const {query: traitName} = queryData;
-  const {page, pageSize} = pageData;
+export function getQTLs(queryData={}, options={}) {
+  const {query: traitName, page, pageSize} = queryData;
   const variables = {traitName, page, pageSize};
   const {abortSignal} = options;
   return query(getQTLsQuery, variables, abortSignal);
@@ -92,12 +90,11 @@ export function qtlsDataToSearchResults(data) {
  * The QTL search function to use for the `searchFunction` property of the `LisQTLSearchElement`
  * (`<lis-qtl-search-element>`) Web Component.
  * @param {object} queryData - An object containing data from the submitted search form.
- * @param {number} page - The page of results to load.
  * @param {object} options - An object containing optional parameters to pass to the `getQTLs` function.
  * @returns {Promise} A `Promise` that resolves to the `PaginatedSearchResults<QTLSearchResult[]>` used by the
  * `LisQTLSearchElement` (`<lis-qtl-search-element>`) Web Component.
  */
-export function qtlSearchFunction(queryData, page, options={}) {
-  return getQTLs(queryData, {page, pageSize: 10}, options)
+export function qtlSearchFunction(queryData, options={}) {
+  return getQTLs({...queryData, pageSize: 10}, options)
     .then(({data}) => qtlsDataToSearchResults(data));
 }

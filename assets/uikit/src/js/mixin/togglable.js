@@ -122,11 +122,11 @@ export default {
                 changed && (el.hidden = !toggled);
             }
 
-            $$('[autofocus]', el).some((el) => (isVisible(el) ? el.focus() || true : el.blur()));
-
             if (changed) {
                 trigger(el, 'toggled', [toggled, this]);
             }
+
+            $$('[autofocus]', el).some((el) => (isVisible(el) ? el.focus() || true : el.blur()));
         },
     },
 };
@@ -137,11 +137,7 @@ function toggleInstant(el, show, { _toggle }) {
     return _toggle(el, show);
 }
 
-export async function toggleTransition(
-    el,
-    show,
-    { animation, duration, velocity, transition, _toggle },
-) {
+async function toggleTransition(el, show, { animation, duration, velocity, transition, _toggle }) {
     const [mode = 'reveal', startProp = 'top'] = animation[0]?.split('-') || [];
 
     const dirs = [

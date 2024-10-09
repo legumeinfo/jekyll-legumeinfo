@@ -15,7 +15,6 @@ import svgo from 'svgo';
 const limit = pLimit(Number(process.env.cpus || 2));
 
 export const banner = `/*! UIkit ${await getVersion()} | https://www.getuikit.com | (c) 2014 - ${new Date().getFullYear()} YOOtheme | MIT License */\n`;
-export const validClassName = /[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*/;
 
 const argv = minimist(process.argv.slice(2));
 
@@ -31,13 +30,7 @@ export function read(file) {
 }
 
 export async function write(dest, data) {
-    const err = await fs.writeFile(dest, data);
-
-    if (err) {
-        console.log(err);
-        throw err;
-    }
-
+    await fs.writeFile(dest, data);
     await logFile(dest);
 
     return dest;
@@ -228,11 +221,46 @@ async function optimizeSvg(svg) {
                         minifyStyles: false,
                         removeUnknownsAndDefaults: false,
                         removeUselessStrokeAndFill: false,
-                        sortAttrs: false,
+                        sortAttrs: {
+                            order: [
+                                'id',
+                                'width',
+                                'height',
+                                'fill',
+                                'stroke',
+                                'x',
+                                'y',
+                                'x1',
+                                'y1',
+                                'x2',
+                                'y2',
+                                'cx',
+                                'cy',
+                                'r',
+                                'marker',
+                                'd',
+                                'points',
+                            ],
+                        },
                     },
                 },
             },
-            { name: 'removeXMLNS', active: true },
+            'removeXMLNS',
+            'removeXlink',
+            {
+                name: 'removeAttributesBySelector',
+                params: {
+                    selector: 'svg',
+                    attributes: ['id', 'version'],
+                },
+            },
+            {
+                name: 'removeAttributesBySelector',
+                params: {
+                    selector: '*',
+                    attributes: ['data-name'],
+                },
+            },
         ],
     };
 

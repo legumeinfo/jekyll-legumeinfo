@@ -3,7 +3,6 @@ import {
     addClass,
     apply,
     attr,
-    closest,
     css,
     each,
     hasAttr,
@@ -27,7 +26,7 @@ import paginationNext from '../../images/components/pagination-next.svg';
 import paginationPrevious from '../../images/components/pagination-previous.svg';
 import searchIcon from '../../images/components/search-icon.svg';
 import searchLarge from '../../images/components/search-large.svg';
-import searchNavbar from '../../images/components/search-navbar.svg';
+import searchMedium from '../../images/components/search-medium.svg';
 import slidenavNextLarge from '../../images/components/slidenav-next-large.svg';
 import slidenavNext from '../../images/components/slidenav-next.svg';
 import slidenavPreviousLarge from '../../images/components/slidenav-previous-large.svg';
@@ -36,6 +35,7 @@ import spinner from '../../images/components/spinner.svg';
 import totop from '../../images/components/totop.svg';
 import I18n from '../mixin/i18n';
 import Svg from '../mixin/svg';
+import { stringToSvg } from './svg';
 
 const icons = {
     spinner,
@@ -52,8 +52,8 @@ const icons = {
     'pagination-next': paginationNext,
     'pagination-previous': paginationPrevious,
     'search-icon': searchIcon,
+    'search-medium': searchMedium,
     'search-large': searchLarge,
-    'search-navbar': searchNavbar,
     'search-toggle-icon': searchIcon,
     'slidenav-next': slidenavNext,
     'slidenav-next-large': slidenavNextLarge,
@@ -122,14 +122,15 @@ export const Search = {
     i18n: { toggle: 'Open Search', submit: 'Submit Search' },
 
     beforeConnect() {
-        const isToggle = hasClass(this.$el, 'uk-search-toggle') || hasClass(this.$el, 'uk-navbar-toggle');
-        this.icon = isToggle 
-            ? 'search-toggle-icon' 
-            : hasClass(this.$el, 'uk-search-icon') && closest(this.$el, '.uk-search-large')
-                ? 'search-large'
-                : closest(this.$el, '.uk-search-navbar')
-                  ? 'search-navbar'
-                  : this.$props.icon;
+        const isToggle =
+            hasClass(this.$el, 'uk-search-toggle') || hasClass(this.$el, 'uk-navbar-toggle');
+        this.icon = isToggle
+            ? 'search-toggle-icon'
+            : hasClass(this.$el, 'uk-search-icon') && this.$el.closest('.uk-search-large')
+              ? 'search-large'
+              : this.$el.closest('.uk-search-medium')
+                ? 'search-medium'
+                : this.$props.icon;
 
         if (hasAttr(this.$el, 'aria-label')) {
             return;
@@ -261,7 +262,7 @@ function getIcon(icon) {
     }
 
     if (!parsed[icon]) {
-        parsed[icon] = $((icons[applyRtl(icon)] || icons[icon]).trim());
+        parsed[icon] = stringToSvg(icons[applyRtl(icon)] || icons[icon]);
     }
 
     return parsed[icon].cloneNode(true);

@@ -1,5 +1,6 @@
 import { glob } from 'glob';
-import { args, minify, read, renderLess, replaceInFile, validClassName } from './util.js';
+import stripCssComments from 'strip-css-comments';
+import { args, minify, read, renderLess, replaceInFile } from './util.js';
 
 if (args.h || args.help) {
     console.log(`
@@ -52,7 +53,7 @@ async function getScope(files) {
 function getNewScope() {
     const scopeFromInput = args.scope || args.s || 'uk-scope';
 
-    if (validClassName.test(scopeFromInput)) {
+    if (scopeFromInput.match(/^[a-z_\x7f-\xff][-\w\x7f-\xff]*$/i)) {
         return scopeFromInput;
     } else {
         throw `Illegal scope-name: ${scopeFromInput}`;
@@ -62,7 +63,9 @@ function getNewScope() {
 async function scope(files, scope) {
     for (const file of files) {
         await replaceInFile(file, async (data) => {
-            const output = await renderLess(`.${scope} {\n${stripComments(data)}\n}`);
+            const output = await renderLess(
+                `.${scope} {\n${stripCssComments(data, { preserve: false })}\n}`,
+            );
             return `/* scoped: ${scope} */\n${
                 output.replace(
                     new RegExp(
@@ -91,12 +94,4 @@ async function cleanup(files, scope) {
                     .replace(new RegExp(` *${string} ({[\\s\\S]*?})?`, 'g'), ''), // replace classes
         );
     }
-}
-
-function stripComments(input) {
-    return input
-        .replace(/\/\*(.|\n)*?\*\//gm, '')
-        .split('\n')
-        .filter((line) => line.trim().substr(0, 2) !== '//')
-        .join('\n');
 }

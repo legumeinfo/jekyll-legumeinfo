@@ -1,5 +1,6 @@
 import {
     $$,
+    dimensions,
     getCoveringElement,
     getTargetedElement,
     hasClass,
@@ -18,7 +19,7 @@ export default {
         cls: String,
         closest: Boolean,
         scroll: Boolean,
-        overflow: Boolean,
+        target: String,
         offset: Number,
     },
 
@@ -26,15 +27,15 @@ export default {
         cls: 'uk-active',
         closest: false,
         scroll: false,
-        overflow: true,
+        target: 'a[href]:not([role="button"])',
         offset: 0,
     },
 
     computed: {
-        links: (_, $el) => $$('a[href*="#"]', $el).filter((el) => el.hash && isSameSiteAnchor(el)),
+        links: ({ target }, $el) => $$(target, $el).filter((el) => isSameSiteAnchor(el)),
 
-        elements({ closest: selector }) {
-            return this.links.map((el) => el.closest(selector || '*'));
+        elements({ closest }) {
+            return this.links.map((el) => el.closest(closest || '*'));
         },
     },
 
@@ -51,7 +52,7 @@ export default {
     update: [
         {
             read() {
-                const targets = this.links.map(getTargetedElement).filter(Boolean);
+                const targets = this.links.map((el) => getTargetedElement(el) || el.ownerDocument);
 
                 const { length } = targets;
 
@@ -65,20 +66,19 @@ export default {
                 const max = scrollHeight - viewport.height;
                 let active = false;
 
-                if (scrollTop === max) {
+                if (scrollTop >= max) {
                     active = length - 1;
                 } else {
+                    const offsetBy =
+                        this.offset +
+                        dimensions(getCoveringElement()).height +
+                        viewport.height * 0.1;
+
                     for (let i = 0; i < targets.length; i++) {
-                        const fixedEl = getCoveringElement(targets[i]);
-                        const offsetBy = this.offset + (fixedEl ? offset(fixedEl).height : 0);
                         if (offset(targets[i]).top - viewport.top - offsetBy > 0) {
                             break;
                         }
                         active = +i;
-                    }
-
-                    if (active === false && this.overflow) {
-                        active = 0;
                     }
                 }
 

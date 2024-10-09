@@ -30,14 +30,12 @@ export const getGenesQuery = `
 /**
  * Gets genes from GraphQL.
  * @param {object} queryData - An object containing zero or more variables for the GraphQL query.
- * @param {object} pageData - An object containing pagination data for the GraphQL query, if any.
  * @param {object} options - An object containing optional parameters for the HTTP request,
  * namely, an optional `AbortSignal` instance that can be used to cancel the request mid-flight.
  * @returns {Promise} A `Promise` that resolves to the result of the GraphQL query.
  */
-export function getGenes(queryData={}, pageData={}, options={}) {
-  const {genus, species, strain, identifier, description, family} = queryData;
-  const {page, pageSize} = pageData;
+export function getGenes(queryData={}, options={}) {
+  const {genus, species, strain, identifier, description, family, page, pageSize} = queryData;
   const variables = {
     genus,
     species,
@@ -101,13 +99,12 @@ export function genesDataToSearchResults(data) {
  * The gene search function to use for the `searchFunction` property of the `LisGeneSearchElement`
  * (`<lis-gene-search-element>`) Web Component.
  * @param {object} queryData - An object containing data from the submitted search form.
- * @param {number} page - The page of results to load.
  * @param {object} options - An object containing optional parameters to pass to the `getGenes` function.
  * @returns {Promise} A `Promise` that resolves to the `PaginatedSearchResults<GeneSearchResult[]>` used by the
  * `LisGeneSearchElement` (`<lis-gene-search-element>`) Web Component.
  */
-export function geneSearchFunction(queryData, page, options={}) {
-  return getGenes(queryData, {page, pageSize: 10}, options)
+export function geneSearchFunction(queryData, options={}) {
+  return getGenes({...queryData, pageSize: 10}, options)
     .then(({data}) => genesDataToSearchResults(data));
 }
 
@@ -118,8 +115,8 @@ export function geneSearchFunction(queryData, page, options={}) {
  * @returns {Promise} The `Promise` returned by the `geneSearchFunction` with the callbacks applied.
  */
 export function geneSearchFunctionFactory(...callbacks) {
-  return (queryData, page, options={}) => {
-    let promise = geneSearchFunction(queryData, page, options);
+  return (queryData, options={}) => {
+    let promise = geneSearchFunction(queryData, options);
     callbacks.forEach((callback) => {
       promise = promise.then(callback);
     });

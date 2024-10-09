@@ -20,14 +20,12 @@ export const getOrganismsQuery = `
 /**
  * Gets organisms from GraphQL.
  * @param {object} queryData - An object containing zero or more variables for the GraphQL query.
- * @param {object} pageData - An object containing pagination data for the GraphQL query, if any.
  * @param {object} options - An object containing optional parameters for the HTTP request,
  * namely, an optional `AbortSignal` instance that can be used to cancel the request mid-flight.
  * @returns {Promise} A `Promise` that resolves to the result of the GraphQL query.
  */
-export function getOrganisms(queryData={}, pageData={}, options={}) {
-  const {taxonId, abbreviation, name, genus, species} = queryData;
-  const {page, pageSize} = pageData;
+export function getOrganisms(queryData={}, options={}) {
+  const {taxonId, abbreviation, name, genus, species, page, pageSize} = queryData;
   const variables = {
     taxonId,
     abbreviation,
@@ -83,13 +81,12 @@ export function organismsDataToFormData(data) {
  * (`<lis-gene-search-element>`) and the `LisTraitAssociationSearchElement` 
  * (`<lis-trait-association-search-element>`) Web Components.
  * @param {object} queryData - An object containing the data needed to get organisms.
- * @param {object} pageData - An object containing pagination data for the GraphQL query, if any.
  * @param {object} options - An object containing optional parameters to pass to the `getOrganisms` function.
  * @returns {Promise} A `Promise` that resolves to the `*SearchFormData` used by the `LisGeneSearchElement`
  * (`<lis-gene-search-element>`) and the `LisTraitAssociationSearchElement` 
  * (`<lis-trait-association-search-element>`) Web Components.
  */
-export function getOrganismsFormDataFunction(queryData={}, pageData={}, options={}) {
-  return getOrganisms(queryData, pageData, options)
+export function getOrganismsFormDataFunction(queryData={}, options={}) {
+  return getOrganisms(queryData, options)
     .then(({data}) => organismsDataToFormData(data));
 }

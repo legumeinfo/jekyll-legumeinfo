@@ -2,11 +2,10 @@ import {
     attr,
     children,
     css,
-    fastdom,
+    dimensions,
     includes,
     index,
     isVisible,
-    offset,
     parent,
     position,
     Transition,
@@ -22,11 +21,16 @@ export default async function (action, target, duration) {
     const currentProps = nodes.map((el) => getProps(el, true));
     const targetProps = { ...css(target, ['height', 'padding']), display: 'block' };
 
+    const targets = nodes.concat(target);
+
     // Cancel previous animations
-    await Promise.all(nodes.concat(target).map(Transition.cancel));
+    await Promise.all(targets.map(Transition.cancel));
+
+    // Force transition to be canceled in Safari
+    css(targets, 'transitionProperty', 'none');
 
     // Adding, sorting, removing nodes
-    action();
+    await action();
 
     // Find new nodes
     nodes = nodes.concat(children(target).filter((el) => !includes(nodes, el)));
@@ -34,8 +38,8 @@ export default async function (action, target, duration) {
     // Wait for update to propagate
     await Promise.resolve();
 
-    // Force update
-    fastdom.flush();
+    // Reset the forced transition property
+    css(targets, 'transitionProperty', '');
 
     // Get new state
     const targetStyle = attr(target, 'style');
@@ -49,7 +53,6 @@ export default async function (action, target, duration) {
 
     // Trigger update in e.g. parallax component
     trigger(target, 'scroll');
-    fastdom.flush();
 
     // Start transitions on next frame
     await awaitFrame();
@@ -131,7 +134,7 @@ function resetProps(el, props) {
 }
 
 function getPositionWithMargin(el) {
-    const { height, width } = offset(el);
+    const { height, width } = dimensions(el);
 
     return {
         height,
@@ -142,6 +145,6 @@ function getPositionWithMargin(el) {
     };
 }
 
-function awaitFrame() {
+export function awaitFrame() {
     return new Promise((resolve) => requestAnimationFrame(resolve));
 }

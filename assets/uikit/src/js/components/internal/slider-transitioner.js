@@ -1,7 +1,6 @@
 import {
     children,
     clamp,
-    createEvent,
     css,
     dimensions,
     findIndex,
@@ -11,9 +10,9 @@ import {
     position,
     sumBy,
     Transition,
-    trigger,
 } from 'uikit-util';
 import { translate } from '../../mixin/internal/slideshow-animations';
+import { triggerUpdate, withResolvers } from '../../mixin/internal/slideshow-transitioner';
 
 export default function (prev, next, dir, { center, easing, list }) {
     const from = prev
@@ -23,7 +22,7 @@ export default function (prev, next, dir, { center, easing, list }) {
         ? getLeft(next, list, center)
         : from + dimensions(prev).width * dir * (isRtl ? -1 : 1);
 
-    let resolve;
+    const { promise, resolve } = withResolvers();
 
     return {
         dir,
@@ -32,7 +31,13 @@ export default function (prev, next, dir, { center, easing, list }) {
             const timing = linear ? 'linear' : easing;
             duration -= Math.round(duration * clamp(percent, -1, 1));
 
+            // Force previous transition to be canceled in Safari
+            css(list, 'transitionProperty', 'none');
+
             this.translate(percent);
+
+            // Reset the forced transition property
+            css(list, 'transitionProperty', '');
 
             percent = prev ? percent : clamp(percent, 0, 1);
             triggerUpdate(this.getItemIn(), 'itemin', { percent, duration, timing, dir });
@@ -44,15 +49,14 @@ export default function (prev, next, dir, { center, easing, list }) {
                     dir,
                 });
 
-            return new Promise((res) => {
-                resolve ||= res;
-                Transition.start(
-                    list,
-                    { transform: translate(-to * (isRtl ? -1 : 1), 'px') },
-                    duration,
-                    timing,
-                ).then(resolve, noop);
-            });
+            Transition.start(
+                list,
+                { transform: translate(-to * (isRtl ? -1 : 1), 'px') },
+                duration,
+                timing,
+            ).then(resolve, noop);
+
+            return promise;
         },
 
         cancel() {
@@ -69,6 +73,10 @@ export default function (prev, next, dir, { center, easing, list }) {
         },
 
         translate(percent) {
+            if (percent === this.percent()) {
+                return;
+            }
+
             const distance = this.getDistance() * dir * (isRtl ? -1 : 1);
 
             css(
@@ -110,7 +118,7 @@ export default function (prev, next, dir, { center, easing, list }) {
 
         percent() {
             return Math.abs(
-                (css(list, 'transform').split(',')[4] * (isRtl ? -1 : 1) + from) / (to - from),
+                (new DOMMatrix(css(list, 'transform')).m41 * (isRtl ? -1 : 1) + from) / (to - from),
             );
         },
 
@@ -175,8 +183,4 @@ function inView(list, listLeft) {
 
         return slideLeft >= listLeft && slideRight <= listRight;
     });
-}
-
-function triggerUpdate(el, type, data) {
-    trigger(el, createEvent(type, false, false, data));
 }

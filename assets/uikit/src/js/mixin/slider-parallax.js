@@ -34,17 +34,26 @@ export default {
     },
 
     update: {
-        write() {
+        read() {
             if (!this.parallax) {
-                return;
+                return false;
             }
 
             const target = this.parallaxTarget;
+
+            if (!target) {
+                return false;
+            }
+
             const start = toPx(this.parallaxStart, 'height', target, true);
             const end = toPx(this.parallaxEnd, 'height', target, true);
             const percent = ease(scrolledOver(target, start, end), this.parallaxEasing);
 
-            const [prevIndex, slidePercent] = this.getIndexAt(percent);
+            return { parallax: this.getIndexAt(percent) };
+        },
+
+        write({ parallax }) {
+            const [prevIndex, slidePercent] = parallax;
 
             const nextIndex = this.getValidIndex(prevIndex + Math.ceil(slidePercent));
 

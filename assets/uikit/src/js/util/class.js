@@ -1,4 +1,4 @@
-import { includes, isArray, isUndefined, toArray, toNodes } from './lang';
+import { includes, isArray, isUndefined, toNodes } from './lang';
 
 export function addClass(element, ...classes) {
     for (const node of toNodes(element)) {
@@ -15,13 +15,6 @@ export function removeClass(element, ...classes) {
         if (remove.length) {
             node.classList.remove(...remove);
         }
-    }
-}
-
-export function removeClasses(element, clsRegex) {
-    clsRegex = new RegExp(clsRegex);
-    for (const node of toNodes(element)) {
-        node.classList.remove(...toArray(node.classList).filter((cls) => cls.match(clsRegex)));
     }
 }
 
@@ -55,6 +48,6 @@ function toClasses(str) {
     return str
         ? isArray(str)
             ? str.map(toClasses).flat()
-            : String(str).split(/[ ,]/).filter(Boolean)
+            : String(str).split(' ').filter(Boolean)
         : [];
 }

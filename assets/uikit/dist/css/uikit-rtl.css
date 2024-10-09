@@ -1,4 +1,4 @@
-/*! UIkit 3.19.2 | https://www.getuikit.com | (c) 2014 - 2024 YOOtheme | MIT License */
+/*! UIkit 3.21.13 | https://www.getuikit.com | (c) 2014 - 2024 YOOtheme | MIT License */
 /* ========================================================================
    Component: Base
  ========================================================================== */
@@ -2289,24 +2289,28 @@ select.uk-form-width-xsmall {
  * Default
  */
 .uk-section-default {
+  --uk-inverse: dark;
   background: #fff;
 }
 /*
  * Muted
  */
 .uk-section-muted {
+  --uk-inverse: dark;
   background: #f8f8f8;
 }
 /*
  * Primary
  */
 .uk-section-primary {
+  --uk-inverse: light;
   background: #1e87f0;
 }
 /*
  * Secondary
  */
 .uk-section-secondary {
+  --uk-inverse: light;
   background: #222;
 }
 /* Overlap modifier
@@ -2547,24 +2551,28 @@ select.uk-form-width-xsmall {
  * Default
  */
 .uk-tile-default {
+  --uk-inverse: dark;
   background-color: #fff;
 }
 /*
  * Muted
  */
 .uk-tile-muted {
+  --uk-inverse: dark;
   background-color: #f8f8f8;
 }
 /*
  * Primary
  */
 .uk-tile-primary {
+  --uk-inverse: light;
   background-color: #1e87f0;
 }
 /*
  * Secondary
  */
 .uk-tile-secondary {
+  --uk-inverse: light;
   background-color: #222;
 }
 /* ========================================================================
@@ -2669,6 +2677,7 @@ select.uk-form-width-xsmall {
  * Note: Header and Footer are only implemented for the default style
  */
 .uk-card-default {
+  --uk-inverse: dark;
   background-color: #fff;
   color: #666;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
@@ -2690,6 +2699,7 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-card-primary {
+  --uk-inverse: light;
   background-color: #1e87f0;
   color: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
@@ -2705,6 +2715,7 @@ select.uk-form-width-xsmall {
  * Secondary
  */
 .uk-card-secondary {
+  --uk-inverse: light;
   background-color: #222;
   color: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
@@ -3120,12 +3131,14 @@ select.uk-form-width-xsmall {
  * Default
  */
 .uk-overlay-default {
+  --uk-inverse: dark;
   background: rgba(255, 255, 255, 0.8);
 }
 /*
  * Primary
  */
 .uk-overlay-primary {
+  --uk-inverse: light;
   background: rgba(34, 34, 34, 0.8);
 }
 /* ========================================================================
@@ -3381,21 +3394,53 @@ select.uk-form-width-xsmall {
 .uk-search-default .uk-search-icon {
   width: 40px;
 }
-.uk-search-default .uk-search-icon:not(.uk-search-icon-flip) ~ .uk-search-input {
+.uk-search-default:has(.uk-search-icon:not(.uk-search-icon-flip)) .uk-search-input {
   padding-right: 40px;
 }
-.uk-search-default .uk-search-icon-flip ~ .uk-search-input {
+.uk-search-default:has(.uk-search-icon-flip) .uk-search-input {
   padding-left: 40px;
 }
 /* Navbar modifier
  ========================================================================== */
 .uk-search-navbar {
-  width: 400px;
+  width: 240px;
 }
 /*
  * Input
  */
 .uk-search-navbar .uk-search-input {
+  height: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+}
+/* Focus */
+.uk-search-navbar .uk-search-input:focus {
+  background-color: #fff;
+  border-color: #1e87f0;
+}
+/*
+ * Icon
+ */
+.uk-search-navbar .uk-search-icon {
+  width: 40px;
+}
+.uk-search-navbar:has(.uk-search-icon:not(.uk-search-icon-flip)) .uk-search-input {
+  padding-right: 40px;
+}
+.uk-search-navbar:has(.uk-search-icon-flip) .uk-search-input {
+  padding-left: 40px;
+}
+/* Medium modifier
+ ========================================================================== */
+.uk-search-medium {
+  width: 400px;
+}
+/*
+ * Input
+ */
+.uk-search-medium .uk-search-input {
   height: 40px;
   background: transparent;
   font-size: 1.5rem;
@@ -3404,14 +3449,14 @@ select.uk-form-width-xsmall {
 /*
  * Icon
  */
-.uk-search-navbar .uk-search-icon {
-  width: 40px;
+.uk-search-medium .uk-search-icon {
+  width: 24px;
 }
-.uk-search-navbar .uk-search-icon:not(.uk-search-icon-flip) ~ .uk-search-input {
-  padding-right: 40px;
+.uk-search-medium:has(.uk-search-icon:not(.uk-search-icon-flip)) .uk-search-input {
+  padding-right: 34px;
 }
-.uk-search-navbar .uk-search-icon-flip ~ .uk-search-input {
-  padding-left: 40px;
+.uk-search-medium:has(.uk-search-icon-flip) .uk-search-input {
+  padding-left: 34px;
 }
 /* Large modifier
  ========================================================================== */
@@ -3431,13 +3476,13 @@ select.uk-form-width-xsmall {
  * Icon
  */
 .uk-search-large .uk-search-icon {
-  width: 80px;
+  width: 40px;
 }
-.uk-search-large .uk-search-icon:not(.uk-search-icon-flip) ~ .uk-search-input {
-  padding-right: 80px;
+.uk-search-large:has(.uk-search-icon:not(.uk-search-icon-flip)) .uk-search-input {
+  padding-right: 60px;
 }
-.uk-search-large .uk-search-icon-flip ~ .uk-search-input {
-  padding-left: 80px;
+.uk-search-large:has(.uk-search-icon-flip) .uk-search-input {
+  padding-left: 60px;
 }
 /* Toggle
  ========================================================================== */
@@ -3549,6 +3594,7 @@ select.uk-form-width-xsmall {
   --uk-position-offset: 0;
   --uk-position-shift-offset: 0;
   --uk-position-viewport-offset: 0;
+  --uk-inverse: dark;
   /* 1 */
   width: auto;
   /* 2 */
@@ -4047,6 +4093,7 @@ select.uk-form-width-xsmall {
  * 3. Allow scrolling
  */
 .uk-offcanvas-bar {
+  --uk-inverse: light;
   /* 1 */
   position: absolute;
   top: 0;
@@ -4523,6 +4570,157 @@ select.uk-form-width-xsmall {
 }
 /* Label
  ========================================================================== */
+/* ========================================================================
+   Component: Thumbnav
+ ========================================================================== */
+/*
+ * 1. Allow items to wrap into the next line
+ * 2. Reset list
+ * 3. Gutter
+ */
+.uk-thumbnav {
+  display: flex;
+  /* 1 */
+  flex-wrap: wrap;
+  /* 2 */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* 3 */
+  margin-right: -15px;
+}
+/*
+ * Space is allocated based on content dimensions, but shrinks: 0 1 auto
+ * 1. Gutter
+ */
+.uk-thumbnav > * {
+  /* 1 */
+  padding-right: 15px;
+}
+/* Items
+ ========================================================================== */
+/*
+ * Items
+ */
+.uk-thumbnav > * > * {
+  display: inline-block;
+  position: relative;
+}
+.uk-thumbnav > * > *::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
+  transition: opacity 0.1s ease-in-out;
+}
+/* Hover */
+.uk-thumbnav > * > :hover::after {
+  opacity: 0;
+}
+/* Active */
+.uk-thumbnav > .uk-active > *::after {
+  opacity: 0;
+}
+/* Modifier: 'uk-thumbnav-vertical'
+ ========================================================================== */
+/*
+ * 1. Change direction
+ * 2. Gutter
+ */
+.uk-thumbnav-vertical {
+  /* 1 */
+  flex-direction: column;
+  /* 2 */
+  margin-right: 0;
+  margin-top: -15px;
+}
+/* 2 */
+.uk-thumbnav-vertical > * {
+  padding-right: 0;
+  padding-top: 15px;
+}
+/* ========================================================================
+   Component: Iconnav
+ ========================================================================== */
+/*
+ * 1. Allow items to wrap into the next line
+ * 2. Reset list
+ * 3. Gutter
+ */
+.uk-iconnav {
+  display: flex;
+  /* 1 */
+  flex-wrap: wrap;
+  /* 2 */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* 3 */
+  margin-right: -10px;
+}
+/*
+ * Space is allocated based on content dimensions, but shrinks: 0 1 auto
+ * 1. Gutter
+ */
+.uk-iconnav > * {
+  /* 1 */
+  padding-right: 10px;
+}
+/* Items
+ ========================================================================== */
+/*
+ * Items must target `a` elements to exclude other elements (e.g. dropdowns)
+ * 1. Center content vertically if there is still some text
+ * 2. Imitate white space gap when using flexbox
+ * 3. Force text not to affect item height
+ * 4. Style
+ * 5. Required for `a` if there is still some text
+ */
+.uk-iconnav > * > a {
+  /* 1 */
+  display: flex;
+  align-items: center;
+  /* 2 */
+  column-gap: 0.25em;
+  /* 3 */
+  line-height: 0;
+  /* 4 */
+  color: #999;
+  /* 5 */
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: 0.1s ease-in-out;
+  transition-property: color, background-color;
+}
+/* Hover */
+.uk-iconnav > * > a:hover {
+  color: #666;
+}
+/* Active */
+.uk-iconnav > .uk-active > a {
+  color: #666;
+}
+/* Modifier: 'uk-iconnav-vertical'
+ ========================================================================== */
+/*
+ * 1. Change direction
+ * 2. Gutter
+ */
+.uk-iconnav-vertical {
+  /* 1 */
+  flex-direction: column;
+  /* 2 */
+  margin-right: 0;
+  margin-top: -10px;
+}
+/* 2 */
+.uk-iconnav-vertical > * {
+  padding-right: 0;
+  padding-top: 10px;
+}
 /* ========================================================================
    Component: Grid
  ========================================================================== */
@@ -5436,6 +5634,7 @@ ul.uk-nav-sub {
   --uk-position-offset: 15px;
   --uk-position-shift-offset: 0;
   --uk-position-viewport-offset: 15px;
+  --uk-inverse: dark;
   /* 1 */
   width: 200px;
   /* 2 */
@@ -6097,157 +6296,6 @@ ul.uk-nav-sub {
   padding-top: 12px;
 }
 /* ========================================================================
-   Component: Thumbnav
- ========================================================================== */
-/*
- * 1. Allow items to wrap into the next line
- * 2. Reset list
- * 3. Gutter
- */
-.uk-thumbnav {
-  display: flex;
-  /* 1 */
-  flex-wrap: wrap;
-  /* 2 */
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  /* 3 */
-  margin-right: -15px;
-}
-/*
- * Space is allocated based on content dimensions, but shrinks: 0 1 auto
- * 1. Gutter
- */
-.uk-thumbnav > * {
-  /* 1 */
-  padding-right: 15px;
-}
-/* Items
- ========================================================================== */
-/*
- * Items
- */
-.uk-thumbnav > * > * {
-  display: inline-block;
-  position: relative;
-}
-.uk-thumbnav > * > *::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
-  transition: opacity 0.1s ease-in-out;
-}
-/* Hover */
-.uk-thumbnav > * > :hover::after {
-  opacity: 0;
-}
-/* Active */
-.uk-thumbnav > .uk-active > *::after {
-  opacity: 0;
-}
-/* Modifier: 'uk-thumbnav-vertical'
- ========================================================================== */
-/*
- * 1. Change direction
- * 2. Gutter
- */
-.uk-thumbnav-vertical {
-  /* 1 */
-  flex-direction: column;
-  /* 2 */
-  margin-right: 0;
-  margin-top: -15px;
-}
-/* 2 */
-.uk-thumbnav-vertical > * {
-  padding-right: 0;
-  padding-top: 15px;
-}
-/* ========================================================================
-   Component: Iconnav
- ========================================================================== */
-/*
- * 1. Allow items to wrap into the next line
- * 2. Reset list
- * 3. Gutter
- */
-.uk-iconnav {
-  display: flex;
-  /* 1 */
-  flex-wrap: wrap;
-  /* 2 */
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  /* 3 */
-  margin-right: -10px;
-}
-/*
- * Space is allocated based on content dimensions, but shrinks: 0 1 auto
- * 1. Gutter
- */
-.uk-iconnav > * {
-  /* 1 */
-  padding-right: 10px;
-}
-/* Items
- ========================================================================== */
-/*
- * Items must target `a` elements to exclude other elements (e.g. dropdowns)
- * 1. Center content vertically if there is still some text
- * 2. Imitate white space gap when using flexbox
- * 3. Force text not to affect item height
- * 4. Style
- * 5. Required for `a` if there is still some text
- */
-.uk-iconnav > * > a {
-  /* 1 */
-  display: flex;
-  align-items: center;
-  /* 2 */
-  column-gap: 0.25em;
-  /* 3 */
-  line-height: 0;
-  /* 4 */
-  color: #999;
-  /* 5 */
-  text-decoration: none;
-  font-size: 0.875rem;
-  transition: 0.1s ease-in-out;
-  transition-property: color, background-color;
-}
-/* Hover */
-.uk-iconnav > * > a:hover {
-  color: #666;
-}
-/* Active */
-.uk-iconnav > .uk-active > a {
-  color: #666;
-}
-/* Modifier: 'uk-iconnav-vertical'
- ========================================================================== */
-/*
- * 1. Change direction
- * 2. Gutter
- */
-.uk-iconnav-vertical {
-  /* 1 */
-  flex-direction: column;
-  /* 2 */
-  margin-right: 0;
-  margin-top: -10px;
-}
-/* 2 */
-.uk-iconnav-vertical > * {
-  padding-right: 0;
-  padding-top: 10px;
-}
-/* ========================================================================
    Component: Dropdown
  ========================================================================== */
 /*
@@ -6259,6 +6307,7 @@ ul.uk-nav-sub {
 .uk-dropdown {
   --uk-position-offset: 10px;
   --uk-position-viewport-offset: 15px;
+  --uk-inverse: dark;
   /* 1 */
   width: auto;
   /* 2 */
@@ -8249,7 +8298,7 @@ iframe[data-uk-cover] {
 [class*="uk-float-"] {
   max-width: 100%;
 }
-/* Overfow
+/* Overflow
  ========================================================================== */
 .uk-overflow-hidden {
   overflow: hidden;
@@ -9780,33 +9829,27 @@ iframe[data-uk-cover] {
 /*
  * Remove space when hidden.
  * 1. Remove from document flow.
- * 2. Hide element and shrink its dimension. Can't use zero dimensions together
- *    with `overflow: hidden` it would remove it from the accessibility tree.
- * 3. Hide the single rendered pixel.
- * 4. Prevent text wrapping caused by `width: 1px` because it has side effects on vocalisation
- *    by screen readers and the visual tracking indicator of other assistive technologies.
+ * 2. Hide element and shrink its dimension. Current browsers and screen readers
+ *    keep the element in the accessibility tree even with zero dimensions.
+ *    Using `tabindex="-1"` will show the element on touch devices.
+ *    Note: `clip-path` doesn't work with `tabindex` on touch devices.
  */
 .uk-hidden-visually:not(:focus):not(:active):not(:focus-within),
 .uk-visible-toggle:not(:hover):not(:focus) .uk-hidden-hover:not(:focus-within) {
   /* 1 */
   position: absolute !important;
   /* 2 */
-  width: 1px !important;
-  height: 1px !important;
+  width: 0 !important;
+  height: 0 !important;
   padding: 0 !important;
   border: 0 !important;
   margin: 0 !important;
   overflow: hidden !important;
-  /* 3 */
-  clip-path: inset(50%) !important;
-  /* 4 */
-  white-space: nowrap !important;
 }
 /*
  * Keep space when hidden.
  * Hide element without shrinking its dimension.
- * Unfortunately, can't use `clip-path: inset(50%)` because hover won't work
- * if the element is positioned outside of the toggle box.
+ * Note: `clip-path` doesn't work with hover for elements outside of the toggle box.
  */
 .uk-visible-toggle:not(:hover):not(:focus) .uk-invisible-hover:not(:focus-within) {
   opacity: 0 !important;
@@ -11609,6 +11652,33 @@ iframe[data-uk-cover] {
 .uk-overlay-primary .uk-search-navbar .uk-search-input,
 .uk-offcanvas-bar .uk-search-navbar .uk-search-input {
   background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.uk-light .uk-search-navbar .uk-search-input:focus,
+.uk-section-primary:not(.uk-preserve-color) .uk-search-navbar .uk-search-input:focus,
+.uk-section-secondary:not(.uk-preserve-color) .uk-search-navbar .uk-search-input:focus,
+.uk-tile-primary:not(.uk-preserve-color) .uk-search-navbar .uk-search-input:focus,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-search-navbar .uk-search-input:focus,
+.uk-card-primary.uk-card-body .uk-search-navbar .uk-search-input:focus,
+.uk-card-primary > :not([class*="uk-card-media"]) .uk-search-navbar .uk-search-input:focus,
+.uk-card-secondary.uk-card-body .uk-search-navbar .uk-search-input:focus,
+.uk-card-secondary > :not([class*="uk-card-media"]) .uk-search-navbar .uk-search-input:focus,
+.uk-overlay-primary .uk-search-navbar .uk-search-input:focus,
+.uk-offcanvas-bar .uk-search-navbar .uk-search-input:focus {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.uk-light .uk-search-medium .uk-search-input,
+.uk-section-primary:not(.uk-preserve-color) .uk-search-medium .uk-search-input,
+.uk-section-secondary:not(.uk-preserve-color) .uk-search-medium .uk-search-input,
+.uk-tile-primary:not(.uk-preserve-color) .uk-search-medium .uk-search-input,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-search-medium .uk-search-input,
+.uk-card-primary.uk-card-body .uk-search-medium .uk-search-input,
+.uk-card-primary > :not([class*="uk-card-media"]) .uk-search-medium .uk-search-input,
+.uk-card-secondary.uk-card-body .uk-search-medium .uk-search-input,
+.uk-card-secondary > :not([class*="uk-card-media"]) .uk-search-medium .uk-search-input,
+.uk-overlay-primary .uk-search-medium .uk-search-input,
+.uk-offcanvas-bar .uk-search-medium .uk-search-input {
+  background-color: transparent;
 }
 .uk-light .uk-search-large .uk-search-input,
 .uk-section-primary:not(.uk-preserve-color) .uk-search-large .uk-search-input,
@@ -11673,6 +11743,58 @@ iframe[data-uk-cover] {
 .uk-card-secondary > :not([class*="uk-card-media"]) .uk-accordion-title:hover,
 .uk-overlay-primary .uk-accordion-title:hover,
 .uk-offcanvas-bar .uk-accordion-title:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+.uk-light .uk-thumbnav > * > *::after,
+.uk-section-primary:not(.uk-preserve-color) .uk-thumbnav > * > *::after,
+.uk-section-secondary:not(.uk-preserve-color) .uk-thumbnav > * > *::after,
+.uk-tile-primary:not(.uk-preserve-color) .uk-thumbnav > * > *::after,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-thumbnav > * > *::after,
+.uk-card-primary.uk-card-body .uk-thumbnav > * > *::after,
+.uk-card-primary > :not([class*="uk-card-media"]) .uk-thumbnav > * > *::after,
+.uk-card-secondary.uk-card-body .uk-thumbnav > * > *::after,
+.uk-card-secondary > :not([class*="uk-card-media"]) .uk-thumbnav > * > *::after,
+.uk-overlay-primary .uk-thumbnav > * > *::after,
+.uk-offcanvas-bar .uk-thumbnav > * > *::after {
+  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+.uk-light .uk-iconnav > * > a,
+.uk-section-primary:not(.uk-preserve-color) .uk-iconnav > * > a,
+.uk-section-secondary:not(.uk-preserve-color) .uk-iconnav > * > a,
+.uk-tile-primary:not(.uk-preserve-color) .uk-iconnav > * > a,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-iconnav > * > a,
+.uk-card-primary.uk-card-body .uk-iconnav > * > a,
+.uk-card-primary > :not([class*="uk-card-media"]) .uk-iconnav > * > a,
+.uk-card-secondary.uk-card-body .uk-iconnav > * > a,
+.uk-card-secondary > :not([class*="uk-card-media"]) .uk-iconnav > * > a,
+.uk-overlay-primary .uk-iconnav > * > a,
+.uk-offcanvas-bar .uk-iconnav > * > a {
+  color: rgba(255, 255, 255, 0.5);
+}
+.uk-light .uk-iconnav > * > a:hover,
+.uk-section-primary:not(.uk-preserve-color) .uk-iconnav > * > a:hover,
+.uk-section-secondary:not(.uk-preserve-color) .uk-iconnav > * > a:hover,
+.uk-tile-primary:not(.uk-preserve-color) .uk-iconnav > * > a:hover,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-iconnav > * > a:hover,
+.uk-card-primary.uk-card-body .uk-iconnav > * > a:hover,
+.uk-card-primary > :not([class*="uk-card-media"]) .uk-iconnav > * > a:hover,
+.uk-card-secondary.uk-card-body .uk-iconnav > * > a:hover,
+.uk-card-secondary > :not([class*="uk-card-media"]) .uk-iconnav > * > a:hover,
+.uk-overlay-primary .uk-iconnav > * > a:hover,
+.uk-offcanvas-bar .uk-iconnav > * > a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+.uk-light .uk-iconnav > .uk-active > a,
+.uk-section-primary:not(.uk-preserve-color) .uk-iconnav > .uk-active > a,
+.uk-section-secondary:not(.uk-preserve-color) .uk-iconnav > .uk-active > a,
+.uk-tile-primary:not(.uk-preserve-color) .uk-iconnav > .uk-active > a,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-iconnav > .uk-active > a,
+.uk-card-primary.uk-card-body .uk-iconnav > .uk-active > a,
+.uk-card-primary > :not([class*="uk-card-media"]) .uk-iconnav > .uk-active > a,
+.uk-card-secondary.uk-card-body .uk-iconnav > .uk-active > a,
+.uk-card-secondary > :not([class*="uk-card-media"]) .uk-iconnav > .uk-active > a,
+.uk-overlay-primary .uk-iconnav > .uk-active > a,
+.uk-offcanvas-bar .uk-iconnav > .uk-active > a {
   color: rgba(255, 255, 255, 0.7);
 }
 .uk-light .uk-grid-divider > :not(.uk-first-column)::before,
@@ -12565,58 +12687,6 @@ iframe[data-uk-cover] {
 .uk-offcanvas-bar .uk-dotnav > .uk-active > * {
   background-color: rgba(255, 255, 255, 0.9);
   border-color: transparent;
-}
-.uk-light .uk-thumbnav > * > *::after,
-.uk-section-primary:not(.uk-preserve-color) .uk-thumbnav > * > *::after,
-.uk-section-secondary:not(.uk-preserve-color) .uk-thumbnav > * > *::after,
-.uk-tile-primary:not(.uk-preserve-color) .uk-thumbnav > * > *::after,
-.uk-tile-secondary:not(.uk-preserve-color) .uk-thumbnav > * > *::after,
-.uk-card-primary.uk-card-body .uk-thumbnav > * > *::after,
-.uk-card-primary > :not([class*="uk-card-media"]) .uk-thumbnav > * > *::after,
-.uk-card-secondary.uk-card-body .uk-thumbnav > * > *::after,
-.uk-card-secondary > :not([class*="uk-card-media"]) .uk-thumbnav > * > *::after,
-.uk-overlay-primary .uk-thumbnav > * > *::after,
-.uk-offcanvas-bar .uk-thumbnav > * > *::after {
-  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
-}
-.uk-light .uk-iconnav > * > a,
-.uk-section-primary:not(.uk-preserve-color) .uk-iconnav > * > a,
-.uk-section-secondary:not(.uk-preserve-color) .uk-iconnav > * > a,
-.uk-tile-primary:not(.uk-preserve-color) .uk-iconnav > * > a,
-.uk-tile-secondary:not(.uk-preserve-color) .uk-iconnav > * > a,
-.uk-card-primary.uk-card-body .uk-iconnav > * > a,
-.uk-card-primary > :not([class*="uk-card-media"]) .uk-iconnav > * > a,
-.uk-card-secondary.uk-card-body .uk-iconnav > * > a,
-.uk-card-secondary > :not([class*="uk-card-media"]) .uk-iconnav > * > a,
-.uk-overlay-primary .uk-iconnav > * > a,
-.uk-offcanvas-bar .uk-iconnav > * > a {
-  color: rgba(255, 255, 255, 0.5);
-}
-.uk-light .uk-iconnav > * > a:hover,
-.uk-section-primary:not(.uk-preserve-color) .uk-iconnav > * > a:hover,
-.uk-section-secondary:not(.uk-preserve-color) .uk-iconnav > * > a:hover,
-.uk-tile-primary:not(.uk-preserve-color) .uk-iconnav > * > a:hover,
-.uk-tile-secondary:not(.uk-preserve-color) .uk-iconnav > * > a:hover,
-.uk-card-primary.uk-card-body .uk-iconnav > * > a:hover,
-.uk-card-primary > :not([class*="uk-card-media"]) .uk-iconnav > * > a:hover,
-.uk-card-secondary.uk-card-body .uk-iconnav > * > a:hover,
-.uk-card-secondary > :not([class*="uk-card-media"]) .uk-iconnav > * > a:hover,
-.uk-overlay-primary .uk-iconnav > * > a:hover,
-.uk-offcanvas-bar .uk-iconnav > * > a:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
-.uk-light .uk-iconnav > .uk-active > a,
-.uk-section-primary:not(.uk-preserve-color) .uk-iconnav > .uk-active > a,
-.uk-section-secondary:not(.uk-preserve-color) .uk-iconnav > .uk-active > a,
-.uk-tile-primary:not(.uk-preserve-color) .uk-iconnav > .uk-active > a,
-.uk-tile-secondary:not(.uk-preserve-color) .uk-iconnav > .uk-active > a,
-.uk-card-primary.uk-card-body .uk-iconnav > .uk-active > a,
-.uk-card-primary > :not([class*="uk-card-media"]) .uk-iconnav > .uk-active > a,
-.uk-card-secondary.uk-card-body .uk-iconnav > .uk-active > a,
-.uk-card-secondary > :not([class*="uk-card-media"]) .uk-iconnav > .uk-active > a,
-.uk-overlay-primary .uk-iconnav > .uk-active > a,
-.uk-offcanvas-bar .uk-iconnav > .uk-active > a {
-  color: rgba(255, 255, 255, 0.7);
 }
 .uk-light .uk-text-lead,
 .uk-section-primary:not(.uk-preserve-color) .uk-text-lead,

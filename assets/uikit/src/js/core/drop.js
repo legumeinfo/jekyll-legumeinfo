@@ -1,9 +1,9 @@
 import {
     $,
+    $$,
     MouseTracker,
     addClass,
     append,
-    apply,
     attr,
     css,
     hasClass,
@@ -27,11 +27,9 @@ import {
     pointerUp,
     query,
     removeClass,
-    within,
 } from 'uikit-util';
-import { lazyload } from '../api/observables';
 import Container from '../mixin/container';
-import Position from '../mixin/position';
+import Position, { storeScrollPosition } from '../mixin/position';
 import Togglable from '../mixin/togglable';
 import { keyMap } from '../util/keys';
 import { preventBackgroundScroll } from '../util/scroll';
@@ -108,7 +106,7 @@ export default {
     },
 
     beforeConnect() {
-        this.clsDrop = this.$props.clsDrop || `uk-${this.$options.name}`;
+        this.clsDrop = this.$props.clsDrop || this.$options.id;
     },
 
     connected() {
@@ -129,18 +127,11 @@ export default {
         css(this.$el, this._style);
     },
 
-    observe: lazyload({
-        target: ({ toggle, $el }) => query(toggle, $el),
-        targets: ({ $el }) => $el,
-    }),
-
     events: [
         {
             name: 'click',
 
-            delegate() {
-                return '.uk-drop-close';
-            },
+            delegate: () => '.uk-drop-close',
 
             handler(e) {
                 e.preventDefault();
@@ -151,9 +142,7 @@ export default {
         {
             name: 'click',
 
-            delegate() {
-                return 'a[href*="#"]';
-            },
+            delegate: () => 'a[href*="#"]',
 
             handler({ defaultPrevented, current }) {
                 const { hash } = current;
@@ -219,9 +208,7 @@ export default {
         {
             name: `${pointerEnter} focusin`,
 
-            filter() {
-                return includes(this.mode, 'hover');
-            },
+            filter: ({ mode }) => includes(mode, 'hover'),
 
             handler(e) {
                 if (!isTouch(e)) {
@@ -233,9 +220,7 @@ export default {
         {
             name: `${pointerLeave} focusout`,
 
-            filter() {
-                return includes(this.mode, 'hover');
-            },
+            filter: ({ mode }) => includes(mode, 'hover'),
 
             handler(e) {
                 if (!isTouch(e) && e.relatedTarget) {
@@ -336,7 +321,7 @@ export default {
             }
 
             if (active) {
-                if (delay && active.isDelaying) {
+                if (delay && active.isDelaying()) {
                     this.showTimer = setTimeout(() => matches(target, ':hover') && this.show(), 10);
                     return;
                 }
@@ -364,11 +349,8 @@ export default {
             this.clearTimers();
 
             this.isDelayedHide = delay;
-            this.isDelaying = getPositionedElements(this.$el).some((el) =>
-                this.tracker.movesTo(el),
-            );
 
-            if (delay && this.isDelaying) {
+            if (delay && this.isDelaying()) {
                 this.hideTimer = setTimeout(this.hide, 50);
             } else if (delay && this.delayHide) {
                 this.hideTimer = setTimeout(hide, this.delayHide);
@@ -382,14 +364,19 @@ export default {
             clearTimeout(this.hideTimer);
             this.showTimer = null;
             this.hideTimer = null;
-            this.isDelaying = false;
         },
 
         isActive() {
             return active === this;
         },
 
+        isDelaying() {
+            return [this.$el, ...$$('.uk-drop', this.$el)].some((el) => this.tracker.movesTo(el));
+        },
+
         position() {
+            const restoreScrollPosition = storeScrollPosition(this.$el);
+
             removeClass(this.$el, 'uk-drop-stack');
             css(this.$el, this._style);
 
@@ -454,15 +441,11 @@ export default {
                     this.positionAt(this.$el, this.target, this.boundary);
                 }
             }
+
+            restoreScrollPosition();
         },
     },
 };
-
-function getPositionedElements(el) {
-    const result = [];
-    apply(el, (el) => css(el, 'position') !== 'static' && result.push(el));
-    return result;
-}
 
 function getViewport(el, target) {
     return offsetViewport(overflowParents(target).find((parent) => parent.contains(el)));
@@ -519,7 +502,7 @@ function listenForBackgroundClose(drop) {
                     !defaultPrevented &&
                     type === pointerUp &&
                     target === newTarget &&
-                    !(drop.targetEl && within(target, drop.targetEl))
+                    !drop.targetEl?.contains(target)
                 ) {
                     drop.hide(false);
                 }

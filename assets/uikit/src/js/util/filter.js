@@ -1,4 +1,5 @@
-import { isString, startsWith, toArray, toNode, toNodes } from './lang';
+import { inBrowser } from './env.js';
+import { toArray, toNode, toNodes } from './lang';
 
 const voidElements = {
     area: true,
@@ -21,10 +22,13 @@ export function isVoidElement(element) {
     return toNodes(element).some((element) => voidElements[element.tagName.toLowerCase()]);
 }
 
+const isVisibleFn =
+    (inBrowser && Element.prototype.checkVisibility) ||
+    function () {
+        return this.offsetWidth || this.offsetHeight || this.getClientRects().length;
+    };
 export function isVisible(element) {
-    return toNodes(element).some(
-        (element) => element.offsetWidth || element.offsetHeight || element.getClientRects().length,
-    );
+    return toNodes(element).some((element) => isVisibleFn.call(element));
 }
 
 export const selInput = 'input,select,textarea,button';
@@ -47,16 +51,6 @@ export function filter(element, selector) {
 
 export function matches(element, selector) {
     return toNodes(element).some((element) => element.matches(selector));
-}
-
-export function closest(element, selector) {
-    return toNode(element)?.closest(startsWith(selector, '>') ? selector.slice(1) : selector);
-}
-
-export function within(element, selector) {
-    return isString(selector)
-        ? !!closest(element, selector)
-        : toNode(selector).contains(toNode(element));
 }
 
 export function parents(element, selector) {
@@ -88,8 +82,8 @@ export function isSameSiteAnchor(el) {
 
 export function getTargetedElement(el) {
     if (isSameSiteAnchor(el)) {
-        el = toNode(el);
-        const id = decodeURIComponent(el.hash).substring(1);
-        return document.getElementById(id) || document.getElementsByName(id)[0];
+        const { hash, ownerDocument } = toNode(el);
+        const id = decodeURIComponent(hash).slice(1);
+        return ownerDocument.getElementById(id) || ownerDocument.getElementsByName(id)[0];
     }
 }

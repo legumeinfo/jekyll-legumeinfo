@@ -13,14 +13,17 @@ export default {
     },
 
     computed: {
-        target: ({ target }, $el) => query(target, $el),
+        target: {
+            get: ({ target }, $el) => query(target, $el),
+            observe: ({ target }) => target,
+        },
     },
 
     observe: resize({ target: ({ target }) => target }),
 
     update: {
         read() {
-            return { height: this.target.offsetHeight };
+            return this.target ? { height: this.target.offsetHeight } : false;
         },
 
         write({ height }) {

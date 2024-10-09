@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chamaecrista &#8211; LIS: Legume Information System</title>
+  <title>Lookup corresponding genes via Pangene sets &#8211; LIS: Legume Information System</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species.">
   <meta name="robots" content="all">
   <meta name="author" content="">
   
   
-  <link rel="canonical" href="/collections/chamaecrista/">
+  <link rel="canonical" href="/tools/search/pangene.html">
 
   
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -84,6 +84,9 @@
     }
   </script>
 
+  
+  <!-- LIS Web Components -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@legumeinfo/web-components@1.5.0/dist/web-components.min.js"></script>
   
 
   <!-- Icons -->
@@ -654,169 +657,52 @@
 </div>
 
 
-
-  <div id="left-menu" class="tm-sidebar-left uk-visible@m">
-
-  
-  
-  
-    <h3>Data Collections</h3>
-
-<ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-  
-  
-  
-  <li><a href="/collections/arachis">Arachis</a></li>
-  
-  
-  
-  
-  
-  <li><a href="/collections/cajanus">Cajanus</a></li>
-  
-  
-  
-  
-  
-  <li><a href="/collections/cicer">Cicer</a></li>
-  
-  
-  
-  
-  
-  <li><a href="/collections/glycine">Glycine</a></li>
-  
-  
-  
-  
-  
-  <li><a href="/collections/lotus">Lotus</a></li>
-  
-  
-  
-  
-  
-  <li><a href="/collections/lupinus">Lupinus</a></li>
-  
-  
-  
-  
-  
-  <li><a href="/collections/medicago">Medicago</a></li>
-  
-  
-  
-  
-  
-  <li><a href="/collections/phaseolus">Phaseolus</a></li>
-  
-  
-  
-  
-  
-  <li><a href="/collections/pisum">Pisum</a></li>
-  
-  
-  
-  
-  
-  <li><a href="/collections/trifolium">Trifolium</a></li>
-  
-  
-  
-  
-  
-  <li><a href="/collections/vigna">Vigna</a></li>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-</ul>
-
-  
-
-  <!-- dynamically set the top style property of the left menu when the height of the navbar changes -->
-  <!-- NOTE: the script tag is nested so it doesn't break a CSS selector -->
-  <script type="text/javascript">
-
-    const navbar = document.getElementById("navbar");
-    const left = document.getElementById("left-menu");
-
-    const leftTopObserver = new ResizeObserver(entries => {
-      for (let entry of entries) {
-        // use the newer contentBoxSize property if the browser supports it
-        if (entry.contentBoxSize) {
-          left.style.top = entry.contentBoxSize[0].blockSize + "px";
-        // fallback to the older contentRect property
-        } else {
-          left.style.top = entry.contentRect.height + "px";
-        }
-      }
-    });
-
-    leftTopObserver.observe(navbar);
-
-  </script>
-</div>
-
-
-<!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
 <div class="tm-main uk-section uk-section-default">
-  <div class="uk-container uk-flex">
-    <div class="uk-width-1-1">
-      
+  <div class="uk-container uk-container-expand">
+    <!-- the custom pangene lookup element -->
+<lis-pangene-lookup-element id="pangene-lookup" genesExample="glyma.Lee.gnm2.ann1.Gm_00017 glyma.Lee.gnm2.ann1.Gm_00018 glyma.Lee.gnm2.ann1.Gm_00025 glyma.Lee.gnm2.ann1.Gm_00043 glyma.Lee.gnm2.ann1.Gm_00049 glyma.Lee.gnm2.ann1.Gm_00205"></lis-pangene-lookup-element>
+<lis-modal-element modalId="modal">
+  <lis-linkout-element id="linkouts"></lis-linkout-element>
+</lis-modal-element>
 
+<!-- set the form data and search functions by property because functions can't be set by attribute -->
+<script type="module">
 
-<h1><i>Chamaecrista</i> data collections</h1>
+  import {
+    // pangenes
+    getPangeneLookupFormDataFunction,
+    pangeneDownloadFunction,
+    pangeneLookupFunctionFactory,
+    pangeneAllModalLinksFactory,
+    // linkouts
+    allLinkoutsFunction,
+    // modal
+    modalEventToLinkData
+  } from "lis-graphql";
 
+  // setup the pangene lookup component
+  const pangeneLookupElement = document.getElementById('pangene-lookup');
+  pangeneLookupElement.formDataFunction = getPangeneLookupFormDataFunction;
+  const lookupDataProcessors = pangeneAllModalLinksFactory('modal');
+  pangeneLookupElement.searchFunction =
+    pangeneLookupFunctionFactory(...lookupDataProcessors);
+  pangeneLookupElement.downloadFunction = pangeneDownloadFunction;
 
+  // setup the linkout component
+  const linkoutElement = document.getElementById('linkouts');
+  linkoutElement.linkoutFunction = allLinkoutsFunction;
 
-<h3><a target="_blank" href="https://data.legumeinfo.org/Chamaecrista/fasciculata/"><i>Chamaecrista fasciculata</i></a></h3>
+  // wait for the modal slot to load before adding an event listener
+  window.onload = (event) => {
+    const modal = document.getElementById('modal');
+    modal.addEventListener('toggle', (event) => {
+      const {type, ...linkoutData} = modalEventToLinkData(event);
+      linkoutElement.getLinkouts({type, linkoutData});
+    });
+  };
 
+</script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<hr/>
-
-
-
-
-    </div>
-    
   </div>
 </div>
 

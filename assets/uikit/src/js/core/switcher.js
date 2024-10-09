@@ -10,6 +10,7 @@ import {
     hasClass,
     includes,
     isNode,
+    isTag,
     matches,
     queryAll,
     toArray,
@@ -49,7 +50,10 @@ export default {
     },
 
     computed: {
-        connects: ({ connect }, $el) => queryAll(connect, $el),
+        connects: {
+            get: ({ connect }, $el) => queryAll(connect, $el),
+            observe: ({ connect }) => connect,
+        },
 
         connectChildren() {
             return this.connects.map((el) => children(el)).flat();
@@ -100,9 +104,7 @@ export default {
         {
             name: 'click keydown',
 
-            delegate() {
-                return this.toggle;
-            },
+            delegate: ({ toggle }) => toggle,
 
             handler(e) {
                 if (
@@ -118,9 +120,7 @@ export default {
         {
             name: 'keydown',
 
-            delegate() {
-                return this.toggle;
-            },
+            delegate: ({ toggle }) => toggle,
 
             handler(e) {
                 const { current, keyCode } = e;
@@ -154,13 +154,10 @@ export default {
         {
             name: 'click',
 
-            el() {
-                return this.connects.concat(this.itemNav ? queryAll(this.itemNav, this.$el) : []);
-            },
+            el: ({ $el, connects, itemNav }) =>
+                connects.concat(itemNav ? queryAll(itemNav, $el) : []),
 
-            delegate() {
-                return `[${this.attrItem}],[data-${this.attrItem}]`;
-            },
+            delegate: ({ attrItem }) => `[${attrItem}],[data-${attrItem}]`,
 
             handler(e) {
                 if (e.target.closest('a,button')) {
@@ -173,13 +170,9 @@ export default {
         {
             name: 'swipeRight swipeLeft',
 
-            filter() {
-                return this.swiping;
-            },
+            filter: ({ swiping }) => swiping,
 
-            el() {
-                return this.connects;
-            },
+            el: ({ connects }) => connects,
 
             handler({ type }) {
                 this.show(endsWith(type, 'Left') ? 'next' : 'previous');
@@ -188,7 +181,11 @@ export default {
     ],
 
     update() {
-        attr(this.connects, 'role', 'presentation');
+        for (const el of this.connects) {
+            if (isTag(el, 'ul')) {
+                attr(el, 'role', 'presentation');
+            }
+        }
         attr(children(this.$el), 'role', 'presentation');
 
         for (const index in this.toggles) {
@@ -239,8 +236,9 @@ export default {
                     (child, i) => i !== active && hasClass(child, this.cls),
                 );
 
-                await this.toggleElement(actives, false, animate);
-                await this.toggleElement(children[active], true, animate);
+                if (await this.toggleElement(actives, false, animate)) {
+                    await this.toggleElement(children[active], true, animate);
+                }
             });
         },
     },

@@ -5,7 +5,6 @@ import {
     attr,
     css,
     data,
-    each,
     fastdom,
     children as getChildren,
     hasClass,
@@ -72,9 +71,7 @@ export default {
     events: {
         name: 'click keydown',
 
-        delegate() {
-            return `[${this.attrItem}],[data-${this.attrItem}]`;
-        },
+        delegate: ({ attrItem }) => `[${attrItem}],[data-${attrItem}]`,
 
         handler(e) {
             if (e.type === 'keydown' && e.keyCode !== keyMap.SPACE) {
@@ -118,10 +115,7 @@ export default {
 
             await Promise.all(
                 $$(this.target, this.$el).map((target) => {
-                    const filterFn = () => {
-                        applyState(state, target, getChildren(target));
-                        this.$update(this.$el);
-                    };
+                    const filterFn = () => applyState(state, target, getChildren(target));
                     return animate ? this.animate(filterFn, target) : filterFn();
                 }),
             );
@@ -144,9 +138,15 @@ function isEqualState(stateA, stateB) {
 }
 
 function applyState(state, target, children) {
-    const selector = getSelector(state);
-
-    children.forEach((el) => css(el, 'display', selector && !matches(el, selector) ? 'none' : ''));
+    for (const el of children) {
+        css(
+            el,
+            'display',
+            Object.values(state.filter).every((selector) => !selector || matches(el, selector))
+                ? ''
+                : 'none',
+        );
+    }
 
     const [sort, order] = state.sort;
 
@@ -196,12 +196,6 @@ function matchFilter(
         ? (group in stateFilter && filter === stateFilter[group]) ||
               (!filter && group && !(group in stateFilter) && !stateFilter[''])
         : stateSort === sort && stateOrder === order;
-}
-
-function getSelector({ filter }) {
-    let selector = '';
-    each(filter, (value) => (selector += value || ''));
-    return selector;
 }
 
 function sortItems(nodes, sort, order) {

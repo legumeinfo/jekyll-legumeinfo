@@ -10,7 +10,7 @@ export function component(name, options) {
     const id = PREFIX + hyphenate(name);
 
     if (!options) {
-        if (isPlainObject(components[id])) {
+        if (!components[id].options) {
             components[id] = App.extend(components[id]);
         }
 
@@ -21,7 +21,7 @@ export function component(name, options) {
 
     App[name] = (element, data) => createComponent(name, element, data);
 
-    const opt = isPlainObject(options) ? { ...options } : options.options;
+    const opt = options.options ?? { ...options };
 
     opt.id = id;
     opt.name = name;
@@ -78,7 +78,7 @@ export function attachToElement(element, instance) {
 export function detachFromElement(element, instance) {
     delete element[DATA]?.[instance.$options.name];
 
-    if (!isEmpty(element[DATA])) {
+    if (isEmpty(element[DATA])) {
         delete element[DATA];
     }
 }

@@ -59,18 +59,16 @@ query TraitQuery($pageSize: Int, $page: Int, $name: String, $studyType: String, 
 /**
  * Gets traits from GraphQL.
  * @param {object} queryData - An object containing zero or more variables for the GraphQL query.
- * @param {object} pageData - An object containing pagination data for the GraphQL query, if any.
  * @param {object} options - An object containing optional parameters for the HTTP request,
  * namely, an optional `AbortSignal` instance that can be used to cancel the request mid-flight.
  * @returns {Promise} A `Promise` that resolves to the result of the GraphQL query.
  */
-export function getTraits(queryData={}, pageData={}, options={}) {
-  const {genus, species, traits, pubId, author} = queryData;
+export function getTraits(queryData={}, options={}) {
+  const {genus, species, traits, pubId, author, page, pageSize} = queryData;
   let {type} = queryData;
   if (type === 'QTL') {
     type = 'QTLStudy';
   }
-  const {page, pageSize} = pageData;
   const variables = {
     genus,
     species,
@@ -117,14 +115,13 @@ export function traitsDataToSearchResults(data) {
  * The trait search function to use for the `searchFunction` property of the `LisTraitAssociationSearchElement`
  * (`<lis-trait-association-search-element>`) Web Component.
  * @param {string} queryData - An object containing data from the submitted search form.
- * @param {number} page - The page of results to load.
  * @param {object} options - An object containing optional parameters to pass to the `getGenes` function.
  * namely, an optional `AbortSignal` instance that can be used to cancel the request mid-flight.
  * @returns {Promise} A `Promise` that resolves to the `PaginatedSearchResults<TraitAssociationSearchResult[]>` used by the
  * `LisTraitAssociationSearchElement` (`<lis-trait-association-search-element>`) Web Component.
  */
-export function traitSearchFunction(queryData, page, options={}) {
-    return getTraits(queryData, {page, pageSize: 10}, options)
+export function traitSearchFunction(queryData, options={}) {
+    return getTraits({...queryData, pageSize: 10}, options)
       .then(({data}) => traitsDataToSearchResults(data));
 }
 
@@ -134,8 +131,8 @@ export function traitSearchFunction(queryData, page, options={}) {
  * @returns {Promise} The `Promise` returned by the `traitAssociationSearchFunction` with the callbacks applied.
  */
 export function traitSearchFunctionFactory(...callbacks) {
-    return (queryData, page, options={}) => {
-        let promise = traitSearchFunction(queryData, page, options);
+    return (queryData, options={}) => {
+        let promise = traitSearchFunction(queryData, options);
         callbacks.forEach((callback) => {
           promise = promise.then(callback);
         });

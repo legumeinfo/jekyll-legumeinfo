@@ -2,7 +2,7 @@
     "name": "uikit",
     "title": "UIkit",
     "description": "UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces.",
-    "version": "3.19.2",
+    "version": "3.21.13",
     "main": "dist/js/uikit.js",
     "style": "dist/css/uikit.css",
     "sideEffects": [
@@ -20,9 +20,7 @@
         "prefix": "node build/prefix",
         "scope": "node build/scope",
         "release": "node build/release",
-        "watch": "chokidar \"**/*.less\" --initial -i \"node_modules\" -c \"node build/less\"",
-        "eslint": "eslint src/js",
-        "eslint-fix": "eslint --fix src/js"
+        "watch": "chokidar \"**/*.less\" --initial -i \"node_modules\" -c \"node build/less\""
     },
     "repository": {
         "type": "git",
@@ -33,8 +31,9 @@
         "url": "https://github.com/uikit/uikit/issues"
     },
     "homepage": "https://getuikit.com",
-    "packageManager": "pnpm@8.15.1",
+    "packageManager": "pnpm@9.8.0",
     "devDependencies": {
+        "@eslint/js": "^9.6.0",
         "@rollup/plugin-alias": "^5.1.0",
         "@rollup/plugin-replace": "^5.0.5",
         "archiver": "^7.0.1",
@@ -42,24 +41,26 @@
         "chokidar-cli": "^3.0.0",
         "clean-css": "^5.3.3",
         "dateformat": "^5.0.3",
-        "esbuild": "^0.20.1",
-        "eslint": "^8.57.0",
+        "esbuild": "^0.24.0",
+        "eslint": "^9.6.0",
         "eslint-config-prettier": "^9.1.0",
-        "execa": "^8.0.1",
+        "execa": "^9.3.0",
         "fs-extra": "^11.2.0",
-        "glob": "^10.3.10",
-        "inquirer": "^9.2.15",
+        "glob": "^11.0.0",
+        "globals": "^15.7.0",
+        "inquirer": "^11.0.1",
         "less": "^4.2.0",
         "minimist": "^1.2.8",
         "number-precision": "^1.6.0",
-        "p-limit": "^5.0.0",
+        "p-limit": "^6.0.0",
         "prettier": "^3.2.5",
-        "prettier-plugin-organize-imports": "^3.2.4",
-        "rollup": "^4.13.0",
+        "prettier-plugin-organize-imports": "^4.0.0",
+        "rollup": "^4.16.4",
         "rollup-plugin-esbuild": "^6.1.1",
         "rollup-plugin-modify": "^3.0.0",
         "rtlcss": "^4.1.1",
         "semver": "^7.6.0",
+        "strip-css-comments": "^5.0.0",
         "svgo": "^3.2.0"
     }
 }

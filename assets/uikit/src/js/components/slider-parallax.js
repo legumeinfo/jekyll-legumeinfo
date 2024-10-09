@@ -1,15 +1,11 @@
-import { css, endsWith, fastdom, noop, query, Transition } from 'uikit-util';
+import { css, endsWith, fastdom, noop, Transition } from 'uikit-util';
 import Parallax from '../mixin/parallax';
 
 export default {
     mixins: [Parallax],
 
-    data: {
-        selItem: '!li',
-    },
-
     beforeConnect() {
-        this.item = query(this.selItem, this.$el);
+        this.item = this.$el.closest(`.${this.$options.id.replace('parallax', 'items')} > *`);
     },
 
     disconnected() {
@@ -22,9 +18,7 @@ export default {
 
             self: true,
 
-            el() {
-                return this.item;
-            },
+            el: ({ item }) => item,
 
             handler({ type, detail: { percent, duration, timing, dir } }) {
                 fastdom.read(() => {
@@ -47,9 +41,7 @@ export default {
 
             self: true,
 
-            el() {
-                return this.item;
-            },
+            el: ({ item }) => item,
 
             handler() {
                 Transition.cancel(this.$el);
@@ -61,9 +53,7 @@ export default {
 
             self: true,
 
-            el() {
-                return this.item;
-            },
+            el: ({ item }) => item,
 
             handler({ type, detail: { percent, dir } }) {
                 fastdom.read(() => {

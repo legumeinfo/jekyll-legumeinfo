@@ -1,12 +1,13 @@
 import {
     $,
     $$,
-    append,
     attr,
     children,
     data,
-    empty,
+    html,
+    isEqual,
     isNumeric,
+    isTag,
     matches,
     parent,
     toFloat,
@@ -47,6 +48,7 @@ export default {
     watch: {
         nav(nav, prev) {
             attr(nav, 'role', 'tablist');
+            this.padNavitems();
 
             if (prev) {
                 this.$emit();
@@ -54,11 +56,15 @@ export default {
         },
 
         list(list) {
-            attr(list, 'role', 'presentation');
+            if (isTag(list, 'ul')) {
+                attr(list, 'role', 'presentation');
+            }
         },
 
         navChildren(children) {
             attr(children, 'role', 'presentation');
+            this.padNavitems();
+            this.updateNav();
         },
 
         navItems(items) {
@@ -109,16 +115,8 @@ export default {
                     'aria-roledescription': this.nav ? null : 'slide',
                 }),
             );
-        },
 
-        length(length) {
-            const navLength = this.navChildren.length;
-            if (this.nav && length !== navLength) {
-                empty(this.nav);
-                for (let i = 0; i < length; i++) {
-                    append(this.nav, `<li ${this.attrItem}="${i}"><a href></a></li>`);
-                }
-            }
+            this.padNavitems();
         },
     },
 
@@ -144,13 +142,9 @@ export default {
         {
             name: 'click keydown',
 
-            delegate() {
-                return this.selNavItem;
-            },
+            delegate: ({ selNavItem }) => selNavItem,
 
-            filter() {
-                return !this.parallax;
-            },
+            filter: ({ parallax }) => !parallax,
 
             handler(e) {
                 if (
@@ -171,13 +165,9 @@ export default {
         {
             name: 'keydown',
 
-            delegate() {
-                return this.selNavItem;
-            },
+            delegate: ({ selNavItem }) => selNavItem,
 
-            filter() {
-                return !this.parallax;
-            },
+            filter: ({ parallax }) => !parallax,
 
             handler(e) {
                 const { current, keyCode } = e;
@@ -238,6 +228,23 @@ export default {
                                 (cmd === 'next' && index >= this.maxIndex)),
                     );
                 }
+            }
+        },
+
+        padNavitems() {
+            if (!this.nav) {
+                return;
+            }
+
+            const children = [];
+            for (let i = 0; i < this.length; i++) {
+                const attr = `${this.attrItem}="${i}"`;
+                children[i] =
+                    this.navChildren.findLast((el) => el.matches(`[${attr}]`)) ||
+                    $(`<li ${attr}><a href></a></li>`);
+            }
+            if (!isEqual(children, this.navChildren)) {
+                html(this.nav, children);
             }
         },
     },

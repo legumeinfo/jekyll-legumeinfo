@@ -43,7 +43,7 @@ export default {
         const value = input.files?.[0]
             ? input.files[0].name
             : matches(input, 'select') &&
-                (option = $$('option', input).filter((el) => el.selected)[0]) // eslint-disable-line prefer-destructuring
+                (option = $$('option', input).filter((el) => el.selected)[0])
               ? option.textContent
               : input.value;
 
@@ -64,9 +64,7 @@ export default {
         {
             name: 'reset',
 
-            el() {
-                return this.$el.closest('form');
-            },
+            el: ({ $el }) => $el.closest('form'),
 
             handler() {
                 this.$emit();

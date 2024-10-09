@@ -1,6 +1,6 @@
 import { glob } from 'glob';
 import inquirer from 'inquirer';
-import { args, read, replaceInFile, validClassName } from './util.js';
+import { args, read, replaceInFile } from './util.js';
 
 if (args.h || args.help) {
     console.log(`
@@ -29,7 +29,7 @@ await replacePrefix(currentPrefix, prefix);
 
 async function findExistingPrefix() {
     return (await read(`${path}/css/uikit.css`)).match(
-        new RegExp(`(${validClassName.source})(-[a-z]+)?-grid`),
+        /([a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)(-[a-z]+)?-grid/,
     )?.[1];
 }
 
@@ -43,25 +43,26 @@ async function getPrefix() {
             await prompt({
                 name: 'prefix',
                 message: 'enter a prefix',
-                validate: (val, res) =>
-                    val.length && val.match(validClassName)
-                        ? !!(res.prefix = val)
-                        : 'invalid prefix',
+                validate: (val) => isValidPrefix(val) || 'invalid prefix',
             })
         ).prefix;
     }
 
-    if (validClassName.test(prefixFromInput)) {
+    if (isValidPrefix(prefixFromInput)) {
         return prefixFromInput;
     } else {
-        throw `illegal prefix: ${prefixFromInput}`;
+        throw `Illegal prefix: ${prefixFromInput}`;
     }
+}
+
+function isValidPrefix(prefix) {
+    return Boolean(prefix.match(/^[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*$/));
 }
 
 async function replacePrefix(from, to) {
     for (const file of await glob(`${path}/**/*.css`)) {
         await replaceInFile(file, (data) =>
-            data.replace(new RegExp(`${from}-${/([a-z\d-]+)/.source}`, 'g'), `${to}-$1`),
+            data.replace(new RegExp(`${from}-([a-z\\d-]+)`, 'g'), `${to}-$1`),
         );
     }
 

@@ -6,7 +6,7 @@ import {
     findIndex,
     includes,
     intersectRect,
-    isWindow,
+    isNode,
     toFloat,
     toWindow,
     ucfirst,
@@ -84,12 +84,17 @@ export function scrollIntoView(element, { offset: offsetBy = 0 } = {}) {
                     diff =
                         offset(targetEl).top +
                         (isScrollingElement ? 0 : element.scrollTop) -
-                        targetTop;
-                    const coverEl = getCoveringElement(targetEl);
-                    diff -= coverEl ? offset(coverEl).height : 0;
+                        targetTop -
+                        dimensions(getCoveringElement(targetEl)).height;
+                }
+
+                if (css(element, 'scrollBehavior') !== 'auto') {
+                    css(element, 'scrollBehavior', 'auto');
                 }
 
                 element.scrollTop = scroll + (top + diff) * percent;
+
+                css(element, 'scrollBehavior', '');
 
                 // scroll more if we have not reached our destination
                 // if element changes position during scroll try another step
@@ -163,45 +168,51 @@ export function overflowParents(element) {
 
 export function offsetViewport(scrollElement) {
     const window = toWindow(scrollElement);
-    let viewportElement =
-        scrollElement === scrollingElement(scrollElement) ? window : scrollElement;
+    const documentScrollingElement = scrollingElement(scrollElement);
+    const useWindow = !isNode(scrollElement) || scrollElement.contains(documentScrollingElement);
 
-    if (isWindow(viewportElement) && window.visualViewport) {
+    if (useWindow && window.visualViewport) {
         let { height, width, scale, pageTop: top, pageLeft: left } = window.visualViewport;
         height = Math.round(height * scale);
         width = Math.round(width * scale);
         return { height, width, top, left, bottom: top + height, right: left + width };
     }
 
-    let rect = offset(viewportElement);
-    if (css(viewportElement, 'display') === 'inline') {
+    let rect = offset(useWindow ? window : scrollElement);
+    if (css(scrollElement, 'display') === 'inline') {
         return rect;
     }
 
+    const { body, documentElement } = window.document;
+    const viewportElement = useWindow
+        ? documentScrollingElement === documentElement ||
+          // In quirks mode the scrolling element is body, even though the viewport is html
+          documentScrollingElement.clientHeight < body.clientHeight
+            ? documentScrollingElement
+            : body
+        : scrollElement;
     for (let [prop, dir, start, end] of [
         ['width', 'x', 'left', 'right'],
         ['height', 'y', 'top', 'bottom'],
     ]) {
-        if (isWindow(viewportElement)) {
-            // iOS 12 returns <body> as scrollingElement
-            viewportElement = scrollElement.ownerDocument;
-        } else {
-            rect[start] += toFloat(css(viewportElement, `border-${start}-width`));
-        }
         const subpixel = rect[prop] % 1;
+
+        rect[start] += toFloat(css(viewportElement, `border-${start}-width`));
         rect[prop] = rect[dir] =
             viewportElement[`client${ucfirst(prop)}`] -
             (subpixel ? (subpixel < 0.5 ? -subpixel : 1 - subpixel) : 0);
         rect[end] = rect[prop] + rect[start];
     }
+
     return rect;
 }
 
 export function getCoveringElement(target) {
     const { left, width, top } = dimensions(target);
-    for (const topPosition of [0, top]) {
-        const coverEl = target.ownerDocument.elementsFromPoint(left + width / 2, topPosition).find(
-            (el) =>
+    for (const position of top ? [0, top] : [0]) {
+        let coverEl;
+        for (const el of toWindow(target).document.elementsFromPoint(left + width / 2, position)) {
+            if (
                 !el.contains(target) &&
                 // If e.g. Offcanvas is not yet closed
                 !hasClass(el, 'uk-togglable-leave') &&
@@ -213,8 +224,12 @@ export function getCoveringElement(target) {
                                 (parent) => !parent.contains(el) && !hasPosition(parent, 'static'),
                             ),
                     ) < zIndex(el)) ||
-                    (hasPosition(el, 'sticky') && parent(el).contains(target))),
-        );
+                    (hasPosition(el, 'sticky') && parent(el).contains(target))) &&
+                (!coverEl || dimensions(coverEl).height < dimensions(el).height)
+            ) {
+                coverEl = el;
+            }
+        }
         if (coverEl) {
             return coverEl;
         }

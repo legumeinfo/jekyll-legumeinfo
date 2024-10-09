@@ -10,11 +10,13 @@ import {
     removeClass,
     trigger,
 } from 'uikit-util';
-import { resize } from '../api/observables';
 import I18n from './i18n';
 import SliderAutoplay from './slider-autoplay';
 import SliderDrag from './slider-drag';
 import SliderNav from './slider-nav';
+
+const easeOutQuad = 'cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+const easeOutQuart = 'cubic-bezier(0.165, 0.84, 0.44, 1)';
 
 export default {
     mixins: [SliderAutoplay, SliderDrag, SliderNav, I18n],
@@ -79,8 +81,6 @@ export default {
             }
         },
     },
-
-    observe: resize(),
 
     events: {
         itemshow({ target }) {
@@ -156,7 +156,9 @@ export default {
                 stack.shift();
                 this._transitioner = null;
 
-                requestAnimationFrame(() => stack.length && this.show(stack.shift(), true));
+                if (stack.length) {
+                    requestAnimationFrame(() => stack.length && this.show(stack.shift(), true));
+                }
             });
 
             prev && trigger(prev, 'itemhide', [this]);
@@ -177,19 +179,15 @@ export default {
             return this.getIndex(index, prevIndex);
         },
 
-        _show(prev, next, force) {
+        async _show(prev, next, force) {
             this._transitioner = this._getTransitioner(prev, next, this.dir, {
-                easing: force
-                    ? next.offsetWidth < 600
-                        ? 'cubic-bezier(0.25, 0.46, 0.45, 0.94)' /* easeOutQuad */
-                        : 'cubic-bezier(0.165, 0.84, 0.44, 1)' /* easeOutQuart */
-                    : this.easing,
+                easing: force ? (next.offsetWidth < 600 ? easeOutQuad : easeOutQuart) : this.easing,
                 ...this.transitionOptions,
             });
 
             if (!force && !prev) {
                 this._translate(1);
-                return Promise.resolve();
+                return;
             }
 
             const { length } = this.stack;

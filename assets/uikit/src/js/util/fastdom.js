@@ -4,52 +4,44 @@
     https://github.com/wilsonpage/fastdom
 */
 
-export const fastdom = {
-    reads: [],
-    writes: [],
+export const fastdom = { read, write, clear, flush };
 
-    read(task) {
-        this.reads.push(task);
+const reads = [];
+const writes = [];
+
+function read(task) {
+    reads.push(task);
+    scheduleFlush();
+    return task;
+}
+
+function write(task) {
+    writes.push(task);
+    scheduleFlush();
+    return task;
+}
+
+function clear(task) {
+    remove(reads, task);
+    remove(writes, task);
+}
+
+let scheduled = false;
+function flush() {
+    runTasks(reads);
+    runTasks(writes.splice(0));
+
+    scheduled = false;
+
+    if (reads.length || writes.length) {
         scheduleFlush();
-        return task;
-    },
-
-    write(task) {
-        this.writes.push(task);
-        scheduleFlush();
-        return task;
-    },
-
-    clear(task) {
-        remove(this.reads, task);
-        remove(this.writes, task);
-    },
-
-    flush,
-};
-
-function flush(recursion) {
-    runTasks(fastdom.reads);
-    runTasks(fastdom.writes.splice(0));
-
-    fastdom.scheduled = false;
-
-    if (fastdom.reads.length || fastdom.writes.length) {
-        scheduleFlush(recursion + 1);
     }
 }
 
-const RECURSION_LIMIT = 4;
-function scheduleFlush(recursion) {
-    if (fastdom.scheduled) {
-        return;
-    }
-
-    fastdom.scheduled = true;
-    if (recursion && recursion < RECURSION_LIMIT) {
-        Promise.resolve().then(() => flush(recursion));
-    } else {
-        requestAnimationFrame(() => flush(1));
+function scheduleFlush() {
+    if (!scheduled) {
+        scheduled = true;
+        queueMicrotask(flush);
     }
 }
 

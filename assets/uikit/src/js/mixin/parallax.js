@@ -7,6 +7,7 @@ import {
     isString,
     isUndefined,
     noop,
+    once,
     propName,
     toFloat,
     toPx,
@@ -259,18 +260,19 @@ function backgroundCoverFn(prop, el, stops, props) {
 }
 
 function getBackgroundPos(el, prop) {
-    return getCssValue(el, `background-position-${prop.substr(-1)}`, '');
+    return getCssValue(el, `background-position-${prop.slice(-1)}`, '');
 }
 
 function setBackgroundPosFn(bgProps, positions, props) {
     return function (css, percent) {
         for (const prop of bgProps) {
             const value = getValue(props[prop], percent);
-            css[`background-position-${prop.substr(-1)}`] = `calc(${positions[prop]} + ${value}px)`;
+            css[`background-position-${prop.slice(-1)}`] = `calc(${positions[prop]} + ${value}px)`;
         }
     };
 }
 
+const loading = {};
 const dimensions = {};
 function getBackgroundImageDimensions(el) {
     const src = css(el, 'backgroundImage').replace(/^none|url\(["']?(.+?)["']?\)$/, '$1');
@@ -283,11 +285,13 @@ function getBackgroundImageDimensions(el) {
     if (src) {
         image.src = src;
 
-        if (!image.naturalWidth) {
-            image.onload = () => {
+        if (!image.naturalWidth && !loading[src]) {
+            once(image, 'error load', () => {
                 dimensions[src] = toDimensions(image);
                 trigger(el, createEvent('load', false));
-            };
+            });
+            loading[src] = true;
+
             return toDimensions(image);
         }
     }
