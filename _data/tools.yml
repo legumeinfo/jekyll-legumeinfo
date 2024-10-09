@@ -53,7 +53,7 @@
   url: "/tools/search/gene.html"
 - category: "Search"
   description: "Look up corresponding genes via Pangene sets"
-  name: "Pangene lookup Tool"
+  name: "Pangene Lookup Tool"
   url: "/tools/search/pangene.html"
 #   category: "FIXME"
 #   description: Description
