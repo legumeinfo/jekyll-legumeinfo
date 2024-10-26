@@ -53,7 +53,7 @@ jobs:
           cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
       - run: bundle exec jekyll build --profile --trace # --baseurl "${{ steps.pages.outputs.base_path }}" # sub-uri currently not supported by site
       - uses: actions/cache/restore@v4
         id: restore-cache-jbrowse
@@ -115,13 +115,13 @@ jobs:
           path: ./tmp/.htmlproofer
           key: html-proofer
       - name: run htmlproofer
-        continue-on-error: true
         # ignore HTTP status 301 (htmlproofer strips trailing slashes)
         run: |
           htmlproofer --allow-missing-href --ignore-missing-alt --ignore-files '/\/uikit\/tests\//' --ignore-status-codes '301,403,503' --cache '{"timeframe": {"external": "30d"}}' --ignore-url '/germplasm-map.legumeinfo.org/,/pgrc-rpc.agr.gc.ca\/gringlobal\/search/'
       # https://github.com/actions/cache/blob/main/save/README.md#always-save-cache
       - uses: actions/cache/save@v4
         id: save-cache-htmlproofer
+        if: always()
         with:
           path: ./tmp/.htmlproofer
           key: html-proofer

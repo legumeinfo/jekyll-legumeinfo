@@ -41,7 +41,7 @@
         - name: information
           instances:
             - description: The list of soybean lines that have been resequenced (spreadsheet)
-              url: https://www.soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Valliyodan_Brown_2021/Wm82.gnm2.div.Valliyodan_Brown_2021USB481_accession_List.xlsx
+              url: https://data.soybase.org/Glycine/max/diversity//Wm82.gnm2.div.Valliyodan_Brown_2021/Wm82.gnm2.div.Valliyodan_Brown_2021USB481_accession_List.xlsx
     - category:
         - name: data
           instances:
@@ -214,15 +214,15 @@
             - description: "Data Store repository"
               url: "https://data.soybase.org/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/"
             - description: "Download List of Accessions"
-              url: "https://www.soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.Torkamaneh_Laroche_2019.AccessionTable.txt.gz"
+              url: "https://data.soybase.org/Glycine/max/diversity//Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.Torkamaneh_Laroche_2019.AccessionTable.txt.gz"
             - description: "Download GmHapMap data in VCF format (1.9 GB compressed)"
-              url: "https://www.soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.Torkamaneh_Laroche_2019.SNPdata.vcf.gz"
+              url: "https://data.soybase.org/Glycine/max/diversity//Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.Torkamaneh_Laroche_2019.SNPdata.vcf.gz"
             - description: "Download Genotypes by Gene"
-              url: "https://www.soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.Torkamaneh_Laroche_2019.genotypes_by_gene.hmp.gz"
+              url: "https://data.soybase.org/Glycine/max/diversity//Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.Torkamaneh_Laroche_2019.genotypes_by_gene.hmp.gz"
             - description: "Download Haplotypes by Gene"
-              url: "https://www.soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.Torkamaneh_Laroche_2019.haplotypes_by_gene.tsv.gz"
+              url: "https://data.soybase.org/Glycine/max/diversity//Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.Torkamaneh_Laroche_2019.haplotypes_by_gene.tsv.gz"
             - description: "Download Loss of Function SNPs"
-              url: "https://www.soybase.org/data/v2/Glycine/max/diversity/Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.Torkamaneh_Laroche_2019.loss_of_function.xlsx.gz"
+              url: "https://data.soybase.org/Glycine/max/diversity//Wm82.gnm2.div.Torkamaneh_Laroche_2019/glyma.Wm82.gnm2.div.Torkamaneh_Laroche_2019.loss_of_function.xlsx.gz"
 
 -
   DataStoreID: "Wang_Chu_2016"
@@ -531,11 +531,11 @@
             - description: "Predicted genes from the PanSoy genomic data, file PanSoy_genes_not_in_Wm82.fna. This includes both genes identified in Wm82.gnm4 and genes in the PanSoy complement."
               url: "https://data.soybase.org/Glycine/max/pangenomes/Wm82.gnm4.pan.W46N/glyma.Wm82.gnm4.pan.W46N.PanSoy.ptpg.gtf.gz"
             - description: "Coding sequence (CDS) predicted from the PanSoy genomic sequence, not in Wm84.gnm4."
-              url: "https://www.soybase.org/data/v2/Glycine/max/pangenomes/Wm82.gnm4.pan.W46N/glyma.Wm82.gnm4.pan.W46N.PanSoy_cds_not_in_Wm82.fna.gz"
+              url: "https://data.soybase.org/Glycine/max/pangenomes/Wm82.gnm4.pan.W46N/glyma.Wm82.gnm4.pan.W46N.PanSoy_cds_not_in_Wm82.fna.gz"
             - description: "The PanSoy genomic sequence, present in one or more of the 204 accessions described in Torkamaneh, Lemay, Belzile (2021) but not in the reference Wm82.gnm4."
-              url: "https://www.soybase.org/data/v2/Glycine/max/pangenomes/Wm82.gnm4.pan.W46N/glyma.Wm82.gnm4.pan.W46N.PanSoy_seq_not_in_Wm82.fna.gz"
+              url: "https://data.soybase.org/Glycine/max/pangenomes/Wm82.gnm4.pan.W46N/glyma.Wm82.gnm4.pan.W46N.PanSoy_seq_not_in_Wm82.fna.gz"
             - description: "Supplementary tables S1-S7 from Torkamaneh, Lemay, Belzile (2021), including gene presence-absence variation for genes predicted in Wm82.gnm4.ann1 and in the 204 accessions described in this study."
-              url: "https://www.soybase.org/data/v2/Glycine/max/pangenomes/Wm82.gnm4.pan.W46N/glyma.Wm82.gnm4.pan.W46N.PanSoy_supp_tables.xlsx"
+              url: "https://data.soybase.org/Glycine/max/pangenomes/Wm82.gnm4.pan.W46N/glyma.Wm82.gnm4.pan.W46N.PanSoy_supp_tables.xlsx"
 -
   DataStoreID: "Espina_Ahmed_2018"
   short_title: "Soybean EMS Mutagenized Population"
@@ -806,3 +806,4 @@
               url: "https://legacy.soybase.org/gb2/gbrowse/gmax1.01?label=Wm82_potential_SSR"
             - description: "Wm82 Potential SSR on assembly version 2"
               url: "https://legacy.soybase.org/gb2/gbrowse/gmax2.0?label=wm82_potential_ssr"
+
