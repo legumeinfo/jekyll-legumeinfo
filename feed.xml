@@ -7,6 +7,15 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Pangene Lookup Tool</title>
+        <description>&lt;p&gt;A new tool for finding corresponding genes within genera based on the concept of pangene sets is available &lt;a href=&quot;/tools/search/pangene.html&quot;&gt;here&lt;/a&gt;. Lists of up to 100 input genes can be mapped to the corresponding genes in targeted annotations from other species within the genera, and tables of correspondences can be downloaded in tabular form. Pangene sets derived with the tool &lt;a href=&quot;https://academic.oup.com/bioinformatics/article/40/9/btae526/7740678&quot;&gt;Pandagma&lt;/a&gt;, are available for genera with numerous sequenced genomes available, initially &lt;a href=&quot;https://data.legumeinfo.org/Arachis/GENUS/pangenes/&quot;&gt;Arachis&lt;/a&gt;, &lt;a href=&quot;https://data.legumeinfo.org/Cicer/GENUS/pangenes/&quot;&gt;Cicer&lt;/a&gt;, &lt;a href=&quot;https://data.legumeinfo.org/Glycine/GENUS/pangenes/&quot;&gt;Glycine&lt;/a&gt;, &lt;a href=&quot;https://data.legumeinfo.org/Medicago/GENUS/pangenes/&quot;&gt;Medicago&lt;/a&gt;, &lt;a href=&quot;https://data.legumeinfo.org/Phaseolus/GENUS/pangenes/&quot;&gt;Phaseolus&lt;/a&gt;, &lt;a href=&quot;https://data.legumeinfo.org/Vigna/GENUS/pangenes/&quot;&gt;Vigna&lt;/a&gt;. The lookup tool can also be used to find correspondences between genes from different versions of the same genome. Please give it a try and let us know what you think!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 28 Oct 2024 00:00:00 +0000</pubDate>
+        <link>/news/general/2024/10/28/pangene-lookup.html</link>
+        <guid isPermaLink="true">/news/general/2024/10/28/pangene-lookup.html</guid>
+      </item>
+    
+      <item>
         <title>Data updates</title>
         <description>&lt;p&gt;Several new genomes and annotations have been made available in LIS:&lt;/p&gt;
 &lt;ul&gt;
@@ -216,17 +225,6 @@ By HudsonAlpha Institute for Biotechnology, Huntsville, AL.&lt;br /&gt;
         <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
         <link>/events/announcements/2023/10/16/19-aagb-23.html</link>
         <guid isPermaLink="true">/events/announcements/2023/10/16/19-aagb-23.html</guid>
-      </item>
-    
-      <item>
-        <title>Fourth International Legume Society Conference, Spain</title>
-        <description>&lt;p&gt;19 - 22 September 2023&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://ilsgranada2023.com&quot;&gt;Fourth International Legume Society Conference&lt;/a&gt;, Granada, Spain&lt;/p&gt;
-</description>
-        <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
-        <link>/events/announcements/2023/09/19/4ils-23.html</link>
-        <guid isPermaLink="true">/events/announcements/2023/09/19/4ils-23.html</guid>
       </item>
     
   </channel>
