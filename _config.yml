@@ -41,7 +41,7 @@ lang: en
 host: 0.0.0.0
 
 # our Google Analytics ID. XX CHANGE THIS for SoyBase
-google_analytics_id: "GA4-354046633"
+google_analytics_id: "G-8KSLD77VLS"
 
 # Set the SoyBase/LIS Datastore base URL here
 datastoreurl: https://data.soybase.org
