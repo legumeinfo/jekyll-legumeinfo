@@ -2,36 +2,6 @@
 title: Genome browsers
 sitemap: sequence map
 tools_menu: true
-
-gbrowse_instances:
-- category: "Glycine max"
-  name: "Wm82.a2"
-  url_suffix: "gmax2.0"
-- category: "Glycine max"
-  name: "Wm82.a6"
-  url_suffix: "glyma.Wm82.gnm6"
-- category: "Glycine max"
-  name: "Wm82.a4"
-  url_suffix: "glyma.Wm82.gnm4"
-- category: "Glycine max"
-  name: "Wm82.a1"
-  url_suffix: "gmax1.01"
-- category: "Glycine max"
-  name: "Fiskeby III"
-  url_suffix: "glyma.FiskebyIII.gnm1"
-- category: "Glycine max"
-  name: "Lee"
-  url_suffix: "glyma.Lee.gnm1"
-- category: "Glycine max"
-  name: "Zh13"
-  url_suffix: "glyma.Zh13.gnm1"
-- category: "Glycine soja"
-  name: "PI 483463"
-  url_suffix: "glyso.PI483463.gnm1"
-- category: "Glycine soja"
-  name: "W05"
-  url_suffix: "glyso.W05.gnm1"
-
 ---
 
 {% capture jbrowse_base_url %}/assets/js/jbrowse{% endcapture %}
@@ -47,7 +17,7 @@ gbrowse_instances:
 <br>
 (Click <b>**</b> for unframed links: useful for bookmarking and sharing track configurations and views)
 <br>
-{% assign groups = page.gbrowse_instances | group_by: "category" | sort: "name" %}
+{% assign groups = site.data.gbrowse_instances.gbrowse_instances | group_by: "category" | sort: "name" %}
 {% assign asterisk = "**" %}
 {% for species in groups %}
   <u><i>{{ species.name }}</i></u>
@@ -62,11 +32,15 @@ gbrowse_instances:
       </a> 
     {% endfor %}
   {%- endcapture -%}
-  <div style="margin-left:10px">
+  <div class="uk-margin-small-left">
     {{ browser_list | remove_first: ', ' }}
   </div>
 {% endfor %}
 
+<div class="uk-flex uk-flex-center uk-flex-right@s">
+  <button class="uk-button uk-margin-small-right uk-button-primary" onclick="expandAllAccordion()">expand all</button>
+  <button class="uk-button uk-button-primary"  onclick="collapseAllAccordion()">collapse all</button>
+</div>
 
 {% assign doi = "DOI" %}
 {% assign genus = "Glycine" %}
@@ -82,12 +56,14 @@ gbrowse_instances:
   {% endif %}
   <hr>
   
-  <h3>
-    <u>J</u>Browse instances for <i><b>{{ genus }} {{ species }}</b></i> accessions
-  </h3>
-  {% for datatype_dir in site.data.datastore-metadata[genus][species] %}
+  <ul animation="false" uk-accordion>
+    <li class="ukaccordion">
+  
+    <a class="uk-accordion-title"> JBrowse instances for <i><b>{{ genus }} {{ species }}</b></i> accessions</a>
+    {% for datatype_dir in site.data.datastore-metadata[genus][species] %}
     {% assign datatype = datatype_dir[0] %}
     {% if datatype == "about_this_collection" %}
+    <div class="uk-accordion-content">
       {% for about_file in datatype_dir[1] %}
         {% if about_file[0] contains "description_" %}
           {% assign about = about_file[1] %}
@@ -144,7 +120,7 @@ gbrowse_instances:
                         {% endfor %}
                       {% endif %}
                     {% endfor %}
-                    
+                    <dl>
                     <dd>
                       Citation (DOI) for this accession group: 
                       {% assign doiCheck = doi | slice: 0, 2 %}
@@ -156,6 +132,7 @@ gbrowse_instances:
                         {% endif %}
                       </i>
                     </dd>
+                  </dl>
                   {% endif %}
                 {% endfor %}
               {% endif %}
@@ -200,13 +177,16 @@ gbrowse_instances:
                     {% endfor %}
                   {% endif %}
                 {% endfor %}
+              <dl>
                 <dt>
                   <a target="_blank" href="{{ jbrowse_base_url }}/?assembly={{ assembly }}&tracks={{ annotation }}&loc={{ readme.scientific_name_abbrev }}.{{ assembly }}.{{ chromosome_prefix }}01:1-1000000&tracklist=true">{{ assembly }}</a>
                 </dt>
+              </dl>
                 {% comment %} 
                   Print DOI only when accession_group is of type reference, not for type citation (handled previously) 
                 {% endcomment %} 
                 {% if accession_group_type == "reference" %}
+                 <dl>
                   <dd>{{ synopsis }}
                     {% assign doiCheck = doi | slice: 0, 2 %}
                     <i>
@@ -217,8 +197,9 @@ gbrowse_instances:
                       {% endif %}
                     </i>
                   </dd>
+                 </dl>
                 {% else %}
-                  <dd>{{ synopsis }}</dd>
+                  <dl><dd>{{ synopsis }}</dd></dl>
                 {% endif %}
               {% endif %}
             {% endfor %}
@@ -227,4 +208,9 @@ gbrowse_instances:
       {% endfor %}
     {% endif %}
   {% endfor %}
+</div>
 {% endfor %}
+  </li>
+</ul>
+
+<script src="../../assets/js/utils.js"></script>

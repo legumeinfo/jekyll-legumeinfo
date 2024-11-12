@@ -16,7 +16,7 @@ tools_menu: true
 {% endfor %}
 
 <h1>
-  <i>{{ genus_resources.genus }}</i>
+  {{ genus_resources.genus }}
   ({{ genus_resources.commonName }})</h2>
 <p>{{ genus_resources.description }}</p>
 <p>NCBI taxonomy ID:
@@ -45,8 +45,6 @@ tools_menu: true
 <p>
   See additional <b>details about the main reference assemblies at the <a href="/resources/genome_info">Genome Assembly page</a></b>.
 </p>
-
-<p>
   To examine <b>statistics about all genome assemblies and annotations held at SoyBase</b>, use these two links:
 </p>
 <ul>
@@ -68,7 +66,12 @@ tools_menu: true
   </dl>
 {% endif %}
 
-<h2>Tools and resources for particular species</h2>
+<h2>Tools and resources for particular species</h2> 
+
+<div class="uk-flex uk-flex-center uk-flex-right@s">
+<button class="uk-button uk-margin-small-right uk-button-primary" onclick="expandAllAccordion()">expand all</button>
+<button class="uk-button uk-button-primary"  onclick="collapseAllAccordion()">collapse all</button>
+</div>
 
 {% for species in genus_resources.species %}
   {% for about_file in site.data.datastore-metadata[genus][species].about_this_collection %}
@@ -80,9 +83,12 @@ tools_menu: true
 
   <hr>
 
-  <h3>
+  <ul uk-accordion animation="false">
+    <li class="ukaccordion">
+  <h3 class="uk-accordion-title">
     <i>{{ species_resources.genus }} {{ species_resources.species }}</i>: {{ genus_resources.commonName }}
   </h3>
+  <div class="uk-accordion-content">
   {% capture species_photo_path %}assets/img/species_images/{{ species_resources.abbrev }}.jpg{% endcapture %}
   {% assign species_photo = site.static_files | where: "path", species_photo_path | first %}
   {% if species_photo %}
@@ -177,7 +183,7 @@ tools_menu: true
                         {% endfor %}
                       {% endif %}
                     {% endfor %}
-                    
+                    <dl>
                     <dd>
                       Citation (DOI) for this accession group: 
                       {% assign doiCheck = doi | slice: 0, 2 %}
@@ -189,6 +195,7 @@ tools_menu: true
                         {% endif %}
                       </i>
                     </dd>
+                  </dl>
                   {% endif %}
                 {% endfor %}
               {% endif %}
@@ -239,6 +246,7 @@ tools_menu: true
                   Print DOI only when accession_group is of type reference, not for type citation (handled previously) 
                 {% endcomment %} 
                 {% if accession_group_type == "reference" %}
+                 <dl>
                   <dd>{{ synopsis }}
                     {% assign doiCheck = doi | slice: 0, 2 %}
                     <i>
@@ -249,14 +257,17 @@ tools_menu: true
                       {% endif %}
                     </i>
                   </dd>
+                 </dl>
                 {% else %}
-                  <dd>{{ synopsis }}</dd>
+                  <dl><dd>{{ synopsis }}</dd></dl>
                 {% endif %}
                 </span>
                 <div class="uk-margin-left">
-                  <dd>
-                    <a target="_blank" href="{{ jbrowse_base_url }}/?assembly={{ assembly }}&tracks={{ annotation }}&loc={{ readme.scientific_name_abbrev }}.{{ assembly }}.{{ chromosome_prefix }}01:1-1000000">Genome Browser</a>
-                  </dd>
+               <dl>
+                <dd>
+                  <a target="_blank" href="{{ jbrowse_base_url }}/?assembly={{ assembly }}&tracks={{ annotation }}&loc={{ readme.scientific_name_abbrev }}.{{ assembly }}.{{ chromosome_prefix }}01:1-1000000">Genome Browser</a>
+                </dd>
+               </dl>
                 </div>
               {% endif %}
             {% endfor %}
@@ -265,4 +276,10 @@ tools_menu: true
       {% endfor %}
     {% endif %}
   {% endfor %}
+    </div>
+  </li>
+</ul>
 {% endfor %}
+
+
+<script src="../assets/js/utils.js"></script>

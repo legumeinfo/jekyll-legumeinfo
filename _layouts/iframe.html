@@ -12,7 +12,7 @@
 {% include navbar.html %}
 
 {% assign iframe_style="display: flex; width: 100%; height: 100vh; flex-direction: column;" %}
-<iframe id="myiframe" src="{{ page.iframe_url }}" style="{{ iframe_style }}"></iframe>
+<iframe id="myiframe" src="{{ page.iframe_url }}" style="{{ iframe_style }}" title={{page.title}}></iframe>
 
 <script language="javascript">
     var params = new URL(window.location).searchParams;

@@ -2,13 +2,5 @@
 title: News
 sitemap: homepage
 tools_menu: true
+layout: news
 ---
-
-<h1>News</h1>
-
-<dl class="uk-description-list uk-description-list-divider">
-{% for post in site.categories.news %}
-<dt><a href="{{ post.url }}">{{ post.title }}</a></dt>
-  <dd>{{ post.summary }}</dd>
-{% endfor %}
-</dl>

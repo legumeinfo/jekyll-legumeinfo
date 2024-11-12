@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: default
+layout: home
 tools_menu: true
 news_card: true
 events_card: true
@@ -8,7 +8,7 @@ blog_card: true
 
 ---
 
-<h1 style="margin: 0">SoyBase</h1>
+<h1>SoyBase</h1>
 
 <p class="uk-text-default">SoyBase integrates genetic and genomic information to aid
  soybean breeders and researchers. This instance of the site has been ported to a 
@@ -21,10 +21,10 @@ blog_card: true
 <div class="search-container">
 
   <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
-    <form action="https://mines.legumeinfo.org/glycinemine/keywordSearchResults.do" name="search" method="get" style="display:inline;" target="_blank">
+    <form action="https://mines.legumeinfo.org/glycinemine/keywordSearchResults.do" name="search" method="get" target="_blank">
       <div class="uk-text-left">
         <label class="uk-text-bold" for="quickSearchInput">Keyword Search</label><br>
-      <input class="uk-input uk-form-small" style="width:180px;color:#235626;font-style:italic;font-size:0.9em" type="text" id="quickSearchInput" name="searchTerm"
+      <input class="uk-input uk-form-small custom-width uk-text-primary uk-text-italic"  type="text" id="quickSearchInput" name="searchTerm"
       value="&quot;seed weight&quot;" onFocus="clearElement(this);" />
       <button type="submit" id="quickSearchButton" name="searchSubmit" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
     </div>
@@ -32,10 +32,10 @@ blog_card: true
   </div>
 
   <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
-    <form action="/tools/search/gene.html" name="search" method="get" style="display:inline;">
+    <form action="/tools/search/gene.html" name="search" method="get">
   <div class="uk-text-left">
     <label class="uk-text-bold" for="identifier">Gene identifier search</label><br>
-    <input class="uk-input uk-form-small" id="identifier" style="width:180px;color:#235626;font-style:italic;font-size:0.9em" type="text" name="identifier"
+    <input class="uk-input uk-form-small custom-width  uk-text-primary uk-text-italic" id="identifier" type="text" name="identifier"
     value="Glyma.15g026400" onFocus="clearElement(this);" />
     <button type="submit" id="quickSearchButton" name="searchSubmit" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
   </div>
@@ -43,11 +43,11 @@ blog_card: true
   </div>
  
   <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
-    <form action="https://gcv.soybase.org/search" name="search" method="get" style="display:inline;">
+    <form action="https://gcv.soybase.org/search" name="search" method="get">
       <div class="uk-text-left">
         <label class="uk-text-bold" for="q">Synteny viewer</label><br>
         <input type="hidden" id="sources" name="sources" value="soybase,liu2020">
-        <input class="uk-input uk-form-small" id="q" style="width:180px;color:#235626;font-style:italic;font-size:0.9em" type="text" name="q"
+        <input class="uk-input uk-form-small custom-width uk-text-primary uk-text-italic" id="q" type="text" name="q"
         value="Glyma.20G010000" onFocus="clearElement(this);" />
         <button type="submit" id="quickSearchButton" name="searchSubmit" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
       </div>
@@ -179,8 +179,8 @@ blog_card: true
 </div>
 </div>
 
-  <h2 style="text-align: left;">Funding and Development</h2>
-<p style="text-align: left;">SoyBase is funded by the USDA-ARS. SoyBase is developed and hosted by the USDA-ARS SoyBase and Legume Clade Database group at Ames, IA, with development assistance from the National Center for Genome Resources (NCGR) with the help of many other researchers in the soybean community.</p>
+  <h2>Funding and Development</h2>
+<p>SoyBase is funded by the USDA-ARS. SoyBase is developed and hosted by the USDA-ARS SoyBase and Legume Clade Database group at Ames, IA, with development assistance from the National Center for Genome Resources (NCGR) with the help of many other researchers in the soybean community.</p>
 <div class="uk-child-width-expand@s uk-flex uk-flex-middle uk-text-center" uk-grid>
   <a href="https://www.ars.usda.gov/main/main.htm" target="_blank" title="USDA ARS website">
     <img src="{{ "assets/img/usda.svg" | relative_url }}" width="150" height="auto" alt="USDA logo"/>

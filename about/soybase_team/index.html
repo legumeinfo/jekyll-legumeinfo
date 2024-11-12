@@ -1,167 +1,74 @@
 ---
 title: About the SoyBase database and soybeans
 tools_menu: false
-Team:
-  - name: Jacqueline Campbell
-    role: SoyBase Co-curator
-    specialization: Data curation, Site development
-    website: https://www.ars.usda.gov/people-locations/person?person-id=55880
-    status: current
-  - name: Steven Cannon
-    role: Project Administration
-    specialization: Genome Assembly, Analysis
-    website: https://www.ars.usda.gov/midwest-area/ames/cicgru/people/steven-cannon/
-    status: current
-  - name: Wei Huang
-    role: 	Genome Browser
-    specialization: Genome Browser, Bioinformatics
-    website: https://www.ars.usda.gov/people-locations/person?person-id=57295
-    status: current
-  - name: Rex Nelson
-    role: Lead SoyBase Curator
-    specialization: Data Curation, Site Development
-    website: https://www.ars.usda.gov/midwest-area/ames/cicgru/people/rex-nelson/
-    status: current
-  - name: Nathan Weeks
-    role: Systems Administration
-    specialization: Informatics
-    website: https://www.ars.usda.gov/people-locations/person?person-id=41062
-    status: current
-  - name: Chen Prom
-    role: Frontend Developer
-    specialization: Informatics
-    website: https://www.ars.usda.gov/people-locations/person?person-id=60073
-    status: current
-    # current student employee
-  - name: Simon Novak
-    role: Student Programmer
-    status: student
-  - name: Brandon Jordan
-    role: Postdoctoral Researcher
-    status: student
-  - name: Hyunoh Lee
-    role: Postdoctoral Researcher
-    status: student
-    # past employee
-  - name: David Grant
-    role: SoyBase Curator Emeritus
-    status: Alumni
-  - name: Robert Baker
-    role: Data Curation
-    status: Alumni
-  - name: Victoria Blake 
-    role: Data Curation
-    status: Alumni
-  - name: Anne Brown
-    role: Postdoctoral Researcher
-    status: Alumni
-  - name: Shawn Conner
-    role: Programmer, Web Development
-    status: Alumni
-  - name: Kevin Feeley
-    role: Programmer, Web Development
-    status: Alumni
-    # past student employee
-  - name: William Hardison 
-    role: Student Curator
-    status: Alumni
-  - name: Abigial Pigatto
-    role: Student Curator
-    status: Alumni
-  - name: Marlene Dorneich-Hayes 
-    role: Student Curator
-    status: Alumni
-  - name: Laura Climer
-    role: Student Employee
-    status: Alumni
-  - name: Katrina Kohn
-    role: Student Employee
-    status: Alumni
-  - name: Samuel Sterns
-    role: Student Employee
-    status: Alumni
-  - name: Jonathan Stroyan
-    role: Student Employee
-    status: Alumni
-  - name: Daniel Tarte
-    role: Student Employee
-    status: Alumni
-  - name: Andrew Denne
-    role: Student Programmer
-    status: Alumni
-  - name: Andrew Wilkey
-    role: Student Programmer
-    status: Alumni  
-  - name: Aditya Kumar
-    role: Student Programmer
-    status: Alumni
-  - name: Kimberly Raymer
-    role: Student Programmer
-    status: Alumni
-  - name: Chee Hau Fong
-    role: Student Programmer
-    status: Alumni
-
-
 ---
 
 <div class="team">
+<h1 class="top_bar uk-margin-left">About the SoyBase Team</h1>
 
-<h1 class="top_bar">About the SoyBase Team</h1>
-<table class="current-table" style="width:55%;">
-  <tbody>
-    {% assign current_team = page.Team | where: "status", "current" %}
-    {% for member in current_team  %}
-    <tr>
-      <th colspan="3" style="text-align:left;color:#fff;background-color:#060;">
-        <span style="font-size:14pt;">{{ member.name }}</span>
-      </th>
-    </tr>
-    <tr>
+<div class="uk-grid-small uk-margin-remove-left@s uk-margin-auto" uk-grid>
+{% if site.data.team%}
+{% assign current_team = site.data.team | where: "status", "current" %}
+{% for member in current_team  %}
+<div class="uk-width-1-1@s uk-width-1-2@m uk-width-1-3@l uk-padding-small uk-margin-remove">
+  <div class="uk-card uk-card-default">
+      
+      <div class="uk-card-header uk-text-bold uk-card-primary uk-padding-small">
+        {{ member.name }}
+      </div>
 
-      <th style="text-align:left">Role</th>
-      <td>{{ member.role }}</td>
-    </tr>
-    <tr>
-      <th style="text-align:left">Specialization</th>
-      <td>{{ member.specialization }}</td>
-    </tr>
-    <tr>
-      <td colspan="2">
-        <a href="{{ member.website }}">Learn More About {{ member.name }}</a>
-      </td>
-    </tr>
-    <tr></tr>
+      <div class="uk-flex-middle uk-padding-small">
+        <div class="uk-width-auto">
+          <div class="uk-flex uk-flex-between">
+            <p class="uk-text-bold uk-margin-small-bottom">Role</p>
+            <p class="uk-margin-remove">{{ member.role }}</p>
+          </div>
+            <div class="uk-flex uk-flex-between">
+              <p class="uk-text-bold uk-margin-small-bottom">Specialization</p>
+              <p class="uk-margin-remove">{{ member.specialization }}</p>
+            </div>
+
+            <div>
+            <p colspan="2">
+              <a href="{{ member.website }}" target="_blank"><span uk-icon="world"></span> Learn More About {{ member.name }}</a>
+            </p>
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
     {% endfor %}
-  </tbody>
-</table>
+ {%endif%}
+</div>
 
-<h1>Students and Postdocs</h1>
-<table id="currentStudent" style="width: 100%; padding: 1em">
+<div class="uk-padding-small uk-padding-remove-vertical">
+  <h1>Students and Postdocs</h1>
+<table class="uk-table uk-table-striped uk-table-small uk-table-hover">
   <tbody>
-    {% assign student_team = page.Team | where: "status", "student" %}
+    {% assign student_team = site.data.team | where: "status", "student" %}
     {% for member in student_team %}
-    <tr>
-      <th colspan="3" style="text-align:left;padding:0.25em;color:black;background-color:#F5F5F5;">
-        <span style="font-size:14pt;">{{ member.name }}</span>&nbsp;‐&nbsp;{{ member.role }}
-      </th>
-    </tr>
-    <tr></tr>
+        <tr>
+          <td>{{ member.name }}</td>
+          <td>{{ member.role }}</td>
+      </tr>
     {% endfor %}
   </tbody>
 </table>
+</div>
 
-<h1>Alumni</h1>
-<table id="Alumni" style="width: 100%; padding: 1em">
-  <tbody>
-    {% assign past_team = page.Team | where: "status", "Alumni" %}
-    {% for member in past_team %}
-    <tr>
-      <th colspan="3" style="text-align:left;padding:0.25em;color:black;background-color:#F5F5F5;">
-        <span style="font-size:14pt;">{{ member.name }}</span>&nbsp;‐&nbsp;{{ member.role }}
-      </th>
-    </tr>
-    <tr></tr>
-    {% endfor %}
-  </tbody>
-</table>
+<div class="uk-padding-small uk-padding-remove-vertical">
+  <h1>Alumni</h1>
+  <table class="uk-table uk-table-striped uk-table-small uk-table-hover">
+    <tbody>
+      {% assign past_team = site.data.team | where: "status", "Alumni" %}
+      {% for member in past_team %}
+        <tr>
+          <td>{{ member.name }}</td>
+          <td>{{ member.role }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+</div>

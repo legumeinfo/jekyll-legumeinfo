@@ -5,14 +5,17 @@ tools_menu: true
 redirect_from: /amigo/
 ---
 
+
 <h2>SoyBase Soybean Ontologies</h2>
 
-<p>
-  The ontologies below were developed to provide a controlled vocabulary for <br>
-  <b>&nbsp;&nbsp;• field growth stages</b> (Soybean Whole Plant Growth Ontology), <br>
-  <b>&nbsp;&nbsp;• plant structure</b> (Soybean Structure Ontology), <br>
-  <b>&nbsp;&nbsp;• development</b> (Soybean Development Ontology), and <br>
-  <b>&nbsp;&nbsp;• plant traits</b> (Soybean Trait Ontology). <br>
+<p class="uk-margin-remove-vertical">
+  The ontologies below were developed to provide a controlled vocabulary for 
+  <ul class="uk-list uk-list-disc uk-margin-small-left uk-margin-remove-vertical">
+    <li class="uk-margin-remove-vertical"><b>field growth stages</b> (Soybean Whole Plant Growth Ontology), </li>
+    <li class="uk-margin-remove-vertical"><b>plant structure</b> (Soybean Structure Ontology),</li>
+    <li class="uk-margin-remove-vertical"><b>development</b> (Soybean Development Ontology), and </li>
+    <li class="uk-margin-remove-vertical"><b>plant traits</b> (Soybean Trait Ontology).</li>
+  </ul>
   Where applicable, soybean specific terms have been associated with their 
   <a href="https://planteome.org" name="PO" title="Plant Ontology Consortium" target="_self">
     Plant Ontology (PO)
@@ -31,23 +34,24 @@ redirect_from: /amigo/
     <strong>Browse and Search Soybean <u>Whole Plant Growth Terms</u></strong>
   </a>
 </p>
-<details>
-  This ontology was developed to unite three different ontologies for soybean development: the BBCH scale, the more generic 
-  Plant Ontology Consortium's Whole Plant Growth Ontology, and the Soybean Growth and Development growth stages as published in 
-  "Soybean Growth and Development" Iowa State University Extension publication 
-  <a href="https://store.extension.iastate.edu/product/6451" name="PM1945" title="ISU Extension Publication PM 1945" target="_self">PM 1945</a> 
-  by Palle Pedersen. It describes soybean growth and development from the stand point of determining the growth of a field of soybeans. 
-  Some terms relate to a single plant, but others are applicable to a field as a whole. Where possible, these terms are linked to their 
-  <a href="https://browser.planteome.org/amigo/search/ontology?q=PO:0009089" name="PlantOntology" title="Plant Ontology Consortium Browsers" target="_self">
-    Plant Ontology Whole Plant Growth or Structure
-  </a> 
-  synonyms to facilitate cross-species comparisons. This ontology has also been linked where possible to synonymous stages in 
-  the BBCH scale to allow researchers to more easily translate research data compiled using the BBCH scale to data compiled 
-  using the familiar V and R stages.<br><br> For convienience, see a 
-  <a href="./ontologyConversion.html" name="conversiontable" title="Whole Plant Growth and Development Conversion Table" target="_self">
-    <strong>conversion table</strong>
-  </a> linking the V and R stages to their respective Plant Ontology Whole Plant Growth terms and the BBCH scale.
-</details>
+<button class="uk-button uk-button-primary uk-button-small" type="button" uk-toggle="target: #whole-plant-grouth-terms; animation: uk-animation-fade; cls: uk-hidden" onclick="rotateTriangle(this)" value="triangle-icon-whole-plant-growth"><div class="uk-flex">details<span id="triangle-icon-whole-plant-growth" uk-icon="icon:triangle-right" class="toggle-top-margin"></span></div></button>
+<div id="whole-plant-grouth-terms" class="uk-margin-small uk-hidden">
+  <p id="toggle-usage">  This ontology was developed to unite three different ontologies for soybean development: the BBCH scale, the more generic 
+    Plant Ontology Consortium's Whole Plant Growth Ontology, and the Soybean Growth and Development growth stages as published in 
+    "Soybean Growth and Development" Iowa State University Extension publication 
+    <a href="https://store.extension.iastate.edu/product/6451" name="PM1945" title="ISU Extension Publication PM 1945" target="_self">PM 1945</a> 
+    by Palle Pedersen. It describes soybean growth and development from the stand point of determining the growth of a field of soybeans. 
+    Some terms relate to a single plant, but others are applicable to a field as a whole. Where possible, these terms are linked to their 
+    <a href="https://browser.planteome.org/amigo/search/ontology?q=PO:0009089" name="PlantOntology" title="Plant Ontology Consortium Browsers" target="_self">
+      Plant Ontology Whole Plant Growth or Structure
+    </a> 
+    synonyms to facilitate cross-species comparisons. This ontology has also been linked where possible to synonymous stages in 
+    the BBCH scale to allow researchers to more easily translate research data compiled using the BBCH scale to data compiled 
+    using the familiar V and R stages.<br><br> For convienience, see a 
+    <a href="./ontologyConversion.html" name="conversiontable" title="Whole Plant Growth and Development Conversion Table" target="_self">
+      <strong>conversion table</strong>
+    </a> linking the V and R stages to their respective Plant Ontology Whole Plant Growth terms and the BBCH scale.</p>
+  </div>
 
 <!-- ################# -->
 <hr>
@@ -55,8 +59,10 @@ redirect_from: /amigo/
 <a href="/tools/ontology/amigo.html?iframe_pathname_suffix=/term/SOY:0000098">
   <strong>Browse and Search <u>Soybean Structure Terms</u></a></strong>
 </a>
-<br>
-<details>
+</p>
+
+<button class="uk-button uk-button-primary uk-button-small" type="button" uk-toggle="target: #soybean-structure-terms; animation: uk-animation-fade; cls: uk-hidden" onclick="rotateTriangle(this)" value="triangle-icon-soybean-structure"><div class="uk-flex">details<span id="triangle-icon-soybean-structure" uk-icon="icon:triangle-right" class="toggle-top-margin"></span></div></button>
+<div id="soybean-structure-terms" class="uk-margin-small uk-hidden">
   This ontology was developed to enumerate the parts of a soybean plant in order to follow the temporal development of individual plants. The ontology was modeled after the system described in 
   <a href="https://doi.org/10.1104/pp.106.082594" name="Bucciarellietal" title="Bucciarellie et al. Plant Phys 142:207-219" target="_self">
     Bucciarelli et al. (2006) Plant Phys 142:207-219
@@ -64,7 +70,7 @@ redirect_from: /amigo/
   Each Metamer is numbered squentially starting at 1 for the cotoledonary node on up. Lateral branches are numbered for the metamer 
   on the main stem from which they are derived along with the number of their lateral metamer. This system allows the user to 
   describe the temporal and spatial development of individual soybean plant structures.
-</details>
+</div>
 
 <!-- ################# -->
 <hr>
@@ -73,10 +79,11 @@ redirect_from: /amigo/
   <strong>Browse and Search <u>Developmental Terms</u></strong>
 </a>
 </p>
-<details>
+<button class="uk-button uk-button-primary uk-button-small" type="button" uk-toggle="target: #devlopment-terms; animation: uk-animation-fade; cls: uk-hidden" onclick="rotateTriangle(this)" value="triangle-icon-developmental"><div class="uk-flex">details <span id="triangle-icon-developmental" uk-icon="icon:triangle-right" class="toggle-top-margin"></span></div></button>
+<div id="devlopment-terms" class="uk-margin-small uk-hidden">
   This ontology was developed to describe the growth and maturation of individual soybean tissues or organ systems. The structure 
   was modeled on that of the greater Plant Ontology with modifications to accommodate soybean development. 
-</details>
+</div>
 
 <!-- ################# -->
 <hr>
@@ -85,7 +92,9 @@ redirect_from: /amigo/
   <strong>Browse and Search Soybean <u>Trait Terms</u></strong>
 </a>
 </p>
-<details>
+<button class="uk-button uk-button-primary uk-button-small" type="button" uk-toggle="target: #trait-terms; animation: uk-animation-fade; cls: uk-hidden" onclick="rotateTriangle(this)" value="triangle-icon-soybean-trait"><div class="uk-flex">details <span id="triangle-icon-soybean-trait" uk-icon="icon:triangle-right" class="toggle-top-margin"></span></div></button>
+<div id="trait-terms" class="uk-margin-small uk-hidden">
+
   This ontology was developed as a guide to describing soybean growth taits. These terms were developed from 
   <a href="https://npgsweb.ars-grin.gov/gringlobal/descriptors " name="SoybeanDescriptors" title="Grin Soybean Descriptors" target="_self">
     GRIN Soybean Descriptors 
@@ -98,5 +107,7 @@ redirect_from: /amigo/
   In cases where the causitive organism has been described under numerous binomials such as the case with some insects, 
   the organism is listed under one binomial with the other binomials included as synonyms. Synonyms to terms in the 
   Plant Trait Ontology are also included where applicable to facilitate cross-species comparisons.
-</details>
+</div>
 
+<script src="../../assets/js/utils.js">
+</script>

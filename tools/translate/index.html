@@ -3,172 +3,132 @@ title: Correspondence
 sitemap: correspondence
 tools_menu: true
 redirect_from: /correspondence/
-
-example:
-- pangene: Glycine.pan5.pan46446
-  glyma_Wm82_gnm1_ann1: Glyma01g00210
-  glyma_Wm82_gnm2_ann1: Glyma.01G000100
-  glyma_Wm82_gnm4_ann1: Glyma.01G000100
-  glyma_Wm82_gnm5_ann1: NONE
-  glyma_Wm82_gnm6_ann1: Glyma.01G000100
-  more: ...
-- pangene: Glycine.pan5.pan46447
-  glyma_Wm82_gnm1_ann1: Glyma01g00291
-  glyma_Wm82_gnm2_ann1: Glyma.01G000300
-  glyma_Wm82_gnm4_ann1: Glyma.01G000322
-  glyma_Wm82_gnm5_ann1: Gm_Wm82_00003
-  glyma_Wm82_gnm6_ann1: Glyma.01G000322
-  more: ...
-- pangene: Glycine.pan5.pan43005
-  glyma_Wm82_gnm1_ann1: Glyma01g00300
-  glyma_Wm82_gnm2_ann1: Glyma.01G000400
-  glyma_Wm82_gnm4_ann1: Glyma.01G000400
-  glyma_Wm82_gnm5_ann1: NONE
-  glyma_Wm82_gnm6_ann1: Glyma.01G000400
-  more: ...
-- pangene: Glycine.pan5.pan34709
-  glyma_Wm82_gnm1_ann1: Glyma01g00321
-  glyma_Wm82_gnm2_ann1: Glyma.01G000600
-  glyma_Wm82_gnm4_ann1: Glyma.01G000600
-  glyma_Wm82_gnm5_ann1: NONE
-  glyma_Wm82_gnm6_ann1: Glyma.01G000600
-  more: ...
-- pangene: Glycine.pan5.pan74052
-  glyma_Wm82_gnm1_ann1: NONE
-  glyma_Wm82_gnm2_ann1: NONE
-  glyma_Wm82_gnm4_ann1: NONE
-  glyma_Wm82_gnm5_ann1: NONE
-  glyma_Wm82_gnm6_ann1: Glyma.01G000750
-  more: ...
-- pangene: Glycine.pan5.pan99999
-  glyma_Wm82_gnm1_ann1: ...
-  glyma_Wm82_gnm2_ann1: ...
-  glyma_Wm82_gnm4_ann1: ...
-  glyma_Wm82_gnm5_ann1: ...
-  glyma_Wm82_gnm6_ann1: ...
-  more: ...
 ---
 
 <h2>Gene Model Translation / Correspondence</h2>
 
 <p>The set of allelic genes found in multiple individuals in a species or closely related species may be called a "pangene set," with the gene models that correspond by homology and position being called a pangene. The pangene set calculated for Glycine accessions at SoyBase can be used to find corresponding genes across assemblies and annotations.</p>
 <p>
-
   <b>There are several good options for identifying corresponding genes in different accessions or annotations. If you have ...</b>
+  
   <ul>
     <li> One or a few genes to look up? Use the <a href="/tools/search/gene.html"><b>Gene Search tool</b></a>, 
-    then click on the "PANGENE SETS" link. 
-    <details>
+    then click on the "PANGENE SETS" link.
+    </li>
+    
+    <button class="uk-button uk-button-primary uk-button-small uk-margin-small-bottom" type="button" uk-toggle="target: #gene-search-tool; animation: uk-animation-fade; cls: uk-hidden" onclick="rotateTriangle(this)" value="triangle-icon-gene-search-tool"><div class="uk-flex">details<span id="triangle-icon-gene-search-tool" uk-icon="icon:triangle-right" class="toggle-top-margin"></span></div></button>
+    <div id="gene-search-tool" class="uk-margin-small uk-hidden">
       Try it out with a <a href="/tools/search/gene.html?page=1&genus=Glycine&species=max&strain=&identifier=Glyma.01G000322&description=&family=">sample gene, Glyma.01G000322</a>.<br>
       At the linked pangene report page in InterMine (set "Rows to page" to "All" to see all corresponding genes).
       <br>
-    </details>
-    </li>
+    </div>
+   
     <li> Many genes to look up among <b>reference</b> accessions? Download a 
         <a href="https://data.soybase.org/Glycine/GENUS/pangenes/Glycine.pan5.MKRS/Glycine.pan5.MKRS.table_ref_lines.tsv.gz">
           <b>correspondence table for the reference lines</b>.
         </a>
+    </li>
 
-      <details>
-        <ul>
-          <li>#pangene</li>
-          <li>glyma.FiskebyIII.gnm1.ann1</li>
-          <li>glyma.JD17.gnm1.ann1</li>
-          <li>glyma.Lee.gnm1.ann1</li>
-          <li>glyma.Lee.gnm2.ann1</li>
-          <li>glyma.Wm82.gnm1.ann1 = Wm82.a1.v1</li>
-          <li>glyma.Wm82.gnm2.ann1 = Wm82.a2.v1</li>
-          <li>glyma.Wm82.gnm4.ann1 = Wm82.a4.v1</li>
-          <li>glyma.Wm82.gnm5.ann1</li>
-          <li>glyma.Wm82.gnm6.ann1 = Wm82.a6.v1</li>
-          <li>glyma.Wm82_NJAU.gnm1.ann1</li>
-          <li>glyma.Zh13.gnm1.ann1</li>
-          <li>glyma.Zh13.gnm2.ann1</li>
-          <li>glyma.Zh13_IGA1005.gnm1.ann1</li>
-          <li>glyma.Zh35_IGA1004.gnm1.ann1</li>
-        <ul>
-        
-        To work with this file, uncompress it, then open it using Excel or similar spreadsheet program;<br>
-        or if you have a little familiarity with a Unix terminal, you can extract data in many ways (a few examples):
-<pre>
-  cat Glycine.pan5.MKRS.table_ref_lines.tsv | tr '\t' '\n'   # to see the list of headers
-  cut -f1,2,8,10 Glycine.pan5.MKRS.table_ref_lines.tsv | head   # to see four selected columns (the first 10 entries)
-  grep -f YOUR_LIST_OF_GENES.txt Glycine.pan5.MKRS.table_ref_lines.tsv  # to search a provided list of gene IDs against the file
-</pre>
-      </details>
-
-    <li> Many genes to look up among non-reference accessions? Download a 
-        <a href="https://data.soybase.org/Glycine/GENUS/pangenes/Glycine.pan5.MKRS/Glycine.pan5.MKRS.table.tsv.gz">
-          <b>correspondence table for <b>all</b> pangene accessions.</b>
-        </a>
-      <details>
-        <ul>
-          <li>glycy.G1267.gnm1.ann1</li>
-          <li>glyd3.G1403.gnm1.ann1</li>
-          <li>glydo.G1134.gnm1.ann1</li>
-          <li>glyfa.G1718.gnm1.ann1</li>
-          <li>glyma.58-161.gnm1.ann1</li>
-          <li>glyma.Amsoy.gnm1.ann1</li>
-          <li>glyma.DongNongNo_50.gnm1.ann1</li>
-          <li>glyma.FengDiHuang.gnm1.ann1</li>
-          <li>glyma.FiskebyIII.gnm1.ann1</li>
-          <li>glyma.HanDouNo_5.gnm1.ann1</li>
-          <li>glyma.Hefeng25_IGA1002.gnm1.ann1</li>
-          <li>glyma.HeiHeNo_43.gnm1.ann1</li>
-          <li>glyma.Huaxia3_IGA1007.gnm1.ann1</li>
-          <li>glyma.Hwangkeum.gnm1.ann1</li>
-          <li>glyma.JD17.gnm1.ann1</li>
-          <li>glyma.JiDouNo_17.gnm1.ann1</li>
-          <li>glyma.JinDouNo_23.gnm1.ann1</li>
-          <li>glyma.Jinyuan_IGA1006.gnm1.ann1</li>
-          <li>glyma.JuXuanNo_23.gnm1.ann1</li>
-          <li>glyma.KeShanNo_1.gnm1.ann1</li>
-          <li>glyma.Lee.gnm1.ann1</li>
-          <li>glyma.Lee.gnm2.ann1</li>
-          <li>glyma.Lee.gnm3.ann1</li>
-          <li>glyma.PI_398296.gnm1.ann1</li>
-          <li>glyma.PI_548362.gnm1.ann1</li>
-          <li>glyma.QiHuangNo_34.gnm1.ann1</li>
-          <li>glyma.ShiShengChangYe.gnm1.ann1</li>
-          <li>glyma.TieFengNo_18.gnm1.ann1</li>
-          <li>glyma.TieJiaSiLiHuang.gnm1.ann1</li>
-          <li>glyma.TongShanTianEDan.gnm1.ann1</li>
-          <li>glyma.WanDouNo_28.gnm1.ann1</li>
-          <li>glyma.Wenfeng7_IGA1001.gnm1.ann1</li>
-          <li>glyma.Wm82.gnm1.ann1</li>
-          <li>glyma.Wm82.gnm2.ann1</li>
-          <li>glyma.Wm82.gnm4.ann1</li>
-          <li>glyma.Wm82.gnm5.ann1</li>
-          <li>glyma.Wm82.gnm6.ann1</li>
-          <li>glyma.Wm82_IGA1008.gnm1.ann1</li>
-          <li>glyma.Wm82.gnm6.ann1</li>
-          <li>glyma.Wm82_NJAU.gnm1.ann1</li>
-          <li>glyma.XuDouNo_1.gnm1.ann1</li>
-          <li>glyma.YuDouNo_22.gnm1.ann1</li>
-          <li>glyma.Zh13.gnm1.ann1</li>
-          <li>glyma.Zh13.gnm2.ann1</li>
-          <li>glyma.Zh13_IGA1005.gnm1.ann1</li>
-          <li>glyma.Zh35_IGA1004.gnm1.ann1</li>
-          <li>glyma.ZhangChunManCangJin.gnm1.ann1</li>
-          <li>glyma.Zhutwinning2.gnm1.ann1</li>
-          <li>glyma.ZiHuaNo_4.gnm1.ann1</li>
-          <li>glyso.F_IGA1003.gnm1.ann1</li>
-          <li>glyso.PI483463.gnm1.ann1</li>
-          <li>glyso.PI_549046.gnm1.ann1</li>
-          <li>glyso.PI_562565.gnm1.ann1</li>
-          <li>glyso.PI_578357.gnm1.ann1</li>
-          <li>glyso.W05.gnm1.ann1</li>
-          <li>glyst.G1974.gnm1.ann1</li>
-          <li>glysy.G1300.gnm1.ann1</li>
-        <ul>
-        To work with this file, uncompress it, then open it using Excel or similar spreadsheet program;<br>
-        or if you have a little familiarity with a Unix terminal, you can extract data in many ways (a few examples):
-<pre>
-  cat Glycine.pan5.MKRS.table.tsv | head -1 | tr '\t' '\n'   # to see the list of headers
-  cut -f1,2,8,10 Glycine.pan5.MKRS.table.tsv| head   # to see four selected columns (the first 10 entries)
-  grep -f YOUR_LIST_OF_GENES.txt Glycine.pan5.MKRS.table.tsv  # to search a provided list of gene IDs against the file
-</pre>
-      </details>
+        <button class="uk-button uk-button-primary uk-button-small uk-margin-small-bottom" type="button" uk-toggle="target: #reference-accessions; animation: uk-animation-fade; cls: uk-hidden" onclick="rotateTriangle(this)" value="triangle-icon-reference-accessions"><div class="uk-flex">details<span id="triangle-icon-reference-accessions" uk-icon="icon:triangle-right" class="toggle-top-margin"></span></div></button>
+        <div id="reference-accessions" class="uk-margin-small uk-hidden">
+          <ul>
+            <li>#pangene</li>
+            <li>glyma.FiskebyIII.gnm1.ann1</li>
+            <li>glyma.JD17.gnm1.ann1</li>
+            <li>glyma.Lee.gnm1.ann1</li>
+            <li>glyma.Lee.gnm2.ann1</li>
+            <li>glyma.Wm82.gnm1.ann1 = Wm82.a1.v1</li>
+            <li>glyma.Wm82.gnm2.ann1 = Wm82.a2.v1</li>
+            <li>glyma.Wm82.gnm4.ann1 = Wm82.a4.v1</li>
+            <li>glyma.Wm82.gnm5.ann1</li>
+            <li>glyma.Wm82.gnm6.ann1 = Wm82.a6.v1</li>
+            <li>glyma.Wm82_NJAU.gnm1.ann1</li>
+            <li>glyma.Zh13.gnm1.ann1</li>
+            <li>glyma.Zh13.gnm2.ann1</li>
+            <li>glyma.Zh13_IGA1005.gnm1.ann1</li>
+            <li>glyma.Zh35_IGA1004.gnm1.ann1</li>
+          </ul>
+                  To work with this file, uncompress it, then open it using Excel or similar spreadsheet program;<br>
+                  or if you have a little familiarity with a Unix terminal, you can extract data in many ways (a few examples):
+          <pre>
+            cat Glycine.pan5.MKRS.table_ref_lines.tsv | tr '\t' '\n'   # to see the list of headers
+            cut -f1,2,8,10 Glycine.pan5.MKRS.table_ref_lines.tsv | head   # to see four selected columns (the first 10 entries)
+            grep -f YOUR_LIST_OF_GENES.txt Glycine.pan5.MKRS.table_ref_lines.tsv  # to search a provided list of gene IDs against the file
+          </pre>
+        </div>
+        <li> Many genes to look up among non-reference accessions? Download a 
+            <a href="https://data.soybase.org/Glycine/GENUS/pangenes/Glycine.pan5.MKRS/Glycine.pan5.MKRS.table.tsv.gz">
+              <b>correspondence table for <b>all</b> pangene accessions.</b></a>
+        </li>
+            <button class="uk-button uk-button-primary uk-button-small" type="button" uk-toggle="target: #non-reference-accessions; animation: uk-animation-fade; cls: uk-hidden" onclick="rotateTriangle(this)" value="triangle-icon-non-reference-accessions"><div class="uk-flex">details<span id="triangle-icon-non-reference-accessions" uk-icon="icon:triangle-right" class="toggle-top-margin"></span></div></button>
+            <div id="non-reference-accessions" class="uk-margin-small uk-hidden">
+              <ul>
+                <li>glycy.G1267.gnm1.ann1</li>
+                <li>glyd3.G1403.gnm1.ann1</li>
+                <li>glydo.G1134.gnm1.ann1</li>
+                <li>glyfa.G1718.gnm1.ann1</li>
+                <li>glyma.58-161.gnm1.ann1</li>
+                <li>glyma.Amsoy.gnm1.ann1</li>
+                <li>glyma.DongNongNo_50.gnm1.ann1</li>
+                <li>glyma.FengDiHuang.gnm1.ann1</li>
+                <li>glyma.FiskebyIII.gnm1.ann1</li>
+                <li>glyma.HanDouNo_5.gnm1.ann1</li>
+                <li>glyma.Hefeng25_IGA1002.gnm1.ann1</li>
+                <li>glyma.HeiHeNo_43.gnm1.ann1</li>
+                <li>glyma.Huaxia3_IGA1007.gnm1.ann1</li>
+                <li>glyma.Hwangkeum.gnm1.ann1</li>
+                <li>glyma.JD17.gnm1.ann1</li>
+                <li>glyma.JiDouNo_17.gnm1.ann1</li>
+                <li>glyma.JinDouNo_23.gnm1.ann1</li>
+                <li>glyma.Jinyuan_IGA1006.gnm1.ann1</li>
+                <li>glyma.JuXuanNo_23.gnm1.ann1</li>
+                <li>glyma.KeShanNo_1.gnm1.ann1</li>
+                <li>glyma.Lee.gnm1.ann1</li>
+                <li>glyma.Lee.gnm2.ann1</li>
+                <li>glyma.Lee.gnm3.ann1</li>
+                <li>glyma.PI_398296.gnm1.ann1</li>
+                <li>glyma.PI_548362.gnm1.ann1</li>
+                <li>glyma.QiHuangNo_34.gnm1.ann1</li>
+                <li>glyma.ShiShengChangYe.gnm1.ann1</li>
+                <li>glyma.TieFengNo_18.gnm1.ann1</li>
+                <li>glyma.TieJiaSiLiHuang.gnm1.ann1</li>
+                <li>glyma.TongShanTianEDan.gnm1.ann1</li>
+                <li>glyma.WanDouNo_28.gnm1.ann1</li>
+                <li>glyma.Wenfeng7_IGA1001.gnm1.ann1</li>
+                <li>glyma.Wm82.gnm1.ann1</li>
+                <li>glyma.Wm82.gnm2.ann1</li>
+                <li>glyma.Wm82.gnm4.ann1</li>
+                <li>glyma.Wm82.gnm5.ann1</li>
+                <li>glyma.Wm82.gnm6.ann1</li>
+                <li>glyma.Wm82_IGA1008.gnm1.ann1</li>
+                <li>glyma.Wm82_ISU01.gnm2.ann1</li>
+                <li>glyma.Wm82_NJAU.gnm1.ann1</li>
+                <li>glyma.XuDouNo_1.gnm1.ann1</li>
+                <li>glyma.YuDouNo_22.gnm1.ann1</li>
+                <li>glyma.Zh13.gnm1.ann1</li>
+                <li>glyma.Zh13.gnm2.ann1</li>
+                <li>glyma.Zh13_IGA1005.gnm1.ann1</li>
+                <li>glyma.Zh35_IGA1004.gnm1.ann1</li>
+                <li>glyma.ZhangChunManCangJin.gnm1.ann1</li>
+                <li>glyma.Zhutwinning2.gnm1.ann1</li>
+                <li>glyma.ZiHuaNo_4.gnm1.ann1</li>
+                <li>glyso.F_IGA1003.gnm1.ann1</li>
+                <li>glyso.PI483463.gnm1.ann1</li>
+                <li>glyso.PI_549046.gnm1.ann1</li>
+                <li>glyso.PI_562565.gnm1.ann1</li>
+                <li>glyso.PI_578357.gnm1.ann1</li>
+                <li>glyso.W05.gnm1.ann1</li>
+                <li>glyst.G1974.gnm1.ann1</li>
+                <li>glysy.G1300.gnm1.ann1</li>
+              <ul>
+              To work with this file, uncompress it, then open it using Excel or similar spreadsheet program;<br>
+              or if you have a little familiarity with a Unix terminal, you can extract data in many ways (a few examples):
+              <pre>
+                cat Glycine.pan5.MKRS.table.tsv | head -1 | tr '\t' '\n'   # to see the list of headers
+                cut -f1,2,8,10 Glycine.pan5.MKRS.table.tsv| head   # to see four selected columns (the first 10 entries)
+                grep -f YOUR_LIST_OF_GENES.txt Glycine.pan5.MKRS.table.tsv  # to search a provided list of gene IDs against the file
+              </pre>
+            </div>
   </ul>
 </p> 
 <!--    <li> One or a few genes to look up? Use the <a href=""><b>pangene search tool</b></a>.> -->
@@ -179,33 +139,37 @@ example:
   </a>
 </p>
 <div class="uk-overflow-auto">
-  <table class="uk-width-1-2 uk-text-center uk-table-striped uk-table-condensed">
-    <tr>
-      <th class="uk-text-center uk-text-normal">Pangene ID</th>
-      <th class="uk-text-center uk-text-normal">Wm82.gnm1.ann1 / Wm82.a1.v1</th>
-      <th class="uk-text-center uk-text-normal">Wm82.gnm2.ann1 / Wm82.a2.v1</th>
-      <th class="uk-text-center uk-text-normal">Wm82.gnm4.ann1 / Wm82.a4.v1</th>
-      <th class="uk-text-center uk-text-normal">Wm82.gnm6.ann1 / Wm82.a6.v1</th>
-      <th class="uk-text-center uk-text-normal">more</th>
-    </tr>
-    {% for name in page.example %}
+  <table class="uk-table uk-table-small uk-table-hover uk-table-striped uk-table-divider">
+    <thead>
       <tr>
-        <td class="uk-text-light" >{{ name.pangene }}</td>
-        <td class="uk-text-light">{{ name.glyma_Wm82_gnm1_ann1 }}</td>
-        <td class="uk-text-light">{{ name.glyma_Wm82_gnm2_ann1 }}</td>
-        <td class="uk-text-light">{{ name.glyma_Wm82_gnm4_ann1 }}</td>
-        <td class="uk-text-light">{{ name.glyma_Wm82_gnm6_ann1 }}</td>
-        <td class="uk-text-light">{{ name.more }}</td>
+        <th><b>Pangene ID</b></th>
+        <th><b>Wm82.gnm1.ann1 / Wm82.a1.v1</b></th>
+        <th><b>Wm82.gnm2.ann1 / Wm82.a2.v1</b></th>
+        <th><b>Wm82.gnm4.ann1 / Wm82.a4.v1</b></th>
+        <th><b>Wm82.gnm6.ann1 / Wm82.a6.v1</b></th>
+        <th><b>more</b></th>
+      </tr>
+    </thead>
+    {% for name in site.data.gene_translate_examples.example %}
+      <tr>
+        <td>{{ name.pangene }}</td>
+        <td>{{ name.glyma_Wm82_gnm1_ann1 }}</td>
+        <td>{{ name.glyma_Wm82_gnm2_ann1 }}</td>
+        <td>{{ name.glyma_Wm82_gnm4_ann1 }}</td>
+        <td>{{ name.glyma_Wm82_gnm6_ann1 }}</td>
+        <td>{{ name.more }}</td>
       </tr>
     {% endfor %}
   </table>
 </div>
 
 <h3>Methods</h3>
-The gene correspondences in the lookup tables above were calculated using the 
+<p>The gene correspondences in the lookup tables above were calculated using the 
 <a href="https://github.com/legumeinfo/pandagma">Pandagma package</a> for identifying pangenes from a given collection of annotations.
-The method is described briefly here:
-<details>
+The method is described briefly here:</p>
+
+<button class="uk-button uk-button-primary uk-button-small uk-margin-small-bottom" type="button" uk-toggle="target: #pandagma-software-package; animation: uk-animation-fade; cls: uk-hidden" onclick="rotateTriangle(this)" value="triangle-icon-method"><div class="uk-flex">details<span id="triangle-icon-method" uk-icon="icon:triangle-right" class="toggle-top-margin"></span></div></button>
+<div id="pandagma-software-package" class="uk-margin-small uk-hidden">
 <p>The Pandagma software package (Cannon, Lee, Berendzen) was used to identify pangene and gene family sets. The main steps in Pandagma's pangene process are:</p>
 <ul>
   <li> Make pairwise homology comparisons between each annotation set;</li>
@@ -224,6 +188,7 @@ The method is described briefly here:
   the <a href="https://github.com/legumeinfo/pandagma/blob/main/bin/gene_translate.pl">gene_translate.pl</a> 
   utility in pandagma may be helpful.
 </p>
-</details>
+</div>
 
 
+<script src="../../assets/js/utils.js"></script>

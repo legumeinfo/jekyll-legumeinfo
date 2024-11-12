@@ -11,14 +11,15 @@ layout: default
 {% for item in issue %}
   <h3>{{ item.title}}</h3>
 
+  <dl>
   <dt>
     <dd><strong>Authors:</strong></dd> 
-    <dd>{{ item.authors}}</dd>
-    <br>
+    <dd class="uk-margin-bottom">{{ item.authors}}</dd>
+    
     
     <dd><strong>Abstract:</strong></dd>
-    <dd>{{ item.abstract}}</dd>
-    <br>
+    <dd class="uk-margin-bottom">{{ item.abstract}}</dd>
+   
 
     {% if item.file != "" and item.file != nil %}
       <dd><strong>Submitted paper: </strong></dd>
@@ -27,6 +28,7 @@ layout: default
       </dd>
     {% endif %}
   </dt>
+</dl>
 {% endfor %}
 
 <h4><a href="/community/sgn/index.html">Back to the Soybean Genetics Newsletter index page</a></h4>

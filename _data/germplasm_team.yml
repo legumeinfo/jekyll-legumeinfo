@@ -1,0 +1,78 @@
+---
+Team:
+  - name: Ben Fallen
+    email: ben.fallen@usda.gov
+    organization: USDA-ARS
+    role: <strong>Chair</strong>, Public Breeder, South
+    term: 2023-2028
+  - name: Pedro Gonzalez-Portilla
+    email: pgonzalez@bensonhill.com
+    organization: Benson Hill
+    role: <strong>Vice-Chair</strong>, Private Breeder, North
+    term: 2023-2028
+  - name: Milad Eskandari
+    email: meskanda@uoguelph.ca
+    organization: University of Guelph
+    role: Canadian Breeder
+    term: 2021-2024
+  - name: Jon Allen
+    email: jon.allen@corteva.com
+    organization: Corteva
+    role: Plant Pathologist
+    term: 2023-2026
+  - name: Ian McNish
+    email: Iam.McNish@syngenta.com
+    organization: Syngenta
+    role: Plant Pathologist
+    term: 2023-2026
+  - name: Alvaro Sanz-Saez
+    email: azs0223@auburn.edu
+    organization: Auburn University
+    role: Physiologist
+    term: 2023-2026
+  - name: Jason Gillman
+    email: jason.gillman.@usda.gov
+    organization: USDA-ARS
+    role: Physiologist, molecular geneticist, biochemist, genomicist, cytogeneticist
+    term: 2023-2026
+  - name: Guo-liang Jiang
+    email: gjiang@vsu.edu
+    organization: Virginia State University
+    role: Geneticist
+    term: 2023-2026
+  - name: Aaron Lorenz
+    email: lore0149@umn.edu
+    organization: University of Minnesota
+    role: Public Breeder, North
+    term: 2023-2026
+  - name: Innan Cervantes-Martinez
+    email: innan.cervantes-martinez@basf.com
+    organization: BASF
+    role: Public Breeder, South
+    term: 2023-2026
+  - name: Roy Scott
+    email: roy.scott@usda.gov
+    organization: USDA-ARS
+    role: Ex-Officio, NPL-Oilseed/Bioscience
+    term: Permanent
+  - name: Adam Mahan
+    email: Adam.Mahan@usda.gov
+    organization: USDA-ARS
+    role: Ex-Officio, Soybean Curator
+    term: Permanent
+  - name: Benjamin Barlett
+    email: Benjamin.Barlett@usda.gov
+    organization: USDA-ARS
+    role: Ex-Officio and Secretary, Assistant Soybean Curator
+    term: Permanent
+  - name: Rusty Smith
+    email: Rusty.Smith@usda.gov
+    organization: USDA-ARS
+    role: Ex-Officio, Assistant Soybean Curator
+    term: Permanent
+  - name: Lisa Weaver
+    email: LWeaver@smithbucklin.com
+    organization: United Soybean Board
+    role: Ex-Officio, United Soybean Board
+    term: Permanent
+

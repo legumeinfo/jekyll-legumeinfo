@@ -1,0 +1,103 @@
+---
+- name: Jacqueline Campbell
+  role: SoyBase Co-curator
+  specialization: Data curation, Site development
+  website: https://www.ars.usda.gov/people-locations/person?person-id=55880
+  status: current
+- name: Steven Cannon
+  role: Project Administration
+  specialization: Genome Assembly, Analysis
+  website: https://www.ars.usda.gov/midwest-area/ames/cicgru/people/steven-cannon/
+  status: current
+- name: Wei Huang
+  role: Biologist
+  specialization: Genome Browser, Bioinformatics
+  website: https://www.ars.usda.gov/people-locations/person?person-id=57295
+  status: current
+- name: Rex Nelson
+  role: Lead SoyBase Curator
+  specialization: Data Curation, Site Development
+  website: https://www.ars.usda.gov/midwest-area/ames/cicgru/people/rex-nelson/
+  status: current
+- name: Nathan Weeks
+  role: Systems Administration
+  specialization: Informatics
+  website: https://www.ars.usda.gov/people-locations/person?person-id=41062
+  status: current
+- name: Chen Prom
+  role: IT Specialist(Data/Sytems)
+  specialization: Front-End Development
+  website: https://www.ars.usda.gov/people-locations/person?person-id=60073
+  status: current
+  # current student employee
+- name: Simon Novak
+  role: Student Programmer
+  status: student
+- name: Ella Townsend
+  role: Student Curator
+  status: student
+- name: Reagan Nelson
+  role: Student Curator
+  status: student
+  # past employee
+- name: David Grant
+  role: SoyBase Curator Emeritus
+  status: Alumni
+- name: Robert Baker
+  role: Data Curation
+  status: Alumni
+- name: Victoria Blake
+  role: Data Curation
+  status: Alumni
+- name: Anne Brown
+  role: Postdoctoral Researcher
+  status: Alumni
+- name: Brandon Jordan
+  role: Postdoctoral Researcher
+  status: Alumni
+- name: Shawn Conner
+  role: Programmer, Web Development
+  status: Alumni
+- name: Kevin Feeley
+  role: Programmer, Web Development
+  status: Alumni
+  # past student employee
+- name: Kimberly Raymer
+  role: Student Programmer
+  status: Alumni
+- name: Chee Hau Fong
+  role: Student Programmer
+  status: Alumni
+- name: William Hardison
+  role: Student Curator
+  status: Alumni
+- name: Abigial Pigatto
+  role: Student Curator
+  status: Alumni
+- name: Marlene Dorneich-Hayes
+  role: Student Curator
+  status: Alumni
+- name: Laura Climer
+  role: Student Employee
+  status: Alumni
+- name: Katrina Kohn
+  role: Student Employee
+  status: Alumni
+- name: Samuel Sterns
+  role: Student Employee
+  status: Alumni
+- name: Jonathan Stroyan
+  role: Student Employee
+  status: Alumni
+- name: Daniel Tarte
+  role: Student Employee
+  status: Alumni
+- name: Andrew Denne
+  role: Student Programmer
+  status: Alumni
+- name: Andrew Wilkey
+  role: Student Programmer
+  status: Alumni
+- name: Aditya Kumar
+  role: Student Programmer
+  status: Alumni

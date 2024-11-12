@@ -10,7 +10,7 @@ redirect_from: /sbt/
 {% assign map_resource = site.data.map_resources %}
 {% assign map_cmap = site.data.map_cmap %}
 
-<h2><b>Genetic Map Resources for Soybean</b></h2>
+<h1>Genetic Map Resources for Soybean</h1>
 
 <p>
   Maps below show QTLs and GWAS features. Click a chromosome number to go to the corresponding linkage group views. 
@@ -62,14 +62,14 @@ redirect_from: /sbt/
       Use idx as the index of cmap-set groups. Set the first accordion item to "open".
     {% endcomment %}
 
-    <ul uk-accordion>
+    <ul class="uk-margin-small-left uk-margin-small-right" uk-accordion>
       {% if idx == 0 %}
-        <li class="uk-open">
+        <li>
           {% else %}
           <li>
       {% endif %}
       {% assign idx = idx | plus: 1 %}
-        <a class="uk-accordion-title" href="#"><strong>&#8226;</strong> {{ cmap-set.description }}</a>
+        <a class="uk-accordion-title" href="#">{{ cmap-set.description }}</a>
         <div class="uk-accordion-content uk-overflow-auto">
           <table class="uk-table">
             <tbody>
@@ -90,12 +90,13 @@ redirect_from: /sbt/
         </div>
       </li>
     </ul>
+    <hr>
   {% endunless %}
 {% endfor %}
 
 {% for resource in map_resource.resources %}
   <dl>
     <dt><a href="{{ resource.URL }}">{{ resource.name }}</a></dt>
-    {{ resource.description }}
+    <dd>{{ resource.description }}</dd>
   </dl>
 {% endfor %}

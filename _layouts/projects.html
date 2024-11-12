@@ -3,7 +3,7 @@ layout: default
 ---
 
 <h2>{{ page.projects.short_title }}</h2>
-
+<dl>
 <dt>
   <dd><h3>Description:</h3></dd> 
   <dd>{{ page.projects.description }}</dd>
@@ -19,12 +19,14 @@ layout: default
         <a href="https://doi.org/{{ publication.doi }}" target="_blank"> {{ publication.doi }} </a>
       </dd>
     {% endif %}
-    {% if publication.abstract %} 
-      <details>
-        <summary><strong>Abstract:</strong> (click to read)</summary> 
-
+    {% if publication.abstract %}
+    {% assign pubRemovePeriod = publication.doi | remove: "." %} 
+    {% assign pubRemoveSlash = pubRemovePeriod | remove: "/" %} 
+    <button class="uk-button uk-button-primary uk-button-small" type="button" uk-toggle="target: #a{{pubRemoveSlash}}; animation: uk-animation-fade; cls: uk-hidden" onclick="rotateTriangle(this)" value="triangle-icon-{{pubRemoveSlash}}"><div class="uk-flex">abstract<span id="triangle-icon-{{pubRemoveSlash}}" uk-icon="icon:triangle-right" class="toggle-top-margin"></span></div></button>
+    <div id="a{{pubRemoveSlash}}" class="uk-margin-small uk-hidden">
         <dd> {{ publication.abstract }}</dd> 
-      </details>
+        <dd> {{ pubRemove }}</dd> 
+      </div>
     {% endif %}
   {% endfor %}
   <br>
@@ -45,5 +47,21 @@ layout: default
     {% endfor %}
   {% endfor %}
 </dt>
+</dl>
 
-<h4><a href="/projects/">Back to Projects index page</a></dd></h4>
+<h4><dl><dd><a href="/projects/">Back to Projects index page</a></dd></dl></h4>
+
+
+<script >
+
+  function rotateTriangle(e){
+    let id = e.value
+    const icon = document.getElementById(id);
+    if (icon.style.transform === 'rotate(90deg)') {
+      icon.style.transform = 'rotate(0deg)'
+    } else {
+      icon.style.transform = 'rotate(90deg)'
+    }
+  }
+
+</script>

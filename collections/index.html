@@ -5,52 +5,94 @@ title: Data Collections
 redirect_from: /dlpages/
 ---
 
-<h1>SoyBase Datastore Collections</h1>
+<body onload="openAccordion()">
+  <h1>SoyBase Datastore Collections</h1>
 
-<p>
-  All of the files housed by SoyBase are available at the 
-  <a target="_blank" href="{{ site.datastoreurl }}"><b>SoyBase and LIS Datastore</b></a>.
-</p>
+  <p>
+    All of the files housed by SoyBase are available at the 
+    <a target="_blank" href="{{ site.datastoreurl }}"><b>SoyBase and LIS Datastore</b></a>.
+  </p>
 
-<p>
-  The Datastore is organized by Genus and species, with individual <i>data collections</i> 
-  under species directories for: genomes, annotations, expression,
-  genetic data, markers, synteny, diversity, and others.
-  Each collection contains a README file which describes that collection.
-</p>
+  <p>
+    The Datastore is organized by Genus and species, with individual <i>data collections</i> 
+    under species directories for: genomes, annotations, expression,
+    genetic data, markers, synteny, diversity, and others.
+    Each collection contains a README file which describes that collection.
+  </p>
 
-<h2>Collection synopses and links</h2>
+  <h2>Collection synopses and links</h2>
 
-{% assign genus_description = site.data.datastore-metadata.Glycine.GENUS.about_this_collection.description_Glycine %}
-{% assign species_list=genus_description.species %}
+  <div class="uk-flex uk-flex-center uk-flex-right@s">
+    <button class="uk-button uk-margin-small-right uk-button-primary" onclick="expandAllAccordion()">expand all</button>
+    <button class="uk-button uk-button-primary"  onclick="collapseAllAccordion()">collapse all</button>
+  </div>
+  <hr>
+  {% assign genus_description = site.data.datastore-metadata.Glycine.GENUS.about_this_collection.description_Glycine %}
+  {% assign species_list=genus_description.species %}
 
-{% assign genus = "Glycine" %}
-
-{% for desired_species in species_list %}
-  {% for species_dir in site.data.datastore-metadata[genus] %}
-    {% assign species = species_dir[0] %}
-    {% if species != desired_species%}
-      {% continue %}
-    {% endif %}
-    <h3><a target="_blank" id="{{ genus }}_{{ species }}" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/"><i>{{genus}} {{ species }}</i></a></h3>
-    {% for datatype_dir in species_dir[1] %}
-      {% assign datatype = datatype_dir[0] %}
-      {% if datatype == "about_this_collection" %} 
+  {% assign genus = "Glycine" %}
+  {% for desired_species in species_list %}
+  <ul uk-accordion animation="false">
+    <li id={{desired_species}} species={{desired_species}} class="ukaccordion">
+    {% for species_dir in site.data.datastore-metadata[genus] %}
+      {% assign species = species_dir[0] %}
+      {% if species != desired_species%}
         {% continue %}
       {% endif %}
-      <h4><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/{{ datatype }}/">{{ datatype }}</a></h4>
-      {% for collection_dir in datatype_dir[1] %}
-        {% assign collection = collection_dir[0] %}
-        {% for metadata_file in collection_dir[1] %}
-          {% if metadata_file[0] contains "README" %}
-          {% assign readme = metadata_file[1] %}
-            <dt><a target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/{{ datatype }}/{{ readme.identifier }}/">{{ readme.identifier }}</a></dt>
-            <dd>{{ readme.synopsis }}</dd>
-          {% endif %}
-        {% endfor %}
-      {% endfor %}
-    {% endfor %}
-  {% endfor %}
-  <hr>
-{% endfor %}
+      <a class="uk-text-large uk-text-italic uk-accordion-title" target="_blank" id="{{ genus }}_{{ species }}" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/">{{genus}} {{ species }}</a>
+      
+      <div class="uk-accordion-content">
+        <a class="text-size-large uk-margin-left" target="_blank" id="{{ genus }}_{{ species }}" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/">{{ species }}</a>
+      {% for datatype_dir in species_dir[1] %}
+        {% assign datatype = datatype_dir[0] %}
+        {% if datatype == "about_this_collection" %} 
+          {% continue %}
+        {% endif %}
+        <ul uk-accordion animation="false">
+          <li class="uk-margin-medium-left uk-margin-right ukaccordion">  
+        <a class="text-size-med uk-accordion-title" target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/{{ datatype }}/">{{ datatype }}</a>
+        <div class="uk-accordion-content">
+          <a class="text-size-med uk-margin-small-left" target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/{{ datatype }}/">{{ datatype }}</a>
+        {% for collection_dir in datatype_dir[1] %}
+          {% assign collection = collection_dir[0] %}
+          {% for metadata_file in collection_dir[1] %}
+            {% if metadata_file[0] contains "README" %}
+            {% assign readme = metadata_file[1] %}
+            <dl>
+              <dt><a class="uk-margin-small-left" target="_blank" href="{{ site.datastoreurl }}/{{ genus }}/{{ species }}/{{ datatype }}/{{ readme.identifier }}/">{{ readme.identifier }}</a></dt>
+              <dd class="uk-margin-small-left">{{ readme.synopsis }}</dd>
+            </dl>
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+          </div>
+            </li>
+            </ul>
 
+        {% endfor %}
+      </div>
+        {% endfor %}
+        <hr>
+        {% endfor %}
+    </li>
+  </ul>
+</body>
+
+<script>
+
+  function openAccordion(e){
+    let currentUrl = (window.location.href);
+    let urlArr = currentUrl.split('/');
+    let species = (urlArr[urlArr.length - 1].split('_'))[1]
+    
+    if(species == undefined){
+      return
+    }else{
+      document.querySelector(`[species=${species}]`).setAttribute("class", "uk-open")
+      document.querySelector(`div[aria-labelledby=Glycine_${species}]`).removeAttribute('hidden')
+    }
+  }
+  
+</script>
+
+ <script src="../assets/js/utils.js"></script>

@@ -9,18 +9,19 @@ tools_menu: false
   A major problem with many of the current naming conventions is that they often contain both locus and allele information in the names, are based on a particular technology and/or contain bold, italic, super/subscripts or some other characters or formatting that are incompatible with electronic databases. 
 </p>
 
-<p>
-  <b>For example:</b><br>
-* E(CCA)M(AGC)114 or ACAAAC110 : AFLP locus, name gives discriminatory bases and band size<br>
-* OH03_700: RAPD locus with band size given<br>
-* U379_500T: RAPD locus with band size, reason for T not known This is obviously not ideal as the same locus in a different variety might well have a different band size.<br>
-</p>
+  <h5 class="uk-text-bold uk-margin-remove">For example:</h5>
+  <ul class="uk-margin-remove">
+    <li>E(CCA)M(AGC)114 or ACAAAC110 : AFLP locus, name gives discriminatory bases and band size</li>
+    <li>OH03_700: RAPD locus with band size given</li>
+    <li>U379_500T: RAPD locus with band size, reason for T not known This is obviously not ideal as the same locus in a different variety might well have a different band size.</li>
+  </ul>
 
-<p>
-There are at least two kinds of names needed:<br>
- • physical clones <br>
- • genetic loci and their alleles
-</p>
+
+<p class="uk-margin-remove-bottom">There are at least two kinds of names needed:</p>
+<ul class="uk-margin-remove">
+  <li>physical clones </li>
+  <li>genetic loci and their alleles</li>
+</ul>
 <p>
 There are of course subclasses of these (i.e. sequences of clones), but these cover the major groups. 
 </p>
@@ -29,57 +30,58 @@ There are of course subclasses of these (i.e. sequences of clones), but these co
 The Soybean Genetics Committee recommends the following guidelines which will result in names that are compatible with electronic databases. The ones for physical clones are already in use in several labs and seem to be acceptable.
 </p>
 
-<p>
-<b>An EST example:</b><br>
-<u>Gm-c1049-2803</u><br>
- • Gm -- Glycine max - use the appropriate genus & species initials; 2 chars only<br>
- • c -- cDNA; r = rerack of a previous library;<br>
- • 1049 -- library number; start at 1001; numbers coordinated by SoyBase - thus c1049 is the library name<br>
- • 2083 -- clone number
-</p>
-<p>
-<b>A BAC example:</b><br>
-<u>Gm_UMb001_090_G08</u><br>
- • Gm -- Glycine max - use the appropriate genus & species initials; 2 chars only<br>
- • UM -- University of Minnesota; IS = Iowa State Univ; other 2 char abbreviations to be assigned as needed<br>
- • b -- BAC<br>
- • 001 -- library number; use leading zeroes to pad to 3 chars - thus UMb001 is the library name<br>
- • 090 -- plate number<br>
- • G08 -- row and column of clone
-</p>
+<h5 class="uk-margin-remove uk-text-bold">An EST example:</h5>
+<u>Gm-c1049-2803</u>
+<ul class="uk-margin-remove-top">
+  <li>Gm -- Glycine max - use the appropriate genus & species initials; 2 chars only</li>
+  <li>c -- cDNA; r = rerack of a previous library;</li>
+  <li>1049 -- library number; start at 1001; numbers coordinated by SoyBase - thus c1049 is the library name</li>
+  <li>2083 -- clone number</li>
+</ul>
 
-<p>
-Subclones of BACs are named by adding appropriate characters to identify subclone to the BAC name:<br>
- • Gm_UMb001_090_G08_s_row_column where s indicates a subclone<br>
- • F or R appended as needed
-</p>
+<h5 class="uk-margin-remove uk-text-bold">A BAC example:</h5>
+<u>Gm_UMb001_090_G08</u>
+<ul class="uk-margin-remove">
+  <li> Gm -- Glycine max - use the appropriate genus & species initials; 2 chars only</li>
+  <li> UM -- University of Minnesota; IS = Iowa State Univ; other 2 char abbreviations to be assigned as needed</li>
+  <li>b -- BAC</li>
+  <li>001 -- library number; use leading zeroes to pad to 3 chars - thus UMb001 is the library name</li>
+  <li>090 -- plate number</li>
+  <li>G08 -- row and column of clone</li>
+</ul>
+
+<p class="uk-margin-remove-bottom">Subclones of BACs are named by adding appropriate characters to identify subclone to the BAC name:</p>
+<ul class="uk-margin-remove">
+  <li>Gm_UMb001_090_G08_s_row_column where s indicates a subclone</li>
+  <li>F or R appended as needed</li>
+</ul>
+
 <p>
 Other single character abbreviations might be a = AFLP, f = RFLP, etc.
 </p>
 
-<h3>Individual Sequences</h3>
-<p>
- • Append a U or R followed by an integer for the walking step to the BAC or subclone name.<br>
- • For example Gm_ISb002_091_F11U3 for the 3rd step from the U sequencing primer.<br>
- • For consistency T3/T7, etc. should be referred to as U/R with the actual sequencing primer given in the database record.<br>
- • A clone's completed sequence would be Gm_ISb002_091_F11C where the C indicates that this is a completed sequence.
-</p>
+<h3 >Individual Sequences</h3>
+<ul class="uk-margin-remove">
+  <li>Append a U or R followed by an integer for the walking step to the BAC or subclone name.</li>
+  <li>For example Gm_ISb002_091_F11U3 for the 3rd step from the U sequencing primer.</li>
+  <li>For consistency T3/T7, etc. should be referred to as U/R with the actual sequencing primer given in the database record.</li>
+  <li>A clone's completed sequence would be Gm_ISb002_091_F11C where the C indicates that this is a completed sequence.</li>
+</ul>
 
-<p>
-For clones that are already in use and which can't be easily fitted into this scheme a simplified version of the above may be used.<br>
- • cDNA Gm-cn-arbitrary text: subclones and sequences would be named as above.<br>
- • RFLP Gm-pn-current rflp name: all current G. max probes would be considered 'library' 1. An example would be <u>Gm-p1-A632</u>. <br>
- • AFLP Gm-an-arbitrary text: subclones and sequences would be named as above.<br>
- • RAPD Gm-r-primer name from supplier: subclones and sequences would be named as above.
-</p>
+<p class="uk-margin-remove-bottom">For clones that are already in use and which can't be easily fitted into this scheme a simplified version of the above may be used.</p>
+<ul class="uk-margin-remove">
+  <li>cDNA Gm-cn-arbitrary text: subclones and sequences would be named as above.</li>
+  <li>RFLP Gm-pn-current rflp name: all current G. max probes would be considered 'library' 1. An example would be <u>Gm-p1-A632</u>.</li>
+  <li>AFLP Gm-an-arbitrary text: subclones and sequences would be named as above.</li>
+  <li>RAPD Gm-r-primer name from supplier: subclones and sequences would be named as above.</li>
+</ul>
+
 
 <h3>Genetic Loci</h3>
 <p>
 This is obviously an area badly in need of some consistency. In general it is inappropriate to include such details as band sizes, coordinates, restriction sites, cloning vehicle history, primer IDs, dates, etc. into locus names as these quickly become irrelevant. Additionally, reconciling new and old names as the technique, laboratory, and species change, or when one locus overlaps, includes, or is identical to another is extremely difficult. We recommend that the general rule be that the locus name should not contain an overabundance of information, but should rather be just enough to point to a database entry where all of the rest of the information can be found. This is the model used by the public sequence databases. A similar approach has worked well for soybean genes and I think it can work for other kinds of genetic loci also. Many of the loci we are using will eventually be used in other species and it would be inconvenient to have to either rename loci for each species or carry along a lot of only-historically-interesting baggage. 
 </p>
-<b>
-The Committee recommends that:
-</b>
+<h5 class="uk-margin-remove uk-text-bold">The Committee recommends that:</h5>
 <ul>
   <li>Locus names should be a short as possible. Maps are becoming quite full and long names just exacerbate the display problems. One possibility for naming loci in the future might be to just use a 3 letter+3numeral system starting at AAA001 and running to ZZZ999. A lab could reserve a block of names when desired with the reservation system implemented as part of SoyBase.</li>
   <li>Locus names should contain only plain text letters and numbers, although upper and lower case can be used when needed. Any text formatting (bold, underlined characters, italics, super/subscripts, non-Roman characters, etc.) should absolutely not be used. The dash character should be used to separate parts of locus names, not the space character. The underline character should be reserved for indicating duplicated (= paralogous) loci or for phenotypically related QTL.</li>

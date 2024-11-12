@@ -1,0 +1,26 @@
+{% capture content %}
+  <div class="uk-card-body">
+    {% if site.categories.news.size > 0 %}
+    <ul class="uk-list uk-list-disc">
+      {% assign newsLimit = site.card_item_limit %}
+      {% if site.news_card_item_limit %}
+      {% assign newsLimit = site.news_card_item_limit %}
+      {% endif %}
+      {% for post in site.categories.news limit:newsLimit %}
+      {% capture meta %}
+      <br>
+      {{ post.date | date_to_long_string }}{% endcapture %}
+      {% include card-item.html url=post.url title=post.title meta=meta%}
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>There are currently no news items.</p>
+    {% endif %}
+  </div>
+  {% endcapture %}
+
+{% capture footer %}
+    <a href="{{ "/news" | relative_url }}" class="uk-button uk-button-text">More News</a>
+{% endcapture %}
+
+{% include card.html title='NEWS' content=content footer=footer %}

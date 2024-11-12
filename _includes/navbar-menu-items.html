@@ -1,9 +1,9 @@
-<nav uk-dropnav class="uk-flex-inline" style="margin-top: 20px;">
+<li uk-dropnav class="uk-flex-inline">
   <ul  class="uk-subnav">
-  <li><a class="uk-text-capitalize nav-title" href="{{ "/" | relative_url }}" style="color: white;">Home</a></li>
+  <li><a class="uk-text-capitalize nav-title" href="{{ "/" | relative_url }}">Home</a></li>
 
   <li>
-    <a class="uk-text-capitalize nav-title" href="{{ "/tools" | relative_url }}" style="color: white;">Tools</a>
+    <a class="uk-text-capitalize nav-title" href="{{ "/tools" | relative_url }}">Tools</a>
     {% assign groups = site.data.tools | group_by: "category" | sort: "name" %}
     <div class="uk-dropdown">
       <ul class="uk-nav uk-dropdown-nav uk-link-reset">
@@ -17,27 +17,27 @@
   </li>
  
   <li>
-    <a class="uk-text-capitalize nav-title" href="{{ "/maps" | relative_url }}" style="color: white;">Maps</a>
+    <a class="uk-text-capitalize nav-title" href="{{ "/maps" | relative_url }}">Maps</a>
   </li>
 
   <li>
-    <a class="uk-text-capitalize nav-title" href="{{ "/resources" | relative_url }}" style="color: white;">Genomics</a>
+    <a class="uk-text-capitalize nav-title" href="{{ "/resources" | relative_url }}">Genomics</a>
   </li>
 
     <li>
-      <a class="uk-text-capitalize nav-title" href="{{ "/collections" | relative_url }}" style="color: white;">Data Collections</a>
+      <a class="uk-text-capitalize nav-title" href="{{ "/collections" | relative_url }}">Data Collections</a>
       {% assign genus_description = site.data.datastore-metadata.Glycine.GENUS.about_this_collection.description_Glycine %}
       <div class="uk-dropdown">
         <ul class="uk-nav uk-dropdown-nav uk-link-reset">
           {% for species in genus_description.species %}
-            <li class="nav-item"><a href="/collections/#{{ genus_description.genus }}_{{ species }}"> {{ species }}</a></li>
+            <li class="nav-item uk-text-capitalize"><a id={{species}} href="/collections/#{{ genus_description.genus }}_{{ species }}" > {{ species }}</a></li>
           {% endfor %}
         </ul>
       </div>
     </li>
   
     <li>
-      <a class="uk-text-capitalize nav-title" href="{{ "/projects" | relative_url }}" style="color: white;">Projects</a>
+      <a class="uk-text-capitalize nav-title" href="{{ "/projects" | relative_url }}">Projects</a>
       {% if site.data.projects %}
       {% assign groups = site.data.projects | sort: "short_title" %}
         <div class="uk-dropdown">
@@ -50,11 +50,10 @@
       {% endif %}
     </li>
 
-  <li><a class="uk-text-capitalize nav-title" href="{{ "/community" | relative_url }}" style="color: white;">Community</a></li>
+  <li><a class="uk-text-capitalize nav-title" href="{{ "/community" | relative_url }}">Community</a></li>
 
-  <li><a class=" uk-text-capitalize nav-title" href="{{ "/about" | relative_url }}" style="color: white;">About & Contact</a></li>
+  <li><a class=" uk-text-capitalize nav-title" href="{{ "/about" | relative_url }}">About & Contact</a></li>
 
-  <li><a class=" uk-text-capitalize nav-title" href="{{ "/help" | relative_url }}" style="color: white;">Help & Tutorials</a></li>
+  <li><a class=" uk-text-capitalize nav-title" href="{{ "/help" | relative_url }}">Help & Tutorials</a></li>
   </ul>
-</nav>
-
+</li>

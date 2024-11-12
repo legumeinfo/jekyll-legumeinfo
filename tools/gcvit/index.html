@@ -1,54 +1,33 @@
 ---
-layout: null
+layout: default
 iframe_url: "https://gcvit.soybase.org"
 redirect_from: /gcvit/
 ---
-
-<!DOCTYPE html>
-{% if page contains "lang" %}
-<html lang="{{ page.lang }}">
-{% else %}
-<html lang="{{ site.lang }}">
-{% endif %}
-
-{% include head.html %}
-
-<body>
-
-{% include navbar.html %}
-
-<style>
-p, h2, h3, details {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-</style>
-                           
-<h2 style='font-weight:bold;'>GCViT (Genotype Comparison Visualization Tool)</h2>
-<p style='font-weight:bold;'> <a href='https://youtu.be/B2gPVUipWo0'>Video Tutorial on GCViT</a> </p>
+          
+<div>
+<h2 class="uk-text-bold">GCViT (Genotype Comparison Visualization Tool)</h2>
+<p class="uk-text-bold"> <a href='https://youtu.be/B2gPVUipWo0'>Video Tutorial on GCViT</a> </p>
 
 <!-- ################# add details button for Datasets on GCVIT-->
-<p>
-  <strong>Learn more about the Datasets available on GCViT</strong>
+<p class="uk-text-bold">
+  Learn more about the Datasets available on GCViT
 </p>
-<details>
-<style>
-th, td {
-  padding: 7px;
-}
-</style>
 
+  <button class="uk-button uk-button-primary uk-button-small" type="button" uk-toggle="target: #whole-plant-grouth-terms; animation: uk-animation-fade; cls: uk-hidden" onclick="rotateTriangle(this)" value="triangle-icon-whole-plant-growth"><div class="uk-flex">details<span id="triangle-icon-whole-plant-growth" uk-icon="icon:triangle-right" class="toggle-top-margin"></span></div></button>
+  <div id="whole-plant-grouth-terms" class="uk-margin-small uk-hidden">
 <!--<h3>  GCViT Datasets</h3>-->
 <p>SNPs were sampled at a density of no more than one SNP per 25kb prior to display. This has the effect of partially normalizing the SNP density (though regions of the genome with very sparse SNP density will still show sparse density). </p>
-<p><a href='https://data.soybase.org/Glycine/max/diversity/Wm82.gnm2.div.Song_Hyten_2015/glyma.Wm82.gnm2.div.Song_Hyten_2015.PIconversion.txt.gz' style='font-weight:bold;'>Click Here To Download PI to Common Name Conversion Table</a></p>
-<p style="color:blue; font-size:100%;"> If you would like to submit your data to be run on this tool please <span><a href='/about/' style="color:red;">Contact Us </a></span></p>
+<p><a href='https://data.soybase.org/Glycine/max/diversity/Wm82.gnm2.div.Song_Hyten_2015/glyma.Wm82.gnm2.div.Song_Hyten_2015.PIconversion.txt.gz' class="uk-text-bold">Click Here To Download PI to Common Name Conversion Table</a></p>
+<p style="color: blue"> If you would like to submit your data to be run on this tool please <span><a href='/about/' style="color: rgb(232, 0, 0)" class="uk-text-bold">Contact Us </a></span></p>
 
-<table style="width:100%">
+<table class="uk-table uk-table-small uk-table-hover uk-table-responsive uk-table-divider uk-table-striped">
+ <thead>
   <tr>
     <th>Dataset</th>
     <th>Citation*</th> 
     <th>Source</th>
   </tr>
+ </thead>
   <tr>
     <td>SoySNP50K</td>
     <td>Song, Q., Hyten, D. L., Jia, G., Quigley, C. V., Fickus, E. W., Nelson, R. L., Cregan, P. B. (2015). Fingerprinting soybean germplasm and its utility in genomic research. G3: Genes, Genomes, Genetics, 5(10). <a href='https://doi.org/10.1534/g3.115.019000'>doi.org/10.1534/g3.115.019000</a></td>
@@ -97,17 +76,16 @@ th, td {
  </tr>
 </table>
 <p> * please cite accordingly </p> 
-</details>
+</div>
+</div>
 <br>
 
 {% assign iframe_style="display: flex; width: 100%; height: 100vh; flex-direction: column;" %}
 <iframe id="myiframe" src="{{ page.iframe_url }}" style="{{ iframe_style }}"></iframe>
 
-<script language="javascript">
+<script language="javascript" src="../../assets/js/utils.js">
     var iframe = document.getElementById('myiframe');
         iframe.src = iframe.src + window.location.search;
 </script>
 
-  </body>
-</html>
 

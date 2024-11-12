@@ -5,38 +5,32 @@ sitemap: projects
 ---
 {% if site.data.projects %}
 {% assign groups = site.data.projects | sort: "short_title" %}
-<h3>Projects - Table of Contents</h3> <a id="top"</a>
+<h1>Projects</h1> <a id="top"></a>
 
+<div class="uk-flex uk-flex-center uk-flex-right@s">
+  <button class="uk-button uk-margin-small-right uk-button-primary" onclick="expandAllAccordion()">expand all</button>
+  <button class="uk-button uk-button-primary"  onclick="collapseAllAccordion()">collapse all</button>
+</div>
 {% comment %} 
   Shift the in-page anchor links to the preceding item; otherwise the links are too high in the page. 
 {% endcomment %}
 
-{% assign prev_DataStoreID = "top" %}
-
-{% for group in groups %}
-  <dt>
-    <dd> <a href="#{{ prev_DataStoreID }}">{{ group.short_title }}</a> </dd>
-  </dt>
-  {% assign prev_DataStoreID = group.DataStoreID %}
-{% endfor %}
 <hr>
 {% for group in groups %}
-  <dl>
-    <th>
-      <dt> 
-        <h4><a id="{{ group.DataStoreID }}" href="{{ group.DataStoreID | downcase | prepend: '/projects/' | relative_url }}">
-                    {{ group.short_title }}</a> 
-        </h4> 
-        <dd>
+  <ul uk-accordion>
+      <li class="ukaccordion"> 
+          <a class="uk-accordion-title" id="{{ group.DataStoreID }}" >{{ group.short_title }}</a> 
+        <div class="uk-accordion-content">
+          <h4><a id="{{ group.DataStoreID }}" href="{{ group.DataStoreID | downcase | prepend: '/projects/' | relative_url }}">{{ group.short_title }}</a> </h4>
           <strong>Description:</strong> {{ group.description }} <br>
           SoyBase ID {{ group.SoyBaseID }}; Data Store ID {{ group.DataStoreID }} <br>
           <a href="{{ group.DataStoreID | downcase | prepend: '/projects/' | relative_url }}">
                     Project page: {{ group.short_title }}</a>
-        </dd> 
-      </dt>
-    </th>
-  </dl>
+        </div> 
+      </li>
+  </ul>
   <hr>
 {% endfor %}
 {% endif %}
 
+<script src="../assets/js/utils.js"></script>

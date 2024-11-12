@@ -4,28 +4,38 @@ title: Help
 sitemap: homepage
 ---
 
-<h2>Help and Tutorials</h2>
+<h1>Help and Tutorials</h1>
 
+<div class="uk-flex uk-flex-center uk-flex-right@s uk-margin-bottom">
+  <button class="uk-button uk-margin-small-right uk-button-primary" onclick="expandAllAccordion()">expand all</button>
+  <button class="uk-button uk-button-primary"  onclick="collapseAllAccordion()">collapse all</button>
+</div>
 {% if site.data.tutorials %}
 {% assign tutorials = site.data.tutorials %}
 {% for item in tutorials %}
   {% for cat1 in item.category_main %}
-    <h3>{{ cat1.name }}</h3>
+    <h3 class="uk-margin-remove-top">{{ cat1.name }}</h3>
     {% for resource in cat1.resources %}
-      <dl>
+      <div>
         {% for cat2 in resource.category_sub %}
-          <th>
-            <dt>{{ cat2.name }}</dt>
-            <ul>
-              {% for instance in cat2.instances %}
-                <li><a href="{{ instance.url }}" target="_blank">{{ instance.description }}</a></li>
-              {% endfor %}  
-            </ul>
-          </th>
+          <ul uk-accordion>
+            <li class="ukaccordion">
+            <a class="uk-margin-left uk-accordion-title">{{ cat2.name }}</a>
+            <div class="uk-accordion-content">
+              <ul class="uk-list uk-list-disc">
+                {% for instance in cat2.instances %}
+                  <li class=" uk-margin-remove"><a href="{{ instance.url }}" target="_blank">{{ instance.description }}</a></li>
+                {% endfor %}  
+              </ul>
+            </div>
+          </li>
+          </ul>
+          {% endfor %}
+        </div>
         {% endfor %}
-      </dl>
-    {% endfor %}
+        <hr>
   {% endfor %}
 {% endfor %}
 {% endif %}
 
+<script src="../assets/js/utils.js"></script>

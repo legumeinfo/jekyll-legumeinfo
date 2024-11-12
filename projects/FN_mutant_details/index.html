@@ -27,22 +27,27 @@ ATTTAGATGTACGTGTAACTTCATGGAAAGGACATGTAACTAAGTCGTGCATTTAAGGGAGGAGTCTTCACATTGGGTGT
 <hr>
 
 {% for item in site.data.fn_mutant_table_samples.__mutant_tables %}
+<div class="uk-card uk-card-default uk-card-body uk-overflow-auto uk-margin">
+<div class="uk-background-primary uk-padding-small uk-light">
   <a href="{{- url_base | append: item.table -}}.tsv.gz"><b>{{ item.table }}.tsv.gz</b></a> -- 
     {{ item.description }}
+  </div>
   {% assign table_name = item.table %}
-  <table>
+  <table class="uk-table uk-table-small uk-table-hover uk-overflow-auto uk-table-divider">
+    <thead>
     {% for row in site.data.fn_mutant_table_samples[table_name] %}
       {% if forloop.first %}
       <tr> 
         {% for pair in row %} 
-          <th> {{ pair[0] }} | </th> 
+          <th> {{ pair[0] }}</th> 
         {% endfor %} 
       </tr>
+    </thead>
       {% endif %}
       {% tablerow pair in row %} {{ pair[1] }} {% endtablerow %}
     {% endfor %}
   </table>
-  <hr>
+</div>
 {% endfor %}
 
 Back to the <a href="/projects/fn_mutants_2011"><b>main Fast Neutron project page</b></a>.

@@ -21,7 +21,8 @@ Click on a "GWAS" or "QTL" link to populate a query in the <a href="/tools/searc
   {% for word in words %} {{ word | capitalize }} {% endfor %}{% endcapture %}
   <b>{{ display_trait }}</b>
   
-  <table>
+  <div class="uk-overflow-auto">
+  <table class="uk-table uk-table-small uk-table-hover uk-table-striped uk-table-divider">
     {% for row in site.data.trait_terms[trait_category] %}
       {% tablerow pair in row %}
         {% if pair[0] contains "Term" %}
@@ -43,6 +44,7 @@ Click on a "GWAS" or "QTL" link to populate a query in the <a href="/tools/searc
       {% endtablerow %}
     {% endfor %}
   </table>
+</div>
   <br>
   
 {% endfor %}

@@ -24,9 +24,9 @@ the gene-list report at <a href="https://mines.legumeinfo.org/glycinemine/begin.
 <p>Either enter a list of gene model names into this box, one name per line:</p>
 
 <form method="post" class="uk-text-center uk-text-left@m">
-  <fieldset style="display: inline-block;">
+  <fieldset class="uk-display-inline-block">
     <legend>
-      Insert Gene List:<br />
+      <label for="glyma.list">Insert Gene List:</label><br />
       (One per line)
     </legend>
     <textarea id="glyma.list" name="glyma.list" rows=20 cols=32>Glyma.09G044100&#10;Glyma.09G048500&#10;Glyma.09G048600&#10;Glyma.09G051100</textarea>
@@ -40,10 +40,10 @@ the gene-list report at <a href="https://mines.legumeinfo.org/glycinemine/begin.
 Or upload a text file containing one gene model name per line:<br /><br />
 
 <form class="uk-text-center uk-text-left@m" method="post" enctype="multipart/form-data">
-  <fieldset style="display: inline-block;">
-  <legend>Upload a text file</legend>
+  <fieldset class="uk-display-inline-block">
+  <legend><label for="glyma.list.upload">Upload a text file</label></legend>
   <ol>
-    <li><input type="file" id="glyma.list" name="glyma.list" /></li>
+    <li><input type="file" id="glyma.list.upload" name="glyma.list" /></li>
     <li class="uk-text-left">Choose analysis type:<br />
     </li>
   </ol>

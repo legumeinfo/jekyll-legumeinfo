@@ -1,0 +1,113 @@
+{% assign default_paths = site.pages | map: "path" %}
+{% assign page_paths = site.header_pages | default: default_paths %}
+
+<div id="navbar" class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed{% if site.style.invert_navbar_text %} uk-light{% endif %}" uk-sticky>
+
+  <div id="alerts">
+    {% capture alerts %}
+      {% include alerts.html %}
+    {% endcapture %}
+    {{ alerts }}
+  </div>
+
+  <script type="text/javascript">
+
+    // define the cookie key
+    const alertsKey = "lis-navbar-alerts";
+
+    // get the alerts element
+    const alerts = document.getElementById("alerts");
+
+    // define a callback that saves the toggle state
+    function toggleCallback(event) {
+      document.cookie = `${alertsKey}=${event.type};SameSite=Lax;path=/`;
+    }
+
+    // use the callback every time the element is toggled
+    alerts.addEventListener("show", toggleCallback);
+    alerts.addEventListener("hide", toggleCallback);
+
+    // load the element's state
+    const alertsCookie = document.cookie
+      .split('; ')
+      .find(row => row.startsWith(`${alertsKey}=`));
+
+    // hide the alerts if they're supposed to be hidden
+    if (alertsCookie && alertsCookie.split('=')[1].toLowerCase() === "hide") {
+      UIkit.toggle(alerts).toggle();
+    }
+
+  </script>
+
+  <div class="uk-container uk-container-expand uk-padding-small">
+    <nav class="uk-navbar">
+      <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}">
+          {% if site.logo %}
+          <img class="uk-margin-small-right" src="{{ site.logo | relative_url }}" width="47" height="47" alt="soybase logo"/>
+          {% endif %}
+          <div class="uk-text-break">
+            {{ site.title }}
+            {% if site.subtitle %}
+            <div class="uk-navbar-subtitle ">{{ site.subtitle }}</div>
+            {% endif %}
+          </div>
+        </a>
+      </div>
+      <div class="uk-navbar-right uk-flex-none">
+
+        {% include navbar-menu.html %}
+
+        <ul class="uk-navbar-nav uk-visible@s">
+
+        {% if site.twitter_username %}
+          <li><a class="tm-no-underline" href="https://twitter.com/{{ site.twitter_username }}" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span></a></li>
+        {% endif %}
+        {% if site.newsletter %}
+          <li><a class="tm-no-underline" href="{{ site.newletter }}" target="_blank" title="Subscribe to our newsletter"><span uk-icon="mail"></span></a></li>
+        {% endif %}
+        {% if site.github_username %}
+          <li><a class="tm-no-underline" href="https://github.com/{{ site.github_username }}" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span></a></li>
+        {% endif %}
+
+        </ul>
+        {% assign stripped_alerts = alerts | strip %}
+        {% if stripped_alerts != "" %}
+        <ul class="uk-navbar-nav">
+          <li><a class="tm-no-underline" title="Toggle alerts" uk-toggle="target: #alerts; animation: uk-animation-fade"><span uk-icon="bell"></span></a></li>
+        </ul>
+        {% endif %}
+      </div>
+    </nav>
+    <nav class="uk-navbar tm-lower-navbar">
+      <div class="uk-navbar-left">
+
+        {% include navbar-lower-menu.html %}
+
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div id="off-screen-menu" uk-offcanvas="overlay: true">
+  <div class="uk-offcanvas-bar uk-dark  uk-background-secondary">
+
+    {% include off-screen-menu.html %}
+
+    {% if site.twitter_username or site.newsletter or site.github_username %}
+    <ul class="uk-nav uk-nav-default">
+      <li class="uk-nav-divider"></li>
+      {% if site.twitter_username %}
+      <li><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span> Twitter</a></li>
+      {% endif %}
+      {% if site.newsletter %}
+      <li><a href="{{ site.newletter }}" target="_blank" title="Subscribe to our newsletter"><span uk-icon="mail"></span> Newsletter</a></li>
+      {% endif %}
+      {% if site.github_username %}
+      <li><a href="https://github.com/{{ site.github_username }}" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span> GitHub</a></li>
+      {% endif %}
+    </ul>
+    {% endif %}
+
+  </div>
+</div>

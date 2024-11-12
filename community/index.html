@@ -4,20 +4,32 @@ title: Community
 sitemap: community
 ---
 
-<h2>Community</h2>
+<h1>Community</h1>
 
+<div class="uk-flex uk-flex-center uk-flex-right@s">
+  <button class="uk-button uk-margin-small-right uk-button-primary" onclick="expandAllAccordion()">expand all</button>
+  <button class="uk-button uk-button-primary"  onclick="collapseAllAccordion()">collapse all</button>
+</div>
+<hr>
 {% if site.data.community %}
 {% assign community = site.data.community %}
 {% for item in community %}
-  {% for cat in item.category %}
-    <th>
-      <dt>{{ cat.name }}</dt>
-      <ul>
-        {% for resource in cat.resources %}
-          <li><a href="{{ resource.url }}">{{ resource.description }}</a></li>
-        {% endfor %}
-      </ul>
-    </th>
-  {% endfor %}
-{% endfor %}
+{% for cat in item.category %}
+<ul uk-accordion>
+  <li class="ukaccordion">
+      <a class="uk-accordion-title">{{ cat.name }}</a>
+        <div class="uk-accordion-content">
+          <ul class="uk-list uk-list-disc">
+            {% for resource in cat.resources %}
+              <li class="uk-margin-remove"><a href="{{ resource.url }}">{{ resource.description }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+    </li>
+</ul>
+<hr>
+    {% endfor %}
+    {% endfor %}
 {% endif %}
+
+<script src="../assets/js/utils.js"></script>

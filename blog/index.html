@@ -1,20 +1,6 @@
 ---
 title: Blog
+layout: blog
 sitemap: homepage
 tools_menu: true
 ---
-
-<h1>Blog</h1>
-
-{% for post in site.categories.blog %}
-<article class="uk-article uk-margin-medium-top">
-  <h4 class="uk-margin-remove"><a class="uk-link-reset" href="{{ post.url }}">{{ post.title }}</a></h4>
-  <p class="uk-article-meta uk-margin-remove">Posted by {{ post.author }} on {{ post.date | date_to_long_string }}.</p>
-  <p class="uk-margin-small">{{ post.summary }}</p>
-  <div class="uk-grid-small uk-child-width-auto" uk-grid>
-    <div>
-      <a class="uk-button uk-button-text" href="{{ post.url }}">Read</a>
-    </div>
-  </div>
-</article>
-{% endfor %}

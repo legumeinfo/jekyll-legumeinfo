@@ -18,57 +18,62 @@ tools_menu: true
 		BBCH scale.  This is intended to facilitate the translation of observations 
 		using these disparate ontologies and allow researchers to more easily collate
 		the relevent literature based on shared developmental points.
-</p><fieldset background="#CCFFCC">
-<legend>
+</p>
+
 Conversions Between SOY growth, PO Whole Plant Growth Stages and BBCH Scale
-</legend> 
-<table border="1" bordercolor="DarkGreen" bordercolorlight="LightGreen" bordercolordark="DarkGreen" cellspacing="1" cellpadding="1" bgcolor="#FFFFFF">
-	<tr align="left" valign="middle" bgcolor="#FFFFFF">
-	  <th align="center" valign="middle" bgcolor="#CCFFCC">
-		Growth Stage
-	  </th>
-	  <th align="center" valign="middle" bgcolor="#CCFFCC">
-		Growth Stage Title
-	  </th>
-	  <th align="center" valign="middle" bgcolor="#CCFFCC">
-		SOY Accession Number
-	  </th>
-	  <th align="center" valign="middle" bgcolor="#CCFFCC">
-		SOY Title
-	  </th>
-	  <th align="center" valign="middle" bgcolor="#CCFFCC">
-		BBCH Scale ID Number
-	  </th>
-	  <th align="center" valign="middle" bgcolor="#CCFFCC">
-		PO Accession Number
-	  </th>
-	  <th align="center" valign="middle" bgcolor="#CCFFCC">
-		PO Accession Title
-	  </th>
-	</tr>
+<div class="uk-overflow-auto">
+<table class="uk-table uk-table-small uk-table-hover uk-table-striped uk-table-divider uk-table-middle">
+	<thead>
+		<tr>
+			<th class="uk-table-expand">
+			  Growth Stage
+			</th>
+			<th class="uk-table-expand">
+			  Growth Stage Title
+			</th>
+			<th class="uk-table-expand">
+			  SOY Accession Number
+			</th>
+			<th class="uk-table-expand">
+			  SOY Title
+			</th>
+			<th class="uk-table-expand">
+			  BBCH Scale ID Number
+			</th>
+			<th class="uk-table-expand">
+			  PO Accession Number
+			</th>
+			<th class="uk-table-expand">
+			  PO Accession Title
+			</th>
+		  </tr>
+	</thead>
+	<tbody>
 	{% for row in site.data.SoybeanConversion %}
-	<tr align="left" valign="middle" bgcolor="#FFFFFF">
-	  <td align="center" valign="middle" bgcolor="#FFFFFF">
+	<tr>
+	  <td>
 		{{ row['Growth Stage'] }}
 	  </td>
-	  <td align="center" valign="middle" bgcolor="#FFFFFF">
+	  <td>
 		{{ row['Growth Stage Title'] }}
 	  </td>
-	  <td align="center" valign="middle" bgcolor="#FFFFFF">
+	  <td>
 		<a href="https://amigo.soybase.org/amigo/amigo/term/{{ row['SOY Accession Number'] }}" id="SoyWGR" name="SoyWGR" title="Soybase Soybean Whole Plant Growth Ontology" target="_blank">{{ row['SOY Accession Number'] }}</a>
 	  </td>
-	  <td align="center" valign="middle" bgcolor="#FFFFFF">
+	  <td>
 		{{ row['SOY Title'] }}
 	  </td>
-	  <td align="center" valign="middle" bgcolor="#FFFFFF">
+	  <td>
 		{{ row['BBCH Scale ID Number'] }}
 	  </td>
-	  <td align="center" valign="middle" bgcolor="#FFFFFF">
+	  <td>
 		<a href="https://planteome.org/?view=details&search_constraint=terms&query={{ row['PO Accession Number'] }}" title="Plant Ontology Search" style="background:url(./images/external.png) center right no-repeat;padding-right:13px" target="_blank">{{ row['PO Accession Number'] }}</a>
 	  </td>
-	  <td align="center" valign="middle" bgcolor="#FFFFFF">
+	  <td>
 		{{ row['PO Accession Title'] }}
 	  </td>
 	</tr>
 	{% endfor %}
+</tbody>
   </table>
+</div>
