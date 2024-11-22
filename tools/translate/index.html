@@ -3,192 +3,160 @@ title: Correspondence
 sitemap: correspondence
 tools_menu: true
 redirect_from: /correspondence/
+web_components: true
+layout: full-width
 ---
 
 <h2>Gene Model Translation / Correspondence</h2>
 
-<p>The set of allelic genes found in multiple individuals in a species or closely related species may be called a "pangene set," with the gene models that correspond by homology and position being called a pangene. The pangene set calculated for Glycine accessions at SoyBase can be used to find corresponding genes across assemblies and annotations.</p>
-<p>
-  <b>There are several good options for identifying corresponding genes in different accessions or annotations. If you have ...</b>
-  
-  <ul>
-    <li> One or a few genes to look up? Use the <a href="/tools/search/gene.html"><b>Gene Search tool</b></a>, 
-    then click on the "PANGENE SETS" link.
-    </li>
-    
-    <button class="uk-button uk-button-primary uk-button-small uk-margin-small-bottom" type="button" uk-toggle="target: #gene-search-tool; animation: uk-animation-fade; cls: uk-hidden" onclick="rotateTriangle(this)" value="triangle-icon-gene-search-tool"><div class="uk-flex">details<span id="triangle-icon-gene-search-tool" uk-icon="icon:triangle-right" class="toggle-top-margin"></span></div></button>
-    <div id="gene-search-tool" class="uk-margin-small uk-hidden">
-      Try it out with a <a href="/tools/search/gene.html?page=1&genus=Glycine&species=max&strain=&identifier=Glyma.01G000322&description=&family=">sample gene, Glyma.01G000322</a>.<br>
-      At the linked pangene report page in InterMine (set "Rows to page" to "All" to see all corresponding genes).
-      <br>
-    </div>
-   
-    <li> Many genes to look up among <b>reference</b> accessions? Download a 
-        <a href="https://data.soybase.org/Glycine/GENUS/pangenes/Glycine.pan5.MKRS/Glycine.pan5.MKRS.table_ref_lines.tsv.gz">
-          <b>correspondence table for the reference lines</b>.
-        </a>
-    </li>
+<div class="uk-card uk-card-default uk-card-body uk-padding-small">
+<ul uk-accordion>
+  <li>
+    <a class="uk-accordion-title">Background and methods</a>
+      <div class="uk-accordion-content">
+        <p>
+          The set of allelic genes found in multiple individuals in a species or closely related species may be called a "pangene set," 
+          with the gene models that correspond by homology and position being called a pangene. The pangene set calculated 
+          for <i>Glycine</i> accessions at SoyBase can be used to find corresponding genes across assemblies and annotations.
+        </p>
+        <p>
+          If you have one or several (fewer than 100) genes to look up, use the Pangene Lookup tool below. 
+          This page accepts a list of genes (separated by spaces or line returns).
+        </p>
 
-        <button class="uk-button uk-button-primary uk-button-small uk-margin-small-bottom" type="button" uk-toggle="target: #reference-accessions; animation: uk-animation-fade; cls: uk-hidden" onclick="rotateTriangle(this)" value="triangle-icon-reference-accessions"><div class="uk-flex">details<span id="triangle-icon-reference-accessions" uk-icon="icon:triangle-right" class="toggle-top-margin"></span></div></button>
-        <div id="reference-accessions" class="uk-margin-small uk-hidden">
-          <ul>
-            <li>#pangene</li>
-            <li>glyma.FiskebyIII.gnm1.ann1</li>
-            <li>glyma.JD17.gnm1.ann1</li>
-            <li>glyma.Lee.gnm1.ann1</li>
-            <li>glyma.Lee.gnm2.ann1</li>
-            <li>glyma.Wm82.gnm1.ann1 = Wm82.a1.v1</li>
-            <li>glyma.Wm82.gnm2.ann1 = Wm82.a2.v1</li>
-            <li>glyma.Wm82.gnm4.ann1 = Wm82.a4.v1</li>
-            <li>glyma.Wm82.gnm5.ann1</li>
-            <li>glyma.Wm82.gnm6.ann1 = Wm82.a6.v1</li>
-            <li>glyma.Wm82_NJAU.gnm1.ann1</li>
-            <li>glyma.Zh13.gnm1.ann1</li>
-            <li>glyma.Zh13.gnm2.ann1</li>
-            <li>glyma.Zh13_IGA1005.gnm1.ann1</li>
-            <li>glyma.Zh35_IGA1004.gnm1.ann1</li>
-          </ul>
-                  To work with this file, uncompress it, then open it using Excel or similar spreadsheet program;<br>
-                  or if you have a little familiarity with a Unix terminal, you can extract data in many ways (a few examples):
+        <p>If you have hundreds or thousands of genes to look up, you can download a correspondence table for either  
+             <a href="https://data.soybase.org/Glycine/GENUS/pangenes/Glycine.pan5.MKRS/Glycine.pan5.MKRS.table_ref_lines.tsv.gz">
+               <b>the reference lines</b>,
+             </a>
+           or for 
+             <a href="https://data.soybase.org/Glycine/GENUS/pangenes/Glycine.pan5.MKRS/Glycine.pan5.MKRS.table.tsv.gz">
+               <b>a correspondence table for all pangene accessions</b>.
+             </a>
+         </p>
+
+         <button class="uk-button uk-button-primary uk-button-small uk-margin-small-bottom" type="button" uk-toggle="target: #reference-accessions; animation: uk-animation-fade; cls: uk-hidden" onclick="rotateTriangle(this)" value="triangle-icon-reference-accessions"><div class="uk-flex">details<span id="triangle-icon-reference-accessions" uk-icon="icon:triangle-right" class="toggle-top-margin"></span></div></button>
+         <div id="reference-accessions" class="uk-margin-small uk-hidden">
+         
+         <p>Using the <a href="https://data.soybase.org/Glycine/GENUS/pangenes/Glycine.pan5.MKRS/Glycine.pan5.MKRS.table_ref_lines.tsv.gz">
+              <b>the reference lines</b>
+            </a> as an example, the data is organized by genes (rows) and annotation-versions (columns).
+         </p>
+         <div class="uk-overflow-auto">
+           <table class="uk-table uk-table-small uk-table-hover uk-table-striped uk-table-divider">
+             <thead>
+               <tr>
+                 <th><b>Pangene ID</b></th>
+                 <th><b>Wm82.gnm1.ann1 / Wm82.a1.v1</b></th>
+                 <th><b>Wm82.gnm2.ann1 / Wm82.a2.v1</b></th>
+                 <th><b>Wm82.gnm4.ann1 / Wm82.a4.v1</b></th>
+                 <th><b>Wm82.gnm6.ann1 / Wm82.a6.v1</b></th>
+                 <th><b>more</b></th>
+               </tr>
+             </thead>
+             {% for name in site.data.gene_translate_examples.example %}
+               <tr>
+                 <td>{{ name.pangene }}</td>
+                 <td>{{ name.glyma_Wm82_gnm1_ann1 }}</td>
+                 <td>{{ name.glyma_Wm82_gnm2_ann1 }}</td>
+                 <td>{{ name.glyma_Wm82_gnm4_ann1 }}</td>
+                 <td>{{ name.glyma_Wm82_gnm6_ann1 }}</td>
+                 <td>{{ name.more }}</td>
+               </tr>
+             {% endfor %}
+           </table>
+         </div>
+
+          <p>
+              To work with either of these files, uncompress it, then open it using Excel or similar spreadsheet program;<br>
+              or if you have a little familiarity with a Unix terminal, you can extract data in many ways (a few examples):
+          </p>
           <pre>
             cat Glycine.pan5.MKRS.table_ref_lines.tsv | tr '\t' '\n'   # to see the list of headers
             cut -f1,2,8,10 Glycine.pan5.MKRS.table_ref_lines.tsv | head   # to see four selected columns (the first 10 entries)
             grep -f YOUR_LIST_OF_GENES.txt Glycine.pan5.MKRS.table_ref_lines.tsv  # to search a provided list of gene IDs against the file
           </pre>
         </div>
-        <li> Many genes to look up among non-reference accessions? Download a 
-            <a href="https://data.soybase.org/Glycine/GENUS/pangenes/Glycine.pan5.MKRS/Glycine.pan5.MKRS.table.tsv.gz">
-              <b>correspondence table for <b>all</b> pangene accessions.</b></a>
-        </li>
-            <button class="uk-button uk-button-primary uk-button-small" type="button" uk-toggle="target: #non-reference-accessions; animation: uk-animation-fade; cls: uk-hidden" onclick="rotateTriangle(this)" value="triangle-icon-non-reference-accessions"><div class="uk-flex">details<span id="triangle-icon-non-reference-accessions" uk-icon="icon:triangle-right" class="toggle-top-margin"></span></div></button>
-            <div id="non-reference-accessions" class="uk-margin-small uk-hidden">
-              <ul>
-                <li>glycy.G1267.gnm1.ann1</li>
-                <li>glyd3.G1403.gnm1.ann1</li>
-                <li>glydo.G1134.gnm1.ann1</li>
-                <li>glyfa.G1718.gnm1.ann1</li>
-                <li>glyma.58-161.gnm1.ann1</li>
-                <li>glyma.Amsoy.gnm1.ann1</li>
-                <li>glyma.DongNongNo_50.gnm1.ann1</li>
-                <li>glyma.FengDiHuang.gnm1.ann1</li>
-                <li>glyma.FiskebyIII.gnm1.ann1</li>
-                <li>glyma.HanDouNo_5.gnm1.ann1</li>
-                <li>glyma.Hefeng25_IGA1002.gnm1.ann1</li>
-                <li>glyma.HeiHeNo_43.gnm1.ann1</li>
-                <li>glyma.Huaxia3_IGA1007.gnm1.ann1</li>
-                <li>glyma.Hwangkeum.gnm1.ann1</li>
-                <li>glyma.JD17.gnm1.ann1</li>
-                <li>glyma.JiDouNo_17.gnm1.ann1</li>
-                <li>glyma.JinDouNo_23.gnm1.ann1</li>
-                <li>glyma.Jinyuan_IGA1006.gnm1.ann1</li>
-                <li>glyma.JuXuanNo_23.gnm1.ann1</li>
-                <li>glyma.KeShanNo_1.gnm1.ann1</li>
-                <li>glyma.Lee.gnm1.ann1</li>
-                <li>glyma.Lee.gnm2.ann1</li>
-                <li>glyma.Lee.gnm3.ann1</li>
-                <li>glyma.PI_398296.gnm1.ann1</li>
-                <li>glyma.PI_548362.gnm1.ann1</li>
-                <li>glyma.QiHuangNo_34.gnm1.ann1</li>
-                <li>glyma.ShiShengChangYe.gnm1.ann1</li>
-                <li>glyma.TieFengNo_18.gnm1.ann1</li>
-                <li>glyma.TieJiaSiLiHuang.gnm1.ann1</li>
-                <li>glyma.TongShanTianEDan.gnm1.ann1</li>
-                <li>glyma.WanDouNo_28.gnm1.ann1</li>
-                <li>glyma.Wenfeng7_IGA1001.gnm1.ann1</li>
-                <li>glyma.Wm82.gnm1.ann1</li>
-                <li>glyma.Wm82.gnm2.ann1</li>
-                <li>glyma.Wm82.gnm4.ann1</li>
-                <li>glyma.Wm82.gnm5.ann1</li>
-                <li>glyma.Wm82.gnm6.ann1</li>
-                <li>glyma.Wm82_IGA1008.gnm1.ann1</li>
-                <li>glyma.Wm82_ISU01.gnm2.ann1</li>
-                <li>glyma.Wm82_NJAU.gnm1.ann1</li>
-                <li>glyma.XuDouNo_1.gnm1.ann1</li>
-                <li>glyma.YuDouNo_22.gnm1.ann1</li>
-                <li>glyma.Zh13.gnm1.ann1</li>
-                <li>glyma.Zh13.gnm2.ann1</li>
-                <li>glyma.Zh13_IGA1005.gnm1.ann1</li>
-                <li>glyma.Zh35_IGA1004.gnm1.ann1</li>
-                <li>glyma.ZhangChunManCangJin.gnm1.ann1</li>
-                <li>glyma.Zhutwinning2.gnm1.ann1</li>
-                <li>glyma.ZiHuaNo_4.gnm1.ann1</li>
-                <li>glyso.F_IGA1003.gnm1.ann1</li>
-                <li>glyso.PI483463.gnm1.ann1</li>
-                <li>glyso.PI_549046.gnm1.ann1</li>
-                <li>glyso.PI_562565.gnm1.ann1</li>
-                <li>glyso.PI_578357.gnm1.ann1</li>
-                <li>glyso.W05.gnm1.ann1</li>
-                <li>glyst.G1974.gnm1.ann1</li>
-                <li>glysy.G1300.gnm1.ann1</li>
-              <ul>
-              To work with this file, uncompress it, then open it using Excel or similar spreadsheet program;<br>
-              or if you have a little familiarity with a Unix terminal, you can extract data in many ways (a few examples):
-              <pre>
-                cat Glycine.pan5.MKRS.table.tsv | head -1 | tr '\t' '\n'   # to see the list of headers
-                cut -f1,2,8,10 Glycine.pan5.MKRS.table.tsv| head   # to see four selected columns (the first 10 entries)
-                grep -f YOUR_LIST_OF_GENES.txt Glycine.pan5.MKRS.table.tsv  # to search a provided list of gene IDs against the file
-              </pre>
-            </div>
-  </ul>
-</p> 
-<!--    <li> One or a few genes to look up? Use the <a href=""><b>pangene search tool</b></a>.> -->
 
-<p>Sample data from the 
-  <a href="https://data.soybase.org/Glycine/GENUS/pangenes/Glycine.pan5.MKRS/Glycine.pan5.MKRS.table_ref_lines.tsv.gz">
-    <b>correspondence table for the reference lines</b>:
-  </a>
-</p>
-<div class="uk-overflow-auto">
-  <table class="uk-table uk-table-small uk-table-hover uk-table-striped uk-table-divider">
-    <thead>
-      <tr>
-        <th><b>Pangene ID</b></th>
-        <th><b>Wm82.gnm1.ann1 / Wm82.a1.v1</b></th>
-        <th><b>Wm82.gnm2.ann1 / Wm82.a2.v1</b></th>
-        <th><b>Wm82.gnm4.ann1 / Wm82.a4.v1</b></th>
-        <th><b>Wm82.gnm6.ann1 / Wm82.a6.v1</b></th>
-        <th><b>more</b></th>
-      </tr>
-    </thead>
-    {% for name in site.data.gene_translate_examples.example %}
-      <tr>
-        <td>{{ name.pangene }}</td>
-        <td>{{ name.glyma_Wm82_gnm1_ann1 }}</td>
-        <td>{{ name.glyma_Wm82_gnm2_ann1 }}</td>
-        <td>{{ name.glyma_Wm82_gnm4_ann1 }}</td>
-        <td>{{ name.glyma_Wm82_gnm6_ann1 }}</td>
-        <td>{{ name.more }}</td>
-      </tr>
-    {% endfor %}
-  </table>
+        <p>The method for generating the pangene correspondences is described briefly here:</p>
+
+        <button class="uk-button uk-button-primary uk-button-small uk-margin-small-bottom" type="button" uk-toggle="target: #pandagma-software-package; animation: uk-animation-fade; cls: uk-hidden" onclick="rotateTriangle(this)" value="triangle-icon-method"><div class="uk-flex">details<span id="triangle-icon-method" uk-icon="icon:triangle-right" class="toggle-top-margin"></span></div></button>
+        <div id="pandagma-software-package" class="uk-margin-small uk-hidden">
+        <p>The Pandagma software package (Cannon, Lee, Weeks, Berendzen) was used to identify pangene and gene family sets. 
+           The main steps in Pandagma's pangene process are:</p>
+        <ul>
+          <li> Make pairwise homology comparisons between each annotation set;</li>
+          <li> Filter by provided percent identity and coverage parameters;</li>
+          <li> Identify synteny blocks among all annotation sets;</li>
+          <li> Cluster genes in synteny blocks;</li>
+          <li> Add back remaining genes based on homology, constraining by chromosome (e.g., chr1 genes to chr1 clusters)</li>
+          <li> Add "extra" annotation sets (those with more fragmentary assemblies or questionable annotation quality) to clusters identified above.</li>
+        </ul>  
+
+        <p>The Pandagma package is available at <a href="https://github.com/legumeinfo/pandagma">https://github.com/legumeinfo/pandagma</a>, including the configuration used to calculate the pangene data above.</p>
+
+        <p>The pangene collection for Glycine, including data in several formats and descriptions of the fies, is in the <a href="https://data.soybase.org/Glycine/GENUS/pangenes/Glycine.pan5.MKRS/Glycine.pan5.MKRS.table.tsv.gz">"Glycine/GENUS/pangenes"</a> section of the Data Store.</p>
+
+        <p>If you have extensive programmatic work and need to translate among arbitrary accessions, 
+          the <a href="https://github.com/legumeinfo/pandagma/blob/main/bin/gene_translate.pl">gene_translate.pl</a> 
+          utility in pandagma may be helpful.
+        </p>
+      </div>
+    </div>
+  </li>
+</ul>
 </div>
+<br>
 
-<h3>Methods</h3>
-<p>The gene correspondences in the lookup tables above were calculated using the 
-<a href="https://github.com/legumeinfo/pandagma">Pandagma package</a> for identifying pangenes from a given collection of annotations.
-The method is described briefly here:</p>
-
-<button class="uk-button uk-button-primary uk-button-small uk-margin-small-bottom" type="button" uk-toggle="target: #pandagma-software-package; animation: uk-animation-fade; cls: uk-hidden" onclick="rotateTriangle(this)" value="triangle-icon-method"><div class="uk-flex">details<span id="triangle-icon-method" uk-icon="icon:triangle-right" class="toggle-top-margin"></span></div></button>
-<div id="pandagma-software-package" class="uk-margin-small uk-hidden">
-<p>The Pandagma software package (Cannon, Lee, Berendzen) was used to identify pangene and gene family sets. The main steps in Pandagma's pangene process are:</p>
-<ul>
-  <li> Make pairwise homology comparisons between each annotation set;</li>
-  <li> Filter by provided percent identity and coverage parameters;</li>
-  <li> Identify synteny blocks among all annotation sets;</li>
-  <li> Cluster genes in synteny blocks;</li>
-  <li> Add back remaining genes based on homology, constraining by chromosome (e.g., chr1 genes to chr1 clusters)</li>
-  <li> Add "extra" annotation sets (those with more fragmentary assemblies or questionable annotation quality) to clusters identified above.</li>
-</ul>  
-
-<p>The Pandagma package is available at <a href="https://github.com/legumeinfo/pandagma">https://github.com/legumeinfo/pandagma</a>, including the configuration used to calculate the pangene data above.</p>
-
-<p>The pangene collection for Glycine, including data in several formats and descriptions of the fies, is in the <a href="https://data.soybase.org/Glycine/GENUS/pangenes/Glycine.pan5.MKRS/Glycine.pan5.MKRS.table.tsv.gz">"Glycine/GENUS/pangenes"</a> section of the Data Store.</p>
-
-<p>If you have extensive programmatic work and need to translate among arbitrary accessions, 
-  the <a href="https://github.com/legumeinfo/pandagma/blob/main/bin/gene_translate.pl">gene_translate.pl</a> 
-  utility in pandagma may be helpful.
-</p>
+<div class="uk-card uk-card-default uk-card-body uk-padding-small">
+<!-- the custom pangene lookup element -->
+ <ul uk-accordion>
+  <li class="uk-open">
+    <a class="uk-accordion-title">Pangene Lookup</a>
+    <div class="uk-accordion-content uk-padding uk-padding-remove-vertical">
+      <lis-pangene-lookup-element id="pangene-lookup" genesExample="glyma.Lee.gnm2.ann1.Gm_00017 glyma.Wm82.gnm1.ann1.Glyma01g00510 glyma.Wm82.gnm2.ann1.Glyma.08G002000"></lis-pangene-lookup-element>
+      <lis-modal-element modalId="modal">
+        <lis-linkout-element id="linkouts"></lis-linkout-element>
+      </lis-modal-element>
+    </div>
+</li>
+</ul>
 </div>
+<!-- set the form data and search functions by property because functions can't be set by attribute -->
+<script type="module">
 
+  import {
+    // pangenes
+    getPangeneLookupFormDataFunction,
+    pangeneDownloadFunction,
+    pangeneLookupFunctionFactory,
+    pangeneAllModalLinksFactory,
+    // linkouts
+    allLinkoutsFunction,
+    // modal
+    modalEventToLinkData
+  } from "lis-graphql";
+
+  // setup the pangene lookup component
+  const pangeneLookupElement = document.getElementById('pangene-lookup');
+  pangeneLookupElement.formDataFunction = getPangeneLookupFormDataFunction;
+  const lookupDataProcessors = pangeneAllModalLinksFactory('modal');
+  pangeneLookupElement.searchFunction =
+    pangeneLookupFunctionFactory(...lookupDataProcessors);
+  pangeneLookupElement.downloadFunction = pangeneDownloadFunction;
+
+  // setup the linkout component
+  const linkoutElement = document.getElementById('linkouts');
+  linkoutElement.linkoutFunction = allLinkoutsFunction;
+
+  // wait for the modal slot to load before adding an event listener
+  window.onload = (event) => {
+    const modal = document.getElementById('modal');
+    modal.addEventListener('toggle', (event) => {
+      const {type, ...linkoutData} = modalEventToLinkData(event);
+      linkoutElement.getLinkouts({type, linkoutData});
+    });
+  };
+
+</script>
 
 <script src="../../assets/js/utils.js"></script>

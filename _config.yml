@@ -73,7 +73,7 @@ plugins:
   - jekyll-sitemap
 
 # LIS Web Components
-web_components_version: 1.4.0
+web_components_version: 1.6.0
 
 #### jekyll-datapage-generator config
 page_gen:
