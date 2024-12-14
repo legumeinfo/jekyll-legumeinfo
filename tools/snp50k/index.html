@@ -6,8 +6,8 @@ layout: default
 redirect_from: /snps/
 ---
 
-	<h1>SoySNP50K iSelect BeadChip</h1>
-			An Illumina Infinium BeadChip containing over 50,000 SNPs from soybean (Glycine max L. Merr.) has been developed (<a href='https://doi.org/10.1371/journal.pone.0054985'>Song et al. 2013</a>; <a href='https://doi.org/10.1534/g3.115.019000'>Song et al. 2015</a>).  A total of 498,921,777 reads 35-45 bp in length were obtained from DNA sequence analysis of reduced representation libraries from several soybean accessions which included six cultivated and two wild soybean (G. soja Sieb. et Zucc.) genotypes. These reads were mapped to the <a href='/resources/genome_info/'>Wm82.a1 soybean whole genome sequence </a>(<a href='/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm01:1-1000000'>Gemome Browser</a>) and 209,903 SNPs were identified. After applying several filters, a total of 146,161 SNPs were determined to be candidates for Illumina Infinium II BeadChip design. To equalize the distance between selected SNPs, increase assay success rate, and minimize the number of SNPs with low minor allele frequency, an iteration algorithm based on a selection index was developed and used to select 60,800 SNPs for Infinium BeadChip design. Of the 60,800 SNPs, 50,701 were targeted to euchromatic regions and 10,000 to heterochromatic regions of the 20 soybean chromosomes. In addition, 99 SNPs were targeted to unanchored sequence scaffolds. Of the 60,800 SNPs, a total of 52,041 passed Illumina's manufacturing phase to produce the SoySNP50K iSelect BeadChip.</br>
+  <h1>SoySNP50K iSelect BeadChip</h1>
+      An Illumina Infinium BeadChip containing over 50,000 SNPs from soybean (Glycine max L. Merr.) has been developed (<a href='https://doi.org/10.1371/journal.pone.0054985'>Song et al. 2013</a>; <a href='https://doi.org/10.1534/g3.115.019000'>Song et al. 2015</a>).  A total of 498,921,777 reads 35-45 bp in length were obtained from DNA sequence analysis of reduced representation libraries from several soybean accessions which included six cultivated and two wild soybean (G. soja Sieb. et Zucc.) genotypes. These reads were mapped to the <a href='/resources/genome_info/'>Wm82.a1 soybean whole genome sequence </a>(<a href='/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm01:1-1000000'>Gemome Browser</a>) and 209,903 SNPs were identified. After applying several filters, a total of 146,161 SNPs were determined to be candidates for Illumina Infinium II BeadChip design. To equalize the distance between selected SNPs, increase assay success rate, and minimize the number of SNPs with low minor allele frequency, an iteration algorithm based on a selection index was developed and used to select 60,800 SNPs for Infinium BeadChip design. Of the 60,800 SNPs, 50,701 were targeted to euchromatic regions and 10,000 to heterochromatic regions of the 20 soybean chromosomes. In addition, 99 SNPs were targeted to unanchored sequence scaffolds. Of the 60,800 SNPs, a total of 52,041 passed Illumina's manufacturing phase to produce the SoySNP50K iSelect BeadChip.</br>
 
   <h2>View SoySNP50K SNPs in SoyBase Genome Browser</h2>
   <div class="uk-overflow-auto">
@@ -17,94 +17,49 @@ redirect_from: /snps/
         <th colspan='19'><b>Chromosome</b></th>
       </tr>
     </thead>
+      {% assign assemblies = "1,2,4,6" | split: "," %}
+    {% for gnm in assemblies %}
     <tr>
-      <th><b>Wm82.a1</b></th>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm01:1-1000000" target="_blank">Gm01</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm02:1-1000000" target="_blank">Gm02</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm03:1-1000000" target="_blank">Gm03</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm04:1-1000000" target="_blank">Gm04</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm05:1-1000000" target="_blank">Gm05</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm06:1-1000000" target="_blank">Gm06</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm07:1-1000000" target="_blank">Gm07</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm08:1-1000000" target="_blank">Gm08</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm09:1-1000000" target="_blank">Gm09</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm10:1-1000000" target="_blank">Gm10</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm11:1-1000000" target="_blank">Gm11</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm12:1-1000000" target="_blank">Gm12</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm13:1-1000000" target="_blank">Gm13</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm14:1-1000000" target="_blank">Gm14</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm15:1-1000000" target="_blank">Gm15</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm16:1-1000000" target="_blank">Gm16</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm17:1-1000000" target="_blank">Gm17</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm18:1-1000000" target="_blank">Gm18</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm19:1-1000000" target="_blank">Gm19</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm1&tracks=Wm82.gnm1.ann1,Wm82.gnm1.mrk.SoySNP50K&loc=glyma.Wm82.gnm1.Gm20:1-1000000" target="_blank">Gm20</a></td>
+      <th><b>Wm82.a{{ gnm }}</b></th>
+      {% for chromosome in (1..20) %}
+      {% assign chr = chromosome | prepend: '00' | slice: -2,2 %}
+      <td><a href="/assets/js/jbrowse/?gnm=Wm82.gnm{{ gnm }}&tracks=Wm82.gnm{{ gnm }}.ann1,Wm82.gnm{{ gnm }}.mrk.SoySNP50K&loc=glyma.Wm82.gnm{{ gnm }}.Gm{{ chr }}:1-1000000" 
+             target="_blank">Gm{{ chr }}
+          </a>
+      </td>
+      {% endfor %}
     </tr>
-    <tr>
-      <th><b>Wm82.a2</b></th>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm01:1-1000000" target="_blank">Gm01</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm02:1-1000000" target="_blank">Gm02</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm03:1-1000000" target="_blank">Gm03</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm04:1-1000000" target="_blank">Gm04</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm05:1-1000000" target="_blank">Gm05</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm06:1-1000000" target="_blank">Gm06</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm07:1-1000000" target="_blank">Gm07</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm08:1-1000000" target="_blank">Gm08</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm09:1-1000000" target="_blank">Gm09</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm10:1-1000000" target="_blank">Gm10</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm11:1-1000000" target="_blank">Gm11</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm12:1-1000000" target="_blank">Gm12</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm13:1-1000000" target="_blank">Gm13</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm14:1-1000000" target="_blank">Gm14</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm15:1-1000000" target="_blank">Gm15</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm16:1-1000000" target="_blank">Gm16</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm17:1-1000000" target="_blank">Gm17</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm18:1-1000000" target="_blank">Gm18</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm19:1-1000000" target="_blank">Gm19</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm2&tracks=Wm82.gnm2.ann1,Wm82.gnm2.mrk.SoySNP50K&loc=glyma.Wm82.gnm2.Gm20:1-1000000" target="_blank">Gm20</a></td>
-    </tr>
-    <tr>
-      <th><b>Wm82.a4</b></th>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm01:1-1000000" target="_blank">Gm01</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm02:1-1000000" target="_blank">Gm02</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm03:1-1000000" target="_blank">Gm03</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm04:1-1000000" target="_blank">Gm04</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm05:1-1000000" target="_blank">Gm05</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm06:1-1000000" target="_blank">Gm06</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm07:1-1000000" target="_blank">Gm07</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm08:1-1000000" target="_blank">Gm08</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm09:1-1000000" target="_blank">Gm09</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm10:1-1000000" target="_blank">Gm10</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm11:1-1000000" target="_blank">Gm11</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm12:1-1000000" target="_blank">Gm12</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm13:1-1000000" target="_blank">Gm13</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm14:1-1000000" target="_blank">Gm14</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm15:1-1000000" target="_blank">Gm15</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm16:1-1000000" target="_blank">Gm16</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm17:1-1000000" target="_blank">Gm17</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm18:1-1000000" target="_blank">Gm18</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm19:1-1000000" target="_blank">Gm19</a></td>
-      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm4&tracks=Wm82.gnm4.ann1,Wm82.gnm4.mrk.SoySNP50K&loc=glyma.Wm82.gnm4.Gm20:1-1000000" target="_blank">Gm20</a></td>
-    </tr>
+    {% endfor %}
+
   </table>
 </div>
-	      <h2>Download SNP Data</h2>
-				The SoySNP50K iSelect BeadChip has been used to genotype the <a href='https://www.ars.usda.gov/main/site_main.htm?modecode=36-11-05-00'>USDA Soybean Germplasm Collection</a> 
-				(<a href='https://academic.oup.com/g3journal/article/5/10/1999/6028905' style='font-size:smaller;'><span style='font-style:italic;'>Song, Qijian, David L. Hyten, Gaofeng Jia, Charles V. Quigley, Edward W. Fickus, 
-				Randall L. Nelson, and Perry B. Cregan. 2015. Fingerprinting soybean germplasm and its utility in genomic research, G3: Genes| Genomes| Genetics</span> 
-				50(10):1999-2006.</a>) and the data generously provided by the authors.<br /><br />
-				SoySNP50K SNP positional information in relationship to the Wm82.a2 and Wm82.a1 assemblies can be found in <span style='font-style:italic;'>
-				<a href="https://link.springer.com/article/10.1186/s12864-015-2344-0">Construction of high resolution genetic linkage maps to improve the soybean genome sequence assembly Glyma1.01, Song et al. 2016 BMC Genomics 17:33</a></span> in <a href="https://static-content.springer.com/esm/art%3A10.1186%2Fs12864-015-2344-0/MediaObjects/12864_2015_2344_MOESM1_ESM.xls" target="_blank">Supplemental table S1</a>.
-				<br /><br />
-				A subset of the SoySNP50K dataset was produced by Song et al. called the BARCSoySNP6K SNP set described in <span style='font-style:italic;'><a href="https://onlinelibrary.wiley.com/doi/10.1111/tpj.14960" target="_blank">Soybean BARCSoySNP6K: An assay for soybean genetics and breeding research, Plant Journal (2020) 104(3):800-811</a></span>.
-				The SNP set assembled can be found in <a href="https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Ftpj.14960&file=tpj14960-sup-0002-TableS2.xlsx" target="_blank">Supplemental Table S1</a>.
-	
-	  		<h2>Bulk Downloads</h2>
-				The complete data set for 20,087 G. max and G. soja accessions genotyped with 42,509 SNPs is available for Wm82.a1 and Wm82.a2 in either vcf or HapMap format. You can extract a large list of
-				cultivars using <a href="https://github.com/samtools/bcftools" target="_blank">BCFtools</a> and a VCF file chosen below.</br></br> 
-				
+        <h2>Download SNP Data</h2>
+        The SoySNP50K iSelect BeadChip has been used to genotype the <a href='https://www.ars.usda.gov/main/site_main.htm?modecode=36-11-05-00'>USDA Soybean Germplasm Collection</a> 
+        (<a href='https://academic.oup.com/g3journal/article/5/10/1999/6028905' style='font-size:smaller;'><span style='font-style:italic;'>Song, Qijian, David L. Hyten, Gaofeng Jia, Charles V. Quigley, Edward W. Fickus, 
+        Randall L. Nelson, and Perry B. Cregan. 2015. Fingerprinting soybean germplasm and its utility in genomic research, G3: Genes| Genomes| Genetics</span> 
+        50(10):1999-2006.</a>) and the data generously provided by the authors.<br /><br />
+        SoySNP50K SNP positional information in relationship to the Wm82.a2 and Wm82.a1 assemblies can be found in 
+        <span style='font-style:italic;'>
+          <a href="https://link.springer.com/article/10.1186/s12864-015-2344-0">
+            Construction of high resolution genetic linkage maps to improve the soybean genome sequence assembly Glyma1.01, Song et al. 2016 BMC Genomics 17:33
+          </a>
+        </span> in <a href="https://static-content.springer.com/esm/art%3A10.1186%2Fs12864-015-2344-0/MediaObjects/12864_2015_2344_MOESM1_ESM.xls" 
+        target="_blank">Supplemental table S1</a>.
 
-	<a name="dltable"></a>
+        <br /><br />
+        A subset of the SoySNP50K dataset was produced by Song et al. called the BARCSoySNP6K SNP set described in 
+          <span style='font-style:italic;'><a href="https://onlinelibrary.wiley.com/doi/10.1111/tpj.14960" 
+            target="_blank">Soybean BARCSoySNP6K: An assay for soybean genetics and breeding research, Plant Journal (2020) 104(3):800-811</a>
+          </span>.
+        The SNP set assembled can be found in <a href="https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Ftpj.14960&file=tpj14960-sup-0002-TableS2.xlsx" 
+        target="_blank">Supplemental Table S1</a>.
+  
+        <h2>Bulk Downloads</h2>
+        The complete data set for 20,087 G. max and G. soja accessions genotyped with 42,509 SNPs is available for Wm82.a1 and Wm82.a2 in either vcf or HapMap format. You can extract a large list of
+        cultivars using <a href="https://github.com/samtools/bcftools" target="_blank">BCFtools</a> and a VCF file chosen below.</br></br> 
+        
+
+  <a name="dltable"></a>
 
   <div class="uk-align-left@s uk-text-center">
     <h5 class="uk-text-bold uk-text-center uk-background-primary uk-light uk-padding-small uk-margin-remove-bottom">SNP50K Downloads</h5>
@@ -149,7 +104,4 @@ redirect_from: /snps/
         <a href="https://data.soybase.org/Glycine/max/diversity/Wm82.gnm2.div.Song_Hyten_2015/glyma.Wm82.gnm2.div.Song_Hyten_2015.AlleleCount.tsv.gz">Download allele counts for each accession in the dataset</a>
       </div>
 
-
    </div>
-
-
