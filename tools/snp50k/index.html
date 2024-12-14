@@ -23,7 +23,7 @@ redirect_from: /snps/
       <th><b>Wm82.a{{ gnm }}</b></th>
       {% for chromosome in (1..20) %}
       {% assign chr = chromosome | prepend: '00' | slice: -2,2 %}
-      <td><a href="/assets/js/jbrowse/?gnm=Wm82.gnm{{ gnm }}&tracks=Wm82.gnm{{ gnm }}.ann1,Wm82.gnm{{ gnm }}.mrk.SoySNP50K&loc=glyma.Wm82.gnm{{ gnm }}.Gm{{ chr }}:1-1000000" 
+      <td><a href="/assets/js/jbrowse/?assembly=Wm82.gnm{{ gnm }}&tracks=Wm82.gnm{{ gnm }}.ann1,Wm82.gnm{{ gnm }}.mrk.SoySNP50K&loc=glyma.Wm82.gnm{{ gnm }}.Gm{{ chr }}:1-1000000"
              target="_blank">Gm{{ chr }}
           </a>
       </td>
