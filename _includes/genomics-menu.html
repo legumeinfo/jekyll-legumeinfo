@@ -1,0 +1,13 @@
+<h3>Genomic Resources</h3>
+{% if site.data.taxon_list %}
+  {% assign groups = site.data.taxon_list | group_by: "category" | sort: "name" %}
+  {% for group in groups %}
+    <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+      <li class="uk-nav-header">{{ group.name }}</li>
+      {% for item in group.items %}
+        <li><a href="/genomics{{ item.genus | downcase | relative_url }}">{{ item.genus }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+{% endif %}
+

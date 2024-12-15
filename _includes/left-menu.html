@@ -1,0 +1,35 @@
+<div id="left-menu" class="tm-sidebar-left uk-visible@m">
+
+  {% if page.tools_menu %}
+    {% include tools-menu.html %}
+  {% endif %}
+  {% if page.download_menu %}
+    {% include download-menu.html %}
+  {% endif %}
+  {% if page.genomics_menu %}
+    {% include genomics-menu.html %}
+  {% endif %}
+
+  <!-- dynamically set the top style property of the left menu when the height of the navbar changes -->
+  <!-- NOTE: the script tag is nested so it doesn't break a CSS selector -->
+  <script type="text/javascript">
+
+    const navbar = document.getElementById("navbar");
+    const left = document.getElementById("left-menu");
+
+    const leftTopObserver = new ResizeObserver(entries => {
+      for (let entry of entries) {
+        // use the newer contentBoxSize property if the browser supports it
+        if (entry.contentBoxSize) {
+          left.style.top = entry.contentBoxSize[0].blockSize + "px";
+        // fallback to the older contentRect property
+        } else {
+          left.style.top = entry.contentRect.height + "px";
+        }
+      }
+    });
+
+    leftTopObserver.observe(navbar);
+
+  </script>
+</div>

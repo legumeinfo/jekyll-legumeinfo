@@ -1,6 +1,6 @@
 ---
 title: Download
-collections_menu: true
+download_menu: true
 ---
 {% assign genera = site.data.taxon_list | group_by: "genus"  %}
 
@@ -11,7 +11,7 @@ collections_menu: true
 </p>
 
 <p>
-  The LIS Datastore is organized by Genus and species, with individual <i>data collections</i> under species directories for: genomes, annotations, expression,
+  The LIS Datastore is organized by Genus and species, with individual collections under species directories for: genomes, annotations, expression,
   GWAS, QTL studies, genetic markers, synteny, diversity, and others.
   Each collection contains a README file which describes that collection.
 </p>
@@ -20,7 +20,7 @@ collections_menu: true
   {% for genus in genera %}
   {% for item in genus.items %}
   {% if item.category == "main" %}
-  <li><a href="/collections{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
+  <li><a href="/download{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
   {% endif %}
   {% endfor %}
   {% endfor %}
@@ -29,7 +29,7 @@ collections_menu: true
   {% for genus in genera %}
   {% for item in genus.items %}
   {% if item.category == "special" %}
-  <li><a href="/collections{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
+  <li><a href="/download{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
   {% endif %}
   {% endfor %}
   {% endfor %}

@@ -52,14 +52,14 @@ plugins:
 #### jekyll-datapage-generator config
 page_gen:
   - data: taxon_list
-    template: taxon
-    dir: taxa
+    template: genomics
+    dir: genomics
     name: genus
     index_files: true
     debug: true
   - data: taxon_list
-    template: collection
-    dir: collections
+    template: download
+    dir: download
     name: genus
     index_files: true
     debug: true
