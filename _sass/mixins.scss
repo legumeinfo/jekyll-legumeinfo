@@ -1,0 +1,6 @@
+@mixin hook-nav-default-item() {
+    color: $global-link-color;
+}
+@mixin hook-nav-default-item-hover() {
+    color: $global-link-hover-color;
+}
