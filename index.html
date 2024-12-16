@@ -24,7 +24,7 @@ layout: home
       <div class="uk-text-left">
         <label class="uk-text-bold" for="quickSearchInput">Keyword Search</label><br>
       <input class="uk-input uk-form-small custom-width uk-text-primary uk-text-italic"  type="text" id="quickSearchInput" name="searchTerm"
-      value="&quot;seed weight&quot;" onFocus="clearElement(this);" />
+      value="&quot;flowering time&quot;" onFocus="clearElement(this);" />
       <button type="submit" id="quickSearchButton" name="searchSubmit" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
     </div>
     </form>
@@ -32,15 +32,68 @@ layout: home
 
   <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
     <form action="/tools/search/gene.html" name="search" method="get">
-  <div class="uk-text-left">
-    <label class="uk-text-bold" for="identifier">Gene identifier search</label><br>
-    <input class="uk-input uk-form-small custom-width  uk-text-primary uk-text-italic" id="identifier" type="text" name="identifier"
-    value="Glyma.15g026400" onFocus="clearElement(this);" />
-    <button type="submit" id="quickSearchButton" name="searchSubmit" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+      <div class="uk-text-left">
+        <label class="uk-text-bold" for="identifier">Gene identifier search</label><br>
+        <input class="uk-input uk-form-small custom-width  uk-text-primary uk-text-italic" id="identifier" type="text" name="identifier"
+        value="Medtr7g084970" onFocus="clearElement(this);" />
+        <button type="submit" id="quickSearchButton" name="searchSubmit" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+      </div>
+    </form>
   </div>
+
+  <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
+    <form action="https://gcv.legumeinfo.org/gcv2/search" name="search" method="get">
+      <div class="uk-text-left">
+        <label class="uk-text-bold" for="q">Synteny viewer</label><br>
+        <input type="hidden" id="sources" name="sources" value="lis">
+        <input class="uk-input uk-form-small custom-width uk-text-primary uk-text-italic" id="q" type="text" name="q"
+        value="Medtr7g084970" onFocus="clearElement(this);" />
+        <button type="submit" id="quickSearchButton" name="searchSubmit" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+      </div>
     </form>
   </div>
 </div>
+
+<div >
+<div class="search-container">
+  <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
+    <form id="gotogenusform1" oninput="buildURLdscensor1()" target="_blank">
+      <label class="uk-text-bold" >Data overviews (genomes):</label><br>
+      <div class="bar-input-group">
+        <input class="uk-margin-small" id="parturl1" type="hidden" value="https://dscensor.legumeinfo.org/multiqc-demo/genome_main:">
+        <input class="uk-input custom-width uk-form-small uk-text-primary uk-text-italic" type="text" id="genus1" value="Arachis">
+        <button type="submit" value="GO" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+      </div>
+      <i>Arachis, Cajanus, Cicer</i> ... 
+    </form>
+  </div>
+
+  <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
+    <form id="gotogenusform2" oninput="buildURLdscensor2()" target="_blank">
+      <label class="uk-text-bold" >Data overviews (annotations):</label><br>
+      <div class="bar-input-group">
+        <input class="uk-margin-small" id="parturl2" type="hidden" value="https://dscensor.legumeinfo.org/multiqc-demo/gene_models_main:">
+        <input class="uk-input custom-width uk-form-small uk-text-primary uk-text-italic" type="text" id="genus2" value="Glycine">
+        <button type="submit" value="GO" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+      </div>
+      <i>Glycine, Lotus, Lupinus</i> ... 
+    </form>
+  </div>
+
+  <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
+    <form id="gotogenusform3" oninput="buildURLdatastore()" target="_blank">
+      <label class="uk-text-bold" >Datastore (by genus):</label><br>
+      <div class="bar-input-group">
+        <input class="uk-margin-small" id="parturl3" type="hidden" value="https://data.legumeinfo.org/">
+        <input class="uk-input custom-width uk-form-small uk-text-primary uk-text-italic" type="text" id="genus3" value="Medicago">
+        <button type="submit" value="GO" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+      </div>
+      <i>Medicago, Phaseolus, Pisum</i> ... 
+    </form>
+  </div>
+
+</div>
+
 
 <hr>
 
@@ -126,7 +179,7 @@ layout: home
 </div>
 
   <h2>Funding and Development</h2>
-<p>SoyBase is funded by the USDA-ARS. SoyBase is developed and hosted by the USDA-ARS SoyBase and Legume Clade Database group at Ames, IA, with development assistance from the National Center for Genome Resources (NCGR) with the help of many other researchers in the soybean community.</p>
+<p>LIS is funded by the USDA-ARS. LIS is developed and hosted by the National Center for Genome Resources (NCGR) and the USDA-ARS SoyBase and Legume Clade Database group at Ames, IA, with the help of many other researchers.</p>
 <div class="uk-child-width-expand@s uk-flex uk-flex-middle uk-text-center" uk-grid>
   <a href="https://www.ars.usda.gov/main/main.htm" target="_blank" title="USDA ARS website">
     <img src="{{ "assets/img/usda.svg" | relative_url }}" width="150" height="auto" alt="USDA logo"/>
@@ -140,7 +193,25 @@ layout: home
     async function clearElement(e) {
     var value = await document.getElementById('quickSearchInput').value;
   }
-  
+
+  addEventListener("load", (event) => {
+    buildURLdscensor1()
+    buildURLdscensor2()
+    buildURLdatastore()
+  })
+
+  function buildURLdscensor1(){
+   let urlgenus1 = parturl1.value +''+ document.getElementById('genus1').value.trim();
+        document.getElementById('gotogenusform1').action = urlgenus1;
+  }
+  function buildURLdscensor2(){
+   let urlgenus2 = parturl2.value +''+ document.getElementById('genus2').value.trim();
+        document.getElementById('gotogenusform2').action = urlgenus2;
+  }
+  function buildURLdatastore(){
+   let urlgenus3 = parturl3.value +''+ document.getElementById('genus3').value.trim();
+        document.getElementById('gotogenusform3').action = urlgenus3;
+  }
 </script>
 
 <script type="module">
@@ -154,3 +225,4 @@ layout: home
       }
       displayUpcomingEvents()
 </script>
+
