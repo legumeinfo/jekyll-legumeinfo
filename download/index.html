@@ -4,17 +4,24 @@ download_menu: true
 ---
 {% assign genera = site.data.taxon_list | group_by: "genus"  %}
 
-<h1>Download</h1>
+<h1>Datasets for Download</h1>
 
 <p>
   All of the files housed by the Legume Information System are available at the <a target="_blank" href="{{ site.datastoreurl }}"><b>LIS Datastore</b></a>.
 </p>
 
 <p>
-  The LIS Datastore is organized by Genus and species, with individual collections under species directories for: genomes, annotations, expression,
+  The LIS Datastore is organized by Genus and species, with individual datasets under species directories for: genomes, annotations, expression,
   GWAS, QTL studies, genetic markers, synteny, diversity, and others.
-  Each collection contains a README file which describes that collection.
+  Each dataset contains a README file which describes that dataset.
 </p>
+
+<summary>
+To download multiple files or datasets, click to the <u>left of the items you want</u>. These will be highlighted in blue. Then click the <b>down arrow</b> in the upper right.</summary> <details>
+<div class="image">
+  <img src="/assets/img/blog_images/h5ai_download.png" />
+</div>
+</details>
 
 <ul>
   {% for genus in genera %}
