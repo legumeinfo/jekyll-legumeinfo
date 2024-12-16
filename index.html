@@ -10,38 +10,147 @@ layout: home
 <h1>LIS - the Legume Information System</h1>
 
 <p>
-  LIS integrates genetic and genomic information across many legume species, with tools for research. LIS has been restructured for improved scalability and function. As of April, 2023, the previous incarnation has been decommissioned. Additional functionality will be added through 2023. Please <a href="/about">contact us</a> if you have questions, suggestions, or contributions.
-</p>
-<p>
-  The site is organized as follows. 
-  See <a href="/genomics">GENOMICS</a> to access resources and tools such as browsers, InterMine instances, organized primarily by genus. 
-  See <a href="/download">DOWNLOAD</a> to access data sets for download. 
+  LIS integrates genetic and genomic information to aid researchers working on legume crops and related species.
+  See <a href="/genomics">GENOMICS</a> to access resources and tools such as browsers, InterMine instances, organized primarily by genus.
+  See <a href="/download">DOWNLOAD</a> to access data sets for download.
   See <a href="/tools">TOOLS</a> if you have particular tasks in mind.
+  Please <a href="/about">contact us</a> if you have questions, suggestions, or contributions.
 </p>
 
-<dl>
-  <dt><a href="{{ "/genomics" | relative_url }}">Genomics</a></dt>
-  <dd>Resources for legumes at various taxonomic levels (species, genera, and the family as a whole):
-    data sets, genome browsers, pan-gene sets, synteny visualizations, sequence and keyword search, etc.</dd>
-  <dt><a href="{{ "/download" | relative_url }}">Download</a></dt>
-  <dd>View synopses of and links to individual LIS Datastore collections.</dd>
-  <dt><a href="{{ "/tools" | relative_url }}">Tools</a></dt>
-  <dd>Pan-legume tools: sequence and keyword search, gene families and phylogenies, synteny visualization, etc. search, etc.</dd>
-  <dt><a href="{{ "/blog" | relative_url }}">Blog</a></dt>
-  <dd>Learn about new data and tools available from LIS.</dd>
-  <dt><a href="{{ "/community" | relative_url }}">Community</a></dt>
-  <dd>Other community resources for legume research.</dd>
-  <dt><a href="{{ "/about" | relative_url }}">Contact</a></dt>
-  <dd>Please contact us with questions or suggestions.</dd>
-</dl>
+<div >
+<div class="search-container">
+  <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
+    <form action="https://mines.legumeinfo.org/legumemine/keywordSearchResults.do" name="search" method="get" target="_blank">
+      <div class="uk-text-left">
+        <label class="uk-text-bold" for="quickSearchInput">Keyword Search</label><br>
+      <input class="uk-input uk-form-small custom-width uk-text-primary uk-text-italic"  type="text" id="quickSearchInput" name="searchTerm"
+      value="&quot;seed weight&quot;" onFocus="clearElement(this);" />
+      <button type="submit" id="quickSearchButton" name="searchSubmit" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+    </div>
+    </form>
+  </div>
 
-<h2>Funding and Development</h2>
-<p>LIS is funded by the USDA-ARS. LIS is developed and hosted by the National Center for Genome Resources (NCGR) and the USDA-ARS SoyBase and Legume Clade Database group at Ames, IA, with the help of many other researchers.</p>
-<div class="uk-child-width-expand@s uk-flex uk-flex-middle" uk-grid>
+  <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
+    <form action="/tools/search/gene.html" name="search" method="get">
+  <div class="uk-text-left">
+    <label class="uk-text-bold" for="identifier">Gene identifier search</label><br>
+    <input class="uk-input uk-form-small custom-width  uk-text-primary uk-text-italic" id="identifier" type="text" name="identifier"
+    value="Glyma.15g026400" onFocus="clearElement(this);" />
+    <button type="submit" id="quickSearchButton" name="searchSubmit" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+  </div>
+    </form>
+  </div>
+</div>
+
+<hr>
+
+<div>
+    <div class="uk-child-width-1-2@s uk-child-width-1-2@l uk-child-width-1-3@xl uk-flex-center uk-grid-column-small uk-grid-row-small" uk-grid>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Enter one or more sequences and search against soybean genomes, proteins, or transcript sequences.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap cornsilk col3-cornsilk" type="button" >
+          <a href="https://sequenceserver.legumeinfo.org"><b>Sequence search (BLAST)</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Enter one or more sequences and annotate them, view in a phylogenetic tree, etc.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap cornsilk col3-cornsilk" type="button" >
+          <a href="https://funnotate.legumeinfo.org/" target="_blank"><b>Annotate sequences</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Glycine pangenes, or look up corresponding gene IDs between annotations.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap seashell col3-cornsilk" type="button" >
+          <a href="/tools/search/gene.html"><b>Gene search</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Glycine pangenes, or look up corresponding gene IDs between annotations.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap seashell col3-cornsilk" type="button" >
+          <a href="/tools/search/pangene.html"><b>Pangene search / translator</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="GCViT tool for visualizing variants (SNPs) between selected genotypes.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap antiquewhite col3-azure" type="button">
+          <a href="/tools/gcvit/"><b>Genotype comparisons</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Soybean GWAS features from many studies, against a common framework (ZZbrowse tools).">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap antiquewhite col3-mistyrose" type="button">
+          <a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&twoSpecies=n&datasets=Soybean%20GWAS&chr=Gm01&selected=100000&window=250000&traitsFromOntology=y" target="_blank"><b>GWAS viewer</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Soybean QTL features from many studies, against a common framework (ZZbrowse tools).">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap cornsilk col3-mistyrose" type="button">
+          <a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&twoSpecies=n&datasets=Soybean%20QTL&chr=Gm01&selected=100000&window=250000&traitsFromOntology=y" target="_blank"><b>QTL viewer</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="QTL and/or GWAS features from many studies; compare between soybean and another selected species (slow; please be patient).">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap cornsilk col3-mistyrose" type="button">
+          <a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&twoSpecies=y&datasets=Soybean%20GWAS&chr=Gm01&selected=100000&window=250000&traitsFromOntology=y" target="_blank"><b>cross-species QTL/GWAS</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="View geographic origins of Glycine accessions in the USDA GRIN-Global system.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap customgreen col3-cumstomgreen" type="button">
+          <a href="https://germplasm-map.legumeinfo.org/"><b>Germplasm GIS</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="View soybean varieties and accessions and their pedigrees.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap customgreen col3-cumstomgreen" type="button">
+          <a href="https://conekt.legumeinfo.org"><b>Expression resources</b></a>
+        </button>
+      </div>
+    </div>
+</div>
+<br>
+<div class="uk-hidden@l">
+  {% if page.blog_card %}
+    {% include blog-card.html %}
+  {% endif %}
+
+  {% if page.news_card %}
+    {% include news-card.html %}
+  {% endif %}
+
+  <div class="uk-card uk-card-small uk-card-default uk-margin-bottom">
+    <div class="uk-card-header">
+      <div class="uk-grid-small uk-flex-middle" uk-grid>
+        <div class="uk-width-expand">
+          <h3 class="uk-card-title uk-margin-remove-bottom">EVENTS</h3>
+        </div>
+      </div>
+    </div>
+    <div id="custom-event-card" class="uk-card-body"></div>
+    <div class="uk-card-footer">
+      <a href="/events" class="uk-button uk-button-text">More Events</a>
+    </div>
+  </div>
+  
+</div>
+</div>
+
+  <h2>Funding and Development</h2>
+<p>SoyBase is funded by the USDA-ARS. SoyBase is developed and hosted by the USDA-ARS SoyBase and Legume Clade Database group at Ames, IA, with development assistance from the National Center for Genome Resources (NCGR) with the help of many other researchers in the soybean community.</p>
+<div class="uk-child-width-expand@s uk-flex uk-flex-middle uk-text-center" uk-grid>
   <a href="https://www.ars.usda.gov/main/main.htm" target="_blank" title="USDA ARS website">
     <img src="{{ "assets/img/usda.svg" | relative_url }}" width="150" height="auto" alt="USDA logo"/>
   </a>
-  <a href="http://www.ncgr.org/" target="_blank" title="NCGR website">
+  <a href="https://www.ncgr.org/" target="_blank" title="NCGR website">
     <img src="{{ "assets/img/ncgr.png" | relative_url }}" width="200" height="auto" alt="NCGR logo"/>
   </a>
 </div>
+
+<script>
+    async function clearElement(e) {
+    var value = await document.getElementById('quickSearchInput').value;
+  }
+  
+</script>
+
+<script type="module">
+  /* render upcoming events to #custom-event-card when screen is smaller than 1200px */
+  import { upcomingEvents } from "lis-events";
+      function displayUpcomingEvents(){
+      document.getElementById('custom-event-card').innerHTML += upcomingEvents.map(event => 
+      `
+      <li style="margin-left: 10px"><a class="uk-text-bold" href=${event.url}>${event.title}</a><div style="margin-left: 20px; color: black">${event.date} - ${event.endDate}</div></li>
+      `).join('');
+      }
+      displayUpcomingEvents()
+</script>
