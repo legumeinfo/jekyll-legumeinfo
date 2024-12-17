@@ -15,11 +15,17 @@
 #  
 #    sudo ln -s /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin24 \
 #               /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin23
+#
+#     or something like the following (adjusting paths to match the current SDK), 
+#     per https://stackoverflow.com/questions/53135863/macos-mojave-ruby-config-h-file-not-found/65481787#65481787
+#       cd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby
+#       sudo ln -sf ../../../../Headers/ruby/config.h
+#
 # 3.  Install dependencies (first time only, or until "make distclean" is invoked)
 #
 #     make install
 #
-# 4.  Start jekyll, listening on localhost:4000 (and livereload on default port 35729)
+# 4.  Start jekyll, listening on localhost:4001 (and livereload on default port 35728)
 #
 #     make
 #
@@ -36,7 +42,7 @@ ifeq ($(OS), Darwin)
   export PATH := ${PWD}/vendor/gems/bin:${PATH}
 
   # select SDK from /Library/Developer/CommandLineTools/SDKs
-  XCRUN = DEVELOPER_DIR=/Library/Developer/CommandLineTools xcrun --sdk macosx15.0
+  XCRUN = DEVELOPER_DIR=/Library/Developer/CommandLineTools xcrun --sdk macosx15.1
 endif
 
 ENV = PATH=$${PWD}/vendor/gems/bin:$${PATH} GEM_HOME=$${PWD}/vendor/gems 
@@ -47,7 +53,6 @@ serve:
 install:
 	rm -f Gemfile.lock
 	if ! bundle check; then $(XCRUN) bundle install; fi
-#	$(ENV) xcrun bundle install
 
 clean:
 	rm -rf .jekyll-cache/ .jekyll-metadata _site/
