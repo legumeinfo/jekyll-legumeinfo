@@ -21,6 +21,11 @@ species:
     - URL: https://medicago.legumeinfo.org/tools/sequenceserver
       description: SequenceServer BLAST against the CADL_HM342 genome assembly v1.0
       name: Medicago SequenceServer
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22medsa.CADL_HM342.gnm1%22, %22loc%22: %22medsa.CADL_HM342.gnm1.Scc4a34_1:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 medsa.CADL_HM342.gnm1
   - accession: XinJiangDaYe
     description: Xinjiang Daye is a salt-sensitive cultivar of alfalfa.
     identifier: XinJiangDaYe
@@ -30,6 +35,11 @@ species:
     - URL: https://sequenceserver.legumeinfo.org/
       description: SequenceServer BLAST against the XinJiangDaYe assembly v1.0
       name: LIS SequenceServer
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22medsa.XinJiangDaYe.gnm1%22, %22loc%22: %22medsa.XinJiangDaYe.gnm1.chr1.1:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 medsa.XinJiangDaYe.gnm1
   - accession: Zhongmu_No_1
     description: Zhongmu No. 1 is a widely grown cultivar in Northern China
     identifier: Zhongmu_No_1
@@ -40,6 +50,11 @@ species:
       description: SequenceServer BLAST against the Zhongmu No. 1 genome assembly
         v1.0
       name: Medicago SequenceServer
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22medsa.Zhongmu_No_1.gnm1%22, %22loc%22: %22medsa.Zhongmu_No_1.gnm1.Chr1:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 medsa.Zhongmu_No_1.gnm1
   - accession: PI464715
     description: PI464715 is a representative of Medicago sativa spp. caerulea, the
       diploid progenitor of the cultivated autotetraploid
@@ -50,6 +65,11 @@ species:
     - URL: https://medicago.legumeinfo.org/tools/sequenceserver
       description: SequenceServer BLAST against the PI464715 genome assembly v1.0
       name: Medicago SequenceServer
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22medsa.PI464715.gnm1%22, %22loc%22: %22medsa.PI464715.gnm1.Chr1:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 medsa.PI464715.gnm1
   - accession: RegenSY27x
     description: This plant was selected for high regeneration in tissue culture.
       It was bred by crossing two plants, first generation selfed (S1) parents from
@@ -64,6 +84,11 @@ species:
     - URL: https://medicago.legumeinfo.org/tools/sequenceserver
       description: SequenceServer BLAST against the RegenSY27x genome assembly v0.9
       name: Medicago SequenceServer
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22medsa.RegenSY27x.gnm0_9%22, %22loc%22: %22medsa.RegenSY27x.gnm0_9.ptg000001l:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 medsa.RegenSY27x.gnm0_9
   taxid: 3879
 - abbrev: medtr
   commonName: barrel medic
@@ -87,7 +112,12 @@ species:
     identifier: A17
     name: A17
     origin: Mediterranean region
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22medtr.A17.gnm5%22, %22loc%22: %22medtr.A17.gnm5.MtrunA17Chr0c01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 medtr.A17.gnm5
   - accession: HM341
     description: 'Medicago truncatula accession A17 has been used for a large number
       of genetic and genomic studies. The genome for this accession has been used
@@ -96,7 +126,12 @@ species:
     identifier: A17_HM341
     name: A17 (HM341)
     origin: Mediterranean region
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22medtr.A17_HM341.gnm4%22, %22loc%22: %22medtr.A17_HM341.gnm4.chr1:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 medtr.A17_HM341.gnm4
   - accession: HM340
     description: 'Medicago truncatula accession R108 has been used in various genetic
       and genomic studies, e.g. Gaige et al., 2011 (DOI:10.1080/07060661.2012.662176),
@@ -105,7 +140,12 @@ species:
     identifier: R108_HM340
     name: R108 (HM340)
     origin: Mediterranean region
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22medtr.R108_HM340.gnm1%22, %22loc%22: %22medtr.R108_HM340.gnm1.scf000:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 medtr.R108_HM340.gnm1
   - accession: SA27063
     description: HM078 is was originally collected by researchers at INRA-Montpellier
       (doi:10.1186/1471-2229-6-28), and later characterized as one of a handful of
@@ -113,7 +153,12 @@ species:
     identifier: HM078
     name: SA27063
     origin: Greece
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22medtr.HM078.gnm1%22, %22loc%22: %22medtr.HM078.gnm1.Chr_1:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 medtr.HM078.gnm1
   taxid: 3880
 - abbrev: medru
   description: A wild perennial forage species widely distributed in semi-arid grasslands
@@ -132,7 +177,12 @@ species:
     identifier: Xinghe
     name: Xinghe
     origin: Northern China
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22medru.Xinghe.gnm1%22, %22loc%22: %22medru.Xinghe.gnm1.Mru1:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 medru.Xinghe.gnm1
   taxid: 70973
 - abbrev: medpo
   description: Highly nutritious forage legume with global distribution, widely consumed
@@ -149,5 +199,10 @@ species:
     identifier: Huaiyang_Jinhuacai
     name: Huaiyang Jinhuacai
     origin: China
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22medpo.Huaiyang_Jinhuacai.gnm1%22, %22loc%22: %22medpo.Huaiyang_Jinhuacai.gnm1.chr1:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 medpo.Huaiyang_Jinhuacai.gnm1
   taxid: 47084

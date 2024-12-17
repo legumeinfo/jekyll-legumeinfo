@@ -20,4 +20,109 @@ species:
     - URL: https://sequenceserver.legumeinfo.org/
       description: SequenceServer BLAST against Cameor assembly v1.0
       name: LIS SequenceServer
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Apical_node,Stage_B,Low-N,Hydro%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Flowers,Stage_B,Low-N,Hydro%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Leaves,Stage_B,Low-N,Hydro%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Lower_leaves,Stage_C,Low-N,Hydro%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Nodules,Stage_A,Low-N,Hydro%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Nodules,Stage_B,Low-N,Hydro%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Nodules,Stage_G,Low-N%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Peduncles,Stage_C,Low-N,Hydro%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Pods,Stage_C,Low-N,Hydro%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Root_sys,stage_A,High-N,Hydro%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Root_sys,stage_A,Low-N,Hydro%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Roots,Stage_B,Low-N,Hydro%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Roots,Stage_F,Low-N,Aero%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Seeds,Stage_D,NULL_TREATMENT,Water%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Seeds,Stage_E,High-N,Pots%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Shoot,Stage_A,High-N,Hydro%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Shoot,Stage_A,Low-N,Hydro%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Stems,Stage_B+C,Low-N,Hydroponics%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Tendrils,Stage_B+C,Low-N,Hydro%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22pissa.Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014.Upper_leaves,Stage_C,Low-N,Hydro%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 pissa.Cameor.gnm1
   taxid: 3888

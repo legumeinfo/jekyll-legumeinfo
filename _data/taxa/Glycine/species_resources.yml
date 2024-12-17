@@ -41,7 +41,692 @@ species:
     identifier: Wm82
     name: Williams 82
     origin: Northern United States
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm1%22, %22loc%22: %22glyma.Wm82.gnm1.Gm01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm2%22, %22loc%22: %22glyma.Wm82.gnm2.Gm01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm2
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm4%22, %22loc%22: %22glyma.Wm82.gnm4.Gm01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm4
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm5%22, %22loc%22: %22glyma.Wm82.gnm5.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm5
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Acidity_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Acidity_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Cadmium_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Cadmium_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_acidity+low_phosphate_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_acidity+low_phosphate_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_acidity+water_deficit+low_phosphate+salinity+cadmium_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_acidity+water_deficit+low_phosphate+salinity+cadmium_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_acidity+water_deficit+low_phosphate+salinity_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_acidity+water_deficit+low_phosphate+salinity_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_acidity+water_deficit+low_phosphate_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_acidity+water_deficit+low_phosphate_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_acidity+water_deficit_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_acidity+water_deficit_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_low_phosphate+water_deficit_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_low_phosphate+water_deficit_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_salinity+acidity+low_phosphate_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_salinity+acidity+low_phosphate_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_salinity+acidity+water_deficit_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_salinity+acidity+water_deficit_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_salinity+acidity_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_salinity+acidity_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_salinity+low_phosphate_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_salinity+low_phosphate_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_salinity+water_deficit+low_phosphate_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_salinity+water_deficit+low_phosphate_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_salinity+water_deficit_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Combined_salinity+water_deficit_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Control_soybean_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Control_soybean_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Low_phosphate_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Low_phosphate_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Salinity_soybean_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Salinity_soybean_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Water_deficit_flowers%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023.Water_deficit_leaves%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021.Embryo_Proper%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021.Endosperm%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021.Seed_Coat_Endothelium%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021.Seed_Coat_Epidermis%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021.Seed_Coat_Hilum%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021.Seed_Coat_Inner_Integument%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021.Seed_Coat_Outer_Integument%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021.Suspensor%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_2.Embryo_Proper%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_2.Endosperm%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_2.Seed_Coat_Endothelium%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_2.Seed_Coat_Epidermis%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_2.Seed_Coat_Hilum%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_2.Seed_Coat_Inner_Integument%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_2.Seed_Coat_Outer_Integument%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_2.Suspensor%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_3.Embryo_Proper%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_3.Embryo_Proper_Axis%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_3.Embryo_Proper_Cotyledon%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_3.Endosperm%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_3.Seed_Coat_Endothelium%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_3.Seed_Coat_Epidermis%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_3.Seed_Coat_Hilum%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_3.Seed_Coat_Inner_Integument%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_3.Seed_Coat_Outer_Integument%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_3.Suspensor%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.flower_open%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.flower_unopen%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.lateral_root_standard%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_1130AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_1130PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_130AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_130PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_330AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_330PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_530AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_530PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_730AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_730PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_930AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_930PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_ammonium%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_nitrate%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_standard%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_symbiotic_condition%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_trifoliate_stage_1%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_trifoliate_stage_2%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_trifoliate_stage_3%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_trifoliate_stage_4%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_trifoliate_stage_5%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.leaf_urea%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.nodules_1130AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.nodules_1130PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.nodules_130AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.nodules_130PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.nodules_330AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.nodules_330PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.nodules_530AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.nodules_530PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.nodules_730AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.nodules_730PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.nodules_930AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.nodules_930PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.nodules_symbiotic_condition%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.root_ammonium%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.root_nitrate%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.root_standard%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.root_symbiotic_condition%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.root_tip_standard%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.root_urea%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.seed_seed_s1%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.seed_seed_s3%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.seed_seed_s4%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.seed_seed_s5%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.seed_seed_s6%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.seed_seed_s7%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.seed_seed_s8%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.seed_seed_s9%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.shoot_tip_1130AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.shoot_tip_1130PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.shoot_tip_130AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.shoot_tip_130PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.shoot_tip_330AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.shoot_tip_330PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.shoot_tip_530AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.shoot_tip_530PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.shoot_tip_730AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.shoot_tip_730PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.shoot_tip_930AM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.shoot_tip_930PM%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.shoot_tip_standard%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023.stem_standard%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.mixed.Kour_Boone_2014.Clark_defective%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.mixed.Kour_Boone_2014.Clark_standard%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.mixed.Kour_Boone_2014.Harosoy_defective%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82.gnm6%22, %22loc%22: %22glyma.Wm82.gnm6.Gm01:1-59600650%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22glyma.Wm82.gnm6.ann1.expr.mixed.Kour_Boone_2014.Harosoy_standard%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82.gnm6
   - accession: PI 548656
     accession_group: Reference - Lee
     description: Cultivar Lee, which derives from a cross of Chinese lines CNS and
@@ -52,7 +737,22 @@ species:
     identifier: Lee
     name: Lee
     origin: Southern United States
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Lee.gnm1%22, %22loc%22: %22glyma.Lee.gnm1.Gm01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Lee.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Lee.gnm2%22, %22loc%22: %22glyma.Lee.gnm2.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Lee.gnm2
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Lee.gnm3%22, %22loc%22: %22glyma.Lee.gnm3.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Lee.gnm3
   - accession: PI 438471
     accession_group: Reference - Fiskeby III
     description: "Bred by the late Dr. Sven Holmberg in Fiskeby, Norrk\xF6pping, Sweden.\
@@ -61,7 +761,12 @@ species:
     identifier: FiskebyIII
     name: Fiskeby III
     origin: "Fiskeby, Norrk\xF6pping, Sweden"
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.FiskebyIII.gnm1%22, %22loc%22: %22glyma.FiskebyIII.gnm1.Gm01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.FiskebyIII.gnm1
   - accession: GWHAAEV00000000.1
     accession_group: Reference - Zhonghuang 13
     description: Zhonghuang 13 is a Chinese cultivar derived from accessions Yudou
@@ -70,7 +775,17 @@ species:
     identifier: Zh13
     name: Zhonghuang 13
     origin: China
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Zh13.gnm1%22, %22loc%22: %22glyma.Zh13.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Zh13.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Zh13.gnm2%22, %22loc%22: %22glyma.Zh13.gnm2.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Zh13.gnm2
   - accession: Hwangkeum
     accession_group: Reference - Hwangkeum
     description: Hwangkeum is an important South Korean cultivar, released in 1979
@@ -80,7 +795,12 @@ species:
     identifier: Hwangkeum
     name: Hwangkeum
     origin: South Korea
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Hwangkeum.gnm1%22, %22loc%22: %22glyma.Hwangkeum.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Hwangkeum.gnm1
   - accession: GCA_021733175.1
     accession_group: Reference - Jidou 17
     description: Jidou 17 is an Chinese elite cultivar, widely grown in central China
@@ -89,7 +809,12 @@ species:
     identifier: JD17
     name: Jidou 17
     origin: China
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.JD17.gnm1%22, %22loc%22: %22glyma.JD17.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.JD17.gnm1
   - accession: IGA1002
     accession_group: Chu, Peng et al., 2021
     description: Glycine max Hefeng 25 (IGA1002) was sequenced and annotated by Chu,
@@ -97,7 +822,12 @@ species:
     identifier: Hefeng25_IGA1002
     name: Hefeng 25
     origin: Jiamusi Branch of Heilongjiang Academy of Agricultural Sciences
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Hefeng25_IGA1002.gnm1%22, %22loc%22: %22glyma.Hefeng25_IGA1002.gnm1.chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Hefeng25_IGA1002.gnm1
   - accession: IGA1007
     accession_group: Chu, Peng et al., 2021
     description: Glycine max Huaxia 3 (IGA1007) was sequenced and annotated by Chu,
@@ -105,7 +835,12 @@ species:
     identifier: Huaxia3_IGA1007
     name: Huaxia 3
     origin: South China Agricultural University
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Huaxia3_IGA1007.gnm1%22, %22loc%22: %22glyma.Huaxia3_IGA1007.gnm1.chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Huaxia3_IGA1007.gnm1
   - accession: IGA1006
     accession_group: Chu, Peng et al., 2021
     description: Glycine max Jinyuan (IGA1006) was sequenced and annotated by Chu,
@@ -113,7 +848,12 @@ species:
     identifier: Jinyuan_IGA1006
     name: Jinyuan
     origin: National Soybean Preservation Center, ICS, CAAS
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Jinyuan_IGA1006.gnm1%22, %22loc%22: %22glyma.Jinyuan_IGA1006.gnm1.chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Jinyuan_IGA1006.gnm1
   - accession: IGA1001
     accession_group: Chu, Peng et al., 2021
     description: Glycine max Wenfeng 7 (IGA1001) was sequenced and annotated by Chu,
@@ -121,7 +861,12 @@ species:
     identifier: Wenfeng7_IGA1001
     name: Wenfeng 7
     origin: National Soybean Preservation Center, ICS, CAAS
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wenfeng7_IGA1001.gnm1%22, %22loc%22: %22glyma.Wenfeng7_IGA1001.gnm1.chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wenfeng7_IGA1001.gnm1
   - accession: IGA1008
     accession_group: Chu, Peng et al., 2021
     description: Williams 82, the soybean cultivar used to produce the reference genome
@@ -131,7 +876,12 @@ species:
     identifier: Wm82_IGA1008
     name: Williams 82
     origin: Northeast Institute of Geography and Agroecology, CAS
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82_IGA1008.gnm1%22, %22loc%22: %22glyma.Wm82_IGA1008.gnm1.chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82_IGA1008.gnm1
   - accession: IGA1005
     accession_group: Chu, Peng et al., 2021
     description: Zhonghuang 13 is a Chinese cultivar derived from accessions Yudou
@@ -141,7 +891,12 @@ species:
     identifier: Zh13_IGA1005
     name: Zhonghuang 13
     origin: National Soybean Improvement Sub-Center, ICS, CAAS
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Zh13_IGA1005.gnm1%22, %22loc%22: %22glyma.Zh13_IGA1005.gnm1.chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Zh13_IGA1005.gnm1
   - accession: IGA1004
     accession_group: Chu, Peng et al., 2021
     description: Glycine max Zhonghuang 35 (IGA1004) was sequenced and annotated by
@@ -149,14 +904,24 @@ species:
     identifier: Zh35_IGA1004
     name: Zhonghuang 35
     origin: National Soybean Improvement Sub-Center, ICS, CAAS
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Zh35_IGA1004.gnm1%22, %22loc%22: %22glyma.Zh35_IGA1004.gnm1.chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Zh35_IGA1004.gnm1
   - accession: SoyL04
     accession_group: Liu, Du et al., 2020
     description: Landrace 58-161 (SoyL04 from China, Jiang Su, from Liu et al. 2020
     identifier: 58-161
     name: 58-161
     origin: China, Jiang Su
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.58-161.gnm1%22, %22loc%22: %22glyma.58-161.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.58-161.gnm1
   - accession: SoyC05
     accession_group: Liu, Du et al., 2020
     description: Cultivar Amsoy (SoyC05 from United States, Iowa, from Liu et al.
@@ -164,7 +929,12 @@ species:
     identifier: Amsoy
     name: Amsoy
     origin: United States, Iowa
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Amsoy.gnm1%22, %22loc%22: %22glyma.Amsoy.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Amsoy.gnm1
   - accession: SoyC12
     accession_group: Liu, Du et al., 2020
     description: Cultivar Dong Nong No.50 (SoyC12 from China, Hei Long Jiang, from
@@ -172,7 +942,12 @@ species:
     identifier: DongNongNo_50
     name: Dong Nong No.50
     origin: China, Hei Long Jiang
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.DongNongNo_50.gnm1%22, %22loc%22: %22glyma.DongNongNo_50.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.DongNongNo_50.gnm1
   - accession: SoyL07
     accession_group: Liu, Du et al., 2020
     description: Landrace Feng Di Huang (SoyL07 from China, Ji Lin, from Liu et al.
@@ -180,7 +955,12 @@ species:
     identifier: FengDiHuang
     name: Feng Di Huang
     origin: China, Ji Lin
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.FengDiHuang.gnm1%22, %22loc%22: %22glyma.FengDiHuang.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.FengDiHuang.gnm1
   - accession: SoyC09
     accession_group: Liu, Du et al., 2020
     description: Cultivar Han Dou No.5 (SoyC09 from China, He Bei, from Liu et al.
@@ -188,7 +968,12 @@ species:
     identifier: HanDouNo_5
     name: Han Dou No.5
     origin: China, He Bei
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.HanDouNo_5.gnm1%22, %22loc%22: %22glyma.HanDouNo_5.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.HanDouNo_5.gnm1
   - accession: SoyC13
     accession_group: Liu, Du et al., 2020
     description: Cultivar Hei He No.43  (SoyC13 from China, Hei Long Jiang, from Liu
@@ -196,7 +981,12 @@ species:
     identifier: HeiHeNo_43
     name: Hei He No.43
     origin: China, Hei Long Jiang
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.HeiHeNo_43.gnm1%22, %22loc%22: %22glyma.HeiHeNo_43.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.HeiHeNo_43.gnm1
   - accession: SoyC11
     accession_group: Liu, Du et al., 2020
     description: Cultivar Ji Dou No.17 (SoyC11 from China, He Bei, from Liu et al.
@@ -204,7 +994,12 @@ species:
     identifier: JiDouNo_17
     name: Ji Dou No.17
     origin: China, He Bei
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.JiDouNo_17.gnm1%22, %22loc%22: %22glyma.JiDouNo_17.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.JiDouNo_17.gnm1
   - accession: SoyC07
     accession_group: Liu, Du et al., 2020
     description: Cultivar Jin Dou No.23 (SoyC07 from China, Shan Xi, from Liu et al.
@@ -212,7 +1007,12 @@ species:
     identifier: JinDouNo_23
     name: Jin Dou No.23
     origin: China, Shan Xi
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.JinDouNo_23.gnm1%22, %22loc%22: %22glyma.JinDouNo_23.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.JinDouNo_23.gnm1
   - accession: SoyC03
     accession_group: Liu, Du et al., 2020
     description: Cultivar Ju Xuan No.23 (SoyC03 from China, Shan Dong, from Liu et
@@ -220,7 +1020,12 @@ species:
     identifier: JuXuanNo_23
     name: Ju Xuan No.23
     origin: China, Shan Dong
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.JuXuanNo_23.gnm1%22, %22loc%22: %22glyma.JuXuanNo_23.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.JuXuanNo_23.gnm1
   - accession: SoyC14
     accession_group: Liu, Du et al., 2020
     description: Cultivar Ke Shan No.1 (SoyC14 from China, Hei Long Jiang, from Liu
@@ -228,7 +1033,12 @@ species:
     identifier: KeShanNo_1
     name: Ke Shan No.1
     origin: China, Hei Long Jiang
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.KeShanNo_1.gnm1%22, %22loc%22: %22glyma.KeShanNo_1.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.KeShanNo_1.gnm1
   - accession: SoyL05
     accession_group: Liu, Du et al., 2020
     description: Landrace PI 398296 (SoyL05 from South Korea, Kyonggi, from Liu et
@@ -236,7 +1046,12 @@ species:
     identifier: PI_398296
     name: PI 398296
     origin: South Korea, Kyonggi
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.PI_398296.gnm1%22, %22loc%22: %22glyma.PI_398296.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.PI_398296.gnm1
   - accession: SoyC10
     accession_group: Liu, Du et al., 2020
     description: Cultivar PI 548362 (SoyC10 from United States, Illinois, from Liu
@@ -244,7 +1059,12 @@ species:
     identifier: PI_548362
     name: PI 548362
     origin: United States, Illinois
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.PI_548362.gnm1%22, %22loc%22: %22glyma.PI_548362.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.PI_548362.gnm1
   - accession: SoyC08
     accession_group: Liu, Du et al., 2020
     description: Cultivar Qi Huang No.34 (SoyC08 from China, Shan Dong, from Liu et
@@ -252,7 +1072,12 @@ species:
     identifier: QiHuangNo_34
     name: Qi Huang No.34
     origin: China, Shan Dong
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.QiHuangNo_34.gnm1%22, %22loc%22: %22glyma.QiHuangNo_34.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.QiHuangNo_34.gnm1
   - accession: SoyL09
     accession_group: Liu, Du et al., 2020
     description: Landrace Shi Sheng Chang Ye (SoyL09 from Japan, Hokkaido, from Liu
@@ -260,7 +1085,12 @@ species:
     identifier: ShiShengChangYe
     name: Shi Sheng Chang Ye
     origin: Japan, Hokkaido
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.ShiShengChangYe.gnm1%22, %22loc%22: %22glyma.ShiShengChangYe.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.ShiShengChangYe.gnm1
   - accession: SoyC02
     accession_group: Liu, Du et al., 2020
     description: Cultivar Tie Feng No.18 (SoyC02 from China, Hei Long Jiang, from
@@ -268,7 +1098,12 @@ species:
     identifier: TieFengNo_18
     name: Tie Feng No.18
     origin: China, Hei Long Jiang
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.TieFengNo_18.gnm1%22, %22loc%22: %22glyma.TieFengNo_18.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.TieFengNo_18.gnm1
   - accession: SoyL08
     accession_group: Liu, Du et al., 2020
     description: Landrace Tie Jia Si Li Huang (SoyL08 from China, Ji Lin, from Liu
@@ -276,7 +1111,12 @@ species:
     identifier: TieJiaSiLiHuang
     name: Tie Jia Si Li Huang
     origin: China, Ji Lin
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.TieJiaSiLiHuang.gnm1%22, %22loc%22: %22glyma.TieJiaSiLiHuang.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.TieJiaSiLiHuang.gnm1
   - accession: SoyL03
     accession_group: Liu, Du et al., 2020
     description: Landrace Tong Shan Tian E Dan (SoyL03 from China, Jiang Su, from
@@ -284,7 +1124,12 @@ species:
     identifier: TongShanTianEDan
     name: Tong Shan Tian E Dan
     origin: China, Jiang Su
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.TongShanTianEDan.gnm1%22, %22loc%22: %22glyma.TongShanTianEDan.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.TongShanTianEDan.gnm1
   - accession: SoyC04
     accession_group: Liu, Du et al., 2020
     description: Cultivar Wan Dou No.28 (SoyC04 from China, An Hui, from Liu et al.
@@ -292,7 +1137,12 @@ species:
     identifier: WanDouNo_28
     name: Wan Dou No.28
     origin: China, An Hui
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.WanDouNo_28.gnm1%22, %22loc%22: %22glyma.WanDouNo_28.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.WanDouNo_28.gnm1
   - accession: SoyC01
     accession_group: Liu, Du et al., 2020
     description: Cultivar Xu Dou No.1 (SoyC01 from China, Jiang Su, from Liu et al.
@@ -300,7 +1150,12 @@ species:
     identifier: XuDouNo_1
     name: Xu Dou No.1
     origin: China, Jiang Su
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.XuDouNo_1.gnm1%22, %22loc%22: %22glyma.XuDouNo_1.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.XuDouNo_1.gnm1
   - accession: SoyC06
     accession_group: Liu, Du et al., 2020
     description: Cultivar Yu Dou No.22 (SoyC06 from China, He Nan, from Liu et al.
@@ -308,7 +1163,12 @@ species:
     identifier: YuDouNo_22
     name: Yu Dou No.22
     origin: China, He Nan
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.YuDouNo_22.gnm1%22, %22loc%22: %22glyma.YuDouNo_22.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.YuDouNo_22.gnm1
   - accession: SoyL06
     accession_group: Liu, Du et al., 2020
     description: Landrace Chang Chun Man Cang Jin (SoyL06 from China, Ji Lin, from
@@ -316,14 +1176,24 @@ species:
     identifier: ZhangChunManCangJin
     name: Chang Chun Man Cang Jin
     origin: China, Ji Lin
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.ZhangChunManCangJin.gnm1%22, %22loc%22: %22glyma.ZhangChunManCangJin.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.ZhangChunManCangJin.gnm1
   - accession: SoyL01
     accession_group: Liu, Du et al., 2020
     description: Landrace Zhutwinning2 (SoyL01 from China, from Liu et al. 2020
     identifier: Zhutwinning2
     name: Zhutwinning2
     origin: China
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Zhutwinning2.gnm1%22, %22loc%22: %22glyma.Zhutwinning2.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Zhutwinning2.gnm1
   - accession: SoyL02
     accession_group: Liu, Du et al., 2020
     description: Landrace Zi Hua No.4 (SoyL02 from China, Hei Long Jiang, from Liu
@@ -331,14 +1201,24 @@ species:
     identifier: ZiHuaNo_4
     name: Zi Hua No.4
     origin: China, Hei Long Jiang
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.ZiHuaNo_4.gnm1%22, %22loc%22: %22glyma.ZiHuaNo_4.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.ZiHuaNo_4.gnm1
   - accession: Wm82_NJAU
     accession_group: null
     description: Williams 82 sequenced for T2T assembly of Wang, Zhang et al. 2023
     identifier: Wm82_NJAU
     name: Williams 82 Nanjing Agricultural University
     origin: Nanjing Agricultural University
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyma.Wm82_NJAU.gnm1%22, %22loc%22: %22glyma.Wm82_NJAU.gnm1.Gm01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyma.Wm82_NJAU.gnm1
   taxid: 3847
 - abbrev: glyso
   commonName: wild soybean
@@ -378,7 +1258,12 @@ species:
     identifier: PI483463
     name: PI 483463
     origin: Shanxi Province, China
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyso.PI483463.gnm1%22, %22loc%22: %22glyso.PI483463.gnm1.Gs01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyso.PI483463.gnm1
   - accession: W05
     accession_group: Xie, Chung et al., 2019
     description: Glycine soja accession W05 is a salt-tolerant wild soybean whose
@@ -388,7 +1273,12 @@ species:
     identifier: W05
     name: W05
     origin: Henan Province, China
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyso.W05.gnm1%22, %22loc%22: %22glyso.W05.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyso.W05.gnm1
   - accession: IGA1003
     accession_group: Chu, Peng et al., 2021
     description: This Glycine soja wild soybean accession was sequenced and annotated
@@ -396,7 +1286,12 @@ species:
     identifier: F_IGA1003
     name: GsojaF
     origin: National Wild Soybean Preservation Center, ICS, CAAS
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyso.F_IGA1003.gnm1%22, %22loc%22: %22glyso.F_IGA1003.gnm1.chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyso.F_IGA1003.gnm1
   - accession: SoyW02
     accession_group: Liu, Du et al., 2020
     description: Wild (G. soja) accession PI 549046 (SoyW02 from China, Shaan Xi,
@@ -404,7 +1299,12 @@ species:
     identifier: PI_549046
     name: PI 549046
     origin: China, Shaan Xi
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyso.PI_549046.gnm1%22, %22loc%22: %22glyso.PI_549046.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyso.PI_549046.gnm1
   - accession: SoyW01
     accession_group: Liu, Du et al., 2020
     description: Wild (G. soja) accession PI 562565 (SoyW01 from South Korea, Jeolla
@@ -412,7 +1312,12 @@ species:
     identifier: PI_562565
     name: PI 562565
     origin: South Korea, Jeolla Puk
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyso.PI_562565.gnm1%22, %22loc%22: %22glyso.PI_562565.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyso.PI_562565.gnm1
   - accession: SoyW03
     accession_group: Liu, Du et al., 2020
     description: Wild (G. soja) accession PI 578357 (SoyW03 from Russian Federation,
@@ -420,7 +1325,12 @@ species:
     identifier: PI_578357
     name: PI 578357
     origin: Russian Federation, Federation Amur
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyso.PI_578357.gnm1%22, %22loc%22: %22glyso.PI_578357.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyso.PI_578357.gnm1
   taxid: 3848
 - abbrev: glycy
   description: G. cyrotoloba (Tind) is a perennial plant with twining and stiff stems.
@@ -452,7 +1362,12 @@ species:
     identifier: G1267
     name: G. cyrotoloba
     origin: Australian coasts of Queensland and Northern New South Wales
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glycy.G1267.gnm1%22, %22loc%22: %22glycy.G1267.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glycy.G1267.gnm1
   taxid: 45689
 - abbrev: glydo
   description: Glycine dolichocarpa (Tateishi & Ohashi) is a twining plant with long
@@ -487,7 +1402,12 @@ species:
     identifier: G1134
     name: G. dolichocarpa
     origin: Queensland, Australia
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glydo.G1134.gnm1%22, %22loc%22: %22glydo.G1134.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glydo.G1134.gnm1
   taxid: 82538
 - abbrev: glyfa
   description: Glycine falcata (Benth.) is unique among perennial Glycine species
@@ -523,7 +1443,12 @@ species:
     identifier: G1718
     name: G. falcata
     origin: Queensland, Australia
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyfa.G1718.gnm1%22, %22loc%22: %22glyfa.G1718.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyfa.G1718.gnm1
   taxid: 45690
 - abbrev: glyst
   description: Glycine stenophita (B.E. Pfeil & Tind.) is a scrambling or climbing
@@ -556,7 +1481,12 @@ species:
     identifier: G1974
     name: G. stenophita (B.E. Pfeil & Tind.)
     origin: Australian states of Queensland and New South Wales
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyst.G1974.gnm1%22, %22loc%22: %22glyst.G1974.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyst.G1974.gnm1
   taxid: 96944
 - abbrev: glysy
   description: Glycine syndetika (B.E. Pfeil & Craven) is a twining perennial plant
@@ -591,7 +1521,12 @@ species:
     identifier: G1300
     name: G. syndetika (B.E. Pfeil & Craven)
     origin: Eastern Queensland region of Australia
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glysy.G1300.gnm1%22, %22loc%22: %22glysy.G1300.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glysy.G1300.gnm1
   taxid: 713886
 - abbrev: glyd3
   description: A complex of diploid and tetraploid taxa are lumped under the name
@@ -625,5 +1560,10 @@ species:
     identifier: G1403
     name: G1403
     origin: Australian state of Queensland and the eastern portion of Papua New Guinea
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22glyd3.G1403.gnm1%22, %22loc%22: %22glyd3.G1403.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 glyd3.G1403.gnm1
   taxid: 2908013

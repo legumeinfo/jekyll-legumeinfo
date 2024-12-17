@@ -23,5 +23,10 @@ species:
     identifier: CIAT22838
     name: CIAT22838
     origin: Malawi
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22aesev.CIAT22838.gnm1%22, %22loc%22: %22aesev.CIAT22838.gnm1.Ae01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 aesev.CIAT22838.gnm1
   taxid: 561484

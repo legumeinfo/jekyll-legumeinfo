@@ -21,14 +21,24 @@ species:
     identifier: Gyeongwon
     name: Gyeongwon
     origin: South Korea
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigan.Gyeongwon.gnm3%22, %22loc%22: %22vigan.Gyeongwon.gnm3.scaffold_2593:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigan.Gyeongwon.gnm3
   - accession: Shumari
     description: Adzuki bean cultivar Shumari was used to generate a genome assembly
       described in Sakai et al., 2015 (10.1038/srep16780).
     identifier: Shumari
     name: Shumari
     origin: Japan
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigan.Shumari.gnm1%22, %22loc%22: %22vigan.Shumari.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigan.Shumari.gnm1
   taxid: 3914
 - abbrev: vigra
   commonName: mungbean
@@ -55,7 +65,17 @@ species:
     identifier: VC1973A
     name: VC1973A
     origin: South Korea
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigra.VC1973A.gnm6%22, %22loc%22: %22vigra.VC1973A.gnm6.scaffold_2261:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigra.VC1973A.gnm6
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigra.VC1973A.gnm7%22, %22loc%22: %22vigra.VC1973A.gnm7.chr1:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigra.VC1973A.gnm7
   taxid: 157791
 - abbrev: vigun
   commonName: cowpea
@@ -83,7 +103,72 @@ species:
     identifier: IT97K-499-35
     name: IT97K-499-35
     origin: IITA, Nigeria
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.IT97K-499-35.gnm1%22, %22loc%22: %22vigun.IT97K-499-35.gnm1.Vu01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.IT97K-499-35.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.IT97K-499-35.gnm1%22, %22loc%22: %22vigun.IT97K-499-35.gnm1.Vu01:1-42129361%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22vigun.IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016.Flower%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.IT97K-499-35.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.IT97K-499-35.gnm1%22, %22loc%22: %22vigun.IT97K-499-35.gnm1.Vu01:1-42129361%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22vigun.IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016.Leaf%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.IT97K-499-35.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.IT97K-499-35.gnm1%22, %22loc%22: %22vigun.IT97K-499-35.gnm1.Vu01:1-42129361%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22vigun.IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016.Mix%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.IT97K-499-35.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.IT97K-499-35.gnm1%22, %22loc%22: %22vigun.IT97K-499-35.gnm1.Vu01:1-42129361%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22vigun.IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016.P10%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.IT97K-499-35.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.IT97K-499-35.gnm1%22, %22loc%22: %22vigun.IT97K-499-35.gnm1.Vu01:1-42129361%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22vigun.IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016.P16%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.IT97K-499-35.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.IT97K-499-35.gnm1%22, %22loc%22: %22vigun.IT97K-499-35.gnm1.Vu01:1-42129361%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22vigun.IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016.P6%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.IT97K-499-35.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.IT97K-499-35.gnm1%22, %22loc%22: %22vigun.IT97K-499-35.gnm1.Vu01:1-42129361%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22vigun.IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016.Root%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.IT97K-499-35.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.IT97K-499-35.gnm1%22, %22loc%22: %22vigun.IT97K-499-35.gnm1.Vu01:1-42129361%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22vigun.IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016.S10%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.IT97K-499-35.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.IT97K-499-35.gnm1%22, %22loc%22: %22vigun.IT97K-499-35.gnm1.Vu01:1-42129361%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22vigun.IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016.S14%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.IT97K-499-35.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.IT97K-499-35.gnm1%22, %22loc%22: %22vigun.IT97K-499-35.gnm1.Vu01:1-42129361%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22vigun.IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016.S18%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.IT97K-499-35.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.IT97K-499-35.gnm1%22, %22loc%22: %22vigun.IT97K-499-35.gnm1.Vu01:1-42129361%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22vigun.IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016.S8%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.IT97K-499-35.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.IT97K-499-35.gnm1%22, %22loc%22: %22vigun.IT97K-499-35.gnm1.Vu01:1-42129361%22,
+        %22type%22: %22LinearGenomeView%22, %22tracks%22: [%22vigun.IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016.Stem%22]}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.IT97K-499-35.gnm1
   - accession: CB5-2
     description: CB5-2 is a fully inbred stock that is closely related to CB5, which
       was the predominant Blackeye of the US Southwest for several decades. CB5 (Blackeye
@@ -93,14 +178,24 @@ species:
     identifier: CB5-2
     name: CB5-2
     origin: USA
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.CB5-2.gnm1%22, %22loc%22: %22vigun.CB5-2.gnm1.chr1:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.CB5-2.gnm1
   - accession: Sanzi
     description: Sanzi is an early flowering, small-seeded landrace from Ghana with
       resistance to flower bud thrips (Boukar et al. 2013).
     identifier: Sanzi
     name: Sanzi
     origin: Ghana
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.Sanzi.gnm1%22, %22loc%22: %22vigun.Sanzi.gnm1.chr1:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.Sanzi.gnm1
   - accession: PI 583259
     description: Suvita2, also known as Gorom Local (IITA accession TVu-15553, US
       NPGR PI 583259), is resistant to bruchids and some races of Striga, and is relatively
@@ -110,26 +205,46 @@ species:
     identifier: Suvita2
     name: Suvita2
     origin: Burkina Faso
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.Suvita2.gnm1%22, %22loc%22: %22vigun.Suvita2.gnm1.ScHs1Ai_1000:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.Suvita2.gnm1
   - accession: TZ30
     description: Elite longbean accession from the Asian sub-population, representing
       the sesquipedalis cultivar group.
     identifier: TZ30
     name: TZ30
     origin: Asia
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.TZ30.gnm1%22, %22loc%22: %22vigun.TZ30.gnm1.ScZkXgn_1000:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.TZ30.gnm1
   - accession: PI 583014
     description: UCR779 (PI 583014) is a landrace from Botswana, provided to UC Riverside
       as BOTS 19A in 1987 by CJ DeMooy of Colorado State University.
     identifier: UCR779
     name: UCR779
     origin: Botswana
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.UCR779.gnm1%22, %22loc%22: %22vigun.UCR779.gnm1.ScLaWXF_10000:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.UCR779.gnm1
   - accession: ZN016
     description: Landrace longbean accession from the Asian sub-population, representing
       the sesquipedalis culitvar group.
     identifier: ZN016
     name: ZN016
     origin: Asia
-    resources: []
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigun.ZN016.gnm1%22, %22loc%22: %22vigun.ZN016.gnm1.ScQz0zL_1000:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigun.ZN016.gnm1
   taxid: 3917
