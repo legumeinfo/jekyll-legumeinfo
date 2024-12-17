@@ -48,46 +48,6 @@ species:
     - URL: https://www.peanutbase.org/tools/sequenceserver/
       description: SequenceServer BLAST against the Tifrunner v2 assembly
       name: LIS SequenceServer
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22arahy.Tifrunner.gnm2%22, %22loc%22: %22arahy.Tifrunner.gnm2.chr01:1-112420854%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 arahy.Tifrunner.gnm2
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22arahy.Tifrunner.gnm1%22, %22loc%22: %22arahy.Tifrunner.gnm1.Arahy.01:1-112420854%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 arahy.Tifrunner.gnm1
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22type%22: %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.Tifrunner.gnm2%22},
-        {%22assembly%22: %22aradu.V14167.gnm2%22}], %22tracks%22: [%22arahy.Tifrunner.gnm2.x.aradu.V14167.gnm2.DWM1.paf%22]}]}'
-      description: JBrowse2 Dotplot View
-      name: JBrowse2 arahy.Tifrunner.gnm2.x.aradu.V14167.gnm2.DWM1.paf.gz
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22type%22: %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.Tifrunner.gnm2%22},
-        {%22assembly%22: %22arahy.Shitouqi.gnm1%22}], %22tracks%22: [%22arahy.Tifrunner.gnm2.x.arahy.Shitouqi.gnm1.DWM1.paf%22]}]}'
-      description: JBrowse2 Dotplot View
-      name: JBrowse2 arahy.Tifrunner.gnm2.x.arahy.Shitouqi.gnm1.DWM1.paf.gz
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22type%22: %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.Tifrunner.gnm2%22},
-        {%22assembly%22: %22araip.K30076.gnm2%22}], %22tracks%22: [%22arahy.Tifrunner.gnm2.x.araip.K30076.gnm2.DWM1.paf%22]}]}'
-      description: JBrowse2 Dotplot View
-      name: JBrowse2 arahy.Tifrunner.gnm2.x.araip.K30076.gnm2.DWM1.paf.gz
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22type%22: %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.Tifrunner.gnm2%22},
-        {%22assembly%22: %22arahy.Tifrunner.gnm1%22}], %22tracks%22: [%22arahy.Tifrunner.gnm2.x.arahy.Tifrunner.gnm1.DWM1.paf%22]}]}'
-      description: JBrowse2 Dotplot View
-      name: JBrowse2 arahy.Tifrunner.gnm2.x.arahy.Tifrunner.gnm1.DWM1.paf.gz
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22type%22: %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.Tifrunner.gnm2%22},
-        {%22assembly%22: %22arahy.BaileyII.gnm1%22}], %22tracks%22: [%22arahy.Tifrunner.gnm2.x.arahy.BaileyII.gnm1.DWM1.paf%22]}]}'
-      description: JBrowse2 Dotplot View
-      name: JBrowse2 arahy.Tifrunner.gnm2.x.arahy.BaileyII.gnm1.DWM1.paf.gz
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22type%22: %22DotplotView%22, %22views%22: [{%22assembly%22: %22arahy.Tifrunner.gnm2%22},
-        {%22assembly%22: %22arahy.Fuhuasheng.gnm1%22}], %22tracks%22: [%22arahy.Tifrunner.gnm2.x.arahy.Fuhuasheng.gnm1.DWM1.paf%22]}]}'
-      description: JBrowse2 Dotplot View
-      name: JBrowse2 arahy.Tifrunner.gnm2.x.arahy.Fuhuasheng.gnm1.DWM1.paf.gz
   - accession: GH00910
     description: "The mid-twentieth century landrace Fuhuasheng, from North China,\
       \ is a widely used parent from which \u223C70% of Chinese peanut cultivars released\
@@ -95,12 +55,7 @@ species:
     identifier: Fuhuasheng
     name: Fuhuasheng
     origin: North China
-    resources:
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22arahy.Fuhuasheng.gnm1%22, %22loc%22: %22arahy.Fuhuasheng.gnm1.chr01:1-111889318%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 arahy.Fuhuasheng.gnm1
+    resources: []
   - accession: zh.h0235
     description: Arachis hypogaea var. Shitouqi (zh.h0235), the most widely cultivated
       peanut ecotype in the world, is a Chinese cultivar and breeding parent belonging
@@ -109,12 +64,7 @@ species:
     identifier: Shitouqi
     name: Shitouqi
     origin: China
-    resources:
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22arahy.Shitouqi.gnm1%22, %22loc%22: %22arahy.Shitouqi.gnm1.chr01:1-111624253%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 arahy.Shitouqi.gnm1
+    resources: []
   - accession: BaileyII
     description: Virginia-type peanut cultivar developed by NCSU breeding program.
       Bailey II is a near-isogenic line to Bailey, possessing high-oleic trait and
@@ -122,12 +72,7 @@ species:
     identifier: BaileyII
     name: Bailey II
     origin: Southeast US
-    resources:
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22arahy.BaileyII.gnm1%22, %22loc%22: %22arahy.BaileyII.gnm1.chr01:1-112592960%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 arahy.BaileyII.gnm1
+    resources: []
   taxid: 3818
 - abbrev: aradu
   commonName: diploid wild peanut - A-genome
@@ -148,10 +93,6 @@ species:
     by domestication in South America from where it appeared in most part of the world
     by 1600. Arachis duranensis is described further in Bertioli et al., 2016 (doi:10.1038/ng.3517)'
   genus: Arachis
-  resources:
-  - URL: https://data.legumeinfo.org/Arachis/duranensis/
-    description: DataStore dir for Arachis duranensis.
-    name: Dowload at DS
   species: duranensis
   strains:
   - accession: V14167
@@ -165,34 +106,49 @@ species:
     name: V14167
     origin: Argentina, via USDA National Plant Germplasm Repository
     resources:
-    - URL: http://www.ncbi.nlm.nih.gov/assembly/GCA_000817695.1/
+    - URL: https://data.legumeinfo.org/Arachis/duranensis/
+      description: DataStore directory for Arachis duranensis.
+      name: Download at Data Store
+    - URL: https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000817695.3/
       description: Genome assembly at NCBI, V14167
       name: Genome assembly at NCBI
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22aradu.V14167.gnm2%22, %22loc%22: %22aradu.V14167.gnm2.chr01:1-106063421%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 aradu.V14167.gnm2
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22aradu.V14167.gnm1%22, %22loc%22: %22aradu.V14167.gnm1.Aradu.A01:1-107035537%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 aradu.V14167.gnm1
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22type%22: %22DotplotView%22, %22views%22: [{%22assembly%22: %22aradu.V14167.gnm2%22},
-        {%22assembly%22: %22araip.K30076.gnm2%22}], %22tracks%22: [%22aradu.V14167.gnm2.x.araip.K30076.gnm2.96TT.paf%22]}]}'
-      description: JBrowse2 Dotplot View
-      name: JBrowse2 aradu.V14167.gnm2.x.araip.K30076.gnm2.96TT.paf.gz
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22type%22: %22DotplotView%22, %22views%22: [{%22assembly%22: %22aradu.V14167.gnm2%22},
-        {%22assembly%22: %22arast.V10309.gnm1%22}], %22tracks%22: [%22aradu.V14167.gnm2.x.arast.V10309.gnm1.96TT.paf%22]}]}'
-      description: JBrowse2 Dotplot View
-      name: JBrowse2 aradu.V14167.gnm2.x.arast.V10309.gnm1.96TT.paf.gz
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22type%22: %22DotplotView%22, %22views%22: [{%22assembly%22: %22aradu.V14167.gnm2%22},
-        {%22assembly%22: %22araca.K10017.gnm1%22}], %22tracks%22: [%22aradu.V14167.gnm2.x.araca.K10017.gnm1.96TT.paf%22]}]}'
-      description: JBrowse2 Dotplot View
-      name: JBrowse2 aradu.V14167.gnm2.x.araca.K10017.gnm1.96TT.paf.gz
+  - accession: K30060
+    description: Arachis duranensis Krapov. & W.C. Greg is a wild peanut relative
+      native to Argentina, Bolivia, and Paraguay. Identified as one of the diploid
+      ancestors of cultivated tetraploid peanut (A. hypogaea), contributing the A-genome
+      to the tetraploid species. Accession K30060 is one of the closest identified
+      to A. hypogaea. It was originally collected from 1km North of Rio Perico, on
+      highway to Jujuy airport (El Cadillal), Argentina; seed multiplied and maintained
+      by USDA since then. This accession was sequenced with PacBio long reads, with
+      contributions by USDA-ARS and researchers at Mars Inc. and the University of
+      Georgia.
+    identifier: K30060
+    name: K30060
+    origin: Argentina, via USDA National Plant Germplasm Repository
+    resources:
+    - URL: https://data.legumeinfo.org/Arachis/duranensis/
+      description: DataStore directory for Arachis duranensis.
+      name: Download at Data Store
+    - URL: http://www.ncbi.nlm.nih.gov/assembly/GCA_000817695.1/
+      description: Genome assembly at NCBI, K30060
+      name: Genome assembly at NCBI
+  - accession: K30065
+    description: Arachis duranensis is a wild annual plant native to Argentina, Bolivia,
+      and Paraguay. It is thought to be one of the diploid ancestors of cultivated
+      tetraploid peanut. Accession K30065 was collected from northern Argentina, from
+      the Banks of Bio Seco at Hwy 81 bridge, 3km SE of Senda Hachada, Salta. This
+      accession was sequenced with PacBio long reads, with contributions by USDA-ARS
+      and researchers at Mars Inc. and the University of Georgia.
+    identifier: K30065
+    name: K30065
+    origin: Argentina, via USDA National Plant Germplasm Repository
+    resources:
+    - URL: https://data.legumeinfo.org/Arachis/duranensis/
+      description: DataStore directory for Arachis duranensis.
+      name: Download at Data Store
+    - URL: https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_014805325.1/
+      description: Genome assembly at NCBI, K30065
+      name: Genome assembly at NCBI
   taxid: 130453
 - abbrev: araip
   commonName: diploid wild peanut - B genome
@@ -225,16 +181,6 @@ species:
     - URL: http://www.ncbi.nlm.nih.gov/assembly/GCA_000816755.1/
       description: Genome assembly at NCBI, K30076
       name: Genome assembly at NCBI
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22araip.K30076.gnm2%22, %22loc%22: %22araip.K30076.gnm2.chr01:1-149405250%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 araip.K30076.gnm2
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22araip.K30076.gnm1%22, %22loc%22: %22araip.K30076.gnm1.Araip.B01:1-137414913%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 araip.K30076.gnm1
   taxid: 130454
 - abbrev: araca
   commonName: Mani silvestre (wild peanut)
@@ -257,12 +203,7 @@ species:
     identifier: K10017
     name: GKP10017
     origin: Robore, Bolivia
-    resources:
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22araca.K10017.gnm1%22, %22loc%22: %22araca.K10017.gnm1.chr01:1-107502730%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 araca.K10017.gnm1
+    resources: []
   taxid: 51121
 - abbrev: arast
   commonName: Amendoim silvestre (wild peanut)
@@ -287,10 +228,5 @@ species:
     identifier: V10309
     name: V10309
     origin: Brazil
-    resources:
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22arast.V10309.gnm1%22, %22loc%22: %22arast.V10309.gnm1.chr01:1-136273344%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 arast.V10309.gnm1
+    resources: []
   taxid: 217475

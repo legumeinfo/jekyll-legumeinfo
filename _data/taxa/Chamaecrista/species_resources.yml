@@ -15,4 +15,14 @@ species:
     identifier: MN87
     name: MN87
     origin: Toulouse, France
+    resources: []
+  - accession: ISC494698
+    description: This release is from a an accession from Ames, Iowa, registered as
+      accession ISC494698. This accession derived originally from a population on
+      the west side of Minneapolis, Minnesota. The resulting genome assembly was resolved
+      into two haplotype assemblies.
+    identifier: ISC494698
+    name: ISC494698
+    origin: Ames, Iowa; population derived from one from Minneapolis, Minnesota
+    resources: []
   taxid: 53854

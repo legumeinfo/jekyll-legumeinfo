@@ -20,7 +20,7 @@ resources:
   description: Browser for dynamically discovering and viewing genomic synteny across
     selected species.
   name: Genome Context Viewer
-- URL: https://soybase.org/grindata/
+- URL: https://legacy.soybase.org/grindata/
   description: Tool to facilitate searches of GRIN Descriptor Data
   name: Grin Data Explorer
 - URL: /projects/zhuang_wang_2022

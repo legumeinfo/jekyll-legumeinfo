@@ -2,349 +2,365 @@
 species:
 - name: max
   genomes:
-    - collection: ZiHuaNo_4.gnm1.HN60
-      synopsis: "Genome assembly for Glycine max accession ZiHuaNo_4 (SoyL02) from Liu, Du et al. 2020."
-    - collection: Wm82.gnm5.NRKG
-      synopsis: "Glycine max accession Williams 82 (Wm82), genome assembly 5"
-    - collection: JinDouNo_23.gnm1.GBYD
-      synopsis: "Genome assembly for Glycine max accession JinDouNo_23 (SoyC07) from Liu, Du et al. 2020."
-    - collection: JuXuanNo_23.gnm1.WC57
-      synopsis: "Genome assembly for Glycine max accession JuXuanNo_23 (SoyC03) from Liu, Du et al. 2020."
-    - collection: Lee.gnm1.BXNC
-      synopsis: "Genome assembly"
-    - collection: TieJiaSiLiHuang.gnm1.W9PV
-      synopsis: "Genome assembly for Glycine max accession TieJiaSiLiHuang (SoyL08) from Liu, Du et al. 2020."
     - collection: 58-161.gnm1.BW8J
-      synopsis: "Genome assembly for Glycine max accession 58-161 (SoyL04) from Liu, Du et al. 2020."
-    - collection: XuDouNo_1.gnm1.0GWH
-      synopsis: "Genome assembly for Glycine max accession XuDouNo_1 (SoyC01) from Liu, Du et al. 2020."
-    - collection: PI_548362.gnm1.V9S7
-      synopsis: "Genome assembly for Glycine max accession PI_548362 (SoyC10) from Liu, Du et al. 2020."
-    - collection: Lee.gnm3.VG1C
-      synopsis: "Glycine max accession Lee, genome assembly 3"
-    - collection: Zhutwinning2.gnm1.GR6N
-      synopsis: "Genome assembly for Glycine max accession Zhutwinning2 (SoyL01) from Liu, Du et al. 2020."
-    - collection: FengDiHuang.gnm1.YYLM
-      synopsis: "Genome assembly for Glycine max accession FengDiHuang (SoyL07) from Liu, Du et al. 2020."
-    - collection: Wm82.gnm4.4PTR
-      synopsis: "Glycine max accession Williams 82 genome assembly v4.0"
-    - collection: JiDouNo_17.gnm1.MRYM
-      synopsis: "Genome assembly for Glycine max accession JiDouNo_17 (SoyC11) from Liu, Du et al. 2020."
-    - collection: Zh13.gnm1.N6C8
-      synopsis: "Genome assembly files for cultivar Zhonghuang 13, Shen et al. (2018)"
-    - collection: HanDouNo_5.gnm1.11MF
-      synopsis: "Genome assembly for Glycine max accession HanDouNo_5 (SoyC09) from Liu, Du et al. 2020."
-    - collection: QiHuangNo_34.gnm1.MB9G
-      synopsis: "Genome assembly for Glycine max accession QiHuangNo_34 (SoyC08) from Liu, Du et al. 2020."
-    - collection: Huaxia3_IGA1007.gnm1.RGGN
-      synopsis: "Genome assembly files for cultivar Huaxia3 (Huaxia3_IGA1007 in publication; WHFS_GmHX3_1.0 in the GenBank assembly record), Chu et al. (2021)"
-    - collection: Jinyuan_IGA1006.gnm1.LXM0
-      synopsis: "Genome assembly files for cultivar Jinyuan (Jinyuan_IGA100 in the publication; 6HFS_GmJY_1.0 in the GenBank assembly record), Chu et al. (2021)"
-    - collection: HeiHeNo_43.gnm1.FV4H
-      synopsis: "Genome assembly for Glycine max accession HeiHeNo_43 (SoyC13) from Liu, Du et al. 2020."
-    - collection: ZhangChunManCangJin.gnm1.FC4Q
-      synopsis: "Genome assembly for Glycine max accession ZhangChunManCangJin (SoyL06) from Liu, Du et al. 2020."
-    - collection: Zh13.gnm2.LV9P
-      synopsis: "Genome assembly version 2 files for cultivar Zhonghuang 13, Shen et al. (2019)"
-    - collection: TieFengNo_18.gnm1.BW65
-      synopsis: "Genome assembly for Glycine max accession TieFengNo_18 (SoyC02) from Liu, Du et al. 2020."
-    - collection: Wm82_NJAU.gnm1.N4GV
-      synopsis: "Glycine max accession Williams 82 from Nanjing Agricultural University (Wm82-NJAU), genome assebly v1"
-    - collection: PI_398296.gnm1.D07C
-      synopsis: "Genome assembly for Glycine max accession PI_398296 (SoyL05) from Liu, Du et al. 2020."
-    - collection: WanDouNo_28.gnm1.ZRP2
-      synopsis: "Genome assembly for Glycine max accession WanDouNo_28 (SoyC04) from Liu, Du et al. 2020."
-    - collection: Zh35_IGA1004.gnm1.DBYJ
-      synopsis: "Genome assembly files for cultivar Zhonghuang 35 (Zh35_IGA1004 in publication; WHFS_GmZH35_1.0 in the GenBank assembly record), Chu et al. (2021)"
-    - collection: Wm82_IGA1008.gnm1.5CQQ
-      synopsis: "Genome assembly files for cultivar Williams 82 (Wm82_IGA1008 in publication; WHFS_GmW82_1.0 in the GenBank assembly record), Chu et al. (2021)"
+      synopsis: "Genome assembly for Glycine max accession 58-161 (SoyL04)"
     - collection: Amsoy.gnm1.TYYG
-      synopsis: "Genome assembly for Glycine max accession Amsoy (SoyC05) from Liu, Du et al. 2020."
-    - collection: Wm82.gnm1.FCtY
-      synopsis: "Glycine max accession Williams genome assembly v1.0"
-    - collection: KeShanNo_1.gnm1.3TDD
-      synopsis: "Genome assembly for Glycine max accession KeShanNo_1 (SoyC14) from Liu, Du et al. 2020."
-    - collection: Lee.gnm2.K7BV
-      synopsis: "Glycine max genotype Lee genome assembly v2.0"
-    - collection: Wm82_ISU01.gnm2.JFPQ
-      synopsis: "Glycine max accession Williams 82 ISU01, genome assembly v2"
-    - collection: YuDouNo_22.gnm1.T2VD
-      synopsis: "Genome assembly for Glycine max accession YuDouNo_22 (SoyC06) from Liu, Du et al. 2020."
-    - collection: Wenfeng7_IGA1001.gnm1.L0QH
-      synopsis: "Genome assembly files for cultivar Wenfeng 7 (Wenfeng7_IGA1001 in publication; WHFS_GmWF7_1.0 in the GenBank assembly record); Chu et al. (2021)"
-    - collection: JD17.gnm1.TW7L
-      synopsis: "Glycine max accession Jidou 17 (JD17), genome assembly 1"
-    - collection: TongShanTianEDan.gnm1.B4R6
-      synopsis: "Genome assembly for Glycine max accession TongShanTianEDan (SoyL03) from Liu, Du et al. 2020."
-    - collection: FiskebyIII.gnm1.F177
-      synopsis: "Glycine max genotype Fiskeby III genome assembly v1.0"
+      synopsis: "Genome assembly for Glycine max accession Amsoy (SoyC05)"
     - collection: DongNongNo_50.gnm1.XRTN
-      synopsis: "Genome assembly for Glycine max accession DongNongNo_50 (SoyC12) from Liu, Du et al. 2020."
-    - collection: Wm82.gnm2.DTC4
-      synopsis: "Glycine max accession Williams 82 genome assembly v2.0"
+      synopsis: "Genome assembly for Glycine max accession DongNongNo_50 (SoyC12)"
+    - collection: FengDiHuang.gnm1.YYLM
+      synopsis: "Genome assembly for Glycine max accession FengDiHuang (SoyL07)"
+    - collection: FiskebyIII.gnm1.F177
+      synopsis: "Glycine max genotype Fiskeby III genome assembly 1; JGI name Fiskeby v1.1"
+    - collection: HanDouNo_5.gnm1.11MF
+      synopsis: "Genome assembly for Glycine max accession HanDouNo_5 (SoyC09)"
+    - collection: Hefeng25_IGA1002.gnm1.L69T
+      synopsis: "Genome assembly files for cultivar Hefeng 25 (Hefeng25_IGA1002 in publication; WHFS_GmHF25_1.0 in the GenBank assembly record)"
+    - collection: HeiHeNo_43.gnm1.FV4H
+      synopsis: "Genome assembly for Glycine max accession HeiHeNo_43 (SoyC13)"
+    - collection: Huaxia3_IGA1007.gnm1.RGGN
+      synopsis: "Genome assembly files for cultivar Huaxia3 (Huaxia3_IGA1007 in publication; WHFS_GmHX3_1.0 in the GenBank assembly record)"
     - collection: Hwangkeum.gnm1.4S83
       synopsis: "Glycine max genotype Hwangkeum genome assembly v1.0"
-    - collection: Hefeng25_IGA1002.gnm1.L69T
-      synopsis: "Genome assembly files for cultivar Hefeng 25 (Hefeng25_IGA1002 in publication; WHFS_GmHF25_1.0 in the GenBank assembly record), Chu et al. (2021)"
+    - collection: JD17.gnm1.TW7L
+      synopsis: "Glycine max accession Jidou 17 (JD17), genome assembly 1"
+    - collection: JiDouNo_17.gnm1.MRYM
+      synopsis: "Genome assembly for Glycine max accession JiDouNo_17 (SoyC11)"
+    - collection: JinDouNo_23.gnm1.GBYD
+      synopsis: "Genome assembly for Glycine max accession JinDouNo_23 (SoyC07)"
+    - collection: Jinyuan_IGA1006.gnm1.LXM0
+      synopsis: "Genome assembly files for cultivar Jinyuan (Jinyuan_IGA100 in the publication; 6HFS_GmJY_1.0 in the GenBank assembly record)"
+    - collection: JuXuanNo_23.gnm1.WC57
+      synopsis: "Genome assembly for Glycine max accession JuXuanNo_23 (SoyC03)"
+    - collection: KeShanNo_1.gnm1.3TDD
+      synopsis: "Genome assembly for Glycine max accession KeShanNo_1 (SoyC14)"
+    - collection: Lee.gnm1.BXNC
+      synopsis: "Glycine max accession Lee Genome assembly 1; JGI name Lee v1.1"
+    - collection: Lee.gnm2.K7BV
+      synopsis: "Glycine max genotype Lee genome assembly v2.0"
+    - collection: Lee.gnm3.VG1C
+      synopsis: "Glycine max accession Lee, genome assembly 3"
+    - collection: PI_398296.gnm1.D07C
+      synopsis: "Genome assembly for Glycine max accession PI_398296 (SoyL05)"
+    - collection: PI_548362.gnm1.V9S7
+      synopsis: "Genome assembly for Glycine max accession PI_548362 (SoyC10)"
+    - collection: QiHuangNo_34.gnm1.MB9G
+      synopsis: "Genome assembly for Glycine max accession QiHuangNo_34 (SoyC08)"
     - collection: ShiShengChangYe.gnm1.MC01
-      synopsis: "Genome assembly for Glycine max accession ShiShengChangYe (SoyL09) from Liu, Du et al. 2020."
+      synopsis: "Genome assembly for Glycine max accession ShiShengChangYe (SoyL09)"
+    - collection: TieFengNo_18.gnm1.BW65
+      synopsis: "Genome assembly for Glycine max accession TieFengNo_18 (SoyC02)"
+    - collection: TieJiaSiLiHuang.gnm1.W9PV
+      synopsis: "Genome assembly for Glycine max accession TieJiaSiLiHuang (SoyL08)"
+    - collection: TongShanTianEDan.gnm1.B4R6
+      synopsis: "Genome assembly for Glycine max accession TongShanTianEDan (SoyL03)"
+    - collection: WanDouNo_28.gnm1.ZRP2
+      synopsis: "Genome assembly for Glycine max accession WanDouNo_28 (SoyC04)"
+    - collection: Wenfeng7_IGA1001.gnm1.L0QH
+      synopsis: "Genome assembly files for cultivar Wenfeng 7 (Wenfeng7_IGA1001 in publication; WHFS_GmWF7_1.0 in the GenBank assembly record); Chu et al. (2021)"
+    - collection: Wm82.gnm1.FCtY
+      synopsis: "Glycine max accession Williams genome assembly v1.0; JGI name Glycine max v1.1"
+    - collection: Wm82.gnm2.DTC4
+      synopsis: "Glycine max accession Williams 82 genome assembly v2.0; JGI name Wm82.a2.v1"
+    - collection: Wm82.gnm4.4PTR
+      synopsis: "Glycine max accession Williams 82 genome assembly v4.0; JGI name Wm82.a4.v1"
+    - collection: Wm82.gnm5.NRKG
+      synopsis: "Glycine max accession Williams 82 (Wm82), genome assembly 5"
+    - collection: Wm82.gnm6.S97D
+      synopsis: "Glycine max accession Williams 82 (ISU01) genome assembly v6; renamed from Wm82 ISU-01 v2.1; JGI name Wm82.a6.v1"
+    - collection: Wm82_IGA1008.gnm1.5CQQ
+      synopsis: "Genome assembly files for cultivar Williams 82 (Wm82_IGA1008 in publication; WHFS_GmW82_1.0 in the GenBank assembly record)"
+    - collection: Wm82_NJAU.gnm1.N4GV
+      synopsis: "Glycine max accession Williams 82 from Nanjing Agricultural University (Wm82-NJAU), genome assebly v1"
+    - collection: XuDouNo_1.gnm1.0GWH
+      synopsis: "Genome assembly for Glycine max accession XuDouNo_1 (SoyC01)"
+    - collection: YuDouNo_22.gnm1.T2VD
+      synopsis: "Genome assembly for Glycine max accession YuDouNo_22 (SoyC06)"
+    - collection: Zh13.gnm1.N6C8
+      synopsis: "Genome assembly files for cultivar Zhonghuang 13, Shen et al. (2018)"
+    - collection: Zh13.gnm2.LV9P
+      synopsis: "Genome assembly version 2 files for cultivar Zhonghuang 13, Shen et al. (2019)"
     - collection: Zh13_IGA1005.gnm1.FRXQ
-      synopsis: "Genome assembly files for cultivar Zhonghuang 13 (Zh13_IGA1005 in publication; WHFS_GmZH13_1.0 in the GenBank assembly record), Chu et al. (2021)"
+      synopsis: "Genome assembly files for cultivar Zhonghuang 13 (Zh13_IGA1005 in publication; WHFS_GmZH13_1.0 in the GenBank assembly record)"
+    - collection: Zh35_IGA1004.gnm1.DBYJ
+      synopsis: "Genome assembly files for cultivar Zhonghuang 35 (Zh35_IGA1004 in publication; WHFS_GmZH35_1.0 in the GenBank assembly record)"
+    - collection: ZhangChunManCangJin.gnm1.FC4Q
+      synopsis: "Genome assembly for Glycine max accession ZhangChunManCangJin (SoyL06)"
+    - collection: Zhutwinning2.gnm1.GR6N
+      synopsis: "Genome assembly for Glycine max accession Zhutwinning2 (SoyL01)"
+    - collection: ZiHuaNo_4.gnm1.HN60
+      synopsis: "Genome assembly for Glycine max accession ZiHuaNo_4 (SoyL02)"
   annotations:
-    - collection: TieFengNo_18.gnm1.ann1.7GR4
-      synopsis: "Gene annotations for Glycine max accession TieFengNo_18 (SoyC02) from Liu, Du et al. 2020."
-    - collection: JinDouNo_23.gnm1.ann1.SGJW
-      synopsis: "Gene annotations for Glycine max accession JinDouNo_23 (SoyC07) from Liu, Du et al. 2020."
-    - collection: Zh35_IGA1004.gnm1.ann1.RGN6
-      synopsis: "Genome annotation files for cultivar Zhonghuang 35,  Chu et al. (2021)"
-    - collection: Zhutwinning2.gnm1.ann1.ZTTQ
-      synopsis: "Gene annotations for Glycine max accession Zhutwinning2 (SoyL01) from Liu, Du et al. 2020."
-    - collection: YuDouNo_22.gnm1.ann1.HCQ1
-      synopsis: "Gene annotations for Glycine max accession YuDouNo_22 (SoyC06) from Liu, Du et al. 2020."
-    - collection: Wm82.gnm5.ann1.J7HW
-      synopsis: "Annotation 1 for Glycine max accession Williams 82 (Wm82), genome assembly 5"
-    - collection: Wm82.gnm4.ann1.T8TQ
-      synopsis: "Glycine max accession Williams genome annotation files; JGI annotation version 1 on assembly 4"
+    - collection: 58-161.gnm1.ann1.HJ1K
+      synopsis: "Gene annotations for Glycine max accession 58-161 (SoyL04)"
+    - collection: Amsoy.gnm1.ann1.6S5P
+      synopsis: "Gene annotations for Glycine max accession Amsoy (SoyC05)"
+    - collection: DongNongNo_50.gnm1.ann1.QSDB
+      synopsis: "Gene annotations for Glycine max accession DongNongNo_50 (SoyC12)"
+    - collection: FengDiHuang.gnm1.ann1.P6HL
+      synopsis: "Gene annotations for Glycine max accession FengDiHuang (SoyL07)"
+    - collection: FiskebyIII.gnm1.ann1.SS25
+      synopsis: "Genome annotation files for Glycine max genotype Fiskeby III, Stupar et al. (2020); JGI name Fiskeby v1.1"
+    - collection: HanDouNo_5.gnm1.ann1.ZS7M
+      synopsis: "Gene annotations for Glycine max accession HanDouNo_5 (SoyC09)"
     - collection: Hefeng25_IGA1002.gnm1.ann1.320V
       synopsis: "Genome annotation files for cultivar Hefeng 25, Chu et al (2021)"
-    - collection: FengDiHuang.gnm1.ann1.P6HL
-      synopsis: "Gene annotations for Glycine max accession FengDiHuang (SoyL07) from Liu, Du et al. 2020."
-    - collection: XuDouNo_1.gnm1.ann1.G2T7
-      synopsis: "Gene annotations for Glycine max accession XuDouNo_1 (SoyC01) from Liu, Du et al. 2020."
-    - collection: TieJiaSiLiHuang.gnm1.ann1.W70Z
-      synopsis: "Gene annotations for Glycine max accession TieJiaSiLiHuang (SoyL08) from Liu, Du et al. 2020."
-    - collection: Wm82_NJAU.gnm1.ann1.KM71
-      synopsis: "Annotation 1 for Glycine max accession Williams 82 from Nanjing Agricultural University (Wm82-NJAU), genome assembly v1"
-    - collection: ZiHuaNo_4.gnm1.ann1.FCFQ
-      synopsis: "Gene annotations for Glycine max accession ZiHuaNo_4 (SoyL02) from Liu, Du et al. 2020."
-    - collection: ZhangChunManCangJin.gnm1.ann1.7HPB
-      synopsis: "Gene annotations for Glycine max accession ZhangChunManCangJin (SoyL06) from Liu, Du et al. 2020."
-    - collection: QiHuangNo_34.gnm1.ann1.WHRV
-      synopsis: "Gene annotations for Glycine max accession QiHuangNo_34 (SoyC08) from Liu, Du et al. 2020."
-    - collection: JD17.gnm1.ann1.CLFP
-      synopsis: "Annotation 1 for Glycine max accession Jidou 17 (JD17), genome assembly 1"
-    - collection: WanDouNo_28.gnm1.ann1.NLYP
-      synopsis: "Gene annotations for Glycine max accession WanDouNo_28 (SoyC04) from Liu, Du et al. 2020."
+    - collection: HeiHeNo_43.gnm1.ann1.PDXG
+      synopsis: "Gene annotations for Glycine max accession HeiHeNo_43 (SoyC13)"
+    - collection: Huaxia3_IGA1007.gnm1.ann1.LKC7
+      synopsis: "Genome annotation files for cultivar Huaxia3"
     - collection: Hwangkeum.gnm1.ann1.1G4F
       synopsis: "Genome annotation files for Glycine max genotype Hwangkeum, Kim et al. (2021)"
-    - collection: FiskebyIII.gnm1.ann1.SS25
-      synopsis: "Genome annotation files for Glycine max genotype Fiskeby III, Stupar et al. (2020)"
-    - collection: Lee.gnm1.ann1.6NZV
-      synopsis: "Glycine max accession Lee genome annotation files; JGI annotation version 1 on assembly version 1"
-    - collection: Amsoy.gnm1.ann1.6S5P
-      synopsis: "Gene annotations for Glycine max accession Amsoy (SoyC05) from Liu, Du et al. 2020."
-    - collection: Wm82.gnm1.ann1.DvBy
-      synopsis: "Glycine max accession Williams genome annotation files"
-    - collection: Zh13.gnm1.ann1.8VV3
-      synopsis: "Genome annotation files for cultivar Zhonghuang 13, Shen et al. (2018)"
-    - collection: Jinyuan_IGA1006.gnm1.ann1.2NNX
-      synopsis: "Genome annotation files for cultivar Jinyuan, Chu et al. (2021)"
-    - collection: 58-161.gnm1.ann1.HJ1K
-      synopsis: "Gene annotations for Glycine max accession 58-161 (SoyL04) from Liu, Du et al. 2020."
-    - collection: Wm82.gnm2.ann1.RVB6
-      synopsis: "Glycine max accession Williams genome annotation files; JGI annotation version 1 on assembly 2"
+    - collection: JD17.gnm1.ann1.CLFP
+      synopsis: "Annotation 1 for Glycine max accession Jidou 17 (JD17), genome assembly 1"
     - collection: JiDouNo_17.gnm1.ann1.X5PX
-      synopsis: "Gene annotations for Glycine max accession JiDouNo_17 (SoyC11) from Liu, Du et al. 2020."
-    - collection: PI_548362.gnm1.ann1.LL84
-      synopsis: "Gene annotations for Glycine max accession PI_548362 (SoyC10) from Liu, Du et al. 2020."
-    - collection: ShiShengChangYe.gnm1.ann1.VLGS
-      synopsis: "Gene annotations for Glycine max accession ShiShengChangYe (SoyL09) from Liu, Du et al. 2020."
-    - collection: DongNongNo_50.gnm1.ann1.QSDB
-      synopsis: "Gene annotations for Glycine max accession DongNongNo_50 (SoyC12) from Liu, Du et al. 2020."
-    - collection: Zh13_IGA1005.gnm1.ann1.87Z5
-      synopsis: "Genome annotation files for cultivar Zhonghuang 13, Chu et al. (2021)"
-    - collection: Huaxia3_IGA1007.gnm1.ann1.LKC7
-      synopsis: "Genome annotation files for cultivar Huaxia3, Chu et al. (2021)"
+      synopsis: "Gene annotations for Glycine max accession JiDouNo_17 (SoyC11)"
+    - collection: JinDouNo_23.gnm1.ann1.SGJW
+      synopsis: "Gene annotations for Glycine max accession JinDouNo_23 (SoyC07)"
+    - collection: Jinyuan_IGA1006.gnm1.ann1.2NNX
+      synopsis: "Genome annotation files for cultivar Jinyuan"
+    - collection: JuXuanNo_23.gnm1.ann1.H8PW
+      synopsis: "Gene annotations for Glycine max accession JuXuanNo_23 (SoyC03)"
     - collection: KeShanNo_1.gnm1.ann1.2YX4
-      synopsis: "Gene annotations for Glycine max accession KeShanNo_1 (SoyC14) from Liu, Du et al. 2020."
-    - collection: Wenfeng7_IGA1001.gnm1.ann1.ZK5W
-      synopsis: "Genome annotation files for cultivar  Wenfeng 7, Chu et al. (2021)"
-    - collection: TongShanTianEDan.gnm1.ann1.56XW
-      synopsis: "Gene annotations for Glycine max accession TongShanTianEDan (SoyL03) from Liu, Du et al. 2020."
-    - collection: HeiHeNo_43.gnm1.ann1.PDXG
-      synopsis: "Gene annotations for Glycine max accession HeiHeNo_43 (SoyC13) from Liu, Du et al. 2020."
-    - collection: Zh13.gnm2.ann1.FJ3G
-      synopsis: "Genome annotation files for cultivar Zhonghuang 13, Shen et al. (2019)"
-    - collection: PI_398296.gnm1.ann1.B0XR
-      synopsis: "Gene annotations for Glycine max accession PI_398296 (SoyL05) from Liu, Du et al. 2020."
-    - collection: HanDouNo_5.gnm1.ann1.ZS7M
-      synopsis: "Gene annotations for Glycine max accession HanDouNo_5 (SoyC09) from Liu, Du et al. 2020."
-    - collection: Wm82_ISU01.gnm2.ann1.FGFB
-      synopsis: "Annotation 1 for Glycine max accession Williams 82 ISU01, genome assembly v2"
+      synopsis: "Gene annotations for Glycine max accession KeShanNo_1 (SoyC14)"
+    - collection: Lee.gnm1.ann1.6NZV
+      synopsis: "Glycine max accession Lee genome annotation files; JGI name Lee v1.1"
     - collection: Lee.gnm2.ann1.1FNT
-      synopsis: "genome annotation of Glycine max Lee"
-    - collection: Wm82_IGA1008.gnm1.ann1.FGN6
-      synopsis: "Genome annotation files for cultivar William 82, Chu et al. (2021)"
+      synopsis: "genome annotation of Glycine max Lee, genome assembly 2"
     - collection: Lee.gnm3.ann1.ZYY3
       synopsis: "Annotation 1 for Glycine max accession Lee, genome assembly 3"
-    - collection: JuXuanNo_23.gnm1.ann1.H8PW
-      synopsis: "Gene annotations for Glycine max accession JuXuanNo_23 (SoyC03) from Liu, Du et al. 2020."
+    - collection: PI_398296.gnm1.ann1.B0XR
+      synopsis: "Gene annotations for Glycine max accession PI_398296 (SoyL05)"
+    - collection: PI_548362.gnm1.ann1.LL84
+      synopsis: "Gene annotations for Glycine max accession PI_548362 (SoyC10)"
+    - collection: QiHuangNo_34.gnm1.ann1.WHRV
+      synopsis: "Gene annotations for Glycine max accession QiHuangNo_34 (SoyC08)"
+    - collection: ShiShengChangYe.gnm1.ann1.VLGS
+      synopsis: "Gene annotations for Glycine max accession ShiShengChangYe (SoyL09)"
+    - collection: TieFengNo_18.gnm1.ann1.7GR4
+      synopsis: "Gene annotations for Glycine max accession TieFengNo_18 (SoyC02)"
+    - collection: TieJiaSiLiHuang.gnm1.ann1.W70Z
+      synopsis: "Gene annotations for Glycine max accession TieJiaSiLiHuang (SoyL08)"
+    - collection: TongShanTianEDan.gnm1.ann1.56XW
+      synopsis: "Gene annotations for Glycine max accession TongShanTianEDan (SoyL03)"
+    - collection: WanDouNo_28.gnm1.ann1.NLYP
+      synopsis: "Gene annotations for Glycine max accession WanDouNo_28 (SoyC04)"
+    - collection: Wenfeng7_IGA1001.gnm1.ann1.ZK5W
+      synopsis: "Genome annotation files for cultivar  Wenfeng 7"
+    - collection: Wm82.gnm1.ann1.DvBy
+      synopsis: "Glycine max accession Williams genome annotation files; JGI name Glycine max v1.1"
+    - collection: Wm82.gnm2.ann1.RVB6
+      synopsis: "Glycine max accession Williams genome annotation files; JGI name Wm82.a2.v1"
+    - collection: Wm82.gnm4.ann1.T8TQ
+      synopsis: "Glycine max accession Williams genome annotation files; JGI name Wm82.a4.v1"
+    - collection: Wm82.gnm5.ann1.J7HW
+      synopsis: "Annotation 1 for Glycine max accession Williams 82 (Wm82), genome assembly 5"
+    - collection: Wm82.gnm6.ann1.PKSW
+      synopsis: "Annotation 1 Glycine max accession Williams 82 (ISU01) genome assembly v6; renamed from Wm82 ISU-01 v2.1; JGI name Wm82.a6.v1"
+    - collection: Wm82_IGA1008.gnm1.ann1.FGN6
+      synopsis: "Genome annotation files for cultivar William 82"
+    - collection: Wm82_NJAU.gnm1.ann1.KM71
+      synopsis: "Annotation 1 for Glycine max accession Williams 82 from Nanjing Agricultural University (Wm82-NJAU), genome assembly v1"
+    - collection: XuDouNo_1.gnm1.ann1.G2T7
+      synopsis: "Gene annotations for Glycine max accession XuDouNo_1 (SoyC01)"
+    - collection: YuDouNo_22.gnm1.ann1.HCQ1
+      synopsis: "Gene annotations for Glycine max accession YuDouNo_22 (SoyC06)"
+    - collection: Zh13.gnm1.ann1.8VV3
+      synopsis: "Genome annotation files for cultivar Zhonghuang 13, Shen et al. (2018)"
+    - collection: Zh13.gnm2.ann1.FJ3G
+      synopsis: "Genome annotation files for cultivar Zhonghuang 13, Shen et al. (2019)"
+    - collection: Zh13_IGA1005.gnm1.ann1.87Z5
+      synopsis: "Genome annotation files for cultivar Zhonghuang 13"
+    - collection: Zh35_IGA1004.gnm1.ann1.RGN6
+      synopsis: "Genome annotation files for cultivar Zhonghuang 35,  Chu et al. (2021)"
+    - collection: ZhangChunManCangJin.gnm1.ann1.7HPB
+      synopsis: "Gene annotations for Glycine max accession ZhangChunManCangJin (SoyL06)"
+    - collection: Zhutwinning2.gnm1.ann1.ZTTQ
+      synopsis: "Gene annotations for Glycine max accession Zhutwinning2 (SoyL01)"
+    - collection: ZiHuaNo_4.gnm1.ann1.FCFQ
+      synopsis: "Gene annotations for Glycine max accession ZiHuaNo_4 (SoyL02)"
   diversity:
-    - collection: Wm82.gnm2.div.Song_NAM_2021a
-      synopsis: "Imputed genotypes for 5176 Nested Association Mapping RILs relative to 40 NAM parental genotypes, genotyped using the SoySNP50K and SoyNAM6K assays. These data sets report alleles at 29,417 SNP positions."
-    - collection: Wm82.gnm1.div.Song_Wei_2015
-      synopsis: "The polymorphism information of INDELS and SNPs between Hedou12 and Wm82."
-    - collection: Wm82.gnm2.div.dosSantos_Valliyodan_2016
-      synopsis: "VCF and HapMap file containing genotype information for 28 Brazilian soybean accessions."
-    - collection: Wm82.gnm2.div.Wickland_Battu_2017
-      synopsis: "VCF files containing genotype information for 3 populations of soybean produced by GB-eaSy."
-    - collection: Wm82.gnm2.div.Zhang_Jiang_2020
-      synopsis: "Variant information for 1,556 resequenced soybean accessions Glycine max and Glycine soja, provided by Yong-Qiang (Charles) An and Rick Meyers, relative to Wm82 assembly 2."
-    - collection: Wm82.gnm2.div.Song_Hyten_2015
-      synopsis: "VCF, HapMap, and Flapjack files containing genotype information of the whole U.S. soybean germplasm collection using the SoySNP50K BeadChip."
-    - collection: Wm82.gnm1.div.Song_Hyten_2015
-      synopsis: "VCF, HapMap, and Flapjack files containing genotype information of the whole U.S. soybean germplasm collection using the SoySNP50K BeadChip."
-    - collection: Wm82.gnm2.div.Jeong_Moon_2019
-      synopsis: "Variant information for 4234 soybean accessions (Glycine max and Glycine soja) genotyped with the Axiom SoyaSNP array containing 180,961 SNPs."
-    - collection: Wm82.gnm4.div.Song_Hyten_2015
-      synopsis: "VCF and HapMap files containing genotype information of the whole U.S. soybean germplasm collection using the SoySNP50K BeadChip."
-    - collection: Wm82.gnm2.div.Wei_Mesquita_2017
-      synopsis: "VCF file containing GBS information for 374 U.S. and Brazilian accessions against 68301 SNPs."
-    - collection: Wm82.gnm2.div.Valliyodan_Brown_2021
-      synopsis: "Variant information for 481 soybean accessions (Glycine max and Glycine soja), provided by Babu Valliyodan and Henry Nguyen, as part of the United Soybean Board project to genotype and characterize diverse accessions."
-    - collection: Wm82.gnm2.div.Song_NAM_2021b
-      synopsis: "Imputed genotypes for 5176 Nested Association Mapping RILs relative to 40 NAM parental genotypes, genotyped with WGS and the SoySNP50K and SoyNAM6K assays. These data sets report alleles at 423,419 SNP positions."
     - collection: Wm82.gnm1.div.ContrerasSoto_Mora_2017
       synopsis: "Haplotype information for 169 Brazilian soybean cultivars genotyped with the 6K SNPchip."
-    - collection: Wm82.gnm2.div.Song_Yan_2017
-      synopsis: "Haplotypes of SoyNAM parents and progeny with respect to Williams 82 gnm2."
     - collection: Wm82.gnm1.div.Hu_Zhang_2020
       synopsis: "Variant information for 96 Glycine soja accessions, genotyped using the NJAU 335K SoySNP array, provided by Guizhen Kan."
-    - collection: Wm82.gnm2.div.Lee_Jeong_2015
-      synopsis: "Text, VCF, HapMap, and Flapjack file containing genotype information for 222 Korean accessions."
-    - collection: Wm82.gnm2.div.Lam_Xu_2010
-      synopsis: "VCF file containing genotype information for 31 wild and cultivated soybeans received from Meng Ni, Tin Hang, and Hon-Ming Lam."
-    - collection: Wm82.gnm2.div.Torkamaneh_Laroche_2019
-      synopsis: "HapMap Data, GmHapMap, for 1007 accession of Glycine max and Glycine soja, from Torkamaneh et al. (2019)"
-    - collection: Wm82.gnm2.div.Torkamaneh_Laroche_2017
-      synopsis: "Resequencing information for 102 Canadian soybean accessions."
+    - collection: Wm82.gnm1.div.Song_Hyten_2015
+      synopsis: "VCF, HapMap, and Flapjack files containing genotype information of the whole U.S. soybean germplasm collection using the SoySNP50K BeadChip."
+    - collection: Wm82.gnm1.div.Song_Wei_2015
+      synopsis: "The polymorphism information of INDELS and SNPs between Hedou12 and Wm82."
+    - collection: Wm82.gnm1.div.Song_Yan_2017
+      synopsis: "Haplotypes of SoyNAM parents and progeny with respect to Williams 82 genome assembly gnm1."
     - collection: Wm82.gnm1.div.Wang_Jiao_2016
       synopsis: "Variant information in vcf format for 367 Chinese soybean accessions using the NJAU 355K SoySNP array, provided by Dr. Jiao Wang."
     - collection: Wm82.gnm1.div.Zhou_Jiang_2015
       synopsis: "Resequencing information for 302 wild and cultivated soybean accessions."
-    - collection: Wm82.gnm1.div.Song_Yan_2017
-      synopsis: "Haplotypes of SoyNAM parents and progeny with respect to Williams 82 genome assembly gnm1."
+    - collection: Wm82.gnm2.div.Jeong_Moon_2019
+      synopsis: "Variant information for 4234 soybean accessions (Glycine max and Glycine soja) genotyped with the Axiom SoyaSNP array containing 180,961 SNPs."
+    - collection: Wm82.gnm2.div.Lam_Xu_2010
+      synopsis: "VCF file containing genotype information for 31 wild and cultivated soybeans received from Meng Ni, Tin Hang, and Hon-Ming Lam."
+    - collection: Wm82.gnm2.div.Lee_Jeong_2015
+      synopsis: "Text, VCF, HapMap, and Flapjack file containing genotype information for 222 Korean accessions."
+    - collection: Wm82.gnm2.div.Liu_Shi_2025
+      synopsis: "Predicted SNP effects relative to genes in Williams 82 gnm2 (Wm82.a2.v1)."
+    - collection: Wm82.gnm2.div.Song_Hyten_2015
+      synopsis: "VCF, HapMap, and Flapjack files containing genotype information of the whole U.S. soybean germplasm collection using the SoySNP50K BeadChip."
+    - collection: Wm82.gnm2.div.Song_NAM_2021a
+      synopsis: "Imputed genotypes for 5176 Nested Association Mapping RILs relative to 40 NAM parental genotypes, genotyped using the SoySNP50K and SoyNAM6K assays. These data sets report alleles at 29,417 SNP positions."
+    - collection: Wm82.gnm2.div.Song_NAM_2021b
+      synopsis: "Imputed genotypes for 5176 Nested Association Mapping RILs relative to 40 NAM parental genotypes, genotyped with WGS and the SoySNP50K and SoyNAM6K assays. These data sets report alleles at 423,419 SNP positions."
+    - collection: Wm82.gnm2.div.Song_Yan_2017
+      synopsis: "Haplotypes of SoyNAM parents and progeny with respect to Williams 82 gnm2."
+    - collection: Wm82.gnm2.div.Torkamaneh_Laroche_2017
+      synopsis: "Resequencing information for 102 Canadian soybean accessions."
+    - collection: Wm82.gnm2.div.Torkamaneh_Laroche_2019
+      synopsis: "HapMap Data, GmHapMap, for 1007 accession of Glycine max and Glycine soja, from Torkamaneh et al. (2019)"
+    - collection: Wm82.gnm2.div.Valliyodan_Brown_2021
+      synopsis: "Variant information for 481 soybean accessions (Glycine max and Glycine soja), provided by Babu Valliyodan and Henry Nguyen, as part of the United Soybean Board project to genotype and characterize diverse accessions."
+    - collection: Wm82.gnm2.div.Wei_Mesquita_2017
+      synopsis: "VCF file containing GBS information for 374 U.S. and Brazilian accessions against 68301 SNPs."
+    - collection: Wm82.gnm2.div.Wickland_Battu_2017
+      synopsis: "VCF files containing genotype information for 3 populations of soybean produced by GB-eaSy."
+    - collection: Wm82.gnm2.div.Zhang_Jiang_2020
+      synopsis: "Variant information for 1,556 resequenced soybean accessions Glycine max and Glycine soja, provided by Yong-Qiang An and Rick Meyer (Zhang et al., 2022), relative to Wm82 assembly 2."
+    - collection: Wm82.gnm2.div.dosSantos_Valliyodan_2016
+      synopsis: "VCF and HapMap file containing genotype information for 28 Brazilian soybean accessions."
+    - collection: Wm82.gnm4.div.Song_Hyten_2015
+      synopsis: "VCF and HapMap files containing genotype information of the whole U.S. soybean germplasm collection using the SoySNP50K BeadChip."
   expression:
     - collection: Wm82.gnm2.ann1.expr.Wm82.Libault_Farmer_2010
       synopsis: "Soybean gene expression atlas from 14 conditions (Libault et al., 2010)."
+    - collection: Wm82.gnm6.ann1.expr.Magellan.Pelaez-Vico_Sinha_2023
+      synopsis: "Combined phenotypic and transcriptomic analysis of soybean plants subjected to multifactorial stress combination (Pelaez-Vico et al.)"
+    - collection: Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021
+      synopsis: "Gene Expression Changes in the Development of the Soybean Seed-Heart Stage."
+    - collection: Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_2
+      synopsis: "Gene Expression Changes in the Development of the Soybean Seed-Globular Stage."
+    - collection: Wm82.gnm6.ann1.expr.Wm82.Chen_Lin_2021_3
+      synopsis: "Gene Expression Changes in the Development of the Soybean Seed-Cotyledon Stage."
+    - collection: Wm82.gnm6.ann1.expr.Wm82.Libault_Farmer_2010
+      synopsis: "Time-series transcriptomic data with Bradyrhizobium japonicum infection and mock inoculation"
+    - collection: Wm82.gnm6.ann1.expr.Wm82.Sreedasyam_Plott_2023
+      synopsis: "Transcriptome sequencing as part of the JGI Flagship Plant Gene Atlas Inititative"
+    - collection: Wm82.gnm6.ann1.expr.mixed.Kour_Boone_2014
+      synopsis: "Expression profiling by high throughput sequencing"
   markers:
-    - collection: Wm82.gnm4.mrk.SoySNP50K
+    - collection: FiskebyIII.gnm1.mrk.SoySNP50K
       synopsis: "SoySNP50K is an Illumina Infinium II BeadChip that contains over 50,000 SNPs from soybean useful for genotyping a wide variety of cultivated and wild soybean accessions."
     - collection: Wm82.gnm1.mrk.BARCSOYSSR
       synopsis: "BARCSOYSSR contains 33,065 locus-specific SSR markers with di-, tri-, and tetranucleotide repeats of five or more."
-    - collection: Wm82.gnm2.mrk.SoySSR
-      synopsis: "This marker set contains SSRs developed and published by Cregan, et al. in 1999, with names starting with Satt or Sat_."
-    - collection: Wm82.gnm2.mrk.Sonah_ODonoughue_2015
-      synopsis: "GWAS study of eight traits in soybean, conducted on 139 accessions, genotyped using GBS-derived markers."
-    - collection: Wm82.gnm1.mrk.Zhao_Teng_2017
-      synopsis: "SLAF-seq markers associated with resistance to soybean cyst nematode (SCN) HG type 2.5.7, with respect to Wm82 gnm1 coordinates."
-    - collection: Wm82.gnm2.mrk.SoySNP6K
-      synopsis: "Illumina Infinium SoySNP6K BeadChip"
-    - collection: Wm82_ISU01.gnm2.mrk.SoySNP50K
-      synopsis: "SoySNP50K is an Illumina Infinium II BeadChip that contains over 50,000 SNPs from soybean useful for genotyping a wide variety of cultivated and wild soybean accessions."
-    - collection: Wm82.gnm2.mrk.Zhao_Teng_2017
-      synopsis: "SLAF-seq markers associated with resistance to soybean cyst nematode (SCN) HG type 2.5.7, with respect to Wm82 gnm2 coordinates (derived via sequence homology, from markers originally with positions in Wm82 gnm1)."
-    - collection: Wm82.gnm2.mrk.Fang_Ma_2017
-      synopsis: "GWAS of 84 agronomic traits, conducted on 809 soybean accessions, with genotyping by resequencing."
-    - collection: Wm82.gnm2.mrk.BARCSOYSSR
-      synopsis: "BARCSOYSSR contains 33,065 locus-specific SSR markers with di-, tri-, and tetranucleotide repeats of five or more."
-    - collection: Wm82.gnm2.mrk.Tran_Steketee_2019
-      synopsis: "Diverse soybean accessions (462) were screened for resistance to SCN and genotyped using SoySNP50K Infinium Chip and a set of 3 funtional KASP SNP markers, identifying both 88788-type and Peking-type resistance."
-    - collection: Wm82.gnm2.mrk.Li_Zhao_2019
-      synopsis: "12,072 SNPs from Li, Zhao, et al. (2019), a seed protein and oil study."
-    - collection: FiskebyIII.gnm1.mrk.SoySNP50K
+    - collection: Wm82.gnm1.mrk.Li_Guo_2016
+      synopsis: "59,845 single-nucleotide polymorphisms identified from re-sequencing of 279 accessions from Yangtze-Huai soybean breeding germplasm."
+    - collection: Wm82.gnm1.mrk.SoySNP50K
       synopsis: "SoySNP50K is an Illumina Infinium II BeadChip that contains over 50,000 SNPs from soybean useful for genotyping a wide variety of cultivated and wild soybean accessions."
     - collection: Wm82.gnm1.mrk.SoySNP6K
       synopsis: "Illumina Infinium SoySNP6K BeadChip"
     - collection: Wm82.gnm1.mrk.SoySSR
       synopsis: "This marker set contains SSRs developed and published by Cregan, et al. in 1999, with names starting with Satt or Sat_."
-    - collection: Wm82.gnm2.mrk.Han_Zhao_2015
-      synopsis: "SNP markers generated Specific Locus Amplified Fragment Sequencing (SLAF-seq) approach, and showing association with resistance against two soybean cyst nematode types."
-    - collection: Wm82.gnm2.mrk.Vuong_Sonah_2015
-      synopsis: "Markers associated with Soybean Cyst Nematode (SCN) resistance in Soybean, relative to the Wm82.gnm2 assembly. Markers derive from the SoySNP50K set."
-    - collection: Wm82.gnm1.mrk.SoySNP50K
-      synopsis: "SoySNP50K is an Illumina Infinium II BeadChip that contains over 50,000 SNPs from soybean useful for genotyping a wide variety of cultivated and wild soybean accessions."
+    - collection: Wm82.gnm1.mrk.Zhao_Teng_2017
+      synopsis: "SLAF-seq markers associated with resistance to soybean cyst nematode (SCN) HG type 2.5.7, with respect to Wm82 gnm1 coordinates."
     - collection: Wm82.gnm2.mrk.1536_USLP1
       synopsis: "Universal Soy Linkage Panel (USLP 1.0) contains 1536 SNPs selected based on even distribution throughout each of the 20 consensus linkage groups and to have a broad range of allele frequencies in diverse germplasm."
-    - collection: Wm82.gnm2.mrk.NJAU355K
-      synopsis: "NJAU 355K SoySNP array used to study soybean domestication in Wang, et al. (2016)."
-    - collection: Wm82.gnm2.mrk.SoySNP50K
-      synopsis: "SoySNP50K is an Illumina Infinium II BeadChip that contains over 50,000 SNPs from soybean useful for genotyping a wide variety of cultivated and wild soybean accessions."
-    - collection: Wm82.gnm1.mrk.Li_Guo_2016
-      synopsis: "59,845 single-nucleotide polymorphisms identified from re-sequencing of 279 accessions from Yangtze-Huai soybean breeding germplasm."
+    - collection: Wm82.gnm2.mrk.BARCSOYSSR
+      synopsis: "BARCSOYSSR contains 33,065 locus-specific SSR markers with di-, tri-, and tetranucleotide repeats of five or more."
+    - collection: Wm82.gnm2.mrk.Fang_Ma_2017
+      synopsis: "GWAS of 84 agronomic traits, conducted on 809 soybean accessions, with genotyping by resequencing."
+    - collection: Wm82.gnm2.mrk.Han_Zhao_2015
+      synopsis: "SNP markers generated Specific Locus Amplified Fragment Sequencing (SLAF-seq) approach, and showing association with resistance against two soybean cyst nematode types."
+    - collection: Wm82.gnm2.mrk.Li_Zhao_2019
+      synopsis: "12,072 SNPs from Li, Zhao, et al. (2019), a seed protein and oil study."
     - collection: Wm82.gnm2.mrk.Meng_He_2016
       synopsis: "GWAS study of seed isoflavone content (SIFC), conducted on 366 landraces, genotyped with 116,769 RAD-Seq markers."
+    - collection: Wm82.gnm2.mrk.NJAU355K
+      synopsis: "NJAU 355K SoySNP array used to study soybean domestication in Wang, et al. (2016)."
+    - collection: Wm82.gnm2.mrk.Sonah_ODonoughue_2015
+      synopsis: "GWAS study of eight traits in soybean, conducted on 139 accessions, genotyped using GBS-derived markers."
+    - collection: Wm82.gnm2.mrk.SoySNP50K
+      synopsis: "SoySNP50K is an Illumina Infinium II BeadChip that contains over 50,000 SNPs from soybean useful for genotyping a wide variety of cultivated and wild soybean accessions."
+    - collection: Wm82.gnm2.mrk.SoySNP6K
+      synopsis: "Illumina Infinium SoySNP6K BeadChip"
+    - collection: Wm82.gnm2.mrk.SoySSR
+      synopsis: "This marker set contains SSRs developed and published by Cregan, et al. in 1999, with names starting with Satt or Sat_."
     - collection: Wm82.gnm2.mrk.SoyaSNP180K
       synopsis: "Axiom SoyaSNP180K array with 180,981 SNPs developed by Lee, et al. (2015)."
+    - collection: Wm82.gnm2.mrk.Tran_Steketee_2019
+      synopsis: "Diverse soybean accessions (462) were screened for resistance to SCN and genotyped using SoySNP50K Infinium Chip and a set of 3 funtional KASP SNP markers, identifying both 88788-type and Peking-type resistance."
+    - collection: Wm82.gnm2.mrk.Vuong_Sonah_2015
+      synopsis: "Markers associated with Soybean Cyst Nematode (SCN) resistance in Soybean, relative to the Wm82.gnm2 assembly. Markers derive from the SoySNP50K set."
+    - collection: Wm82.gnm2.mrk.Zhao_Teng_2017
+      synopsis: "SLAF-seq markers associated with resistance to soybean cyst nematode (SCN) HG type 2.5.7, with respect to Wm82 gnm2 coordinates (derived via sequence homology, from markers originally with positions in Wm82 gnm1)."
+    - collection: Wm82.gnm4.mrk.SoySNP50K
+      synopsis: "SoySNP50K is an Illumina Infinium II BeadChip that contains over 50,000 SNPs from soybean useful for genotyping a wide variety of cultivated and wild soybean accessions."
+    - collection: Wm82.gnm6.mrk.SoySNP50K
+      synopsis: "SoySNP50K is an Illumina Infinium II BeadChip that contains over 50,000 SNPs from soybean useful for genotyping a wide variety of cultivated and wild soybean accessions."
   synteny:
     - collection: Wm82.gnm2.syn.HXNY
       synopsis: "Synteny mappings among the genomes. See genome assemblies indicated in the synteny comparisons."
 - name: soja
   genomes:
-    - collection: PI_562565.gnm1.Z2VG
-      synopsis: "Genome assembly for Glycine soja accession PI_562565 (SoyW01) from the 26 accession pan-genome set of Liu, Du et al. 2020."
-    - collection: PI483463.gnm1.YJWS
-      synopsis: "Glycine soja accession PI 483463 genome assembly, v1.0"
     - collection: F_IGA1003.gnm1.V9RB
-      synopsis: "Genome assembly files for Glycine soja F (F_IGA1003 in publication; WHFS_GsojaF_1.0 in the GenBank assembly record), Chu et al. (2021)"
-    - collection: PI_578357.gnm1.1XT1
-      synopsis: "Genome assembly for Glycine soja accession PI_578357 (SoyW03) from Liu, Du et al. 2020."
+      synopsis: "Genome assembly files for Glycine soja F (F_IGA1003 in publication; WHFS_GsojaF_1.0 in the GenBank assembly record)"
+    - collection: PI483463.gnm1.YJWS
+      synopsis: "Glycine soja accession PI 483463 genome assembly, v1.0; JGI name Glycine soja v1.1"
     - collection: PI_549046.gnm1.TSLF
-      synopsis: "Genome assembly for Glycine soja accession PI_549046 (SoyW02) from Liu, Du et al. 2020."
+      synopsis: "Genome assembly for Glycine soja accession PI_549046 (SoyW02)"
+    - collection: PI_562565.gnm1.Z2VG
+      synopsis: "Genome assembly for Glycine soja accession PI_562565 (SoyW01)"
+    - collection: PI_578357.gnm1.1XT1
+      synopsis: "Genome assembly for Glycine soja accession PI_578357 (SoyW03)"
     - collection: W05.gnm1.SVL1
       synopsis: "Genome assembly files for cultivar W05 from Xie, Lam et al. (2019): A reference-grade wild soybean genome"
   annotations:
+    - collection: F_IGA1003.gnm1.ann1.G61B
+      synopsis: "Genome annotation files for cultivar F"
+    - collection: PI483463.gnm1.ann1.3Q3Q
+      synopsis: "Glycine soja accession PI483463 genome annotation files; JGI name Glycine soja v1.1"
+    - collection: PI_549046.gnm1.ann1.65KD
+      synopsis: "Gene annotations for Glycine soja accession PI_549046 (SoyW02)"
+    - collection: PI_562565.gnm1.ann1.1JD2
+      synopsis: "Gene annotations for Glycine soja accession PI_562565 (SoyW01)"
+    - collection: PI_578357.gnm1.ann1.0ZKP
+      synopsis: "Gene annotations for Glycine soja accession PI_578357 (SoyW03)"
     - collection: W05.gnm1.ann1.T47J
       synopsis: "Glycine soja accession W05 genome annotation files"
-    - collection: PI_578357.gnm1.ann1.0ZKP
-      synopsis: "Gene annotations for Glycine soja accession PI_578357 (SoyW03) from Liu, Du et al. 2020."
-    - collection: PI_549046.gnm1.ann1.65KD
-      synopsis: "Gene annotations for Glycine soja accession PI_549046 (SoyW02) from Liu, Du et al. 2020."
-    - collection: PI483463.gnm1.ann1.3Q3Q
-      synopsis: "Glycine soja accession PI483463 genome annotation files; JGI annotation version 1 on assembly 1"
-    - collection: PI_562565.gnm1.ann1.1JD2
-      synopsis: "Gene annotations for Glycine soja accession PI_562565 (SoyW01) from the 26 accession pan-genome set of Liu, Du et al. 2020."
-    - collection: F_IGA1003.gnm1.ann1.G61B
-      synopsis: "Genome annotation files for cultivar F, Chu et al. (2021)"
 - name: cyrtoloba
   genomes:
     - collection: G1267.gnm1.YWW6
-      synopsis: "Genome assemblies for Glycine cyrtoloba, accession G1267, from Zhuang, Wang et al. (2021)"
+      synopsis: "Genome assemblies for Glycine cyrtoloba, accession G1267"
   annotations:
     - collection: G1267.gnm1.ann1.HRFD
-      synopsis: "Genome annotation files for Glycine cyrtoloba, accession G1267, from Zhuang, Wang et al. (2021)"
+      synopsis: "Genome annotation files for Glycine cyrtoloba, accession G1267"
 - name: dolichocarpa
   genomes:
     - collection: G1134.gnm1.PP7B
-      synopsis: "Genome assemblies for Glycine dolichocarpa, accession G1134, from Zhuang, Wang et al. (2021)"
+      synopsis: "Genome assemblies for Glycine dolichocarpa, accession G1134"
   annotations:
     - collection: G1134.gnm1.ann1.4BJM
-      synopsis: "Genome annotation files for Glycine dolichocarpa, accession G1134, from Zhuang, Wang et al. (2021)"
+      synopsis: "Genome annotation files for Glycine dolichocarpa, accession G1134"
 - name: falcata
   genomes:
     - collection: G1718.gnm1.B1PY
-      synopsis: "Genome assemblies for Glycine falcata, accession G1718, from Zhuang, Wang et al. (2021)"
+      synopsis: "Genome assemblies for Glycine falcata, accession G1718"
   annotations:
     - collection: G1718.gnm1.ann1.2KSV
-      synopsis: "Genome annotation files for Glycine falcata, accession G1718, from Zhuang, Wang et al. (2021)"
+      synopsis: "Genome annotation files for Glycine falcata, accession G1718"
 - name: stenophita
   genomes:
     - collection: G1974.gnm1.7MZB
-      synopsis: "Genome assemblies for Glycine stenophita, accession G1974, from Zhuang, Wang et al. (2021)"
+      synopsis: "Genome assemblies for Glycine stenophita, accession G1974"
   annotations:
     - collection: G1974.gnm1.ann1.F257
-      synopsis: "Genome annotation files for Glycine stenphyta, accession G1974, from Zhuang, Wang et al. (2021)"
+      synopsis: "Genome annotation files for Glycine stenphyta, accession G1974"
 - name: syndetika
   genomes:
     - collection: G1300.gnm1.C11H
-      synopsis: "Genome assemblies for Glycine syndetika, accession G1300, from Zhuang, Wang et al. (2021)"
+      synopsis: "Genome assemblies for Glycine syndetika, accession G1300"
   annotations:
     - collection: G1300.gnm1.ann1.RRK6
-      synopsis: "Genome annotation files for Glycine syndetika, accession G1300, from Zhuang, Wang et al. (2021)"
+      synopsis: "Genome annotation files for Glycine syndetika, accession G1300"
 - name: D3-tomentella
   genomes:
     - collection: G1403.gnm1.CL6K
-      synopsis: "Genome assemblies for Glycine D3 tomentella, accession G1403, from Zhuang, Wang et al. (2021)"
+      synopsis: "Genome assemblies for Glycine D3 tomentella, accession G1403"
   annotations:
     - collection: G1403.gnm1.ann1.XNZQ
-      synopsis: "Genome annotation files for Glycine D3 tomentella, accession G1403, from Zhuang, Wang et al. (2021)"
+      synopsis: "Genome annotation files for Glycine D3 tomentella, accession G1403"

@@ -16,12 +16,7 @@ species:
     identifier: ISC453364
     name: eastern redbud
     origin: Ames, Iowa, USA
-    resources:
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22cerca.ISC453364.gnm3%22, %22loc%22: %22cerca.ISC453364.gnm3.Chr01:1-57468748%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 cerca.ISC453364.gnm3
+    resources: []
   taxid: 49801
 - abbrev: cerch
   commonName: Chinese redbud
@@ -37,10 +32,5 @@ species:
     name: GXIB
     origin: A plant at the campus of Guangxi Institute of Botany, Chinese Academy
       of Sciences
-    resources:
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22cerch.GXIB.gnm1%22, %22loc%22: %22cerch.GXIB.gnm1.scaffold_10:1-2194291%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 cerch.GXIB.gnm1
+    resources: []
   taxid: 161750

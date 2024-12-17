@@ -1,3 +1,17 @@
 ---
 species:
 - name: fasciculata
+  genomes:
+    - collection: ISC494698.gnm1.8Q19
+      synopsis: "Chamaecrista fasciculata accession ISC494698, genome assembly v1, haplotype 1"
+    - collection: ISC494698.gnm1_hap2.G6BY
+      synopsis: "Chamaecrista fasciculata accession ISC494698, genome assembly v1, haplotype 2"
+    - collection: MN87.gnm1.JXFN
+      synopsis: "Draft genome assembly for Chamaecrista fasciculata"
+  annotations:
+    - collection: ISC494698.gnm1.ann1.G7XW
+      synopsis: "Annotation 1 for Chamaecrista fasciculata accession ISC494698, genome assembly v1, haplotype 1"
+    - collection: ISC494698.gnm1_hap2.ann1.WXZF
+      synopsis: "Annotation 1 for Chamaecrista fasciculata accession ISC494698, genome assembly v1, haplotype 2"
+    - collection: MN87.gnm1.ann1.LWFM
+      synopsis: "Draft genome assembly for Chamaecrista fasciculata"

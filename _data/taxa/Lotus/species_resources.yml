@@ -24,10 +24,5 @@ species:
     identifier: MG20
     name: Miyakojima
     origin: Miyakojima, Japan
-    resources:
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22lotja.MG20.gnm3%22, %22loc%22: %22lotja.MG20.gnm3.Lj0:1-192322135%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 lotja.MG20.gnm3
+    resources: []
   taxid: 34305

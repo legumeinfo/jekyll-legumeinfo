@@ -7,3 +7,6 @@ species:
   annotations:
     - collection: Cameor.gnm1.ann1.7SZR
       synopsis: "Pisum sativum accession Cameor annotation files on genome assembly version 1a"
+  expression:
+    - collection: Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014
+      synopsis: "Pisum sativum expression data from multi-factor experiment"

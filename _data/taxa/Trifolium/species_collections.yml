@@ -2,9 +2,13 @@
 species:
 - name: pratense
   genomes:
+    - collection: HEN17-A07.gnm1.Y8WV
+      synopsis: "Genome assembly 1 for Trifolium pratense, genotype HEN17-A07"
     - collection: MilvusB.gnm2.gNmT
       synopsis: "Genome assembly for Trifolium pratense (Milvus B)"
   annotations:
+    - collection: HEN17-A07.gnm1.ann1.LHG2
+      synopsis: "GenBank RefSeq annotation for Genome assembly 1 for Trifolium pratense, genotype HEN17-A07"
     - collection: MilvusB.gnm2.ann1.DFgp
       synopsis: "Genome assembly for Trifolium pratense (Milvus B)"
   synteny:
