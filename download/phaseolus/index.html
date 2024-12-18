@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Phaseolus &#8211; LIS: Legume Information System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species.">
+  <meta name="robots" content="all">
+  <meta name="author" content="">
+  
+  
+  <link rel="canonical" href="/download/phaseolus/">
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-49655154-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-49655154-1');
+</script>
+
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/uikit/dist/css/uikit.min.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/css/uikit-theme.css" type="text/css" />
+
+  <!-- place globally-included stylesheet content here -->
+<style>
+  .species-image {
+      float: right;
+      margin: 10px;
+  }
+  .species-image img {
+      border: 1px solid darkgreen;
+  }
+  .species-image .attribution {
+      text-align: center; 
+      font-style: italic;
+      font-size: 80%;
+  }
+  .blog-image {
+      float: right;
+      margin: 10px;
+  }
+  .blog-image img {
+      border: 1px solid gray;
+  }
+  .blog-image .attribution {
+      text-align: center; 
+      font-style: italic;
+      font-size: 80%;
+  }
+  .temp {
+      color: darkred;
+      font-family: serif;
+      font-weight: bold;
+  }
+
+  .toggle-top-margin{
+    margin-top: 4px;
+  }
+
+  .glass-morphism{
+    backdrop-filter: blur(4px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(225, 225, 225, 0.65);
+    border-radius: 5px;
+    border: 1px solid rgba(209, 213, 219, 0.1);
+  }
+
+  .nav-item {
+    text-wrap: nowrap;
+  }
+
+  .nav-item:hover {
+    color: #235626;
+  }
+
+  .nav-title:hover {
+    margin-bottom: -1px;
+    border-bottom: 1px solid white;
+  }
+
+  .custom-width {
+    width: 170px;
+  }
+
+  .text-size-med{
+    font-size: 18px;
+  }
+  .text-size-large{
+    font-size: 20px;
+  }
+
+  .toggle-top-margin{
+    margin-top: 4px;
+  }
+  
+  body {
+    color: black;
+    background-color: white;
+  }
+
+/* Homepage custom styling */
+.search-container {
+  display: flex; 
+  justify-content: space-between;
+}
+
+@media (max-width: 764px){
+  .search-container{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 598px){
+  .bar-input-group{
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1600px){
+  .col3-cornsilk{
+    background-color: cornsilk;
+  }
+  .col3-seashell{
+    background-color: seashell;
+  }
+  .col3-azure{
+    background-color: azure;
+  }
+  .col3-mistyrose{
+    background-color: mistyrose;
+  }
+  .col3-antiquewhite{
+    background-color: antiquewhite;
+  }
+  .col3-cumstomgreen{
+    background-color: #EAFAF1;
+  }
+}
+ 
+  @media (max-width: 1599px){
+  .cornsilk{
+    background-color: cornsilk;
+  }
+  .seashell{
+    background-color: seashell;
+  }
+  .azure{
+    background-color: azure;
+  }
+  .mistyrose{
+    background-color: mistyrose;
+  }
+  .antiquewhite{
+    background-color: antiquewhite;
+  }
+  .customgreen {
+    background-color: #EAFAF1;
+  }
+  }
+
+</style>
+
+
+
+  <!-- Custom JS -->
+  <script src="/assets/uikit/dist/js/uikit.min.js"></script>
+  <script src="/assets/uikit/dist/js/uikit-icons.min.js"></script>
+
+  <!-- place globally-included scripts here -->
+
+
+  
+
+  <!-- opt-in code for integrating GraphQL with LIS Web Components -->
+  <script type="importmap">
+    {
+      "imports": {
+        "lis-graphql": "/assets/js/graphql/index.js",
+        "lis-events": "/assets/js/events.js"
+      }
+    }
+  </script>
+
+  
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192x192.png">
+      <link rel="icon" href="/assets/icons/favicon.ico">
+      </head>
+
+
+<body>
+
+
+
+
+<div id="navbar" class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed uk-light" uk-sticky>
+
+  <div id="alerts">
+    
+    
+      
+
+    
+  </div>
+
+  <script type="text/javascript">
+
+    // define the cookie key
+    const alertsKey = "lis-navbar-alerts";
+
+    // get the alerts element
+    const alerts = document.getElementById("alerts");
+
+    // define a callback that saves the toggle state
+    function toggleCallback(event) {
+      document.cookie = `${alertsKey}=${event.type};SameSite=Lax;path=/`;
+    }
+
+    // use the callback every time the element is toggled
+    alerts.addEventListener("show", toggleCallback);
+    alerts.addEventListener("hide", toggleCallback);
+
+    // load the element's state
+    const alertsCookie = document.cookie
+      .split('; ')
+      .find(row => row.startsWith(`${alertsKey}=`));
+
+    // hide the alerts if they're supposed to be hidden
+    if (alertsCookie && alertsCookie.split('=')[1].toLowerCase() === "hide") {
+      UIkit.toggle(alerts).toggle();
+    }
+
+  </script>
+
+  <div class="uk-container uk-container-expand">
+    <nav class="uk-navbar">
+      <div class="uk-navbar-left uk-text-truncate">
+        <a class="uk-navbar-item uk-logo uk-text-truncate" href="/">
+          
+          <img class="uk-margin-small-right" src="/assets/img/logo.png" alt="LIS: Legume Information System logo" width="47" height="47" />
+          
+          <div class="uk-text-truncate">
+            LIS: Legume Information System
+            
+            <div class="uk-navbar-subtitle uk-text-truncate">Information about legume traits for crop improvement</div>
+            
+          </div>
+        </a>
+      </div>
+      <div class="uk-navbar-right uk-flex-none">
+
+        <ul class="uk-navbar-nav uk-visible@l">
+  <li><a href="/">Home</a></li>
+  <li>
+    <a href="/genomics">Genomics</a>
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+        
+          
+            
+              <li> <a href="/genomics//arachis"> Arachis (Peanut)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//cajanus"> Cajanus (Pigeonpea)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//cicer"> Cicer (Chickpea)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//glycine"> Glycine (Soybean)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//lotus"> Lotus (Bird's-foot trefoil)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//lupinus"> Lupinus (Lupin grain legumes)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//medicago"> Medicago (Alfalfa/Lucerne, Barrel Medic)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//phaseolus"> Phaseolus (Common Bean, Lima Bean, Tepary Bean, etc.)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//pisum"> Pisum (Pea)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//trifolium"> Trifolium (Clover)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//vigna"> Vigna (Cowpea)</a></li>
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+        <li class="uk-nav-divider"></li>
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+              <li><a href="/genomics/aeschynomene"> Aeschynomene (Jointvetch)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/apios"> Apios (Potato bean)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/cercis"> Cercis (Redbud tree)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/chamaecrista"> Chamaecrista (Partridge pea)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/faidherbia"> Faidherbia (Apple-ring acacia)</a></li>
+            
+          
+        
+      </ul>
+    </div>
+  </li>
+  <li>
+    <a href="/tools">Tools</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+          <li><a href="/tools/search/pangene.html">Pangene Lookup Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+      </ul>
+    </div>
+    
+  </li>
+  <li>
+    <a href="/download">Download</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          
+            <li> <a href="/download//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        <li class="uk-nav-divider"></li>
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+              <li><a href="/download/aeschynomene"> Aeschynomene (Jointvetch)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/download/apios"> Apios (Potato bean)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/download/cercis"> Cercis (Redbud tree)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/download/chamaecrista"> Chamaecrista (Partridge pea)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/download/faidherbia"> Faidherbia (Apple-ring acacia)</a></li>
+            
+          
+        
+      </ul>
+    </div>
+    
+  </li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+<a href="#off-screen-menu" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle></a>
+
+
+        <ul class="uk-navbar-nav uk-visible@s">
+
+        
+          <li><a class="tm-no-underline" href="https://twitter.com/legumeinfo" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span></a></li>
+        
+        
+        
+          <li><a class="tm-no-underline" href="https://github.com/legumeinfo" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span></a></li>
+        
+
+        </ul>
+        
+        
+      </div>
+    </nav>
+    <nav class="uk-navbar tm-lower-navbar">
+      <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav uk-hidden@l uk-visible@s">
+  <li><a href="/">Home</a></li>
+  <li>
+    <a href="/genomics">Genomics</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          
+            <li> <a href="/genomics//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        <li class="uk-nav-divider"></li>
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+              <li><a href="/genomics/aeschynomene"> Aeschynomene (Jointvetch)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/apios"> Apios (Potato bean)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/cercis"> Cercis (Redbud tree)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/chamaecrista"> Chamaecrista (Partridge pea)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/faidherbia"> Faidherbia (Apple-ring acacia)</a></li>
+            
+          
+        
+      </ul>
+    </div>
+    
+  </li>
+  <li>
+    <a href="/tools">Tools</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+          <li><a href="/tools/search/pangene.html">Pangene Lookup Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+      </ul>
+    </div>
+    
+  </li>
+  <li><a href="/download">Download</a></li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div id="off-screen-menu" uk-offcanvas="overlay: true">
+  <div class="uk-offcanvas-bar uk-dark  uk-background-secondary">
+
+    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+  <li><a href="/">Home</a></li>
+  
+  <li class="uk-parent">
+    <a href="#">Genomics</a>
+    
+    <ul class="uk-nav-sub">
+      
+        
+          
+            <li><a href="/genomics//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li class="uk-nav-divider"></li>
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li><a href="/genomics/aeschynomene"> Aeschynomene (Jointvetch)</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics/apios"> Apios (Potato bean)</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics/cercis"> Cercis (Redbud tree)</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics/chamaecrista"> Chamaecrista (Partridge pea)</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics/faidherbia"> Faidherbia (Apple-ring acacia)</a></li>
+          
+        
+      
+    </ul>
+  </li>
+  
+  
+  <li class="uk-parent">
+    <a href="/tools">Tools</a>
+    
+    <ul class="uk-nav-sub">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+          <li><a href="/tools/search/pangene.html">Pangene Lookup Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+    </ul>
+  </li>
+  
+  <li><a href="/download">Download</a></li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+
+    
+    <ul class="uk-nav uk-nav-default">
+      <li class="uk-nav-divider"></li>
+      
+      <li><a href="https://twitter.com/legumeinfo" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span> Twitter</a></li>
+      
+      
+      
+      <li><a href="https://github.com/legumeinfo" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span> GitHub</a></li>
+      
+    </ul>
+    
+
+  </div>
+</div>
+
+
+
+  <div id="left-menu" class="tm-sidebar-left uk-visible@m">
+
+  
+  
+    <h3>Datasets</h3>
+
+  
+  
+    <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+      <li class="uk-nav-header">main</li>
+      
+        <li><a href="/download/arachis">Arachis</a></li>
+      
+        <li><a href="/download/cajanus">Cajanus</a></li>
+      
+        <li><a href="/download/cicer">Cicer</a></li>
+      
+        <li><a href="/download/glycine">Glycine</a></li>
+      
+        <li><a href="/download/lotus">Lotus</a></li>
+      
+        <li><a href="/download/lupinus">Lupinus</a></li>
+      
+        <li><a href="/download/medicago">Medicago</a></li>
+      
+        <li><a href="/download/phaseolus">Phaseolus</a></li>
+      
+        <li><a href="/download/pisum">Pisum</a></li>
+      
+        <li><a href="/download/trifolium">Trifolium</a></li>
+      
+        <li><a href="/download/vigna">Vigna</a></li>
+      
+    </ul>
+  
+    <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+      <li class="uk-nav-header">special</li>
+      
+        <li><a href="/download/aeschynomene">Aeschynomene</a></li>
+      
+        <li><a href="/download/apios">Apios</a></li>
+      
+        <li><a href="/download/cercis">Cercis</a></li>
+      
+        <li><a href="/download/chamaecrista">Chamaecrista</a></li>
+      
+        <li><a href="/download/faidherbia">Faidherbia</a></li>
+      
+    </ul>
+  
+
+
+  
+  
+
+  <!-- dynamically set the top style property of the left menu when the height of the navbar changes -->
+  <!-- NOTE: the script tag is nested so it doesn't break a CSS selector -->
+  <script type="text/javascript">
+
+    const navbar = document.getElementById("navbar");
+    const left = document.getElementById("left-menu");
+
+    const leftTopObserver = new ResizeObserver(entries => {
+      for (let entry of entries) {
+        // use the newer contentBoxSize property if the browser supports it
+        if (entry.contentBoxSize) {
+          left.style.top = entry.contentBoxSize[0].blockSize + "px";
+        // fallback to the older contentRect property
+        } else {
+          left.style.top = entry.contentRect.height + "px";
+        }
+      }
+    });
+
+    leftTopObserver.observe(navbar);
+
+  </script>
+</div>
+
+
+<!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
+<div class="tm-main uk-section uk-section-default">
+  <div class="uk-container uk-flex">
+    <div class="uk-width-1-1">
+      
+
+
+<h1><i>Phaseolus</i> datasets</h1>
+
+
+
+<h3><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/lunatus/"><i>Phaseolus lunatus</i></a></h3>
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/lunatus/genomes/">Genomes</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/lunatus/genomes/G27455.gnm1.7NXX/">G27455.gnm1.7NXX</a></dt>
+  <dd>Phaseolus lunatus accession G27455 genome assembly V1</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/lunatus/annotations/">Annotations</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/lunatus/annotations/G27455.gnm1.ann1.JD7C/">G27455.gnm1.ann1.JD7C</a></dt>
+  <dd>Phaseolus lunatus accession G27455 annotation files from genome assembly V1</dd>
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr/>
+
+
+
+<h3><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/"><i>Phaseolus vulgaris</i></a></h3>
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/">Genomes</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/5-593.gnm1.1P7P/">5-593.gnm1.1P7P</a></dt>
+  <dd>Phaseolus vulgaris accession 5-593 (Middle American race), genome assembly v1.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/G19833.gnm1.zBnF/">G19833.gnm1.zBnF</a></dt>
+  <dd>Phaseolus vulgaris accession G19833 genome assembly v1.0</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/G19833.gnm2.fC0g/">G19833.gnm2.fC0g</a></dt>
+  <dd>Phaseolus vulgaris accession G19833 genome assembly v2.1</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/LaborOvalle.gnm1.VZZS/">LaborOvalle.gnm1.VZZS</a></dt>
+  <dd>Phaseolus vulgaris accession Labor Ovalle (race Guatemala) genome assembly v1.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/OACRex.gnm2.NXJW/">OACRex.gnm2.NXJW</a></dt>
+  <dd>Phaseolus vulgaris accession OACRex, genome assembly 2</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/UI111.gnm1.3VTM/">UI111.gnm1.3VTM</a></dt>
+  <dd>Phaseolus vulgaris accession UI111 genome assembly v1</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/annotations/">Annotations</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/annotations/5-593.gnm1.ann1.3FBJ/">5-593.gnm1.ann1.3FBJ</a></dt>
+  <dd>Phaseolus vulgaris accession 5-593 (Middle American race), annotation 1, genome assembly v1.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/annotations/G19833.gnm1.ann1.pScz/">G19833.gnm1.ann1.pScz</a></dt>
+  <dd>Phaseolus vulgaris accession G19833 annotation files</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/annotations/G19833.gnm2.ann1.PB8d/">G19833.gnm2.ann1.PB8d</a></dt>
+  <dd>Phaseolus vulgaris accession G19833 annotation files from genome assembly 2.0</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/annotations/LaborOvalle.gnm1.ann1.L1DY/">LaborOvalle.gnm1.ann1.L1DY</a></dt>
+  <dd>Phaseolus vulgaris accession Labor Ovalle (race Guatemala), annotation 1, genome assembly v1.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/annotations/UI111.gnm1.ann1.8L4N/">UI111.gnm1.ann1.8L4N</a></dt>
+  <dd>Phaseolus vulgaris accession UI111 annotation files from genome assembly 1.0</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/expression/">Expression</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/expression/G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014/">G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014</a></dt>
+  <dd>Bean Expression Atlas for common bean cv. Negro jamapa mapped to the G19833 version 1 genome annotation.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/expression/G19833.gnm2.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014/">G19833.gnm2.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014</a></dt>
+  <dd>Bean Expression Atlas for common bean cv. Negro jamapa mapped to the G19833 version 2 genome annotation.</dd>
+  
+</dl>
+
+
+
+
+
+
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/">Markers</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.BARCBean6K/">G19833.gnm1.mrk.BARCBean6K</a></dt>
+  <dd>A core set of 6000 SNPs based on the genotyping of 365 dry bean and 134 snap bean accessions with the BARCBean6K_1 and BARCBean6K_2 BeadChips.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Bean683WGRS_5M/">G19833.gnm1.mrk.Bean683WGRS_5M</a></dt>
+  <dd>Approximately 5 million SNP markers reported by Wu, Wang et al. 2020, identified from whole genome resequencing (WGRS) of 683 common bean genotypes, relative to the Phaseolus vulgaris assembly G19833.gnm1.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Benchimol_deCampos_2007/">G19833.gnm1.mrk.Benchimol_deCampos_2007</a></dt>
+  <dd>A common bean genomic library was constructed using the ‘IAC-UNA’ variety enriched for (CT) and (GT) for microsatellite motifs. From 1,209 sequenced clones, 714 showed microsatellites distributed over 471 simple and 243 compound motifs.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Blair_Cortés_2013/">G19833.gnm1.mrk.Blair_Cortés_2013</a></dt>
+  <dd>A 768-marker Illumina GoldenGate array of SNP markers based on Trans-legume Orthologous Group (TOG) genes; marker physical coordinates relative to G19833.gnm1</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Blair_Pedraza_2003/">G19833.gnm1.mrk.Blair_Pedraza_2003</a></dt>
+  <dd>A total of 150 microsatellite markers developed for common bean (Phaseolus vulgaris L.) were tested for parental polymorphism and used to determine the positions of 100 genetic loci on an integrated genetic map of the species.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Cardoso_Oblessuc_2008/">G19833.gnm1.mrk.Cardoso_Oblessuc_2008</a></dt>
+  <dd>Ninety-nine new microsatelitte loci were developed from a microsatellite-enriched library for (CT)8  and (GT)8  motifs, from CAL-143 line.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Gaitán-Solís_Duque_2002/">G19833.gnm1.mrk.Gaitán-Solís_Duque_2002</a></dt>
+  <dd>18 polymorphic microsatellite markers from Bactris gasipaes.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Galeano_Cortés_2012/">G19833.gnm1.mrk.Galeano_Cortés_2012</a></dt>
+  <dd>In this study, a total of 313 new gene-based markers were developed at target genes.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Galeano_Fernandez_2011/">G19833.gnm1.mrk.Galeano_Fernandez_2011</a></dt>
+  <dd>The DOR364 x BAT477 linkage map consisted of 291 markers with a total map length of 1,788 cM.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Grisi_Blair_2007/">G19833.gnm1.mrk.Grisi_Blair_2007</a></dt>
+  <dd>61 polymorphic microsatellite markers for beans and the construction of a genetic map using the BAT93 x Jalo EEP558 (BJ) population.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Hanai_deCampos_2007/">G19833.gnm1.mrk.Hanai_deCampos_2007</a></dt>
+  <dd>Three cDNA libraries generated by the Bean EST project were analyzed for the presence of SSRs. A total of 219 expressed sequence tags (ESTs) were found to carry 240 SSRs (named EST-SSR), whereas 714 genomic sequences contained 471 SSRs (named genomic-SSR).</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Hougaard_Madsen_2008/">G19833.gnm1.mrk.Hougaard_Madsen_2008</a></dt>
+  <dd>One hundred and four new loci representing single-copy genes were added to the existing bean map.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Kim_Kaur_2006/">G19833.gnm1.mrk.Kim_Kaur_2006</a></dt>
+  <dd>Genetic markers from Kim, Kaur, et al. (2006) mapped to G19833.gnm1.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.McClean_Mamidi_2010/">G19833.gnm1.mrk.McClean_Mamidi_2010</a></dt>
+  <dd>Around 15,000 common bean sequences (primarily EST contigs and EST singletons) were electronically positioned onto the common bean map using the shared syntentic blocks as references points.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Murray_Larsen_2002/">G19833.gnm1.mrk.Murray_Larsen_2002</a></dt>
+  <dd>A set of 79 previously mapped bean (Phaseolus vulgaris) genomic (Bng) clones were partially sequenced. Sequence tagged site (STSs) were produced for 16 of the clones, 2 of which contain simple sequence repeats (SSRs).</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Parker_BernyMierYTeran_2020/">G19833.gnm1.mrk.Parker_BernyMierYTeran_2020</a></dt>
+  <dd>Genetic markers for the GWAS dataset provided with Parker, Berny Mier y Teran (2020).</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Raggi_Caproni_2019/">G19833.gnm1.mrk.Raggi_Caproni_2019</a></dt>
+  <dd>Plant material was genotyped using double digest Restriction-site Associated DNA sequencing, producing about 50,000 SNPs.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Wen_Chang_2019/">G19833.gnm1.mrk.Wen_Chang_2019</a></dt>
+  <dd>GWAS assessing soybean cyst nematode (SCN) (Heterodera glycines) resistance, seed coat color, and seed weight in 363 diverse accessions of common bean, P. vulgaris relative to the G19833 assembly 1.0</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm1.mrk.Yu_Park_2000/">G19833.gnm1.mrk.Yu_Park_2000</a></dt>
+  <dd>15 SSR markers assigned to the Phaseolus vulgaris molecular linkage map.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm2.mrk.Andean_MidAmer_GBS/">G19833.gnm2.mrk.Andean_MidAmer_GBS</a></dt>
+  <dd>Marker SNPs developed by GBS on Andean and Middle American gene pools, with reads mapped to the Phaseolus vulgaris G19833 gnm2 assembly.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm2.mrk.Bassett_Kamfwa_2021/">G19833.gnm2.mrk.Bassett_Kamfwa_2021</a></dt>
+  <dd>Marker SNPs developed via Genotyping by Sequencing (GBS) of the Andean Diversity Panel; reads were mapped to the Phaseolus vulgaris G19833 v2.1 reference assembly.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm2.mrk.Blair_Cortés_2013/">G19833.gnm2.mrk.Blair_Cortés_2013</a></dt>
+  <dd>A 768-marker Illumina GoldenGate array of SNP markers based on Trans-legume Orthologous Group (TOG) genes; marker physical coordinates relative to G19833.gnm2</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm2.mrk.DiVittori_Bitocchi_2021/">G19833.gnm2.mrk.DiVittori_Bitocchi_2021</a></dt>
+  <dd>We developed a BC4/F4 introgression line population and narrowed the major locus for pod shattering down to a 22.5 kb region.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/markers/G19833.gnm2.mrk.Escobar_Oladzad_2022/">G19833.gnm2.mrk.Escobar_Oladzad_2022</a></dt>
+  <dd>A set of 52,201 SNPs reported by Escobar, Oladzad et al. (2022) based on genotyping-by-sequencing (GBS) of a multiparent advanced generation inter-cross (MAGIC) dry bean population of 1,050 F5:7 RILs. Reads were mapped and sorted against the G19833.gnm2 reference assembly for common bean.</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/synteny/">Synteny</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/synteny/G19833.gnm1.syn.xQ7F/">G19833.gnm1.syn.xQ7F</a></dt>
+  <dd>Synteny mappings among the genomes relative to Phaseolus vulgaris G19833 gnm1.ann1 genome annotation.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/synteny/G19833.gnm2.syn.DVDW/">G19833.gnm2.syn.DVDW</a></dt>
+  <dd>Synteny mappings among the genomes relative to the Phaseolus vulgaris G19833 gnm2.ann1 genome annotation.</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/diversity/">Diversity</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/vulgaris/diversity/G19833.gnm1.div.Moghaddam_Mamidi_2016/">G19833.gnm1.div.Moghaddam_Mamidi_2016</a></dt>
+  <dd>Genotyping (variant) data for two diverse collections of Phaseolus vulgaris accessions: the Mesoamerican Diversity Panel (MDP) and the Andean Diversity Panel (ADP).</dd>
+  
+</dl>
+
+
+<hr/>
+
+
+
+<h3><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/acutifolius/"><i>Phaseolus acutifolius</i></a></h3>
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/acutifolius/genomes/">Genomes</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/acutifolius/genomes/Frijol_Bayo.gnm1.QH8L/">Frijol_Bayo.gnm1.QH8L</a></dt>
+  <dd>Phaseolus acutifolius accession Frijol Bayo, genome assembly v1.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/acutifolius/genomes/W6_15578.gnm2.L2V4/">W6_15578.gnm2.L2V4</a></dt>
+  <dd>Phaseolus acutifolius accession W6_15578, genome assembly v2.</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/acutifolius/annotations/">Annotations</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/acutifolius/annotations/Frijol_Bayo.gnm1.ann1.ML22/">Frijol_Bayo.gnm1.ann1.ML22</a></dt>
+  <dd>Genome annotation files for Phaseolus acutifolius accession Frijol Bayo; JGI annotation version 1 on assembly 1</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/acutifolius/annotations/W6_15578.gnm2.ann1.LVZ1/">W6_15578.gnm2.ann1.LVZ1</a></dt>
+  <dd>Phaseolus acutifolius accession W6_15578, annotations on genome assembly v2.</dd>
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr/>
+
+
+
+<h3><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/coccineus/"><i>Phaseolus coccineus</i></a></h3>
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/coccineus/genomes/">Genomes</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/coccineus/genomes/PHA8298.gnm1.PYJ1/">PHA8298.gnm1.PYJ1</a></dt>
+  <dd>Phaseolus coccineus accession PHA8298, genome assembly v1</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/coccineus/annotations/">Annotations</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Phaseolus/coccineus/annotations/PHA8298.gnm1.ann1.0Q14/">PHA8298.gnm1.ann1.0Q14</a></dt>
+  <dd>Annotation 1 for Phaseolus coccineus accession PHA8298, genome assembly v1</dd>
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr/>
+
+
+
+
+    </div>
+    
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Vigna &#8211; LIS: Legume Information System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A collaborative, community resource to facilitate crop improvement by integrating genetic, genomic, and trait data across legume species.">
+  <meta name="robots" content="all">
+  <meta name="author" content="">
+  
+  
+  <link rel="canonical" href="/download/vigna/">
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-49655154-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-49655154-1');
+</script>
+
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/uikit/dist/css/uikit.min.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/css/uikit-theme.css" type="text/css" />
+
+  <!-- place globally-included stylesheet content here -->
+<style>
+  .species-image {
+      float: right;
+      margin: 10px;
+  }
+  .species-image img {
+      border: 1px solid darkgreen;
+  }
+  .species-image .attribution {
+      text-align: center; 
+      font-style: italic;
+      font-size: 80%;
+  }
+  .blog-image {
+      float: right;
+      margin: 10px;
+  }
+  .blog-image img {
+      border: 1px solid gray;
+  }
+  .blog-image .attribution {
+      text-align: center; 
+      font-style: italic;
+      font-size: 80%;
+  }
+  .temp {
+      color: darkred;
+      font-family: serif;
+      font-weight: bold;
+  }
+
+  .toggle-top-margin{
+    margin-top: 4px;
+  }
+
+  .glass-morphism{
+    backdrop-filter: blur(4px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(225, 225, 225, 0.65);
+    border-radius: 5px;
+    border: 1px solid rgba(209, 213, 219, 0.1);
+  }
+
+  .nav-item {
+    text-wrap: nowrap;
+  }
+
+  .nav-item:hover {
+    color: #235626;
+  }
+
+  .nav-title:hover {
+    margin-bottom: -1px;
+    border-bottom: 1px solid white;
+  }
+
+  .custom-width {
+    width: 170px;
+  }
+
+  .text-size-med{
+    font-size: 18px;
+  }
+  .text-size-large{
+    font-size: 20px;
+  }
+
+  .toggle-top-margin{
+    margin-top: 4px;
+  }
+  
+  body {
+    color: black;
+    background-color: white;
+  }
+
+/* Homepage custom styling */
+.search-container {
+  display: flex; 
+  justify-content: space-between;
+}
+
+@media (max-width: 764px){
+  .search-container{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 598px){
+  .bar-input-group{
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1600px){
+  .col3-cornsilk{
+    background-color: cornsilk;
+  }
+  .col3-seashell{
+    background-color: seashell;
+  }
+  .col3-azure{
+    background-color: azure;
+  }
+  .col3-mistyrose{
+    background-color: mistyrose;
+  }
+  .col3-antiquewhite{
+    background-color: antiquewhite;
+  }
+  .col3-cumstomgreen{
+    background-color: #EAFAF1;
+  }
+}
+ 
+  @media (max-width: 1599px){
+  .cornsilk{
+    background-color: cornsilk;
+  }
+  .seashell{
+    background-color: seashell;
+  }
+  .azure{
+    background-color: azure;
+  }
+  .mistyrose{
+    background-color: mistyrose;
+  }
+  .antiquewhite{
+    background-color: antiquewhite;
+  }
+  .customgreen {
+    background-color: #EAFAF1;
+  }
+  }
+
+</style>
+
+
+
+  <!-- Custom JS -->
+  <script src="/assets/uikit/dist/js/uikit.min.js"></script>
+  <script src="/assets/uikit/dist/js/uikit-icons.min.js"></script>
+
+  <!-- place globally-included scripts here -->
+
+
+  
+
+  <!-- opt-in code for integrating GraphQL with LIS Web Components -->
+  <script type="importmap">
+    {
+      "imports": {
+        "lis-graphql": "/assets/js/graphql/index.js",
+        "lis-events": "/assets/js/events.js"
+      }
+    }
+  </script>
+
+  
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+      <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/favicon-192x192.png">
+      <link rel="icon" href="/assets/icons/favicon.ico">
+      </head>
+
+
+<body>
+
+
+
+
+<div id="navbar" class="uk-navbar-container tm-navbar-container uk-sticky uk-sticky-fixed uk-light" uk-sticky>
+
+  <div id="alerts">
+    
+    
+      
+
+    
+  </div>
+
+  <script type="text/javascript">
+
+    // define the cookie key
+    const alertsKey = "lis-navbar-alerts";
+
+    // get the alerts element
+    const alerts = document.getElementById("alerts");
+
+    // define a callback that saves the toggle state
+    function toggleCallback(event) {
+      document.cookie = `${alertsKey}=${event.type};SameSite=Lax;path=/`;
+    }
+
+    // use the callback every time the element is toggled
+    alerts.addEventListener("show", toggleCallback);
+    alerts.addEventListener("hide", toggleCallback);
+
+    // load the element's state
+    const alertsCookie = document.cookie
+      .split('; ')
+      .find(row => row.startsWith(`${alertsKey}=`));
+
+    // hide the alerts if they're supposed to be hidden
+    if (alertsCookie && alertsCookie.split('=')[1].toLowerCase() === "hide") {
+      UIkit.toggle(alerts).toggle();
+    }
+
+  </script>
+
+  <div class="uk-container uk-container-expand">
+    <nav class="uk-navbar">
+      <div class="uk-navbar-left uk-text-truncate">
+        <a class="uk-navbar-item uk-logo uk-text-truncate" href="/">
+          
+          <img class="uk-margin-small-right" src="/assets/img/logo.png" alt="LIS: Legume Information System logo" width="47" height="47" />
+          
+          <div class="uk-text-truncate">
+            LIS: Legume Information System
+            
+            <div class="uk-navbar-subtitle uk-text-truncate">Information about legume traits for crop improvement</div>
+            
+          </div>
+        </a>
+      </div>
+      <div class="uk-navbar-right uk-flex-none">
+
+        <ul class="uk-navbar-nav uk-visible@l">
+  <li><a href="/">Home</a></li>
+  <li>
+    <a href="/genomics">Genomics</a>
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+        
+          
+            
+              <li> <a href="/genomics//arachis"> Arachis (Peanut)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//cajanus"> Cajanus (Pigeonpea)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//cicer"> Cicer (Chickpea)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//glycine"> Glycine (Soybean)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//lotus"> Lotus (Bird's-foot trefoil)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//lupinus"> Lupinus (Lupin grain legumes)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//medicago"> Medicago (Alfalfa/Lucerne, Barrel Medic)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//phaseolus"> Phaseolus (Common Bean, Lima Bean, Tepary Bean, etc.)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//pisum"> Pisum (Pea)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//trifolium"> Trifolium (Clover)</a></li>
+            
+          
+        
+          
+            
+              <li> <a href="/genomics//vigna"> Vigna (Cowpea)</a></li>
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+        <li class="uk-nav-divider"></li>
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+              <li><a href="/genomics/aeschynomene"> Aeschynomene (Jointvetch)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/apios"> Apios (Potato bean)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/cercis"> Cercis (Redbud tree)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/chamaecrista"> Chamaecrista (Partridge pea)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/faidherbia"> Faidherbia (Apple-ring acacia)</a></li>
+            
+          
+        
+      </ul>
+    </div>
+  </li>
+  <li>
+    <a href="/tools">Tools</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+          <li><a href="/tools/search/pangene.html">Pangene Lookup Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+      </ul>
+    </div>
+    
+  </li>
+  <li>
+    <a href="/download">Download</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          
+            <li> <a href="/download//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        <li class="uk-nav-divider"></li>
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+              <li><a href="/download/aeschynomene"> Aeschynomene (Jointvetch)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/download/apios"> Apios (Potato bean)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/download/cercis"> Cercis (Redbud tree)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/download/chamaecrista"> Chamaecrista (Partridge pea)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/download/faidherbia"> Faidherbia (Apple-ring acacia)</a></li>
+            
+          
+        
+      </ul>
+    </div>
+    
+  </li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+<a href="#off-screen-menu" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle></a>
+
+
+        <ul class="uk-navbar-nav uk-visible@s">
+
+        
+          <li><a class="tm-no-underline" href="https://twitter.com/legumeinfo" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span></a></li>
+        
+        
+        
+          <li><a class="tm-no-underline" href="https://github.com/legumeinfo" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span></a></li>
+        
+
+        </ul>
+        
+        
+      </div>
+    </nav>
+    <nav class="uk-navbar tm-lower-navbar">
+      <div class="uk-navbar-left">
+
+        <ul class="uk-navbar-nav uk-hidden@l uk-visible@s">
+  <li><a href="/">Home</a></li>
+  <li>
+    <a href="/genomics">Genomics</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          
+            <li> <a href="/genomics//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/genomics//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        <li class="uk-nav-divider"></li>
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+              <li><a href="/genomics/aeschynomene"> Aeschynomene (Jointvetch)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/apios"> Apios (Potato bean)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/cercis"> Cercis (Redbud tree)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/chamaecrista"> Chamaecrista (Partridge pea)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/faidherbia"> Faidherbia (Apple-ring acacia)</a></li>
+            
+          
+        
+      </ul>
+    </div>
+    
+  </li>
+  <li>
+    <a href="/tools">Tools</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+          <li><a href="/tools/search/pangene.html">Pangene Lookup Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+      </ul>
+    </div>
+    
+  </li>
+  <li><a href="/download">Download</a></li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div id="off-screen-menu" uk-offcanvas="overlay: true">
+  <div class="uk-offcanvas-bar uk-dark  uk-background-secondary">
+
+    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+  <li><a href="/">Home</a></li>
+  
+  <li class="uk-parent">
+    <a href="#">Genomics</a>
+    
+    <ul class="uk-nav-sub">
+      
+        
+          
+            <li><a href="/genomics//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+      <li class="uk-nav-divider"></li>
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li><a href="/genomics/aeschynomene"> Aeschynomene (Jointvetch)</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics/apios"> Apios (Potato bean)</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics/cercis"> Cercis (Redbud tree)</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics/chamaecrista"> Chamaecrista (Partridge pea)</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics/faidherbia"> Faidherbia (Apple-ring acacia)</a></li>
+          
+        
+      
+    </ul>
+  </li>
+  
+  
+  <li class="uk-parent">
+    <a href="/tools">Tools</a>
+    
+    <ul class="uk-nav-sub">
+      
+        
+          <li><a href="https://data.legumeinfo.org/">LIS Datastore</a></li>
+        
+          <li><a href="https://mines.legumeinfo.org/">LIS InterMines</a></li>
+        
+          <li><a href="https://dscensor.legumeinfo.org/">DSCensor Data Overviews</a></li>
+        
+      
+        
+          <li><a href="/tools/search/gene.html">Gene Search Tool</a></li>
+        
+          <li><a href="/tools/search/pangene.html">Pangene Lookup Tool</a></li>
+        
+      
+        
+          <li><a href="https://sequenceserver.legumeinfo.org/">LIS SequenceServer BLAST</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/">Funnotate: Annotate Your Sequences</a></li>
+        
+      
+        
+          <li><a href="https://gcv.legumeinfo.org/">Genome Context Viewer</a></li>
+        
+          <li><a href="https://zzbrowse.legumeinfo.org/">ZZBrowse GWAS/QTL</a></li>
+        
+          <li><a href="https://cmap.legumeinfo.org/">CMap: Genetic Map Viewer</a></li>
+        
+          <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
+        
+          <li><a href="https://conekt.legumeinfo.org/">Conekt Comparative Expression</a></li>
+        
+          <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
+        
+          <li><a href="/tools/gcvit">GCViT: SNP Comparison Tool</a></li>
+        
+      
+    </ul>
+  </li>
+  
+  <li><a href="/download">Download</a></li>
+  <li><a href="/community">Community</a></li>
+  <li><a href="/contact">Contact</a></li>
+</ul>
+
+
+    
+    <ul class="uk-nav uk-nav-default">
+      <li class="uk-nav-divider"></li>
+      
+      <li><a href="https://twitter.com/legumeinfo" target="_blank" title="Follow us on Twitter"><span uk-icon="twitter"></span> Twitter</a></li>
+      
+      
+      
+      <li><a href="https://github.com/legumeinfo" target="_blank" title="Fork us on GitHub"><span uk-icon="github"></span> GitHub</a></li>
+      
+    </ul>
+    
+
+  </div>
+</div>
+
+
+
+  <div id="left-menu" class="tm-sidebar-left uk-visible@m">
+
+  
+  
+    <h3>Datasets</h3>
+
+  
+  
+    <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+      <li class="uk-nav-header">main</li>
+      
+        <li><a href="/download/arachis">Arachis</a></li>
+      
+        <li><a href="/download/cajanus">Cajanus</a></li>
+      
+        <li><a href="/download/cicer">Cicer</a></li>
+      
+        <li><a href="/download/glycine">Glycine</a></li>
+      
+        <li><a href="/download/lotus">Lotus</a></li>
+      
+        <li><a href="/download/lupinus">Lupinus</a></li>
+      
+        <li><a href="/download/medicago">Medicago</a></li>
+      
+        <li><a href="/download/phaseolus">Phaseolus</a></li>
+      
+        <li><a href="/download/pisum">Pisum</a></li>
+      
+        <li><a href="/download/trifolium">Trifolium</a></li>
+      
+        <li><a href="/download/vigna">Vigna</a></li>
+      
+    </ul>
+  
+    <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+      <li class="uk-nav-header">special</li>
+      
+        <li><a href="/download/aeschynomene">Aeschynomene</a></li>
+      
+        <li><a href="/download/apios">Apios</a></li>
+      
+        <li><a href="/download/cercis">Cercis</a></li>
+      
+        <li><a href="/download/chamaecrista">Chamaecrista</a></li>
+      
+        <li><a href="/download/faidherbia">Faidherbia</a></li>
+      
+    </ul>
+  
+
+
+  
+  
+
+  <!-- dynamically set the top style property of the left menu when the height of the navbar changes -->
+  <!-- NOTE: the script tag is nested so it doesn't break a CSS selector -->
+  <script type="text/javascript">
+
+    const navbar = document.getElementById("navbar");
+    const left = document.getElementById("left-menu");
+
+    const leftTopObserver = new ResizeObserver(entries => {
+      for (let entry of entries) {
+        // use the newer contentBoxSize property if the browser supports it
+        if (entry.contentBoxSize) {
+          left.style.top = entry.contentBoxSize[0].blockSize + "px";
+        // fallback to the older contentRect property
+        } else {
+          left.style.top = entry.contentRect.height + "px";
+        }
+      }
+    });
+
+    leftTopObserver.observe(navbar);
+
+  </script>
+</div>
+
+
+<!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
+<div class="tm-main uk-section uk-section-default">
+  <div class="uk-container uk-flex">
+    <div class="uk-width-1-1">
+      
+
+
+<h1><i>Vigna</i> datasets</h1>
+
+
+
+<h3><a target="_blank" href="https://data.legumeinfo.org/Vigna/angularis/"><i>Vigna angularis</i></a></h3>
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Vigna/angularis/genomes/">Genomes</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/angularis/genomes/Gyeongwon.gnm3.JyYC/">Gyeongwon.gnm3.JyYC</a></dt>
+  <dd>genome assembly</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/angularis/genomes/Shumari.gnm1.V0CS/">Shumari.gnm1.V0CS</a></dt>
+  <dd>Vigna angularis accession Shumari genome</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Vigna/angularis/annotations/">Annotations</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/angularis/annotations/Gyeongwon.gnm3.ann1.3Nz5/">Gyeongwon.gnm3.ann1.3Nz5</a></dt>
+  <dd>Directory of gene annotations, called on an assembly of pseudomolecules and remaining scaffold sequences</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/angularis/annotations/Shumari.gnm1.ann1.8BRS/">Shumari.gnm1.ann1.8BRS</a></dt>
+  <dd>Vigna angularis accession Shumari genome annotation files</dd>
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Vigna/angularis/synteny/">Synteny</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/angularis/synteny/Gyeongwon.gnm3.syn.wCFF/">Gyeongwon.gnm3.syn.wCFF</a></dt>
+  <dd>Synteny between Vigna angularis Gyeongwon and other species accessions calculated by LIS.</dd>
+  
+</dl>
+
+
+
+
+<hr/>
+
+
+
+<h3><a target="_blank" href="https://data.legumeinfo.org/Vigna/radiata/"><i>Vigna radiata</i></a></h3>
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Vigna/radiata/genomes/">Genomes</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/radiata/genomes/VC1973A.gnm6.3nL8/">VC1973A.gnm6.3nL8</a></dt>
+  <dd>Directory of scaffold assemblies and pseudomolecule assemblies.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/radiata/genomes/VC1973A.gnm7.SB53/">VC1973A.gnm7.SB53</a></dt>
+  <dd>Vigna radiata (mungbean) accession VC1973A, assembly version 7 (2021)</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Vigna/radiata/annotations/">Annotations</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/radiata/annotations/VC1973A.gnm6.ann1.M1Qs/">VC1973A.gnm6.ann1.M1Qs</a></dt>
+  <dd>Gene annotations</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/radiata/annotations/VC1973A.gnm7.ann1.RWBG/">VC1973A.gnm7.ann1.RWBG</a></dt>
+  <dd>Annotation version 1 Vigna radiata (mungbean) accession VC1973A, assembly version 7 (2021)</dd>
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Vigna/radiata/markers/">Markers</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/radiata/markers/VC1973A.gnm6.mrk.Sandhu_Singh_2020/">VC1973A.gnm6.mrk.Sandhu_Singh_2020</a></dt>
+  <dd>SNP markers from the mung bean Illumina iSelect BeadArray, with associations reported in Sandhu Singh 2020 relative to gnm6</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/radiata/markers/VC1973A.gnm6.mrk.microsatellites/">VC1973A.gnm6.mrk.microsatellites</a></dt>
+  <dd>SSR markers and genomic locations on the genome sequence of Vigna radiata, accession VC1973A</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/radiata/markers/VC1973A.gnm7.mrk.Chiteri_Rairdin_2024/">VC1973A.gnm7.mrk.Chiteri_Rairdin_2024</a></dt>
+  <dd>SNP markers from the mung bean Illumina iSelect BeadArray, with associations reported in Sandhu Singh 2020 relative to gnm6, and projected into gnm7 coordinates</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Vigna/radiata/synteny/">Synteny</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/radiata/synteny/VC1973A.gnm6.syn.mcwy/">VC1973A.gnm6.syn.mcwy</a></dt>
+  <dd>Synteny between Vigna radiata VC1973A and other species accessions calculated by LIS.</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Vigna/radiata/diversity/">Diversity</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/radiata/diversity/VC1973A.gnm6.div.Sandhu_Singh_2020/">VC1973A.gnm6.div.Sandhu_Singh_2020</a></dt>
+  <dd>Genetic variants for Vigna radiata, assessed across 500 accessions to create the Iowamung bean panel; genotyped relative to accession VC1973A.gnm6</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/radiata/diversity/VC1973A.gnm7.div.Sandhu_Singh_2020/">VC1973A.gnm7.div.Sandhu_Singh_2020</a></dt>
+  <dd>Genetic variants for Vigna radiata, assessed across 500 accessions to create the Iowamung bean panel; genotyped relative to accession VC1973A.gnm7</dd>
+  
+</dl>
+
+
+<hr/>
+
+
+
+<h3><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/"><i>Vigna unguiculata</i></a></h3>
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/genomes/">Genomes</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/genomes/CB5-2.gnm1.WDTB/">CB5-2.gnm1.WDTB</a></dt>
+  <dd>Vigna unguiculata genome assembly for CB5-2</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/genomes/IT97K-499-35.gnm1.QnBW/">IT97K-499-35.gnm1.QnBW</a></dt>
+  <dd>Vigna unguiculata accession IT97K-499-35 genome assembly 1.0</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/genomes/Sanzi.gnm1.YNCM/">Sanzi.gnm1.YNCM</a></dt>
+  <dd>Vigna unguiculata genome assembly for Sanzi</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/genomes/Suvita2.gnm1.5QLL/">Suvita2.gnm1.5QLL</a></dt>
+  <dd>Vigna unguiculata genome assembly for Suvita2</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/genomes/TZ30.gnm1.TX9W/">TZ30.gnm1.TX9W</a></dt>
+  <dd>Vigna unguiculata genome assembly for TZ30</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/genomes/UCR779.gnm1.M7KZ/">UCR779.gnm1.M7KZ</a></dt>
+  <dd>Vigna unguiculata genome assembly for UCR779</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/genomes/Xiabao_II.gnm1.WDBP/">Xiabao_II.gnm1.WDBP</a></dt>
+  <dd>Vigna unguiculata genome assembly for Xiabao_II</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/genomes/ZN016.gnm1.997F/">ZN016.gnm1.997F</a></dt>
+  <dd>Vigna unguiculata genome assembly for ZN016</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/annotations/">Annotations</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/annotations/CB5-2.gnm1.ann1.0GKC/">CB5-2.gnm1.ann1.0GKC</a></dt>
+  <dd>Genome annotation for Vigna unguiculata CB5-2</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/annotations/IT97K-499-35.gnm1.ann1.zb5D/">IT97K-499-35.gnm1.ann1.zb5D</a></dt>
+  <dd>Vigna unguiculata accession IT97K-499-35; JGI annotation version 1 on assembly 1</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/annotations/IT97K-499-35.gnm1.ann2.FD7K/">IT97K-499-35.gnm1.ann2.FD7K</a></dt>
+  <dd>Genome annotation version 2 for Vigna unguiculata IT97K-499-35</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/annotations/Sanzi.gnm1.ann1.HFH8/">Sanzi.gnm1.ann1.HFH8</a></dt>
+  <dd>Genome annotation for Vigna unguiculata Sanzi</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/annotations/Suvita2.gnm1.ann1.1PF6/">Suvita2.gnm1.ann1.1PF6</a></dt>
+  <dd>Genome annotation for Vigna unguiculata Suvita2</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/annotations/TZ30.gnm1.ann2.59NL/">TZ30.gnm1.ann2.59NL</a></dt>
+  <dd>Genome annotation for Vigna unguiculata TZ30</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/annotations/UCR779.gnm1.ann1.VF6G/">UCR779.gnm1.ann1.VF6G</a></dt>
+  <dd>Genome annotation for Vigna unguiculata UCR779</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/annotations/Xiabao_II.gnm1.ann1.4JFL/">Xiabao_II.gnm1.ann1.4JFL</a></dt>
+  <dd>Genome annotation for Vigna unguiculata Xiabao_II</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/annotations/ZN016.gnm1.ann2.C7YV/">ZN016.gnm1.ann2.C7YV</a></dt>
+  <dd>Genome annotation for Vigna unguiculata ZN016</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/expression/">Expression</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/expression/IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016/">IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016</a></dt>
+  <dd>Black-eyed pea gene expression atlas (IT97K-499-35)</dd>
+  
+</dl>
+
+
+
+
+
+
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/markers/">Markers</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/markers/IT97K-499-35.gnm1.mrk.Angira_Zhang_2020/">IT97K-499-35.gnm1.mrk.Angira_Zhang_2020</a></dt>
+  <dd>Flanking SNP markers for First flower and Plant height QTLs discovered in a population of 175 F2:8 RILs derived from a cross between the Cowpeas GoldenEyeCream and IT98K-476-8. Marker positions determined by homology vs. the Vigna unguiculata IT97K-499-35 v1.0 assembly.</dd>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/markers/IT97K-499-35.gnm1.mrk.Cowpea1MSelectedSNPs/">IT97K-499-35.gnm1.mrk.Cowpea1MSelectedSNPs</a></dt>
+  <dd>SNP mining from 183,118 ESTs sequenced from 17 cDNA libraries yielded ≈10,000 high-confidence SNPs from which an Illumina 1,536-SNP GoldenGate genotyping array was developed.</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/synteny/">Synteny</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/synteny/IT97K-499-35.gnm1.syn.W3NY/">IT97K-499-35.gnm1.syn.W3NY</a></dt>
+  <dd>Synteny between Vigna unguiculata IT97K-499-35 and other species accessions calculated by LIS.</dd>
+  
+</dl>
+
+
+
+<h4><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/diversity/">Diversity</a></h4>
+<dl>
+  
+  <dt><a target="_blank" href="https://data.legumeinfo.org/Vigna/unguiculata/diversity/IT97K-499-35.gnm1.div.Huynh_Ehlers_2018/">IT97K-499-35.gnm1.div.Huynh_Ehlers_2018</a></dt>
+  <dd>VCF file containing genotype information for 305 F8 RILs, 98.74% homozygous on average while diverse in agronomic traits, mapped to the cowpea IT97K-499-35.gnm1 genome.</dd>
+  
+</dl>
+
+
+<hr/>
+
+
+
+
+    </div>
+    
+  </div>
+</div>
+
+
+</body>
+</html>

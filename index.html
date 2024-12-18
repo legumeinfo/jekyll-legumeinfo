@@ -61,6 +61,115 @@
       font-family: serif;
       font-weight: bold;
   }
+
+  .toggle-top-margin{
+    margin-top: 4px;
+  }
+
+  .glass-morphism{
+    backdrop-filter: blur(4px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(225, 225, 225, 0.65);
+    border-radius: 5px;
+    border: 1px solid rgba(209, 213, 219, 0.1);
+  }
+
+  .nav-item {
+    text-wrap: nowrap;
+  }
+
+  .nav-item:hover {
+    color: #235626;
+  }
+
+  .nav-title:hover {
+    margin-bottom: -1px;
+    border-bottom: 1px solid white;
+  }
+
+  .custom-width {
+    width: 170px;
+  }
+
+  .text-size-med{
+    font-size: 18px;
+  }
+  .text-size-large{
+    font-size: 20px;
+  }
+
+  .toggle-top-margin{
+    margin-top: 4px;
+  }
+  
+  body {
+    color: black;
+    background-color: white;
+  }
+
+/* Homepage custom styling */
+.search-container {
+  display: flex; 
+  justify-content: space-between;
+}
+
+@media (max-width: 764px){
+  .search-container{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 598px){
+  .bar-input-group{
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1600px){
+  .col3-cornsilk{
+    background-color: cornsilk;
+  }
+  .col3-seashell{
+    background-color: seashell;
+  }
+  .col3-azure{
+    background-color: azure;
+  }
+  .col3-mistyrose{
+    background-color: mistyrose;
+  }
+  .col3-antiquewhite{
+    background-color: antiquewhite;
+  }
+  .col3-cumstomgreen{
+    background-color: #EAFAF1;
+  }
+}
+ 
+  @media (max-width: 1599px){
+  .cornsilk{
+    background-color: cornsilk;
+  }
+  .seashell{
+    background-color: seashell;
+  }
+  .azure{
+    background-color: azure;
+  }
+  .mistyrose{
+    background-color: mistyrose;
+  }
+  .antiquewhite{
+    background-color: antiquewhite;
+  }
+  .customgreen {
+    background-color: #EAFAF1;
+  }
+  }
+
 </style>
 
 
@@ -157,102 +266,175 @@
         <ul class="uk-navbar-nav uk-visible@l">
   <li><a href="/">Home</a></li>
   <li>
-    <a href="/taxa">Taxa</a>
-    
+    <a href="/genomics">Genomics</a>
     
     <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
       <ul class="uk-nav uk-navbar-dropdown-nav">
-      
         
           
-            <li> <a href="/taxa//arachis"> Arachis (Peanut)</a></li>
+            
+              <li> <a href="/genomics//arachis"> Arachis (Peanut)</a></li>
+            
           
         
-      
-        
           
-            <li> <a href="/taxa//cajanus"> Cajanus (Pigeonpea)</a></li>
-          
-        
-      
-        
-          
-            <li> <a href="/taxa//cicer"> Cicer (Chickpea)</a></li>
+            
+              <li> <a href="/genomics//cajanus"> Cajanus (Pigeonpea)</a></li>
+            
           
         
-      
-        
           
-            <li> <a href="/taxa//glycine"> Glycine (Soybean)</a></li>
-          
-        
-      
-        
-          
-            <li> <a href="/taxa//lotus"> Lotus (Bird's-foot trefoil)</a></li>
+            
+              <li> <a href="/genomics//cicer"> Cicer (Chickpea)</a></li>
+            
           
         
-      
-        
           
-            <li> <a href="/taxa//lupinus"> Lupinus (Lupin grain legumes)</a></li>
-          
-        
-      
-        
-          
-            <li> <a href="/taxa//medicago"> Medicago (Alfalfa/Lucerne, Barrel Medic)</a></li>
+            
+              <li> <a href="/genomics//glycine"> Glycine (Soybean)</a></li>
+            
           
         
-      
-        
           
-            <li> <a href="/taxa//phaseolus"> Phaseolus (Common Bean, Lima Bean, Tepary Bean, etc.)</a></li>
-          
-        
-      
-        
-          
-            <li> <a href="/taxa//pisum"> Pisum (Pea)</a></li>
+            
+              <li> <a href="/genomics//lotus"> Lotus (Bird's-foot trefoil)</a></li>
+            
           
         
-      
-        
           
-            <li> <a href="/taxa//trifolium"> Trifolium (Clover)</a></li>
-          
-        
-      
-        
-          
-            <li> <a href="/taxa//vigna"> Vigna (Cowpea)</a></li>
+            
+              <li> <a href="/genomics//lupinus"> Lupinus (Lupin grain legumes)</a></li>
+            
           
         
-      
-        
+          
+            
+              <li> <a href="/genomics//medicago"> Medicago (Alfalfa/Lucerne, Barrel Medic)</a></li>
+            
           
         
-      
-        
+          
+            
+              <li> <a href="/genomics//phaseolus"> Phaseolus (Common Bean, Lima Bean, Tepary Bean, etc.)</a></li>
+            
           
         
-      
-        
+          
+            
+              <li> <a href="/genomics//pisum"> Pisum (Pea)</a></li>
+            
           
         
-      
-        
+          
+            
+              <li> <a href="/genomics//trifolium"> Trifolium (Clover)</a></li>
+            
           
         
-      
-        
+          
+            
+              <li> <a href="/genomics//vigna"> Vigna (Cowpea)</a></li>
+            
           
         
-      
-      <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+        <li class="uk-nav-divider"></li>
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+              <li><a href="/genomics/aeschynomene"> Aeschynomene (Jointvetch)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/apios"> Apios (Potato bean)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/cercis"> Cercis (Redbud tree)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/chamaecrista"> Chamaecrista (Partridge pea)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/faidherbia"> Faidherbia (Apple-ring acacia)</a></li>
+            
+          
+        
       </ul>
     </div>
-    
   </li>
   <li>
     <a href="/tools">Tools</a>
@@ -290,7 +472,7 @@
         
           <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
         
-          <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+          <li><a href="https://conekt.legumeinfo.org/">Conekt Comparative Expression</a></li>
         
           <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
         
@@ -301,7 +483,179 @@
     </div>
     
   </li>
-  <li><a href="/download">Download</a></li>
+  <li>
+    <a href="/download">Download</a>
+    
+    
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      
+        
+          
+            <li> <a href="/download//arachis"> Arachis Peanut</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//cajanus"> Cajanus Pigeonpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//cicer"> Cicer Chickpea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//glycine"> Glycine Soybean</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//lotus"> Lotus Bird's-foot trefoil</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//lupinus"> Lupinus Lupin grain legumes</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//pisum"> Pisum Pea</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//trifolium"> Trifolium Clover</a></li>
+          
+        
+      
+        
+          
+            <li> <a href="/download//vigna"> Vigna Cowpea</a></li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        <li class="uk-nav-divider"></li>
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+              <li><a href="/download/aeschynomene"> Aeschynomene (Jointvetch)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/download/apios"> Apios (Potato bean)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/download/cercis"> Cercis (Redbud tree)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/download/chamaecrista"> Chamaecrista (Partridge pea)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/download/faidherbia"> Faidherbia (Apple-ring acacia)</a></li>
+            
+          
+        
+      </ul>
+    </div>
+    
+  </li>
   <li><a href="/community">Community</a></li>
   <li><a href="/contact">Contact</a></li>
 </ul>
@@ -330,7 +684,7 @@
         <ul class="uk-navbar-nav uk-hidden@l uk-visible@s">
   <li><a href="/">Home</a></li>
   <li>
-    <a href="/taxa">Taxa</a>
+    <a href="/genomics">Genomics</a>
     
     
     <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
@@ -338,71 +692,67 @@
       
         
           
-            <li> <a href="/taxa//arachis"> Arachis (Peanut)</a></li>
+            <li> <a href="/genomics//arachis"> Arachis Peanut</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//cajanus"> Cajanus (Pigeonpea)</a></li>
+            <li> <a href="/genomics//cajanus"> Cajanus Pigeonpea</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//cicer"> Cicer (Chickpea)</a></li>
+            <li> <a href="/genomics//cicer"> Cicer Chickpea</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//glycine"> Glycine (Soybean)</a></li>
+            <li> <a href="/genomics//glycine"> Glycine Soybean</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//lotus"> Lotus (Bird's-foot trefoil)</a></li>
+            <li> <a href="/genomics//lotus"> Lotus Bird's-foot trefoil</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//lupinus"> Lupinus (Lupin grain legumes)</a></li>
+            <li> <a href="/genomics//lupinus"> Lupinus Lupin grain legumes</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//medicago"> Medicago (Alfalfa/Lucerne, Barrel Medic)</a></li>
+            <li> <a href="/genomics//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//phaseolus"> Phaseolus (Common Bean, Lima Bean, Tepary Bean, etc.)</a></li>
+            <li> <a href="/genomics//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//pisum"> Pisum (Pea)</a></li>
+            <li> <a href="/genomics//pisum"> Pisum Pea</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//trifolium"> Trifolium (Clover)</a></li>
+            <li> <a href="/genomics//trifolium"> Trifolium Clover</a></li>
           
         
       
         
           
-            <li> <a href="/taxa//vigna"> Vigna (Cowpea)</a></li>
-          
-        
-      
-        
+            <li> <a href="/genomics//vigna"> Vigna Cowpea</a></li>
           
         
       
@@ -422,7 +772,86 @@
           
         
       
-      <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+        
+          
+        
+      
+        <li class="uk-nav-divider"></li>
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+              <li><a href="/genomics/aeschynomene"> Aeschynomene (Jointvetch)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/apios"> Apios (Potato bean)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/cercis"> Cercis (Redbud tree)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/chamaecrista"> Chamaecrista (Partridge pea)</a></li>
+            
+          
+        
+          
+            
+              <li><a href="/genomics/faidherbia"> Faidherbia (Apple-ring acacia)</a></li>
+            
+          
+        
       </ul>
     </div>
     
@@ -463,7 +892,7 @@
         
           <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
         
-          <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+          <li><a href="https://conekt.legumeinfo.org/">Conekt Comparative Expression</a></li>
         
           <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
         
@@ -492,77 +921,73 @@
   <li><a href="/">Home</a></li>
   
   <li class="uk-parent">
-    <a href="#">Taxa</a>
+    <a href="#">Genomics</a>
     
     <ul class="uk-nav-sub">
       
         
           
-            <li><a href="/taxa//arachis"> Arachis (Peanut)</a></li>
+            <li><a href="/genomics//arachis"> Arachis Peanut</a></li>
           
         
       
         
           
-            <li><a href="/taxa//cajanus"> Cajanus (Pigeonpea)</a></li>
+            <li><a href="/genomics//cajanus"> Cajanus Pigeonpea</a></li>
           
         
       
         
           
-            <li><a href="/taxa//cicer"> Cicer (Chickpea)</a></li>
+            <li><a href="/genomics//cicer"> Cicer Chickpea</a></li>
           
         
       
         
           
-            <li><a href="/taxa//glycine"> Glycine (Soybean)</a></li>
+            <li><a href="/genomics//glycine"> Glycine Soybean</a></li>
           
         
       
         
           
-            <li><a href="/taxa//lotus"> Lotus (Bird's-foot trefoil)</a></li>
+            <li><a href="/genomics//lotus"> Lotus Bird's-foot trefoil</a></li>
           
         
       
         
           
-            <li><a href="/taxa//lupinus"> Lupinus (Lupin grain legumes)</a></li>
+            <li><a href="/genomics//lupinus"> Lupinus Lupin grain legumes</a></li>
           
         
       
         
           
-            <li><a href="/taxa//medicago"> Medicago (Alfalfa/Lucerne, Barrel Medic)</a></li>
+            <li><a href="/genomics//medicago"> Medicago Alfalfa/Lucerne, Barrel Medic</a></li>
           
         
       
         
           
-            <li><a href="/taxa//phaseolus"> Phaseolus (Common Bean, Lima Bean, Tepary Bean, etc.)</a></li>
+            <li><a href="/genomics//phaseolus"> Phaseolus Common Bean, Lima Bean, Tepary Bean, etc.</a></li>
           
         
       
         
           
-            <li><a href="/taxa//pisum"> Pisum (Pea)</a></li>
+            <li><a href="/genomics//pisum"> Pisum Pea</a></li>
           
         
       
         
           
-            <li><a href="/taxa//trifolium"> Trifolium (Clover)</a></li>
+            <li><a href="/genomics//trifolium"> Trifolium Clover</a></li>
           
         
       
         
           
-            <li><a href="/taxa//vigna"> Vigna (Cowpea)</a></li>
-          
-        
-      
-        
+            <li><a href="/genomics//vigna"> Vigna Cowpea</a></li>
           
         
       
@@ -582,7 +1007,86 @@
           
         
       
-      <li><a href="/taxa">OTHERS (Many special-focus species and collections)</a></li>
+        
+          
+        
+      
+      <li class="uk-nav-divider"></li>
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li><a href="/genomics/aeschynomene"> Aeschynomene (Jointvetch)</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics/apios"> Apios (Potato bean)</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics/cercis"> Cercis (Redbud tree)</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics/chamaecrista"> Chamaecrista (Partridge pea)</a></li>
+          
+        
+      
+        
+          
+            <li><a href="/genomics/faidherbia"> Faidherbia (Apple-ring acacia)</a></li>
+          
+        
+      
     </ul>
   </li>
   
@@ -621,7 +1125,7 @@
         
           <li><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
         
-          <li><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+          <li><a href="https://conekt.legumeinfo.org/">Conekt Comparative Expression</a></li>
         
           <li><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
         
@@ -702,7 +1206,7 @@
   
   <li uk-tooltip="title: View GIS location information for legume accessions."><a href="https://germplasm-map.legumeinfo.org/">LIS Germplasm GIS Viewer</a></li>
   
-  <li uk-tooltip="title: Conekt is a tool for comparative gene expression analysis."><a href="https://conekt.legumeinfo.org/species">Conekt Comparative Expression</a></li>
+  <li uk-tooltip="title: Conekt is a tool for comparative gene expression analysis."><a href="https://conekt.legumeinfo.org/">Conekt Comparative Expression</a></li>
   
   <li uk-tooltip="title: Functional keyword search for gene families"><a href="https://funnotate.legumeinfo.org/?search">Gene Family Search</a></li>
   
@@ -748,41 +1252,299 @@
       <h1>LIS - the Legume Information System</h1>
 
 <p>
-  LIS integrates genetic and genomic information across many legume species, with tools for research. LIS has been restructured for improved scalability and function. As of April, 2023, the previous incarnation has been decommissioned. Additional functionality will be added through 2023. Please <a href="/about">contact us</a> if you have questions, suggestions, or contributions.
-</p>
-<p>
-  The site is organized as follows. 
-  See <a href="/taxa">TAXA</a> to access resources and tools such as browsers, InterMine instances, organized primarily by genus. 
-  See <a href="/collections">COLLECTIONS</a> to access data sets for download. 
+  LIS integrates genetic and genomic information to aid researchers working on legume crops and related species.
+  See <a href="/genomics">GENOMICS</a> to access resources and tools such as browsers, InterMine instances, organized primarily by genus.
+  See <a href="/download">DOWNLOAD</a> to access data sets for download.
   See <a href="/tools">TOOLS</a> if you have particular tasks in mind.
+  Please <a href="/about">contact us</a> if you have questions, suggestions, or contributions.
 </p>
 
-<dl>
-  <dt><a href="/taxa">Taxa</a></dt>
-  <dd>Resources for legumes at various taxonomic levels (species, genera, and the family as a whole):
-    data sets, genome browsers, pan-gene sets, synteny visualizations, sequence and keyword search, etc.</dd>
-  <dt><a href="/collections">Collections</a></dt>
-  <dd>View synopses of and links to individual LIS Datastore collections.</dd>
-  <dt><a href="/tools">Tools</a></dt>
-  <dd>Pan-legume tools: sequence and keyword search, gene families and phylogenies, synteny visualization, etc. search, etc.</dd>
-  <dt><a href="/blog">Blog</a></dt>
-  <dd>Learn about new data and tools available from LIS.</dd>
-  <dt><a href="/community">Community</a></dt>
-  <dd>Other community resources for legume research.</dd>
-  <dt><a href="/about">Contact</a></dt>
-  <dd>Please contact us with questions or suggestions.</dd>
-</dl>
+<div >
+<div class="search-container">
+  <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
+    <form action="https://mines.legumeinfo.org/legumemine/keywordSearchResults.do" name="search" method="get">
+      <div class="uk-text-left">
+        <label class="uk-text-bold" for="quickSearchInput">Keyword Search</label><br>
+      <input class="uk-input uk-form-small custom-width uk-text-primary uk-text-italic"  type="text" id="quickSearchInput" name="searchTerm"
+      value="&quot;flowering time&quot;" onFocus="clearElement(this);" />
+      <button type="submit" id="quickSearchButton" name="searchSubmit" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+    </div>
+    </form>
+  </div>
+
+  <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
+    <form action="/tools/search/gene.html" name="search" method="get">
+      <div class="uk-text-left">
+        <label class="uk-text-bold" for="identifier">Gene identifier search</label><br>
+        <input class="uk-input uk-form-small custom-width  uk-text-primary uk-text-italic" id="identifier" type="text" name="identifier"
+        value="Medtr7g084970" onFocus="clearElement(this);" />
+        <button type="submit" id="quickSearchButton" name="searchSubmit" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
+    <form action="https://gcv.legumeinfo.org/gcv2/search" name="search" method="get">
+      <div class="uk-text-left">
+        <label class="uk-text-bold" for="q">Synteny viewer</label><br>
+        <input type="hidden" id="sources" name="sources" value="lis">
+        <input class="uk-input uk-form-small custom-width uk-text-primary uk-text-italic" id="q" type="text" name="q"
+        value="Medtr7g084970" onFocus="clearElement(this);" />
+        <button type="submit" id="quickSearchButton" name="searchSubmit" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="search-container">
+  <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
+    <form id="gotogenusform1" oninput="buildURLdscensor1()">
+      <label class="uk-text-bold" >Data overviews (genomes):</label><br>
+      <div class="bar-input-group">
+        <input class="uk-margin-small" id="parturl1" type="hidden" value="https://dscensor.legumeinfo.org/multiqc-demo/genome_main:">
+        <input class="uk-input custom-width uk-form-small uk-text-primary uk-text-italic" type="text" id="genus1" value="Arachis">
+        <button type="submit" value="GO" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+      </div>
+      <i>Arachis, Cajanus, Cicer</i> ... 
+    </form>
+  </div>
+
+  <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
+    <form id="gotogenusform2" oninput="buildURLdscensor2()">
+      <label class="uk-text-bold" >Data overviews (annotations):</label><br>
+      <div class="bar-input-group">
+        <input class="uk-margin-small" id="parturl2" type="hidden" value="https://dscensor.legumeinfo.org/multiqc-demo/gene_models_main:">
+        <input class="uk-input custom-width uk-form-small uk-text-primary uk-text-italic" type="text" id="genus2" value="Glycine">
+        <button type="submit" value="GO" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+      </div>
+      <i>Glycine, Lotus, Lupinus</i> ... 
+    </form>
+  </div>
+
+  <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
+    <form id="gotogenusform3" oninput="buildURLdatastore()">
+      <label class="uk-text-bold" >Datastore (by genus):</label><br>
+      <div class="bar-input-group">
+        <input class="uk-margin-small" id="parturl3" type="hidden" value="https://data.legumeinfo.org/">
+        <input class="uk-input custom-width uk-form-small uk-text-primary uk-text-italic" type="text" id="genus3" value="Medicago">
+        <button type="submit" value="GO" class="uk-button uk-button-primary uk-button-small uk-margin-small">GO</button>
+      </div>
+      <i>Medicago, Phaseolus, Pisum</i> ... 
+    </form>
+  </div>
+
+</div>
+
+
+<hr>
+
+<div>
+    <div class="uk-child-width-1-2@s uk-child-width-1-2@l uk-child-width-1-3@xl uk-flex-center uk-grid-column-small uk-grid-row-small" uk-grid>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Enter one or more sequences and search against soybean genomes, proteins, or transcript sequences.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap cornsilk col3-cornsilk" type="button" >
+          <a href="https://sequenceserver.legumeinfo.org"><b>Sequence search (BLAST)</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Enter one or more sequences and annotate them, view in a phylogenetic tree, etc.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap cornsilk col3-cornsilk" type="button" >
+          <a href="https://funnotate.legumeinfo.org/"><b>Annotate sequences</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Glycine pangenes, or look up corresponding gene IDs between annotations.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap seashell col3-cornsilk" type="button" >
+          <a href="/tools/search/gene.html"><b>Gene search</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Glycine pangenes, or look up corresponding gene IDs between annotations.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap seashell col3-cornsilk" type="button" >
+          <a href="/tools/search/pangene.html"><b>Pangene search / translator</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="GCViT tool for visualizing variants (SNPs) between selected genotypes.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap antiquewhite col3-azure" type="button">
+          <a href="/tools/gcvit/"><b>Genotype comparisons</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Soybean GWAS features from many studies, against a common framework (ZZbrowse tools).">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap antiquewhite col3-mistyrose" type="button">
+          <a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&twoSpecies=n&datasets=Soybean%20GWAS&chr=Gm01&selected=100000&window=250000&traitsFromOntology=y"><b>GWAS viewer</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="Soybean QTL features from many studies, against a common framework (ZZbrowse tools).">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap cornsilk col3-mistyrose" type="button">
+          <a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&twoSpecies=n&datasets=Soybean%20QTL&chr=Gm01&selected=100000&window=250000&traitsFromOntology=y"><b>QTL viewer</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="QTL and/or GWAS features from many studies; compare between soybean and another selected species (slow; please be patient).">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap cornsilk col3-mistyrose" type="button">
+          <a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&twoSpecies=y&datasets=Soybean%20GWAS&chr=Gm01&selected=100000&window=250000&traitsFromOntology=y"><b>cross-species QTL/GWAS</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="View geographic origins of Glycine accessions in the USDA GRIN-Global system.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap customgreen col3-cumstomgreen" type="button">
+          <a href="https://germplasm-map.legumeinfo.org/"><b>Germplasm GIS</b></a>
+        </button>
+      </div>
+      <div class="uk-flex uk-flex-center uk-flex-middle" title="View soybean varieties and accessions and their pedigrees.">
+        <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap customgreen col3-cumstomgreen" type="button">
+          <a href="https://conekt.legumeinfo.org"><b>Expression resources</b></a>
+        </button>
+      </div>
+    </div>
+</div>
+<br>
+<div class="uk-hidden@l">
+  
+    
+
+
+
+<div class="uk-card uk-card-small uk-card-default uk-margin-bottom">
+  <div class="uk-card-header">
+    <div class="uk-grid-small uk-flex-middle" uk-grid>
+      <div class="uk-width-expand">
+        <h3 class="uk-card-title uk-margin-remove-bottom">BLOG POSTS</h3>
+      </div>
+    </div>
+  </div>
+  
+  <div class="uk-card-body">
+    
+    <ul class="uk-list uk-list-disc">
+      
+      
+      
+        <li><a href="/blog/2024/07/01/go-enrichment.html"><b>GO Enrichment</b></a></li>
+
+      
+        <li><a href="/blog/2022/02/17/zzbrowse.html"><b>ZZBrowse</b></a></li>
+
+      
+    </ul>
+    
+  </div>
+
+  <div class="uk-card-footer">
+    
+    <a href="/blog" class="uk-button uk-button-text">More Blog Posts</a>
+
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+
+
+<div class="uk-card uk-card-small uk-card-default uk-margin-bottom">
+  <div class="uk-card-header">
+    <div class="uk-grid-small uk-flex-middle" uk-grid>
+      <div class="uk-width-expand">
+        <h3 class="uk-card-title uk-margin-remove-bottom">NEWS</h3>
+      </div>
+    </div>
+  </div>
+  
+  <div class="uk-card-body">
+    
+    <ul class="uk-list uk-list-disc">
+      
+      
+      
+        
+        <li><a href="/news/general/2024/10/28/pangene-lookup.html"><b>Pangene Lookup Tool</b></a> 28 October 2024</li>
+
+      
+        
+        <li><a href="/news/general/2024/09/30/data-update.html"><b>Data updates</b></a> 30 September 2024</li>
+
+      
+        
+        <li><a href="/news/general/2024/07/29/usda-npl-job.html"><b>USDA National Program Leader, Crop Protection</b></a> 29 July 2024</li>
+
+      
+    </ul>
+    
+  </div>
+
+  <div class="uk-card-footer">
+    
+    <a href="/news" class="uk-button uk-button-text">More News</a>
+
+  </div>
+</div>
+
+
+  
+
+  <div class="uk-card uk-card-small uk-card-default uk-margin-bottom">
+    <div class="uk-card-header">
+      <div class="uk-grid-small uk-flex-middle" uk-grid>
+        <div class="uk-width-expand">
+          <h3 class="uk-card-title uk-margin-remove-bottom">EVENTS</h3>
+        </div>
+      </div>
+    </div>
+    <div id="custom-event-card" class="uk-card-body"></div>
+    <div class="uk-card-footer">
+      <a href="/events" class="uk-button uk-button-text">More Events</a>
+    </div>
+  </div>
+  
+</div>
+</div>
 
 <h2>Funding and Development</h2>
 <p>LIS is funded by the USDA-ARS. LIS is developed and hosted by the National Center for Genome Resources (NCGR) and the USDA-ARS SoyBase and Legume Clade Database group at Ames, IA, with the help of many other researchers.</p>
-<div class="uk-child-width-expand@s uk-flex uk-flex-middle" uk-grid>
+<div class="uk-child-width-expand@s uk-flex uk-flex-middle uk-text-center" uk-grid>
   <a href="https://www.ars.usda.gov/main/main.htm" target="_blank" title="USDA ARS website">
     <img src="/assets/img/usda.svg" width="150" height="auto" alt="USDA logo"/>
   </a>
-  <a href="http://www.ncgr.org/" target="_blank" title="NCGR website">
+  <a href="https://www.ncgr.org/" target="_blank" title="NCGR website">
     <img src="/assets/img/ncgr.png" width="200" height="auto" alt="NCGR logo"/>
   </a>
 </div>
+
+<script>
+    async function clearElement(e) {
+    var value = await document.getElementById('quickSearchInput').value;
+  }
+
+  addEventListener("load", (event) => {
+    buildURLdscensor1()
+    buildURLdscensor2()
+    buildURLdatastore()
+  })
+
+  function buildURLdscensor1(){
+   let urlgenus1 = parturl1.value +''+ document.getElementById('genus1').value.trim();
+        document.getElementById('gotogenusform1').action = urlgenus1;
+  }
+  function buildURLdscensor2(){
+   let urlgenus2 = parturl2.value +''+ document.getElementById('genus2').value.trim();
+        document.getElementById('gotogenusform2').action = urlgenus2;
+  }
+  function buildURLdatastore(){
+   let urlgenus3 = parturl3.value +''+ document.getElementById('genus3').value.trim();
+        document.getElementById('gotogenusform3').action = urlgenus3;
+  }
+</script>
+
+<script type="module">
+  /* render upcoming events to #custom-event-card when screen is smaller than 1200px */
+  import { upcomingEvents } from "lis-events";
+      function displayUpcomingEvents(){
+      document.getElementById('custom-event-card').innerHTML += upcomingEvents.map(event => 
+      `
+      <li style="margin-left: 10px"><a class="uk-text-bold" href=${event.url}>${event.title}</a><div style="margin-left: 20px; color: black">${event.date} - ${event.endDate}</div></li>
+      `).join('');
+      }
+      displayUpcomingEvents()
+</script>
+
 
 
     </div>
