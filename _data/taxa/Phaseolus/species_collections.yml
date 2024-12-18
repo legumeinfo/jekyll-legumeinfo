@@ -9,18 +9,18 @@ species:
       synopsis: "Phaseolus lunatus accession G27455 annotation files from genome assembly V1"
 - name: vulgaris
   genomes:
-    - collection: OACRex.gnm2.NXJW
-      synopsis: "Phaseolus vulgaris accession OACRex, genome assembly 2"
     - collection: 5-593.gnm1.1P7P
       synopsis: "Phaseolus vulgaris accession 5-593 (Middle American race), genome assembly v1."
-    - collection: LaborOvalle.gnm1.VZZS
-      synopsis: "Phaseolus vulgaris accession Labor Ovalle (race Guatemala) genome assembly v1."
-    - collection: G19833.gnm2.fC0g
-      synopsis: "Phaseolus vulgaris accession G19833 genome assembly v2.1"
-    - collection: UI111.gnm1.3VTM
-      synopsis: "Phaseolus vulgaris accession UI111 genome assembly v1"
     - collection: G19833.gnm1.zBnF
       synopsis: "Phaseolus vulgaris accession G19833 genome assembly v1.0"
+    - collection: G19833.gnm2.fC0g
+      synopsis: "Phaseolus vulgaris accession G19833 genome assembly v2.1"
+    - collection: LaborOvalle.gnm1.VZZS
+      synopsis: "Phaseolus vulgaris accession Labor Ovalle (race Guatemala) genome assembly v1."
+    - collection: OACRex.gnm2.NXJW
+      synopsis: "Phaseolus vulgaris accession OACRex, genome assembly 2"
+    - collection: UI111.gnm1.3VTM
+      synopsis: "Phaseolus vulgaris accession UI111 genome assembly v1"
   annotations:
     - collection: 5-593.gnm1.ann1.3FBJ
       synopsis: "Phaseolus vulgaris accession 5-593 (Middle American race), annotation 1, genome assembly v1."
@@ -38,55 +38,57 @@ species:
   expression:
     - collection: G19833.gnm1.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014
       synopsis: "Bean Expression Atlas for common bean cv. Negro jamapa mapped to the G19833 version 1 genome annotation."
+    - collection: G19833.gnm2.ann1.expr.Negro_jamapa.ORourke_Iniguez_2014
+      synopsis: "Bean Expression Atlas for common bean cv. Negro jamapa mapped to the G19833 version 2 genome annotation."
   markers:
-    - collection: G19833.gnm1.mrk.Raggi_Caproni_2019
-      synopsis: "Plant material was genotyped using double digest Restriction-site Associated DNA sequencing, producing about 50,000 SNPs."
-    - collection: G19833.gnm1.mrk.Galeano_Cortés_2012
-      synopsis: "In this study, a total of 313 new gene-based markers were developed at target genes."
-    - collection: G19833.gnm1.mrk.Blair_Cortés_2013
-      synopsis: "A 768-marker Illumina GoldenGate array of SNP markers based on Trans-legume Orthologous Group (TOG) genes; marker physical coordinates relative to G19833.gnm1"
-    - collection: G19833.gnm1.mrk.Galeano_Fernandez_2011
-      synopsis: "The DOR364 x BAT477 linkage map consisted of 291 markers with a total map length of 1,788 cM."
-    - collection: G19833.gnm2.mrk.Blair_Cortés_2013
-      synopsis: "A 768-marker Illumina GoldenGate array of SNP markers based on Trans-legume Orthologous Group (TOG) genes; marker physical coordinates relative to G19833.gnm2"
-    - collection: G19833.gnm1.mrk.Grisi_Blair_2007
-      synopsis: "61 polymorphic microsatellite markers for beans and the construction of a genetic map using the BAT93 x Jalo EEP558 (BJ) population."
-    - collection: G19833.gnm1.mrk.Benchimol_deCampos_2007
-      synopsis: "A common bean genomic library was constructed using the ‘IAC-UNA’ variety enriched for (CT) and (GT) for microsatellite motifs. From 1,209 sequenced clones, 714 showed microsatellites distributed over 471 simple and 243 compound motifs."
-    - collection: G19833.gnm2.mrk.Andean_MidAmer_GBS
-      synopsis: "Marker SNPs developed by GBS on Andean and Middle American gene pools, with reads mapped to the Phaseolus vulgaris G19833 gnm2 assembly."
-    - collection: G19833.gnm2.mrk.DiVittori_Bitocchi_2021
-      synopsis: "We developed a BC4/F4 introgression line population and narrowed the major locus for pod shattering down to a 22.5 kb region."
-    - collection: G19833.gnm2.mrk.Bassett_Kamfwa_2021
-      synopsis: "Marker SNPs developed via Genotyping by Sequencing (GBS) of the Andean Diversity Panel; reads were mapped to the Phaseolus vulgaris G19833 v2.1 reference assembly."
     - collection: G19833.gnm1.mrk.BARCBean6K
       synopsis: "A core set of 6000 SNPs based on the genotyping of 365 dry bean and 134 snap bean accessions with the BARCBean6K_1 and BARCBean6K_2 BeadChips."
-    - collection: G19833.gnm1.mrk.Parker_BernyMierYTeran_2020
-      synopsis: "Genetic markers for the GWAS dataset provided with Parker, Berny Mier y Teran (2020)."
-    - collection: G19833.gnm2.mrk.Escobar_Oladzad_2022
-      synopsis: "A set of 52,201 SNPs reported by Escobar, Oladzad et al. (2022) based on genotyping-by-sequencing (GBS) of a multiparent advanced generation inter-cross (MAGIC) dry bean population of 1,050 F5:7 RILs. Reads were mapped and sorted against the G19833.gnm2 reference assembly for common bean."
-    - collection: G19833.gnm1.mrk.Blair_Pedraza_2003
-      synopsis: "A total of 150 microsatellite markers developed for common bean (Phaseolus vulgaris L.) were tested for parental polymorphism and used to determine the positions of 100 genetic loci on an integrated genetic map of the species."
-    - collection: G19833.gnm1.mrk.Hanai_deCampos_2007
-      synopsis: "Three cDNA libraries generated by the Bean EST project were analyzed for the presence of SSRs. A total of 219 expressed sequence tags (ESTs) were found to carry 240 SSRs (named EST-SSR), whereas 714 genomic sequences contained 471 SSRs (named genomic-SSR)."
-    - collection: G19833.gnm1.mrk.Yu_Park_2000
-      synopsis: "15 SSR markers assigned to the Phaseolus vulgaris molecular linkage map."
-    - collection: G19833.gnm1.mrk.Hougaard_Madsen_2008
-      synopsis: "One hundred and four new loci representing single-copy genes were added to the existing bean map."
-    - collection: G19833.gnm1.mrk.Wen_Chang_2019
-      synopsis: "GWAS assessing soybean cyst nematode (SCN) (Heterodera glycines) resistance, seed coat color, and seed weight in 363 diverse accessions of common bean, P. vulgaris relative to the G19833 assembly 1.0"
-    - collection: G19833.gnm1.mrk.Kim_Kaur_2006
-      synopsis: "Genetic markers from Kim, Kaur, et al. (2006) mapped to G19833.gnm1."
-    - collection: G19833.gnm1.mrk.Cardoso_Oblessuc_2008
-      synopsis: "Ninety-nine new microsatelitte loci were developed from a microsatellite-enriched library for (CT)8  and (GT)8  motifs, from CAL-143 line."
-    - collection: G19833.gnm1.mrk.Murray_Larsen_2002
-      synopsis: "A set of 79 previously mapped bean (Phaseolus vulgaris) genomic (Bng) clones were partially sequenced. Sequence tagged site (STSs) were produced for 16 of the clones, 2 of which contain simple sequence repeats (SSRs)."
-    - collection: G19833.gnm1.mrk.Gaitán-Solís_Duque_2002
-      synopsis: "18 polymorphic microsatellite markers from Bactris gasipaes."
     - collection: G19833.gnm1.mrk.Bean683WGRS_5M
       synopsis: "Approximately 5 million SNP markers reported by Wu, Wang et al. 2020, identified from whole genome resequencing (WGRS) of 683 common bean genotypes, relative to the Phaseolus vulgaris assembly G19833.gnm1."
+    - collection: G19833.gnm1.mrk.Benchimol_deCampos_2007
+      synopsis: "A common bean genomic library was constructed using the ‘IAC-UNA’ variety enriched for (CT) and (GT) for microsatellite motifs. From 1,209 sequenced clones, 714 showed microsatellites distributed over 471 simple and 243 compound motifs."
+    - collection: G19833.gnm1.mrk.Blair_Cortés_2013
+      synopsis: "A 768-marker Illumina GoldenGate array of SNP markers based on Trans-legume Orthologous Group (TOG) genes; marker physical coordinates relative to G19833.gnm1"
+    - collection: G19833.gnm1.mrk.Blair_Pedraza_2003
+      synopsis: "A total of 150 microsatellite markers developed for common bean (Phaseolus vulgaris L.) were tested for parental polymorphism and used to determine the positions of 100 genetic loci on an integrated genetic map of the species."
+    - collection: G19833.gnm1.mrk.Cardoso_Oblessuc_2008
+      synopsis: "Ninety-nine new microsatelitte loci were developed from a microsatellite-enriched library for (CT)8  and (GT)8  motifs, from CAL-143 line."
+    - collection: G19833.gnm1.mrk.Gaitán-Solís_Duque_2002
+      synopsis: "18 polymorphic microsatellite markers from Bactris gasipaes."
+    - collection: G19833.gnm1.mrk.Galeano_Cortés_2012
+      synopsis: "In this study, a total of 313 new gene-based markers were developed at target genes."
+    - collection: G19833.gnm1.mrk.Galeano_Fernandez_2011
+      synopsis: "The DOR364 x BAT477 linkage map consisted of 291 markers with a total map length of 1,788 cM."
+    - collection: G19833.gnm1.mrk.Grisi_Blair_2007
+      synopsis: "61 polymorphic microsatellite markers for beans and the construction of a genetic map using the BAT93 x Jalo EEP558 (BJ) population."
+    - collection: G19833.gnm1.mrk.Hanai_deCampos_2007
+      synopsis: "Three cDNA libraries generated by the Bean EST project were analyzed for the presence of SSRs. A total of 219 expressed sequence tags (ESTs) were found to carry 240 SSRs (named EST-SSR), whereas 714 genomic sequences contained 471 SSRs (named genomic-SSR)."
+    - collection: G19833.gnm1.mrk.Hougaard_Madsen_2008
+      synopsis: "One hundred and four new loci representing single-copy genes were added to the existing bean map."
+    - collection: G19833.gnm1.mrk.Kim_Kaur_2006
+      synopsis: "Genetic markers from Kim, Kaur, et al. (2006) mapped to G19833.gnm1."
     - collection: G19833.gnm1.mrk.McClean_Mamidi_2010
       synopsis: "Around 15,000 common bean sequences (primarily EST contigs and EST singletons) were electronically positioned onto the common bean map using the shared syntentic blocks as references points."
+    - collection: G19833.gnm1.mrk.Murray_Larsen_2002
+      synopsis: "A set of 79 previously mapped bean (Phaseolus vulgaris) genomic (Bng) clones were partially sequenced. Sequence tagged site (STSs) were produced for 16 of the clones, 2 of which contain simple sequence repeats (SSRs)."
+    - collection: G19833.gnm1.mrk.Parker_BernyMierYTeran_2020
+      synopsis: "Genetic markers for the GWAS dataset provided with Parker, Berny Mier y Teran (2020)."
+    - collection: G19833.gnm1.mrk.Raggi_Caproni_2019
+      synopsis: "Plant material was genotyped using double digest Restriction-site Associated DNA sequencing, producing about 50,000 SNPs."
+    - collection: G19833.gnm1.mrk.Wen_Chang_2019
+      synopsis: "GWAS assessing soybean cyst nematode (SCN) (Heterodera glycines) resistance, seed coat color, and seed weight in 363 diverse accessions of common bean, P. vulgaris relative to the G19833 assembly 1.0"
+    - collection: G19833.gnm1.mrk.Yu_Park_2000
+      synopsis: "15 SSR markers assigned to the Phaseolus vulgaris molecular linkage map."
+    - collection: G19833.gnm2.mrk.Andean_MidAmer_GBS
+      synopsis: "Marker SNPs developed by GBS on Andean and Middle American gene pools, with reads mapped to the Phaseolus vulgaris G19833 gnm2 assembly."
+    - collection: G19833.gnm2.mrk.Bassett_Kamfwa_2021
+      synopsis: "Marker SNPs developed via Genotyping by Sequencing (GBS) of the Andean Diversity Panel; reads were mapped to the Phaseolus vulgaris G19833 v2.1 reference assembly."
+    - collection: G19833.gnm2.mrk.Blair_Cortés_2013
+      synopsis: "A 768-marker Illumina GoldenGate array of SNP markers based on Trans-legume Orthologous Group (TOG) genes; marker physical coordinates relative to G19833.gnm2"
+    - collection: G19833.gnm2.mrk.DiVittori_Bitocchi_2021
+      synopsis: "We developed a BC4/F4 introgression line population and narrowed the major locus for pod shattering down to a 22.5 kb region."
+    - collection: G19833.gnm2.mrk.Escobar_Oladzad_2022
+      synopsis: "A set of 52,201 SNPs reported by Escobar, Oladzad et al. (2022) based on genotyping-by-sequencing (GBS) of a multiparent advanced generation inter-cross (MAGIC) dry bean population of 1,050 F5:7 RILs. Reads were mapped and sorted against the G19833.gnm2 reference assembly for common bean."
   synteny:
     - collection: G19833.gnm1.syn.xQ7F
       synopsis: "Synteny mappings among the genomes relative to Phaseolus vulgaris G19833 gnm1.ann1 genome annotation."
@@ -94,12 +96,19 @@ species:
       synopsis: "Synteny mappings among the genomes relative to the Phaseolus vulgaris G19833 gnm2.ann1 genome annotation."
 - name: acutifolius
   genomes:
-    - collection: W6_15578.gnm2.L2V4
-      synopsis: "Phaseolus acutifolius accession W6_15578, genome assembly v2."
     - collection: Frijol_Bayo.gnm1.QH8L
       synopsis: "Phaseolus acutifolius accession Frijol Bayo, genome assembly v1."
+    - collection: W6_15578.gnm2.L2V4
+      synopsis: "Phaseolus acutifolius accession W6_15578, genome assembly v2."
   annotations:
-    - collection: W6_15578.gnm2.ann1.LVZ1
-      synopsis: "Phaseolus acutifolius accession W6_15578, annotations on genome assembly v2."
     - collection: Frijol_Bayo.gnm1.ann1.ML22
       synopsis: "Genome annotation files for Phaseolus acutifolius accession Frijol Bayo; JGI annotation version 1 on assembly 1"
+    - collection: W6_15578.gnm2.ann1.LVZ1
+      synopsis: "Phaseolus acutifolius accession W6_15578, annotations on genome assembly v2."
+- name: coccineus
+  genomes:
+    - collection: PHA8298.gnm1.PYJ1
+      synopsis: "Phaseolus coccineus accession PHA8298, genome assembly v1"
+  annotations:
+    - collection: PHA8298.gnm1.ann1.0Q14
+      synopsis: "Annotation 1 for Phaseolus coccineus accession PHA8298, genome assembly v1"

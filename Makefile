@@ -7,21 +7,25 @@
 #     xcode-select --install
 #
 # 2. Create symbolic link to fix broken xcode ruby framework (first time only):
-#    Choose the appropriate target for your OS version: darwin19, darwin20, or darwin21:
+#    Choose the appropriate target for your OS version: darwin22, darwin23, darwin24, etc.:
 #
-#   # macOS Catalina (macOS 10.15):
-#     sudo ln -s universal-darwin20 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin19 
+#   # macOS Sonoma (macOS 14):
+#      universal-darwin23 is missing in this MacOSX15.0.sdk, but universal-darwin24 is present, so link universal-darwin23 to universal-darwin24
+#      See https://stackoverflow.com/a/65481787 for discussion
+#  
+#    sudo ln -s /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin24 \
+#               /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin23
 #
-#   # macOS Big Sur (macOS 11): universal-darwin20 is probably OK (untested)
-#
-#   # macOS Monterey (macOS 12):
-#     sudo ln -s universal-darwin20 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin21
+#     or something like the following (adjusting paths to match the current SDK), 
+#     per https://stackoverflow.com/questions/53135863/macos-mojave-ruby-config-h-file-not-found/65481787#65481787
+#       cd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby
+#       sudo ln -sf ../../../../Headers/ruby/config.h
 #
 # 3.  Install dependencies (first time only, or until "make distclean" is invoked)
 #
 #     make install
 #
-# 4.  Start jekyll, listening on localhost:4000 (and livereload on default port 35729)
+# 4.  Start jekyll, listening on localhost:4001 (and livereload on default port 35728)
 #
 #     make
 #
@@ -30,23 +34,25 @@
 #
 #     make clean
 #
-# REFERENCES
-#     macOS setup adapted from https://stackoverflow.com/a/65481787
-#     (correcting typo in universal-darwin19 path)
 
- 
+OS = $(shell uname)
+ifeq ($(OS), Darwin)
+  # install Ruby dependencies in $PWD/vendor
+  export GEM_HOME=${PWD}/vendor/gems
+  export PATH := ${PWD}/vendor/gems/bin:${PATH}
+
+  # select SDK from /Library/Developer/CommandLineTools/SDKs
+  XCRUN = DEVELOPER_DIR=/Library/Developer/CommandLineTools xcrun --sdk macosx15.1
+endif
+
 ENV = PATH=$${PWD}/vendor/gems/bin:$${PATH} GEM_HOME=$${PWD}/vendor/gems 
 
 serve:
-	$(ENV) jekyll serve --incremental --livereload --livereload_port 35728 --port 4001
-
-# additional macOS environment variable needed at install time due to broken
-# xcode ruby framework
-CPATH = /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/Headers/
+	bundle exec jekyll serve --incremental --livereload --livereload_port 35728 --port 4001
 
 install:
-	$(ENV) gem install --conservative bundler
-	$(ENV) CPATH=$(CPATH) bundle install
+	rm -f Gemfile.lock
+	if ! bundle check; then $(XCRUN) bundle install; fi
 
 clean:
 	rm -rf .jekyll-cache/ .jekyll-metadata _site/

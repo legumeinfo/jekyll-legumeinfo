@@ -27,27 +27,27 @@ species:
     - URL: https://sequenceserver.legumeinfo.org/
       description: SequenceServer BLAST against the CDC Frontier v1.0 assembly
       name: LIS SequenceServer
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22cicar.CDCFrontier.gnm3%22, %22loc%22: %22cicar.CDCFrontier.gnm3.chr1:1-55529592%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 cicar.CDCFrontier.gnm3
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22cicar.CDCFrontier.gnm2%22, %22loc%22: %22cicar.CDCFrontier.gnm2.chr01:1-54367034%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 cicar.CDCFrontier.gnm2
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22cicar.CDCFrontier.gnm1%22, %22loc%22: %22cicar.CDCFrontier.gnm1.Ca1:1-48359943%22,
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22cicar.CDCFrontier.gnm1%22, %22loc%22: %22cicar.CDCFrontier.gnm1.Ca1:1-1000000%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 cicar.CDCFrontier.gnm1
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22cicar.CDCFrontier.gnm2%22, %22loc%22: %22cicar.CDCFrontier.gnm2.chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 cicar.CDCFrontier.gnm2
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22cicar.CDCFrontier.gnm3%22, %22loc%22: %22cicar.CDCFrontier.gnm3.chr1:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 cicar.CDCFrontier.gnm3
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
         [{%22type%22: %22DotplotView%22, %22views%22: [{%22assembly%22: %22cicar.CDCFrontier.gnm3%22},
         {%22assembly%22: %22cicec.S2Drd065.gnm1%22}], %22tracks%22: [%22cicar.CDCFrontier.gnm3.x.cicec.S2Drd065.gnm1.PXV3.minimap2.paf%22]}]}'
       description: JBrowse2 Dotplot View
       name: JBrowse2 cicar.CDCFrontier.gnm3.x.cicec.S2Drd065.gnm1.PXV3.minimap2.paf.gz
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
         [{%22type%22: %22DotplotView%22, %22views%22: [{%22assembly%22: %22cicar.CDCFrontier.gnm3%22},
         {%22assembly%22: %22cicre.Besev079.gnm1%22}], %22tracks%22: [%22cicar.CDCFrontier.gnm3.x.cicre.Besev079.gnm1.PXV3.minimap2.paf%22]}]}'
       description: JBrowse2 Dotplot View
@@ -62,8 +62,8 @@ species:
     - URL: https://sequenceserver.legumeinfo.org/
       description: SequenceServer BLAST against the ICC 4958 assembly v2.0
       name: LIS SequenceServer
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22cicar.ICC4958.gnm2%22, %22loc%22: %22cicar.ICC4958.gnm2.Ca1:1-39901017%22,
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22cicar.ICC4958.gnm2%22, %22loc%22: %22cicar.ICC4958.gnm2.Ca1:1-1000000%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 cicar.ICC4958.gnm2
@@ -84,8 +84,8 @@ species:
     origin: 'Sanliurfa province, Turkey: latitude 37.821118, longitude 39,641649,
       altitude 1,126 meters.'
     resources:
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22cicec.S2Drd065.gnm1%22, %22loc%22: %22cicec.S2Drd065.gnm1.chr1:1-72823944%22,
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22cicec.S2Drd065.gnm1%22, %22loc%22: %22cicec.S2Drd065.gnm1.chr1:1-1000000%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 cicec.S2Drd065.gnm1
@@ -107,8 +107,8 @@ species:
       \ 37.516581, longitude 40.855175 altitude 902 meters. The name of the town (Be\u015F\
       evler) literally means \u201Cfive houses\u201D."
     resources:
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22cicre.Besev079.gnm1%22, %22loc%22: %22cicre.Besev079.gnm1.chr1:1-54710752%22,
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22cicre.Besev079.gnm1%22, %22loc%22: %22cicre.Besev079.gnm1.chr1:1-1000000%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 cicre.Besev079.gnm1

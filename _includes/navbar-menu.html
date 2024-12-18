@@ -1,22 +1,27 @@
 <ul class="uk-navbar-nav uk-visible@l">
   <li><a href="{{ "/" | relative_url }}">Home</a></li>
   <li>
-    <a href="{{ "/taxa" | relative_url }}">Taxa</a>
-    {% if site.data.taxon_list %}
+    <a href="{{ "/genomics" | relative_url }}">Genomics</a>
     {% assign genera = site.data.taxon_list | group_by: "genus"  %}
     <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
       <ul class="uk-nav uk-navbar-dropdown-nav">
-      {% for genus in genera %}
-        {% for organism in genus.items %}
-          {% if organism.category == "main" %}
-            <li> <a href="/taxa/{{ organism.genus | downcase | relative_url }}"> {{ organism.genus }} {{ organism.description }}</a></li>
-          {% endif %}
+        {% for genus in genera %}
+          {% for item in genus.items %}
+            {% if item.category == "main" %}
+              <li> <a href="/genomics/{{ item.genus | downcase | relative_url }}"> {{ item.genus }} ({{ item.description }})</a></li>
+            {% endif %}
+          {% endfor %}
         {% endfor %}
-      {% endfor %}
-      <li><a href="{{ "/taxa" | relative_url }}">OTHERS (Many special-focus species and collections)</a></li>
+        <li class="uk-nav-divider"></li>
+        {% for genus in genera %}
+          {% for item in genus.items %}
+            {% if item.category == "special" %}
+              <li><a href="/genomics{{ item.genus | downcase | relative_url }}"> {{ item.genus }} ({{ item.description }})</a></li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
       </ul>
     </div>
-    {% endif %}
   </li>
   <li>
     <a href="{{ "/tools" | relative_url }}">Tools</a>
@@ -33,7 +38,31 @@
     </div>
     {% endif %}
   </li>
-  <li><a href="{{ "/download" | relative_url }}">Download</a></li>
+  <li>
+    <a href="{{ "/download" | relative_url }}">Download</a>
+    {% if site.data.taxon_list %}
+    {% assign genera = site.data.taxon_list | group_by: "genus"  %}
+    <div class="uk-navbar-dropdown uk-width-auto" uk-dropdown="delay-hide: 0;">
+      <ul class="uk-nav uk-navbar-dropdown-nav">
+      {% for genus in genera %}
+        {% for organism in genus.items %}
+          {% if organism.category == "main" %}
+            <li> <a href="/download/{{ organism.genus | downcase | relative_url }}"> {{ organism.genus }} {{ organism.description }}</a></li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+        <li class="uk-nav-divider"></li>
+        {% for genus in genera %}
+          {% for item in genus.items %}
+            {% if item.category == "special" %}
+              <li><a href="/download{{ item.genus | downcase | relative_url }}"> {{ item.genus }} ({{ item.description }})</a></li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </li>
   <li><a href="{{ "/community" | relative_url }}">Community</a></li>
   <li><a href="{{ "/contact" | relative_url }}">Contact</a></li>
 </ul>

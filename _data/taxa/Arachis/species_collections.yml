@@ -2,25 +2,25 @@
 species:
 - name: hypogaea
   genomes:
-    - collection: Tifrunner.gnm2.J5K5
-      synopsis: "Genome assembly 2 for Arachis hypogaea, cultivar Tifrunner. This version has structural changes relative to assembly 1."
-    - collection: Shitouqi.gnm1.L4VP
-      synopsis: "Genome assembly for peanut cultivar Shitouqui, from Zhuang et al., 2019."
-    - collection: Fuhuasheng.gnm1.XX5Y
-      synopsis: "Genome assembly for tetraploid peanut cultivar Fuhuasheng, from Chen et al., 2019"
-    - collection: Tifrunner.gnm1.KYV3
-      synopsis: "Genome assembly 1 for Arachis hypogaea, cultivar Tifrunner"
     - collection: BaileyII.gnm1.1JTF
       synopsis: "Arachis hypogaea accession Bailey II, genome assembly 1"
+    - collection: Fuhuasheng.gnm1.XX5Y
+      synopsis: "Genome assembly for tetraploid peanut cultivar Fuhuasheng, from Chen et al., 2019"
+    - collection: Shitouqi.gnm1.L4VP
+      synopsis: "Genome assembly for peanut cultivar Shitouqui, from Zhuang et al., 2019."
+    - collection: Tifrunner.gnm1.KYV3
+      synopsis: "Genome assembly 1 for Arachis hypogaea, cultivar Tifrunner"
+    - collection: Tifrunner.gnm2.J5K5
+      synopsis: "Genome assembly 2 for Arachis hypogaea, cultivar Tifrunner. This version has structural changes relative to assembly 1."
   annotations:
-    - collection: Tifrunner.gnm2.ann2.PVFB
-      synopsis: "Annotation 2, using the BIND pipeline, for Arachis hypogaea, cultivar Tifrunner"
+    - collection: BaileyII.gnm1.ann1.PQM7
+      synopsis: "Annotation 1 for Arachis hypogaea accession Bailey II, genome assembly 1"
     - collection: Tifrunner.gnm1.ann1.CCJH
       synopsis: "Arachis hypogaea accession Tifrunner annotation files from genome assembly 1.0"
     - collection: Tifrunner.gnm2.ann1.4K0L
       synopsis: "Gene models for genome assembly 2 for Arachis hypogaea, cultivar Tifrunner."
-    - collection: BaileyII.gnm1.ann1.PQM7
-      synopsis: "Annotation 1 for Arachis hypogaea accession Bailey II, genome assembly 1"
+    - collection: Tifrunner.gnm2.ann2.PVFB
+      synopsis: "Annotation 2, using the BIND pipeline, for Arachis hypogaea, cultivar Tifrunner"
   diversity:
     - collection: aradu1_araip1.gnm1.div.Clevenger_Korani_2018
       synopsis: "Genotyping of African germplasm collection"
@@ -31,20 +31,28 @@ species:
   expression:
     - collection: Tifrunner.gnm2.ann2.expr.Tifrunner.Clevenger_2016
       synopsis: "A Developmental Transcriptome Map for Allotetraploid Arachis hypogaea"
+    - collection: Tifrunner.gnm2.ann2.expr.Tifrunner.Li_Lu_2014
+      synopsis: "Expression profiling by high throughput sequencing"
   markers:
+    - collection: Tifrunner.gnm1.mrk.Agarwal_Clevenger_2018
+      synopsis: "Genetic map of Tifrunner x GT-C20 for the study of early and late leaf spots (ELS and LLS) and tomato spotted wilt virus (TSWV)."
     - collection: Tifrunner.gnm1.mrk.Axiom_Arachis2
       synopsis: "Axiom_Arachis2 is a SNP marker set developed by Clevenger, et al. DOI:10.1016/j.molp.2016.11.015"
     - collection: Tifrunner.gnm1.mrk.Axiom_Arachis_58K
       synopsis: "Axiom_Arachis_58K is a high-density SNP array with 58,233 SNPs reduced from 163,782 SNPs derived from DNA resequencing and RNA-sequencing of 41 groundnut accessions and wild diploid ancestors."
-    - collection: Tifrunner.gnm1.mrk.Agarwal_Clevenger_2018
-      synopsis: "Genetic map of Tifrunner x GT-C20 for the study of early and late leaf spots (ELS and LLS) and tomato spotted wilt virus (TSWV)."
   genome_alignments:
+    - collection: BaileyII.gnm1.wga.Z93X
+      synopsis: "Genome alignments with BaileyII.gnm1.1JTF"
 - name: duranensis
   genomes:
-    - collection: V14167.gnm2.J7QH
-      synopsis: "Genome assembly 2 for Arachis duranensis, accession V14167"
+    - collection: K30060.gnm1.W9B1
+      synopsis: "Genome assembly 1 for Arachis duranensis, accession K30060"
+    - collection: K30065.gnm1.M24N
+      synopsis: "Genome assembly 1 for Arachis duranensis, accession K30065, collected from rio seco Bolivia"
     - collection: V14167.gnm1.SWBf
       synopsis: "Genome assembly 1 for Arachis duranensis, accession V14167"
+    - collection: V14167.gnm2.J7QH
+      synopsis: "Genome assembly 2 for Arachis duranensis, accession V14167"
   annotations:
     - collection: V14167.gnm1.ann1.cxSM
       synopsis: "genome annotations"
@@ -57,10 +65,10 @@ species:
   genome_alignments:
 - name: ipaensis
   genomes:
-    - collection: K30076.gnm2.1GWY
-      synopsis: "Genome Assembly 2 for A. ipaensis K30076. A high-quality chromosome-scale assembly, based on PacBio RSII and Sequel reads, ordered into pseudomolecules by Dovetail using Hi-C Chicago libraries and the HiRise and SNAP."
     - collection: K30076.gnm1.bXJ8
       synopsis: "Genome assembly 1 for Arachis ipaensis, accession K30076."
+    - collection: K30076.gnm2.1GWY
+      synopsis: "Genome Assembly 2 for A. ipaensis K30076. A high-quality chromosome-scale assembly, based on PacBio RSII and Sequel reads, ordered into pseudomolecules by Dovetail using Hi-C Chicago libraries and the HiRise and SNAP."
   annotations:
     - collection: K30076.gnm1.ann1.J37m
       synopsis: "genome annotations for Arachis ipaensis K30076.gnm1.ann1"
@@ -70,6 +78,7 @@ species:
   synteny:
     - collection: K30076.gnm1.syn.S8s4
       synopsis: "Synteny mappings among the genomes. See genome assemblies indicated in the synteny comparisons."
+  genome_alignments:
 - name: cardenasii
   genomes:
     - collection: K10017.gnm1.DQ4M

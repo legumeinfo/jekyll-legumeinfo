@@ -4,9 +4,13 @@ species:
   genomes:
     - collection: ISC453364.gnm3.GWXB
       synopsis: "Cercis canadensis accession ISC453364, genome assembly v3"
+    - collection: ISC453364.gnm3_hap2.2S7P
+      synopsis: "Cercis canadensis accession ISC453364, genome assembly v3 haplotype 2"
   annotations:
     - collection: ISC453364.gnm3.ann1.3N1M
       synopsis: "Annotation 1 for Cercis canadensis accession ISC453364, genome assembly v3"
+    - collection: ISC453364.gnm3_hap2.ann1.G88H
+      synopsis: "Annotation 1 for Cercis canadensis accession ISC453364, genome assembly v3 haplotype 2"
 - name: chinensis
   genomes:
     - collection: GXIB.gnm1.5DZH

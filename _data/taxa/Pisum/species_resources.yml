@@ -20,8 +20,8 @@ species:
     - URL: https://sequenceserver.legumeinfo.org/
       description: SequenceServer BLAST against Cameor assembly v1.0
       name: LIS SequenceServer
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-372165146%22,
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22pissa.Cameor.gnm1%22, %22loc%22: %22pissa.Cameor.gnm1.chr1LG6:1-1000000%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 pissa.Cameor.gnm1

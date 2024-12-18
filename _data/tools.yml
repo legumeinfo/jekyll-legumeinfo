@@ -30,7 +30,7 @@
 - category: "Visualize / Browse"
   description: "Conekt is a tool for comparative gene expression analysis."
   name: "Conekt Comparative Expression"
-  url: "https://conekt.legumeinfo.org/species"
+  url: "https://conekt.legumeinfo.org/"
 - category: "Sequence search"
   description: "Run BLASTs against LIS genomes, CDSes, and proteins"
   name: "LIS SequenceServer BLAST"

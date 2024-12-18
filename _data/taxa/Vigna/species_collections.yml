@@ -2,10 +2,10 @@
 species:
 - name: angularis
   genomes:
-    - collection: Shumari.gnm1.V0CS
-      synopsis: "Vigna angularis accession Shumari genome"
     - collection: Gyeongwon.gnm3.JyYC
       synopsis: "genome assembly"
+    - collection: Shumari.gnm1.V0CS
+      synopsis: "Vigna angularis accession Shumari genome"
   annotations:
     - collection: Gyeongwon.gnm3.ann1.3Nz5
       synopsis: "Directory of gene annotations, called on an assembly of pseudomolecules and remaining scaffold sequences"
@@ -21,73 +21,73 @@ species:
     - collection: VC1973A.gnm7.SB53
       synopsis: "Vigna radiata (mungbean) accession VC1973A, assembly version 7 (2021)"
   annotations:
-    - collection: VC1973A.gnm7.ann1.RWBG
-      synopsis: "Annotation version 1 Vigna radiata (mungbean) accession VC1973A, assembly version 7 (2021)"
     - collection: VC1973A.gnm6.ann1.M1Qs
       synopsis: "Gene annotations"
+    - collection: VC1973A.gnm7.ann1.RWBG
+      synopsis: "Annotation version 1 Vigna radiata (mungbean) accession VC1973A, assembly version 7 (2021)"
   diversity:
     - collection: VC1973A.gnm6.div.Sandhu_Singh_2020
       synopsis: "Genetic variants for Vigna radiata, assessed across 500 accessions to create the Iowamung bean panel; genotyped relative to accession VC1973A.gnm6"
     - collection: VC1973A.gnm7.div.Sandhu_Singh_2020
       synopsis: "Genetic variants for Vigna radiata, assessed across 500 accessions to create the Iowamung bean panel; genotyped relative to accession VC1973A.gnm7"
   markers:
-    - collection: VC1973A.gnm7.mrk.Sandhu_Singh_2020
-      synopsis: "SNP markers from the mung bean Illumina iSelect BeadArray, with associations reported in Sandhu Singh 2020 relative to gnm6, and projected into gnm7 coordinates"
-    - collection: VC1973A.gnm6.mrk.microsatellites
-      synopsis: "SSR markers and genomic locations on the genome sequence of Vigna radiata, accession VC1973A"
     - collection: VC1973A.gnm6.mrk.Sandhu_Singh_2020
       synopsis: "SNP markers from the mung bean Illumina iSelect BeadArray, with associations reported in Sandhu Singh 2020 relative to gnm6"
+    - collection: VC1973A.gnm6.mrk.microsatellites
+      synopsis: "SSR markers and genomic locations on the genome sequence of Vigna radiata, accession VC1973A"
+    - collection: VC1973A.gnm7.mrk.Chiteri_Rairdin_2024
+      synopsis: "SNP markers from the mung bean Illumina iSelect BeadArray, with associations reported in Sandhu Singh 2020 relative to gnm6, and projected into gnm7 coordinates"
   synteny:
     - collection: VC1973A.gnm6.syn.mcwy
       synopsis: "Synteny between Vigna radiata VC1973A and other species accessions calculated by LIS."
 - name: unguiculata
   genomes:
-    - collection: Sanzi.gnm1.YNCM
-      synopsis: "Vigna unguiculata genome assembly for Sanzi"
     - collection: CB5-2.gnm1.WDTB
       synopsis: "Vigna unguiculata genome assembly for CB5-2"
+    - collection: IT97K-499-35.gnm1.QnBW
+      synopsis: "Vigna unguiculata accession IT97K-499-35 genome assembly 1.0"
+    - collection: Sanzi.gnm1.YNCM
+      synopsis: "Vigna unguiculata genome assembly for Sanzi"
+    - collection: Suvita2.gnm1.5QLL
+      synopsis: "Vigna unguiculata genome assembly for Suvita2"
+    - collection: TZ30.gnm1.TX9W
+      synopsis: "Vigna unguiculata genome assembly for TZ30"
     - collection: UCR779.gnm1.M7KZ
       synopsis: "Vigna unguiculata genome assembly for UCR779"
     - collection: Xiabao_II.gnm1.WDBP
       synopsis: "Vigna unguiculata genome assembly for Xiabao_II"
-    - collection: Suvita2.gnm1.5QLL
-      synopsis: "Vigna unguiculata genome assembly for Suvita2"
     - collection: ZN016.gnm1.997F
       synopsis: "Vigna unguiculata genome assembly for ZN016"
-    - collection: IT97K-499-35.gnm1.QnBW
-      synopsis: "Vigna unguiculata accession IT97K-499-35 genome assembly 1.0"
-    - collection: TZ30.gnm1.TX9W
-      synopsis: "Vigna unguiculata genome assembly for TZ30"
   annotations:
-    - collection: Sanzi.gnm1.ann1.HFH8
-      synopsis: "Genome annotation for Vigna unguiculata Sanzi"
-    - collection: IT97K-499-35.gnm1.ann1.zb5D
-      synopsis: "Vigna unguiculata accession IT97K-499-35; JGI annotation version 1 on assembly 1"
-    - collection: TZ30.gnm1.ann2.59NL
-      synopsis: "Genome annotation for Vigna unguiculata TZ30"
-    - collection: ZN016.gnm1.ann2.C7YV
-      synopsis: "Genome annotation for Vigna unguiculata ZN016"
-    - collection: Xiabao_II.gnm1.ann1.4JFL
-      synopsis: "Genome annotation for Vigna unguiculata Xiabao_II"
-    - collection: Suvita2.gnm1.ann1.1PF6
-      synopsis: "Genome annotation for Vigna unguiculata Suvita2"
     - collection: CB5-2.gnm1.ann1.0GKC
       synopsis: "Genome annotation for Vigna unguiculata CB5-2"
-    - collection: UCR779.gnm1.ann1.VF6G
-      synopsis: "Genome annotation for Vigna unguiculata UCR779"
+    - collection: IT97K-499-35.gnm1.ann1.zb5D
+      synopsis: "Vigna unguiculata accession IT97K-499-35; JGI annotation version 1 on assembly 1"
     - collection: IT97K-499-35.gnm1.ann2.FD7K
       synopsis: "Genome annotation version 2 for Vigna unguiculata IT97K-499-35"
+    - collection: Sanzi.gnm1.ann1.HFH8
+      synopsis: "Genome annotation for Vigna unguiculata Sanzi"
+    - collection: Suvita2.gnm1.ann1.1PF6
+      synopsis: "Genome annotation for Vigna unguiculata Suvita2"
+    - collection: TZ30.gnm1.ann2.59NL
+      synopsis: "Genome annotation for Vigna unguiculata TZ30"
+    - collection: UCR779.gnm1.ann1.VF6G
+      synopsis: "Genome annotation for Vigna unguiculata UCR779"
+    - collection: Xiabao_II.gnm1.ann1.4JFL
+      synopsis: "Genome annotation for Vigna unguiculata Xiabao_II"
+    - collection: ZN016.gnm1.ann2.C7YV
+      synopsis: "Genome annotation for Vigna unguiculata ZN016"
   diversity:
     - collection: IT97K-499-35.gnm1.div.Huynh_Ehlers_2018
       synopsis: "VCF file containing genotype information for 305 F8 RILs, 98.74% homozygous on average while diverse in agronomic traits, mapped to the cowpea IT97K-499-35.gnm1 genome."
   expression:
-    - collection: IT97K-499-35.gnm1.ann1.expr.Yao_Jiang_2016
+    - collection: IT97K-499-35.gnm1.ann2.expr.IT97K-499-35.Yao_Jiang_2016
       synopsis: "Black-eyed pea gene expression atlas (IT97K-499-35)"
   markers:
-    - collection: IT97K-499-35.gnm1.mrk.Cowpea1MSelectedSNPs
-      synopsis: "SNP mining from 183,118 ESTs sequenced from 17 cDNA libraries yielded ≈10,000 high-confidence SNPs from which an Illumina 1,536-SNP GoldenGate genotyping array was developed."
     - collection: IT97K-499-35.gnm1.mrk.Angira_Zhang_2020
       synopsis: "Flanking SNP markers for First flower and Plant height QTLs discovered in a population of 175 F2:8 RILs derived from a cross between the Cowpeas GoldenEyeCream and IT98K-476-8. Marker positions determined by homology vs. the Vigna unguiculata IT97K-499-35 v1.0 assembly."
+    - collection: IT97K-499-35.gnm1.mrk.Cowpea1MSelectedSNPs
+      synopsis: "SNP mining from 183,118 ESTs sequenced from 17 cDNA libraries yielded ≈10,000 high-confidence SNPs from which an Illumina 1,536-SNP GoldenGate genotyping array was developed."
   synteny:
     - collection: IT97K-499-35.gnm1.syn.W3NY
       synopsis: "Synteny between Vigna unguiculata IT97K-499-35 and other species accessions calculated by LIS."

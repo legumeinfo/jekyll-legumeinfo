@@ -1,0 +1,18 @@
+---
+layout: base
+---
+
+{% if page.tools_menu or page.genomics_menu or page.download_menu %}
+  {% include left-menu.html %}
+{% endif %}
+<!-- NOTE: putting content between the tools and tm-main blocks will break CSS selectors -->
+<div class="tm-main uk-section uk-section-default">
+  <div class="uk-container uk-flex">
+    <div class="uk-width-1-1">
+      {{ content }}
+    </div>
+    {% if page.blog_card or page.news_card or page.events_card or page.twitter_card %}
+      {% include card-column.html page=page %}
+    {% endif %}
+  </div>
+</div>

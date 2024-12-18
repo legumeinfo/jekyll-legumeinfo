@@ -2,21 +2,28 @@
   <li><a href="{{ "/" | relative_url }}">Home</a></li>
   {% if site.data.taxon_list %}
   <li class="uk-parent">
-    <a href="#">Taxa</a>
+    <a href="#">Genomics</a>
     {% assign genera = site.data.taxon_list | group_by: "genus"  %}
     <ul class="uk-nav-sub">
       {% for genus in genera %}
         {% for organism in genus.items %}
           {% if organism.category == "main" %}
-            <li><a href="/taxa/{{ organism.genus | downcase | relative_url }}"> {{ organism.genus }} {{ organism.description }}</a></li>
+            <li><a href="/genomics/{{ organism.genus | downcase | relative_url }}"> {{ organism.genus }} {{ organism.description }}</a></li>
           {% endif %}
         {% endfor %}
       {% endfor %}
-      <li><a href="{{ "/taxa" | relative_url }}">OTHERS (Many special-focus species and collections)</a></li>
+      <li class="uk-nav-divider"></li>
+      {% for genus in genera %}
+        {% for item in genus.items %}
+          {% if item.category == "special" %}
+            <li><a href="/genomics{{ item.genus | downcase | relative_url }}"> {{ item.genus }} ({{ item.description }})</a></li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     </ul>
   </li>
   {% else %}
-  <li><a href="{{ "/taxa" | relative_url }}">Taxa</a></li>
+  <li><a href="{{ "/genomics" | relative_url }}">Genomics</a></li>
   {% endif %}
   {% if site.data.tools %}
   <li class="uk-parent">

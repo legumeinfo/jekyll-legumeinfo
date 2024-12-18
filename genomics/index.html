@@ -1,0 +1,30 @@
+---
+title: Genomics
+genomics_menu: true
+---
+{% assign genera = site.data.taxon_list | group_by: "genus"  %}
+
+<h1>Genomic resources for species held at LIS</h1>
+
+<p>
+  See resources such as genome browsers, synteny viewers, InterMine instances, germplasm genomics, etc. organized by genus below.
+</p>
+
+<ul>
+  {% for genus in genera %}
+  {% for item in genus.items %}
+  {% if item.category == "main" %}
+  <li><a href="/genomics{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+</ul>
+<ul>
+  {% for genus in genera %}
+  {% for item in genus.items %}
+  {% if item.category == "special" %}
+  <li><a href="/genomics{{ item.genus | downcase | relative_url }}"><i>{{ item.genus }}</i></a> ({{ item.description }})</li>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+</ul>

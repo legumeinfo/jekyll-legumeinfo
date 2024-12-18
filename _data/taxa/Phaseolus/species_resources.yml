@@ -22,8 +22,8 @@ species:
     name: G27455
     origin: Colombia
     resources:
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22phalu.G27455.gnm1%22, %22loc%22: %22phalu.G27455.gnm1.Pl01:1-47615855%22,
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phalu.G27455.gnm1%22, %22loc%22: %22phalu.G27455.gnm1.Pl01:1-1000000%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 phalu.G27455.gnm1
@@ -88,16 +88,16 @@ species:
     - URL: https://sequenceserver.legumeinfo.org/
       description: SequenceServer BLAST against the Phaseolus vulgaris genome v2.0
       name: LIS SequenceServer
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22phavu.G19833.gnm2%22, %22loc%22: %22phavu.G19833.gnm2.Chr01:1-51433939%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 phavu.G19833.gnm2
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22phavu.G19833.gnm1%22, %22loc%22: %22phavu.G19833.gnm1.Chr01:1-52205531%22,
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phavu.G19833.gnm1%22, %22loc%22: %22phavu.G19833.gnm1.Chr01:1-1000000%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 phavu.G19833.gnm1
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phavu.G19833.gnm2%22, %22loc%22: %22phavu.G19833.gnm2.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 phavu.G19833.gnm2
   - accession: PI 549535, PI 599011, PI 599012, PI 599013
     description: Bean variety UI111 is a Mesomarican line that has been used in numerous
       breeding projects and trait-mapping studies.It is a pinto-type bean, with indeterminate
@@ -106,8 +106,8 @@ species:
     name: UI111
     origin: US National Plant Germplasm System
     resources:
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22phavu.UI111.gnm1%22, %22loc%22: %22phavu.UI111.gnm1.Chr01:1-61842036%22,
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phavu.UI111.gnm1%22, %22loc%22: %22phavu.UI111.gnm1.Chr01:1-1000000%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 phavu.UI111.gnm1
@@ -118,8 +118,8 @@ species:
     name: Labor Ovalle
     origin: Institute of Agricultural Science and Technology (ICTA)
     resources:
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22phavu.LaborOvalle.gnm1%22, %22loc%22: %22phavu.LaborOvalle.gnm1.Chr01:1-57219719%22,
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phavu.LaborOvalle.gnm1%22, %22loc%22: %22phavu.LaborOvalle.gnm1.Chr01:1-1000000%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 phavu.LaborOvalle.gnm1
@@ -131,8 +131,8 @@ species:
     name: OAC Rex
     origin: Department of Plant Agriculture, University of Guelph, Guelph, Ontario.
     resources:
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22phavu.OACRex.gnm2%22, %22loc%22: %22phavu.OACRex.gnm2.Chr02:1-42958169%22,
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phavu.OACRex.gnm2%22, %22loc%22: %22phavu.OACRex.gnm2.Chr02:1-1000000%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 phavu.OACRex.gnm2
@@ -145,8 +145,8 @@ species:
     name: 5-593
     origin: US National Plant Germplasm System
     resources:
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22phavu.5-593.gnm1%22, %22loc%22: %22phavu.5-593.gnm1.Chr01:1-54800730%22,
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phavu.5-593.gnm1%22, %22loc%22: %22phavu.5-593.gnm1.Chr01:1-1000000%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 phavu.5-593.gnm1
@@ -204,8 +204,8 @@ species:
     name: Frijol Bayo
     origin: Veracruz, Mexico
     resources:
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22phaac.Frijol_Bayo.gnm1%22, %22loc%22: %22phaac.Frijol_Bayo.gnm1.Chr01:1-56952050%22,
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phaac.Frijol_Bayo.gnm1%22, %22loc%22: %22phaac.Frijol_Bayo.gnm1.Chr01:1-1000000%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 phaac.Frijol_Bayo.gnm1
@@ -224,8 +224,8 @@ species:
     name: W6 (15578)
     origin: Mexico
     resources:
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2//?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22phaac.W6_15578.gnm2%22, %22loc%22: %22phaac.W6_15578.gnm2.Chr01:1-43880995%22,
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phaac.W6_15578.gnm2%22, %22loc%22: %22phaac.W6_15578.gnm2.Chr01:1-1000000%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 phaac.W6_15578.gnm2
@@ -245,3 +245,32 @@ species:
     name: Tep 23
     origin: Sonoran Desert
   taxid: 33129
+- abbrev: phaco
+  commonName: scarlet runner bean
+  description: Phaseolus coccineus originated in Central American mountain regions
+    and was probably cultivated around 2000 BCE. Used as both a food crop (seeds and
+    pods) and as an ornamental with typically red flowers. As opposed to the congeneric
+    P. vulgaris, P. coccineus is a perennial vine with tuberous roots.
+  genus: Phaseolus
+  species: coccineus
+  strains:
+  - accession: PHA8298
+    description: A European line Pc_12 was selected for genome sequencing and annotation
+      in the context of the BEANADAPT project, designed to investigate the genetic
+      basis and phenotypic consequences of the adaptation to new environments of the
+      common bean and its sister species, the runner bean, through the study of their
+      introduction and expansion through Europe, as a recent and historically well-defined
+      event of rapid adaptation.
+    identifier: PHA8298
+    name: Pc_12
+    origin: Europe
+    resources:
+    - URL: https://phytozome-next.jgi.doe.gov/info/Pcoccineus_v1_1
+      description: Phytozome information for Phaseolus coccineus v1.1
+      name: Phytozome
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22phaco.PHA8298.gnm1%22, %22loc%22: %22phaco.PHA8298.gnm1.Chr01:1-1000000%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 phaco.PHA8298.gnm1
+  taxid: 3886
