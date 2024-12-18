@@ -20,7 +20,7 @@ blog_card: true
 <div >
 <div class="search-container">
   <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
-    <form action="https://mines.legumeinfo.org/legumemine/keywordSearchResults.do" name="search" method="get" target="_blank">
+    <form action="https://mines.legumeinfo.org/legumemine/keywordSearchResults.do" name="search" method="get">
       <div class="uk-text-left">
         <label class="uk-text-bold" for="quickSearchInput">Keyword Search</label><br>
       <input class="uk-input uk-form-small custom-width uk-text-primary uk-text-italic"  type="text" id="quickSearchInput" name="searchTerm"
@@ -56,7 +56,7 @@ blog_card: true
 
 <div class="search-container">
   <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
-    <form id="gotogenusform1" oninput="buildURLdscensor1()" target="_blank">
+    <form id="gotogenusform1" oninput="buildURLdscensor1()">
       <label class="uk-text-bold" >Data overviews (genomes):</label><br>
       <div class="bar-input-group">
         <input class="uk-margin-small" id="parturl1" type="hidden" value="https://dscensor.legumeinfo.org/multiqc-demo/genome_main:">
@@ -68,7 +68,7 @@ blog_card: true
   </div>
 
   <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
-    <form id="gotogenusform2" oninput="buildURLdscensor2()" target="_blank">
+    <form id="gotogenusform2" oninput="buildURLdscensor2()">
       <label class="uk-text-bold" >Data overviews (annotations):</label><br>
       <div class="bar-input-group">
         <input class="uk-margin-small" id="parturl2" type="hidden" value="https://dscensor.legumeinfo.org/multiqc-demo/gene_models_main:">
@@ -80,7 +80,7 @@ blog_card: true
   </div>
 
   <div class="uk-text-nowrap uk-margin-remove-bottom uk-margin-small-top uk-align-center">
-    <form id="gotogenusform3" oninput="buildURLdatastore()" target="_blank">
+    <form id="gotogenusform3" oninput="buildURLdatastore()">
       <label class="uk-text-bold" >Datastore (by genus):</label><br>
       <div class="bar-input-group">
         <input class="uk-margin-small" id="parturl3" type="hidden" value="https://data.legumeinfo.org/">
@@ -105,7 +105,7 @@ blog_card: true
       </div>
       <div class="uk-flex uk-flex-center uk-flex-middle" title="Enter one or more sequences and annotate them, view in a phylogenetic tree, etc.">
         <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap cornsilk col3-cornsilk" type="button" >
-          <a href="https://funnotate.legumeinfo.org/" target="_blank"><b>Annotate sequences</b></a>
+          <a href="https://funnotate.legumeinfo.org/"><b>Annotate sequences</b></a>
         </button>
       </div>
       <div class="uk-flex uk-flex-center uk-flex-middle" title="Glycine pangenes, or look up corresponding gene IDs between annotations.">
@@ -125,17 +125,17 @@ blog_card: true
       </div>
       <div class="uk-flex uk-flex-center uk-flex-middle" title="Soybean GWAS features from many studies, against a common framework (ZZbrowse tools).">
         <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap antiquewhite col3-mistyrose" type="button">
-          <a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&twoSpecies=n&datasets=Soybean%20GWAS&chr=Gm01&selected=100000&window=250000&traitsFromOntology=y" target="_blank"><b>GWAS viewer</b></a>
+          <a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&twoSpecies=n&datasets=Soybean%20GWAS&chr=Gm01&selected=100000&window=250000&traitsFromOntology=y"><b>GWAS viewer</b></a>
         </button>
       </div>
       <div class="uk-flex uk-flex-center uk-flex-middle" title="Soybean QTL features from many studies, against a common framework (ZZbrowse tools).">
         <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap cornsilk col3-mistyrose" type="button">
-          <a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&twoSpecies=n&datasets=Soybean%20QTL&chr=Gm01&selected=100000&window=250000&traitsFromOntology=y" target="_blank"><b>QTL viewer</b></a>
+          <a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&twoSpecies=n&datasets=Soybean%20QTL&chr=Gm01&selected=100000&window=250000&traitsFromOntology=y"><b>QTL viewer</b></a>
         </button>
       </div>
       <div class="uk-flex uk-flex-center uk-flex-middle" title="QTL and/or GWAS features from many studies; compare between soybean and another selected species (slow; please be patient).">
         <button class="uk-button uk-width-1-1 uk-button-small uk-text-capitalize uk-text-nowrap cornsilk col3-mistyrose" type="button">
-          <a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&twoSpecies=y&datasets=Soybean%20GWAS&chr=Gm01&selected=100000&window=250000&traitsFromOntology=y" target="_blank"><b>cross-species QTL/GWAS</b></a>
+          <a href="https://zzbrowse.legumeinfo.org/?tab=WhGen&twoSpecies=y&datasets=Soybean%20GWAS&chr=Gm01&selected=100000&window=250000&traitsFromOntology=y"><b>cross-species QTL/GWAS</b></a>
         </button>
       </div>
       <div class="uk-flex uk-flex-center uk-flex-middle" title="View geographic origins of Glycine accessions in the USDA GRIN-Global system.">
