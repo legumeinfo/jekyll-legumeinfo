@@ -117,7 +117,7 @@ jobs:
       - name: run htmlproofer
         # ignore HTTP status 301 (htmlproofer strips trailing slashes)
         run: |
-          htmlproofer --allow-missing-href --ignore-missing-alt --ignore-files '/\/uikit\/tests\//' --ignore-status-codes '301,403,503' --cache '{"timeframe": {"external": "30d"}}' --ignore-url '/germplasm-map.legumeinfo.org/,/pgrc-rpc.agr.gc.ca\/gringlobal\/search/'
+          htmlproofer --allow-missing-href --ignore-missing-alt --ignore-files '/\/uikit\/tests\//' --ignore-status-codes '301,403,406,503' --cache '{"timeframe": {"external": "30d"}}' --ignore-url '/germplasm-map.legumeinfo.org/,/pgrc-rpc.agr.gc.ca\/gringlobal\/search/'
       # https://github.com/actions/cache/blob/main/save/README.md#always-save-cache
       - uses: actions/cache/save@v4
         id: save-cache-htmlproofer

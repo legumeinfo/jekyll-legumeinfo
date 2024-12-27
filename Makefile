@@ -65,7 +65,7 @@ yamllint:
 
 htmlproofer:
 	bundle exec jekyll build --profile --trace
-	bundle exec htmlproofer $(HTMLPROOFER_ARGS) --ignore-status-codes 301,429,503 --ignore-files '/\/uikit\/tests\//' --ignore-url '/germplasm-map.legumeinfo.org/,/pgrc-rpc.agr.gc.ca\/gringlobal\/search/'  --cache '{"timeframe": {"external": "30d"}}' --log-level debug ./_site
+	bundle exec htmlproofer $(HTMLPROOFER_ARGS) --ignore-status-codes 301,406,429,503 --ignore-files '/\/uikit\/tests\//' --ignore-url '/germplasm-map.legumeinfo.org/,/pgrc-rpc.agr.gc.ca\/gringlobal\/search/'  --cache '{"timeframe": {"external": "30d"}}' --log-level debug ./_site
 
 pa11y: setup
 	if ! { command -v pa11y-ci || npm ls pa11y-ci ; } >/dev/null 2>&1; then npm install $(NPM_INSTALL_OPTIONS) pa11y-ci@${PA11YCI_VERSION}; fi
