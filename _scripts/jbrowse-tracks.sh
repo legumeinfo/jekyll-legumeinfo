@@ -48,13 +48,46 @@ do
   (
     eval $(yaml2sh ${readme})
     datastore_dir_url=${DATASTORE_URL}/$(dirname ${readme#_data/datastore-metadata/})
+    trackId=${identifier%.*}
+    assemblyNames=${identifier%.ann[0-9].*}
+    if grep -q jbrowse-index ${readme%/*}/MANIFEST.*.yml
+    then
+      config=$(printf '
+      {
+        "displays": [{"displayId":"%s","renderer":{"maxHeight":3000}}],
+        "textSearching": {
+          "textSearchAdapter": {
+            "type": "TrixTextSearchAdapter",
+            "textSearchAdapterId": "%s-index",
+            "ixFilePath": {
+              "uri": "https://data.soybase.org/jbrowse-index/trix/%s.ix",
+              "locationType": "UriLocation"
+            },
+            "ixxFilePath": {
+              "uri": "https://data.soybase.org/jbrowse-index/trix/%s.ixx",
+              "locationType": "UriLocation"
+            },
+            "metaFilePath": {
+              "uri": "https://data.soybase.org/jbrowse-index/trix/%s_meta.json",
+              "locationType": "UriLocation"
+            },
+            "assemblyNames": [
+              "%s"
+            ]
+          }
+        }
+      }' "${trackId}" "${trackId}" "${trackId}" "${trackId}" "${trackId}" "${assemblyNames}")
+    else
+      config=$(printf '{"displays":[{"displayId":"%s","renderer":{"maxHeight":3000}}]}' "${identifier%.*}")
+    fi
+
     jbrowse add-track \
       ${datastore_dir_url}/${scientific_name_abbrev}.${identifier}.gene_models_main.gff3.gz \
-      --assemblyNames=${identifier%.ann[0-9].*} \
+      --assemblyNames=${assemblyNames} \
       --category='Genes' \
-      --trackId=${identifier%.*} \
+      --trackId=${trackId} \
       --description="${synopsis}<br /><br /><b>more info:</b> ${datastore_dir_url}/" \
-      --config=$(printf '{"displays":[{"displayId":"%s","renderer":{"maxHeight":3000}}]}' "${identifier%.*}") \
+      --config="${config}" \
       --out=assets/js/jbrowse
   )
 done
@@ -64,12 +97,38 @@ do
   (
     eval $(yaml2sh ${readme})
     datastore_dir_url=${DATASTORE_URL}/$(dirname ${readme#_data/datastore-metadata/})
+    assemblyNames=${identifier%.mrk.*}
+    config=$(printf '
+    {
+      "textSearching": {
+        "textSearchAdapter": {
+          "type": "TrixTextSearchAdapter",
+          "textSearchAdapterId": "%s-index",
+          "ixFilePath": {
+            "uri": "https://data.soybase.org/jbrowse-index/trix/%s.ix",
+            "locationType": "UriLocation"
+          },
+          "ixxFilePath": {
+            "uri": "https://data.soybase.org/jbrowse-index/trix/%s.ixx",
+            "locationType": "UriLocation"
+          },
+          "metaFilePath": {
+            "uri": "https://data.soybase.org/jbrowse-index/trix/%s_meta.json",
+            "locationType": "UriLocation"
+          },
+          "assemblyNames": [
+            "%s"
+          ]
+        }
+      }
+    }' "${identifier}" "${identifier}" "${identifier}" "${identifier}" "${assemblyNames}")
     jbrowse add-track \
       ${datastore_dir_url}/${scientific_name_abbrev}.${identifier}.gff3.gz \
-      --assemblyNames=${identifier%.mrk.*} \
+      --assemblyNames=${assemblyNames} \
       --category='Markers' \
       --name=${identifier##*.} \
       --trackId=${identifier} \
+      --config="${config}" \
       --description="${synopsis}<br /><br /><b>more info:</b> ${datastore_dir_url}/" \
       --out=assets/js/jbrowse
   )
@@ -159,15 +218,3 @@ do
         --out=assets/js/jbrowse/
     done
 done
-
-
-
-
-
-
-# FIXME: too big & slow to generate for testing
-# https://github.com/GMOD/jbrowse-components/issues/3019
-#npx jbrowse text-index \
-#  --perTrack \
-#  --tracks='...' \
-#  --attributes='Name'

@@ -35,7 +35,7 @@ Changes made to other file types (e.g., data and config files) may only be refle
 
 
 ```sh
-make jbrowse # (optional) install JBrowse dependencies if needed
+make jbrowse # (optional; slow!) install JBrowse dependencies if needed
              # & run _scripts/jbrowse-tracks.sh to generate JBrowse config.json
 make         # install dependencies if needed & start jekyll server listening on localhost:4000
 ... CTRL-C ...
