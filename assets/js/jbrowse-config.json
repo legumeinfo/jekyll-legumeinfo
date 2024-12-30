@@ -1,5 +1,6 @@
 {
   "configuration": {
+      "disableAnalytics": true,
       "hierarchical": {
         "defaultCollapsed": {
           "subCategories": true 

@@ -59,7 +59,7 @@ jobs:
         id: restore-cache-jbrowse
         with:
           path: ./_site/assets/js/jbrowse
-          key: jbrowse-${{ hashFiles('_data/datastore-metadata/**', '_scripts/jbrowse-tracks.sh', 'Makefile', 'assets/js/jbrowse-config.json') }}
+          key: jbrowse-${{ hashFiles('_data/datastore-metadata/**', '_config.yml', '_scripts/jbrowse-tracks.sh', '_themes/jekyll-theme-legumeinfo/_includes/analytics.html', 'Makefile', 'assets/js/jbrowse-config.json') }}
       - uses: actions/setup-node@v4
         if: steps.restore-cache-jbrowse.outputs.cache-hit != 'true'
         with:
@@ -69,13 +69,13 @@ jobs:
         run: |
           make jbrowse
           rm -rf assets/js/jbrowse/test_data
-          mv assets/js/jbrowse _site/assets/js
+          bundle exec jekyll build --profile --trace # process assets/js/jbrowse/index.html as liquid
       - uses: actions/cache/save@v4
         id: save-cache-jbrowse
         if: steps.restore-cache-jbrowse.outputs.cache-hit != 'true'
         with:
           path: ./_site/assets/js/jbrowse
-          key: jbrowse-${{ hashFiles('_data/datastore-metadata/**', '_scripts/jbrowse-tracks.sh', 'Makefile', 'assets/js/jbrowse-config.json') }}
+          key: jbrowse-${{ hashFiles('_data/datastore-metadata/**', '_config.yml', '_scripts/jbrowse-tracks.sh', '_themes/jekyll-theme-legumeinfo/_includes/analytics.html', 'Makefile', 'assets/js/jbrowse-config.json') }}
       # create artifact.tar from ./_site directory & upload as artifact named 'github-pages'
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
