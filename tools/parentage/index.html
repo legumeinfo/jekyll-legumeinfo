@@ -1,83 +1,148 @@
 ---
-title: Parentage
-sitemap: parentage 
+title: Parentage Viewer
 layout: default
-
+sitemap: tools/parentage-viewer
 ---
 
-<h2>Soy Parentage and Pedigrees</h2>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+<script src="/assets/js/parentage.js"></script>
+<style>
+    .uk-button-primary {
+        background-color: #235626;
+    }
+    .uk-button-primary:hover {
+        background-color: #1a4720;
+    }
+    .uk-button-primary:disabled:hover {
+        background-color: transparent;
+    }
+    .uk-link, a, .uk-nav-default > li > a:hover, .uk-dropdown-nav > li.uk-active > a, .uk-dropdown-nav > li > a:hover {
+        color: #060;
+    }
+    .uk-link:hover, a:hover {
+        color: #1a4720;
+    }
+    .uk-table th {
+        color: #2b2b2b;
+        font-weight: 600;
+    }
+    html, .uk-text-meta, .uk-textarea, .uk-select, .uk-dropdown-nav > li > a, .uk-nav-default > li > a {
+        color: #282828;
+    }
+    label {
+        display: block;
+    }
 
-<p> 
-The soybean parentage information below was partially gleaned from the Uniform Soybean Tests for the 
-<a href="https://www.ars.usda.gov/southeast-area/stoneville-ms/crop-genetics-research/docs/uniform-soybean-tests/"><b>Southern</b></a>
-and 
-<a href="https://www.ars.usda.gov/midwest-area/west-lafayette-in/crop-production-and-pest-control-research/docs/uniform-soybean-tests-northern-region/"><b>Northern</b></a> 
-regions as well as other sources such as USDA technical bulletins, variety registrations and PVP applications. 
-The strains that appear here were part of the uniform trials and not the preliminary trials. The pedigree of 
-individual strains was followed back to named strains in both maternal and paternal lineages where possible. 
-An unknown parent is indicated with "-". When available, PVP registration numbers are noted, 
-as are synonyms for the strains - including the PI number for lines deposited at GRIN. 
-Check for additional information about PI lines at the <a href="https://npgsweb.ars-grin.gov/gringlobal/search"><b>GRIN search page</b></a>.
-</p>
+    .letter-filter {
+        margin: 20px 0;
+    }
 
-<p>
-Strain names are prefixed with a code that identifies the program that produced them. The code is usually the first two
-letters in the strain name followed by the year it was released as a two digit number. 
-See <a href="/tools/parentage/prefix_codes"><b>code prefixes and descriptions here</b></a>. 
-</p>
+    .letter-filter span {
+        margin-right: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
 
-<p>
-Pedigrees are represented in column 4. To give an example: 
-<a href="/tools/parentage/groupc/"><u><b>CS31</b></u></a> has parents <u>S10</u> (maternal) and <u>Mitchell</u> (paternal). 
-The pedigree string <u>( S10 , Mitchell ( Amsoy , Wayne ) )</u> 
-can be read as: <u>CS31</u> is progeny of <u>S10</u> and <u>Mitchell</u>; 
-and <u>Mitchell</u> is progeny of <u>Amsoy</u> and <u>Wayne</u>.
-</p>
-<p>
-The information below is also available for 
-<a href="https://data.soybase.org/annex/Glycine/max/pedigrees/glyma.mixed.ped.2023-11-08.tsv.gz"><b>download</b>
-</a> - for example, 
-if you wish to filter on pedigrees that contain an accession of interest.<br>
-We welcome submissions by the community of new or updated pedigree information. 
-Please use this 
-<a href="https://data.soybase.org/annex/Glycine/max/pedigrees/SoyBaseParentageWorksheetV3.xls"><b>data submission spreadsheet</b></a>.
-</p>
+    .letter-filter span:hover {
+        color: #1a4720;
+        text-decoration: underline;
+    }
 
-<p><b>Browse or search accessions beginning with ...</b><p>
-<table class="uk-table uk-width-1-2 uk-text-center uk-table-condensed">
-  <tbody>
-    {% for item in site.data.parentage_groups %}
-      {% assign display_name = item.group | remove:"group" %}
-      <tr>&nbsp;<a href="/tools/parentage/{{item.group | downcase}}">{{ display_name }}</a>&nbsp;</tr>
-    {% endfor %}
-  </tbody>
-</table>
+    .letter-filter span.active {
+        color: #060;
+        text-decoration: underline;
+    }
+</style>
 
-<div class="uk-overflow-auto">
-  <table class="uk-table uk-table-small uk-table-hover uk-table-divider uk-table-striped">
-    <thead>
-      <tr>
-        <th><b>Individual</b></th>
-        <th><b>Female Parent</b></th>
-        <th><b>Male Parent</b></th>
-        <th><b>Pedigree</b></th>
-        <th><b>Synonyms</b></th>
-        <th><b>Notes</b></th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for item in site.data.parentage.group0-9 %}
-        <tr>
-          <td>{{ item.Individual }}</td>
-          <td>{{ item.Parent1 }}</td>
-          <td>{{ item.Parent2 }}</td>
-          <td>{{ item.Pedigree }}</td>
-          <td>{{ item.Synonyms}}</td>
-          <td>{{ item.Comment }}</td>
-        </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+<div id="detail-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <h2 id="modal-title"></h2>
+        <div id="modal-content">
+            <div id="modal-loader" class="uk-flex uk-flex-center uk-flex-middle" hidden>
+                <div uk-spinner="ratio: 1"></div>
+            </div>
+        </div>
+    </div>
+</div>    
+<div class="uk-container">
+    <h1>Parentage Reports and Pedigrees</h1>
+    
+    <p> 
+        The soybean parentage information below was partially gleaned from the Uniform Soybean Tests for the 
+        <a href="https://www.ars.usda.gov/southeast-area/stoneville-ms/crop-genetics-research/docs/uniform-soybean-tests/"><b>Southern</b></a>
+        and 
+        <a href="https://www.ars.usda.gov/midwest-area/west-lafayette-in/crop-production-and-pest-control-research/docs/uniform-soybean-tests-northern-region/"><b>Northern</b></a> 
+        regions as well as other sources such as USDA technical bulletins, variety registrations and PVP applications.
+    </p>
+
+    <details>
+      <summary>See more information about varieties, names, and trials ...</summary>
+      <p> 
+          The strains that appear here were part of the uniform trials and not the preliminary trials. The pedigree of 
+          individual strains was followed back to named strains in both maternal and paternal lineages where possible. 
+          An unknown parent is indicated with "-". When available, PVP registration numbers are noted, 
+          as are synonyms for the strains - including the PI number for lines deposited at GRIN. 
+          Check for additional information about PI lines at the <a href="https://npgsweb.ars-grin.gov/gringlobal/search"><b>GRIN search page</b></a>.
+      </p>
+      
+      <p>
+          Strain names are prefixed with a code that identifies the program that produced them. The code is usually the first two
+          letters in the strain name followed by the year it was released as a two digit number. 
+          See <a href="/tools/parentage/prefix_codes"><b>code prefixes and descriptions here</b></a>. 
+      </p>
+      
+      <p>
+          The information below is also available for 
+          <a href="https://data.soybase.org/annex/Glycine/max/pedigrees/glyma.mixed.ped.2023-11-08.tsv.gz"><b>download</b>
+          </a> - for example, 
+          if you wish to filter on pedigrees that contain an accession of interest.<br>
+          We welcome submissions by the community of new or updated pedigree information. 
+          Please use this 
+          <a href="https://data.soybase.org/annex/Glycine/max/pedigrees/SoyBaseParentageWorksheetV3.xls"><b>data submission spreadsheet</b></a>.
+      </p>
+    </details>
+
+    <hr>
+    <H3>Instructions</H3>
+    <p>
+        Enter the name of a soybean line to get a report of its parents, pedigree, synonyms, and notes for that line.
+    </p>
+    
+    <p>
+      For an <strong>interactive pedigree diagram</strong>, click the <strong>Pedigree viewer</strong> button, 
+      then choose <strong>Import</strong>.<br>
+      <details>
+        <summary>See the diagram for variety Mitchell, for example ...</summary>
+        <div class="uk-overflow-hidden uk-margin">
+          <img  class="uk-float-center uk-height-medium" src="/assets/img/general/pedigree_Helium.gif"  alt="Image: Helium pedigree dialog box"/>
+          <img  class="uk-float-center uk-height-large" src="/assets/img/general/pedigree_Mitchell.gif"  alt="Image: Pedigree for soybean cultivar Mitchell"/>
+        </div>
+      </details>
+    </p>
+    
+    <hr>
+    <div id="loader" class="uk-flex uk-flex-center uk-flex-middle" hidden>
+        <div uk-spinner="ratio: 1"></div>
+    </div>
+    <span id="error" class="uk-label uk-label-danger" hidden>
+        Data could not be loaded. This is likely due to a problem with the server. Please try again later.
+    </span>
+    <div class="letter-filter uk-margin"></div>
+    <table id="parentageTable" class="uk-table uk-table-divider stripe">
+        <thead>
+            <tr>
+                <th>Individual</th>
+                <th>Female Parent</th>
+                <th>Male Parent</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
 </div>
 
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
 
