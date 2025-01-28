@@ -33,10 +33,7 @@
 - name: Simon Novak
   role: Student Programmer
   status: student
-- name: Ella Townsend
-  role: Student Curator
-  status: student
-- name: Reagan Nelson
+- name: Raegan Nelson
   role: Student Curator
   status: student
   # past employee
@@ -100,4 +97,7 @@
   status: Alumni
 - name: Aditya Kumar
   role: Student Programmer
+  status: Alumni
+- name: Ella Townsend
+  role: Student Curator
   status: Alumni
