@@ -35,6 +35,7 @@ sitemap: tools/parentage-viewer
 
     .letter-filter {
         margin: 20px 0;
+        word-wrap: anywhere;
     }
 
     .letter-filter span {
@@ -129,7 +130,7 @@ sitemap: tools/parentage-viewer
     <span id="error" class="uk-label uk-label-danger" hidden>
         Data could not be loaded. This is likely due to a problem with the server. Please try again later.
     </span>
-    <div class="letter-filter uk-margin"></div>
+    <div class="letter-filter uk-margin uk-overflow-auto"></div>
     <table id="parentageTable" class="uk-table uk-table-divider stripe">
         <thead>
             <tr>
