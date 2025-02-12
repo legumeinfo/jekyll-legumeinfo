@@ -7,6 +7,48 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>IFLRC-APC</title>
+        <description>&lt;h1 class=&quot;uk-heading-divider&quot;&gt;&lt;/h1&gt;
+&lt;ul class=&quot;uk-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.iflrc-apc2025.com&quot; target=&quot;_blank&quot;&gt;Conference website&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Location: Perth, Australia&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 15 Sep 2025 00:00:00 +0000</pubDate>
+        <link>/events/2025/09/15/IFLRC-APC.html</link>
+        <guid isPermaLink="true">/events/2025/09/15/IFLRC-APC.html</guid>
+      </item>
+    
+      <item>
+        <title>Soy2025</title>
+        <description>&lt;h1 class=&quot;uk-heading-divider&quot;&gt;&lt;/h1&gt;
+&lt;ul class=&quot;uk-list&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;https://conferences.union.wisc.edu/soy2025/&quot; target=&quot;_blank&quot;&gt;Conference website&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;Location: Madison, WI&lt;/li&gt;
+     &lt;li&gt;Affordable &lt;a href=&quot;https://uwmadison.eventsair.com/soy-2025/registration/Site/Register&quot; target=&quot;_blank&quot;&gt;registration and lodging&lt;/a&gt; for students and researchers.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+        <link>/events/2025/07/23/Soy2025.html</link>
+        <guid isPermaLink="true">/events/2025/07/23/Soy2025.html</guid>
+      </item>
+    
+      <item>
+        <title>AGBT-Ag 2025</title>
+        <description>&lt;h1 class=&quot;uk-heading-divider&quot;&gt;&lt;/h1&gt;
+&lt;ul class=&quot;uk-list&quot;&gt;
+    &lt;li&gt;Location: Orlando, FL&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;https://www.agbt.org/home/home/agricultural-meeting-overview/&quot; target=&quot;_blank&quot;&gt;Meeting website&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+        <link>/events/2025/03/31/AGBT-Ag-2025.html</link>
+        <guid isPermaLink="true">/events/2025/03/31/AGBT-Ag-2025.html</guid>
+      </item>
+    
+      <item>
         <title>Pangene Lookup Tool</title>
         <description>&lt;p&gt;A new tool for finding corresponding genes within genera based on the concept of pangene sets is available &lt;a href=&quot;/tools/search/pangene.html&quot;&gt;here&lt;/a&gt;. Lists of up to 100 input genes can be mapped to the corresponding genes in targeted annotations from other species within the genera, and tables of correspondences can be downloaded in tabular form. Pangene sets derived with the tool &lt;a href=&quot;https://academic.oup.com/bioinformatics/article/40/9/btae526/7740678&quot;&gt;Pandagma&lt;/a&gt;, are available for genera with numerous sequenced genomes available, initially &lt;a href=&quot;https://data.legumeinfo.org/Arachis/GENUS/pangenes/&quot;&gt;Arachis&lt;/a&gt;, &lt;a href=&quot;https://data.legumeinfo.org/Cicer/GENUS/pangenes/&quot;&gt;Cicer&lt;/a&gt;, &lt;a href=&quot;https://data.legumeinfo.org/Glycine/GENUS/pangenes/&quot;&gt;Glycine&lt;/a&gt;, &lt;a href=&quot;https://data.legumeinfo.org/Medicago/GENUS/pangenes/&quot;&gt;Medicago&lt;/a&gt;, &lt;a href=&quot;https://data.legumeinfo.org/Phaseolus/GENUS/pangenes/&quot;&gt;Phaseolus&lt;/a&gt;, &lt;a href=&quot;https://data.legumeinfo.org/Vigna/GENUS/pangenes/&quot;&gt;Vigna&lt;/a&gt;. The lookup tool can also be used to find correspondences between genes from different versions of the same genome. Please give it a try and let us know what you think!&lt;/p&gt;
 </description>
@@ -185,46 +227,6 @@ By HudsonAlpha Institute for Biotechnology, Huntsville, AL.&lt;br /&gt;
         <pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate>
         <link>/news/general/2024/04/18/usda-npgs-job.html</link>
         <guid isPermaLink="true">/news/general/2024/04/18/usda-npgs-job.html</guid>
-      </item>
-    
-      <item>
-        <title>Site updates</title>
-        <description>&lt;p&gt;The LIS, SoyBase, and PeanutBase teams have added nine new genome assemblies and annotation sets in Q4 2023 and Q1 2024:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://data.legumeinfo.org/Arachis/stenosperma/&quot;&gt;&lt;strong&gt;&lt;em&gt;Arachis stenosperma&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; (a wild relative of peanut, with resistance to several important peanut diseases)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://data.legumeinfo.org/Cercis/chinensis/&quot;&gt;&lt;strong&gt;&lt;em&gt;Cercis chinensis&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; (ornamental tree, also used as a model for evolutionary studies in the legume family)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://data.legumeinfo.org/Glycine/&quot;&gt;&lt;strong&gt;&lt;em&gt;Soybean&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt; (four new reference-quality assemblies and annotation sets)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://data.legumeinfo.org/Medicago/truncatula/&quot;&gt;&lt;strong&gt;&lt;em&gt;Medicago truncatula&lt;/em&gt;, HM078&lt;/strong&gt;&lt;/a&gt;(an accession resistant to fungal agent of spring black stem and leaf spot)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://data.legumeinfo.org/Phaseolus/coccineus/&quot;&gt;&lt;strong&gt;Scarlet runner bean&lt;/strong&gt;&lt;/a&gt; (&lt;em&gt;Phaseolus coccineus&lt;/em&gt;, one of five domesticated Phaseolus species)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://data.legumeinfo.org/Phaseolus/vulgaris/genomes/OACRex.gnm2.NXJW/&quot;&gt;&lt;strong&gt;Common bean, accession OAC Rex&lt;/strong&gt;&lt;/a&gt; (developed in Canada)&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Sat, 30 Mar 2024 00:00:00 +0000</pubDate>
-        <link>/news/general/2024/03/30/site-updates.html</link>
-        <guid isPermaLink="true">/news/general/2024/03/30/site-updates.html</guid>
-      </item>
-    
-      <item>
-        <title>BIC &amp; NAPIA Biennial meeting, South Carolina</title>
-        <description>&lt;p&gt;6 - 8 November 2023&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.clemson.edu/cafls/bic-napia/&quot;&gt;BIC &amp;amp; NAPIA Biennial meeting&lt;/a&gt;, Clemson University, South Carolina.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
-        <link>/events/announcements/2023/11/06/bic-napia-23.html</link>
-        <guid isPermaLink="true">/events/announcements/2023/11/06/bic-napia-23.html</guid>
-      </item>
-    
-      <item>
-        <title>Advances in Arachis through Genomics and Biotechnology (AAGB), Huntsville, Alabama</title>
-        <description>&lt;p&gt;16-19 October 2023&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.hudsonalpha.org/aagb/&quot;&gt;AAGB (Advances in Arachis) Conference&lt;/a&gt;, Huntsville, Alabama&lt;/p&gt;
-</description>
-        <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
-        <link>/events/announcements/2023/10/16/19-aagb-23.html</link>
-        <guid isPermaLink="true">/events/announcements/2023/10/16/19-aagb-23.html</guid>
       </item>
     
   </channel>

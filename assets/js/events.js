@@ -132,6 +132,42 @@ export const events = [
       summary: "ICLGG 2024",
     },
   
+    {
+      url: "/events/2025/03/31/AGBT-Ag-2025.html",
+      title: "AGBT-Ag 2025",
+      date: "31 Mar 2025",
+      unixDate: 1743379200,
+      
+      endDate: "02 Apr 2025",
+      unixEndDate: 1743552000,
+      
+      summary: "Advances in Genome Biology and Technology Agricultural Meeting",
+    },
+  
+    {
+      url: "/events/2025/07/23/Soy2025.html",
+      title: "Soy2025",
+      date: "23 Jul 2025",
+      unixDate: 1753228800,
+      
+      endDate: "26 Jul 2025",
+      unixEndDate: 1753488000,
+      
+      summary: "19th Biennial Cellular and Molecular Biology of the Soybean Conference",
+    },
+  
+    {
+      url: "/events/2025/09/15/IFLRC-APC.html",
+      title: "IFLRC-APC",
+      date: "15 Sep 2025",
+      unixDate: 1757894400,
+      
+      endDate: "19 Sep 2025",
+      unixEndDate: 1758240000,
+      
+      summary: "8th International Food Legume Research Conference and 5th Australian Pulse Conference",
+    },
+  
   ];
 
 /* separate current and upcoming events from past events */
