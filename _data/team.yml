@@ -24,11 +24,6 @@
   specialization: Informatics
   website: https://www.ars.usda.gov/people-locations/person?person-id=41062
   status: current
-- name: Chen Prom
-  role: IT Specialist(Data/Sytems)
-  specialization: Front-End Development
-  website: https://www.ars.usda.gov/people-locations/person?person-id=60073
-  status: current
   # current student employee
 - name: Simon Novak
   role: Student Programmer
@@ -37,6 +32,9 @@
   role: Student Curator
   status: student
   # past employee
+- name: Chen Prom
+  role: IT Specialist
+  status: Alumni
 - name: David Grant
   role: SoyBase Curator Emeritus
   status: Alumni
