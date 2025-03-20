@@ -13,12 +13,14 @@ tools_menu: false
 <hr>
 {% for group in groups %}
 <ul uk-accordion>
-  <li class="ukaccordion">
-  <a class="uk-accordion-title" id="{{ group.name | replace: " / ", "_"  | replace: " ", "_" | downcase }}">{{ group.name }}</a>
+  <li class="ukaccordion uk-open">
+  <a class="uk-accordion-title uk-text-lead" id="{{ group.name | replace: " / ", "_"  | replace: " ", "_" | downcase }}">{{ group.name }}</a>
   <div class="uk-accordion-content">
     {% for item in group.items %}
     <a class="uk-text-bold" href="{{ item.url }}" target="{{item.target}}">{{ item.name }}</a>
-    <p class="uk-margin-remove-vertical">{{ item.description }}</p>
+    <ul class="uk-list uk-list-hyphen uk-margin-remove-top">
+      <li><p class="uk-margin-remove-vertical">{{ item.description }}</p></li>
+    </ul>
     {% endfor %}
   </div>
   </li>
