@@ -4,7 +4,7 @@ title:  Career Award Nominations due June 1st
 author: Jacqueline Campbell
 date:  2025-03-14
 end_date: 2025-06-01
-summary: SoyGEC Soybean Career Awards Nomination packets due June 1st
+summary: Soybean Career Awards Nomination packets due June 1st
 categories: general    
 ---
 <h4><a href="/community/soygec/nominate.html">Nomination</a> packet requirements:</h4>
