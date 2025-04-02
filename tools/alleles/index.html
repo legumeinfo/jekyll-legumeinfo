@@ -1,0 +1,576 @@
+---
+title: Allele search
+sitemap: sequence map
+tools_menu: true
+web_components: true
+pre_selected_gene: Wm82.gnm4.div.Song_Hyten_2015
+---
+
+<H2>Allele Search</H2>
+<form>
+  <label class="uk-form-label uk-text-default uk-text-bold" for="collection-name">Step 1. Select a variant collection.
+    Note that there are three reference assemblies to choose from.</label>
+  <div>
+    <select id="collection-name" class="uk-select uk-form-width-large uk-margin-small-top">
+      {% assign genus = "Glycine" %}
+      {% assign species = "max" %}
+      {% assign collections = "" | split: "" %}
+      
+      {% for metadata in site.data.datastore-metadata[genus][species].diversity %}
+        {% for metadata_file in metadata[1] %}
+          {% if metadata_file[0] contains "MANIFEST" %}
+            {% assign manifest = metadata_file %}
+            {% for item in manifest[1] %}
+              {% if item.applications contains "jbrowse" %}
+                {% assign filename_parts = item.name | split: "." %}
+                {% assign gensp = filename_parts[0] %}
+                {% assign coll_parts = filename_parts | slice: 1, 4 %}
+                {% assign diversity_base = filename_parts | slice: 1, 2 | join: "." %}
+                {% capture collection_name %}{{ coll_parts| join: "." }}{% endcapture %}
+
+
+                {% comment %} Fetch synopsis from README file {% endcomment %}
+                {% for metadata_file in metadata[1] %}
+                  {% if metadata_file[0] contains "README" %}
+                    {% assign readme = metadata_file %}
+                    {% capture collection_item %}
+                      {
+                      "name": "{{item.name}}",
+                      "collection-name": "{{collection_name}}",
+                      "synopsis": "{{readme[1].synopsis}}"
+                      }
+                    {% endcapture %}
+                  {% endif %}
+                {% endfor %}
+                {% assign collection_item = collection_item | strip_newlines | strip_html %}
+
+
+                {% assign collections = collections | push: collection_item | sort %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      
+      {% for collection_item in collections %}
+        {% assign parsed_item = collection_item | strip_newlines | strip_html | split: ',' %}
+        {% assign collection_name = parsed_item[1] | split: ':' | last | remove: '"' | strip %}
+        <option value='{{- collection_item | strip_newlines | strip_html -}}' 
+          {% if collection_name == page.pre_selected_gene %}selected{% endif %}>
+          {{ collection_name }}
+        </option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="uk-margin-small-left">
+    <p class="uk-text-default uk-text-emphasis" for="collection-name">Synopsis: <span id="synopsis"></span></p>
+  </div>
+  <hr>
+  <div class="uk-margin uk-flex uk-flex-left uk-flex-wrap">
+    <div class="uk-width-auto">
+      <div>
+        <label class="uk-form-label uk-text-default uk-text-bold" for="gene-name">Step 2. Enter gene ID and size of left
+          and right flanking regions...</label>
+        <div>
+          <input class="uk-input uk-form-width-large uk-margin-small-top" type="text" id="gene-name"
+            placeholder="Enter gene name"></input>
+        </div>
+      </div>
+      <div>
+        <p class="uk-text-default uk-text-secondary">e.g glyma.Wm82.gnm4.ann1.Glyma.16G040000</p>
+      </div>
+    </div>
+    <div class="uk-margin-small-left">
+      <br class="uk-visible@m">
+      <div>
+        <input class="uk-input uk-form-width-medium uk-margin-small-top" type="text" id="flank-region"
+          placeholder="Enter flanking region"></input>
+        <div>
+          <label class="uk-form-label uk-text-default uk-text-secondary" for="flank-region">e.g 50000</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="uk-margin">
+    <input class="uk-button uk-margin-small-bottom" uk-toggle="target: #modal" id="submit" type="button" value="Search"
+      onclick="getData()" />
+  </div>
+  <div>
+    <label class="uk-form-label uk-text-default uk-text-bold" for="genomic-region">... or a genomic region, as a
+      chromosome, start, and end.</label>
+  </div>
+  <div class="uk-margin-small-bottom">
+    <select id="chromosome-select" class="uk-select uk-form-width-small uk-margin-small-top"></select>
+    <div>
+      <input class="uk-input uk-form-width-medium uk-margin-small-top" type="text" id="genomic-region-start" rows="10"
+        cols="30" placeholder="Start" title="Please enter a valid integer"></input>
+      <div>
+        <label class="uk-form-label uk-text-default uk-text-secondary" for="genomic-region-start">e.g 10000</label>
+      </div>
+    </div>
+    <div>
+      <input class="uk-input uk-form-width-medium uk-margin-small-top" type="text" id="genomic-region-end" rows="10"
+        cols="30" placeholder="End" title="Please enter a valid integer"></input>
+      <div>
+        <label class="uk-form-label uk-text-default uk-text-secondary" for="genomic-region-end">e.g 50000</label>
+      </div>
+    </div>
+    <input class="uk-button uk-margin uk-margin-medium-top" uk-toggle="target: #modal" id="submit" type="button"
+      value="Search" onclick="getDataFastAWithChrom()" />
+  </div>
+</form>
+<!-- Modal -->
+<div id="modal" class="uk-modal-container" uk-modal esc-close="false" bg-close="false">
+  <div class="uk-modal-dialog uk-modal-body uk-modal-dialog-large">
+    <div id="modal-text">
+      <h2 class="uk-modal-title">Allele Search</h2>
+      <div id="modal-gene-name"></div>
+      <div>
+        <span class="uk-text-bold">Region searched: </span>
+        <div class="uk-margin-small-bottom">
+          <span id="region-searched"></span>
+          <span><span id="modal-search-region"></span></span>
+        </div>
+      </div>
+      <div id="modal-body" uk-overflow-auto>
+        <table id="variant-table" class="uk-table uk-table-divider uk-table-striped uk-table-small">
+          <thead style="background-color: lightgrey;">
+            <tr>
+              <th class="uk-text-emphasis">Chromosome</th>
+              <th class="uk-text-emphasis">Variant ID</th>
+              <th class="uk-text-emphasis">Position</th>
+              <th class="uk-text-emphasis">Ref</th>
+              <th class="uk-text-emphasis">Alt</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="data-row">
+              <td id="chromosome"></td>
+              <td id="id"></td>
+              <td id="position"></td>
+              <td id="ref"></td>
+              <td id="alt"></td>
+            </tr>
+          </tbody>
+          <div id="loading-spinner" style="margin-left: 45%; display: block" uk-spinner></div>
+          <div uk-alert hidden class="uk-alert-danger" id="alert"></div>
+          <tfoot>
+            <tr>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+    <div class="uk-margin uk-flex uk-flex-between">
+      <button class="uk-button uk-modal-close uk-margin-auto-right" type="button" onclick="closeModal()">Close</button>
+      <div>
+        <button class="uk-button" onclick="downloadTxt()">Export txt</button>
+        <button class="uk-button" onclick="csvDownload()">Export CSV</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+{% comment %} Traverse the annotation metadata, looking for a match to diversity_base {% endcomment %}
+{% for metadata in site.data.datastore-metadata[genus][species].annotations %}
+  {% for metadata_file in metadata[1] %}
+    {% if metadata_file[0] contains "README" %}
+      {% assign annot_coll_id = metadata_file[1].identifier %}
+      {% assign identifier_parts = annot_coll_id | split: "." %}
+      {% assign annot_base = identifier_parts | slice: 0, 2 | join: "." %}
+      {% if annot_base == diversity_base %}
+        <!-- <b>Annotation collection:</b> {{ annot_coll_id }} <br> -->
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+
+<script>
+  // Shows and sets alert message inside modal
+  function setAlert(value) {
+    document.getElementById("alert").removeAttribute("hidden");
+    document.getElementById("alert").textContent = value;
+    document.getElementById("loading-spinner").style.display = "none";
+
+  }
+
+
+  let chromSelection = ['Gm01', 'Gm02', 'Gm03', 'Gm04',
+    'Gm05', 'Gm06', 'Gm07', 'Gm08',
+    'Gm09', 'Gm10', 'Gm11', 'Gm12',
+    'Gm13', 'Gm14', 'Gm15', 'Gm16',
+    'Gm17', 'Gm18', 'Gm19', 'Gm20'];
+
+  for (var i = 0; i < chromSelection.length; i++) {
+    var select = document.getElementById("chromosome-select");
+    var option = document.createElement("option");
+    option.text = chromSelection[i];
+    option.value = chromSelection[i];
+    select.add(option);
+  }
+
+  let variantCollection = document.getElementById("collection-name")
+  function onChange() {
+    try {
+      let value = JSON.parse(variantCollection.value);
+      document.getElementById("synopsis").textContent = value.synopsis || "No synopsis available.";
+    } catch (error) {
+      console.error("Error parsing JSON from variantCollection: ", error);
+      //document.getElementById("synopsis").textContent = "Invalid selection data.";
+      setAlert("Invalid selection data.");
+    }
+  }
+
+  variantCollection.onchange = onChange
+  onChange()
+
+  // Close modal
+  function closeModal() {
+    const tableBody = document.getElementById("data-row").parentElement;
+    while (tableBody.rows.length > 1) {
+      tableBody.deleteRow(1);
+    }
+    document.getElementById("loading-spinner").style.display = "block";
+    document.getElementById("alert").setAttribute("hidden", true);
+    document.getElementById("modal-gene-name").textContent = "";
+    document.getElementById("region-searched").textContent = "";
+    UIkit.modal('#modal').hide();
+  }
+
+
+  /* ========================================================================= */
+  /* API calls */
+  /* ========================================================================= */
+
+  /**
+   * Fetches gene data from the GraphQL API
+   */
+  async function getData() {
+    const geneName = document.getElementById("gene-name").value.trim();
+
+    let headers = new Headers();
+    headers.append("Content-Type", "application/json");
+
+    // Build GraphQL query
+    const graphqlQuery = {
+      query: `query Results($identifier: String) {
+      genes(identifier: $identifier) {
+        results {
+          identifier
+          name
+          locations {
+            chromosome {
+              identifier
+            }
+            start
+            end
+          }
+        }
+      }
+    }`,
+      variables: {
+        identifier: geneName
+      }
+    };
+
+    const requestOptions = {
+      method: 'POST',
+      headers: headers,
+      body: JSON.stringify(graphqlQuery),
+      redirect: 'follow'
+    };
+
+    await fetch("{{ site.graphql_uri }}", requestOptions)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then(result => {
+        // Check if results exist and have data
+        if (!result.data || !result.data.genes || !result.data.genes.results || result.data.genes.results.length === 0) {
+          document.getElementById("loading-spinner").style.display = "none";
+          setAlert("No gene found.");
+          return;
+        }
+
+        const geneResult = result.data.genes.results[0];
+
+        // Extract location data
+        const location = geneResult.locations[0];
+        const chromosome = location.chromosome.identifier;
+        const start = location.start;
+        const stop = location.end;
+        const geneName = geneResult.identifier;
+
+        document.getElementById("region-searched").textContent = `${chromosome}:`;
+        document.getElementById("modal-gene-name").textContent = `${geneName}`;
+
+        // Split chromosome string to get collection name parts
+        const chromosomeArray = chromosome.split('.');
+        const collectionName = `${chromosomeArray[1]}.${chromosomeArray[2]}`;
+
+        getDataFromFastA(chromosome, collectionName, start, stop, geneName);
+      })
+      .catch(error => {
+        console.error('error', error);
+        setAlert("Could not fetch genes: " + error);
+      });
+  }
+
+  /**
+   * Fetches data from the Fasta-API
+   * @param {string} chromosome - Chromosome identifier
+   * @param {string} collectionName - Collection name
+   * @param {number} start - Start position
+   * @param {number} stop - Stop position
+   * @param {string} geneName - Gene identifier
+   */
+  async function getDataFromFastA(chromosome, collectionName, start, stop, geneName) {
+    // Most common error is mismatched genome assembly versions. API doesn't give a clear error message.
+    selectedCollectionName = JSON.parse(document.getElementById("collection-name").value)["collection-name"];
+    let collectionNameParts = selectedCollectionName.split('.')[1];
+    let geneNameParts = geneName.split('.')[2];
+    if (geneNameParts !== collectionNameParts) {
+      setAlert(`Collection genome assembly version (${collectionNameParts}) must match gene ID asembly version (${geneNameParts}).`);
+      return;
+    }
+
+    let collectionVariantObj = JSON.parse(variantCollection.value)
+    let collection = collectionVariantObj['collection-name'] //Dynamically get collection name from selections
+    let fileName = collectionVariantObj.name
+    let flankingRegion = document.getElementById("flank-region").value
+    let startWithFlank
+    let stopWithFlank
+    if (flankingRegion) {
+      if (flankingRegion > parseInt(start)) {
+        startWithFlank = 0
+        stopWithFlank = parseInt(stop) + parseInt(flankingRegion)
+      } else {
+        startWithFlank = parseInt(start) - parseInt(flankingRegion)
+        stopWithFlank = parseInt(stop) + parseInt(flankingRegion)
+      }
+
+    } else {
+      startWithFlank = start
+      stopWithFlank = stop
+    }
+
+    document.getElementById("modal-search-region").innerHTML = `<span>${startWithFlank} - ${stopWithFlank}</span>`
+
+    let url = `https://app.soybase.org/api/fasta-api/vcf/fetch/${chromosome}:${startWithFlank}-${stopWithFlank}/https://data.legumeinfo.org/Glycine/max/diversity/${collection}/${fileName}`
+
+    // Handle no start/stop values
+    if (!start || !stop) {
+      document.getElementById("loading-spinner").style.display = "none";
+      setAlert("Error: Please input start and stop values.");
+      return;
+    }
+
+
+    let requestOptionsVariants = {
+      method: 'GET',
+      redirect: 'follow',
+      headers: {
+        "Accept": "application/json"
+      }
+    };
+
+    await fetch(url, requestOptionsVariants)
+      .then(response => response.json())
+      .then(result => {
+        const tableBody = document.getElementById("data-row").parentElement;
+
+        result.map((gene, index) => {
+          const rowClass = index % 2 === 0 ? "even" : "odd";
+          const tableRow = document.createElement("tr");
+          tableRow.classList.add(rowClass);
+
+          const chromosomeCell = document.createElement("td");
+          const idCell = document.createElement("td");
+          const posCell = document.createElement("td");
+          const refCell = document.createElement("td");
+          const altCell = document.createElement("td");
+
+          chromosomeCell.textContent = gene.chrom
+          idCell.textContent = gene.id;
+          posCell.textContent = gene.pos;
+          refCell.textContent = gene.ref;
+          altCell.textContent = gene.alts;
+
+          tableRow.appendChild(chromosomeCell)
+          tableRow.appendChild(idCell);
+          tableRow.appendChild(posCell);
+          tableRow.appendChild(refCell);
+          tableRow.appendChild(altCell);
+
+          tableBody.appendChild(tableRow);
+        });
+        if (result) {
+          document.getElementById("loading-spinner").style.display = "none"
+        }
+        let input = document.getElementById("modal-gene-name");
+        input.value = '';
+
+      })
+      .catch(error => {
+        console.error('error', error);;
+        setAlert("Could not fetch data from Fasta-API. Please double-check your input.");
+      });
+  }
+
+
+  /**
+   * Fetches data from the Fasta-API with chromosome, start, and end values
+   */
+  async function getDataFastAWithChrom() {
+    // Get values and remove comma if present
+    let start = document.getElementById("genomic-region-start").value.replace(/,/g, '').trim();
+    let end = document.getElementById("genomic-region-end").value.replace(/,/g, '').trim();
+
+    // Santize input
+
+    // Verify that both values are present
+    if (!start || !end) {
+      setAlert("Error: Please input both start and end values.");
+      return;
+    }
+    // Verify that both values are not empty
+    if (start.trim() === "" || end.trim() === "") {
+      setAlert("Error: Please input both start and end values.");
+      return;
+    }
+    // Verify that both values are not negative
+    if (parseInt(start) < 0 || parseInt(end) < 0) {
+      setAlert("Error: Please enter positive integers for start and end values.");
+      return;
+    }
+
+    // Verify that both values are integers
+    if (!start.match(/^\d+$/) || !end.match(/^\d+$/)) {
+      setAlert("Error: Please enter valid numbers for start and end values.");
+      return;
+    }
+    // Verify that start is not greater than end
+    if (parseInt(start) > parseInt(end)) {
+      setAlert("Error: Start value should be smaller than the end value.")
+      return;
+    } else {
+      let chromosome = document.getElementById("chromosome-select").value
+      let collectionVariantObj = JSON.parse(variantCollection.value)
+      let collection = collectionVariantObj['collection-name']
+      let fileName = collectionVariantObj.name
+
+      let fileNameArray = fileName.split('.')
+
+      document.getElementById("region-searched").innerHTML = `<span>${fileNameArray[0]}.${fileNameArray[1]}.${fileNameArray[2]}.${chromosome}: </span>`
+      document.getElementById("modal-search-region").innerHTML = `<span>${start} - ${end}</span>`
+
+      let url = `https://app.soybase.org/api/fasta-api/vcf/fetch/${fileNameArray[0]}.${fileNameArray[1]}.${fileNameArray[2]}.${chromosome}:${start}-${end}/https://data.legumeinfo.org/Glycine/max/diversity/${collection}/${fileName}`
+
+
+
+      let requestOptionsVariants = {
+        method: 'GET',
+        redirect: 'follow',
+        headers: {
+          "Accept": "application/json"
+        }
+      };
+
+      await fetch(url, requestOptionsVariants)
+        .then(response => response.json())
+        .then(result => {
+          const tableBody = document.getElementById("data-row").parentElement;
+
+          result.map((gene, index) => {
+            const rowClass = index % 2 === 0 ? "even" : "odd";
+            const tableRow = document.createElement("tr");
+            tableRow.classList.add(rowClass);
+
+            const chromosomeCell = document.createElement("td");
+            const idCell = document.createElement("td");
+            const posCell = document.createElement("td");
+            const refCell = document.createElement("td");
+            const altCell = document.createElement("td");
+
+            chromosomeCell.textContent = gene.chrom
+            idCell.textContent = gene.id;
+            posCell.textContent = gene.pos;
+            refCell.textContent = gene.ref;
+            altCell.textContent = gene.alts;
+
+            tableRow.appendChild(chromosomeCell)
+            tableRow.appendChild(idCell);
+            tableRow.appendChild(posCell);
+            tableRow.appendChild(refCell);
+            tableRow.appendChild(altCell);
+
+            tableBody.appendChild(tableRow);
+          });
+          if (result) {
+            document.getElementById("loading-spinner").style.display = "none"
+          }
+          let input = document.getElementById("modal-gene-name");
+          input.value = '';
+
+        })
+        .catch(error => {
+          console.error('error', error);;
+          setAlert("Could not fetch data from Fasta-API. Please double-check your input.");
+        });
+    }
+
+  }
+
+  /**
+   * Downloads the data as a text file
+   */
+  function downloadTxt() {
+    let content = document.getElementById("modal-text").innerText
+    let filename = document.getElementById("modal-gene-name").innerText
+    let filenameChrom = document.getElementById("region-searched").innerText
+    let a = document.createElement('a')
+    let blob = new Blob([content], { type: 'text' })
+    let url = URL.createObjectURL(blob)
+    a.setAttribute('href', url)
+    a.setAttribute('download', `${filename ? filename : filenameChrom}.txt`)
+    a.click()
+  }
+
+  /**
+   * Downloads the data as a CSV file
+   */
+  function csvDownload() {
+    let csv_data = [];
+    let rows = document.getElementsByTagName('tr');
+    for (let i = 0; i < rows.length; i++) {
+      let cols = rows[i].querySelectorAll('td,th');
+      let csvrow = [];
+
+      for (let j = 0; j < cols.length; j++) {
+        csvrow.push(cols[j].innerHTML);
+      }
+      csv_data.push(csvrow.join(","));
+    }
+    csv_data = csv_data.join('\n');
+
+    let filename = document.getElementById("modal-gene-name").innerText
+    let filenameChrom = document.getElementById("region-searched").innerText
+    CSVFile = new Blob([csv_data], { type: "text/csv" });
+    let temp_link = document.createElement('a');
+    temp_link.download = `${filename ? filename : filenameChrom}.csv`;
+    let url = window.URL.createObjectURL(CSVFile);
+    temp_link.href = url;
+    temp_link.style.display = "none";
+    document.body.appendChild(temp_link);
+    temp_link.click();
+    document.body.removeChild(temp_link);
+  }
+ 
+</script>

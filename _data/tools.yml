@@ -84,6 +84,11 @@
   description: "GO term enrichment analysis tool"
   name: "GO Enrichment Analysis"
   url: "/tools/analysis/go.html"
+- category: "Search"
+  description: "Search for Allele"
+  name: "Allele Search Tool"
+  url: "/tools/alleles/index.html"
+
   target: "_blank"
 - category: "Analysis"
   description: "Phenotypic reports for the Northern Uniform Soybean Trials (NUST) from 1989 to present"
