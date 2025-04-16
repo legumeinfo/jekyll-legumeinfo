@@ -2,7 +2,7 @@
 - name: Jacqueline Campbell
   role: SoyBase Co-curator
   specialization: Data curation, Site development
-  website: https://www.ars.usda.gov/people-locations/person?person-id=55880
+  website: https://orcid.org/0000-0003-2787-3955
   status: current
 - name: Steven Cannon
   role: Project Administration
@@ -12,17 +12,12 @@
 - name: Wei Huang
   role: Biologist
   specialization: Genome Browser, Bioinformatics
-  website: https://www.ars.usda.gov/people-locations/person?person-id=57295
+  website: https://orcid.org/0000-0002-5990-064X
   status: current
 - name: Rex Nelson
   role: Lead SoyBase Curator
   specialization: Data Curation, Site Development
   website: https://www.ars.usda.gov/midwest-area/ames/cicgru/people/rex-nelson/
-  status: current
-- name: Nathan Weeks
-  role: Systems Administration
-  specialization: Informatics
-  website: https://www.ars.usda.gov/people-locations/person?person-id=41062
   status: current
   # current student employee
 - name: Simon Novak
@@ -32,6 +27,9 @@
   role: Student Curator
   status: student
   # past employee
+- name: Nathan Weeks
+  role: Systems Administration
+  status: Alumni
 - name: Chen Prom
   role: IT Specialist
   status: Alumni
