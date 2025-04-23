@@ -1,0 +1,133 @@
+---
+title: Gene Symbols
+layout: default
+sitemap: tools/gene-symbols
+web_components: true
+---
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+<script src="/assets/js/gene-symbols.js"></script>
+<script>
+    // Set tsv data as a global variable for use in the script
+    const geneSymbolsData = [
+        {% for row in site.data.gene_symbols %}
+        {
+            "symbol": "{{ row.gene_symbol | escape }}",
+            "fullName": "{{ row.gene_symbol_long | escape }}",
+            "geneModelID": "{{ row.identifier | escape }}"
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ];
+
+    // Make data available globally
+    window.geneSymbolsData = geneSymbolsData;
+</script>
+<style>
+    .uk-button-primary {
+        background-color: #235626;
+    }
+    .uk-button-primary:hover {
+        background-color: #1a4720;
+    }
+    .uk-button-primary:disabled:hover {
+        background-color: transparent;
+    }
+    .uk-link, a, .uk-nav-default > li > a:hover, .uk-dropdown-nav > li.uk-active > a, .uk-dropdown-nav > li > a:hover {
+        color: #060;
+    }
+    .uk-link:hover, a:hover {
+        color: #1a4720;
+    }
+    .uk-table th {
+        color: #2b2b2b;
+        font-weight: 600;
+    }
+    html, .uk-text-meta, .uk-textarea, .uk-select, .uk-dropdown-nav > li > a, .uk-nav-default > li > a {
+        color: #282828;
+    }
+    label {
+        display: block;
+    }
+
+    .letter-filter {
+        margin: 20px 0;
+        word-wrap: anywhere;
+    }
+
+    .letter-filter span {
+        margin-right: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .letter-filter span:hover {
+        color: #1a4720;
+        text-decoration: underline;
+    }
+
+    .letter-filter span.active {
+        color: #060;
+        text-decoration: underline;
+    }
+</style>
+
+<div id="linkout-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-width-1-2">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <h3 id="modal-title"></h3>
+        <div id="modal-content">
+            <div id="modal-loader" class="uk-flex uk-flex-center uk-flex-middle" hidden>
+                <div uk-spinner="ratio: 1"></div>
+            </div>
+            <lis-linkout-element id="linkouts"></lis-linkout-element>
+        </div>
+    </div>
+</div>    
+<div class="uk-container">
+    <h1>Gene Symbols</h1>
+    <p>
+        The table below shows gene symbols that have been published or have been submitted to SoyBase. The associated gene IDs are as reported in the scientific literature. Click a gene ID to access tools and resources, including corresponding genes from other accessions
+    </p>
+    <hr>
+    <div id="loader" class="uk-flex uk-flex-center uk-flex-middle" hidden>
+        <div uk-spinner="ratio: 1"></div>
+    </div>
+    <span id="error" class="uk-label uk-label-danger" hidden>
+        Data could not be loaded. Please try again later.
+    </span>
+    <div class="letter-filter uk-margin uk-overflow-auto"></div>
+    <table id="symbolTable" class="uk-table uk-table-divider stripe">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Symbol Full Name</th>
+                <th>Gene Model ID</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<script type="module">
+    import { allLinkoutsFunction } from "lis-graphql";
+    const linkoutElement = document.getElementById('linkouts');
+    const modal = UIkit.modal('#linkout-modal');
+    $(document).on("click", ".gene-linkout", function(event) {
+        event.preventDefault();
+        const {identifier} = event.currentTarget.dataset;
+        const type = 'gene';
+        const title = `Gene ID: ${identifier}`;
+        if (modal && modal.$el) {
+            modal.$el.querySelector('#modal-title').innerText = title;
+            modal.show();
+            linkoutElement.linkoutFunction = allLinkoutsFunction;
+            linkoutElement.getLinkouts({type, linkoutData: {identifier}});
+        } else {
+            console.error('Modal not properly initialized');
+        }
+    });
+</script>
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+
