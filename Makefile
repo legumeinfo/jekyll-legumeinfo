@@ -39,7 +39,7 @@ ifeq ($(OS), Darwin)
   export PATH := ${PWD}/vendor/gems/bin:${PATH}
 
   # select SDK from /Library/Developer/CommandLineTools/SDKs
-  XCRUN = DEVELOPER_DIR=/Library/Developer/CommandLineTools xcrun --sdk macosx15.0
+  XCRUN = DEVELOPER_DIR=/Library/Developer/CommandLineTools xcrun --sdk macosx15.2
   JEKYLL_SERVE_ARGS = --livereload
   HTMLPROOFER_ARGS = --allow-missing-href=true --ignore-missing-alt=true
   PYTHON_VENV_ACTIVATE = . ./vendor/python-venv/bin/activate

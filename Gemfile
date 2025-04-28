@@ -9,6 +9,10 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.3.2"
 gem "jekyll-theme-legumeinfo", path: "./_themes/jekyll-theme-legumeinfo"
+gem "logger", "~> 1.7.0"
+gem "csv", "~> 3.3.4"
+gem "base64", "~> 0.2.0"
+gem "bigdecimal", "~> 3.1.8"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
