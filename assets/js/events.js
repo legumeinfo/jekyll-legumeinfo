@@ -157,6 +157,18 @@ export const events = [
     },
   
     {
+      url: "/events/2025/07/26/ASPB.html",
+      title: "Plant Biology 2025",
+      date: "26 Jul 2025",
+      unixDate: 1753488000,
+      
+      endDate: "30 Jul 2025",
+      unixEndDate: 1753833600,
+      
+      summary: "Plant Biology 2025 brings together members of the plant science community.",
+    },
+  
+    {
       url: "/events/2025/09/15/IFLRC-APC.html",
       title: "IFLRC-APC",
       date: "15 Sep 2025",
@@ -166,6 +178,18 @@ export const events = [
       unixEndDate: 1758240000,
       
       summary: "8th International Food Legume Research Conference and 5th Australian Pulse Conference",
+    },
+  
+    {
+      url: "/events/2026/06/08/ILS5.html",
+      title: "ILS5",
+      date: "08 Jun 2026",
+      unixDate: 1780876800,
+      
+      endDate: "12 Jun 2026",
+      unixEndDate: 1781222400,
+      
+      summary: "5th International Legume Society Conference",
     },
   
   ];
