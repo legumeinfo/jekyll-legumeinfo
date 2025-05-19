@@ -35,14 +35,14 @@
 #     make clean
 #
 
-OS = $(shell uname)
 ifeq ($(OS), Darwin)
   # install Ruby dependencies in $PWD/vendor
   export GEM_HOME=${PWD}/vendor/gems
   export PATH := ${PWD}/vendor/gems/bin:${PATH}
 
-  # select SDK from /Library/Developer/CommandLineTools/SDKs
-  XCRUN = DEVELOPER_DIR=/Library/Developer/CommandLineTools xcrun --sdk macosx15.1
+  # Set SDK version. For debugging, see /Library/Developer/CommandLineTools/SDKs
+  OSVER = $(xcrun --show-sdk-version)
+  XCRUN = DEVELOPER_DIR=/Library/Developer/CommandLineTools xcrun --sdk macosx${OSVER}
 endif
 
 ENV = PATH=$${PWD}/vendor/gems/bin:$${PATH} GEM_HOME=$${PWD}/vendor/gems 
