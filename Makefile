@@ -35,6 +35,7 @@
 #     make clean
 #
 
+OS = $(shell uname)
 ifeq ($(OS), Darwin)
   # install Ruby dependencies in $PWD/vendor
   export GEM_HOME=${PWD}/vendor/gems

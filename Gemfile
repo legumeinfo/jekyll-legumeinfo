@@ -13,7 +13,8 @@ gem "logger", "~> 1.7.0"
 gem "csv", "~> 3.3.4"
 gem "base64", "~> 0.2.0"
 gem "bigdecimal", "~> 3.1.8"
-gem "bundler", "~> 2.6.9"
+# XCode 16 has bundler 1.17.2, so omit version
+gem "bundler"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
