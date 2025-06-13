@@ -15,6 +15,7 @@ pre_selected_gene: Wm82.gnm4.div.Song_Hyten_2015
       {% assign genus = "Glycine" %}
       {% assign species = "max" %}
       {% assign collections = "" | split: "" %}
+      {% assign added_collections = "" | split: "" %}
       
       {% for metadata in site.data.datastore-metadata[genus][species].diversity %}
         {% for metadata_file in metadata[1] %}
@@ -23,44 +24,48 @@ pre_selected_gene: Wm82.gnm4.div.Song_Hyten_2015
             {% for item in manifest[1] %}
               {% if item.applications contains "jbrowse" %}
                 {% assign filename_parts = item.name | split: "." %}
-                {% assign gensp = filename_parts[0] %}
                 {% assign coll_parts = filename_parts | slice: 1, 4 %}
-                {% assign diversity_base = filename_parts | slice: 1, 2 | join: "." %}
-                {% capture collection_name %}{{ coll_parts| join: "." }}{% endcapture %}
-
-
-                {% comment %} Fetch synopsis from README file {% endcomment %}
-                {% for metadata_file in metadata[1] %}
-                  {% if metadata_file[0] contains "README" %}
-                    {% assign readme = metadata_file %}
-                    {% capture collection_item %}
-                      {
+                {% capture collection_name %}{{ coll_parts | join: "." }}{% endcapture %}
+                
+                {% unless added_collections contains collection_name %}
+                  {% assign added_collections = added_collections | push: collection_name %}
+                  
+                  {% comment %} Fetch synopsis from README file {% endcomment %}
+                  {% assign synopsis = "" %}
+                  {% for metadata_file in metadata[1] %}
+                    {% if metadata_file[0] contains "README" %}
+                      {% assign synopsis = metadata_file[1].synopsis %}
+                    {% endif %}
+                  {% endfor %}
+                  
+                  {% capture collection_item %}
+                    {
                       "name": "{{item.name}}",
                       "collection-name": "{{collection_name}}",
-                      "synopsis": "{{readme[1].synopsis}}"
-                      }
-                    {% endcapture %}
-                  {% endif %}
-                {% endfor %}
-                {% assign collection_item = collection_item | strip_newlines | strip_html %}
-
-
-                {% assign collections = collections | push: collection_item | sort %}
+                      "synopsis": "{{synopsis}}"
+                    }
+                  {% endcapture %}
+                  
+                  {% assign collection_item = collection_item | strip_newlines | strip_html %}
+                  {% assign collections = collections | push: collection_item %}
+                {% endunless %}
               {% endif %}
             {% endfor %}
           {% endif %}
         {% endfor %}
       {% endfor %}
       
+      {% assign collections = collections | sort %}
       {% for collection_item in collections %}
-        {% assign parsed_item = collection_item | strip_newlines | strip_html | split: ',' %}
+        {% assign parsed_item = collection_item | split: ',' %}
         {% assign collection_name = parsed_item[1] | split: ':' | last | remove: '"' | strip %}
-        <option value='{{- collection_item | strip_newlines | strip_html -}}' 
+        <option value='{{- collection_item -}}' 
           {% if collection_name == page.pre_selected_gene %}selected{% endif %}>
           {{ collection_name }}
         </option>
       {% endfor %}
     </select>
+
   </div>
   <div class="uk-margin-small-left">
     <p class="uk-text-default uk-text-emphasis" for="collection-name">Synopsis: <span id="synopsis"></span></p>
