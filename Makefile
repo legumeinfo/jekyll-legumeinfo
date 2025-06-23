@@ -53,7 +53,7 @@ serve:
 
 install:
 	rm -f Gemfile.lock
-	if ! bundle check; then $(XCRUN) bundle install; fi
+	if ! bundle check; then $(XCRUN) bundle config set --local path 'vendor/bundle'; $(XCRUN) bundle install; fi
 
 clean:
 	rm -rf .jekyll-cache/ .jekyll-metadata _site/
