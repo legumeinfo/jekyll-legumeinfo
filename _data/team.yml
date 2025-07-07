@@ -1,6 +1,6 @@
 ---
 - name: Jacqueline Campbell
-  role: SoyBase Co-curator
+  role: SoyBase Curator
   specialization: Data curation, Site development
   website: https://orcid.org/0000-0003-2787-3955
   status: current
@@ -18,6 +18,11 @@
   role: Lead SoyBase Curator
   specialization: Data Curation, Site Development
   website: https://www.ars.usda.gov/midwest-area/ames/cicgru/people/rex-nelson/
+  status: current
+- name: Scott Kalberer
+  role: Biological Science Technician
+  specialization: Curator
+  website: https://www.legumeinfo.org/
   status: current
   # current student employee
 - name: Simon Novak
