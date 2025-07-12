@@ -6,7 +6,8 @@
 #
 #     xcode-select --install
 #
-# 2. Install ruby using Homebrew (if not already installed)
+# 2. Install a current ruby - for example, using Homebrew (if not already installed).
+#      This should be in the ruby 3 lineage rather than the native MacOS /usr/bin/ruby which is 2.6.10
 #
 # 3.  Install dependencies (first time only, or until "make distclean" is invoked)
 #
@@ -36,7 +37,7 @@ serve:
 
 install:
 	rm -f Gemfile.lock
-	test ! -f .bundle/config || mkdir -p .bundle; echo "---" > .bundle; echo 'BUNDLE_PATH: "vendor/gems"' >> .bundle/config
+	test -f .bundle/config || mkdir -p .bundle; echo "---" > .bundle/config; echo 'BUNDLE_PATH: "vendor/gems"' >> .bundle/config
 	if ! bundle check; then bundle config set --local path 'vendor/gems'; bundle install; fi
 
 clean:
