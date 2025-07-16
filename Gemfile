@@ -8,17 +8,11 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.3.2"
-gem "eventmachine", "~> 1.2.7"
-gem "sassc", "~> 2.4.0"
-gem "rouge", "~> 3.30.0"
-gem "public_suffix", "~> 5.1.1"
 gem "jekyll-theme-legumeinfo", path: "./_themes/jekyll-theme-legumeinfo"
 gem "logger", "~> 1.7.0"
 gem "csv", "~> 3.3.4"
 gem "base64", "~> 0.2.0"
 gem "bigdecimal", "~> 3.1.8"
-# XCode 16 has bundler 1.17.2, so omit version
-gem "bundler"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
@@ -28,7 +22,6 @@ group :jekyll_plugins do
   # https://github.com/jekyll/jekyll-sitemap/issues/272
   gem "jekyll-sitemap", "~> 1.4.0"
   gem "jekyll-redirect-from", "~> 0.16.0"
-  gem "jekyll-feed", "~> 0.17.0"
 end
 
 group :test do
