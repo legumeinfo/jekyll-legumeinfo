@@ -6,19 +6,12 @@
 #
 #     xcode-select --install
 #
-# 2. Create symbolic link to fix broken xcode ruby framework (first time only):
-#    Choose the appropriate target for your OS version: darwin22, darwin23, darwin24, etc.:
-#
-#   # macOS Sonoma (macOS 14):
-#      universal-darwin23 is missing in this MacOSX15.0.sdk, but universal-darwin24 is present, so link universal-darwin23 to universal-darwin24
-#      See https://stackoverflow.com/a/65481787 for discussion
-#
-#    sudo ln -s /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin24 \
-#               /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin23
+# 2. Install a current ruby - for example, using Homebrew (if not already installed).
+#      This should be in the ruby 3 lineage rather than the native MacOS /usr/bin/ruby which is 2.6.10
 #
 # 3.  Install dependencies (first time only, or until "make distclean" is invoked)
 #
-#     make install
+#     make setup
 #
 # 4.  Start jekyll, listening on localhost:4000 (and livereload on default port 35729)
 #
@@ -37,9 +30,6 @@ ifeq ($(OS), Darwin)
   # install Ruby dependencies in $PWD/vendor
   export GEM_HOME=${PWD}/vendor/gems
   export PATH := ${PWD}/vendor/gems/bin:${PATH}
-
-  # select SDK from /Library/Developer/CommandLineTools/SDKs
-  XCRUN = DEVELOPER_DIR=/Library/Developer/CommandLineTools xcrun --sdk macosx15.2
   JEKYLL_SERVE_ARGS = --livereload
   HTMLPROOFER_ARGS = --allow-missing-href=true --ignore-missing-alt=true
   PYTHON_VENV_ACTIVATE = . ./vendor/python-venv/bin/activate
@@ -49,6 +39,8 @@ else # assume dev container
   NPM_INSTALL_OPTIONS = -g
   PYTHON_VENV_ACTIVATE = true # no-op
 endif
+
+ENV = PATH=$${PWD}/vendor/gems/bin:$${PATH} GEM_HOME=$${PWD}/vendor/gems 
 
 JBROWSE_VERSION = 3.0.5
 PA11YCI_VERSION = 3.1.X
@@ -86,8 +78,10 @@ jbrowse: setup
 	npm exec -c '_scripts/jbrowse-tracks.sh'
 
 setup:
+	rm -f Gemfile.lock
 	git submodule status | grep -q '^-' && git submodule update --init --recursive || true
-	if ! bundle check; then $(XCRUN) bundle install; fi
+	test -f .bundle/config || mkdir -p .bundle; echo "---" > .bundle/config; echo 'BUNDLE_PATH: "vendor/gems"' >> .bundle/config
+	if ! bundle check; then bundle config set --local path 'vendor/gems'; bundle install; fi
 
 mostlyclean:
 	rm -rf .jekyll-cache/ .jekyll-metadata _site/
