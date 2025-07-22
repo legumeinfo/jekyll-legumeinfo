@@ -37,8 +37,8 @@ serve:
 
 install:
 	rm -f Gemfile.lock
-	test -f .bundle/config || mkdir -p .bundle; echo "---" > .bundle/config; echo 'BUNDLE_PATH: "vendor/gems"' >> .bundle/
-	if ! bundle check; then bundle config --local path 'vendor/gems'; bundle install; fi
+	if [ ! -f .bundle/config ]; then mkdir -p .bundle; echo "---" > .bundle/config; echo 'BUNDLE_PATH: "vendor/gems"' >> .bundle/config; fi
+	if ! bundle check; then bundle install; fi
 
 clean:
 	rm -rf .jekyll-cache/ .jekyll-metadata _site/
