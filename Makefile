@@ -8,6 +8,13 @@
 #
 # 2. Install a current ruby - for example, using Homebrew (if not already installed).
 #      This should be in the ruby 3 lineage rather than the native MacOS /usr/bin/ruby which is 2.6.10
+#      Example, for MacOS as of mid 2026:
+#
+#        brew install ruby-install chruby
+#        ruby-install ruby 3.3.11
+#        chruby ruby-3.3.11
+#        brew install libxml2 libxslt
+#        gem install nokogiri -- --use-system-libraries
 #
 # 3.  Install dependencies (first time only, or until "make distclean" is invoked)
 #

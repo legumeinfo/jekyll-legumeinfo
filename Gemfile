@@ -19,6 +19,7 @@ gem "base64", "~> 0.2.0"
 gem "bigdecimal", "~> 3.1.8"
 # XCode 16 has bundler 1.17.2, so omit version
 gem "bundler"
+gem "html-proofer", "~> 5.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
@@ -31,24 +32,33 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.17.0"
 end
 
-group :test do
-  if RUBY_PLATFORM =~ /.*darwin/
-    # html-proofer 5.x requires ruby >= 3.1
-    gem "html-proofer", "= 4.4.3"
-  else
-    gem "html-proofer", "~> 5.0"
-  end
+# The following darwin-specific dependencies assume use of the MacOS system ruby 2.6.10,
+# which is really too creaky for development or production use.
+# Instead, the following is recommended on MacOS as of mid 2026:
+#   brew install ruby-install chruby
+#   ruby-install ruby 3.3.11
+#   chruby ruby-3.3.11
+#   brew install libxml2 libxslt
+#   gem install nokogiri -- --use-system-libraries
 
-  if RUBY_PLATFORM =~ /arm64.*darwin/
-    # install nokogiri from source for macos system/Xcode ruby (2.6.10p210) on arm64,
-    # as otherwise nokogiri-1.13.10-x86_64-darwin.gem is installed
-    gem "nokogiri", :git => "https://github.com/sparklemotion/nokogiri.git", :tag => "v1.13.10"
-    gem "mini_portile2", "= 2.8.6"
-    gem "ffi", "= 1.16.3"
-    # pin jekyll dependency jekyll-sass-converter, as 3.0.0 won't work on macos
-    # aarch64 ultimately due to dependency on google-protobuf, which isn't available
-    # for aarch64 due to this issue:
-    # https://github.com/protocolbuffers/protobuf/issues/9397
-    gem "jekyll-sass-converter", "= 2.2.0"
-  end
-end
+#group :test do
+#  if RUBY_PLATFORM =~ /.*darwin/
+#    # html-proofer 5.x requires ruby >= 3.1
+#    gem "html-proofer", "= 4.4.3"
+#  else
+#    gem "html-proofer", "~> 5.0"
+#  end
+#
+#  if RUBY_PLATFORM =~ /arm64.*darwin/
+#    # install nokogiri from source for macos system/Xcode ruby (2.6.10p210) on arm64,
+#    # as otherwise nokogiri-1.13.10-x86_64-darwin.gem is installed
+#    gem "nokogiri", :git => "https://github.com/sparklemotion/nokogiri.git", :tag => "v1.13.10"
+#    gem "mini_portile2", "= 2.8.6"
+#    gem "ffi", "= 1.16.3"
+#    # pin jekyll dependency jekyll-sass-converter, as 3.0.0 won't work on macos
+#    # aarch64 ultimately due to dependency on google-protobuf, which isn't available
+#    # for aarch64 due to this issue:
+#    # https://github.com/protocolbuffers/protobuf/issues/9397
+#    gem "jekyll-sass-converter", "= 2.2.0"
+#  end
+#end
