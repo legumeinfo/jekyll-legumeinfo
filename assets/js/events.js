@@ -97,7 +97,7 @@ export const events = [
     },
   
     {
-      url: "/events/announcements/2023/11/06/bic-napia-23.html",
+      url: "/events/jekyll/pixyll/2023/11/06/bic-napia-23.html",
       title: "BIC & NAPIA Biennial meeting, South Carolina",
       date: "06 Nov 2023",
       unixDate: 1699228800,
@@ -190,6 +190,18 @@ export const events = [
       unixEndDate: 1781222400,
       
       summary: "5th International Legume Society Conference",
+    },
+  
+    {
+      url: "/events/jekyll/pixyll/2026/12/13/ICLGG-2026.html",
+      title: "ICLGG2026",
+      date: "13 Dec 2026",
+      unixDate: 1797120000,
+      
+      endDate: "17 Dec 2026",
+      unixEndDate: 1797465600,
+      
+      summary: "12th International Conference on Legume Genetics & Genomics",
     },
   
   ];
