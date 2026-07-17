@@ -71,7 +71,7 @@ function _query(selector, context = document, queryFn) {
 
         if (sel[0] === '!') {
             [positionSel, sel] = parsePositionSelector(sel);
-            ctx = context.parentElement.closest(positionSel);
+            ctx = context.parentElement?.closest(positionSel);
             if (!sel && isSingle) {
                 return ctx;
             }
@@ -114,7 +114,7 @@ function _query(selector, context = document, queryFn) {
 function _doQuery(context, queryFn, selector) {
     try {
         return context[queryFn](selector);
-    } catch (e) {
+    } catch {
         return null;
     }
 }

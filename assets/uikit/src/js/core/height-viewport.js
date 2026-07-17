@@ -14,20 +14,25 @@ import {
     toFloat,
 } from 'uikit-util';
 import { resize, viewport } from '../api/observables';
+import Media from '../mixin/media';
 
 export default {
+    mixins: [Media],
+
     props: {
         expand: Boolean,
         offsetTop: Boolean,
         offsetBottom: Boolean,
-        minHeight: Number,
+        min: Number,
+        property: String,
     },
 
     data: {
         expand: false,
         offsetTop: false,
         offsetBottom: false,
-        minHeight: 0,
+        min: 0,
+        property: 'min-height',
     },
 
     // check for offsetTop change
@@ -42,7 +47,10 @@ export default {
                 return false;
             }
 
-            let minHeight = '';
+            if (!this.matchMedia) {
+                return { minHeight: false };
+            }
+
             const box = boxModelAdjust(this.$el, 'height', 'content-box');
 
             const { body, scrollingElement } = document;
@@ -54,7 +62,7 @@ export default {
             const isScrollingElement = scrollingElement === scrollElement || body === scrollElement;
 
             // on mobile devices (iOS and Android) window.innerHeight !== 100vh
-            minHeight = `calc(${isScrollingElement ? '100vh' : `${viewportHeight}px`}`;
+            let minHeight = `calc(${isScrollingElement ? '100vh' : `${viewportHeight}px`}`;
 
             if (this.expand) {
                 const diff = dimensions(scrollElement).height - dimensions(this.$el).height;
@@ -88,7 +96,11 @@ export default {
         },
 
         write({ minHeight }) {
-            css(this.$el, 'minHeight', `max(${this.minHeight || 0}px, ${minHeight})`);
+            css(
+                this.$el,
+                this.property,
+                minHeight === false ? '' : `max(${this.min || 0}px, ${minHeight})`,
+            );
         },
 
         events: ['resize'],

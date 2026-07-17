@@ -13,6 +13,7 @@ import {
     isTag,
     swap,
 } from 'uikit-util';
+import accordionIcon from '../../images/components/accordion-icon.svg';
 import closeIcon from '../../images/components/close-icon.svg';
 import closeLarge from '../../images/components/close-large.svg';
 import dropParentIcon from '../../images/components/drop-parent-icon.svg';
@@ -34,13 +35,13 @@ import slidenavPrevious from '../../images/components/slidenav-previous.svg';
 import spinner from '../../images/components/spinner.svg';
 import totop from '../../images/components/totop.svg';
 import I18n from '../mixin/i18n';
-import Svg from '../mixin/svg';
-import { stringToSvg } from './svg';
+import Svg, { parseSVG } from '../mixin/svg';
 
 const icons = {
     spinner,
     totop,
     marker,
+    'accordion-icon': accordionIcon,
     'close-icon': closeIcon,
     'close-large': closeLarge,
     'drop-parent-icon': dropParentIcon,
@@ -74,6 +75,13 @@ const Icon = {
 
     beforeConnect() {
         addClass(this.$el, 'uk-icon');
+    },
+
+    async connected() {
+        const svg = await this.svg;
+        if (svg) {
+            svg.ariaHidden = true;
+        }
     },
 
     methods: {
@@ -137,13 +145,11 @@ export const Search = {
         }
 
         if (isToggle) {
-            const label = this.t('toggle');
-            attr(this.$el, 'aria-label', label);
+            this.$el.ariaLabel = this.t('toggle');
         } else {
             const button = this.$el.closest('a,button');
             if (button) {
-                const label = this.t('submit');
-                attr(button, 'aria-label', label);
+                button.ariaLabel = this.t('submit');
             }
         }
     },
@@ -153,7 +159,7 @@ export const Spinner = {
     extends: IconComponent,
 
     beforeConnect() {
-        attr(this.$el, 'role', 'status');
+        this.$el.role = 'status';
     },
 
     methods: {
@@ -198,7 +204,15 @@ export const Slidenav = {
 
 export const NavbarToggleIcon = {
     extends: ButtonComponent,
+
     i18n: { label: 'Open menu' },
+
+    beforeConnect() {
+        const button = this.$el.closest('a,button');
+        if (button) {
+            button.ariaExpanded = false;
+        }
+    },
 };
 
 export const Close = {
@@ -262,7 +276,7 @@ function getIcon(icon) {
     }
 
     if (!parsed[icon]) {
-        parsed[icon] = stringToSvg(icons[applyRtl(icon)] || icons[icon]);
+        parsed[icon] = parseSVG(icons[applyRtl(icon)] || icons[icon]);
     }
 
     return parsed[icon].cloneNode(true);

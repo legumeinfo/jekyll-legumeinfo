@@ -23,9 +23,20 @@ export default {
                 attributes: true,
                 attributeFilter: ['style'],
             },
-            target: ({ $el }) => [$el, ...children($el)],
         }),
         resize({
+            handler(mutations) {
+                for (const {
+                    target,
+                    borderBoxSize: [{ inlineSize, blockSize }],
+                } of mutations) {
+                    // Skip if the element is hidden
+                    if (target === this.$el && !inlineSize && !blockSize) {
+                        return;
+                    }
+                }
+                this.$emit('resize');
+            },
             target: ({ $el }) => [$el, ...children($el)],
         }),
     ],

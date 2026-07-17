@@ -1,9 +1,7 @@
 import { glob } from 'glob';
-import NP from 'number-precision';
-import path from 'path';
+import fs from 'node:fs/promises';
+import path from 'node:path';
 import { read, write } from './util.js';
-
-NP.enableBoundaryChecking(false);
 
 const coreMixins = {};
 const themeMixins = {};
@@ -11,20 +9,19 @@ const coreVariables = {};
 const themeVariables = {};
 const inverseComponentMixins = [];
 
-/* First Step: Go through all files */
+await emptyDir('src/scss');
+
 for (const file of (await glob('src/less/**/*.less'))
     .sort()
     .sort((a, b) => a.endsWith('/inverse.less') - b.endsWith('/inverse.less'))) {
-    let source = await read(file);
-
     /* replace all Less stuff with SCSS */
-    source = (await read(file))
+    let source = (await read(file))
         .replace(/\/less\//g, '/scss/') // change less/ dir to scss/ on imports
         .replace(/\.less/g, '.scss') // change .less extensions to .scss on imports
-        .replace(/@/g, '$') // convert variables
+        .replace(/@(?!property)/g, '$') // convert variables
         .replace(
             /(:[^'"]*?\([^'"]+?)\s*\/\s*([0-9.-]+)\)/g,
-            (exp, m1, m2) => `${m1} * ${NP.round(1 / parseFloat(m2), 5)})`,
+            (exp, m1, m2) => `${m1} * ${round(1 / parseFloat(m2), 5)})`,
         )
         .replace(/--uk-\S+: (\$\S+);/g, (exp, name) => exp.replace(name, `#{${name}}`))
         .replace(/\\\$/g, '\\@') // revert classes using the @ symbol
@@ -64,7 +61,8 @@ for (const file of (await glob('src/less/**/*.less'))
         .replace(/\${/g, '#{$') // string literals: from: /~"(.*)"/g, to: '#{"$1"}'
         .replace(/[^(](-\$[\w-]*)/g, ' ($1)') // surround negative variables with brackets
         .replace(/(--[\w-]+:\s*)~'([^']+)'/g, '$1$2') // string literals in custom properties
-        .replace(/~('[^']+')/g, 'unquote($1)'); // string literals: for real
+        .replace(/~('[^']+')/g, 'unquote($1)') // string literals: for real
+        .replace(/(\w+)&/g, '&:is($1)'); // replace parent selector & when not at beginning of selector
 
     /* File name of the current file */
     const filename = path.basename(file, '.less');
@@ -78,7 +76,9 @@ for (const file of (await glob('src/less/**/*.less'))
         );
     } else if (source.match(/hook-inverse(?!-)/)) {
         source = source.replace(/hook-inverse(?!-)/, `hook-inverse-component-${filename}`);
-        inverseComponentMixins.push(`hook-inverse-component-${filename}`);
+        if (!inverseComponentMixins.includes(`hook-inverse-component-${filename}`)) {
+            inverseComponentMixins.push(`hook-inverse-component-${filename}`);
+        }
     }
 
     /* get all the mixins and remove them from the file */
@@ -90,11 +90,7 @@ for (const file of (await glob('src/less/**/*.less'))
     if (filename === 'uikit.theme') {
         /* remove the theme import first place */
         source = source.replace(/\/\/\n\/\/ Theme\n\/\/\n\n@import "theme\/_import.scss";/, '');
-        /* add uikit-mixins and uikit-variables include to the uikit.scss file and change order, to load theme files first */
-        source = source.replace(
-            /\/\/ Core\n\/\//g,
-            '// Theme\n//\n\n@import "theme/_import.scss";',
-        );
+        source = source.replace(/\/\/ Core\n\/\//g, '// Theme\n//\n');
     }
 
     /* mixin.less needs to be fully replaced by the new mixin file*/
@@ -102,10 +98,13 @@ for (const file of (await glob('src/less/**/*.less'))
         source = await read('build/scss/mixin.scss');
     }
 
-    await write(file.replace(/less/g, 'scss').replace('.theme.', '-theme.'), source);
+    if (!file.includes('theme/')) {
+        await write(
+            file.replace(/less/g, 'scss').replace('.theme.', '-theme.'),
+            useSassModules(source),
+        );
+    }
 }
-
-/* Second Step: write all new needed files for Sass */
 
 /* write mixins files */
 for (const [vars, file] of [
@@ -113,7 +112,8 @@ for (const [vars, file] of [
     [themeMixins, 'mixins-theme'],
 ]) {
     delete vars['svg-fill'];
-    await write(`src/scss/${file}.scss`, Object.values(vars).join('\n'));
+
+    await write(`src/scss/${file}.scss`, useSassModules(Object.values(vars).join('\n')));
 }
 
 /* write variables files */
@@ -125,7 +125,40 @@ for (const [vars, file] of [
         (dependencies, key) => resolveDependencies(vars, key, dependencies),
         new Set(),
     );
-    await write(`src/scss/${file}.scss`, Array.from(variables).join('\n'));
+    await write(`src/scss/${file}.scss`, useSassModules(Array.from(variables).join('\n')));
+}
+
+/*
+ * add prefix of origin to methods
+ */
+function useSassModules(source) {
+    const modules = new Set();
+
+    for (const [module, search, replacement] of [
+        ['meta', /(?<=\W)mixin-exists\(/g, 'meta.$&'],
+        ['string', /(?<=\W)(un)?quote\(/g, 'string.$&'],
+        ['string', /(?<=\W)str-(index|slice|length)\(/g, 'string.$1('],
+        ['math', /(?<=\W)(floor|round)\(/g, 'math.$&'],
+        ['color', /(?<=\W)mix\(/g, 'color.$&'],
+        ['color', /(?<=\W)lighten\((.*),\s*(.*)\)/g, 'color.adjust($1, $lightness: $2)'],
+        ['color', /(?<=\W)darken\((.*),\s*(.*)\)/g, 'color.adjust($1, $lightness: -$2)'],
+        ['color', /(?<=\W)fade-in\(([^,]*),\s*(.*)\)/g, 'color.adjust($1, $alpha: $2)'],
+        ['color', /(?<=\W)fade-out\(([^,]*),\s*(.*)\)/g, 'color.adjust($1, $alpha: -$2)'],
+        ['color', /(?<=\W)adjust-hue\(([^,]*),\s*(.*)\)/g, 'color.adjust($1, $hue: $2)'],
+    ]) {
+        const prev = source;
+        source = source.replaceAll(search, replacement);
+
+        if (source !== prev) {
+            modules.add(module);
+        }
+    }
+
+    return modules.size
+        ? `${Array.from(modules)
+              .map((module) => `@use "sass:${module}";`)
+              .join('\n')}\n\n${source}`
+        : source;
 }
 
 /*
@@ -211,4 +244,13 @@ async function getVariablesFromFile(file, source) {
 
     // Remove variables from source
     return source.replace(/(\$[\w-]*)\s*:(.*);\r?\n/g, '');
+}
+
+async function emptyDir(dir) {
+    await fs.rm(dir, { recursive: true, force: true });
+    await fs.mkdir(dir, { recursive: true });
+}
+
+function round(num, precision) {
+    return Math.round(num * 10 ** precision) / 10 ** precision;
 }

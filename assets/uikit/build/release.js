@@ -1,9 +1,8 @@
 import archiver from 'archiver';
-import dateFormat from 'dateformat/lib/dateformat.js';
 import { $ } from 'execa';
-import fs from 'fs';
-import { glob } from 'glob';
 import inquirer from 'inquirer';
+import fs from 'node:fs';
+import { glob } from 'node:fs/promises';
 import semver from 'semver';
 import { args, getVersion, logFile, read, replaceInFile } from './util.js';
 
@@ -53,10 +52,7 @@ function raiseVersion(version) {
     return Promise.all([
         $$`npm version ${version} --git-tag-version false`,
         replaceInFile('CHANGELOG.md', (data) =>
-            data.replace(
-                /^##\s*WIP/m,
-                `## ${versionFormat(version)} (${dateFormat(Date.now(), 'mmmm d, yyyy')})`,
-            ),
+            data.replace(/^##\s*WIP.*$/m, `## ${versionFormat(version)} (${dateFormat()})`),
         ),
         replaceInFile('.github/ISSUE_TEMPLATE/bug-report.md', (data) =>
             data.replace(prevVersion, version),
@@ -68,13 +64,20 @@ async function createPackage(version) {
     const dest = `dist/uikit-${version}.zip`;
     const archive = archiver('zip');
 
-    archive.pipe(fs.createWriteStream(dest));
+    const output = fs.createWriteStream(dest);
+    const closed = new Promise((resolve, reject) => {
+        output.on('close', resolve);
+        output.on('error', reject);
+    });
 
-    for (const file of await glob('dist/{js,css}/uikit?(-icons|-rtl)?(.min).{js,css}')) {
+    archive.pipe(output);
+
+    for await (const file of glob('dist/{js,css}/uikit?(-icons|-rtl)?(.min).{js,css}')) {
         archive.file(file, { name: file.slice(5) });
     }
 
     await archive.finalize();
+    await closed;
     await logFile(dest);
 }
 
@@ -98,12 +101,19 @@ async function deploy(version) {
     const branch = `release/v${version}`;
 
     await $$`git checkout -b ${branch}`;
-    await $$`git stage --all`;
+    await $$`git add --all`;
     await $$`git commit -am v${version}`;
 
     await $$`git checkout main`;
     await $$`git merge ${branch} --commit --no-ff -m ${`Merge branch '${branch}'`}`;
     await $$`git tag ${tag}`;
+
+    await $$`git push origin main --tags`;
+
+    const notes = (await read('./CHANGELOG.md'))
+        .match(/## \d.*?$\s*(.*?)\s*(?=## \d)/ms)[1]
+        .replace(/(["`])/g, '\\$1');
+    await $$`gh release create v${version} --repo uikit/uikit --notes ${notes} ./dist/uikit-${version}.zip`;
 
     await $$`git checkout develop`;
     await $$`git merge ${tag} --commit --no-ff -m ${`Merge tag '${tag}' into develop`}`;
@@ -111,12 +121,12 @@ async function deploy(version) {
     await $$`git branch --delete ${branch}`;
 
     await $$`git push origin develop`;
-    await $$`git push origin main --tags`;
+}
 
-    await $$`pnpm publish --no-git-checks`;
-
-    const notes = (await read('./Changelog.md'))
-        .match(/## \d.*?$\s*(.*?)\s*(?=## \d)/ms)[1]
-        .replace(/(["`])/g, '\\$1');
-    await $$`gh release create v${version} --notes ${notes} ./dist/uikit-${version}.zip`;
+function dateFormat() {
+    return new Intl.DateTimeFormat('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+    }).format(new Date());
 }

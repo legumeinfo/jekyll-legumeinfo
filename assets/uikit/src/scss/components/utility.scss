@@ -1,3 +1,6 @@
+@use "sass:meta";
+@use "sass:string";
+
 // Name:            Utility
 // Description:     Utilities collection
 //
@@ -39,6 +42,7 @@
 
 
 
+
 /* ========================================================================
    Component: Utility
  ========================================================================== */
@@ -70,7 +74,7 @@
     border: $panel-scrollable-border-width solid $panel-scrollable-border;
     overflow: auto;
     resize: both;
-    @if(mixin-exists(hook-panel-scrollable)) {@include hook-panel-scrollable();}
+    @if(meta.mixin-exists(hook-panel-scrollable)) {@include hook-panel-scrollable();}
 }
 
 
@@ -123,6 +127,55 @@
 .uk-overflow-auto { overflow: auto; }
 
 .uk-overflow-auto > :last-child { margin-bottom: 0; }
+
+/*
+ * Overflow fade
+ * 1. Overflow
+ * 2. Mask
+ * 3. Hide scrollbar
+ */
+
+@property --uk-overflow-fade-start-opacity {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 0;
+}
+
+@property --uk-overflow-fade-end-opacity {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 0;
+}
+
+.uk-overflow-fade-horizontal {
+    overflow-x: auto;
+    --uk-overflow-fade-direction: right;
+}
+
+.uk-overflow-fade-vertical {
+    overflow-y: auto;
+    --uk-overflow-fade-direction: bottom;
+}
+
+.uk-overflow-fade-horizontal,
+.uk-overflow-fade-vertical {
+    /* 1 */
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    /* 2 */
+    mask-image: linear-gradient(
+        to var(--uk-overflow-fade-direction),
+        rgba(0,0,0,var(--uk-overflow-fade-start-opacity)),
+        #000 $overflow-fade-size,
+        #000 string.unquote('calc(100% - #{$overflow-fade-size})'),
+        rgba(0,0,0,var(--uk-overflow-fade-end-opacity))
+    );
+    /* 3 */
+    scrollbar-width: none;
+}
+
+.uk-overflow-fade-horizontal > *,
+.uk-overflow-fade-vertical > * { min-width: max-content; }
 
 
 /* Box Sizing
@@ -192,7 +245,10 @@
 .uk-preserve-width canvas,
 .uk-preserve-width img,
 .uk-preserve-width svg,
-.uk-preserve-width video { max-width: none; }
+.uk-preserve-width video {
+    max-width: none;
+    object-fit: fill;
+}
 
 /*
  * Responsiveness
@@ -329,7 +385,7 @@
         filter: blur($box-shadow-bottom-blur);
         /* 3 */
         will-change: filter;
-        @if(mixin-exists(hook-box-shadow-bottom)) {@include hook-box-shadow-bottom();}
+        @if(meta.mixin-exists(hook-box-shadow-bottom)) {@include hook-box-shadow-bottom();}
     }
 
 }
@@ -352,8 +408,8 @@
     margin-right: $dropcap-margin-right;
     float: left;
     font-size: $dropcap-font-size;
-    line-height: 1;
-    @if(mixin-exists(hook-dropcap)) {@include hook-dropcap();}
+    line-height: $dropcap-line-height;
+    @if(meta.mixin-exists(hook-dropcap)) {@include hook-dropcap();}
 }
 
 /* 2 */
@@ -381,7 +437,7 @@
     color: $logo-color;
     /* 2 */
     text-decoration: none;
-    @if(mixin-exists(hook-logo)) {@include hook-logo();}
+    @if(meta.mixin-exists(hook-logo)) {@include hook-logo();}
 }
 
 /* 3 */
@@ -395,7 +451,7 @@
     color: $logo-hover-color;
     /* 1 */
     text-decoration: none;
-    @if(mixin-exists(hook-logo-hover)) {@include hook-logo-hover();}
+    @if(meta.mixin-exists(hook-logo-hover)) {@include hook-logo-hover();}
 }
 
 .uk-logo :where(img, svg, video) { display: block; }
@@ -477,7 +533,7 @@
 // Hooks
 // ========================================================================
 
-@if(mixin-exists(hook-utility-misc)) {@include hook-utility-misc();}
+@if(meta.mixin-exists(hook-utility-misc)) {@include hook-utility-misc();}
 
 // @mixin hook-panel-scrollable(){}
 // @mixin hook-box-shadow-bottom(){}

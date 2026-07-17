@@ -1,3 +1,5 @@
+@use "sass:meta";
+
 // Name:            Margin
 // Description:     Utilities for margins
 //
@@ -21,6 +23,7 @@
 
 
 
+
 /* ========================================================================
    Component: Margin
  ========================================================================== */
@@ -36,6 +39,18 @@
 .uk-margin-bottom { margin-bottom: $margin-margin !important; }
 .uk-margin-left { margin-left: $margin-margin !important; }
 .uk-margin-right { margin-right: $margin-margin !important; }
+
+
+/* XSmall
+ ========================================================================== */
+
+.uk-margin-xsmall { margin-bottom: $margin-xsmall-margin; }
+* + .uk-margin-xsmall { margin-top: $margin-xsmall-margin !important; }
+
+.uk-margin-xsmall-top { margin-top: $margin-xsmall-margin !important; }
+.uk-margin-xsmall-bottom { margin-bottom: $margin-xsmall-margin !important; }
+.uk-margin-xsmall-left { margin-left: $margin-xsmall-margin !important; }
+.uk-margin-xsmall-right { margin-right: $margin-xsmall-margin !important; }
 
 
 /* Small
@@ -237,6 +252,6 @@
 // Hooks
 // ========================================================================
 
-@if(mixin-exists(hook-margin-misc)) {@include hook-margin-misc();}
+@if(meta.mixin-exists(hook-margin-misc)) {@include hook-margin-misc();}
 
 // @mixin hook-margin-misc(){}

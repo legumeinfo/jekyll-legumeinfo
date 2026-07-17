@@ -2,7 +2,6 @@ import {
     $,
     $$,
     append,
-    attr,
     css,
     data,
     fastdom,
@@ -11,6 +10,7 @@ import {
     includes,
     isEmpty,
     isEqual,
+    isNumeric,
     isTag,
     isUndefined,
     matches,
@@ -19,6 +19,7 @@ import {
 } from 'uikit-util';
 import { parseOptions } from '../api/options';
 import Animate from '../mixin/animate';
+import { maybeDefaultPreventClick } from '../mixin/event';
 import { keyMap } from '../util/keys';
 
 export default {
@@ -56,7 +57,7 @@ export default {
                 }
                 const button = findButton(toggle);
                 if (isTag(button, 'a')) {
-                    attr(button, 'role', 'button');
+                    button.role = 'button';
                 }
             }
         },
@@ -79,7 +80,7 @@ export default {
             }
 
             if (e.target.closest('a,button')) {
-                e.preventDefault();
+                maybeDefaultPreventClick(e);
                 this.apply(e.current);
             }
         },
@@ -199,11 +200,15 @@ function matchFilter(
 }
 
 function sortItems(nodes, sort, order) {
-    return [...nodes].sort(
-        (a, b) =>
-            data(a, sort).localeCompare(data(b, sort), undefined, { numeric: true }) *
-            (order === 'asc' || -1),
-    );
+    return [...nodes].sort((a, b) => {
+        const valA = data(a, sort) || '';
+        const valB = data(b, sort) || '';
+        const cmp =
+            isNumeric(valA) && isNumeric(valB)
+                ? valA - valB
+                : valA.localeCompare(valB, undefined, { numeric: true });
+        return cmp * (order === 'asc' || -1);
+    });
 }
 
 function findButton(el) {

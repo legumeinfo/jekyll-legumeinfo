@@ -1,3 +1,5 @@
+@use "sass:meta";
+
 // Name:            Breadcrumb
 // Description:     Component to create a breadcrumb navigation
 //
@@ -19,13 +21,17 @@
  ========================================================================== */
 
 /*
- * Reset list
+ * 1. Reset list
+ * 2. Remove space between elements
  */
 
 .uk-breadcrumb {
+    /* 1 */
     padding: 0;
     list-style: none;
-    @if(mixin-exists(hook-breadcrumb)) {@include hook-breadcrumb();}
+    /* 2 */
+    font-size: 0;
+    @if(meta.mixin-exists(hook-breadcrumb)) {@include hook-breadcrumb();}
 }
 
 /*
@@ -41,26 +47,26 @@
 .uk-breadcrumb > * > * {
     font-size: $breadcrumb-item-font-size;
     color: $breadcrumb-item-color;
-    @if(mixin-exists(hook-breadcrumb-item)) {@include hook-breadcrumb-item();}
+    @if(meta.mixin-exists(hook-breadcrumb-item)) {@include hook-breadcrumb-item();}
 }
 
 /* Hover */
 .uk-breadcrumb > * > :hover {
     color: $breadcrumb-item-hover-color;
     text-decoration: $breadcrumb-item-hover-text-decoration;
-    @if(mixin-exists(hook-breadcrumb-item-hover)) {@include hook-breadcrumb-item-hover();}
+    @if(meta.mixin-exists(hook-breadcrumb-item-hover)) {@include hook-breadcrumb-item-hover();}
 }
 
 /* Disabled */
 .uk-breadcrumb > .uk-disabled > * {
-    @if(mixin-exists(hook-breadcrumb-item-disabled)) {@include hook-breadcrumb-item-disabled();}
+    @if(meta.mixin-exists(hook-breadcrumb-item-disabled)) {@include hook-breadcrumb-item-disabled();}
 }
 
 /* Active */
 .uk-breadcrumb > :last-child > span,
 .uk-breadcrumb > :last-child > a:not([href]) {
     color: $breadcrumb-item-active-color;
-    @if(mixin-exists(hook-breadcrumb-item-active)) {@include hook-breadcrumb-item-active();}
+    @if(meta.mixin-exists(hook-breadcrumb-item-active)) {@include hook-breadcrumb-item-active();}
 }
 
 /*
@@ -74,18 +80,18 @@
     content: $breadcrumb-divider;
     display: inline-block;
     /* 1 */
-    margin: 0 $breadcrumb-divider-margin-horizontal 0 unquote('calc(#{$breadcrumb-divider-margin-horizontal} - 4px)');
+    margin: 0 $breadcrumb-divider-margin-horizontal;
     /* 2 */
     font-size: $breadcrumb-divider-font-size;
     color: $breadcrumb-divider-color;
-    @if(mixin-exists(hook-breadcrumb-divider)) {@include hook-breadcrumb-divider();}
+    @if(meta.mixin-exists(hook-breadcrumb-divider)) {@include hook-breadcrumb-divider();}
 }
 
 
 // Hooks
 // ========================================================================
 
-@if(mixin-exists(hook-breadcrumb-misc)) {@include hook-breadcrumb-misc();}
+@if(meta.mixin-exists(hook-breadcrumb-misc)) {@include hook-breadcrumb-misc();}
 
 // @mixin hook-breadcrumb(){}
 // @mixin hook-breadcrumb-item(){}

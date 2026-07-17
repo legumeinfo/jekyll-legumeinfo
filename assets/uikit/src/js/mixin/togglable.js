@@ -51,13 +51,15 @@ export default {
 
     methods: {
         async toggleElement(targets, toggle, animate) {
-            try {
+            const CANCELLED = {};
+
+            return (
                 await Promise.all(
                     toNodes(targets).map((el) => {
                         const show = isBoolean(toggle) ? toggle : !this.isToggled(el);
 
                         if (!trigger(el, `before${show ? 'show' : 'hide'}`, [this])) {
-                            return Promise.reject();
+                            return CANCELLED;
                         }
 
                         const promise = (
@@ -79,20 +81,23 @@ export default {
                         const done = () => {
                             removeClass(el, cls);
                             trigger(el, show ? 'shown' : 'hidden', [this]);
+
+                            if (show) {
+                                $$('[autofocus]', el)
+                                    .find(isVisible)
+                                    ?.focus({ preventScroll: true });
+                            }
                         };
 
                         return promise
                             ? promise.then(done, () => {
                                   removeClass(el, cls);
-                                  return Promise.reject();
+                                  return CANCELLED;
                               })
                             : done();
                     }),
-                );
-                return true;
-            } catch (e) {
-                return false;
-            }
+                )
+            ).every((r) => r !== CANCELLED);
         },
 
         isToggled(el = this.$el) {
@@ -125,8 +130,6 @@ export default {
             if (changed) {
                 trigger(el, 'toggled', [toggled, this]);
             }
-
-            $$('[autofocus]', el).some((el) => (isVisible(el) ? el.focus() || true : el.blur()));
         },
     },
 };

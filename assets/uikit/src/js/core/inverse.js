@@ -23,14 +23,31 @@ export default {
         selActive: false,
     },
 
+    connected() {
+        this.isIntersecting = 0;
+    },
+
     computed: {
         target: ({ target }, $el) => (target ? $$(target, $el) : $el),
+    },
+
+    watch: {
+        target: {
+            handler() {
+                queueMicrotask(() => this.$reset());
+            },
+            immediate: false,
+        },
     },
 
     observe: [
         intersection({
             handler(entries) {
-                this.isIntersecting = entries.some(({ isIntersecting }) => isIntersecting);
+                this.isIntersecting = entries.reduce(
+                    (sum, { isIntersecting }) =>
+                        sum + (isIntersecting ? 1 : this.isIntersecting ? -1 : 0),
+                    this.isIntersecting,
+                );
                 this.$emit();
             },
             target: ({ target }) => target,
@@ -38,7 +55,7 @@ export default {
         }),
         mutation({
             target: ({ target }) => target,
-            options: { attributes: true, attributeFilter: ['class'], attributeOldValue: true },
+            options: { attributes: true, attributeFilter: ['class'] },
         }),
         {
             target: ({ target }) => target,
@@ -107,7 +124,7 @@ function findTargetColor(target) {
 
     const { left, top, height, width } = dim;
 
-    let last;
+    let last = '';
     for (const percent of [0.25, 0.5, 0.75]) {
         const elements = target.ownerDocument.elementsFromPoint(
             Math.max(0, Math.min(left + width * percent, viewport.width - 1)),

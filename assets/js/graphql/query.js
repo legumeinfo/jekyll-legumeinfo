@@ -1,5 +1,5 @@
 /** The URI of the GraphQL server to query. */
-const uri = "https://graphql.lis.ncgr.org/";
+const uri = "https://dev.peanutbase.org/graphql";
 
 
 /**

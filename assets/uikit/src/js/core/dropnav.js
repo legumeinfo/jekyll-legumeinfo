@@ -15,7 +15,12 @@ import {
     noop,
     observeResize,
     offset,
+    on,
+    once,
     parents,
+    pointerEnter,
+    pointerLeave,
+    pointerMove,
     query,
     remove,
     selFocusable,
@@ -32,7 +37,6 @@ export default {
 
     props: {
         align: String,
-        clsDrop: String,
         boundary: Boolean,
         dropbar: Boolean,
         dropbarAnchor: Boolean,
@@ -57,6 +61,8 @@ export default {
         boundary: true,
         dropbar: false,
         dropbarAnchor: false,
+        flip: true,
+        delayShow: 160,
         duration: 200,
         container: false,
         selNavItem: '> li > a, > ul > li > a',
@@ -73,7 +79,7 @@ export default {
             dropbar =
                 this._dropbar || query(dropbar, this.$el) || $(`+ .${this.clsDropbar}`, this.$el);
 
-            return dropbar ? dropbar : (this._dropbar = $('<div></div>'));
+            return dropbar ? dropbar : (this._dropbar = $('<div>'));
         },
 
         dropContainer(_, $el) {
@@ -118,6 +124,8 @@ export default {
 
     connected() {
         this.initializeDropdowns();
+
+        preventInitialPointerEnter(this.$el);
     },
 
     disconnected() {
@@ -156,9 +164,21 @@ export default {
                 const { current, keyCode } = e;
                 const active = this.getActive();
 
-                if (keyCode === keyMap.DOWN && active?.targetEl === current) {
-                    e.preventDefault();
-                    $(selFocusable, active.$el)?.focus();
+                if (keyCode === keyMap.DOWN) {
+                    if (active?.targetEl === current) {
+                        e.preventDefault();
+                        $(selFocusable, active.$el)?.focus();
+                    } else {
+                        const dropdown = this.dropdowns.find(
+                            (el) => this.getDropdown(el)?.targetEl === current,
+                        );
+
+                        if (dropdown) {
+                            e.preventDefault();
+                            current.click();
+                            once(dropdown, 'show', (e) => $(selFocusable, e.target)?.focus());
+                        }
+                    }
                 }
 
                 handleNavItemNavigation(e, this.items, active);
@@ -204,6 +224,7 @@ export default {
                             findIndex(elements, (el) => matches(el, ':focus')),
                         )
                     ].focus();
+                    return;
                 }
 
                 handleNavItemNavigation(e, this.items, active);
@@ -383,10 +404,11 @@ export default {
                 this.dropdowns.filter((el) => !this.getDropdown(el)),
                 {
                     ...this.$props,
-                    flip: false,
+                    flip: this.flip && !this.$props.dropbar,
                     shift: true,
                     pos: `bottom-${this.align}`,
-                    boundary: this.boundary === true ? this.$el : this.boundary,
+                    boundary: false,
+                    boundaryX: this.boundary === true ? this.$el : this.boundary,
                 },
             );
         },
@@ -415,4 +437,14 @@ function handleNavItemNavigation(e, toggles, active) {
         active.hide?.(false);
         toggles[getIndex(next, toggles, toggles.indexOf(active.targetEl || current))].focus();
     }
+}
+
+// Prevents initial pointer events from opening dropdowns on page load (Safari/Firefox)
+function preventInitialPointerEnter(el) {
+    const off = () => handlers.forEach((handler) => handler());
+    const handlers = [
+        once(el.ownerDocument, pointerMove, (e) => el.contains(e.target) || off()),
+        on(el, `mouseenter ${pointerEnter}`, (e) => e.stopPropagation(), { capture: true }),
+        on(el, `mouseleave ${pointerLeave}`, off, { capture: true }),
+    ];
 }

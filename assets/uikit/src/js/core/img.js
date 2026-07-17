@@ -101,7 +101,7 @@ function setSourceProps(sourceEl, targetEl) {
     for (const prop of srcProps) {
         const value = data(sourceEl, prop);
         if (value) {
-            attr(targetEl, prop.replace(/^(data-)+/, ''), value);
+            attr(targetEl, prop.replace(/data-/g, ''), value);
         }
     }
 }
@@ -111,14 +111,12 @@ function getImageFromElement(el, src, sources) {
 
     wrapInPicture(img, sources);
     setSourceProps(el, img);
-    img.onload = () => {
-        setSrcAttrs(el, img.currentSrc);
-    };
-    attr(img, 'src', src);
+    img.onload = () => setSrcAttrs(el, img.currentSrc);
+    img.src = src;
     return img;
 }
 
-function wrapInPicture(img, sources) {
+export function wrapInPicture(img, sources) {
     sources = parseSources(sources);
 
     if (sources.length) {
@@ -140,7 +138,7 @@ function parseSources(sources) {
     if (startsWith(sources, '[')) {
         try {
             sources = JSON.parse(sources);
-        } catch (e) {
+        } catch {
             sources = [];
         }
     } else {

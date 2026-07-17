@@ -1,3 +1,5 @@
+@use "sass:meta";
+
 // Name:            Text
 // Description:     Utilities for text
 //
@@ -8,6 +10,7 @@
 
 // Variables
 // ========================================================================
+
 
 
 
@@ -28,14 +31,14 @@
     font-size: $text-lead-font-size;
     line-height: $text-lead-line-height;
     color: $text-lead-color;
-    @if(mixin-exists(hook-text-lead)) {@include hook-text-lead();}
+    @if(meta.mixin-exists(hook-text-lead)) {@include hook-text-lead();}
 }
 
 .uk-text-meta {
     font-size: $text-meta-font-size;
     line-height: $text-meta-line-height;
     color: $text-meta-color;
-    @if(mixin-exists(hook-text-meta)) {@include hook-text-meta();}
+    @if(meta.mixin-exists(hook-text-meta)) {@include hook-text-meta();}
 }
 
 
@@ -45,13 +48,13 @@
 .uk-text-small {
     font-size: $text-small-font-size;
     line-height: $text-small-line-height;
-    @if(mixin-exists(hook-text-small)) {@include hook-text-small();}
+    @if(meta.mixin-exists(hook-text-small)) {@include hook-text-small();}
 }
 
 .uk-text-large {
     font-size: $text-large-font-size;
     line-height: $text-large-line-height;
-    @if(mixin-exists(hook-text-large)) {@include hook-text-large();}
+    @if(meta.mixin-exists(hook-text-large)) {@include hook-text-large();}
 }
 
 .uk-text-default {
@@ -122,7 +125,7 @@
     display: inline-block;
     /* 4 */
     background-color: $text-background-color;
-    @if(mixin-exists(hook-text-background)) {@include hook-text-background();}
+    @if(meta.mixin-exists(hook-text-background)) {@include hook-text-background();}
 }
 
 
@@ -221,10 +224,19 @@ td.uk-text-truncate { max-width: 0; }
  td.uk-text-break { word-break: break-word; }
 
 
+/* Stroke modifiers
+ ========================================================================== */
+
+.uk-text-stroke {
+    -webkit-text-stroke: $text-stroke-text-stroke;
+    -webkit-text-fill-color: transparent;
+}
+
+
 // Hooks
 // ========================================================================
 
-@if(mixin-exists(hook-text-misc)) {@include hook-text-misc();}
+@if(meta.mixin-exists(hook-text-misc)) {@include hook-text-misc();}
 
 // @mixin hook-text-lead(){}
 // @mixin hook-text-meta(){}

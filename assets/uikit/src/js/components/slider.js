@@ -1,25 +1,21 @@
 import {
     $,
-    $$,
     addClass,
-    attr,
     children,
     css,
     data,
     dimensions,
     findIndex,
     getIndex,
-    hasOwn,
     includes,
     isVisible,
     last,
-    selFocusable,
     sumBy,
     toFloat,
     toNumber,
     toggleClass,
 } from 'uikit-util';
-import { resize } from '../api/observables';
+import { intersection, resize } from '../api/observables';
 import Class from '../mixin/class';
 import Slider, { speedUp } from '../mixin/slider';
 import SliderParallax from '../mixin/slider-parallax';
@@ -99,7 +95,7 @@ export default {
                             width / 2
                     ) {
                         sets.push(i);
-                        left = width / 2 - slideWidth / 2;
+                        left = (width - slideWidth) / 2;
                     }
                 } else if (left === 0) {
                     sets.push(Math.min(i, this.maxIndex));
@@ -129,9 +125,21 @@ export default {
         toggleClass(this.$el, this.clsContainer, !$(`.${this.clsContainer}`, this.$el));
     },
 
-    observe: resize({
-        target: ({ slides, $el }) => [$el, ...slides],
-    }),
+    observe: [
+        resize({
+            target: ({ slides, $el }) => [$el, ...slides],
+        }),
+        intersection({
+            handler(entries) {
+                for (const { target, isIntersecting } of entries) {
+                    target.ariaHidden = target.inert = !isIntersecting;
+                }
+            },
+            target: ({ slides }) => slides,
+            args: { intersecting: false },
+            options: ({ $el }) => ({ root: $el, rootMargin: '0px -10px' }),
+        }),
+    ],
 
     update: {
         write() {
@@ -229,7 +237,7 @@ export default {
             }
 
             const next = this.slides[index];
-            let width = dimensions(this.list).width / 2 - dimensions(next).width / 2;
+            let width = (dimensions(this.list).width - dimensions(next).width) / 2;
             let j = 0;
 
             while (width > 0) {
@@ -253,15 +261,7 @@ export default {
                 !this.sets || includes(this.sets, toFloat(this.index)) ? this.clsActivated : '',
             ];
             for (const slide of this.slides) {
-                const active = includes(actives, slide);
-                toggleClass(slide, activeClasses, active);
-                attr(slide, 'aria-hidden', !active);
-                for (const focusable of $$(selFocusable, slide)) {
-                    if (!hasOwn(focusable, '_tabindex')) {
-                        focusable._tabindex = attr(focusable, 'tabindex');
-                    }
-                    attr(focusable, 'tabindex', active ? focusable._tabindex : -1);
-                }
+                toggleClass(slide, activeClasses, includes(actives, slide));
             }
         },
 
@@ -291,7 +291,7 @@ export default {
             const left = -width;
             const right = width * 2;
             const slideWidth = dimensions(this.slides[this.index]).width;
-            const slideLeft = this.center ? width / 2 - slideWidth / 2 : 0;
+            const slideLeft = this.center ? (width - slideWidth) / 2 : 0;
             const slides = new Set();
             for (const i of [-1, 1]) {
                 let currentLeft = slideLeft + (i > 0 ? slideWidth : 0);
@@ -309,16 +309,16 @@ export default {
             let index = -1;
             const scrollDist = this.center
                 ? getWidth(this.list) -
-                  (dimensions(this.slides[0]).width / 2 + dimensions(last(this.slides)).width / 2)
+                  (dimensions(this.slides[0]).width + dimensions(last(this.slides)).width) / 2
                 : getWidth(this.list, this.maxIndex);
 
             let dist = percent * scrollDist;
-            let slidePercent = 0;
+            let slidePercent;
 
             do {
                 const slideWidth = dimensions(this.slides[++index]).width;
                 const slideDist = this.center
-                    ? slideWidth / 2 + dimensions(this.slides[index + 1]).width / 2
+                    ? (slideWidth + dimensions(this.slides[index + 1]).width) / 2
                     : slideWidth;
                 slidePercent = (dist / slideDist) % 1;
                 dist -= slideDist;
@@ -364,8 +364,7 @@ function isFinite(list, center) {
             }
             diff = Math.max(
                 diff,
-                slideWidth / 2 +
-                    dimensions(slides[getIndex(+index + i, slides)]).width / 2 -
+                (slideWidth + dimensions(slides[getIndex(+index + i, slides)]).width) / 2 -
                     (left - listHalf),
             );
         }

@@ -6,25 +6,28 @@ export const getQTLsQuery = `
   query getQTLsQuery($traitName: String!, $page: Int, $pageSize: Int) {
     qtls(traitName: $traitName, page: $page, pageSize: $pageSize) {
       results {
-        trait {
-           name
-        }
         identifier
-        linkageGroup {
-           geneticMap {
-              identifier
-           }
-           identifier
+        trait {
+          name
+          description
         }
-        start
         end
-        markerNames
+        start
+        markers {
+          name
+        }
+        linkageGroup {
+          geneticMap {
+            identifier
+          }
+          identifier
+        }
       }
       pageInfo {
         hasNextPage
         numResults
-        pageSize
         pageCount
+        pageSize
       }
     }
   }
@@ -67,10 +70,10 @@ export function qtlsDataToSearchResults(data) {
       linkageGroup,
       start,
       end,
-      markerNames,
     } = qtl;
     const {geneticMap, identifier: linkageGroup_identifier} = linkageGroup;
     const {identifier: linkageGroup_geneticMap_identifier} = geneticMap || {identifier: ""};
+    const markerNames = qtl.markers.map(obj => obj.name);
     return {
       trait_name,
       identifier,

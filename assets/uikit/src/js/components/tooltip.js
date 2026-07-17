@@ -136,7 +136,7 @@ export default {
         // Clicking a button does not give it focus on all browsers and platforms
         // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#clicking_and_focus
         [`focus ${pointerEnter} ${pointerDown}`](e) {
-            if (!isTouch(e) || e.type === pointerDown) {
+            if ((!isTouch(e) || e.type === pointerDown) && document.readyState !== 'loading') {
                 this.show();
             }
         },
@@ -145,7 +145,7 @@ export default {
 
 function makeFocusable(el) {
     if (!isFocusable(el)) {
-        attr(el, 'tabindex', '0');
+        el.tabIndex = 0;
     }
 }
 

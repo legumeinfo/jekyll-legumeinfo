@@ -30,6 +30,7 @@ import {
 import { resize, scroll, viewport } from '../api/observables';
 import Class from '../mixin/class';
 import Media from '../mixin/media';
+import { awaitFrame, awaitTimeout } from '../util/await';
 
 export default {
     mixins: [Class, Media],
@@ -41,6 +42,7 @@ export default {
         start: null,
         end: null,
         offset: String,
+        offsetEnd: String,
         overflowFlip: Boolean,
         animation: String,
         clsActive: String,
@@ -59,6 +61,7 @@ export default {
         start: false,
         end: false,
         offset: 0,
+        offsetEnd: 0,
         overflowFlip: false,
         animation: '',
         clsActive: 'uk-active',
@@ -121,26 +124,26 @@ export default {
 
             filter: ({ targetOffset }) => targetOffset !== false,
 
-            handler() {
+            async handler() {
                 const { scrollingElement } = document;
 
                 if (!location.hash || scrollingElement.scrollTop === 0) {
                     return;
                 }
 
-                setTimeout(() => {
-                    const targetOffset = getOffset($(location.hash));
-                    const elOffset = getOffset(this.$el);
+                await awaitTimeout();
 
-                    if (this.isFixed && intersectRect(targetOffset, elOffset)) {
-                        scrollingElement.scrollTop = Math.ceil(
-                            targetOffset.top -
-                                elOffset.height -
-                                toPx(this.targetOffset, 'height', this.placeholder) -
-                                toPx(this.offset, 'height', this.placeholder),
-                        );
-                    }
-                });
+                const targetOffset = getOffset($(location.hash));
+                const elOffset = getOffset(this.$el);
+
+                if (this.isFixed && intersectRect(targetOffset, elOffset)) {
+                    scrollingElement.scrollTop = Math.ceil(
+                        targetOffset.top -
+                            elOffset.height -
+                            toPx(this.targetOffset, 'height', this.placeholder) -
+                            toPx(this.offset, 'height', this.placeholder),
+                    );
+                }
             },
         },
     ],
@@ -188,12 +191,16 @@ export default {
                 }
 
                 const referenceElement = this.isFixed ? this.placeholder : this.$el;
-                let offset = toPx(this.offset, 'height', sticky ? this.$el : referenceElement);
+                let [offset, offsetEnd] = [this.offset, this.offsetEnd].map((value) =>
+                    toPx(value, 'height', sticky ? this.$el : referenceElement),
+                );
+
                 if (position === 'bottom' && (height < dynamicViewport || this.overflowFlip)) {
                     offset += dynamicViewport - height;
                 }
 
-                const overflow = this.overflowFlip ? 0 : Math.max(0, height + offset - viewport);
+                const elementBox = height + offset + offsetEnd;
+                const overflow = this.overflowFlip ? 0 : Math.max(0, elementBox - viewport);
                 const topOffset =
                     getOffset(referenceElement).top -
                     // offset possible `transform: translateY` animation 'uk-animation-slide-top' while hiding
@@ -396,12 +403,7 @@ export default {
             if (sticky) {
                 css(this.$el, 'top', offset);
             } else {
-                css(this.$el, {
-                    position: '',
-                    top: '',
-                    width: '',
-                    marginTop: '',
-                });
+                reset(this.$el);
             }
             this.placeholder.hidden = true;
             this.isFixed = false;
@@ -490,10 +492,11 @@ function reset(el) {
 }
 
 const clsTransitionDisable = 'uk-transition-disable';
-function preventTransition(element) {
+async function preventTransition(element) {
     if (!hasClass(element, clsTransitionDisable)) {
         addClass(element, clsTransitionDisable);
-        requestAnimationFrame(() => removeClass(element, clsTransitionDisable));
+        await awaitFrame();
+        removeClass(element, clsTransitionDisable);
     }
 }
 

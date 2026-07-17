@@ -28,7 +28,9 @@ import {
     query,
     removeClass,
 } from 'uikit-util';
+import Class from '../mixin/class';
 import Container from '../mixin/container';
+import { maybeDefaultPreventClick } from '../mixin/event';
 import Position, { storeScrollPosition } from '../mixin/position';
 import Togglable from '../mixin/togglable';
 import { keyMap } from '../util/keys';
@@ -37,7 +39,7 @@ import { preventBackgroundScroll } from '../util/scroll';
 export let active;
 
 export default {
-    mixins: [Container, Position, Togglable],
+    mixins: [Class, Container, Position, Togglable],
 
     args: 'pos',
 
@@ -54,7 +56,6 @@ export default {
         delayShow: Number,
         delayHide: Number,
         autoUpdate: Boolean,
-        clsDrop: String,
         animateOut: Boolean,
         bgScroll: Boolean,
         closeOnScroll: Boolean,
@@ -73,13 +74,13 @@ export default {
         delayShow: 0,
         delayHide: 800,
         autoUpdate: true,
-        clsDrop: false,
         animateOut: false,
         bgScroll: true,
         animation: ['uk-animation-fade'],
         cls: 'uk-open',
         container: false,
         closeOnScroll: false,
+        selClose: '.uk-drop-close',
     },
 
     computed: {
@@ -105,16 +106,13 @@ export default {
         this.tracker = new MouseTracker();
     },
 
-    beforeConnect() {
-        this.clsDrop = this.$props.clsDrop || this.$options.id;
-    },
-
     connected() {
-        addClass(this.$el, 'uk-drop', this.clsDrop);
+        addClass(this.$el, 'uk-drop');
 
         if (this.toggle && !this.targetEl) {
             this.targetEl = createToggleComponent(this);
         }
+        attr(this.targetEl, 'aria-expanded', false);
 
         this._style = pick(this.$el.style, ['width', 'height']);
     },
@@ -131,10 +129,10 @@ export default {
         {
             name: 'click',
 
-            delegate: () => '.uk-drop-close',
+            delegate: ({ selClose }) => selClose,
 
             handler(e) {
-                e.preventDefault();
+                maybeDefaultPreventClick(e);
                 this.hide(false);
             },
         },
@@ -276,7 +274,9 @@ export default {
 
             self: true,
 
-            handler: 'clearTimers',
+            handler() {
+                this.clearTimers();
+            },
         },
 
         {
@@ -293,7 +293,7 @@ export default {
 
                 active = this.isActive() ? null : active;
                 this.tracker.cancel();
-                attr(this.targetEl, 'aria-expanded', null);
+                attr(this.targetEl, 'aria-expanded', false);
             },
         },
     ],
@@ -331,11 +331,15 @@ export default {
                     prev = active;
                     active.hide(false, false);
                 }
+                delay = false;
             }
 
             if (this.container && parent(this.$el) !== this.container) {
                 append(this.container, this.$el);
             }
+
+            // Mark enter early so isToggled() detects show when using delayShow
+            addClass(this.$el, this.clsEnter);
 
             this.showTimer = setTimeout(
                 () => this.toggleElement(this.$el, true),
@@ -344,7 +348,11 @@ export default {
         },
 
         hide(delay = true, animate = true) {
-            const hide = () => this.toggleElement(this.$el, false, this.animateOut && animate);
+            const hide = () => {
+                // Ensure enter class is removed if show is canceled early
+                removeClass(this.$el, this.clsEnter);
+                this.toggleElement(this.$el, false, this.animateOut && animate);
+            };
 
             this.clearTimers();
 
@@ -452,13 +460,14 @@ function getViewport(el, target) {
 }
 
 function createToggleComponent(drop) {
-    const { $el } = drop.$create('toggle', query(drop.toggle, drop.$el), {
-        target: drop.$el,
-        mode: drop.mode,
-    });
-    attr($el, 'aria-haspopup', true);
+    const el = query(drop.toggle, drop.$el);
 
-    return $el;
+    if (el) {
+        drop.$create('toggle', el, { target: drop.$el, mode: drop.mode });
+        el.ariaHasPopup = true;
+    }
+
+    return el;
 }
 
 function listenForResize(drop) {

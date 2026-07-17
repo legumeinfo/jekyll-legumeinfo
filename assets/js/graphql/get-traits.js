@@ -4,8 +4,16 @@ import { modalLink } from './modal.js';
 
 /** The GraphQL query used to get traits. */
 export const getTraitsQuery = `
-query TraitQuery($pageSize: Int, $page: Int, $name: String, $studyType: String, $publicationId: String, $author: String) {
-    traits(pageSize: $pageSize, page: $page, name: $name, studyType: $studyType, publicationId: $publicationId, author: $author) {
+  query TraitQuery($name: String, $studyType: String, $publicationId: String, $author: String, $page: Int, $pageSize: Int) {
+    traits(name: $name, studyType: $studyType, publicationId: $publicationId, author: $author, page: $page, pageSize: $pageSize) {
+      pageInfo {
+        currentPage
+        pageSize
+        numResults
+        pageCount
+        hasPreviousPage
+        hasNextPage
+      }
       results {
         name
         qtlStudy {
@@ -17,7 +25,7 @@ query TraitQuery($pageSize: Int, $page: Int, $name: String, $studyType: String, 
             genus
             species
           }
-          dataSet {
+          dataSets {
             publication {
               firstAuthor
               pubMedId
@@ -34,22 +42,14 @@ query TraitQuery($pageSize: Int, $page: Int, $name: String, $studyType: String, 
             genus
             species
           }
-          dataSet {
+          dataSets {
             publication {
               firstAuthor
-              pubMedId
               doi
+              pubMedId
             }
           }
         }
-      }
-      pageInfo {
-        currentPage
-        pageSize
-        numResults
-        pageCount
-        hasPreviousPage
-        hasNextPage
       }
     }
   }

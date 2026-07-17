@@ -350,3 +350,51 @@ export function allLinkoutsFunction({type, linkoutData}, options) {
   }
   return Promise.reject();
 }
+
+
+/** The GraphQL query used to get gene function (symbol) linkouts. */
+export const getGeneFunctionLinkoutsQuery = `
+  query GeneFunctionLinkoutsQuery($identifier: ID!) {
+    geneFunctionLinkouts(identifier: $identifier) {
+      results {
+        href
+        text
+      }
+    }
+  }
+`;
+
+
+/**
+ * The linkouts function for the `LisGeneFunctionSearchElement`
+ * (`<lis-gene-function-search-element>`) Web Component.
+ *
+ * Handles the linkout types emitted by the component:
+ * - `'gene'`: fetches linkouts via the `geneLinkouts` GraphQL query
+ * - `'publication'`: resolves to a doi.org link, using `variables.label` (the
+ *   publication title) as the link text when available
+ * - `'symbol'`: resolves to an Intermine gene function page via the
+ *   `geneFunctionLinkouts` GraphQL query (derived server-side from the
+ *   GraphQL API's configured Intermine instance)
+ *
+ * @param {object} linkoutData - `{type, variables}` as emitted by the component.
+ * @param {object} options - Optional parameters including an `AbortSignal`.
+ * @returns {Promise} Resolves to `LinkoutResults` for the `LisLinkoutElement`.
+ */
+export function geneFunctionSearchLinkoutsFunction({type, variables}, options={}) {
+  const {abortSignal} = options;
+  if (type === 'gene') {
+    return query(getGeneLinkoutsQuery, variables, abortSignal)
+      .then(({data}) => geneLinkoutsToLinkoutResults(data));
+  }
+  if (type === 'publication') {
+    const href = `https://doi.org/${variables.identifier}`;
+    const text = variables.label || href;
+    return Promise.resolve({results: [{href, text}]});
+  }
+  if (type === 'symbol') {
+    return query(getGeneFunctionLinkoutsQuery, variables, abortSignal)
+      .then(({data}) => ({results: data.geneFunctionLinkouts.results}));
+  }
+  return Promise.reject(new Error(`Unknown linkout type: ${type}`));
+}

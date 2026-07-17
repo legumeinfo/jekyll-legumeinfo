@@ -8,8 +8,7 @@ import {
     findIndex,
     getIndex,
     hasClass,
-    includes,
-    isNode,
+    isNumeric,
     isTag,
     matches,
     queryAll,
@@ -18,6 +17,7 @@ import {
 } from 'uikit-util';
 import { generateId } from '../api/instance';
 import { lazyload, swipe } from '../api/observables';
+import { maybeDefaultPreventClick } from '../mixin/event';
 import Togglable from '../mixin/togglable';
 import { keyMap } from '../util/keys';
 
@@ -84,15 +84,15 @@ export default {
             this.$emit();
         },
 
-        toggles(toggles) {
+        toggles() {
             this.$emit();
             const active = this.index();
-            this.show(~active ? active : toggles[this.active] || toggles[0]);
+            this.show(~active ? active : this.next(this.active));
         },
     },
 
     connected() {
-        attr(this.$el, 'role', 'tablist');
+        this.$el.role = 'tablist';
     },
 
     observe: [
@@ -111,7 +111,7 @@ export default {
                     !matches(e.current, selDisabled) &&
                     (e.type === 'click' || e.keyCode === keyMap.SPACE)
                 ) {
-                    e.preventDefault();
+                    maybeDefaultPreventClick(e);
                     this.show(e.current);
                 }
             },
@@ -141,8 +141,7 @@ export default {
 
                 if (~i) {
                     e.preventDefault();
-                    const toggles = this.toggles.filter((el) => !matches(el, selDisabled));
-                    const next = toggles[getIndex(i, toggles, toggles.indexOf(current))];
+                    const next = this.toggles[this.next(i, this.toggles.indexOf(current))];
                     next.focus();
                     if (this.followFocus) {
                         this.show(next);
@@ -161,7 +160,7 @@ export default {
 
             handler(e) {
                 if (e.target.closest('a,button')) {
-                    e.preventDefault();
+                    maybeDefaultPreventClick(e);
                     this.show(data(e.current, this.attrItem));
                 }
             },
@@ -183,7 +182,7 @@ export default {
     update() {
         for (const el of this.connects) {
             if (isTag(el, 'ul')) {
-                attr(el, 'role', 'presentation');
+                el.role = 'presentation';
             }
         }
         attr(children(this.$el), 'role', 'presentation');
@@ -192,7 +191,7 @@ export default {
             const toggle = this.toggles[index];
             const item = this.connects[0]?.children[index];
 
-            attr(toggle, 'role', 'tab');
+            toggle.role = 'tab';
 
             if (!item) {
                 continue;
@@ -201,7 +200,7 @@ export default {
             toggle.id = generateId(this, toggle);
             item.id = generateId(this, item);
 
-            attr(toggle, 'aria-controls', item.id);
+            toggle.ariaControls = item.id;
             attr(item, { role: 'tabpanel', 'aria-labelledby': toggle.id });
         }
         attr(this.$el, 'aria-orientation', matches(this.$el, this.selVertical) ? 'vertical' : null);
@@ -212,32 +211,43 @@ export default {
             return findIndex(this.children, (el) => hasClass(el, this.cls));
         },
 
-        show(item) {
+        next(item, prev = this.index()) {
+            if (isNumeric(item)) {
+                for (let i = 0; i < this.toggles.length; i++) {
+                    let index = getIndex(i + +item, this.toggles);
+                    if (!matches(this.toggles[index], selDisabled)) {
+                        return index;
+                    }
+                }
+            }
+
             const toggles = this.toggles.filter((el) => !matches(el, selDisabled));
-            const prev = this.index();
-            const next = getIndex(
-                !isNode(item) || includes(toggles, item) ? item : 0,
-                toggles,
-                getIndex(this.toggles[prev], toggles),
+            return getIndex(
+                toggles[getIndex(item, toggles, toggles.indexOf(this.toggles[prev]))],
+                this.toggles,
             );
-            const active = getIndex(toggles[next], this.toggles);
+        },
+
+        show(item) {
+            const prev = this.index();
+            const next = this.next(item);
 
             this.children.forEach((child, i) => {
-                toggleClass(child, this.cls, active === i);
+                toggleClass(child, this.cls, next === i);
                 attr(this.toggles[i], {
-                    'aria-selected': active === i,
-                    tabindex: active === i ? null : -1,
+                    'aria-selected': next === i,
+                    tabindex: next === i ? null : -1,
                 });
             });
 
             const animate = prev >= 0 && prev !== next;
             this.connects.forEach(async ({ children }) => {
                 const actives = toArray(children).filter(
-                    (child, i) => i !== active && hasClass(child, this.cls),
+                    (child, i) => i !== next && hasClass(child, this.cls),
                 );
 
                 if (await this.toggleElement(actives, false, animate)) {
-                    await this.toggleElement(children[active], true, animate);
+                    await this.toggleElement(children[next], true, animate);
                 }
             });
         },

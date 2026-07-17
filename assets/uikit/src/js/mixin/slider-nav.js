@@ -16,6 +16,7 @@ import {
 } from 'uikit-util';
 import { generateId } from '../api/instance';
 import { keyMap } from '../util/keys';
+import { maybeDefaultPreventClick } from './event';
 
 export default {
     i18n: {
@@ -23,7 +24,6 @@ export default {
         previous: 'Previous slide',
         slideX: 'Slide %s',
         slideLabel: '%s of %s',
-        role: 'String',
     },
 
     data: {
@@ -32,10 +32,10 @@ export default {
     },
 
     computed: {
-        nav: ({ selNav }, $el) => $(selNav, $el),
+        nav: ({ selNav }, $el) => $$(selNav, $el),
 
         navChildren() {
-            return children(this.nav);
+            return this.nav.map((nav) => children(nav)).flat();
         },
 
         selNavItem: ({ attrItem }) => `[${attrItem}],[data-${attrItem}]`,
@@ -87,7 +87,7 @@ export default {
 
                     ariaLabel = this.t('slideX', toFloat(cmd) + 1);
 
-                    attr(button, 'role', 'tab');
+                    button.role = 'tab';
                 } else {
                     if (this.list) {
                         if (!this.list.id) {
@@ -100,19 +100,17 @@ export default {
                     ariaLabel = this.t(cmd);
                 }
 
-                attr(button, {
-                    'aria-controls': ariaControls,
-                    'aria-label': attr(button, 'aria-label') || ariaLabel,
-                });
+                button.ariaControls = ariaControls;
+                button.ariaLabel = button.ariaLabel || ariaLabel;
             }
         },
 
         slides(slides) {
             slides.forEach((slide, i) =>
                 attr(slide, {
-                    role: this.nav ? 'tabpanel' : 'group',
+                    role: this.nav.length ? 'tabpanel' : 'group',
                     'aria-label': this.t('slideLabel', i + 1, this.length),
-                    'aria-roledescription': this.nav ? null : 'slide',
+                    'aria-roledescription': this.nav.length ? null : 'slide',
                 }),
             );
 
@@ -121,10 +119,8 @@ export default {
     },
 
     connected() {
-        attr(this.$el, {
-            role: this.role,
-            'aria-roledescription': 'carousel',
-        });
+        this.$el.role = this.role;
+        this.$el.ariaRoleDescription = 'carousel';
     },
 
     update: [
@@ -151,7 +147,7 @@ export default {
                     e.target.closest('a,button') &&
                     (e.type === 'click' || e.keyCode === keyMap.SPACE)
                 ) {
-                    e.preventDefault();
+                    maybeDefaultPreventClick(e);
                     this.show(data(e.current, this.attrItem));
                 }
             },
@@ -159,7 +155,9 @@ export default {
 
         {
             name: 'itemshow',
-            handler: 'updateNav',
+            handler() {
+                this.updateNav();
+            },
         },
 
         {
@@ -209,12 +207,10 @@ export default {
                     const active = item === index;
 
                     toggleClass(el, this.clsActive, active);
-                    toggleClass(button, 'uk-disabled', this.parallax);
+                    toggleClass(button, 'uk-disabled', !!this.parallax);
 
-                    attr(button, {
-                        'aria-selected': active,
-                        tabindex: active && !this.parallax ? null : -1,
-                    });
+                    button.ariaSelected = active;
+                    button.tabIndex = active && !this.parallax ? null : -1;
 
                     if (active && button && matches(parent(el), ':focus-within')) {
                         button.focus();
@@ -232,19 +228,18 @@ export default {
         },
 
         padNavitems() {
-            if (!this.nav) {
-                return;
-            }
-
-            const children = [];
-            for (let i = 0; i < this.length; i++) {
-                const attr = `${this.attrItem}="${i}"`;
-                children[i] =
-                    this.navChildren.findLast((el) => el.matches(`[${attr}]`)) ||
-                    $(`<li ${attr}><a href></a></li>`);
-            }
-            if (!isEqual(children, this.navChildren)) {
-                html(this.nav, children);
+            for (const nav of this.nav) {
+                const navChildren = children(nav);
+                const navItems = [];
+                for (let i = 0; i < this.length; i++) {
+                    const attr = `${this.attrItem}="${i}"`;
+                    navItems[i] =
+                        navChildren.findLast((el) => el.matches(`[${attr}]`)) ||
+                        $(`<li ${attr}><a href></a></li>`);
+                }
+                if (!isEqual(navItems, navChildren)) {
+                    html(nav, navItems);
+                }
             }
         },
     },

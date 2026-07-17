@@ -44,49 +44,55 @@ export function getPangeneLookupFormData(options={}) {
 export function chromosomeDataToPangeneFormData(data) {
   // bin the strains by genus then species
   const binnedFormData = {};
-  data.chromosomes.results.forEach(({
-    annotationVersion,
-    assemblyVersion,
-    strain: {
-      organism: {
-        genus,
-        species,
-      },
-      identifier,
-    },
-  }) => {
+  
+  data.chromosomes.results.forEach((chromosome) => {
+    const annotationVersion = chromosome.annotationVersion;
+    const assemblyVersion = chromosome.assemblyVersion;
+    const strain = chromosome.strain || {};
+    const organism = strain.organism || {};
+    
+    // Now safely access properties
+    const genus = organism.genus;
+    const species = organism.species;
+    const identifier = strain.identifier;
+    
+    // Handle null/undefined values with fallbacks
+    const safeGenus = genus || 'Unknown_Genus';
+    const safeSpecies = species || 'Unknown_Species';
+    const safeIdentifier = identifier || 'Unknown_Identifier';
+    const safeAssemblyVersion = assemblyVersion || 'Unknown_Assembly';
+
     let bin = binnedFormData;
-    bin = nextBin(bin, genus, {});
-    bin = nextBin(bin, species, {});
-    bin = nextBin(bin, identifier, {});
-    bin = nextBin(bin, assemblyVersion, []);
+    bin = nextBin(bin, safeGenus, {});
+    bin = nextBin(bin, safeSpecies, {});
+    bin = nextBin(bin, safeIdentifier, {});
+    bin = nextBin(bin, safeAssemblyVersion, []);
+    
     if (annotationVersion != null) {
       bin.push(annotationVersion);
     }
   });
+
   // collapse the bins into arrays of objects
-  const genuses =
-  Object.entries(binnedFormData).map(([genus, binnedSpecies]) => {
-    const species =
-    Object.entries(binnedSpecies).map(([species, binnedStrains]) => {
-      const strains =
-      Object.entries(binnedStrains).map(([strain, binnedAssemblies]) => {
-        const assemblies =
-        Object.entries(binnedAssemblies).map(([assembly, annotations]) => {
+  const genuses = Object.entries(binnedFormData).map(([genus, binnedSpecies]) => {
+    const species = Object.entries(binnedSpecies).map(([species, binnedStrains]) => {
+      const strains = Object.entries(binnedStrains).map(([strain, binnedAssemblies]) => {
+        const assemblies = Object.entries(binnedAssemblies).map(([assembly, annotations]) => {
           return {
             assembly,
             annotations: [...new Set(annotations)]
-              .map((annotation) => {annotation}),
+              .map((annotation) => annotation),
           };
         });
-        return {strain, assemblies};
+        return { strain, assemblies };
       });
-      return {species, strains};
+      return { species, strains };
     });
-    return {genus, species};
+    return { genus, species };
   });
+
   // return the expected form data object
-  return {genuses};
+  return { genuses };
 }
 
 

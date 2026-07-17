@@ -1,16 +1,6 @@
-import {
-    addClass,
-    attr,
-    css,
-    includes,
-    isTag,
-    memoize,
-    once,
-    removeAttr,
-    startsWith,
-} from 'uikit-util';
+import { addClass, attr, css, includes, isTag, memoize, once, removeAttr } from 'uikit-util';
 import { mutation } from '../api/observables';
-import Svg from '../mixin/svg';
+import Svg, { parseSVG } from '../mixin/svg';
 import { getMaxPathLength } from '../util/svg';
 
 export default {
@@ -46,7 +36,7 @@ export default {
 
     async connected() {
         if (includes(this.src, '#')) {
-            [this.src, this.icon] = this.src.split('#');
+            [this.src, this.icon] = this.src.split('#', 2);
         }
 
         const svg = await this.svg;
@@ -84,6 +74,8 @@ function applyAttributes(el) {
         attr(el, prop, value);
     }
 
+    el.ariaHidden = this.$el.ariaHidden;
+
     if (!this.$el.id) {
         removeAttr(el, 'id');
     }
@@ -91,37 +83,13 @@ function applyAttributes(el) {
 
 const loadSVG = memoize(async (src) => {
     if (src) {
-        if (startsWith(src, 'data:')) {
-            return decodeURIComponent(src.split(',')[1]);
-        } else {
-            return (await fetch(src)).text();
+        const response = await fetch(src);
+        if (response.headers.get('Content-Type') === 'image/svg+xml') {
+            return response.text();
         }
-    } else {
-        return Promise.reject();
-    }
-});
-
-function parseSVG(svg, icon) {
-    if (icon && includes(svg, '<symbol')) {
-        svg = parseSymbols(svg)[icon] || svg;
     }
 
-    return stringToSvg(svg);
-}
-
-const symbolRe = /<symbol([^]*?id=(['"])(.+?)\2[^]*?<\/)symbol>/g;
-
-const parseSymbols = memoize(function (svg) {
-    const symbols = {};
-
-    symbolRe.lastIndex = 0;
-
-    let match;
-    while ((match = symbolRe.exec(svg))) {
-        symbols[match[3]] = `<svg ${match[1]}svg>`;
-    }
-
-    return symbols;
+    return Promise.reject();
 });
 
 function applyAnimation(el) {
@@ -130,10 +98,4 @@ function applyAnimation(el) {
     if (length) {
         css(el, '--uk-animation-stroke', length);
     }
-}
-
-export function stringToSvg(string) {
-    const container = document.createElement('template');
-    container.innerHTML = string;
-    return container.content.firstElementChild;
 }

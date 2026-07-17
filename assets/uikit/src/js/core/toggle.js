@@ -1,10 +1,10 @@
 import {
-    attr,
     hasAttr,
     hasClass,
     includes,
     isBoolean,
     isFocusable,
+    isSameSiteAnchor,
     isTag,
     isTouch,
     matches,
@@ -18,8 +18,7 @@ import {
 import { lazyload } from '../api/observables';
 import Media from '../mixin/media';
 import Togglable from '../mixin/togglable';
-
-const KEY_SPACE = 32;
+import { keyMap } from '../util/keys';
 
 export default {
     mixins: [Media, Togglable],
@@ -53,10 +52,10 @@ export default {
     connected() {
         if (!includes(this.mode, 'media')) {
             if (!isFocusable(this.$el)) {
-                attr(this.$el, 'tabindex', '0');
+                this.$el.tabIndex = 0;
             }
             if (!this.cls && isTag(this.$el, 'a')) {
-                attr(this.$el, 'role', 'button');
+                this.$el.role = 'button';
             }
         }
     },
@@ -95,25 +94,23 @@ export default {
         },
 
         {
-            // mouseenter mouseleave are added because of Firefox bug,
-            // where pointerleave is triggered immediately after pointerenter on scroll
-            name: `mouseenter mouseleave ${pointerEnter} ${pointerLeave} focus blur`,
+            name: `${pointerEnter} ${pointerLeave} focus blur`,
 
             filter: ({ mode }) => includes(mode, 'hover'),
 
             handler(e) {
-                if (isTouch(e) || this.$el.disabled) {
+                if (isTouch(e) || this.$el.disabled || document.readyState === 'loading') {
                     return;
                 }
 
-                const show = includes(['mouseenter', pointerEnter, 'focus'], e.type);
+                const show = includes([pointerEnter, 'focus'], e.type);
                 const expanded = this.isToggled(this.target);
 
                 // Skip hide if still hovered or focused
                 if (
                     !show &&
                     (!isBoolean(this._showState) ||
-                        (e.type !== 'blur' && matches(this.$el, ':focus')) ||
+                        (e.type === pointerLeave && matches(this.$el, ':focus')) ||
                         (e.type === 'blur' && matches(this.$el, ':hover')))
                 ) {
                     // Reset showState if already hidden
@@ -140,7 +137,7 @@ export default {
             filter: ({ $el, mode }) => includes(mode, 'click') && !isTag($el, 'input'),
 
             handler(e) {
-                if (e.keyCode === KEY_SPACE) {
+                if (e.keyCode === keyMap.SPACE || e.keyCode === keyMap.ENTER) {
                     e.preventDefault();
                     this.$el.click();
                 }
@@ -153,18 +150,23 @@ export default {
             filter: ({ mode }) => ['click', 'hover'].some((m) => includes(mode, m)),
 
             handler(e) {
-                let link;
-                if (
-                    this._preventClick ||
-                    e.target.closest('a[href="#"], a[href=""]') ||
-                    ((link = e.target.closest('a[href]')) &&
-                        (!this.isToggled(this.target) ||
-                            (link.hash && matches(this.target, link.hash))))
-                ) {
+                if (e.defaultPrevented) {
+                    return;
+                }
+
+                const link = e.target.closest('a[href]');
+                const isButtonLike =
+                    isSameSiteAnchor(link) && (!link.hash || matches(this.target, link.hash));
+
+                if (this._preventClick || isButtonLike || (link && !this.isToggled(this.target))) {
                     e.preventDefault();
                 }
 
-                if (!this._preventClick && includes(this.mode, 'click')) {
+                if (
+                    !this._preventClick &&
+                    includes(this.mode, 'click') &&
+                    (!link || isButtonLike || e.defaultPrevented)
+                ) {
                     this.toggle();
                 }
             },
@@ -192,7 +194,7 @@ export default {
             }
 
             if (hasAttr(this.$el, 'aria-expanded')) {
-                attr(this.$el, 'aria-expanded', !this.isToggled(this.target));
+                this.$el.ariaExpanded = !this.isToggled(this.target);
             }
 
             if (!this.queued) {

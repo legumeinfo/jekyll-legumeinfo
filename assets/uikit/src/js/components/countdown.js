@@ -1,4 +1,4 @@
-import { $, attr, html, toFloat, trigger } from 'uikit-util';
+import { $, html, toFloat, trigger } from 'uikit-util';
 import Class from '../mixin/class';
 
 const units = ['days', 'hours', 'minutes', 'seconds'];
@@ -10,18 +10,20 @@ export default {
         date: String,
         clsWrapper: String,
         role: String,
+        reload: Boolean,
     },
 
     data: {
         date: '',
         clsWrapper: '.uk-countdown-%unit%',
         role: 'timer',
+        reload: false,
     },
 
     connected() {
-        attr(this.$el, 'role', this.role);
+        this.$el.role = this.role;
         this.date = toFloat(Date.parse(this.$props.date));
-        this.end = false;
+        this.started = this.end = false;
         this.start();
     },
 
@@ -47,10 +49,6 @@ export default {
         start() {
             this.stop();
             this.update();
-            if (!this.timer) {
-                trigger(this.$el, 'countdownstart');
-                this.timer = setInterval(this.update, 1000);
-            }
         },
 
         stop() {
@@ -69,7 +67,14 @@ export default {
                 if (!this.end) {
                     trigger(this.$el, 'countdownend');
                     this.end = true;
+                    if (this.reload && this.started) {
+                        window.location.reload();
+                    }
                 }
+            } else if (!this.timer) {
+                this.started = true;
+                this.timer = setInterval(this.update, 1000);
+                trigger(this.$el, 'countdownstart');
             }
 
             for (const unit of units) {

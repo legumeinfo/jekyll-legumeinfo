@@ -14,7 +14,7 @@ export const getGenesQuery = `
         strain { identifier }
         geneFamilyAssignments { geneFamily { identifier } }
         panGeneSets { identifier }
-        locations { chromosome { identifier } supercontig { identifier } start end strand }
+        locations { locatedOn { identifier } start end strand }
       }
       pageInfo {
         hasNextPage
@@ -25,8 +25,6 @@ export const getGenesQuery = `
     }
   }
 `;
-
-
 /**
  * Gets genes from GraphQL.
  * @param {object} queryData - An object containing zero or more variables for the GraphQL query.
@@ -71,12 +69,10 @@ export function genesDataToSearchResults(data) {
         gene.panGeneSets
           .map(({identifier}) => identifier);
       const locations =
-        gene.locations.map(({chromosome, supercontig, start, end, strand}) => {
+        gene.locations.map(({locatedOn, start, end, strand}) => {
           const interval = `${start}-${end} (${strand})`;
-          if (chromosome?.identifier) {
-            return `${chromosome?.identifier}:${interval} (chromosome)`;
-          } else if (supercontig?.identifier) {
-            return `${supercontig?.identifier}:${interval} (supercontig)`;
+          if (locatedOn?.identifier) {
+            return `${locatedOn.identifier}:${interval}`;
           }
           return `unknown:${interval}`;
         });

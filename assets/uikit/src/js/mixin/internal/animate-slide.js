@@ -1,16 +1,21 @@
 import {
     attr,
     children,
+    clamp,
     css,
     dimensions,
     includes,
     index,
+    isInView,
     isVisible,
+    offsetViewport,
     parent,
     position,
+    resetProps,
     Transition,
     trigger,
 } from 'uikit-util';
+import { awaitFrame } from '../../util/await';
 
 export default async function (action, target, duration) {
     await awaitFrame();
@@ -21,6 +26,7 @@ export default async function (action, target, duration) {
     const currentProps = nodes.map((el) => getProps(el, true));
     const targetProps = { ...css(target, ['height', 'padding']), display: 'block' };
 
+    const transitionNodes = nodes.filter((node) => isInView(node));
     const targets = nodes.concat(target);
 
     // Cancel previous animations
@@ -33,7 +39,10 @@ export default async function (action, target, duration) {
     await action();
 
     // Find new nodes
-    nodes = nodes.concat(children(target).filter((el) => !includes(nodes, el)));
+
+    const newNodes = children(target).filter((el) => !includes(nodes, el));
+
+    nodes = nodes.concat(newNodes);
 
     // Wait for update to propagate
     await Promise.resolve();
@@ -47,6 +56,8 @@ export default async function (action, target, duration) {
     const [propsTo, propsFrom] = getTransitionProps(target, nodes, currentProps);
     const attrsTo = nodes.map((el) => ({ style: attr(el, 'style') }));
 
+    transitionNodes.push(...nodes.filter((node) => isInView(node)));
+
     // Reset to previous state
     nodes.forEach((el, i) => propsFrom[i] && css(el, propsFrom[i]));
     css(target, targetProps);
@@ -58,8 +69,12 @@ export default async function (action, target, duration) {
     await awaitFrame();
 
     const transitions = nodes
-        .map((el, i) => parent(el) === target && Transition.start(el, propsTo[i], duration, 'ease'))
-        .concat(Transition.start(target, targetPropsTo, duration, 'ease'));
+        .map((el, i) => {
+            if (parent(el) === target && transitionNodes.includes(el)) {
+                return Transition.start(el, propsTo[i], duration, 'ease', !newNodes.includes(el));
+            }
+        })
+        .concat(Transition.start(target, targetPropsTo, duration, 'ease', true));
 
     try {
         await Promise.all(transitions);
@@ -70,7 +85,7 @@ export default async function (action, target, duration) {
             }
         });
         attr(target, 'style', targetStyle);
-    } catch (e) {
+    } catch {
         attr(nodes, 'style', '');
         resetProps(target, targetProps);
     }
@@ -127,24 +142,22 @@ function getTransitionProps(target, nodes, currentProps) {
     return [propsTo, propsFrom];
 }
 
-function resetProps(el, props) {
-    for (const prop in props) {
-        css(el, prop, '');
-    }
-}
-
 function getPositionWithMargin(el) {
     const { height, width } = dimensions(el);
+
+    let { top, left } = position(el);
+
+    const viewport = offsetViewport(el.ownerDocument);
+
+    top = clamp(top, viewport.top - height - viewport.height, viewport.bottom + viewport.height);
+    left = clamp(left, viewport.left - width - viewport.width, viewport.right + viewport.width);
 
     return {
         height,
         width,
+        top,
+        left,
         transform: '',
-        ...position(el),
         ...css(el, ['marginTop', 'marginLeft']),
     };
-}
-
-export function awaitFrame() {
-    return new Promise((resolve) => requestAnimationFrame(resolve));
 }

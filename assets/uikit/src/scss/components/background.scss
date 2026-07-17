@@ -1,3 +1,5 @@
+@use "sass:meta";
+
 // Name:            Background
 // Description:     Utilities for backgrounds
 //
@@ -65,15 +67,7 @@
 /* Attachment
  ========================================================================== */
 
-/*
- * 1. Fix bug introduced in Chrome 67: the background image is not visible if any element on the page uses `translate3d`
- */
-
-.uk-background-fixed {
-    background-attachment: fixed;
-    /* 1 */
-    backface-visibility: hidden;
-}
+.uk-background-fixed { background-attachment: fixed; }
 
 /*
  * Exclude touch devices because `fixed` doesn't work on iOS and Android
@@ -139,6 +133,6 @@
 // Hooks
 // ========================================================================
 
-@if(mixin-exists(hook-background-misc)) {@include hook-background-misc();}
+@if(meta.mixin-exists(hook-background-misc)) {@include hook-background-misc();}
 
 // @mixin hook-background-misc(){}

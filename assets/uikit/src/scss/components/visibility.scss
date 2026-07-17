@@ -1,3 +1,5 @@
+@use "sass:meta";
+
 // Name:            Visibility
 // Description:     Utilities to show or hide content on breakpoints, hover or touch
 //
@@ -24,7 +26,8 @@
  */
 
 [hidden],
-.uk-hidden { display: none !important; }
+.uk-hidden,
+.uk-hidden-empty:empty { display: none !important; }
 
 /* Phone landscape and bigger */
 @media (min-width: $breakpoint-small) {
@@ -114,6 +117,8 @@
  */
 
 .uk-hidden-visually:not(:focus):not(:active):not(:focus-within),
+.uk-visible-toggle:not(:hover):not(:focus) .uk-hidden-hover:not(:focus-visible):not(:has(:focus-visible)),
+// Fallback for Safari 18.3 `:not(:has(...)) invalidation` bug. Remove when fixed.
 .uk-visible-toggle:not(:hover):not(:focus) .uk-hidden-hover:not(:focus-within) {
     /* 1 */
     position: absolute !important;
@@ -121,7 +126,7 @@
     width: 0 !important;
     height: 0 !important;
     padding: 0 !important;
-    border: 0 !important;
+    border-width: 0 !important;
     margin: 0 !important;
     overflow: hidden !important;
 }
@@ -156,6 +161,6 @@
 // Hooks
 // ========================================================================
 
-@if(mixin-exists(hook-visibility-misc)) {@include hook-visibility-misc();}
+@if(meta.mixin-exists(hook-visibility-misc)) {@include hook-visibility-misc();}
 
 // @mixin hook-visibility-misc(){}
