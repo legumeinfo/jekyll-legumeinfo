@@ -1,0 +1,29 @@
+---
+layout: full-width
+title: Gene Function Search
+web_components: true
+---
+<!-- the custom gene search element -->
+<lis-gene-function-search-element id="gene-function-search" geneIdentifierExample="MtNIN, Medtr5g099060, Nodule Inception" traitsExample="nodule, senescence, protein" publicationExample="10.3390/ijms17081197, 33228084" authorExample="Libault"></lis-gene-function-search-element>
+<lis-modal-element modalId="modal">
+  <lis-linkout-element id="linkouts"></lis-linkout-element>
+</lis-modal-element>
+
+  <script type="module">
+
+    import {
+      getGeneFunctionFormDataFunction,
+      getGeneFunctions,
+      geneFunctionSearchLinkoutsFunction,
+    } from "lis-graphql";
+
+    const geneFunctionSearchElement = document.getElementById('gene-function-search');
+    geneFunctionSearchElement.formDataFunction = getGeneFunctionFormDataFunction;
+    geneFunctionSearchElement.searchFunction = getGeneFunctions;
+    geneFunctionSearchElement.linkoutFunction = geneFunctionSearchLinkoutsFunction;
+    geneFunctionSearchElement.linkoutColumns = {
+      geneSymbols: 'symbol',
+      geneModelFullName: 'gene',
+    };
+
+  </script>
