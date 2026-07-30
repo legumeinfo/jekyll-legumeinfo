@@ -21,6 +21,15 @@
       </item>
     
       <item>
+        <title>Gene Function Search Tool</title>
+        <description>&lt;p&gt;A new tool for searching gene functions curated from scientific publications is &lt;a href=&quot;/tools/search/gene_function.html&quot;&gt;here&lt;/a&gt;. Curators from the legumeinfo team have been distilling evidence for gene functions from the literature into structured reports as represented by &lt;a href=&quot;https://data.legumeinfo.org/Glycine/max/gene_functions/&quot;&gt;this example&lt;/a&gt; for soybean. Ten species across eight genera currently have some representation, with the majority in &lt;em&gt;G. max&lt;/em&gt; and &lt;em&gt;M. truncatula&lt;/em&gt;. In addition to the full curation of gene function, gene symbols associated with gene models (currently limited to soybean) have been incorporated into the mines, allowing more convenient search. We hope to update the data available for these purposes on an ongoing basis. As always, if you have suggestions for content additions or improved functionality please &lt;a href=&quot;mailto:lis@ncgr.org&quot;&gt;contact us&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+        <link>/news/general/2026/07/30/genefunction.html</link>
+        <guid isPermaLink="true">/news/general/2026/07/30/genefunction.html</guid>
+      </item>
+    
+      <item>
         <title>ILS5</title>
         <description>&lt;h1 class=&quot;uk-heading-divider&quot;&gt;&lt;/h1&gt;
 &lt;ul class=&quot;uk-list&quot;&gt;
@@ -130,18 +139,6 @@ Brisbane Convention &amp;amp; Exhibition Centre&lt;/p&gt;
         <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
         <link>/events/jekyll/pixyll/2024/09/30/ICLGG-2024.html</link>
         <guid isPermaLink="true">/events/jekyll/pixyll/2024/09/30/ICLGG-2024.html</guid>
-      </item>
-    
-      <item>
-        <title>USDA National Program Leader, Crop Protection</title>
-        <description>&lt;p&gt;&lt;strong&gt;29, July 2024. Job Announcement&lt;/strong&gt;: 
-The USDA-ARS Office of National Programs (ONP) is searching for a National Program Leader (NPL) in Plant Health to provide national and international leadership in coordinating agricultural research programs relating to diseases of agronomic and horticultural crops. This position is within the Crop Production and Protection (CPP) division at ONP at the George Washington Carver Center in Beltsville, MD. The CPP team includes 9 of the 22 ARS NPLs and has the largest research portfolio in ARS in terms of research funding ($618M/year) and projects (287 of the 690 research projects in ARS).
-Apply by August 9, 2024: &lt;a href=&quot;https://www.usajobs.gov/job/800897600&quot; target=&quot;_blank&quot;&gt;https://www.usajobs.gov/job/800897600&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate>
-        <link>/news/general/2024/07/29/usda-npl-job.html</link>
-        <guid isPermaLink="true">/news/general/2024/07/29/usda-npl-job.html</guid>
       </item>
     
   </channel>
