@@ -22,7 +22,7 @@ species:
       description: SequenceServer BLAST against the CADL_HM342 genome assembly v1.0
       name: Medicago SequenceServer
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22medsa.CADL_HM342.gnm1%22, %22loc%22: %22medsa.CADL_HM342.gnm1.Scc4a34_1:1-1000000%22,
+        [{%22assembly%22: %22medsa.CADL_HM342.gnm1%22, %22loc%22: %22medsa.CADL_HM342.gnm1.Scc4a34_1:1-4964%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 medsa.CADL_HM342.gnm1
@@ -36,7 +36,7 @@ species:
       description: SequenceServer BLAST against the XinJiangDaYe assembly v1.0
       name: LIS SequenceServer
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22medsa.XinJiangDaYe.gnm1%22, %22loc%22: %22medsa.XinJiangDaYe.gnm1.chr1.1:1-1000000%22,
+        [{%22assembly%22: %22medsa.XinJiangDaYe.gnm1%22, %22loc%22: %22medsa.XinJiangDaYe.gnm1.chr1.1:1-82459472%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 medsa.XinJiangDaYe.gnm1
@@ -51,7 +51,7 @@ species:
         v1.0
       name: Medicago SequenceServer
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22medsa.Zhongmu_No_1.gnm1%22, %22loc%22: %22medsa.Zhongmu_No_1.gnm1.Chr1:1-1000000%22,
+        [{%22assembly%22: %22medsa.Zhongmu_No_1.gnm1%22, %22loc%22: %22medsa.Zhongmu_No_1.gnm1.Chr1:1-102287719%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 medsa.Zhongmu_No_1.gnm1
@@ -66,7 +66,7 @@ species:
       description: SequenceServer BLAST against the PI464715 genome assembly v1.0
       name: Medicago SequenceServer
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22medsa.PI464715.gnm1%22, %22loc%22: %22medsa.PI464715.gnm1.Chr1:1-1000000%22,
+        [{%22assembly%22: %22medsa.PI464715.gnm1%22, %22loc%22: %22medsa.PI464715.gnm1.Chr1:1-87192649%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 medsa.PI464715.gnm1
@@ -85,10 +85,30 @@ species:
       description: SequenceServer BLAST against the RegenSY27x genome assembly v0.9
       name: Medicago SequenceServer
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22medsa.RegenSY27x.gnm0_9%22, %22loc%22: %22medsa.RegenSY27x.gnm0_9.ptg000001l:1-1000000%22,
+        [{%22assembly%22: %22medsa.RegenSY27x.gnm0_9%22, %22loc%22: %22medsa.RegenSY27x.gnm0_9.ptg000001l:1-5139917%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 medsa.RegenSY27x.gnm0_9
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22medsa.RegenSY27x.gnm1_hap2%22, %22loc%22: %22medsa.RegenSY27x.gnm1_hap2.Chr4.2:1-83291558%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 medsa.RegenSY27x.gnm1_hap2
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22medsa.RegenSY27x.gnm1_hap4%22, %22loc%22: %22medsa.RegenSY27x.gnm1_hap4.Chr7.4:1-96423042%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 medsa.RegenSY27x.gnm1_hap4
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22medsa.RegenSY27x.gnm1_hap3%22, %22loc%22: %22medsa.RegenSY27x.gnm1_hap3.Chr2.3:1-75653446%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 medsa.RegenSY27x.gnm1_hap3
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22medsa.RegenSY27x.gnm1%22, %22loc%22: %22medsa.RegenSY27x.gnm1.Chr7.1:1-79053817%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 medsa.RegenSY27x.gnm1
   taxid: 3879
 - abbrev: medtr
   commonName: barrel medic
@@ -114,7 +134,7 @@ species:
     origin: Mediterranean region
     resources:
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22medtr.A17.gnm5%22, %22loc%22: %22medtr.A17.gnm5.MtrunA17Chr0c01:1-1000000%22,
+        [{%22assembly%22: %22medtr.A17.gnm5%22, %22loc%22: %22medtr.A17.gnm5.MtrunA17Chr0c01:1-1205179%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 medtr.A17.gnm5
@@ -128,7 +148,7 @@ species:
     origin: Mediterranean region
     resources:
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22medtr.A17_HM341.gnm4%22, %22loc%22: %22medtr.A17_HM341.gnm4.chr1:1-1000000%22,
+        [{%22assembly%22: %22medtr.A17_HM341.gnm4%22, %22loc%22: %22medtr.A17_HM341.gnm4.chr1:1-52991155%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 medtr.A17_HM341.gnm4
@@ -142,7 +162,7 @@ species:
     origin: Mediterranean region
     resources:
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22medtr.R108_HM340.gnm1%22, %22loc%22: %22medtr.R108_HM340.gnm1.scf000:1-1000000%22,
+        [{%22assembly%22: %22medtr.R108_HM340.gnm1%22, %22loc%22: %22medtr.R108_HM340.gnm1.scf000:1-32323034%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 medtr.R108_HM340.gnm1
@@ -155,7 +175,7 @@ species:
     origin: Greece
     resources:
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22medtr.HM078.gnm1%22, %22loc%22: %22medtr.HM078.gnm1.Chr_1:1-1000000%22,
+        [{%22assembly%22: %22medtr.HM078.gnm1%22, %22loc%22: %22medtr.HM078.gnm1.Chr_1:1-63764881%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 medtr.HM078.gnm1
@@ -179,7 +199,7 @@ species:
     origin: Northern China
     resources:
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22medru.Xinghe.gnm1%22, %22loc%22: %22medru.Xinghe.gnm1.Mru1:1-1000000%22,
+        [{%22assembly%22: %22medru.Xinghe.gnm1%22, %22loc%22: %22medru.Xinghe.gnm1.Mru1:1-120346191%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 medru.Xinghe.gnm1
@@ -201,7 +221,7 @@ species:
     origin: China
     resources:
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22medpo.Huaiyang_Jinhuacai.gnm1%22, %22loc%22: %22medpo.Huaiyang_Jinhuacai.gnm1.chr1:1-1000000%22,
+        [{%22assembly%22: %22medpo.Huaiyang_Jinhuacai.gnm1%22, %22loc%22: %22medpo.Huaiyang_Jinhuacai.gnm1.chr1:1-55758895%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 medpo.Huaiyang_Jinhuacai.gnm1

@@ -1,6 +1,27 @@
 ---
 species:
 - name: americana
+  genomes:
+    - collection: LA2127.gnm1.KVMK
+      synopsis: "Apios americana accession LA2127, genome assembly v1, haplotype 1"
+    - collection: LA2127.gnm1_hap2.3WWC
+      synopsis: "Apios americana accession LA2127, genome assembly v1, haplotype 2"
+  annotations:
+    - collection: LA2127.gnm1_hap2.ann1.NT2R
+      synopsis: "Annotation 1 for Apios americana accession LA2127, genome assembly v1, haplotype 2"
+    - collection: LA2127.gnm1.ann1.QKWH
+      synopsis: "Annotation 1 for Apios americana accession LA2127, genome assembly v1, haplotype 1"
   diversity:
     - collection: LA2155.tcp.div.Singh_Kalberer_2018
       synopsis: "SNP calls on a collection of accessions, relative to a reference sequence (derived from a transcriptome assembly of Apios americana)"
+- name: priceana
+  genomes:
+    - collection: MO19963523.gnm1.814V
+      synopsis: "Apios priceana accession MO19963523, genome assembly v1, haplotype 1"
+    - collection: MO19963523.gnm1_hap2.GPZQ
+      synopsis: "Apios priceanaq accession MO19963523, genome assembly v1, haplotype 2"
+  annotations:
+    - collection: MO19963523.gnm1.ann1.P2VZ
+      synopsis: "Annotation 1 for Apios priceana accession MO19963523, genome assembly v1, haplotype 1"
+    - collection: MO19963523.gnm1_hap2.ann1.PB8C
+      synopsis: "Annotation 1 for Apios priceana accession MO19963523, genome assembly v1, haplotype 2"

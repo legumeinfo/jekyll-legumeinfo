@@ -23,7 +23,7 @@ species:
     origin: South Korea
     resources:
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22vigan.Gyeongwon.gnm3%22, %22loc%22: %22vigan.Gyeongwon.gnm3.scaffold_2593:1-1000000%22,
+        [{%22assembly%22: %22vigan.Gyeongwon.gnm3%22, %22loc%22: %22vigan.Gyeongwon.gnm3.scaffold_2593:1-1968%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 vigan.Gyeongwon.gnm3
@@ -35,7 +35,7 @@ species:
     origin: Japan
     resources:
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22vigan.Shumari.gnm1%22, %22loc%22: %22vigan.Shumari.gnm1.Chr01:1-1000000%22,
+        [{%22assembly%22: %22vigan.Shumari.gnm1%22, %22loc%22: %22vigan.Shumari.gnm1.Chr01:1-67115795%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 vigan.Shumari.gnm1
@@ -67,15 +67,28 @@ species:
     origin: South Korea
     resources:
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22vigra.VC1973A.gnm6%22, %22loc%22: %22vigra.VC1973A.gnm6.scaffold_2261:1-1000000%22,
+        [{%22assembly%22: %22vigra.VC1973A.gnm6%22, %22loc%22: %22vigra.VC1973A.gnm6.scaffold_2261:1-1265%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 vigra.VC1973A.gnm6
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22vigra.VC1973A.gnm7%22, %22loc%22: %22vigra.VC1973A.gnm7.chr1:1-1000000%22,
+        [{%22assembly%22: %22vigra.VC1973A.gnm7%22, %22loc%22: %22vigra.VC1973A.gnm7.chr1:1-71953299%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 vigra.VC1973A.gnm7
+  - accession: Weilv-9
+    description: Vigna radiata accession Weilv-9 is a Chinese cultivar selected for
+      sequencing due to its high yield, stress resistance, and compact plant form.
+      The genome assembly and annotations are described in Jia, Li et al., 2025 (DOI:10.1093/hr/uhae337).
+    identifier: Weilv-9
+    name: Weilv-9
+    origin: China
+    resources:
+    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
+        [{%22assembly%22: %22vigra.Weilv-9.gnm1%22, %22loc%22: %22vigra.Weilv-9.gnm1.chr01:1-41915861%22,
+        %22type%22: %22LinearGenomeView%22}]}'
+      description: JBrowse2 Linear Genome View
+      name: JBrowse2 vigra.Weilv-9.gnm1
   taxid: 157791
 - abbrev: vigun
   commonName: cowpea
@@ -105,7 +118,7 @@ species:
     origin: IITA, Nigeria
     resources:
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22vigun.IT97K-499-35.gnm1%22, %22loc%22: %22vigun.IT97K-499-35.gnm1.Vu01:1-1000000%22,
+        [{%22assembly%22: %22vigun.IT97K-499-35.gnm1%22, %22loc%22: %22vigun.IT97K-499-35.gnm1.Vu01:1-42129361%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 vigun.IT97K-499-35.gnm1
@@ -120,7 +133,7 @@ species:
     origin: USA
     resources:
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22vigun.CB5-2.gnm1%22, %22loc%22: %22vigun.CB5-2.gnm1.chr1:1-1000000%22,
+        [{%22assembly%22: %22vigun.CB5-2.gnm1%22, %22loc%22: %22vigun.CB5-2.gnm1.chr1:1-38201502%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 vigun.CB5-2.gnm1
@@ -132,7 +145,7 @@ species:
     origin: Ghana
     resources:
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22vigun.Sanzi.gnm1%22, %22loc%22: %22vigun.Sanzi.gnm1.chr1:1-1000000%22,
+        [{%22assembly%22: %22vigun.Sanzi.gnm1%22, %22loc%22: %22vigun.Sanzi.gnm1.chr1:1-36412893%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 vigun.Sanzi.gnm1
@@ -147,7 +160,7 @@ species:
     origin: Burkina Faso
     resources:
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22vigun.Suvita2.gnm1%22, %22loc%22: %22vigun.Suvita2.gnm1.ScHs1Ai_1000:1-1000000%22,
+        [{%22assembly%22: %22vigun.Suvita2.gnm1%22, %22loc%22: %22vigun.Suvita2.gnm1.ScHs1Ai_1000:1-1199%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 vigun.Suvita2.gnm1
@@ -159,7 +172,7 @@ species:
     origin: Asia
     resources:
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22vigun.TZ30.gnm1%22, %22loc%22: %22vigun.TZ30.gnm1.ScZkXgn_1000:1-1000000%22,
+        [{%22assembly%22: %22vigun.TZ30.gnm1%22, %22loc%22: %22vigun.TZ30.gnm1.ScZkXgn_1000:1-2293%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 vigun.TZ30.gnm1
@@ -171,7 +184,7 @@ species:
     origin: Botswana
     resources:
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22vigun.UCR779.gnm1%22, %22loc%22: %22vigun.UCR779.gnm1.ScLaWXF_10000:1-1000000%22,
+        [{%22assembly%22: %22vigun.UCR779.gnm1%22, %22loc%22: %22vigun.UCR779.gnm1.ScLaWXF_10000:1-61082%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 vigun.UCR779.gnm1
@@ -183,7 +196,7 @@ species:
     origin: Asia
     resources:
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22vigun.ZN016.gnm1%22, %22loc%22: %22vigun.ZN016.gnm1.ScQz0zL_1000:1-1000000%22,
+        [{%22assembly%22: %22vigun.ZN016.gnm1%22, %22loc%22: %22vigun.ZN016.gnm1.ScQz0zL_1000:1-1897%22,
         %22type%22: %22LinearGenomeView%22}]}'
       description: JBrowse2 Linear Genome View
       name: JBrowse2 vigun.ZN016.gnm1

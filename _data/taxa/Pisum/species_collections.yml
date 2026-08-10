@@ -2,11 +2,34 @@
 species:
 - name: sativum
   genomes:
+    - collection: JI2822.gnm1.QBWW
+      synopsis: "Pisum sativum accession JI2822, genome assembly v1"
     - collection: Cameor.gnm1.P4FG
       synopsis: "Pisum sativum accession Cameor genome assembly version 1a"
+    - collection: Cameor.gnm2.H2BH
+      synopsis: "Pisum sativum accession Cameor, genome assembly v2"
+    - collection: ZW6.gnm1.D8R1
+      synopsis: "Pisum sativum accession ZW6 (Zhongwan6), genome assembly v1"
   annotations:
+    - collection: JI2822.gnm1.ann1.D0QS
+      synopsis: "Annotation 1 for Pisum sativum accession JI2822, genome assembly v1"
+    - collection: ZW6.gnm1.ann1.TKZX
+      synopsis: "Annotation 1 for Pisum sativum accession ZW6 (Zhongwan6), genome assembly v1"
     - collection: Cameor.gnm1.ann1.7SZR
       synopsis: "Pisum sativum accession Cameor annotation files on genome assembly version 1a"
+    - collection: Cameor.gnm2.ann1.KT6X
+      synopsis: "Annotation 1 for Pisum sativum accession Cameor, genome assembly v2"
+  diversity:
+    - collection: ZW6.gnm1.div.Powers_Boatwright_2021
+      synopsis: "VCF file containing SNP data pertaining to the USDA Pea Single Plant Plus Collection"
+    - collection: Cameor.gnm2.div.Powers_Boatwright_2021
+      synopsis: "VCF file containing SNP data pertaining to the USDA Pea Single Plant Plus Collection"
+    - collection: Cameor.gnm2.div.Kreplak_Novak_2026
+      synopsis: "SNP Genotyping matrix recalled on cameor v2 for AMS dataset by Aubert et al. 2023."
+    - collection: Cameor.gnm1.div.Powers_Boatwright_2021
+      synopsis: "VCF file containing SNP data pertaining to the USDA Pea Single Plant Plus Collection"
+    - collection: JI2822.gnm1.div.Powers_Boatwright_2021
+      synopsis: "VCF file containing SNP data pertaining to the USDA Pea Single Plant Plus Collection"
   expression:
     - collection: Cameor.gnm1.ann1.expr.Cameor.Alves-Carvalho_Aubert_2014
       synopsis: "Pisum sativum expression data from multi-factor experiment"
