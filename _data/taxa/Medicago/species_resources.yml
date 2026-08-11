@@ -102,7 +102,7 @@ species:
       description: JBrowse2 Linear Genome View
       name: JBrowse2 medsa.RegenSY27x.gnm1_hap4
     - URL: https://medicago.legumeinfo.org/tools/sequenceserver
-      description: SequenceServer BLAST against the RegenSY27x genome assembly v0.9
+      description: SequenceServer BLAST against the RegenSY27x genome assembly
       name: Medicago SequenceServer
     - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
         [{%22assembly%22: %22medsa.RegenSY27x.gnm0_9%22, %22loc%22: %22medsa.RegenSY27x.gnm0_9.ptg000001l:1-5139917%22,
