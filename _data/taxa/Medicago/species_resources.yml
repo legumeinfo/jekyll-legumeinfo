@@ -102,33 +102,8 @@ species:
       description: JBrowse2 Linear Genome View
       name: JBrowse2 medsa.RegenSY27x.gnm1_hap4
     - URL: https://medicago.legumeinfo.org/tools/sequenceserver
-      description: SequenceServer BLAST against the RegenSY27x genome assembly v0.9
+      description: SequenceServer BLAST against the RegenSY27x genome assembly
       name: Medicago SequenceServer
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22medsa.RegenSY27x.gnm0_9%22, %22loc%22: %22medsa.RegenSY27x.gnm0_9.ptg000001l:1-5139917%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 medsa.RegenSY27x.gnm0_9
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22medsa.RegenSY27x.gnm1_hap2%22, %22loc%22: %22medsa.RegenSY27x.gnm1_hap2.Chr4.2:1-83291558%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 medsa.RegenSY27x.gnm1_hap2
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22medsa.RegenSY27x.gnm1_hap4%22, %22loc%22: %22medsa.RegenSY27x.gnm1_hap4.Chr7.4:1-96423042%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 medsa.RegenSY27x.gnm1_hap4
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22medsa.RegenSY27x.gnm1_hap3%22, %22loc%22: %22medsa.RegenSY27x.gnm1_hap3.Chr2.3:1-75653446%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 medsa.RegenSY27x.gnm1_hap3
-    - URL: 'https://all-genera.lis.ncgr.org/tools/jbrowse2/?config=config.json&session=spec-{%22views%22:
-        [{%22assembly%22: %22medsa.RegenSY27x.gnm1%22, %22loc%22: %22medsa.RegenSY27x.gnm1.Chr7.1:1-79053817%22,
-        %22type%22: %22LinearGenomeView%22}]}'
-      description: JBrowse2 Linear Genome View
-      name: JBrowse2 medsa.RegenSY27x.gnm1
   taxid: 3879
 - abbrev: medtr
   commonName: barrel medic
