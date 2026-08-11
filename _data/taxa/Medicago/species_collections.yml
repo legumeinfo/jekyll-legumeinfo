@@ -2,35 +2,35 @@
 species:
 - name: sativa
   genomes:
-    - collection: RegenSY27x.gnm0_9.2VSM
-      synopsis: "Genome assembly of Medicago sativa RegenSY27x"
+    - collection: RegenSY27x.gnm1.2W3Y
+      synopsis: "Genome assembly of Medicago sativa RegenSY27x (haplotype 1)"
     - collection: RegenSY27x.gnm1_hap2.NYFT
-      synopsis: "Genome assembly of Medicago sativa RegenSY27x"
+      synopsis: "Genome assembly of Medicago sativa RegenSY27x (haplotype 2)"
+    - collection: RegenSY27x.gnm1_hap3.VMY5
+      synopsis: "Genome assembly of Medicago sativa RegenSY27x (haplotype 3)"
     - collection: RegenSY27x.gnm1_hap4.TT6N
+      synopsis: "Genome assembly of Medicago sativa RegenSY27x (haplotype 4)"
+    - collection: RegenSY27x.gnm0_9.2VSM
       synopsis: "Genome assembly of Medicago sativa RegenSY27x"
     - collection: CADL_HM342.gnm1.rVNY
       synopsis: "Genome assembly of Medicago sativa CADL (HM342)"
-    - collection: RegenSY27x.gnm1_hap3.VMY5
-      synopsis: "Genome assembly of Medicago sativa RegenSY27x"
     - collection: PI464715.gnm1.8GK6
       synopsis: "Pseudomolecule assemblies and unanchored contigs representing 1 haplotype per chromosome for diploid progenitor Medicago sativa spp. caerulea PI464715"
     - collection: XinJiangDaYe.gnm1.12MR
       synopsis: "Pseudomolecule assemblies and scaffolds representing 4 haplotypes per chromosome for Medicago sativa XinJiangDaYe"
     - collection: Zhongmu_No_1.gnm1.TRQW
       synopsis: "Pseudomolecule assemblies and unanchored contigs representing 1 haplotype per chromosome for Medicago sativa Zhongmu No. 1"
-    - collection: RegenSY27x.gnm1.2W3Y
-      synopsis: "Genome assembly of Medicago sativa RegenSY27x"
   annotations:
     - collection: XinJiangDaYe.gnm1.ann1.RKB9
       synopsis: "Gene annotations for pseudomolecule assemblies and scaffolds representing 4 haplotypes per chromosome for Medicago sativa XinJiangDaYe"
-    - collection: RegenSY27x.gnm1_hap3.ann1.YZ7X
-      synopsis: "Genome annotation of Medicago sativa RegenSY27x"
     - collection: RegenSY27x.gnm1.ann1.BS5K
-      synopsis: "Genome annotation of Medicago sativa RegenSY27x"
+      synopsis: "Genome annotation of Medicago sativa RegenSY27x (haplotype 1)"
     - collection: RegenSY27x.gnm1_hap2.ann1.62BH
-      synopsis: "Genome annotation of Medicago sativa RegenSY27x"
+      synopsis: "Genome annotation of Medicago sativa RegenSY27x (haplotype 2)"
+    - collection: RegenSY27x.gnm1_hap3.ann1.YZ7X
+      synopsis: "Genome annotation of Medicago sativa RegenSY27x (haplotype 3)"
     - collection: RegenSY27x.gnm1_hap4.ann1.RNH4
-      synopsis: "Genome annotation of Medicago sativa RegenSY27x"
+      synopsis: "Genome annotation of Medicago sativa RegenSY27x (haplotype 4)"
   diversity:
     - collection: XinJiangDaYe.gnm1.div.Zhao_Mejia-Guerra_2023
       synopsis: "Haplotype data for alfalfa cultivars derived from the 3K DArTag panel"
