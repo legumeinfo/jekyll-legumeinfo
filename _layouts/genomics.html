@@ -74,7 +74,7 @@ genomics_menu: true
     
     <h4><i>{{ item["genus"] }} {{ item["species"] }}</i> accessions</h4>
     {% for strain in item["strains"] %}
-      <b>{{ strain.identifier }}</b> ({{ strain.origin }}) <br/>
+      <b id="{{ item["genus"] }}_{{ item["species"] }}_{{strain.identifier}}">{{ strain.identifier }}</b> ({{ strain.origin }}) <br/>
       {{ strain.description }}
       {% if strain.resources.size > 0 %}
         <ul>
